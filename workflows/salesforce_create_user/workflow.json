@@ -1,0 +1,18 @@
+{
+   "name": "salesforce_create_user",
+   "title": "Create Users in Salesfoce",
+   "description": "This flow covers a basic onboarding use case with users into Salesforce, including creating the user with the correct Role and Feature License.",
+   "connectors": [
+      "salesforce"
+   ],
+   "links": [
+      {
+         "title": "Video",
+         "destination": "https://www.loom.com/share/2fc6dcd7318840968d6711ae68f43ec5"
+      },
+      {
+         "title": "Documentation",
+         "destination": "https://help.okta.com/en/prod/Content/Topics/Workflows/workflows-main.htm"
+      }
+   ]
+}
