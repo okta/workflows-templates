@@ -1,8 +1,25 @@
 
-Welcome to your new repo, workflows-templates!
+Welcome to workflows-templates!
 
-This is a default readme file created to provide some helpful links and first steps.
-A lot of your questions might already exist in our [wiki page](http://bit.ly/EngFAQ), so please check there first.
-Your new artifact is available on bacon [here](https://bacon-go.aue1e.saasure.net/#!/commits/workflows-templates)
+Workflows templates are pre-built automated business processes that can be imported in Okta Workflows. New workflow templates submitted to this repo can be published to the Okta Workflows console.
 
-Please reach out to us over on [#eng-release](https://okta.slack.com/archives/C7L27G2Q5) or [#eng-productivity](https://okta.slack.com/archives/C7LQ4U8T0) for any additional assistance you might require.
+## Getting Started
+
+#### How to submit Workflows Template
+
+1. Open Okta Workflows and design the intended business process. This can be distributed across one or more workflows and tables. Keep all related workflows and tables in same folder.
+2. Export the folder containing the business prodcess. 
+3. Name this file workflow.flopack
+4. Create workflow.json and capture following information in workflow.json
+  1. *name* - this should be the folder name under workflows folder - see below
+  2. *title* - title of workflows template
+  3. *description* - template description
+  4. *connectors* - list of connectors used by this template. Connector names are app names seen in workflows designer. Connector names should be in lower case.
+  6. *links* - Links to documentation or videos for this template
+5.README.md that will contain description of workflows template.
+6. Use following directory structure to organize workflow.flopack, workflow.json and connector.json
+workflows/
+  <my_shared_workflow>/
+    workflow.json
+    workflow.flopack
+    README,md
