@@ -1,7 +1,7 @@
 
-Welcome to workflows-templates!
+Welcome to Templates for Workflows!
 
-Workflows templates are pre-built automated business processes that can be imported in Okta Workflows. New workflow templates submitted to this repo can be published to the Okta Workflows console.
+Templates are pre-built automated business processes that can be imported in Okta Workflows. New workflow templates submitted to this repo can be published to the Okta Workflows console.
 
 ## Getting Started
 
@@ -15,11 +15,10 @@ Workflows templates are pre-built automated business processes that can be impor
   2. *title* - title of workflows template
   3. *description* - template description
   4. *connectors* - list of connectors used by this template. Connector names are app names seen in workflows designer. Connector names should be in lower case.
-  6. *links* - Links to documentation or videos for this template
-5.README.md that will contain description of workflows template.
-6. Use following directory structure to organize workflow.flopack, workflow.json and connector.json
+  6. *links* - Links to documentation or videos for this template. The documentation should link to the file within the workflows-templates repo (not the source repo). 
+5. Use following directory structure to organize workflow.flopack, workflow.json and connector.json
 workflows/
   <my_shared_workflow>/
     workflow.json
     workflow.flopack
-    README,md
+    README.md
