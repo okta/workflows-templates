@@ -1,0 +1,18 @@
+{
+   "name": "create_report_google_sheets",
+   "title": "Create a report with Google Sheets",
+   "description": "Many organizations have custom, org-specific needs to report on particular lifecycle events and share that data with others in the organization. Okta's System Log is powerful but limited to Okta admins, and also does not allow for scheduled reports. This workflow demonstrates building a custom report in an online spreadsheet (using a "user suspended" event, and then sharing that report with stakeholders when the event occurs.",
+   "connectors": [
+      "okta", "googlesheets2_29", "gmail"
+   ],
+   "links": [
+      {
+         "title": "Video Walk-through",
+         "destination": "https://www.youtube.com/watch?v=WlCz06Ci02g"
+      },
+      {
+         "title": "Setup Documentation",
+         "destination": "https://github.com/workflows-templates/workflows/create_report_google_sheets/readme.md"
+      }
+   ]
+}
