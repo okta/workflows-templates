@@ -12,7 +12,7 @@
       },
       {
          "title": "Setup Documentation",
-         "destination": "https://github.com/workflows-templates/workflows/import_users_google_sheets/blob/master/readme.md"
+         "destination": "https://github.com/okta/workflows-templates/blob/master/workflows/import_users_google_sheets/readme.md"
       }
    ]
 }
