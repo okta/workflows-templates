@@ -1,4 +1,4 @@
-## Inactivity-based Suspension
+## Suspend Inactive Users
 
 
 ### <span style="text-decoration:underline;">Overview</span>
