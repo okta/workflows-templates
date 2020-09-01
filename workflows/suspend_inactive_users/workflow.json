@@ -12,7 +12,7 @@
       },
       {
          "title": "Setup Documentation",
-         "destination": "https://github.com/workflows-templates/workflows/suspend_inactive_users/readme.md"
+         "destination": "https://github.com/okta/workflows-templates/blob/master/workflows/suspend_inactive_users/readme.md"
       }
    ]
 }
