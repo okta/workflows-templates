@@ -1,4 +1,4 @@
-# Workflows Template: Reassign Files while Deprovisioning with GSuite
+# Reassign Files while Deprovisioning with Google Drive
 
 ## Overview
 
