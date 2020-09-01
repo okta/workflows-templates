@@ -1,0 +1,18 @@
+{
+  "name": "Make_API_Requests_HTTP_Request_Card",
+  "title": "Make API Requests with the HTTP Request Card",
+  "description": "In many organizations that integrate with web services, there is a requirement to be able to invoke a SaaS application (or on-premise API secured via an API gateway) secured Http(s) end-point. This sample illustrates the use of the Okta Workflows HTTP Raw Request card for GET, POST operations with sample Content-Type of json and x-www-form-urlencoded. It also illustrates how to process JSON using a variety of Okta workflow cards.",
+  "connectors": [
+    "http"
+  ],
+  "links": [
+    {
+      "title": "Video",
+      "destination": "https://www.youtube.com/watch?v=BVgpvIdFmOo"
+    },
+    {
+      "title": "Documentation",
+      "destination": "https://github.com/okta/workflows-templates/blob/master/workflows/Make_API_Requests_HTTP_Request_Card/readme.md"
+    }
+  ]
+}
