@@ -1,0 +1,50 @@
+{
+	"info": {
+		"_postman_id": "405eede9-2ad1-44b7-9eda-aa50264936f2",
+		"name": "WorkflowsDiscovery",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "create bookmark app",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"type": "text",
+						"value": "application/json"
+					},
+					{
+						"key": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					},
+					{
+						"key": "x-api-client-token",
+						"type": "text",
+						"value": "10feb9b7c2ab236afc3658efa49fc389320746d86b9460707a802547efc41492"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\"name\":\"bookmark\",\r\n\"label\":\"Discovery_test_app\",\r\n\"signOnMode\":\"BOOKMARK\",\r\n\"requestintegration\":\"false\",\r\n\"url\":\"http://okta.com\"\r\n}"
+				},
+				"url": {
+					"raw": "{{url}}/api/flo/227b4a4738cfd8b560f299c8cd2759b2/invoke",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"api",
+						"flo",
+						"227b4a4738cfd8b560f299c8cd2759b2",
+						"invoke"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}
