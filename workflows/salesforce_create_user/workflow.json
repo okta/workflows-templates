@@ -1,18 +1,18 @@
 {
    "name": "salesforce_create_user",
    "title": "Create Users in Salesfoce",
-   "description": "This flow covers a basic onboarding use case with users into Salesforce, including creating the user with the correct Role and Feature License.",
+   "description": "User Provisioning, or creating users in a 3rd party system, is one of the most foundational use cases for Okta’s Lifecycle Management product. In order to provide access to a system, for example providing access to Salesforce, a newly created user needs to have an account in that system with the correct profile attributes and entitlements. This template walks you through how to create a user in Salesforce and assign them a Profile based on their department.",
    "connectors": [
-      "salesforce"
+      "salesforce, okta"
    ],
    "links": [
       {
-         "title": "Video",
-         "destination": "https://www.loom.com/share/2fc6dcd7318840968d6711ae68f43ec5"
+         "title": "Video Walk-through",
+         "destination": "https://www.loom.com/share/c1cbb2ef46d2416aaec605fb533fb61b"
       },
       {
-         "title": "Documentation",
-         "destination": "https://help.okta.com/en/prod/Content/Topics/Workflows/workflows-main.htm"
+         "title": "Setup Documentation",
+         "destination": "https://github.com/okta/workflows-templates/blob/master/workflows/salesforce_create_user/readme.md"
       }
    ]
 }
