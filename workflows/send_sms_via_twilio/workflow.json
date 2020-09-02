@@ -12,7 +12,7 @@
       },
       {
          "title": "Setup Documentation",
-         "destination": "https://github.com/okta/workflows-templates/blob/master/workflows/send_SMS_via_Twilio/readme.md"
+         "destination": "https://github.com/okta/workflows-templates/blob/master/workflows/send_sms_via_twilio/readme.md"
       }
    ]
 }
