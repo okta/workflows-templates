@@ -1,5 +1,5 @@
 {
-  "name": "googledrive_reassign_files",
+  "name": "googledrive_file_transfer",
   "title": "Reassign Files while Deprovisioning with Google Drive",
   "description": "In many organizations that use Google Drive, there is a requirement to transfer a user's GDrive contents to another user. Maybe you have users that need to be deactivated - you can transfer the files from the user's GDrive to the Manager and delete the user.",
   "connectors": [
@@ -12,7 +12,7 @@
     },
     {
       "title": "Documentation",
-      "destination": "https://github.com/okta/workflows-templates/blob/master/workflows/googledrive_reassign_files/readme.md"
+      "destination": "https://github.com/okta/workflows-templates/blob/master/workflows/googledrive_file_transfer/readme.md"
     }
   ]
 }
