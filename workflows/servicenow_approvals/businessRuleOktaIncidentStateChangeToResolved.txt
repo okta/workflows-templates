@@ -1,0 +1,17 @@
+(function executeRule(current, previous /*null when async*/) {
+
+var sm = new sn_ws.RESTMessageV2("Okta Workflow endpoint","post");
+
+//Might throw exception if message does not exist or not visible due to scope.
+
+sm.setStringParameter("incidentMetadata",current.short_description);
+
+sm.setStringParameter("incidentNumber",current.number);
+
+sm.setStringParameter("incidentState",current.approval);
+
+var response = sm.execute();
+
+//Might throw exception if http connection timed out or some issue with sending request itself because of encryption/decryption of password.
+
+})(current, previous);
