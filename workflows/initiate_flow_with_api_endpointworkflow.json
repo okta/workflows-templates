@@ -1,5 +1,5 @@
 {
-  "name": "initiate_flow_api_endpoint",
+  "name": "initiate_flow_with_api_endpoint",
   "title": "Initiate Flow with API Endpoint",
   "description": "The Okta Workflow feature is a powerful tool to implement custom business logic. A popular integration is instead of creating an object directly into Okta (i.e. user, application or group ) with the Okta REST APIs, is to send the object request along with it’s JSON payload to Workflows. Then custom business logic such as checking existing objects in Okta or reaching out to a 3rd party to verify data can be accomplished. Based on the results of the dynamic logic, decisions can be made by Workflows providing distinct processing options.",
   "connectors": [
@@ -12,7 +12,7 @@
     },
     {
       "title": "Setup Documentation",
-      "destination": "https://github.com/okta/workflows-templates/workflows/initiate_flow_api_endpoint/blob/master/README.md"
+      "destination": "https://github.com/okta/workflows-templates/workflows/initiate_flow_with_api_endpoint/blob/master/README.md"
     }
   ]
 }
