@@ -1,0 +1,17 @@
+{
+   "name": "send_sms_via_twilio",
+   "title": "Send SMS via Twilio",
+   "description": "Use Okta Workflows to send SMS messages via Twilio",
+   "connectors": [
+   ],
+   "links": [
+      {
+         "title": "Video Walk-through",
+         "destination": "https://www.loom.com/share/d9731ce268c841598032e142a000d70c"
+      },
+      {
+         "title": "Setup Documentation",
+         "destination": "https://github.com/okta/workflows-templates/blob/master/workflows/send_sms_via_twilio/readme.md"
+      }
+   ]
+}
