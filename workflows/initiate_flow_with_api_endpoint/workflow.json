@@ -13,6 +13,10 @@
     {
       "title": "Setup Documentation",
       "destination": "https://github.com/okta/workflows-templates/blob/master/workflows/initiate_flow_with_api_endpoint/README.md"
+    },
+    {
+      "title": "Postman collection",
+      "destination": "https://github.com/okta/workflows-templates/blob/master/workflows/initiate_flow_with_api_endpoint/WorkflowsDiscovery.postman_collection.json"
     }
   ]
 }
