@@ -1,11 +1,12 @@
 # Create Users in Salesforce
 
 
-## <span style="text-decoration:underline;">Overview</span>
+## Overview
 
 User Provisioning, or creating users in a 3rd party system, is one of the most foundational use cases for Okta’s Lifecycle Management product. In order to provide access to a system, for example providing access to Salesforce, a newly created user needs to have an account in that system with the correct profile attributes and entitlements. This template walks you through how to create a user in Salesforce and assign them a Profile based on their department. 
 
-<span style="text-decoration:underline;">Before you get Started / Prerequisites</span>
+
+## Before you get Started / Prerequisites
 
 Before you get started, here are the things you’ll need:
 
@@ -17,7 +18,8 @@ Before you get started, here are the things you’ll need:
 *   A user with the department field populated with either Sales, Marketing, or Operations. If you don’t have the department attribute populated, please populate it for a test user. 
     *   If you are using the Developer trial tenant, due to limited licenses, we recommend using a department value of Sales as the Template is configured to provision a Chatter Free user (where there are many licenses available). 
 
-<span style="text-decoration:underline;">Setup Steps</span>
+
+## Setup Steps
 
 
 
@@ -29,7 +31,8 @@ Before you get started, here are the things you’ll need:
 4. Click Save. 
 5. Turn the Flow On. Wait 1 minute before proceeding to test the flow to give some buffer time for the event hook to register. 
 
-<span style="text-decoration:underline;">Testing this Flow</span>
+
+## Testing this Flow
 
 
 
@@ -39,7 +42,8 @@ Before you get started, here are the things you’ll need:
 3. Go to Flow History and confirm that the flow executed successfully. 
 4. Go to your Salesforce tenant and search for the user you created. You should successfully see them provisioned. 
 
-<span style="text-decoration:underline;">Limitations & Known Issues</span>
+
+## Limitations & Known Issues
 
 
 
