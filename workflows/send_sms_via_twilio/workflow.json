@@ -3,7 +3,6 @@
    "title": "Send SMS via Twilio",
    "description": "Use Okta Workflows to send SMS messages via Twilio",
    "connectors": [
-      "http"
    ],
    "links": [
       {
