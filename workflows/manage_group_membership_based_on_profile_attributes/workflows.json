@@ -1,5 +1,5 @@
 {
-  "name": "manage_okta_group_membership_based_on_profile_attributes",
+  "name": "manage_group_membership_based_on_profile_attributes",
   "title": "Manage Okta Group Membership Based on Profile Attributes",
   "description": "In many organizations a set of Okta group memberships are determined based on Job Codes or more generally, by user profile attributes to implement Role-based access control (RBAC). This template illustrates group assignment based on user profile attributes.",
   "connectors": [
@@ -12,11 +12,11 @@
     },
     {
       "title": "Sample Data",
-      "destination": "https://github.com/okta/workflows-templates/blob/master/workflows/manage_okta_group_membership_based_on_profile_attributes/groupRules.csv"
+      "destination": "https://github.com/okta/workflows-templates/blob/master/workflows/manage_group_membership_based_on_profile_attributes/groupRules.csv"
     }, 
     {
       "title": "Documentation",
-      "destination": "https://github.com/okta/workflows-templates/blob/master/workflows/manage_okta_group_membership_based_on_profile_attributes/readme.md"
+      "destination": "https://github.com/okta/workflows-templates/blob/master/workflows/manage_group_membership_based_on_profile_attributes/readme.md"
 
     }
   ]
