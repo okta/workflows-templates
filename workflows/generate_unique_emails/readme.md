@@ -7,10 +7,10 @@ To Onboard users in an organization, IT needs to generate unique Email for the e
 
  
 Generate unique Email : In this example uniqueness check is performed using different systems. You can pick the appropriate one for your organization.
-    a) Validate against O365 Proxy Addresses attribute for Organizations using O365
-    b) Validate against Google email aliases for Organizations using google mail
-    c) Validate the Proxy Address against Okta directly, if Okta is the master for provisioning users in the target mailSystem.
-    d) MultiDomains scenario
+1. Validate against O365 Proxy Addresses attribute for Organizations using O365
+2. Validate against Google email aliases for Organizations using google mail
+3. Validate the Proxy Address against Okta directly, if Okta is the master for provisioning users in the target mailSystem.
+4. MultiDomains scenario
     
 This flow follows the below logic.
 1. Construct email with firstname.lastname@domain.com
