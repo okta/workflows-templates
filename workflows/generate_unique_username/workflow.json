@@ -1,0 +1,18 @@
+{
+   "name": "generate-unique-username",
+   "title": "Generate Unique Okta Usernames",
+   "description": "To onboard users in an organization, IT often needs to generate a unique Okta username for each user in order to avoid conflicts. These usernames, such as SamAccountName and UPN, shall then be used in downstream applications like Active Directory.",
+   "connectors": [
+      "okta"
+   ],
+   "links": [
+      {
+         "title": "Video Walk-through",
+         "destination": "https://www.youtube.com/watch?v=JEk33EdlV2A"
+      },
+      {
+         "title": "Setup Documentation",
+         "destination": "https://github.com/okta/workflows-templates/blob/master/workflows/generate-unique-username/README.md"
+      }
+   ]
+}
