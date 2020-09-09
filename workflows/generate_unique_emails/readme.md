@@ -30,10 +30,10 @@ Before you get started, you will need:
 
 1. Import the Email workflow flopack in your workflow environment.
 2. Inside the folder you should see 9 flows. Check for below main flows which triggers the emailGeneration based on your Domain and Mailsystem. 
-        Okta-New-Email-Generation
-        Google-Email-Generation
-        O365-Email-Generation
-        MultiDomain-Email-Generation
+*   Okta-New-Email-Generation
+*   Google-Email-Generation
+*   O365-Email-Generation
+*   MultiDomain-Email-Generation
 3. Depend on your email domain use one of the above flow. Only enable one of the above 4 flows.
 4. Enable other subflows.
 5. Establish the connections to the target apps inside the main workflow you choose, O365,GoogleApps and Okta.
@@ -45,11 +45,13 @@ Before you get started, you will need:
 
 8. If you use Google-Email-Generation or O365-Email-Generation flow. Open the flow in the AssignEmailDomain card update your emaildomain.If your o365 federated domain is jeykrish.com use @jeykrish.com
 9. If you use Okta-New-Email generation follow the below additional steps:
+
        a) Create a String-array attribute in Okta user profile called proxyAddresses	
        b) Populate the ProxyAddresses attribute from your AD domain or create a sample value as below
        
        ![image](https://user-images.githubusercontent.com/14205843/91468480-eecd2d00-e846-11ea-800d-2014eef108ae.png)
 10. If you have multiDomain in your orgnaization use the MultiDomain-Email-Generation. To use the MultiDomain flow.
+      
       a) Setup an attribute in Okta called brandId. You can have any attribute. This attribute is used to determine the mailDomain for the user. For example you can also use a company or something. In this example you can setup a brandID attribute in Okta profile
       
       b) In the Workflow open the multiDomain-Email-Generation flow. Click on the connections in the Read User card. Hit save. That should give the attribute list you can select. Select the brandID attribute you created.
