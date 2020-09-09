@@ -1,0 +1,18 @@
+{
+   "name": "assign_temporary_group_memberships",
+   "title": "Assign group memberships temporarily based on time",
+   "description": "Within Okta, you may want to give a user group membership, but only for a limited time. An example would be a group that gives auditors access to applications, but revoked after 30 days.  Another example may be a temporary development project that you want to assign developers access.",
+   "connectors": [
+      "okta"
+   ],
+   "links": [
+      {
+         "title": "Video Walk-through",
+         "destination": "https://www.youtube.com/watch?v=SSqfBEfNh3U"
+      },
+      {
+         "title": "Setup Documentation",
+         "destination": "https://github.com/okta/workflows-templates/blob/master/workflows/assign_temporary_group_memberships/readme.md"
+      }
+   ]
+}
