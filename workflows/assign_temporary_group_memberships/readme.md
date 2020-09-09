@@ -32,10 +32,10 @@ Before you get started you will need:
     1. In “User Added to Group” flow, click the connection of the first card “Okta User Added to Group”. Set it to your Okta connection.
     2. In “SUB - Remove User from Group” flow, click the connection of the second card “Okta Remove User from Group”. Set it to your Okta connection.
 2. Add group names and duration to Temp Groups table
-    3. Navigate to Workflows Tables, Temporary Groups table. (this table should have been imported with your flow).
-    4. Click on the first empty row to create a new row. In the “Group Name” column, specify the name of the group you created above in prerequisites (“Temp Group”).
-    5. On the same row, click on the “Duration” column. Specify the duration of time you want that user to be allowed in the group. (The default units are minutes, and can be changed in the flow).
-    6. You can add as many groups as you as want to set up (one per row in the table).
+    1. Navigate to Workflows Tables, Temporary Groups table. (this table should have been imported with your flow).
+    2. Click on the first empty row to create a new row. In the “Group Name” column, specify the name of the group you created above in prerequisites (“Temp Group”).
+    3. On the same row, click on the “Duration” column. Specify the duration of time you want that user to be allowed in the group. (The default units are minutes, and can be changed in the flow).
+    4. You can add as many groups as you as want to set up (one per row in the table).
 
 
 ## Testing this flow
