@@ -3,7 +3,8 @@
    "title": "Create a Report on Multiple Okta Events",
    "description": "There may be times where you want to utilize multiple events for a singular purpose. Instead of creating copies of each flow that then need to be maintained separately, child flows and tables can be leveraged to limit the repetition in your flows.  This template demonstrates a simple pattern for creating a daily report of user attributes from three Okta events: User Created, User Okta Profile Updated, and User Deactivated. It then uploads a daily report to Google Drive using a scheduled flow that runs at midnight every night.",
    "connectors": [
-      "okta, googledrive"
+      "okta", 
+      "googledrive"
    ],
    "links": [
       {
