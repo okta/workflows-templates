@@ -1,0 +1,18 @@
+{
+   "name": "email_notification",
+   "title": "Send Email Notifications with Office 365 detaile",
+   "description": "This workflow sends an email notification with Office 365 when a user is suspended in Okta. It allows administrators to easily track user suspensions. This is a generic notifications template - you can easily swap out both the event or the email provider (to Gmail) based on your notifications use case.",
+   "connectors": [
+      "okta", "office365mail", "airtable"
+   ],
+   "links": [
+      {
+         "title": "Video Walk-through",
+         "destination": "https://www.loom.com/share/4fb804d3f2b44e27b20eda1877602359"
+      },
+      {
+         "title": "Setup Documentation",
+         "destination": "https://github.com/okta/workflows-templates/blob/master/workflows/email_notification2/readme.md"
+      }
+   ]
+}
