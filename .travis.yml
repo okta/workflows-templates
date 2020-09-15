@@ -1,0 +1,7 @@
+language: node_js
+node_js: 
+ - 10
+script: $TRAVIS_BUILD_DIR/travis_release.sh
+branches:
+    only:
+      - vmoharir-OKTA-326466
