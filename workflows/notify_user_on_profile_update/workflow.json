@@ -1,0 +1,19 @@
+{
+   "name": "notify_user_on_profile_update",
+   "title": "Notify a user when their profile is updated",
+   "description": "Users profiles can be updated for numerous reasons, it might be an automated changed, a scheduled change by the HR team, or even a personal change is done by the user themselves. However, can you always be sure that the data that has been changed is now correct or done so legitimately by the user? 
+   This flow allows you to send a notification to the user (e.g. in a slack message or via email notification) to let them know that their profile has been updated, so they can review the changes and contact somebody if it looks incorrect.",
+   "connectors": [
+      "okta", "slack"
+   ],
+   "links": [
+      {
+         "title": "Video Walk-through",
+         "destination": "https://www.youtube.com/watch?v=20zfRTMRX_8"
+      },
+      {
+         "title": "Setup Documentation",
+         "destination": "https://github.com/okta/workflows-templates/blob/master/workflows/notify_user_on_profile_update/readme.md"
+      }
+   ]
+}
