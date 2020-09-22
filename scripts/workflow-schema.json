@@ -1,0 +1,65 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema",
+    "$id": "https://oinmanager.okta.com/v1/bootstrap/integration.json",
+    "type": "object",
+    "title": "The root schema",
+    "description": "The root schema comprises the entire JSON document.",
+    "required": [
+        "name",
+        "title",
+        "description"
+    ],
+    "additionalProperties": false,
+    "properties": {
+        "name": {
+            "$id": "#/properties/name",
+            "type": "string",
+            "title": "The name schema",
+            "pattern": "^[a-z0-9_]{2,50}$",
+            "maxLength": 50,
+            "minLength": 2
+        },
+        "title": {
+            "$id": "#/properties/title",
+            "type": "string",
+            "title": "The title schema"
+        },
+        "description": {
+            "$id": "#/properties/description",
+            "type": "string",
+            "title": "The description schema"
+        },
+        "connectors": {
+            "$id": "#/properties/connectors",
+            "type": "array",
+            "title": "The components schema",
+            "additionalItems": true,
+            "items": {
+                "type": "string",
+                "title": "The first anyOf schema"
+            }
+        },
+        "links": {
+            "$id": "#/properties/links",
+            "type": "array",
+            "title": "The links schema",
+            "additionalItems": true,
+            "items": {
+                "type": "object",
+                "required": [
+                    "title",
+                    "destination"
+                ],
+                "properties": {
+                    "title": {
+                        "type": "string"
+                    },
+                    "destination": {
+                        "type": "string",
+                        "format": "uri"
+                    }
+                }
+            }
+        }
+    }
+}
