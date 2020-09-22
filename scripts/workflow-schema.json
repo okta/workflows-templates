@@ -1,0 +1,103 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema",
+    "$id": "https://oinmanager.okta.com/v1/bootstrap/integration.json",
+    "type": "object",
+    "title": "The root schema",
+    "description": "The root schema comprises the entire JSON document.",
+    "required": [
+        "name",
+        "title",
+        "description"
+    ],
+    "additionalProperties": true,
+    "properties": {
+        "name": {
+            "$id": "#/properties/name",
+            "type": "string",
+            "title": "The name schema",
+            "pattern": "^[a-z0-9_]{2,50}$",
+            "maxLength": 50,
+            "minLength": 2,
+            "description": "An explanation about the purpose of this instance."
+        },
+        "title": {
+            "$id": "#/properties/title",
+            "type": "string",
+            "title": "The title schema",
+            "description": "An explanation about the purpose of this instance."
+        },
+        "description": {
+            "$id": "#/properties/description",
+            "type": "string",
+            "title": "The description schema",
+            "description": "An explanation about the purpose of this instance."
+        },
+        "connectors": {
+            "$id": "#/properties/connectors",
+            "type": "array",
+            "title": "The components schema",
+            "additionalItems": true,
+            "items": {
+                    "type": "string",
+                    "title": "The first anyOf schema",
+                    "description": "An explanation about the purpose of this instance."
+                }
+            },
+        "links": {
+            "$id": "#/properties/links",
+            "type": "array",
+            "title": "The links schema",
+            "description": "An explanation about the purpose of this instance.",
+            "additionalItems": true,
+            "items": {
+                "type": "object",
+                "required": [
+                    "title",
+                    "destination"
+                ],
+                "properties": {
+                    "title": {
+                        "type": "string",
+                        "description": "Link title to be displayed"
+                    },
+                    "destination": {
+                        "type": "string",
+                        "format": "uri",
+                        "description": "The link destination URI"
+                    }
+                }
+            }
+        },
+        "features": {
+            "$id": "#/properties/features",
+            "type": "array",
+            "title": "The features schema",
+            "description": "An explanation about the purpose of this instance.",
+            "additionalItems": true,
+            "items": {
+                "type": "string",
+                "enum": [
+                    "SWA",
+                    "SAML",
+                    "OIDC",
+                    "WSFED",
+                    "CREATE",
+                    "UPDATE",
+                    "DEACTIVATE",
+                    "SYNC_PASSWORD",
+                    "GROUP_LINKING",
+                    "SCHEMA_DISCOVERY",
+                    "GROUP_PUSH",
+                    "ATTRIBUTE_MASTERING",
+                    "ATTRIBUTE_WRITEBACK"]
+            }
+        },
+        "logo": {
+            "$id": "#/properties/logo",
+            "type": "string",
+            "format": "uri",
+            "title": "The logo uri",
+            "description": "The integration logo URI."
+        }
+    }
+}
