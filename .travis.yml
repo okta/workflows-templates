@@ -1,5 +1,14 @@
 language: node_js
 node_js: 
- - 10
-script: 
-  - $TRAVIS_BUILD_DIR/travis_release.sh
+  - "stable"
+jobs:
+  include:
+    - stage: "JSON schema validation on workflow.json"
+      before_script:
+        - npm install shelljs
+        - npm install ajv
+      script: 
+        - node $TRAVIS_BUILD_DIR/scripts/schema_validate.js
+    - stage: "File validation rules"
+      script:
+        - $TRAVIS_BUILD_DIR/scripts/travis_release.sh

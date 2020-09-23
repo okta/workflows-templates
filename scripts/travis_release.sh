@@ -14,7 +14,7 @@ echo "branch name ${TRAVIS_BRANCH} and build is $TRAVIS_BUILD_DIR"
 pr_files="$(git diff --name-only ${TRAVIS_BRANCH}...HEAD --)"
 base_dir=$TRAVIS_BUILD_DIR
 echo "base dir is ${base_dir}"
-echo "PR files are ${pr_files}"
+echo "PR files are ${pr_files} \n"
 
 # utility to lookup if element exists in an array 
 array_contains () { 
@@ -52,7 +52,7 @@ validate_dir_name_convention () {
     local dir_regex="^[a-z0-9_]{2,50}$"
     local dir_name=$1
     if ! [[ $dir_name =~ ${dir_regex} ]]; then
-        echo "Invalid directory name. It should match regex pattern ${dir_regex}."
+        echo "INVALID directory name. It should match regex pattern ${dir_regex}."
         fail_and_exit
     fi
 }
@@ -60,7 +60,7 @@ validate_dir_name_convention () {
 # validate if json is valid for files workflow.json and workflow.flopack
 validate_json () {
     if [ $(jq empty > /dev/null 2>&1 ${1}; echo $?) -ne 0 ]; then
-        echo "${1} JSON is invalid."
+        echo "${1} JSON is INVALID."
         fail_and_exit
     fi
 }
@@ -80,7 +80,7 @@ validate_file_exists () {
 validate_http_links () {
     for dest_link in $(jq -r '.links[] | .destination' $1/${const_workflow_json}); do
         if [[ $dest_link == *"github"*  &&  $dest_link != *"$1/${const_read_me}"* ]]; then
-            echo "Readme path in $1/${const_workflow_json} is incorrect."
+            echo "Readme path in $1/${const_workflow_json} is INCORRECT."
             fail_and_exit
         fi
     done
@@ -91,12 +91,12 @@ validate_workflow_name () {
     local workflow_json_path="${1}"
     local workflow_name=$(jq -r '.name' ${workflow_json_path})
     if [ ${workflow_name} != ${dir} ]; then
-        echo "Workflow name ${workflow_name} on file path ${workflow_json_path} is not matching with directory name ${dir}."
+        echo "Workflow name ${workflow_name} on file path ${workflow_json_path} is NOT matching with directory name ${dir}."
         fail_and_exit
     fi
 
     if [ ${#workflow_name} -gt 50 ]; then
-        echo "Workflow name ${workflow_name} on file path ${workflow_json_path} is greater than 50 characters."
+        echo "Workflow name ${workflow_name} on file path ${workflow_json_path} is greater than 50 characters. It SHOULD be less than 50 characters"
         fail_and_exit
     fi
 }
@@ -118,7 +118,7 @@ validate_connectors () {
     for connector in ${workflow_json_connectors}; do
         is_connector_supported=$(jq ".names | contains([$connector])" ${const_supported_connectors})
         if [ "$is_connector_supported" == false ]; then
-            echo "Connector "${connector}" is invalid. Supported connectors are ${supported_connectors}."
+            echo "Connector "${connector}" is INVALID. Supported connectors are ${supported_connectors}."
             fail_and_exit
         fi
     done
@@ -146,7 +146,7 @@ validate_workflow_files () {
 }
 
 fail_and_exit () {
-    echo "Failed"
+    echo "FAILED"
     exit 1
 }
 
