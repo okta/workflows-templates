@@ -42,5 +42,5 @@ Before you get started, you will need:
 
 
 *   You need to have a notification service connected to be able to notify the user
-*   This example will notify the user if either they or somebody else changes their profile (it could be possible to make this a switchable feature, so the user is only notified if they change their profile)
-*   If the user updates their own profile in a third party application (outside of Okta) that is updating their profile in Okta via API's, if this is using the SWSS API key, it will show as being somebody else. If the third party application uses OAuth for Okta API's, then it should show that the user updated their profile
+*   This example will notify the user if either they or somebody else changes their profile (it is possible to make this a switchable feature, so the user is only notified if they change their profile)
+*   If the user updates their own profile through a third party application (outside of Okta), like updating their profile in Okta via API's, and the third party app is using a SWSS API key, then the updater will be shown as somebody else. On the other hand, if the third party application uses OAuth for Okta API's, then it should show the user updated their profile instead
