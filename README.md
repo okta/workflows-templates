@@ -38,3 +38,7 @@ Templates are pre-built automated business processes that can be imported in Okt
 #### How to SKIP CI process
 
 *   Add [skip ci] or [ci skip] in commit message in case blocked by CI. Although, this is not recommended but if build is queued for longer time or need to merge template due to urgent fixes, it is probably OK to do so.
+
+*   Change the last commit message with command `git commit --amend`. Add [skip ci] or [ci skip] to commit message
+
+*   Push the remote branch with force `-f` option e.g `git push -f origin <branch-name>`
