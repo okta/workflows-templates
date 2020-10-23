@@ -1,0 +1,19 @@
+{
+  "name": "onboard_and_offboard_with_office365",
+  "title": "onboard_and_offboard_with_office365",
+  "description": "This workflow will demonstrate the ability to disable a user in Office 365and then after a specified delay remove the assigned Office 365 licenses. Another part of the workflow will reactivate the user in Office 365 and reassign the previously removed Office 365 licenses.",
+  "connectors": [
+    "okta",
+    "office365admin"
+  ],
+  "links": [
+    {
+      "title": "Video Walk-through",
+      "destination": "https://www.youtube.com/watch?v=suBghMjJ43k"
+    },
+    {
+      "title": "Setup Documentation",
+      "destination": "https://github.com/workflows-templates/workflows/Onboard_and_Offboard_with_Office365/readme.md"
+    }
+  ]
+}
