@@ -79,8 +79,8 @@ validate_file_exists () {
 # verify if workflow.json file has valid read me file URL
 validate_http_links () {
     for dest_link in $(jq -r '.links[] | .destination' $1/${const_workflow_json}); do
-        if [[ $dest_link == *"github"*  &&  $dest_link != *"$1/${const_read_me}"* ]]; then
-            echo "Readme path in $1/${const_workflow_json} is INCORRECT."
+        if [[ $dest_link == *"github"*  &&  $dest_link == *"${const_read_me}"* && $dest_link != *"$1/${const_read_me}"* ]]; then
+            echo "Readme path in $1/${const_workflow_json} is INCORRECT for link ${dest_link}."
             fail_and_exit
         fi
     done
