@@ -9,7 +9,7 @@ This page outlines a sample workflow template that contains three workflows:
 An **Office 365 Staged Deactivation** flow: In this flow, once a user is removed from a specified Okta group:
 * The users Office 365 account will be disabled immediately.
 * An email to the users manager to that effect will be sent.
-* After a specified delay, the user�s Office 365 license will be removed.
+* After a specified delay, the user's Office 365 license will be removed.
 * An email to the users manager to that effect will be sent.  \
 
 An **Office 365 Activation** flow: Once a user is added to a specified Okta group:
@@ -23,7 +23,7 @@ A Store **All Microsoft License** flow: This flow stores the current Microsoft s
 
 ### Pre-Requisites:
 
-For this flow template in order to send an email to the manager on the creation of a user, an Office 365 Mail connection and an Office 365 Admin connection needs to be configured in addition to the Okta tenant connection. _You will need to have these connections created and authorized prior to installing the flow pack. _
+For this flow template in order to send an email to the manager on the creation of a user, an Office 365 Mail connection and an Office 365 Admin connection needs to be configured in addition to the Okta tenant connection. _You will need to have these connections created and authorized prior to installing the template.
 
 You will also need Access to the Microsoft Office 365 Admin Portal as an admin user. [https://admin.microsoft.com/AdminPortal/](https://admin.microsoft.com/AdminPortal/)
 
@@ -84,13 +84,13 @@ Create a target user in the Office 365 tenant
     * Username domain (you should select your email domain here not your .onmicrosoft.com domain here)
     * Password
 
-5. Leave Require this user to change their password when they first sign in� and �Send password in email upon completion� unchecked.
+5. Leave Require this user to change their password when they first sign in and Send password in email upon completion unchecked.
 
 6. Record the First name, Last name, Username, Username domain and Password somewhere for the target user as you will need them later. _
 
 7. Click Next
 
-8. On the Assign Product licenses page ensure that �Assign user a product license� is checked. It should default to your subscription license for your tenant.
+8. On the Assign Product licenses page ensure that Assign user a product license is checked. It should default to your subscription license for your tenant.
 
 9. Click Next
 
@@ -100,7 +100,7 @@ Create a target user in the Office 365 tenant
 
 ### Okta Organization Setup Steps
 
-Create the Okta group that will be used to trigger the Okta Workflows in this flow pack.
+Create the Okta group that will be used to trigger the Okta Workflows.
 
 1. Login to your Okta tenant as a Super Administrator user.
 
@@ -114,30 +114,30 @@ Create the Okta group that will be used to trigger the Okta Workflows in this fl
 
 6. Click on Add Group
 
-Create the Okta group that will be used to trigger the Okta Workflows in this flow pack.
+Create the Okta group that will be used to trigger the Okta Workflows in this template.
 
 1. Navigate to Directory -> People
 
 2. Click on Add Person
 
-3. Enter the following information based on information that you recorded above in the �Create a target user in the Office 365 tenant� step. 
+3. Enter the following information based on information that you recorded above in the Create a target user in the Office 365 tenant step. 
     * First name: use the First name that you recorded for target user
     * Last name: user the Last name that you recorded for the target user
     * Username: use the Username that you recorded for the target user +  \
     the Username domain that you recorded for the target user (ex. [Tammy.tester@example.com](mailto:Tammy.tester@example.com))
     * Primary email: this should be the same as the Username field
     * Password: Select Set by admin
-    * Enter Password: the desired password for this user.  (for ease of testing this Okta workflow, make it the same password you recorded for this user in the �Create a target user in the Office 365 tenant� step.
+    * Enter Password: the desired password for this user.  (for ease of testing this Okta workflow, make it the same password you recorded for this user in the Create a target user in the Office 365 tenant step.
 
 4. Click the Save button
 
-5. Enter the following information based on information that you recorded above in the �Create a manager user in the Office 365 tenant� step.
+5. Enter the following information based on information that you recorded above in the Create a manager user in the Office 365 tenant step.
     * First name: use the First name that you recorded for manager user
     * Last name: user the Last name that you recorded for the manager user
     * Username: use the Username that you recorded for the manager user +  \@ + the Username domain that you recorded for the manager user (ex. [Terry.manager@example.com](mailto:Tammy.tester@example.com))
     * Primary email: this should be the same as the Username field
-    * Password: Select �Set by admin�
-    * Enter Password: the desired password for this user.  (for ease of testing this Okta workflow, make it the same password you recorded for this user in the �Create a manager user in the Office 365 tenant� step.
+    * Password: Select Set by admin
+    * Enter Password: the desired password for this user.  (for ease of testing this Okta workflow, make it the same password you recorded for this user in the Create a manager user in the Office 365 tenant step.
 6. Edit the target user in Okta to add the manager
 
 7. Navigate to Directory -> People
@@ -158,13 +158,7 @@ Create the Okta group that will be used to trigger the Okta Workflows in this fl
 
 ### Okta Workflows Setup Steps
 
-Install the flow pack
-
-1. Create a new folder in Workflows and label the name of the folder **_Office 365_**
-
-2. Click on the gear icon for the new Office 365 folder and select import.
-
-3. Drag and Drop the flow pack that you downloaded into the Choose File section and click OK
+Install the template
 
 Modify and run the Store all Microsoft Licenses workflow
 
@@ -184,7 +178,7 @@ Modify and run the Store all Microsoft Licenses workflow
 
 7. Open the O365 Staged Deactivation workflow
 
-8. Leave the value of the Office Group as it already matches the Okta group that you created in �Create the Okta group that will be used to trigger the Okta Workflows in this flow pack� step above
+8. Leave the value of the Office Group as it already matches the Okta group that you created in the Create the Okta group step above that will be used to trigger the Okta Workflows.
 
 9. Change the setup variables as desired:
 
@@ -211,7 +205,7 @@ Modify and run the Store all Microsoft Licenses workflow
 
 3. Open and login to the Microsoft Office 365 [Admin Portal](https://admin.microsoft.com/AdminPortal/) as your Office 365 admin user.
 
-4. Go to Users ? Active Users
+4. Go to Users->Active Users
 
 5. Click on the username for the test user that is a member of your Okta group.
 
