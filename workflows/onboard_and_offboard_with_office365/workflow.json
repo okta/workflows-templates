@@ -1,6 +1,6 @@
 {
   "name": "onboard_and_offboard_with_office365",
-  "title": "onboard_and_offboard_with_office365",
+  "title": "Onboard and Offboard Users With Office 365 Admin",
   "description": "This workflow will demonstrate the ability to disable a user in Office 365 Admin and then after a specified delay remove the assigned Office 365 licenses. Another part of the workflow will reactivate the user in Office 365 Admin and reassign the previously removed Office 365 Admin licenses.",
   "connectors": [
     "okta",
