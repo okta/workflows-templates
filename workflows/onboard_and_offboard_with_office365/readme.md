@@ -10,7 +10,7 @@ An **Office 365 Staged Deactivation** flow: In this flow, once a user is removed
 * The users Office 365 account will be disabled immediately.
 * An email to the users manager to that effect will be sent.
 * After a specified delay, the user's Office 365 license will be removed.
-* An email to the users manager to that effect will be sent.  \
+* An email to the users manager to that effect will be sent.
 
 An **Office 365 Activation** flow: Once a user is added to a specified Okta group:
 * The users Office 365 account will be enabled immediately.
