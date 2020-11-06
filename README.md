@@ -42,3 +42,13 @@ Templates are pre-built automated business processes that can be imported in Okt
 *   Change the last commit message with command `git commit --amend`. Add [skip ci] or [ci skip] to commit message
 
 *   Push the remote branch with force `-f` option e.g `git push -f origin <branch-name>`
+
+*   Test CI script on local setup
+    *   npm install ajv
+    *   npm install shelljs
+
+    ### Run below script from root of git repo. All files should have commit to have diff with master
+
+    *   git checkout `remotebranch`
+    *   node scripts/schema_validate.js `remotebranch`
+    *   sh scripts/travis_release.sh `remotebranch`
