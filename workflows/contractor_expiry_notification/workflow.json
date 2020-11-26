@@ -13,11 +13,11 @@
     },
     {
       "title": "Sample Data",
-      "destination": "https://github.com/okta/workflows-templates/blob/master/workflows/contractor-expiry-notification/configurationTableData.csv"
+      "destination": "https://github.com/okta/workflows-templates/blob/master/workflows/contractor_expiry_notification/configurationTableData.csv"
     }, 
     {
       "title": "Setup Documentation",
-      "destination": "https://github.com/okta/workflows-templates/blob/master/workflows/contractor-expiry-notification/readme.md"
+      "destination": "https://github.com/okta/workflows-templates/blob/master/workflows/contractor_expiry_notification/readme.md"
 
     }
   ]

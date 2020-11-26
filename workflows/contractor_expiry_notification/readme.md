@@ -12,7 +12,7 @@ These workflows also demonstrate how static configuration values, like days, tim
 
 ## Workflow Summary
 
-Below is a summary of the flows included in the flowpac:
+Below is a summary of the flows included in the template:
 
 1 - Contractor Expiry Notification
 
