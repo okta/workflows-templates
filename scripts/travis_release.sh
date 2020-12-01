@@ -8,13 +8,22 @@ const_supported_connectors="connectors.json"
 
 # save workflow directories in glorbal variable
 directories=()
-echo "branch name ${TRAVIS_BRANCH} and build is $TRAVIS_BUILD_DIR"
-
-# get only pull request files from branch. TODO: any other better way
-pr_files="$(git diff --name-only ${TRAVIS_BRANCH}...HEAD --)"
-base_dir=$TRAVIS_BUILD_DIR
+if [ -z "$1" ]
+    then
+        # running travis-ci config
+        branch_name=$TRAVIS_BRANCH
+        base_dir=$TRAVIS_BUILD_DIR
+        pr_files="$(git diff --name-only ${branch_name}...HEAD --)"
+    else
+        # running local config
+        branch_name=$1
+        base_dir=$PWD
+        pr_files="$(git diff --name-only ${branch_name}..master --)"
+fi
+# get only pull request files from branch.
 echo "base dir is ${base_dir}"
 echo "PR files are ${pr_files} \n"
+echo "branch name ${branch_name} and build is ${base_dir}"
 
 # utility to lookup if element exists in an array 
 array_contains () { 
@@ -79,8 +88,8 @@ validate_file_exists () {
 # verify if workflow.json file has valid read me file URL
 validate_http_links () {
     for dest_link in $(jq -r '.links[] | .destination' $1/${const_workflow_json}); do
-        if [[ $dest_link == *"github"*  &&  $dest_link != *"$1/${const_read_me}"* ]]; then
-            echo "Readme path in $1/${const_workflow_json} is INCORRECT."
+        if [[ $dest_link == *"github"*  &&  $dest_link == *"${const_read_me}"* && $dest_link != *"$1/${const_read_me}"* ]]; then
+            echo "Readme path in $1/${const_workflow_json} is INCORRECT for link ${dest_link}."
             fail_and_exit
         fi
     done

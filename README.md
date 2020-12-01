@@ -38,3 +38,18 @@ Templates are pre-built automated business processes that can be imported in Okt
 #### How to SKIP CI process
 
 *   Add [skip ci] or [ci skip] in commit message in case blocked by CI. Although, this is not recommended but if build is queued for longer time or need to merge template due to urgent fixes, it is probably OK to do so.
+
+*   Change the last commit message with command `git commit --amend`. Add [skip ci] or [ci skip] to commit message
+
+*   Push the remote branch with force `-f` option e.g `git push -f origin <branch-name>`
+
+*   Test CI script on local setup
+    ### Install dependencies (one time only)
+    *   npm install ajv
+    *   npm install shelljs
+
+    ### Run below script from root of git repo to test remote branch. All files should have commit to diff with master
+
+    *   git checkout `remotebranch`
+    *   node scripts/schema_validate.js `remotebranch`
+    *   sh scripts/travis_release.sh `remotebranch`
