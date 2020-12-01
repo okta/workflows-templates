@@ -37,8 +37,8 @@ function processArgsAndInitializeVals() {
   } else {
     console.log('Running in Travis-CI config');
     baseDir = shell.exec('echo ${TRAVIS_BUILD_DIR}').replace(/\n/g, '');
-    branchName = shell.exec(`echo ${TRAVIS_BRANCH}`);
-    prWorkFlowJSONFiles = shell.exec(`git diff --name-only ${TRAVIS_BRANCH}..HEAD -- \'workflows/*/*.json\'`).replace(/\n/g, ' ');
+    branchName = shell.exec('echo ${TRAVIS_BRANCH}');
+    prWorkFlowJSONFiles = shell.exec('git diff --name-only ${TRAVIS_BRANCH}..HEAD -- \'workflows/*/*.json\'').replace(/\n/g, ' ');
   }
 }
 
