@@ -1,0 +1,4 @@
+rowId,system.updated,key,value,description
+9b4e5690-fd68-11ea-826b-db5dc06b3577,1601003405406,days,30,The number of days in the future to check for contract expiry
+e5af6c10-fd63-11ea-bd88-d67c72b1f4ec,1601347609333,timezone,America/Los_Angeles,The local timezone. See full list here: https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
+e5ab4d60-fd63-11ea-84dd-a7b88a175fe1,1601347655763,addressList,test.user1@example.com,The email address used to send the notifications to. This can be a list of addresses where each address is delimited with a comma.
