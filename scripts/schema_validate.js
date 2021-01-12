@@ -1,4 +1,4 @@
-const Ajv = require('ajv');
+const Ajv = require('ajv').default;
 const shell = require('shelljs')
 
 // Fetch the JSON content for schema
@@ -11,7 +11,7 @@ const workflowSchema = require('./workflow-schema.json');
 function processPRFiles() {
   console.log (`PR files to validate ${prWorkFlowJSONFiles} for basedir ${baseDir} on branch ${branchName}`);
   const fileArr = prWorkFlowJSONFiles.split(" ").filter(item => item);
-  const ajv = Ajv({allErrors: true});
+  const ajv = new Ajv({allErrors: true, strict: false});
   const validate = ajv.compile(workflowSchema);
   fileArr.forEach(file => {
     console.log (`processing file ${file}`);
