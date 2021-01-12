@@ -6,7 +6,7 @@ jobs:
     - stage: "JSON schema validation on workflow.json"
       before_script:
         - npm install shelljs
-        - npm install ajv
+        - npm install ajv@7.0.3
       script: 
         - node $TRAVIS_BUILD_DIR/scripts/schema_validate.js
     - stage: "File validation rules"
