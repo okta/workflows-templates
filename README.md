@@ -45,7 +45,7 @@ Templates are pre-built automated business processes that can be imported in Okt
 
 *   Test CI script on local setup
     ### Install dependencies (one time only)
-    *   npm install ajv
+    *   npm install ajv@7.0.3
     *   npm install shelljs
 
     ### Run below script from root of git repo to test remote branch. All files should have commit to diff with master
