@@ -1,0 +1,15 @@
+{
+  "name": "onfido_create_applicant",
+  "title": "Onfido Create Applicant",
+  "description": "Using the Okta User Created Event, this workflow will create an Onfido Applicant and save the applicant ID into the user's profile.",
+  "connectors": [
+    "okta",
+    "http"
+  ],
+  "links": [
+    {
+      "title": "Setup Documentation",
+      "destination": "https://github.com/jhickmanit/onfido-create-applicant/blob/master/readme.md"
+    }
+  ]
+}
