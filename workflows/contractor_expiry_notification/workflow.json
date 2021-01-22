@@ -6,6 +6,10 @@
     "okta",
     "office365mail"
   ],
+  "details": {
+    "flowCount": 4,
+    "stashCount": 2
+  },
   "links": [
     {
       "title": "Video Walk-through",
