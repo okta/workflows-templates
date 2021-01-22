@@ -5,6 +5,10 @@
    "connectors": [
       "okta", "googlesheets", "gmail"
    ],
+   "details": {
+    "flowCount": 1,
+    "stashCount": 1
+  },
    "links": [
       {
          "title": "Video Walk-through",

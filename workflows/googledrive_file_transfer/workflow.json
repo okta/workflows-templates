@@ -5,6 +5,10 @@
   "connectors": [
     "googledrive"
   ],
+    "details": {
+    "flowCount": 3,
+    "stashCount": 1
+  },
   "links": [
     {
       "title": "Video",
