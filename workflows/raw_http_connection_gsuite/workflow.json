@@ -1,0 +1,15 @@
+{
+   "name": "raw_http_connection_gsuite",
+   "title": "Raw HTTP Connector to GSuite",
+   "description": "Our current Workflows connector for Gsuite Admin does not include all functions within Google Workspace. The Custom API card is also restricted to the Directory and Licensing APIs. If there are other actions that you’d like to execute the Google has exposed an API for, we can use this guide to create a raw HTTP connector and use that to request the scopes needed.",
+   "links": [
+      {
+         "title": "Video Walk-through",
+         "destination": "https://www.youtube.com/watch?v=y00PYCgnQfI"
+      },
+      {
+         "title": "Setup Documentation",
+         "destination": "https://github.com/okta/workflows-templates/blob/master/workflows/raw_http_connection_gsuite/readme.md"
+      }
+   ]
+}
