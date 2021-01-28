@@ -3,11 +3,11 @@
 
 ## Overview
 
-Many organizations utilize contractors as well as full time employees. A contractor would usually have a contract expiry date. That is the date at which their current contract is due to expire. Certain people within the organization, like the contractor's manager, will need to be notified ahead of the expiry date, so they can potentially renew the employees contract.
+Many organizations utilize contractors in addition to full time employees. A contractor typically has a contract expiry date. This is the date when their current contract is due to expire. Certain people within the organization, such as the contractor's manager, need to be notified ahead of the expiry date so they can potentially renew the employee's contract.
 
-This template contains workflows which read a custom attribute on the user's Okta profile. This custom attribute holds the user's current contract expiry date. Based on a set number of days, a future date is calculated. The workflows compile a list of all users that have a matching contract expiry date and sends emails to a pre-configured list of recipients.
+This template contains Flows which read a custom attribute on the user's Okta profile. This custom attribute holds the user's current contract expiry date. Based on a set number of days, a future date is calculated. The Flows compile a list of all users that have a matching contract expiry date and sends emails to a pre-configured list of recipients.
 
-These workflows also demonstrate how static configuration values, like days, timezone and email recipients, can be externalized into a workflows table and read at runtime. This reduces the need to make modifications to the workflows, such that changes only involve updating the respective configuration table.
+These Flows also demonstrate how static configuration values, like days, timezone and email recipients, can be externalized into a Flow table and read at runtime. This reduces the need to make modifications to the Flows such that changes only involve updating the respective configuration table.
 
 
 ## Workflow Summary

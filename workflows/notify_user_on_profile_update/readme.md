@@ -1,9 +1,7 @@
 # Notify a user when their profile is updated
 
 ### <span style="text-decoration:underline;">Overview</span>
-Users profiles can be updated for numerous reasons, it might be an automated changed, a scheduled change by the HR team, or even a personal change is done by the user themselves. However, can you always be sure that the data that has been changed is now correct or done so legitimately by the user? 
-
-This flow allows you to send a notification to the user (e.g. in a slack message or via email notification) to let them know that their profile has been updated, so they can review the changes and contact somebody if it looks incorrect.
+A user profile may be updated for many reasons, including a scheduled change by HR, a change to personal information performed by the user themselves, or some type of automated change. But how can you always be sure that the data in the user profile is accurate and was updated legitimately by the user or an authorized admin? This Flow allows you to send a message (for example, through email or Slack) to notify the user that their profile was updated, and they can be prompted to review and confirm those changes.
 
 ### <span style="text-decoration:underline;">Before you get Started / Prerequisites</span>
 Before you get started, you will need:
