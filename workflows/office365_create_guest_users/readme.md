@@ -1,6 +1,6 @@
 # Overview
 
-More and more companies are utilizing several Office365 tenants. This is especially evident in M&A activities. The result of this is that users need access across multiple tenants. Many are solving the licensing aspect of this via the Microsoft Guest account but automating the creation and management of these users is cumbersome.  This flow will help you get started in creating guest accounts with no code or special infrastructure needed to host code.  
+More companies are using multiple Office 365 tenants. This is especially evident in M&A activities. As a result, users need access across multiple tenants. Many are solving the licensing aspect of this through a Microsoft Guest account. But automating the creation and management of these users is cumbersome.  This Flow will get you started with creating guest accounts with no code nor special infrastructure to host code. 
 
 
 ## Before you get Started/Prerequisites
