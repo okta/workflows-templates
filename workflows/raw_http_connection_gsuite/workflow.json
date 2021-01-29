@@ -2,6 +2,9 @@
    "name": "raw_http_connection_gsuite",
    "title": "Raw HTTP Connector to GSuite",
    "description": "Our current Workflows connector for Gsuite Admin does not include all functions within Google Workspace. The Custom API card is also restricted to the Directory and Licensing APIs. If there are other actions that you’d like to execute the Google has exposed an API for, we can use this guide to create a raw HTTP connector and use that to request the scopes needed.",
+   "connectors": [
+      "googledirectory"
+      ],
    "links": [
       {
          "title": "Video Walk-through",
