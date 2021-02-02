@@ -5,6 +5,10 @@
    "connectors": [
       "okta", "office365admin", "googledirectory"
    ],
+   "details": {
+    "flowCount": 9,
+    "stashCount": 1
+  },
    "links": [
       {
          "title": "Video Walk-through",

@@ -5,6 +5,10 @@
   "connectors": [
     "okta" , "slack"
   ],
+  "details": {
+    "flowCount": 4,
+    "stashCount": 0
+  },
   "links": [
     {
       "title": "Video Walk-through",
