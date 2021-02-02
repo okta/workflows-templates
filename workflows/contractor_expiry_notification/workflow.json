@@ -1,7 +1,7 @@
 {
   "name": "contractor_expiry_notification",
   "title": "Contractor Expiry Notification",
-  "description": "Many organizations utilize contractors as well as full time employees. A contractor would usually have a contract expiry date. That is the date at which their current contract is due to expire. Certain people within the organization, like the contractors manager, will need to be notified ahead of the expiry date, so they can potentially renew the employees contract.",
+  "description": "Many organizations utilize contractors in addition to full time employees. A contractor typically has a contract expiry date. This is the date when their current contract is due to expire. Certain people within the organization, such as the contractor's manager, need to be notified ahead of the expiry date so they can potentially renew the employee's contract.",
   "connectors": [
     "okta",
     "office365mail"
