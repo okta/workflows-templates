@@ -58,72 +58,68 @@ Along with the connectors specified above you will need:
 
 ## Setup Steps
 
-1. Create a new folder in Workflows and label it **_G Suite Flows_**
+1. In Workflows find [Templates] button at the top of the page an click on it.
 
-2. Download workflow template [ here](https://okta.box.com/s/iwbxmhdq2yrlhsk9lih1vogrd39o5vvt)
+2. Find and select: "Manage G Suite User Licenses" flow.
 
-3. Click on the gear icon for the new G Suite Flow folder and select import.
+3.Find and click on [Add template] button > and click on  [Add Template] in the  appeared pop-up. A "Manage G Suite User Licenses" folder is automatically added and the user is navigated there, once the flow is built.
 
-4. Click on Choose File button and find downloaded template file or you can just drag and drop it to Choose File section. Then click OK.
-
-5. Navigate to the G Suite Flows folder.
-
-6. Turn on the following flows:
+4. Turn on the following flows:
 
     *   G Suite Store License flow
     *   [Child] Delete Row from Table
     *   [Child] Add License Row to Table
 
-7. Open the G Suite Store License flow
+5. Open the G Suite Store License flow
 
-8. Change the OktaGroupName variable value in the Assign card to the desired Okta group name that will be used to trigger the flow when a user is added or removed from this group.
+6. Change the OktaGroupName variable value in the Assign card to the desired Okta group name that will be used to trigger the flow when a user is added or removed from this group.
 
-9. Change the G Suite License to Assign variable value in the Assign card to the name of the G Suite license you wish to assign a user in the G Suite Activation flow.
+7. Change the G Suite License to Assign variable value in the Assign card to the name of the G Suite license you wish to assign a user in the G Suite Activation flow.
 
-10. Save the G Suite Store License flow.
+8. Save the G Suite Store License flow.
 
-11. Run the G Suite Store License flow.
+9. Run the G Suite Store License flow.
 
-12. Navigate to the Tables tab and select G Suite License table and ensure that one record exists.
+10. Navigate to the Tables tab and select G Suite License table and ensure that one record exists.
 
-13. If there are no records in the table, validate the value in the G Suite License to Assign - Assign a card to ensure that the name of the desired license is correct and rerun the flow if necessary.
+11. If there are no records in the table, validate the value in the G Suite License to Assign - Assign a card to ensure that the name of the desired license is correct and rerun the flow if necessary.
 
-14. Open the G Suite Initialization Flow.
+12. Open the G Suite Initialization Flow.
 
-15. Change the values for the G Suite target user.
+13. Change the values for the G Suite target user.
 
     * Change the User Name field to match the email address of your existing G Suite target user. (The user that will have licenses removed or added to them)
 
     * Change the First Name, Last Name, and Password fields as desired for the target user that will be created.
 
-16. Change the values for the G Suite manager user.
+14. Change the values for the G Suite manager user.
 
     * Change the User Name field to match the email address of your existing G Suite manager user. (The user that receives the email messages about the target user's licenses being removed or added.) This user must have a valid email inbox so you can check the email messages.
 
     * Change the First Name, Last Name, and Password fields as desired for the target user that will be created.
 
-17. Change the Okta group name if desired.
+15. Change the Okta group name if desired.
 
     * Change the name of the Okta group to use for the demo. (if desired)
 
-18. Save the G Suite Initialization Flow.
+16. Save the G Suite Initialization Flow.
 
-19. Run the G Suite Initialization Flow.
+17. Run the G Suite Initialization Flow.
 
-20. Open the G Suite Staged Deactivation workflow.
+18. Open the G Suite Staged Deactivation workflow.
 
-21. Change the setup variables as desired:
+19. Change the setup variables as desired:
     * **Okta Group Name**: The name of the existing Okta group that will be used to trigger the G Suite Workflows. If you used the G Suite Initialization flow make sure the group name is the same as the one defined when you ran that flow.
     * **Delay in Minutes**: The increment of time as specified by the Delay Interval in minutes that will transpire between the time the user's G Suite account is disabled and the user`s G Suite licenses are removed.
 
-22. After making changes to the G Suite Staged Deactivation workflow click the save icon to save the changes.
+20. After making changes to the G Suite Staged Deactivation workflow click the save icon to save the changes.
 
-23. Open the G Suite Activation workflow and change the Okta Group Name to match the Okta group that you defined in the G Suite Staged Deactivation workflow.
+21. Open the G Suite Activation workflow and change the Okta Group Name to match the Okta group that you defined in the G Suite Staged Deactivation workflow.
     * **Okta Group Name**:  The name of the existing Okta group that will be used to trigger the G Suite Workflows. Make sure this is the same group name you set in the G Suite Staged Deactivation flow.
 
-24. Click the Save icon to save the changes.
+22. Click the Save icon to save the changes.
 
-25. Turn on both workflows by clicking the On / Off button so that they are green for the workflows below:
+23. Turn on both workflows by clicking the On / Off button so that they are green for the workflows below:
     * **G Suite Activation**
     * **G Suite Staged Deactivation**
 
