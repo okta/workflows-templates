@@ -6,6 +6,10 @@
     "okta",
     "office365admin"
   ],
+  "details": {
+    "flowCount": 7,
+    "stashCount": 1
+  },
   "links": [
     {
       "title": "Video Walk-through",

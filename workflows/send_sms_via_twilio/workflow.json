@@ -4,6 +4,10 @@
    "description": "Use Okta Workflows to send SMS messages via Twilio",
    "connectors": [
    ],
+   "details": {
+    "flowCount": 1,
+    "stashCount": 0
+  },
    "links": [
       {
          "title": "Video Walk-through",

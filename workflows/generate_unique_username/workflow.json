@@ -5,6 +5,10 @@
    "connectors": [
       "okta"
    ],
+   "details": {
+    "flowCount": 7,
+    "stashCount": 0
+  },
    "links": [
       {
          "title": "Video Walk-through",
