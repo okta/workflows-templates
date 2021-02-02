@@ -6,6 +6,10 @@
     "servicenow",
     "okta"
   ],
+  "details": {
+    "flowCount": 2,
+    "stashCount": 1
+  },
   "links": [
     {
       "title": "Video",
