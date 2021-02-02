@@ -110,7 +110,7 @@ Along with the connectors specified above you will need:
 
 19. Change the setup variables as desired:
     * **Okta Group Name**: The name of the existing Okta group that will be used to trigger the G Suite Workflows. If you used the G Suite Initialization flow make sure the group name is the same as the one defined when you ran that flow.
-    * **Delay in Minutes**: The increment of time as specified by the Delay Interval in minutes that will transpire between the time the user's G Suite account is disabled and the user`s G Suite licenses are removed.
+    * **Delay in Minutes**: The increment of time as specified by the Delay Interval in minutes that will transpire between the time the user's G Suite account is disabled and the user's G Suite licenses are removed.
 
 20. After making changes to the G Suite Staged Deactivation workflow click the save icon to save the changes.
 
