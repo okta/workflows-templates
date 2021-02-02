@@ -39,6 +39,23 @@
                 "title": "The first anyOf schema"
             }
         },
+        "details": {
+            "$id": "#/properties/details",
+            "type": "object",
+            "title": "The details schema",
+            "required": [
+                "flowCount",
+                "stashCount"
+            ],
+            "properties": {
+                "flowCount": {
+                    "type": "integer"
+                },
+                "stashCount": {
+                    "type": "integer"
+                }
+            }
+        },
         "links": {
             "$id": "#/properties/links",
             "type": "array",
