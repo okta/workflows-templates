@@ -6,7 +6,7 @@ This page outlines a workflows template that contains two workflows:
 
 A **G Suite Staged Deactivation**: In this flow, once a user is removed from a specified Okta group:
 
-* The user`s G Suite account will be disabled immediately.
+* The user's G Suite account will be disabled immediately.
 
 * An email to the user's manager to that effect will be sent.
 
@@ -98,7 +98,7 @@ Along with the connectors specified above you will need:
 
 16. Change the values for the G Suite manager user.
 
-    * Change the User Name field to match the email address of your existing G Suite manager user. (The user that receives the email messages about the target user`s licenses being removed or added.) This user must have a valid email inbox so you can check the email messages.
+    * Change the User Name field to match the email address of your existing G Suite manager user. (The user that receives the email messages about the target user's licenses being removed or added.) This user must have a valid email inbox so you can check the email messages.
 
     * Change the First Name, Last Name, and Password fields as desired for the target user that will be created.
 
@@ -114,7 +114,7 @@ Along with the connectors specified above you will need:
 
 21. Change the setup variables as desired:
     * **Okta Group Name**: The name of the existing Okta group that will be used to trigger the G Suite Workflows. If you used the G Suite Initialization flow make sure the group name is the same as the one defined when you ran that flow.
-    * **Delay in Minutes**: The increment of time as specified by the Delay Interval in minutes that will transpire between the time the user`s G Suite account is disabled and the user`s G Suite licenses are removed.
+    * **Delay in Minutes**: The increment of time as specified by the Delay Interval in minutes that will transpire between the time the user's G Suite account is disabled and the user`s G Suite licenses are removed.
 
 22. After making changes to the G Suite Staged Deactivation workflow click the save icon to save the changes.
 
@@ -146,15 +146,15 @@ Along with the connectors specified above you will need:
 
 8. You should see an email message that the user removed from the Okta group specified has been disabled in G-Suite.
 
-9. If you return to the G Suite Admin Portal and refresh the page, then select that user, you`ll see that user has been suspended by admin, but the user still has and G Suite License assigned.
+9. If you return to the G Suite Admin Portal and refresh the page, then select that user, you'll see that user has been suspended by admin, but the user still has an G Suite License assigned.
 
 10. Then after the specified delay, (in the default configuration that is one minute) the manager gets an email that the G Suite license for the target user has been removed.
 
 11. If you scroll down the page after refreshing the page, sure enough, the user targeted is unlicensed.
 
-12. Now we will reset the user`s G Suite status. Put that same user back in the Okta specified group.
+12. Now we will reset the user's G Suite status. Put that same user back in the Okta specified group.
 
-13. The manager will get an email that the users G Suite user has been enabled and license restored.
+13. The manager will get an email that the user's G Suite user has been enabled and license restored.
 
 14. Sure enough if you return to the G Suite Admin Portal and refresh the page, then click on the target user, you can see that the license has been restored and the user is allowed to sign in again.
 

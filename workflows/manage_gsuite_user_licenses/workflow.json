@@ -1,7 +1,7 @@
 {
   "name": "manage_gsuite_user_licenses",
   "title": "Manage G Suite User Licenses",
-  "description": "This workflow will demonstrate the ability to disable a user in G Suite and then after a specified delay removes the assigned G Suite licenses.  Another part of the workflow will reactivate the user in G Suite and reassign the previously removed G Suite licenses.",
+  "description": "This Flow allows you to disable a user in G Suite and then after a specified delay removes their assigned G Suite licenses. Another part of the Flow will reactivate the user in G Suite and reassign the previously removed G Suite licenses.",
   "connectors": [
     "okta",
     "googledirectory",
