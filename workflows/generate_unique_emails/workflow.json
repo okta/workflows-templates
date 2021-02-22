@@ -1,7 +1,7 @@
 {
    "name": "generate_unique_emails",
    "title": "Generate Unique Emails",
-   "description": "To onboard users in an organization, IT needs to generate unique email addresses for their end users in downstream applications like Office365 and G Suite. This flow generates the unique email address for all the users onboardeded into Okta.",
+   "description": "To onboard users in an organization, IT needs to generate unique email addresses for their end users in downstream applications like Office365 and G Suite. This flow generates the unique email address for all the users onboarded into Okta.",
    "connectors": [
       "okta", "office365admin", "googledirectory"
    ],
