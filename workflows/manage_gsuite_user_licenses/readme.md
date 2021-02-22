@@ -62,7 +62,7 @@ Along with the connectors specified above you will need:
 
 2. Find and select: "Manage G Suite User Licenses" flow.
 
-3.Find and click on [Add template] button > and click on  [Add Template] in the  appeared pop-up. A "Manage G Suite User Licenses" folder is automatically added and the user is navigated there, once the flow is built.
+3. Find and click on [Add template] button > and click on  [Add Template] in the  appeared pop-up. A "Manage G Suite User Licenses" folder is automatically added and the user is navigated there, once the flow is built.
 
 4. Turn on the following flows:
 
