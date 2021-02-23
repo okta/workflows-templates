@@ -1,0 +1,24 @@
+{
+  "name": "manage_gsuite_user_licenses",
+  "title": "Manage G Suite User Licenses",
+  "description": "This Flow allows you to disable a user in G Suite and then after a specified delay removes their assigned G Suite licenses. Another part of the Flow will reactivate the user in G Suite and reassign the previously removed G Suite licenses.",
+  "connectors": [
+    "okta",
+    "googledirectory",
+    "gmail"
+  ],
+  "details": {
+    "flowCount": 6,
+    "stashCount": 1
+  },
+  "links": [
+    {
+      "title": "Video Walk-through",
+      "destination": "https://www.youtube.com/watch?v=xr44icl7Gl0"
+    },
+    {
+      "title": "Setup Documentation",
+      "destination": "https://github.com/okta/workflows-templates/blob/master/workflows/manage_gsuite_user_licenses/readme.md"
+    }
+  ]
+}
