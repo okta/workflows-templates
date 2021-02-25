@@ -1,0 +1,24 @@
+{
+  "name": "flow_folder_versioning_github",
+  "title": "Versioning for Flows and Folders with Github",
+  "description": "Versioning for Flows and Folders will allow a workflow builder to back-up their flows on an on-demand or automated basis to an external system like Github or Google Drive. In order to enable this, we’ve created new functions to Export either a Flow or Folder and have enhanced our Github connector to allow a builder to make commits and open pull requests. We’ve also shipped a set of Templates that can be easily imported into your environment that walks you through exactly how to version both flows and folders.",
+  "connectors": [
+    "github",
+    "okta",
+    "gmail"
+  ],
+  "details": {
+    "flowCount": 3,
+    "stashCount": 0
+  },
+  "links": [
+    {
+      "title": "Video",
+      "destination": "https://www.loom.com/share/7a87de594a5c46f98054bff2ebfe1edc"
+    },
+    {
+      "title": "Documentation",
+      "destination": "https://github.com/okta/workflows-templates/blob/master/workflows/flow_folder_versioning_github/readme.md"
+    }
+  ]
+}
