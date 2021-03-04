@@ -1,7 +1,7 @@
 {
   "name": "reassign_files_while_deprovisioning_with_box",
   "title": "Reassign Files while Deprovisioning with Box",
-  "description": "The purpose of this template is to automatically create Box account for a user and a folder for them or transfer a target user’s Box files and folders to that target user’s manager depending on if user was added or removed from a specific okta group.",
+  "description": "The purpose of this template is to automatically create a Box account for a user, a folder and send a notification email to the user's manager. It transfers a user’s Box files and folders to a manager if user was removed from a specific okta group.",
   "connectors": [
     "okta",
     "box",
