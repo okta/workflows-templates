@@ -7,12 +7,12 @@ This page outlines a workflows template that contains two workflows:
 An **Okta Box User - Provision Flow** - starts the flow after a user is added to a specific okta group:
 - It verifies the okta group matches the expected one.
 - It creates an account in Box for user, and creates a folder for the user.
-- It sends a notification email to the user`s manager.
+- It sends a notification email to the user's manager.
 
 An **Okta Box User - Deprovision Flow** - starts the flow after a user is removed from a specific okta group:
 - It verifies the user was removed from the expected okta group.
-- Depending on the Remove Box User flag value it removes or deactivates the current user and transfers the user`s folder and files to their manager.
-- It sends a notification email to the user`s manager.
+- Depending on the Remove Box User flag value it removes or deactivates the current user and transfers the user's folder and files to their manager.
+- It sends a notification email to the user's manager.
 
 
 ## Prerequisites
@@ -25,7 +25,7 @@ For ths template to work you will need:
 
 * An Office 365 Mail Workflows connector.
 
-* An existing user (that will represent the manager user) in Okta and [Box](http://Box.com) where the username in Okta and in Box are the same (the user`s email address). The manager user's email address needs to point to a valid email address so that the manager can receive the email notifications as part of the flow.
+* An existing user (that will represent the manager user) in Okta and [Box](http://Box.com) where the username in Okta and in Box are the same (the user's email address). The manager user's email address needs to point to a valid email address so that the manager can receive the email notifications as part of the flow.
 
 * An existing user (that represents the target user) in Okta where the manager attribute in the Okta Universal Directory is the username of the Okta user that represents the manager.
 
