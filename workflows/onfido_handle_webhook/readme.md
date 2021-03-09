@@ -16,18 +16,15 @@ Before you get started, you will need:
 * An Onfido applicant ID in the user profile attribute onfidoApplicantId (see workflow: Onfido Create Applicant template)
 
 ### Setup Steps
-1. Click on the API Access [</>] icon next to the flow named: Handle Webhook.
-2. Click on Expose as a Public service and copy the Invoke URL.
-3. Login to your Onfido Dashboard and create a webhook using the above Invoke URL. 
-4. Copy the Webhook Token Value.
-5. Click on the Tables in the flow folder and open the Onfido Variables table.
-6. Edit the value column for the following keys:
-   1. apiURL - this should be the base URL for your Onfido instance, such as api.us.onfido.com/v3. It is important to have the version without a trailing slash as well. Your base URL is based on your region: US = api.us.onfido.com, EU = api.onfido.com, and CA = api.ca.onfido.com.
-   2. apiToken - this should be the API Token you have generated in the Prerequisites.
-   3. webhookToken - this should be the value you copied above for the webhook.
-7. Click on the Handle Webhook flow and make sure a Okta connection is provided for the List User and Update User cards.
-8. Turn on both Child flows: Get Report Results and Get Check Results.
-9. Turn on the parent flow: Handle Webhook
+1. Click on Connections and find Onfido API HTTP Connection.
+2. Modify the Onfido API connection Custom Authentication value with your Onfido API Token value, it should read as follows: Token token={yourOnfidoAPIToken}
+3. Click on the API Access [</>] icon next to the flow named: `[Onfido]` Handle Webhook.
+4. Click on Expose as a Webhook and copy the Invoke URL.
+5. Login to your Onfido Dashboard and create a webhook using the above Invoke URL. 
+6. Copy the Webhook Token Value.
+7. Navigate to the `[Onfido]` Handle Webhook and insert the Webhook Token Value into the Text Compose card.
+8. Navigate to each child flow ([Webhook Child] Get Report Results and [Webhook Child] Get Check Results) and make sure the URL is correct for your Onfido Region.
+9. Activate the `[Onfido]` Handle Webhook then each of the Webhook Child flows. 
 
 ### Testing this flow
 
@@ -38,4 +35,4 @@ Before you get started, you will need:
 
 ### Limitations & Known Issues
 
-* Currently this flow is hard to test without test users and Onfido applicant IDs. 
+* Currently this flow only handles "complete" event types from the Onfido Webhook.

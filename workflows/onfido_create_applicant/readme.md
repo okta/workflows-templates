@@ -17,16 +17,15 @@ Before you get started, you will need:
 
 ### Setup Steps
 
-1. Click on the Tables in the flow folder and open the Onfido Variables table.
-2. Edit the value column for the following keys:
-   1. apiURL - this should be the base URL for your Onfido instance, such as api.us.onfido.com/v3. It is important to have the version without a trailing slash as well. Your base URL is based on your region: US = api.us.onfido.com, EU = api.onfido.com, and CA = api.ca.onfido.com.
-   2. apiToken - this should be the API Token you have generated in the Prerequisites.
-3. Select the flow named Create Onfido Applicant and make sure a Okta connection is selected for the Read User and Update User cards.
-4. Turn on the flow named Create Onfido Applicant
+1. Click on Connections and find Onfido API HTTP Connection.
+2. Modify the Onfido API connection Custom Authentication value with your Onfido API Token value, it should read as follows: Token token={yourOnfidoAPIToken}
+3. Open the `[Onfido]` UserEvent_Create Applicant flow and modify the Onfido API Text Compose element with the correct Onfido URL for your region.
+4. Make sure a Okta connection is selected for the Read User and Update User cards.
+5. Turn on the flow named `[Onfido]` UserEvent_Create Applicant.
 
 ### Testing this Flow
 
-1. Go to the flow named Create Onfido Applicant and click "Test Flow" in the toolbar.
+1. Go to the flow named `[Onfido]` UserEvent_Create Applicant and click "Test Flow" in the toolbar.
 2. You will be presented with a prompt to create a Create User event payload to test with, for this test, you need to provide an object that has an Okta User object with a string property of ID. The ID property should be an ID of an existing Okta user you wish to test with. 
 3. Ensure that the profile of the Okta test user you provided has been updated with a value in the onfidoApplicantId field and when clicking on Flow History, everything has succeeded.
 
