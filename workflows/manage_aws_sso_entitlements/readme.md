@@ -41,10 +41,10 @@ Before you get started, here are the things you’ll need:
 Please follow the below step-by-step instructions to set up this workflow.
 
 1. Update the AWS SSO connector cards to use your AWS connection.
-    a. Fill out the Options on each card with the correct:
-        i. AWS Region
-        ii. AWS Instance ARN
-        iii. AWS Account ID
+    * Fill out the Options on each card with the correct:
+        * AWS Region
+        * AWS Instance ARN
+        * AWS Account ID
 2. Update the Okta connector cards to use your Okta connection.
 3. Fill out the correct Group ARN on the Object and Continue If cards.
 4. Update the user principal id to the correct Okta user value in case it’s a custom field.
