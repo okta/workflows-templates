@@ -41,3 +41,5 @@ Before you get started, you will need:
 ### Limitations & Known Issues
 
 * OnFido applicants are created for all Okta Users that are created. Additional conditional logic can be added in the workflow to create OnFido applicants based on user status, group membership etc. 
+* Keep in mind the [Okta Workflows System Limits](https://help.okta.com/en/prod/Content/Topics/Workflows/workflows-system-limits.htm) of Event Hook and Okta API rate limits.
+* Onfido also has rate limits for API calls: [Onfido Rate Limit](https://documentation.onfido.com/#rate-limits) that should be taken into account when designing workflows.
