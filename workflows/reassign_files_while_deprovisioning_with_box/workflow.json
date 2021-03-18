@@ -1,0 +1,24 @@
+{
+  "name": "reassign_files_while_deprovisioning_with_box",
+  "title": "Reassign Files while Deprovisioning with Box",
+  "description": "The purpose of this template is to automatically create a Box account for a user, a folder and send a notification email to the user's manager. It transfers a user’s Box files and folders to a manager if user was removed from a specific okta group.",
+  "connectors": [
+    "okta",
+    "box",
+    "office365mail"
+  ],
+  "details": {
+    "flowCount": 3,
+    "stashCount": 0
+  },
+  "links": [
+    {
+      "title": "Video Walk-through",
+      "destination": "https://www.youtube.com/watch?v=8XTgJnSP4DU"
+    },
+    {
+      "title": "Setup Documentation",
+      "destination": "https://github.com/okta/workflows-templates/blob/master/workflows/reassign_files_while_deprovisioning_with_box/readme.md"
+    }
+  ]
+}
