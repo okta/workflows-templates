@@ -33,7 +33,7 @@ For ths template to work you will need:
 
 * [Optionally]: Federate your [Box](http://Box.com) tenant with your Okta tenant that has Okta Workflows enabled.
 
-* If you do not choose to federate your [Box](http://Box.com) tenant with Okta, you will need to configure a [Box](http://Box.com) application in your Okta tenant that has Okta Workflows enabled configured as Secure Web Authentication.
+* If you do not choose to federate your [Box](http://Box.com) tenant with Okta, you will need to configure a [Box](http://Box.com) application in your Okta tenant that has Okta Workflows enabled and configured as Secure Web Authentication.
 
 * DO NOT enable provisioning for the [Box](http://Box.com) application in Okta.
 
@@ -42,7 +42,7 @@ For ths template to work you will need:
 
 ## Setup Steps
 
-1. In Workflows find the [Templates] button at the top of the page an click on it.
+1. In Workflows find the [Templates] button at the top of the page and click on it.
 
 2. Find and select: "Reassign Files while Deprovisioning with Box" flow.
 
@@ -50,7 +50,7 @@ For ths template to work you will need:
 
 4. If you have not already done so, authorize the connections to Box, Office 365 Mail, and Okta.
 
-5. Select the Okta Box User - Deprovision Flow Flow from the folder.
+5. Select the Okta Box User - Deprovision Flow from the folder.
 
 6. Change the name of the [Box](http://Box.com) Assignment Group variable to match the Okta group you created in the prerequisites section.
 
@@ -58,7 +58,7 @@ For ths template to work you will need:
 
 8. Save the Okta Box User - Deprovision Flow.
 
-9. Navigate back to the workflows in the flow pack.
+9. Navigate back to the workflows in the template.
 
 10. Select the Okta Box User - Provision Flow.
 
@@ -68,7 +68,7 @@ For ths template to work you will need:
 
 13. Navigate back to the worksflows in the template.
 
-14. Turn on the following flows:
+14. Turn on the these Flows:
 
     *   Okta Box User - Provision Flow
     *   Okta Box User - Deprovision Flow
@@ -101,7 +101,7 @@ To test this template:
 2. Go to the user's manager email box. You should see an email about the target user's files and folders being transferred to the user's manager.
 
 3. Login to [Box](http://Box.com) as the manager if [Box](http://Box.com) is not federated to Okta,
-    If [Box](http://Box.com) is federated to Okta, login to Okta as the manager and click on the [Box](http://Box.com) chicklet to Single Sign On into Box.
+    If [Box](http://Box.com) is federated to Okta, login to Okta as the manager and click on the [Box](http://Box.com) chiclet to Single Sign On into Box.
 
 4. You should see a new folder in that user's manager [Box](http://Box.com) with a format of: [Box](http://Box.com) username of target user full names Files and Folders
 
