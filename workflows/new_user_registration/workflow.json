@@ -1,0 +1,22 @@
+{
+  "name": "new_user_registration",
+  "title": "New User Registration",
+  "description": "In CIAM use cases, many business units, locales, and brands may require distinct user management operations. Okta Workflows can help implement custom processing of the registration context.",
+  "connectors": [
+    "okta","office365mail"
+  ],
+  "details": {
+    "flowCount": 5,
+    "stashCount": 0
+  },
+  "links": [
+    {
+      "title": "Video Walk-through",
+      "destination": ""
+    },
+    {
+      "title": "Setup Documentation",
+      "destination": "https://github.com/okta/workflows-templates/blob/master/workflows/new_user_registration/readme.md"
+    }
+  ]
+}
