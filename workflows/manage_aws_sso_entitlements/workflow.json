@@ -1,7 +1,7 @@
 {
   "name": "manage_aws_sso_entitlements",
   "title": "Manage AWS SSO Entitlements",
-  "description": "The AWS SSO Workflows Connector is a way to manage entitlements for Okta and AWS users and groups. The connector allows entitlements (accounts and permission sets) to be added and removed for users and groups. It works in conjunction with the AWS SSO SCIM provisioning app available in the OIN catalog today.The flows in this template are triggered off of an Okta user being added or removed from an Okta group. The Okta group holds the entitlements, and the user is updated accordingly in AWS. There are two examples of how to add and remove entitlements, including child flows and a table.",
+  "description": "The AWS SSO connector allows entitlements (accounts and permission sets) to be added and removed for Okta and AWS users and groups. The connector works in conjunction with the AWS SSO SCIM provisioning app that’s available in the OIN catalog. The flows in this template are triggered when an Okta user is added to or removed from an Okta group. The Okta group holds the entitlements, and the user is updated accordingly in AWS. There are two examples of how to add and remove entitlements using child flows and a table.",
   "connectors": [
     "okta",
     "awssso"
