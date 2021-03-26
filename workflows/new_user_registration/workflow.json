@@ -1,7 +1,7 @@
 {
   "name": "new_user_registration",
   "title": "New User Registration",
-  "description": "In CIAM use cases, many business units, locales, and brands may require distinct user management operations. Okta Workflows can help implement custom processing of the registration context.",
+  "description": "In Customer Identity and Access Management use cases, many business units, locales, and brands may require distinct user management operations. Okta Workflows can help implement custom processing of the registration context.",
   "connectors": [
     "okta","office365mail"
   ],

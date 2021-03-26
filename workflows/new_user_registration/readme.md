@@ -3,14 +3,14 @@
 
 ## Overview
 
-In CIAM use cases, many business units, locales, and brands may require distinct user management operations. Okta Workflows can help implement custom processing of the registration context. 
+In Customer Identity and Access Management use cases, many business units, locales, and brands may require distinct user management operations. Okta Workflows can help implement custom processing of the registration context. 
 
 In this template, the context of new user registration is processed by Workflows which shall customize the branding, customize the birthright enablement, and link to external systems for duplication verification and Preference Management.
 The External Check for existing users is implemented with an API stub. In an actual use case, a specific HTTP Connector shall be configured along with the needed API Request JSON to match your system requirements. Similarly, the Preference Management 
 is implemented with a stub, but can be substituted with an Okta Workflow built-in Connector such as DataGrail or OneTrust, as well as, any system that supports API communication.
 
 
-## Before you get Started / Prerequisites
+## Prerequisites
 
 Before you get started, here are the things you’ll need:
 
@@ -24,7 +24,7 @@ Before you get started, here are the things you’ll need:
 
 
 1. Select flow: “Create_User_wExtCheck”
-   1. Make sure a connection is selected for the instance of the “HTTP | Raw Request” card. This card is used to link to an external duplicate user check.
+   1. Make sure a connection is selected for the instance of the “HTTP | Raw Request” card. This card is used to link to a mock external duplicate user check.
    2. In the Action event card titled “On Demand | API Endpoint”  at the far left of the flow, click the “&lt;/>” (Endpoint settings) link at the bottom right of the card.
       1. Check the radio button "Expose as Webhook”
       2. Copy the “Invoke URL” from the top of the popup up, but NOT including “?clientToken=&lt;xxxxxxxx". Save this in a notepad.
@@ -34,9 +34,9 @@ Before you get started, here are the things you’ll need:
 2. Select flow: "[O365] Send Email HTML".
     1. Select Connection for "Office 365 Mail" card if it was not selected automatically.
 3. Select flow: “[child] process USA customer”
-    1. Make sure a connection is selected for the instance of the “HTTP | Raw Request” card. This card is used to link to the external preference management system.
+    1. Make sure a connection is selected for the instance of the “HTTP | Raw Request” card. This card is used to link to a mock external preference management system.
 4. Select flow: “[child] process CANADA customer”
-    1. Make sure a connection is selected for the instance of the “HTTP | Raw Request” card. This card is used to link to the external preference management system.
+    1. Make sure a connection is selected for the instance of the “HTTP | Raw Request” card. This card is used to link to a mock external preference management system.
 5. Select flow: "[child] Add User to Okta GroupName". 
     1.  Make sure a connection is selected for the instances of the “Okta” cards.If it was not selected automatically, select the necessary connection manually.
 6. Ensure all these flows are turned on:
@@ -47,7 +47,7 @@ Before you get started, here are the things you’ll need:
     * [child] Add User to Okta GroupName
 
 
-## Testing this Flow
+## Testing these Flows
 
 The easiest way to test a flow is to send new user registration payload to Workflows using POSTMAN.
 
@@ -82,4 +82,4 @@ The easiest way to test a flow is to send new user registration payload to Workf
 
 ## Limitations & Known Issues
 
-*   None
+*   There are no limitations or known issues, at this time.
