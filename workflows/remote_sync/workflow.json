@@ -1,7 +1,7 @@
 {
   "name": "remote_sync",
   "title": "Remote Sync",
-  "description": "Many CIAM customers have multiple user stores that need to be maintained until legacy systems can be decommissioned. When the identity information sourced in Okta changes these attributes need to be synchronized downstream. Okta Workflows provides an easy to implement, fully customizable method to update a remote system with CRUD (create, update and delete) operations.",
+  "description": "Many CIAM customers have multiple user stores that need to be maintained until legacy systems are decommissioned. When the identity information sourced in Okta changes, these attributes need to be synchronized downstream. This template provides an easy-to-implement, fully customizable method to update a remote system with CRUD (create, update and delete) operations.",
   "connectors": [
     "okta"
   ],
