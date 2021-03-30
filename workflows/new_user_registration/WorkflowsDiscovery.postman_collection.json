@@ -1,0 +1,53 @@
+{
+	"info": {
+		"_postman_id": "405eede9-2ad1-44b7-9eda-aa50264936f2",
+		"name": "WorkflowsDiscovery",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "new user registration",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"type": "text",
+						"value": "application/json"
+					},
+					{
+						"key": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					},
+					{
+						"key": "x-api-client-token",
+						"type": "text",
+						"value": "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\"email\":\"mae.west@mailinator.com\",\r\n\"password\":\"Password@1\",\r\n\"firstName\":\"mae\",\r\n\"lastName\":\"west\",\r\n\"countryCode\":\"US\",\r\n\"hasOptedOutTracking\":\"true\",\r\n\"hasOptedOutSolicit\":\"false\"\r\n}"
+				},
+				"url": {
+					"raw": "https://aclarke.workflows.oktapreview.com/api/flo/467ea62c41e3bc0b35a8d466ae4b4f01/invoke",
+					"protocol": "https",
+					"host": [
+						"aclarke",
+						"workflows",
+						"oktapreview",
+						"com"
+					],
+					"path": [
+						"api",
+						"flo",
+						"467ea62c41e3bc0b35a8d466ae4b4f01",
+						"invoke"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

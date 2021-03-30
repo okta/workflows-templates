@@ -1,0 +1,22 @@
+{
+  "name": "new_user_registration",
+  "title": "New User Registration",
+  "description": "In Customer Identity and Access Management use cases, many business units, locales, and brands may require distinct user management operations. This template demonstrates how to implement custom processing of the registration context.",
+  "connectors": [
+    "okta","office365mail"
+  ],
+  "details": {
+    "flowCount": 5,
+    "stashCount": 0
+  },
+  "links": [
+    {
+      "title": "Video Walk-through",
+      "destination": "https://www.youtube.com/watch?v=YZT27rDYtnI"
+    },
+    {
+      "title": "Setup Documentation",
+      "destination": "https://github.com/okta/workflows-templates/blob/master/workflows/new_user_registration/readme.md"
+    }
+  ]
+}
