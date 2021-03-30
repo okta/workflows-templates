@@ -1,4 +1,4 @@
-# **New User Registration** 
+# New User Registration
 
 
 ## Overview
@@ -8,10 +8,11 @@ In this template, the context of new user registrations is processed by customiz
 
 ## Prerequisites
 
-*   Access to an Okta tenant with Okta Workflows enabled for your org 
-*   Email service; in this template, Office 365 Mail is used. You must configure the Office 365 Mail connector
-*   Create the Okta group named "AcmeUsers"
-*   The External API calls in this sample are using a mock API. Create an HTTP connector with the Auth for the mock API as none
+1.   Access to an Okta tenant with Okta Workflows enabled for your org.
+2.   Access to an email service. In this template Office 365 Mail is used.
+3.   You must configure the Office 365 Mail connector and with a connection.
+4.   Create an Okta group named "AcmeUsers".
+5.   The External API calls in this sample are using a mock API. Create an HTTP connector with the Auth for the mock API as none.
 
 
 ## Setup Steps
