@@ -1,7 +1,7 @@
 {
   "name": "onfido_create_applicant",
   "title": "Onfido Create Applicant",
-  "description": "Using the Okta User Created Event, this workflow will create an Onfido Applicant and save the applicant ID into the user's profile in Okta.",
+  "description": "For identity verification, this flow creates an Onfido applicant using a User Created event card for the Okta connector and saves the applicant ID in the user’s Okta profile.",
   "connectors": [
     "okta"
   ],
