@@ -28,17 +28,15 @@ The implementation uses a modular approach that splits the downstream CRUD opera
     * Event Update User of Group
     * Event Remove User from Group
     * Event Add User to Group
-    
     If the connection is not selected automatically, select the necessary connection manually.
 3. For the following flows, modify API URL and API Request JSON to match your remote system requirements:
     * [child]Create User via API
     * [child]Update User via API
     * [child]Delete User via API
-    
    Select an appropriate HTTP connection of "none" for the "HTTP Raw Request" card
 4. Create an Okta group named "API Provisioning Group"
 5. Add a custom attribute to the Okta user profile name = 'customId' type=string
-   * This attribute will contain the user ID from Remote System
+   * This attribute will contain the user ID in the Remote System
 6. Ensure all these flows are turned on:
     *   Event Update User of Group
     *   Event Remove user From Group
