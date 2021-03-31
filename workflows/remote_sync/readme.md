@@ -3,16 +3,18 @@
 
 ## Overview
 
-Many Customer Identify and Access Management customers have multiple user stores that need to be maintained until legacy systems are decommissioned. When the identity information sourced in Okta changes, these attributes need to be synchronized downstream. This template provides an easy-to-implement, fully customizable method to update a remote system with CRUD (create, read, update and delete) operations.
-This integration uses Okta Group membership to identify those users that shall be synced. Adding a user to the group initiates the creation in the remote system. Removing a user from a group deletes the user from the remote system.
+Many Customer Identify and Access Management customers have multiple user stores that need to be maintained until legacy systems are decommissioned. When the identity information sourced in Okta changes, these attributes need to be synchronized downstream. This template provides an easy-to-implement, fully customizable way to update a remote system with CRUD (create, read, update and delete) operations.
+
+This integration uses Okta Group membership to identify the users to be synced. Adding a user to the group initiates the creation in the remote system. Removing a user from the group deletes the user from the remote system.
 In this sample, the user's name, address, and email are synced to the remote system. The flows can be modified to change attribute sync requirements. 
 
 The implementation uses a modular approach that splits the downstream CRUD operations into child flows to facilitate adaptation to complex environments.
 
 ## Prerequisites
 
-*   Access to an Okta tenant with Okta Workflows enabled for your org 
-*   The Remote System API calls in this sample are using a mock API. Create an HTTP connector with the Auth for the mock API as none.
+1.   Access to an Okta tenant with Okta Workflows enabled for your org.
+2.   The Remote System API calls in this sample use a mock API. 
+3.   Create an HTTP Raw Request card with the connection set to none.
 
 
 ## Setup Steps
@@ -33,7 +35,7 @@ The implementation uses a modular approach that splits the downstream CRUD opera
     * [child]Update User via API
     * [child]Delete User via API
     
-   Select an appropriate HTTP connector for "HTTP Raw Request" card
+   Select an appropriate HTTP connection of "none" for the "HTTP Raw Request" card
 4. Create an Okta group named "API Provisioning Group"
 5. Add a custom attribute to the Okta user profile name = 'customId' type=string
    * This attribute will contain the user ID from Remote System
