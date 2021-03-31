@@ -1,0 +1,22 @@
+{
+  "name": "onfido_create_applicant",
+  "title": "Onfido Create Applicant",
+  "description": "For identity verification, this flow creates an Onfido applicant using a User Created event card for the Okta connector and saves the applicant ID in the user’s Okta profile.",
+  "connectors": [
+    "okta"
+  ],
+  "details": {
+    "flowCount": 1,
+    "stashCount": 0
+  },
+  "links": [
+    {
+      "title": "Video Walk-through",
+      "destination": "https://www.youtube.com/watch?v=gQhrQ9uukZ4"
+    },
+    {
+      "title": "Setup Documentation",
+      "destination": "https://github.com/okta/workflows-templates/blob/master/workflows/onfido_create_applicant/readme.md"
+    }
+  ]
+}
