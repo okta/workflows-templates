@@ -1,14 +1,13 @@
-# Workflows Template: Remote Sync 
+# Remote Sync 
 
 
 ## Overview
 
 Many Customer Identify and Access Management customers have multiple user stores that need to be maintained until legacy systems are decommissioned. When the identity information sourced in Okta changes, these attributes need to be synchronized downstream. This template provides an easy-to-implement, fully customizable way to update a remote system with CRUD (create, read, update and delete) operations.
 
-This integration uses Okta Group membership to identify the users to be synced. Adding a user to the group initiates the creation in the remote system. Removing a user from the group deletes the user from the remote system.
-In this sample, the user's name, address, and email are synced to the remote system. The flows can be modified to change attribute sync requirements. 
+This integration uses Okta Group membership to identify the users to be synced. Adding a user to the group initiates the user creation in the remote system. Removing a user from the group deletes the user from the remote system.
 
-The implementation uses a modular approach that splits the downstream CRUD operations into child flows to facilitate adaptation to complex environments.
+In this sample, the user's name, address, and email are synced to the remote system. The flows can be modified to change attribute sync requirements. The implementation uses a modular approach that splits the downstream CRUD operations into child flows to facilitate adaptation to complex environments.
 
 ## Prerequisites
 
