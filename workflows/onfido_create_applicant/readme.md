@@ -2,15 +2,15 @@
 
 ## Overview
 
-For identity verification, this flow creates an Onfido applicant using a User Created event card for the Okta connector and saves the applicant ID in the user’s Okta profile.
+For identity verification, this flow creates an Onfido applicant using an Okta User Created Connector event card and saves the applicant ID in the user’s Okta profile.
 
-When you create an application in Onfido as part of the Okta user creation process, your organization ensures that each newly registered user has an Onside application ID that can be used for identity verification checks. This applicant ID can be reused for other Onfido features such as facial biometric re-checks, initializing the Onfido SDK, and collecting report information for a check on a specific user.
+When you create an application in Onfido as part of the Okta user creation process your organization ensures that each newly registered user has an Onside application ID that can be used for identity verification checks. This applicant ID can be reused for other Onfido features such as facial biometric re-checks, initializing the Onfido SDK, and collecting report information for a check on a specific user.
 
 ## Prerequisites
 
-* Access to an Okta tenant with Okta Workflows enabled for your org
-* An Onfido instance with an API Token generated for use in this workflow (see: https://documentation.onfido.com/#token-authentication). Choose `Sandbox` or `Live` as appropriate for your Onfido instance. 
-* A custom Okta Universal Directory profile attribute named: `onfidoApplicantId` of type `string`
+1. Access to an Okta tenant with Okta Workflows enabled for your org
+2. An Onfido instance with an API Token generated for use in this workflow (see: https://documentation.onfido.com/#token-authentication). Choose `Sandbox` or `Live` as appropriate for your Onfido instance. 
+3. A custom Okta Universal Directory profile attribute named: `onfidoApplicantId` of type `string`
 
 
 ## Setup Steps
