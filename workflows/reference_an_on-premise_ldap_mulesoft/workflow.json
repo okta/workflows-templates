@@ -1,0 +1,20 @@
+{
+  "name": "reference_an_on-premise_ldap_mulesoft",
+  "title": "Reference an on-premise LDAP Mulesoft",
+  "description": "It is common for identity lifecycle processes to require advanced calculations when managing user profiles- including calculations that involve data not present immediately within the identity platform itself. Examples include calculating unique usernames/email addresses and determining proper mailstop values. This template is an example of referring to an LDAP repository to perform a generic search within Okta workflows.  It can be modified and applied to any sort of repository such as a SQL database.",
+  "connectors": [],
+  "details": {
+    "flowCount": 1,
+    "stashCount": 0
+  },
+  "links": [
+    {
+      "title": "Video Walk-through",
+      "destination": "https://www.youtube.com/watch?v=R8cCUoE7vZk"
+    },
+    {
+      "title": "Setup Documentation",
+      "destination": "https://github.com/okta/workflows-templates/blob/master/workflows/reference_an_on-premise_ldap_mulesoft/readme.md"
+    }
+  ]
+}
