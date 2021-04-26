@@ -1,5 +1,5 @@
 {
-  "name": "reference_an_on-premise_ldap_mulesoft",
+  "name": "reference_an_on_premise_ldap_mulesoft",
   "title": "Reference an on-premise LDAP Mulesoft",
   "description": "This template is an example of referring to an LDAP repository to perform a generic search within Okta workflows. It can be modified and applied to any sort of repository such as a SQL database. This example leverages the Mulesoft Anypoint platform to host the API endpoint consumed by Okta workflows.",
   "connectors": [],
