@@ -36,7 +36,7 @@ There are a few components that must be setup within the Okta tenant in order to
 2. An OAuth2 client that will be used when authorizing to the authorization server.
 3. An Okta OAuth2 authorization server.
 
-####Okta: setup the Service Account
+###Okta: setup the Service Account
 In Okta create a new user that will be used by Okta Workflows to obtain an OAuth2 token.
 
 **Note: Any user within Okta may be used for this, but as a best practice a user not belonging to a person should be used.**
