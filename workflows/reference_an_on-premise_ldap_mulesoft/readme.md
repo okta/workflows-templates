@@ -24,7 +24,7 @@ Here are the things you’ll need:
 4. An on-premise server that will host the Anypoint [Runtime Manager Agent](https://docs.mulesoft.com/runtime-manager/runtime-manager-agent). This server will be where the LDAP calls are made from. We’ll be using the UI on the server, so these instructions assume that you are using Windows server.
 5. Service account credentials to the LDAP repository you wish to query.
 
-## Setup Steps:
+## Setup Steps
 Setup steps can be divived on three main parts:
 - Okta Tenant configuration
 - Mulesoft Anypoint Platform configuration
@@ -288,7 +288,7 @@ Click on [Settings].
 
 ####Okta Workflow Setup
 
-Now that the complete environment is set up, now let’s ensure the workflow has the correct API gateway endpoint configured within it.
+Now that the complete environment is set up, let’s ensure the workflow has the correct API gateway endpoint configured within it.
 
 There are 3 steps necessary to completing the Workflow configuration.
 
@@ -312,7 +312,7 @@ There are 3 steps necessary to completing the Workflow configuration.
 3. Update the HTTP card to use the new connection you just created in step 1.
 
 
-## Testing this Flow
+## Testing these flows
 
 This flow is intended to be executed as part of a higher level parent workflow.  It takes in a single parameter, “ldapFilter”, and the response will be a JSON array of elements found in the LDAP directory.  There is no limit to the objects returned other than the LDAP query passed in.
 
