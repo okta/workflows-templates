@@ -36,7 +36,7 @@ There are a few components that must be setup within the Okta tenant in order to
 2. An OAuth2 client that will be used when authorizing to the authorization server.
 3. An Okta OAuth2 authorization server.
 
-### Okta: setup the Service Account
+#### Okta: setup the Service Account
 In Okta create a new user that will be used by Okta Workflows to obtain an OAuth2 token.
 
 **Note: Any user within Okta may be used for this, but as a best practice a user not belonging to a person should be used.**
@@ -47,7 +47,7 @@ Create a user as shown.
 
 ![setup_okta_2.png](./src/setup_okta_2.png)
 
-### Okta: setup the OAuth2 Client
+#### Okta: setup the OAuth2 Client
 
 In the Okta tenant, Add an application, as shown.
 
@@ -74,7 +74,7 @@ Once the application is created, you’ll be brought to an application configura
 
 ![setup_okta_7.png](./src/setup_okta_7.png)
 
-### Okta: Assign the Non-personal Identity to the application:
+#### Okta: Assign the Non-personal Identity to the application:
 Assign the user you created in the previous step (using [Assign] button)
 
 ![setup_okta_8.png](./src/setup_okta_8.png)
@@ -114,7 +114,7 @@ This section outlines how to configure the necessary components in the Anypoint 
 3. A proxy endpoint used to expose the Mule flow in a secure manner
 4. A valid OAuth2/OIDC integration
 
-### Mulesoft: Install the Runtime Manager Agent
+#### Mulesoft: Install the Runtime Manager Agent
 On the server, download the Mulesoft Runtime to the server:
 https://docs.mulesoft.com/mule-runtime/4.2/runtime-installation-task
 
@@ -132,7 +132,7 @@ After that step is done, execute the following commands to install the Mulesoft 
 When all is done, you should see in the Runtime Manager a service with a status of “Running”, like shown above.
 
 
-### Mulesoft: Configure the Mule Flow
+#### Mulesoft: Configure the Mule Flow
 The Mule flow is the component that will be deployed to the on-premise server, and will actually speak to the LDAP endpoint.
 
 In Anypoint, go to the Design Center. Press the [Create new] button to create a new application -> and select “Create new application”.
@@ -218,7 +218,7 @@ We need to export this as a mule application. A *.jar file will be saved to your
 
 ![setup_mulesoft_12.png](./src/setup_mulesoft_12.png)
 
-### Mulesoft: Deploy the Application to your On-Premise Server
+#### Mulesoft: Deploy the Application to your On-Premise Server
 Now, we need to deploy the application to your server that you onboarded in the first section of this guide.
 
 Open the “Runtime Manager”, and click on the [Deploy Application]:
@@ -247,7 +247,7 @@ Click on [Deploy Application].
 
 Your LDAP endpoint is now ready for use.
 
-### Mulesoft: setup the Secure Proxy
+#### Mulesoft: setup the Secure Proxy
 In order to securely expose the Mule endpoint to Okta, we need to create a publicly accessible proxy endpoint that will perform OAuth2 authentication with Okta.
 
 Go into the API Manager section of the Anypoint platform, and create a new API:
