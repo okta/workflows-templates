@@ -26,9 +26,9 @@ Here are the things you’ll need:
 
 ## Setup Steps
 Setup steps can be divived on three main parts:
-- Okta Tenant configuration
-- Mulesoft Anypoint Platform configuration
-- Okta Workflow configuration
+- Okta Tenant Setup
+- Mulesoft Anypoint Platform Setup
+- Okta Workflow Setup
 
 ### Okta Tenant Setup
 There are a few components that must be setup within the Okta tenant in order to support this integration:
