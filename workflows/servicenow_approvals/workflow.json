@@ -12,7 +12,7 @@
   },
   "links": [
     {
-      "title": "Video",
+      "title": "Video Walk-through",
       "destination": "https://www.youtube.com/watch?v=_qKuGrtPHTw"
     },
     {
@@ -24,7 +24,7 @@
       "destination": "https://github.com/okta/workflows-templates/blob/master/workflows/servicenow_approvals/httpMethodPostContent.txt"
     },
     {
-      "title": "Documentation",
+      "title": "Setup Documentation",
       "destination": "https://github.com/okta/workflows-templates/blob/master/workflows/servicenow_approvals/readme.md"
     }
   ]

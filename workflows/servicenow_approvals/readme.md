@@ -1,11 +1,11 @@
-# Workflows Template: ServiceNow Approvals
+# ServiceNow Approvals
 
 ## Overview
 
 
 In many organizations that use ServiceNow, a subset of access may require approvals. Maybe you have users that are provisioned birthright access when created but a specific group access needs to be approved before being provisioned. For these use cases you can get approvals using ServiceNow. 
 
-## Before you get Started/Pre-requisites: 
+## Prerequisites:
 
 Before you get started, you will need:
 - Access to an Okta tenant with Okta Workflows enabled for your org 

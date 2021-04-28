@@ -1,4 +1,4 @@
-# Workflows Template: Manage G Suite User Licenses
+# Manage G Suite User Licenses
 
 ## Overview
 
@@ -24,7 +24,7 @@ A **G Suite Activation**: Once a user is added to a specified Okta group:
 * An email to the user's manager to that effect will be sent.
 
 
-## Before you get Started/Pre-requisites: 
+## Prerequisites: 
 
 For this workflows template, to send an email to the manager on the creation of a user, a GMail connection and a G Suite Admin connection need to be configured in addition to the Okta tenant connection.
 

@@ -1,4 +1,4 @@
-# Workflows Template: Manage AWS SSO Entitlements
+# Manage AWS SSO Entitlements
 
 ## Overview
 
@@ -28,7 +28,7 @@ This page outlines a workflows template that contains six workflows:
 
 * This is the child flow associated with AWS Remove Entitlements Table. It takes the passed in parameters of the user id/principal ARN and account and removes them from the user.
 
-## Before you get Started/Pre-requisites:
+## Prerequisites:
 
 Before you get started, here are the things you’ll need:
 * Access to an Okta tenant with Okta Workflows enabled for your org 
