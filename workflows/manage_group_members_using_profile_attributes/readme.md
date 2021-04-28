@@ -1,4 +1,4 @@
-# Workflows Template: Manage Okta Group Membership Based on Job Code or Profile Attribute Mapping
+# Manage Okta Group Membership Based on Job Code or Profile Attribute Mapping
 
 ## Overview
 
@@ -7,7 +7,7 @@ In many organizations a set of Okta group memberships are determined based on Jo
 
 To keep it simple, we will use the Okta profile attribute "Title" for job codes. Maybe you have users that have a title of "Engineer" and they have to be assigned to specific Okta Groups. When their title changes to "Manager" they have to be assigned to different Okta Groups. Then they get promoted to "VP" and they have other Okta group assignments. Okta table can store the mapping of the titles to groups. Any additional groups that are assigned to the user besides the groups listed in the Okta table are retained. 
 
-## Before you get Started/Pre-requisites: 
+## Prerequisites: 
 
 Before you get started, you will need:
 - Access to an Okta tenant with Okta Workflows enabled for your org 

@@ -1,8 +1,8 @@
 
-# Assign group memberships temporarily based on time
+# Assign Group Memberships Temporarily Based on Time
 
 
-## Overview
+## Overview:
 
 Within Okta, you may want to give a user group membership, but only for a limited time. An example would be a group that gives auditors access to applications, but revoked after 30 days.  Another example may be a temporary development project that you want to assign developers access.
 
@@ -13,7 +13,7 @@ Note: the current duration units is set to minutes for testing purposes. You wou
 The second entry point is a scheduled flow “Scan users for removal”. This flow would be set up on a scheduled basis to review the user table and determine if the user's access to a group has expired. If the access has expired (based on current date/time of scan), the user will be removed from the group, and entry deleted from the user table.
 
 
-## Before you get Started/Prerequisites
+## Prerequisites:
 
 Before you get started you will need:
 
@@ -24,7 +24,7 @@ Before you get started you will need:
 *   This will require an Okta Connection. If you have not already configured the Okta connection in your Workflows tenant, follow these steps: [https://help.okta.com/en/prod/Content/Topics/Workflows/workflow-connect-your-applications.htm#Authenti](https://help.okta.com/en/prod/Content/Topics/Workflows/workflow-connect-your-applications.htm#Authenti)
 
 
-## Workflow Setup Steps
+## Workflow Setup Steps"
 
 
 
@@ -38,7 +38,7 @@ Before you get started you will need:
     4. You can add as many groups as you as want to set up (one per row in the table).
 
 
-## Testing this flow
+## Testing this flow:
 
 
 
@@ -48,7 +48,7 @@ Before you get started you will need:
 *   Run the “Scan users for removal” flow to scan the user table to see if users should be removed from groups. If the scan is run after the duration specified, you should see the user removed from the group and removed from the user table as clean up.
 
 
-## Limitations & Known Issues 
+## Limitations & Known Issues: 
 
 
 

@@ -1,14 +1,14 @@
-## Importing Users from Google Sheets
+# Importing Users from Google Sheets
 
 
-### <span style="text-decoration:underline;">Overview</span>
+## Overview:
 
 Often, there are disconnected user populations like contractors, or certain offices that need to be imported into Okta. A CSV or Flat File is the easiest way to create those users in Okta. This flow walks you through how to bring in users from Google Sheets and how to use For Each loops. 
 
 This flow reads all users in a specified Google sheet and, each week on Monday at 6 am, tries to create them in Okta.   
 
 
-### <span style="text-decoration:underline;">Before you get Started / Prerequisites</span>
+## Prerequisites:
 
 Before you get started, here are the things you’ll need:
 
@@ -17,7 +17,7 @@ Before you get started, here are the things you’ll need:
 *   A Google Sheets spreadsheet with the users you would like to create in Okta and their relevant profile information (first name, last name, email, username, etc.). The spreadsheet should have a header row including the names of each profile attribute in the column below.
 
 
-### <span style="text-decoration:underline;">Setup Steps</span>
+## Setup Steps:
 
 1. Select "Import Users - Parent Flow" ("parent flow"):
     1. Make sure a connection is selected for the "Read All Rows Card"
@@ -35,13 +35,13 @@ Before you get started, here are the things you’ll need:
 5. Save the child flow.
 6. Make sure all flows are turned on. 
 
-### <span style="text-decoration:underline;">Testing this Flow</span>
+## Testing this Flow:
 
 1. First, test the parent flow to trigger the creation of new users ahead of the flow schedule.
 2. Next, view Flow History of the parent flow to confirm that the flow successfully executed.
 3. Next, open the child flow and view Flow History. You should see one successful flow execution for each new user to be created.
 4. Finally, go to your Okta tenant. You should see new Okta users matching those in your Google Sheet.
 
-### <span style="text-decoration:underline;">Limitations & Known Issues</span>
+## Limitations & Known Issues:
 
 * After clicking “New Flow” when initially choosing the flow to be called by the For Each card of the parent flow, you will have to add an event to the new child flow, save this flow, and then return to the parent flow again to specify this in the flo parameter of the For Each card once again.
