@@ -1,6 +1,6 @@
-# Notify a user when their profile is updated
+# Notify a User When Their Profile is Updated
 
-### <span style="text-decoration:underline;">Overview</span>
+## Overview
 A user profile may be updated for many reasons, including a scheduled change by HR, a change to personal information performed by the user themselves, or some type of automated change. But how can you always be sure that the data in the user profile is accurate and was updated legitimately by the user or an authorized admin? This Flow allows you to send a message (for example, through email or Slack) to notify the user that their profile was updated, and they can be prompted to review and confirm those changes.
 
 ### <span style="text-decoration:underline;">Before you get Started / Prerequisites</span>
@@ -11,7 +11,7 @@ Before you get started, you will need:
 *   Access to a notification service, to notify the user of profile changes [Slack/Office 365 mail, Gmail, etc]
 
 
-### <span style="text-decoration:underline;">Setup Steps</span>
+## Setup Steps
 
 1. Open the flow "Send notification to user when profile is updated"
 1. Look at the "List - Construct" card, update this with the attributes you would like to monitor and notify the user if they have changed
@@ -21,7 +21,7 @@ Before you get started, you will need:
 1. Turn the flow ON.
 
 
-### <span style="text-decoration:underline;">Testing this Flow</span>
+## Testing this Flow
 
 1. Go to the flow and make sure flow history is enabled
 1. Click "Test"
@@ -36,7 +36,7 @@ Before you get started, you will need:
 1. Click the Flow History and make sure everything succeeded.
 
 
-### <span style="text-decoration:underline;">Limitations & Known Issues</span>
+## Limitations & Known Issues
 
 
 *   You need to have a notification service connected to be able to notify the user
