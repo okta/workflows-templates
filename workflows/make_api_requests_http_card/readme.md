@@ -1,4 +1,4 @@
-# Workflows Template: Make API Requests with the HTTP Request Card
+# Make API Requests with the HTTP Request Card
 
 ## Overview
 
@@ -8,7 +8,7 @@ In many organizations that integrate with web services, there is a requirement t
 The template is the end result of working through the tutorials "Making API Requests" [Part One](https://learn.workflows.okta.com/tutorials/unauthenticatedapi-walkthrough/ ), 
 [Part Two](https://learn.workflows.okta.com/tutorials/addbasicapi-walkthrough/) and [Part Three](https://learn.workflows.okta.com/tutorials/processjson-walkthrough/). The flow also illustrates additional cards using the [Postman Echo Service](https://docs.postman-echo.com/?version=latest) that is useful for debugging and troubleshooting. 
 
-## Before you get Started/Pre-requisites: 
+## Prerequisites
 
 Before you get started, you will need:
 - Access to an Okta tenant with Okta Workflows enabled for your org 

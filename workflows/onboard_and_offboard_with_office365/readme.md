@@ -1,8 +1,7 @@
 
-# Workflows Template: Onboard and Offboard with Office365
+# Onboard and Offboard with Office365
 
-
-## <span style="text-decoration:underline;">Overview</span>
+## Overview
 
 This page outlines a sample workflow template that contains three workflows:
 
@@ -19,15 +18,13 @@ An **Office 365 Activation** flow: Once a user is added to a specified Okta grou
 
 A Store **All Microsoft License** flow: This flow stores the current Microsoft subscription licenses in a Okta Workflows table called Office 365 Licenses to be used in assigning the Microsoft license to the target user during the O365 Activation flow.
 
-## <span style="text-decoration:underline;">Before you get Started / Prerequisites</span>
-
-### Pre-Requisites:
+## Prerequisites
 
 For this flow template in order to send an email to the manager on the creation of a user, an Office 365 Mail connection and an Office 365 Admin connection needs to be configured in addition to the Okta tenant connection. _You will need to have these connections created and authorized prior to installing the template.
 
 You will also need Access to the Microsoft Office 365 Admin Portal as an admin user. [https://admin.microsoft.com/AdminPortal/](https://admin.microsoft.com/AdminPortal/)
 
-## <span style="text-decoration:underline;">Setup Steps</span>
+## Setup Steps
 
 ### Office 365 Setup Steps
 
@@ -197,7 +194,7 @@ Modify and run the Store all Microsoft Licenses workflow
     * O365 Staged Deactivation
 
 
-## <span style="text-decoration:underline;">Testing the Flow</span>
+## Testing the Flow
 
 1. Open the Store All Microsoft License flow and run that flow.
 
@@ -238,7 +235,7 @@ Modify and run the Store all Microsoft Licenses workflow
 19. Sure, enough if you return to the Microsoft Office 365 Admin Portal and refresh the page, then click on the target user, you can see that the license has been restored and the user is allowed to sign in again.
 
 
-## <span style="text-decoration:underline;">Limitations & Known Issues</span>
+## Limitations & Known Issues
 
 **NOTE:** You will need to make sure the prerequisites are met and that you run the Store all Microsoft Licenses workflow
 

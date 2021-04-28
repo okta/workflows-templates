@@ -10,11 +10,11 @@
   },
   "links": [
     {
-      "title": "Video",
+      "title": "Video Walk-through",
       "destination": "https://www.youtube.com/watch?v=BVgpvIdFmOo"
     },
     {
-      "title": "Documentation",
+      "title": "Setup Documentation",
       "destination": "https://github.com/okta/workflows-templates/blob/master/workflows/make_api_requests_http_card/readme.md"
     }
   ]

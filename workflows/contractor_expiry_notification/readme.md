@@ -1,4 +1,4 @@
-# Workflows Template: Contractor Expiry Notification
+# Contractor Expiry Notification
 
 
 ## Overview
