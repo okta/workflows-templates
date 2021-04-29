@@ -1,6 +1,6 @@
 {
   "name": "onboard_and_offboard_with_office365",
-  "title": "Onboard and Offboard with Office365",
+  "title": "Onboard and Offboard with Office 365 Admin",
   "description": "This Flow allows you to disable a user in Office 365 Admin and then after a specified delay remove their assigned Office 365 licenses. Another part of the Flow will reactivate the user in Office 365 Admin and reassign the previously removed Office 365 Admin licenses.",
   "connectors": [
     "okta",
