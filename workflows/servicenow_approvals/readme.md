@@ -21,7 +21,6 @@ Before you get started, you will need:
     - For example, if the url is `https://.../admin/group/00gr85hfpc9W1bR4c0h7` the group Id is `00gr85hfpc9W1bR4c0h7`. Note the Group Id for your environment. We will use this value in the "Process Resolution" Okta workflow. 
 
 
-
 ## Setup Steps in Okta Workflows
 
 1. Set up ServiceNow Connection setting in Okta Workflows
@@ -263,6 +262,7 @@ Before you get started, you will need:
 - In Okta Workflows
 
     - Check `Millenium Falcon Group` group membership is assigned to the user  `Hans Solo` in Okta. 
+
 
 ## Limitations & Known Issues
 
