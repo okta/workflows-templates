@@ -1,19 +1,19 @@
 # ServiceNow Approvals
 
-## Overview
 
+## Overview
 
 In many organizations that use ServiceNow, a subset of access may require approvals. Maybe you have users that are provisioned birthright access when created but a specific group access needs to be approved before being provisioned. For these use cases you can get approvals using ServiceNow. 
 
-## Prerequisites:
+
+## Prerequisites
 
 Before you get started, you will need:
 - Access to an Okta tenant with Okta Workflows enabled for your org 
 - Create a free Personal Development Instance of ServiceNow at <https://developer.servicenow.com>. This template was built on the ServiceNow Paris Platform version. 
 
 
-
-## Setup Steps in Okta Admin Console:
+## Setup Steps in the Okta Admin Console
 
 1. Create a target group named `Millenium Falcon Group` in Okta. 
 
@@ -22,8 +22,7 @@ Before you get started, you will need:
 
 
 
-## Setup Steps in Okta Workflows:
-
+## Setup Steps in Okta Workflows
 
 1. Set up ServiceNow Connection setting in Okta Workflows
 	- [x] In the Username and Password fields, type your **admin** ServiceNow login credentials. In the Instance field, enter your ServiceNow subdomain value.You can find the Service Now subdomain value in the instance’s URL. For example in *https://dev57240.service-now.com/* the instance name will be *dev57240*.
@@ -52,11 +51,9 @@ Before you get started, you will need:
     - Copy the "Invoke URL" value. You will need this later when you configure the **ServiceNow** **RESTMessage**. This will be something like <https://../api/flo/../invoke?clientToken=...>
  
 
-
-## Setup Steps to configure the Personal Development Instance of ServiceNow: 
+## Setup Steps to Configure the Personal Development Instance of ServiceNow: 
 
 ### Incidents Form Design
-
 
 1.  Type **Incidents** in the Filter Navigator at the top left and
     adjust filter criteria to see a list of incidents. This is sample
@@ -228,7 +225,8 @@ Before you get started, you will need:
 
 15. Click **Submit**.
 
-## Testing this flow
+## Testing these Flows
+
 - In the Okta Admin console:
 
     - create a staged user `Hans Solo`
