@@ -41,10 +41,10 @@ This child flow will process any users that have been stored on the contractor-l
 
 Before you get started, below are the things you’ll need:
 
-*   Access to an Okta tenant with Okta Workflows enabled for your org 
-*   Access to the tenant's profile editor so a custom attribute can be added to the default Okta profile
-*   Access to the tenant's users, so the custom attribute can be populated
-*   Access to an account for Office 365 Mail
+1. Access to an Okta tenant with Okta Workflows enabled for your org 
+2. Access to the tenant's profile editor so a custom attribute can be added to the default Okta profile
+3. Access to the tenant's users, so the custom attribute can be populated
+4. Access to an account for Office 365 Mail
 
 
 ## Setup Steps
@@ -68,9 +68,7 @@ Please follow the below step-by-step instructions to set up this workflow.
 4. Within the flow titled "1.3 - Send Notification Emails", update the Office 365 Mail card to use your Office 365 Mail connection.
 
 
-## Testing this Flow
-
-Below is how to test the flow.
+## Testing these Flows
 
 1. Ensure the configuration table value for addressList contains an email address where you can receive emails for testing.
 
@@ -83,4 +81,4 @@ Below is how to test the flow.
 
 ## Limitations & Known Issues
 
-There are no limitations or known issues, at this time.
+There are no limitations or known issues at this time.
