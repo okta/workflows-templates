@@ -5,7 +5,7 @@
 
 In many organizations that use Google Drive, there is a requirement to transfer a user's GDrive contents to another user. May be you have users that need to be deactivated - you can transfer the files from the user's GDrive to the Manager and delete the user.
 
-## Before you get Started/Pre-requisites: 
+## Prerequisites: 
 
 Before you get started, you will need:
 - Access to an Okta tenant with Okta Workflows enabled for your org 

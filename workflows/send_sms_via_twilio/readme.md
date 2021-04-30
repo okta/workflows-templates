@@ -5,7 +5,7 @@ Within a workflow you may want to send a message, a pin, or any type of string d
 This flow is meant to be called as a subflow. The flow uses the rest api interface of the Twilio service. Components needed to send a Twilio sourced SMS message are passed into this flow as parameters. No other modification to the flow is needed.
 
 
-## Before you get Started/Prerequisites
+## Prerequisites
 
 Before you get started you will need:
 
