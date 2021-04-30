@@ -1,7 +1,7 @@
-## Generate Unique Emails
+# Generate Unique Emails
 
 
-### <span style="text-decoration:underline;">Overview</span>
+## Overview
 
 To Onboard users in an organization, IT needs to generate unique Email for the end users. 
 
@@ -19,14 +19,14 @@ This flow follows the below logic.
 
 Example : John.doe@okta.com If there is second John.Doe then the logic will create John.Doe1@okta.com.
     
-### <span style="text-decoration:underline;">Before you get Started / Prerequisites</span>
+## Prerequisites
 Before you get started, you will need:
 
 1. Access to an Okta tenant with Okta Workflows enabled for your org
 2. Access to Email tenant. An admin account is required if you want to test against Office365 or Google.
  
            
-### <span style="text-decoration:underline;">Setup Steps</span>
+## Setup Steps
 
 1. Import the Email workflow flopack in your workflow environment.
 2. Inside the folder you should see 9 flows. Check for below main flows which triggers the emailGeneration based on your Domain and Mailsystem. 
@@ -76,11 +76,11 @@ Before you get started, you will need:
                  2. Open the O365-Email-Generation flow and add the BrandID and search Table cards as per multiDomain flow. Remove the Assign Domain flow.
 
 
-### <span style="text-decoration:underline;">Testing this Flow</span>
+## Testing this Flow
 
 1. Create a user in Okta manually or using some import process. If you creating users manually and you want to use MultiDomain scenario, make sure you set the brandID as a required attribute in Okta profile, since this needs to be provisioned as part of create process. If you don't set this attribute as required, you wont be able to see this during create user.
 2. Once user is created in Okta. That should trigger the workflow and generate unique email and update Okta with Primary Email address and ProxyAddress in ProxyAddress attribute.
 
 
-### <span style="text-decoration:underline;">Limitations & Known Issues</span>
+## Limitations & Known Issues
 1. Okta workflows does not have any on-premise connector at the time this is being written. All the target systems should be accessible in public and shall be exposed as an API endpoint.

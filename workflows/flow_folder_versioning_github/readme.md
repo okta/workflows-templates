@@ -1,11 +1,11 @@
 # Versioning for Flows and Folders
 
 
-## <span style="text-decoration:underline;">Overview</span>
+## Overview
 
 Versioning for Flows and Folders will allow a workflow builder to back-up their flows on an on-demand or automated basis to an external system like Github or Google Drive. In order to enable this, we’ve created new functions to Export either a Flow or Folder and have enhanced our Github connector to allow a builder to make commits and open pull requests. We’ve also shipped a set of Templates that can be easily imported into your environment that walks you through exactly how to version both flows and folders. 
 
-## <span style="text-decoration:underline;">Before you get Started / Prerequisites</span>
+## Prerequisites
 
 Before you get started, here are the things you’ll need:
 
@@ -15,7 +15,7 @@ Before you get started, here are the things you’ll need:
 *   Access to a Github tenant
 *   A Github repository where you have the permissions to either make a Commit or Open a Pull Request 
 
-## <span style="text-decoration:underline;">Setup Steps</span>
+## Setup Steps
 
 These setup instructions will walk you through how to set up one of the two flows provided with this template - “Export Flow and Make Commit to Github”. If you’d like to go further, you can also reference the “Export Flow and Open PR in Github” which will walk you through creating a new branch and opening a pull request (vs. making a commit directly to a given Github repository branch). 
 
@@ -36,14 +36,14 @@ After downloading the “Versioning for Flows and Folders” template into your 
         1. Click “If Error” within the Try/If Error block and establish a connection to the same repository as above. 
         2. Make sure Message, File Content, and Path have the correct inputs.  
 
-## <span style="text-decoration:underline;">Testing this Flow</span>
+## Testing this Flow
 
 
 
 1. Click Test Flow
 2. Go to Github, select the File you’ve either been updating or creating. Select History, and you should see the history of commits. The last commit should be made by Okta Workflows with the Commit Comment that you previously created. 
 
-## <span style="text-decoration:underline;">Limitations & Known Issues</span>
+## Limitations & Known Issues
 
 
 
