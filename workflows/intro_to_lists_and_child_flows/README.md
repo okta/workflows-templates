@@ -1,7 +1,7 @@
-# **Intro to Lists and Child Flows**
+# Intro to Lists and Child Flows
 
 
-## <span style="text-decoration:underline;">Overview</span>
+## Overview
 
 Much of the data we are working with is presented as a list. Think of a list of user objects, list of applications objects, etc. Workflows allows you to process lists in a comprehensive manner leveraging Child Flows to operate on each member of the list.  There are a number of ways to process a list. Performing a discrete action on each item without returning anything to the Parent Flow is very common, as well as, keeping a cumulative output of each item iteration that can be returned to the Parent Flow. There are many other List operations. Check our in app documentation for details.
 
@@ -14,7 +14,7 @@ Similarly, imagine that you have a large team of contributors for your Workflow 
 Lastly, we all think our flows are easy to understand but a long complex flow can be difficult to visualize and fully comprehend. In this case, Child Flows can be used to break out ‘chunks of related processing’ making the resultant Parent Flows easier to understand and maintain.
 
 
-## Before you get Started / Prerequisites
+## Prerequisites
 
 Before you get started, here are the things you’ll need:
 

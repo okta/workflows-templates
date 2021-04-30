@@ -3,7 +3,7 @@
 ## Overview
 A user profile may be updated for many reasons, including a scheduled change by HR, a change to personal information performed by the user themselves, or some type of automated change. But how can you always be sure that the data in the user profile is accurate and was updated legitimately by the user or an authorized admin? This Flow allows you to send a message (for example, through email or Slack) to notify the user that their profile was updated, and they can be prompted to review and confirm those changes.
 
-### <span style="text-decoration:underline;">Before you get Started / Prerequisites</span>
+## Prerequisites
 Before you get started, you will need:
 
 *   Access to an Okta tenant with Okta Workflows enabled for your org
