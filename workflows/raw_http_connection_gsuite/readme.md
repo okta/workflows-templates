@@ -7,7 +7,7 @@
 Our current Workflows connector for G Suite Admin does not include all functions within Google Workspace APIs . The Custom API card is also restricted to the Directory and Licensing APIs. As our product team expands the scopes and permissions for different Workspace APIs, you can use this guide as a workaround to create your own custom HTTP connector to request for specific scopes from different Workspace APIs.
 
 
-## Before you get Started/Prerequisites
+## Prerequisites
 
 Before you get started you will need:
 

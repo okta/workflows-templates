@@ -6,7 +6,7 @@
 User Provisioning, or creating users in a 3rd party system, is one of the most foundational use cases for Okta’s Lifecycle Management product. In order to provide access to a system, for example providing access to Salesforce, a newly created user needs to have an account in that system with the correct profile attributes and entitlements. This template walks you through how to create a user in Salesforce and assign them a Profile based on their department. 
 
 
-## Before you get Started / Prerequisites
+## Prerequisites
 
 Before you get started, here are the things you’ll need:
 
