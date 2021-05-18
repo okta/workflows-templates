@@ -178,7 +178,7 @@ Click the LDAP card in the flow, and configure it as follows:
 **Scope:** Use Sub Tree.
 
 
-Click the create LDAP configuration link to create a new LDAP configuration, this is where the credentials and directory host information should be set up.
+Click the create LDAP configuration link to create a new LDAP configuration. This is where the credentials and directory host information should be set up.
 
 **Note: the actual values do not matter at this time, they will be configured properly when the application is deployed to the server.**
 
@@ -229,7 +229,7 @@ Enter a name for your application and select the *.jar file exported from Design
 ![setup_mulesoft_14.png](./src/setup_mulesoft_14.png)
 
 Go to the Properties tab, and enter your LDAP connection information:
-- **ldap.Connection.url.value**: The LDAP server host information.
+- **ldap.Connection.url.value**: The LDAP server's host information.
 - **ldap.Connection.authPassword.value**: The password to use to authenticate to the directory.
 - **ldap.Connection.authDn.value**: The service account credential to use to authenticate to the directory.
 - **cloudhub_http.Connection.host.value**: 1
