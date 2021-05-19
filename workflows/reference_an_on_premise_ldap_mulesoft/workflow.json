@@ -14,7 +14,7 @@
     },
     {
       "title": "Setup Documentation",
-      "destination": "https://github.com/okta/workflows-templates/blob/master/workflows/reference_an_on-premise_ldap_mulesoft/readme.md"
+      "destination": "https://github.com/okta/workflows-templates/blob/master/workflows/reference_an_on_premise_ldap_mulesoft/readme.md"
     }
   ]
 }
