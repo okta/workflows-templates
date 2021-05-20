@@ -24,7 +24,7 @@ A **G Suite Activation**: Once a user is added to a specified Okta group:
 * An email to the user's manager to that effect will be sent.
 
 
-## Prerequisites: 
+## Prerequisites
 
 For this workflows template, to send an email to the manager on the creation of a user, a GMail connection and a G Suite Admin connection need to be configured in addition to the Okta tenant connection.
 
@@ -124,7 +124,7 @@ Along with the connectors specified above you will need:
     * **G Suite Staged Deactivation**
 
 
-## Testing this flows
+## Testing these Flows
 
 1. Open and login to the Google G Suite [ Admin Portal](https://admin.google.com/u/1/?hl=en) as your G Suite admin user.
 
