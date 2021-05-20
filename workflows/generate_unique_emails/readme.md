@@ -28,7 +28,7 @@ Before you get started, you will need:
            
 ## Setup Steps
 
-1. Import the Email workflow flopack in your workflow environment.
+1. Install the template into your Workflows environment.
 2. Inside the folder you should see 9 flows. Check for below main flows which triggers the emailGeneration based on your Domain and Mailsystem. 
     1. Okta-New-Email-Generation
     2. Google-Email-Generation
@@ -83,4 +83,4 @@ Before you get started, you will need:
 
 
 ## Limitations & Known Issues
-1. Okta workflows does not have any on-premise connector at the time this is being written. All the target systems should be accessible in public and shall be exposed as an API endpoint.
+1. Okta Workflows does not have any on-premise connector at the time this is being written. All the target systems should be accessible in public and shall be exposed as an API endpoint.
