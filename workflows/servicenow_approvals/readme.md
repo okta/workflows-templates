@@ -50,7 +50,7 @@ Before you get started, you will need:
     - Copy the "Invoke URL" value. You will need this later when you configure the **ServiceNow** **RESTMessage**. This will be something like <https://../api/flo/../invoke?clientToken=...>
  
 
-## Setup Steps to Configure the Personal Development Instance of ServiceNow: 
+## Setup Steps to Configure the Personal Development Instance of ServiceNow
 
 ### Incidents Form Design
 
