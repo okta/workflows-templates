@@ -18,15 +18,11 @@ Lastly, we all think our flows are easy to understand but a long complex flow ca
 
 Before you get started, here are the things you’ll need:
 
-
-
 *   Access to an Okta tenant with Okta Workflows enabled for your org 
 *   Access to a tenant for Slack or some other connector to output response
 
 
 ## Setup Steps
-
-
 
 1. Select the parent flow titled “[Parent] List Example”
     1. Make sure a connection is selected for the “List Users with Filter” card.
@@ -40,9 +36,7 @@ Before you get started, here are the things you’ll need:
 Note: Slack is used to show an action on each processed List item and to show how a common action can be implemented in a Child Flow for reusability. Other Workflow connections such as O365 or GMail can be substituted.
 
 
-## Testing this Flow
-
-
+## Testing these Flows
 
 1. Go to the parent flow, and click Test Flow in the toolbar.
     1. Click Flow History and make sure everything succeeded.
