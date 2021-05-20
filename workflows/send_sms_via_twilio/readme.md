@@ -44,7 +44,7 @@ If you need to set up a Twilio account, see Setup Twilio Trial Account at the en
 4. Phone # to send from - example : +12223335551
 
 
-## Testing this flow
+## Testing these Flows
 
 *   To test flow without a parent flow, just click the Test button while the SUB - Send SMS via Twilio workflow is open.
 *   You will be prompted to fill in the parameters that would normally be passed from a parent flow. All parameters are required.
