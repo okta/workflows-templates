@@ -18,9 +18,7 @@ Before you get started you will need:
 If you need to set up a Twilio account, see Setup Twilio Trial Account at the end of this document.
 
 
-## Workflow Setup Steps
-
-
+## Setup Steps
 
 1. This will require a HTTP Connection. 
     1. From the workflow console, at the top navigation bar, select Settings.
@@ -40,8 +38,6 @@ If you need to set up a Twilio account, see Setup Twilio Trial Account at the en
 
 ## Parameters to pass into this subflow
 
-
-
 1. SMS Phone # to send to - example: +12223335555
 2. Message example: Please contact the IT department asap
 3. Twilio Account SID 
@@ -50,8 +46,6 @@ If you need to set up a Twilio account, see Setup Twilio Trial Account at the en
 
 ## Testing this flow
 
-
-
 *   To test flow without a parent flow, just click the Test button while the SUB - Send SMS via Twilio workflow is open.
 *   You will be prompted to fill in the parameters that would normally be passed from a parent flow. All parameters are required.
 *   Click Run Test
@@ -59,18 +53,13 @@ If you need to set up a Twilio account, see Setup Twilio Trial Account at the en
 
 ## Limitations & Known Issues 
 
-
-
 *   Keep in mind the [Okta Workflows System Limits](https://help.okta.com/en/prod/Content/Topics/Workflows/workflows-system-limits.htm) 
 *   When invoking HTTP endpoints consider any applicable rate limits of the SaaS application (or http endpoint) that you are invoking. You should almost always set up error handling on the card to retry periodically.
 
 
 ## Appendix
 
-
 ### Setting up a Twilio Trial Account
-
-
 
 1. Go to [https://www.twilio.com/try-twilio](https://www.twilio.com/try-twilio) 
 2. Register for free account
