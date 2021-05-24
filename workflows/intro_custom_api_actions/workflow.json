@@ -16,7 +16,7 @@
       },
       {
          "title": "Setup Documentation",
-         "destination": "https://github.com/okta/workflows-templates/blob/master/workflows/intro_custom_api_actions/README.md"
+         "destination": "https://github.com/okta/workflows-templates/blob/master/workflows/intro_custom_api_actions/readme.md"
       }
    ]
 }
