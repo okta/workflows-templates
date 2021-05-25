@@ -11,7 +11,7 @@
   },
   "links": [
     {
-      "title": "Video",
+      "title": "Video Walk-through",
       "destination": "https://www.youtube.com/watch?v=n6R_d7Iv7nQ"
     },
     {
@@ -19,7 +19,7 @@
       "destination": "https://github.com/okta/workflows-templates/blob/master/workflows/manage_group_members_using_profile_attributes/groupRules.csv"
     }, 
     {
-      "title": "Documentation",
+      "title": "Setup Documentation",
       "destination": "https://github.com/okta/workflows-templates/blob/master/workflows/manage_group_members_using_profile_attributes/readme.md"
 
     }

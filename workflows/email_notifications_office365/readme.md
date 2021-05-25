@@ -1,12 +1,12 @@
 # Send Email Notifications with Office 365
 
 
-## <span style="text-decoration:underline;">Overview</span>
+## Overview
 
 This workflow sends an email notification with Office 365 when a user is suspended in Okta. It allows administrators to easily track user suspensions. This is a generic notifications template - you can easily swap out both the event or the email provider (to Gmail) based on your notifications use case. 
 
 
-## <span style="text-decoration:underline;">Before you get Started / Prerequisites</span>
+## Prerequisites
 
 Before you get started, here are the things you will need:
 
@@ -17,7 +17,7 @@ Before you get started, here are the things you will need:
 *   Access to a user who can be suspended
 
 
-## <span style="text-decoration:underline;">Setup Steps</span>
+## Setup Steps
 
 Please follow these step-by-step instructions to set up this workflow. 
 
@@ -28,7 +28,7 @@ Please follow these step-by-step instructions to set up this workflow.
 3. Save your flow. Turn on your flow in the top toolbar.
 
 
-## <span style="text-decoration:underline;">Testing this Flow</span>
+## Testing this Flow
 
 Please wait one minute after saving and turning on your Flow before you attempt to trigger it. It takes about one minute for an event hook to register after turning on a flow.
 
@@ -41,6 +41,6 @@ Please wait one minute after saving and turning on your Flow before you attempt 
 5. Verify that you received the _User Suspended Notification_ email
 
 
-## <span style="text-decoration:underline;">Limitations & Known Issues</span>
+## Limitations & Known Issues
 
 There are no limitations or known issues, at this time.

@@ -1,23 +1,24 @@
-# Workflows Template: Manage Okta Group Membership Based on Job Code or Profile Attribute Mapping
+# Manage Okta Group Membership Based on Job Code or Profile Attribute Mapping
 
 ## Overview
-
 
 In many organizations a set of Okta group memberships are determined based on Job Codes or more generally, by user profile attributes to implement Role-based access control (RBAC).  
 
 To keep it simple, we will use the Okta profile attribute "Title" for job codes. Maybe you have users that have a title of "Engineer" and they have to be assigned to specific Okta Groups. When their title changes to "Manager" they have to be assigned to different Okta Groups. Then they get promoted to "VP" and they have other Okta group assignments. Okta table can store the mapping of the titles to groups. Any additional groups that are assigned to the user besides the groups listed in the Okta table are retained. 
 
-## Before you get Started/Pre-requisites: 
+
+## Prerequisites
 
 Before you get started, you will need:
 - Access to an Okta tenant with Okta Workflows enabled for your org 
 
-## Setup Steps to configure the Okta Workflows: 
+
+## Setup Steps
 
 ### Populate the Okta table "*Group Rules*"
+
 - In the *Group Rules* Okta table populate the entries below. Choose the Okta Tables tab, click *Import* and select the csv file `groupRules.csv`
     
-
     | **functionRole** | **Group**  | 
     |:----------|:----------|
     | Engineer   | Group 3 | 
@@ -38,6 +39,7 @@ Before you get started, you will need:
     - `[1.2] Group Addition or Removal` - this adds or removes a specific user from a specific Okta Group
     - 
 ## Testing this flow
+
 - Create a test user in Okta. Optionally, you can manually assign any groups to the test user.
 
     - Set the `Title` attribute of the user to `Engineer` (the title has to match the functionRole entries in the Okta table)
@@ -53,9 +55,7 @@ Before you get started, you will need:
         - Run the `Fix Groups` flow; Enter the username of the test user you just created. 
         - The test user should be assigned `Group 3` 
 
-
 - Any additional groups that are assigned to the test user besides `Group 1`, `Group 2` and `Group 3` are unchanged. 
-
 
 
 ## Limitations & Known Issues
