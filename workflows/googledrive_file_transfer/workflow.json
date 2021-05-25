@@ -11,11 +11,11 @@
   },
   "links": [
     {
-      "title": "Video",
+      "title": "Video Walk-through",
       "destination": "https://www.youtube.com/watch?v=iMuCUhoB0v4"
     },
     {
-      "title": "Documentation",
+      "title": "Setup Documentation",
       "destination": "https://github.com/okta/workflows-templates/blob/master/workflows/googledrive_file_transfer/readme.md"
     }
   ]

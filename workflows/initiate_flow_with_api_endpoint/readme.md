@@ -1,7 +1,7 @@
-# **Initiate Flow With API Endpoint** 
+# Initiate Flow With API Endpoint
 
 
-## <span style="text-decoration:underline;">Overview</span>
+## Overview
 
 The Okta Workflow feature is a powerful tool to implement custom business logic. A popular integration is instead of creating an object directly into Okta (i.e. user, application or group ) with the Okta REST APIs, is to send the object request along with it’s JSON payload to Workflows. Then custom business logic such as checking existing objects in Okta or reaching out to a 3rd party to verify data can be accomplished. Based on the results of the dynamic logic, decisions can be made by Workflows providing distinct processing options.
 
@@ -10,7 +10,7 @@ The first step for implementation is creating a Parent Flow that accepts an API 
 We shall create a Bookmark Application integration for a new partner company that we are onboarding. Before creating the application object, Workflows will check for an existing object with the same value then gather existing application Id or create application object and report appId and all  results in the API Action response.
 
 
-## Before you get Started / Prerequisites
+## Prerequisites
 
 Before you get started, here are the things you’ll need:
 

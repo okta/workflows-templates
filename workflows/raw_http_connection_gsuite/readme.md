@@ -1,24 +1,20 @@
 
 # Custom HTTP connector for GSuite Admin in Workflows
 
-
 ## Overview
 
 Our current Workflows connector for G Suite Admin does not include all functions within Google Workspace APIs . The Custom API card is also restricted to the Directory and Licensing APIs. As our product team expands the scopes and permissions for different Workspace APIs, you can use this guide as a workaround to create your own custom HTTP connector to request for specific scopes from different Workspace APIs.
 
 
-## Before you get Started/Prerequisites
+## Prerequisites
 
 Before you get started you will need:
-
-
 
 *   Access to an Okta tenant with Okta Workflows enabled for your org
 *   Access to a tenant for Google Workspace
 
-## Workflow Setup Steps
 
-
+## Setup Steps
 
 1. Navigate to[ https://console.developers.google.com/](https://console.developers.google.com/) and login with the G Suite Admin login.
 2. If you do not already have a project, create a new project, leave the rest to defaults and click on Create:
@@ -52,8 +48,8 @@ Before you get started you will need:
     6. Client Secret : copied from the previous step
 10. Click on Create, authorize the request with the admin G Suite credentials and you’re set to directly call Google Workspace’s APIs and perform actions based on the scopes requested.
 
-## Testing this flow
 
+## Testing this Flow
 
 *   Ensure that the flow is turned on.
 *   Choose the new connector created in the HTTP card in the flow

@@ -1,4 +1,4 @@
-# Workflows Template: Reassign Files while Deprovisioning with Box
+# Reassign Files while Deprovisioning with Box
 
 ## Overview
 
