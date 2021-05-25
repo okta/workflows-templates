@@ -1,8 +1,7 @@
-##Create Unique Okta Usernames
+# Create Unique Okta Usernames
 
 
-### 
-**Overview**
+## Overview
 
 To Onboard users in an organization, IT needs to generate unique usernames for the end users to onboard in downstream systems like Active directory. Also Okta username needs to be unique.
 
@@ -17,12 +16,7 @@ If you want to change this logic, Then you can open 002-uniqueUsername flow and 
 ![image](https://user-images.githubusercontent.com/14205843/92506946-11eacb80-f1bb-11ea-969a-5b23953522e9.png)
 
 
-### 
-**Before you get Started / Prerequisites**
-
-Before you get started, you will need:
-
-
+## Prerequisites
 
 1. Access to an Okta tenant with Okta Workflows enabled for your org
 2. If you have an attribute level mastering setup - go to profile editor - Edit the Okta profile and click on the username attribute and select inherit from Okta under Master priority.
@@ -41,19 +35,16 @@ Enabling import inline hook is documented below. (Also shown in the video or usi
 
 **Note:** Inline hook also supports Link users, If there is an exact match conflict.  `      `
 
-
-### 
 **Design consideration**
 
 Should not use an inline hook if your flow run time is large. When Okta calls your external service, it enforces a default timeout of 3 seconds. Okta will attempt at most one retry. So if your flow is big and going to run for a longer time, you can use the Okta user create event to generate unique username.
 
-**Error handling**:
+**Error handling**
 
 Error handling can be built inside the logic. For example if there is no firstname or lastName we will error the flow. You can create email notifications or generate tickets in servicenow .
 
 
-### 
-**Setup Steps**
+## Setup Steps
 
 1. Go to the uniqueUsername folder. 
 
@@ -110,14 +101,11 @@ You should see an inline hook option where you can edit and associate the inline
 Above should trigger the inline hook during the import process.
 
 
-### 
-**Testing this Flow**
+## Testing these Flows
 
 **Option 1**:
 
 If you want to generate usernames using create user events in Okta. Follow below steps.
-
-
 
 1. Create a user in Okta. 
 2. That should trigger the username generation flow and update Okta username. 
@@ -140,8 +128,7 @@ empID,firstName,lastName,userName,email,emp_status,brandId,managerId
 
 **Note**: If you use other directories like active directory or other master app. Make sure you have the inline hook associated with it.
 
-### 
-**Limitations & Known Issues**
+## Limitations & Known Issues
 
 1. Okta Workflows does not have any on-premise connector at this time for writing. So all the targets should be accessible in public and shall be exposed as an API endpoint.
 2. When Okta calls your external service, it enforces a default timeout of 3 seconds. Okta will attempt at most one retry. A request is not retried if the customer endpoint returns a 4xx HTTP error code
