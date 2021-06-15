@@ -1,7 +1,7 @@
 {
     "name": "special_character_validation_and_substitution",
     "title": "Special Character Validation and Substitution",
-    "description": "The purpose of this template is to automatically exam a user's first name field upon Okta account creation and if necessary replace or remove special characters.",
+    "description": "The purpose of this template is to automatically examine a user's first name field upon Okta account creation and if necessary replace or remove special characters.",
     "connectors": [
        "okta"
     ],
