@@ -33,13 +33,13 @@ Before you get started you will need:
 
 1.  Ensure that both the flows are turned on.
 1.  Navigate to **Directory** > **Profile Editor** on the Okta Admin Console. Click **Edit** for the Okta user profile.
-*   Click **Add Attribute** and rename it `mobileNumber` for testing. Change the user permission to "Read-write" and leave the rest to defaults.
-*   Navigate to **Directory** > **People** and click **Add Person**.
-*   Create a test user with a secondary email address and a phone number in the format `+1-000-000-0000`. This should start the Pre-enroll MFA flow.
-*   Check your secondary email inbox for two emails: MFA enrolled and the activation email.
-*   Click on the **Activation** link to complete the activation process. You will be prompted to send a code to the number that was used to create the user.
-*   Once activation is complete, the Add other Factors flow kicks off and and adds other optional factors to the user.
-*   Once the test user created, click on the profile on the top right corner and navigate to Settings to see other MFA options under **Extra Verification**.
+1.  Click **Add Attribute** and rename it `mobileNumber` for testing. Change the user permission to "Read-write" and leave the rest to defaults.
+1.  Navigate to **Directory** > **People** and click **Add Person**.
+1.  Create a test user with a secondary email address and a phone number in the format `+1-000-000-0000`. This should start the Pre-enroll MFA flow.
+1.  Check your secondary email inbox for two emails: MFA enrolled and the activation email.
+1.  Click on the **Activation** link to complete the activation process. You will be prompted to send a code to the number that was used to create the user.
+1.  Once activation is complete, the Add other Factors flow kicks off and and adds other optional factors to the user.
+1.  Once the test user created, click on the profile on the top right corner and navigate to Settings to see other MFA options under **Extra Verification**.
 
 ## Limitations & Known Issues
 
