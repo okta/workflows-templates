@@ -1,0 +1,23 @@
+{
+   "name": "pre_enroll_mfa",
+   "title": "Pre-enroll users in SMS MFA before activation",
+   "description": " To improve security, validate the user's identity before they login for the first time, users can be pre-enrolled in SMS MFA using the phone number from the profile pulled in from Active Directory or the HR system. This workflow will automate this process and verify that the user is the the intended recipient to receive the activation to Okta to access company's resources.",
+    "connectors": [
+      "okta",
+      "gmail"
+   ],
+   "details": {
+ "flowCount": 2,
+ "stashCount": 0
+},
+   "links": [
+      {
+         "title": "Video Walk-through",
+         "destination": "https://www.youtube.com/watch?v=kUFgJ2MSypo"
+      },
+      {
+         "title": "Setup Documentation",
+         "destination": "https://github.com/okta/workflows-templates/blob/master/workflows/pre_enroll_mfa/readme.md"
+      }
+   ]
+}
