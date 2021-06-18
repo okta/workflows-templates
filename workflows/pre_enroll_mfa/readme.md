@@ -4,7 +4,7 @@
 
 ## Overview
 
-User activations typically allow users to choose and entoll in an MFA factor when they sign in for the first time. To improve security by validating the user's identity during sign-in, users can be pre-enrolled in the SMS factor using the profile phone number that was pulled from Active Directory or the HR system. This workflow will automate this process and verify that the user is authorized to receive an activation notice and can access their company's resources.
+User activations typically allow users to choose and enroll in an MFA factor when they sign in for the first time. To improve security by validating the user's identity during sign-in, users can be pre-enrolled in the SMS factor using the profile phone number that was pulled from Active Directory or the HR system. This workflow will automate this process and verify that the user is authorized to receive an activation notice and can access their company's resources.
 
 ## Before you get Started/Prerequisites
 
