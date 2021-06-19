@@ -256,7 +256,7 @@ or remove unwanted characters in data, writing the new data to a specified user 
 12. Turn the flow on.
 
 
-###Testing this Flow
+### Testing this Flow
 
 Take these steps to properly test the flow.
 
@@ -272,7 +272,7 @@ Take these steps to properly test the flow.
 
 3.  Go to your Okta tenant and view the informatino for the user **Wile-E**. In the profile, you should see the **ValidatedName** attribute populated with `WileE`. Note the dash has been removed.
 
-###Limitations & Known Issues
+### Limitations & Known Issues
 
 Many characters have special meaning in regular expressions, such as ., +, \*, \\ and more. To search for any of those characters, you need to
 place a \\ before the character. For example:
