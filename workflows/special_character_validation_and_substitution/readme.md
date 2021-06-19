@@ -4,11 +4,11 @@
 
 When using a user’s name to generate technical fields such as
 samAccountName and email addresses, often the data will contain
-characters that are invalid in the specified data field (such as a space
+characters that are invalid in the specified data field (for example, a space
 in an email address). This workflow identifies some of the most common
 special characters and provides substitutions. The validated or
-remediated name is then placed in a user profile attribute in Okta to
-allow for preservation of the original name for display purposes and
+repaired name is then placed in a user profile attribute in Okta to
+allow for preservation of the original name for display purposes, and
 utilization of the updated name for technical purposes.
 
 <u>Before you get Started / Prerequisites</u>
@@ -16,283 +16,267 @@ utilization of the updated name for technical purposes.
 Before you get started, here are the things you’ll need:
 
 -   Access to an Okta tenant with Okta Workflows enabled/configured for your org
-
 -   A user with special characters to be replaced
-
 -   A read-write Okta sourced attribute called ValidatedName
 
 <u>Setup Steps</u>
 
-*<u>Workflow 1 – Special Character Replacement</u>*
+### Workflow 1 – Special Character Replacement
 
-This workflow can be used to replace or remove unwanted characters in
-data, , writing the new data to a specified user profile attribute in
-Okta. This workflow will be used in conjunction with a second workflow,
-special character validation to identify and replace or remove unwanted
-characters for use in technical fields such as email address and AD
-samAccountName.
+This workflow can be used to replace or remove unwanted characters in data or writing the new data to a specified user profile attribute in
+Okta. This workflow will be used in conjunction with a second workflow that performs special character validation to identify then replace or remove unwanted
+characters for use in technical fields such as email address and AD samAccountName.
 
-1.  From the folder you wish to create the workflows in
+1.  From a folder in Workflows, click **New Flow**.
 
-    1.  Click Create a new flow
+2.  Click **Add Event**:
 
-2.  Click Add Event
+    1.  In the Okta Apps section, click **Child Flow**.
 
-    1.  Click Child Flow under Okta Apps
+    2.  In the **Inputs to this Flow** field, type `input`. This is case sensitive.
 
-    2.  In the Inputs to this flow field, type **input** (this is case sensitive)
+3.  Add a function card to your flow:
 
-3.  Create a Function card
+    1.  Click **Add function**.
 
-    1.  In Add Steps to your flow window, click Function
+    2.  Type `replace patterns` in the search field, then click the **Replace Patterns** option.
 
-    2.  Search for **Replace Pattern** and select
+    3.  Drag the input field from the Child Flow card to the **look in** field of the **Replace Patterns** function card.
 
-    3.  Drag the input field from the Child Flow card to the look in field of the replace pattern card
+    4.  Leave the **replace with** field empty.
 
-    4.  Leave the replace with field blank
+    5.  Make sure the `True` option is selected from the drop-downs for the **all instances** and **case sensitive** fields.
 
-    5.  Leave all instances and case sensitive fields at True
+    6.  In the **patterns** section, click **Click or drop here to create** to create an input field.
 
-    6.  In the pattern field click to create an input field
+        1.  Enter `~`.
 
-        1.  Enter **\~**
+    7.  In the **patterns** section, click **Click or drop here to create** again to create an additional field. Name the field `input2` (or input3 and so on).
 
-    7.  In the pattern field, click again to create an additional field. Name the field input2 (or input3 and so on) Create the below input fields
+    8.  Create additional input fields with inputs for each as follows:  
 
-        1.  **’**
+        1.  `’`
 
-        2.  **\\s** (spaces are a reserved character - see known limitations)
+        2.  `\s` (spaces are a reserved character)
 
-        3.  **\_ (underscore)**
+        3.  `_` (underscore)
 
-        4.  **\_ (hyphen)**
+        4.  `_` (hyphen)
 
-        5.  **\\.** (periods are a reserved character - see known limitations)
+        5.  `\.` (periods are a reserved character)
 
-This function card will replace a tilde, apostrophe, a white space
-character (blank or tab), underscore, dash, or a period in the field with
-nothing. This is especially useful if trying to create an email address
-and the name contains spaces.
+This function card will replace a tilde, apostrophe, a white space character (blank or tab), underscore, dash, or a period in the field with
+nothing. This is especially useful if trying to create an email address and the name contains spaces.
 
-4.  Create a function card
+4.  Add another function card:
 
-    1.  Click Function
+    1.  Click **Add function**.
 
-    2.  Search for **Replace Pattern** and select
+    2.  Type `replace patterns` in the search field, then click the **Replace Patterns** option.
 
-    3.  Drag the output field (result text) from the first Replace Pattern card and place it in the look in field of the next pattern card.
+    3.  Drag the output field (result text) from the first Replace Patterns card and place it in the **look in** field of the other **Replace Patterns** card.
 
-    4.  In the replace with field, type **a**
+    4.  In the **replace with** field, enter `a`.
 
-    5.  Leave all instances and case sensitive fields at True
+    5.  Make sure the `True` option is selected from the drop-downs for the **all instances** and **case sensitive** fields.
 
-    6.  In the pattern field click to create an input field
+    6.  In the **patterns** section, click **Click or drop here to create** to create an input field.
 
-        1.  enter **â**
+        1.  Enter `â`.
 
-    7.  In the pattern field, click again to create an additional field. Name the field input2 (or input3 and so on) Create the below input fields
+    7.  In the **patterns** section, click **Click or drop here to create** again to create an additional field. Name the field `input2` (or input3 and so on).
+ 
+    8.  Create additional input fields with inputs for each as follows: 
 
-        1.  **å**
+        1.  `å`
 
-        2.  **á**
+        2.  `á`
 
-        3.  **ą**
+        3.  `ą`
 
-        4.  **ã**
+        4.  `ã`
 
-        5.  **à**
+        5.  `à`
 
-5.  Create a function card
+5.  Add another function card:
 
-    1.  Click Function
+    1.  Click **Add function**.
 
-    2.  Search for **Replace Pattern** and select
+    2.  Type `replace patterns` in the search field, then click the **Replace Patterns** option.
 
-    3.  Drag the output field (result text) from the last Replace Pattern card and place it in the look in field of the next pattern card.
+    3.  Drag the output field (result text) from the most recent Replace Patterns card and place it in the **look in** field of the next **Replace Patterns** card.
 
-    4.  In the replace with field, type **A**
+    4.  In the **replace with** field, enter `A`.
 
-    5.  Leave all instances and case sensitive fields at True
+    5.  Make sure the `True` option is selected from the drop-downs for the **all instances** and **case sensitive** fields.
 
-    6.  In the pattern field click to create an input field
+    6.  In the **patterns** section, click **Click or drop here to create** to create an input field.
 
-        1.  enter **Â**
+        1.  Enter `Â`.
 
-    7.  In the pattern field, click again to create an additional field. Name the field input2 (or input3 and so on) Create the below input fields
+    7.  In the **patterns** section, click **Click or drop here to create** again to create an additional field. Name the field `input2` (or input3 and so on).
+    
+    8.  Create additional input fields with inputs for each as follows: 
 
-        1.  **Å**
+        1.  `Å`
 
-        2.  **Á**
+        2.  `Á`
 
-        3.  **Ą**
+        3.  `Ą`
 
-        4.  **Ã**
+        4.  `Ã`
 
-        5.  **À**
+        5.  `À`
 
-Repeat this process for every special character you wish to replace,
-noting that Replace Pattern cards are configured to be case sensitive
-(as the primary use case is for names). Once you have added all the
-desired Replace Pattern cards create a return card.
+Repeat this process for every special character you want to replace, noting that Replace Patterns cards are configured to be case sensitive
+(as the primary use case is for names).
 
-6.  Create a function card
+After you have added all the desired Replace Patterns cards, create a return card.
 
-    1.  Search for **Return** and select
+6.  Add another function card:
 
-    2.  Drag the output field (result text) from the last Replace Pattern card and drop it in the input field.
+    1.  Type `return` in the search field, then click the **Return** option.
 
-    3.  Change label on input field box to remediated
+    2.  Drag the **result text** output field from the last Replace Patterns card and drop it in the input field.
 
-        1.  Click Aa down arrow
+    3.  To change the label on the input field box to `remediated`, click the attribute customization menu for the field.
 
- <img src="media/image1.png" style="width:2.84375in;height:4.625in" />
+        <img src="media/image1.png" style="width:2.84375in;height:4.625in" />
+ 
+    4. Click **Customzie**.
+ 
+    5. In the **Display Name** field, enter `remediated`.
 
-2.  Click customize
-
-3.  In Display Name, type **remediated**
-
+   
 <!-- -->
 
-7.  Click Save and Name the flow **Special Character Remediation**
+7.  Click **Save** and name the flow `Special Character Remediation`.
 
-8.  Tick the box to Save all data that passes through the flow
+8.  Click the check box to save all data that passes through the flow.
 
-9.  Turn the Workflow on
+9.  Turn the flow on.
 
-*<u>Workflow 2 – Special Character Validation</u>*
+### Workflow 2 – Special Character Validation
 
-This workflow can be used to identify characters in data which are
-potentially problematic in technical fields such as email addresses and
-AD samAccountName. This workflow will be used in conjunction with a
-second workflow, special character replacement to identify and replace
-or remove unwanted characters in data, writing the new data to a
-specified user profile attribute in Okta.
+This workflow can be used to identify characters in data which are potentially problematic in technical fields such as email addresses and
+AD samAccountName. This workflow will be used in conjunction with a second workflow, special character replacement to identify and replace
+or remove unwanted characters in data, writing the new data to a specified user profile attribute in Okta.
 
-1.  From the folder you wish to create the workflows in
+1.  From a folder in Workflows, click **New Flow**.
 
-    1.  Click Create a new flow
+2.  Click **Add Event**:
 
-2.  Click Add Event
+    1.  In the **My Connected Apps** section, click **Okta**.
 
-    1.  Click Okta under My Connected Apps
+    2.  Select the **User Created** option.
 
-    2.  Click User Created
+3.  Click **Add app action**:
 
-3.  In Add steps to your flow, click **App Action**
+    1.  Click **Okta**.
 
-    1.  Click Okta
+    2.  Select the **Read User** option.
 
-    2.  Click Read User
+    3.  Make sure **First name** is selected as an output field.
 
-        1.  Under outputs Select First Name
+    4.  Drag the **Okta User - ID** output field from the User Create event card to the **ID or Login** input field of the Read User action card.
 
-    3.  Drag Okta User ID from User Create Card to User field of Read User Card
+4.  Add a function card to your flow:
 
-4.  Create a Function Card
+    1.  Type `find pattern` in the search field, then click the **Find Pattern** option.
 
-    1.  Search for **Find Pattern** and select
+    2.  Drag the **First name** output field from Read User action card to the **look in** input field of the Find Pattern function card.
 
-    2.  Drag First Name from Read User Card and drop in “Look In” field
+    3.  In **look For** input field, enter `[A-Za-z0-9\]`. Make sure to include the brackets.
+        
+        This is a regular expression that looks for exceptions to the characters listed below. Any character not matching one of these criteria will return a position number that we will use to execute the special character replacement workflow. The acceptable characters are:
 
-    3.  In “Look For” field, enter copy/paste the below, including the brackets
+         - Any capital letter A through Z
 
-        1.  **\[A-Za-z0-9\] -** This is a regular expression that looks for exceptions to the characters listed below. Any character not matching one of these criteria will return a position number that we will use to execute the special character replacement workflow. The acceptable characters are:
+         - Any lowercase letter a through z
 
-            1.  Any capital letter A through Z
+         - Any number 0-9
 
-            2.  Any lowercase letter a through z
+5.  Add a function card to your flow:
 
-            3.  Any number 0-9
+    1.  Type `if/else` in the search field, then click the **If/Else** option.
 
-5.  Create a Function Card
+    2.  Drag the **position** output field from the Find Pattern function card to the **value a** input field of the If/else card.
 
-    1.  Search for **If/Else** and Select
+    3.  Make sure the **comparison** drop-down field is set to `equal to`.
 
-    2.  Drag position from Find Pattern card and drop into value a of If/else card
+    4.  In the **value b** input field, enter `-1`.
 
-    3.  Leave comparison field at “equal to”
+    5.  Click **Save**.
 
-    4.  Type **-1** in value b
+6.  Create outputs:
+    1.  On the If/Else card, click **Create outputs**.
 
-    5.  Click Save
+    2.  Click the field and enter `ValidatedName`.
 
-6.  Click Create outputs
+7.  In the **Run when TRUE** box,click **+** and select the Function icon.
 
-    1.  Click field and type **ValidatedName**
+    1.  Type `assign` in the search field, then click the **Assign** option.
 
-7.  In Run When True box,click **+** and select Function
+        1.  Drag the **First name** output field from Read User action card to the input field.
 
-    1.  Search for **Assign** and select
+        2.  Change the Display Name attribute for the output field to `unchanged`.
 
-        1.  Drag First Name from Read User card and drop in input field
+        3.  Drag the **unchanged** field from output box of the Assign card to the **Drag true output here** field of the **Outputs** section of the If/Else function card.
 
-        2.  In output field, type **unchanged**
+8.  In **Run when FALSE** box, click **+** and select the Function icon.
 
-        3.  Drag unchanged field from output box of Assign card to Drag
- true output here box in Outputs section of if/else card
+    1.  Type `call flow` in the search field, then click the **Call Flow** option.
 
-8.  In Run When False box, click **+** and select Function
+    2.  Click **Choose Flow**, and in the **Select Flow** dialog, select the **Special Character Removal** flow.
 
-    1.  Search for **Call Flow** and select
+    3.  Drag the **First name** field from the Read User action card to the input field on the Call Flow function card.
 
-    2.  In Choose Flow box, Select Special Character Removal
+    4.  In the output field for the Call Flow function card, enter `remediated`.
 
-    3.  In the input field, drag the First Name field from the Okta Read User Card
+    5.  Drag the **remediated** output field of the Call Flow card to the **Drag false output here** field of the **Outputs** section of the If/Else function card.
 
-    4.  In the output field, type **remediated**
+3.  Click **Add app action**:
 
-    5.  Drag output field to drag false output here box in Outputs section of if/else
+    1.  Click **Okta**.
 
-9.  Create an App Action Card
+    2.  Select the **Update User** option.
 
-    1.  Select Okta from My Connected Apps
+    3.  In the options section, select **Partial** from the **Update Semantics** drop-down.
 
-    2.  Search for **Update User** and select
+    4.  Click **Save**.
 
-    3.  Select Update Semantics to be partial
+    5.  On the Update User action card, deselect all fields except Unselect everything except **User - ID** and **Profile - ValidatedName**.
 
-    4.  Click Save
+    6.  Drag the **Okta User - ID** output field from the User Created event card to the **User - ID** input field of the Update User card.
 
-    5.  Unselect everything except
+10. Click **Save** and name the flow **Special Character Validation**.
 
-        1.  Inputs
+11. Click the check box to save all data that passes through the flow.
 
-            1.  UserID
+12. Turn the flow on.
 
-            2.  Profile **ValidatedName**
 
-    6.  Drag the ID field from the User Create card to the ID field of the Update User card.
+###Testing this Flow
 
-10. Click Save and Name the flow **Special Character Validation**
+Take these steps to properly test the flow.
 
-11. Tick the box to Save all data that passes through the flow
+1.  Create an Okta user with the following values:
 
-12. Turn the Workflow On
+    1.  For first name, use `Wile-E`.
 
-<u>Testing this Flow</u>
+    2.  For last name, use `Coyote`.
 
-This is how a builder might test the flow. Here’s what it will look like
-when it’s working.
+    3.  Use any value for the email or user name.
 
-1.  Create an Okta user
+2.  Open the flow named Special Character Validation and click the **Flow History** tab.
 
-    1.  First Name = Wile-E
+3.  Go to your Okta tenant and view the informatino for the user **Wile-E**. In the profile, you should see the **ValidatedName** attribute populated with `WileE`. Note the dash has been removed.
 
-    2.  Last Name = Coyote
+###Limitations & Known Issues
 
-    3.  Use any value you like for email/login name
+Many characters have special meaning in regular expressions, such as ., +, \*, \\ and more. To search for any of those characters, you need to
+place a \\ before the character. For example:
 
-2.  Open your flow called Special Character Validation and view Flow History
+   - `\\.` - finds a period
 
-3.  Go to your Okta tenant, open the user Wile-E. In the profile you should see the ValidatedName attribute populated with WileE
-
-<u>Limitations & Known Issues</u>
-
-Many characters have special meaning in regular expressions, such as .,
-+, \*, \\ and more. To search for any of those characters you need to
-place a \\ before the character. For instance:
-
--   \\. - finds a period
-
--   \\s - finds white space (blank or tab)
+   - `\\s` - finds white space (blank or tab)
