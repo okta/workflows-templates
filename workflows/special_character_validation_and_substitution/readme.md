@@ -19,8 +19,6 @@ Before you get started, here are the things you’ll need:
 -   A user with special characters to be replaced
 -   A read-write Okta sourced attribute called ValidatedName
 
-<u>Setup Steps</u>
-
 ### Workflow 1 – Special Character Replacement
 
 This workflow can be used to replace or remove unwanted characters in data or writing the new data to a specified user profile attribute in
