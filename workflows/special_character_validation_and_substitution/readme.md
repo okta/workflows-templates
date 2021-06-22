@@ -2,11 +2,11 @@
 
 ## <u>Overview</u>
 
-When using a user’s name to generate technical fields such as
+When working with a user’s name to generate technical fields such as
 samAccountName and email addresses, often the data will contain
 characters that are invalid in the specified data field (for example, a space
 in an email address). This workflow identifies some of the most common
-special characters and provides substitutions. The validated or
+special characters and provides substitutions. A validated or
 repaired name is then placed in a user profile attribute in Okta to
 allow for preservation of the original name for display purposes, and
 utilization of the updated name for technical purposes.
@@ -16,14 +16,13 @@ utilization of the updated name for technical purposes.
 Before you get started, here are the things you’ll need:
 
 -   Access to an Okta tenant with Okta Workflows enabled/configured for your org
--   A user with special characters to be replaced
+-   A user with special characters that will be repaired
 -   A read-write Okta sourced attribute called ValidatedName
 
 ### Workflow 1 – Special Character Replacement
 
 This workflow can be used to replace or remove unwanted characters in data or writing the new data to a specified user profile attribute in
-Okta. This workflow will be used in conjunction with a second workflow that performs special character validation to identify then replace or remove unwanted
-characters for use in technical fields such as email address and AD samAccountName.
+Okta. This workflow will be used in conjunction with a second workflow that performs special character validation to identify then replace or remove unwanted characters for use in technical fields such as email address and AD samAccountName.
 
 1.  From a folder in Workflows, click **New Flow**.
 
@@ -64,7 +63,7 @@ characters for use in technical fields such as email address and AD samAccountNa
         5.  `\.` (periods are a reserved character)
 
 This function card will replace a tilde, apostrophe, a white space character (blank or tab), underscore, dash, or a period in the field with
-nothing. This is especially useful if trying to create an email address and the name contains spaces.
+a blank. This is especially useful if trying to create an email address and the name contains spaces.
 
 4.  Add another function card:
 
@@ -243,7 +242,7 @@ or remove unwanted characters in data, writing the new data to a specified user 
 
     4.  Click **Save**.
 
-    5.  On the Update User action card, deselect all fields except Unselect everything except **User - ID** and **Profile - ValidatedName**.
+    5.  On the Update User action card, deselect all fields except **User - ID** and **Profile - ValidatedName**.
 
     6.  Drag the **Okta User - ID** output field from the User Created event card to the **User - ID** input field of the Update User card.
 
