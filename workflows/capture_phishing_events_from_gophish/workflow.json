@@ -1,0 +1,22 @@
+{
+   "name": "capture_phishing_events_from_gophish",
+   "title": "Capture Phishing Events from GoPhish",
+   "description": "This template listens to phishing events captured by GoPhish when a user opens a email phishing link or submits information or credentials to a phishing page. This information can be used by Okta to change login procedures and reset user credentials upon security events.",
+   "connectors": [
+      "okta"
+   ],
+   "details": {
+    "flowCount": 2,
+    "stashCount": 2
+  },
+   "links": [
+      {
+         "title": "Video Walk-through",
+         "destination": "https://www.youtube.com/watch?v=XKAMSCT2Fz0"
+      },
+      {
+         "title": "Setup Documentation",
+         "destination": "https://github.com/okta/workflows-templates/blob/master/workflows/capture_phishing_events_from_gophish/readme.md"
+      }
+   ]
+}
