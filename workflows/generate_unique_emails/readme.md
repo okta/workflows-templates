@@ -82,4 +82,4 @@ Before you get started, you will need:
 
 
 ## Limitations & Known Issues
-1. Okta Workflows does not have any on-premise connector at the time this is being written. All the target systems should be accessible in public and shall be exposed as an API endpoint.
+Okta Workflows does not have any on-premise connector at the time this is being written. All the target systems should be accessible in public and shall be exposed as an API endpoint.
