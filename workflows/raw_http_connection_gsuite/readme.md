@@ -59,7 +59,6 @@ Before you get started you will need:
 
 ## Limitations & Known Issues 
 
-
 *   The Raw HTTP Connector to GSuite workflow does not receive a refresh token and requires re-authentication every hour.
-*   Keep in mind the [Okta Workflows System Limits](https://help.okta.com/en/prod/Content/Topics/Workflows/workflows-system-limits.htm).
-*   When invoking HTTP endpoints consider any applicable rate limits of the SaaS application (or http endpoint) that you are invoking. You should almost always set up error handling on the card to retry periodically.
+*   Be aware of [Okta Workflows System Limits](https://help.okta.com/en/prod/Content/Topics/Workflows/workflows-system-limits.htm).
+*   When invoking HTTP endpoints, consider any applicable rate limits of the SaaS application (or HTTP endpoint) that you're invoking. You should almost always set up error handling on the card to retry periodically.
