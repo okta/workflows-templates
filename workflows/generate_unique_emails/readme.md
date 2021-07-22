@@ -5,23 +5,23 @@
 
 To onboard users in an organization, IT needs to generate unique email addresses for the end users. 
 
-Generate unique Email : In this example uniqueness check is performed using different systems. You can pick the appropriate one for your organization.
-1. Validate against Office365 Proxy Addresses attribute for Organizations using Office365
-2. Validate against Google email aliases for Organizations using google mail
-3. Validate the Proxy Address against Okta directly, if Okta is the master for provisioning users in the target mailSystem.
-4. MultiDomains scenario
+Generate unique email address: In this example uniqueness check is performed using different systems. You can pick the appropriate one for your organization.
+1. Validate against Office365 Proxy Addresses attribute for organizations using Office365.
+2. Validate against Google email aliases for organizations using Google mail.
+3. Validate the Proxy Address against Okta directly, if Okta is the master for provisioning users in the target mail system.
+4. Multi-domains scenario.
     
-This flow follows the below logic.
-1. Construct email with firstname.lastname@domain.com
+This flow follows this pattern:
+1. Construct email with firstname.lastname@domain.com.
 2. Check in the email tenants for users starting with prefixes.
 3. If already taken increment numbers at the end of lastname.
 
-Example : John.doe@okta.com If there is second John.Doe then the logic will create John.Doe1@okta.com.
+Example : For John.doe@okta.com, if there is second John.Doe then the logic will create John.Doe1@okta.com.
     
 ## Prerequisites
 Before you get started, you will need:
 
-1. Access to an Okta tenant with Okta Workflows enabled for your org
+1. Access to an Okta tenant with Okta Workflows enabled for your org.
 2. Access to Email tenant. An admin account is required if you want to test against Office365 or Google.
  
            
