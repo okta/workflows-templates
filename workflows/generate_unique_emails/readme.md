@@ -64,13 +64,14 @@ Before you get started, you will need:
     6. In my example I have emailTenant representing different end points for validating Email uniqueness. If you just have Office365 domain you can remove this form table and go back to the flow to change the logic. Only if you have one single email tenant with multiple domains should you use the Multidomain flows. This could be multiple o365 tenants or single O365 tenant with multiple domains.
       1. Create a String-array attribute in Okta user profile called proxyAddresses. 	 
       2. For multiple o365 tenants with multiple domains:
+
                  1. If you have the above environment. Just go back to multidomain flow after completing step f. Change the if else logic
                  ![image](https://user-images.githubusercontent.com/14205843/91472543-77020100-e84c-11ea-942e-f1a1c02ac9d5.png)
                  2. For example you can use the change to brand domain instead of emailTenant. In that way based on the domain you can execute the logic.
                  ![image](https://user-images.githubusercontent.com/14205843/91472615-939e3900-e84c-11ea-9257-8edbedba8585.png)
                  3. Inside the else section make sure you create cards exactly like the one in If since all are flows executing in O365. Vice versa for google or Okta.
                  4. Make sure all connections are setup to the proper email Tenant.
-      2. For a single O365 tenants with Multiple domains:
+      3. For a single O365 tenants with Multiple domains:
                  1. If you have this setup, use the O365-Email-Generation instead of MultiDomain.
                  2. Open the O365-Email-Generation flow and add the BrandID and search Table cards as per multiDomain flow. Remove the Assign Domain flow.
 
