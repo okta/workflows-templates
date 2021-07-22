@@ -1,10 +1,7 @@
 Capture Phishing Events from GoPhish
 
 # Overview
-This template listens to phishing events captured by GoPhish
-when a user opens a email phishing link or submits information or
-credentials to a phishing page. This information can be used by Okta to
-change login procedures and reset user credentials upon security events.
+This template listens to phishing events captured by GoPhish when a user opens a email phishing link or submits information or credentials to a phishing page. This information can be used by Okta to change login procedures and reset user credentials upon security events.
 
 ## Prerequisites 
 Before you get started, you will need:
