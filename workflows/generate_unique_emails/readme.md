@@ -3,7 +3,7 @@
 
 ## Overview
 
-To onboard users in an organization, IT needs to generate unique Email for the end users. 
+To onboard users in an organization, IT needs to generate unique email addresses for the end users. 
 
 Generate unique Email : In this example uniqueness check is performed using different systems. You can pick the appropriate one for your organization.
 1. Validate against Office365 Proxy Addresses attribute for Organizations using Office365
