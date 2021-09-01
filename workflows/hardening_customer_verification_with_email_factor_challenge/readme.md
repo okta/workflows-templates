@@ -1,22 +1,5 @@
-﻿# Hardening customer verification with email factor challenge 
+# Hardening customer verification with email factor challenge 
 
-` `TOC \h \u \z [**Hardening customer verification with email factor challenge](#_xhzxrgcxfr5a)**	 PAGEREF \_xhzxrgcxfr5a \h **1**
-
-[Objective](#_y6a1qrfplcfz)	 PAGEREF \_y6a1qrfplcfz \h 1
-
-[How can Okta address this?](#_iiogspwpzlu3)	 PAGEREF \_iiogspwpzlu3 \h 1
-
-[Pre-requirements](#_3hth9u5e6czm)	 PAGEREF \_3hth9u5e6czm \h 1
-
-[Setup Steps](#_yb2gi7j2wzt9)	 PAGEREF \_yb2gi7j2wzt9 \h 2
-
-[Flow 1: Issue an Email Factor Challenge](#_d7jithhseo3)	 PAGEREF \_d7jithhseo3 \h 2
-
-[Flow 2: Verify an Email Factor Challenge](#_v5alwibzaxvt)	 PAGEREF \_v5alwibzaxvt \h 10
-
-[Testing this Flow](#_rjzv3pj4sexx)	 PAGEREF \_rjzv3pj4sexx \h 14
-
-[Limitations & Known Issues](#_ihfvgoh4kzt3)	 PAGEREF \_ihfvgoh4kzt3 \h 15
 ## Objective
 Hardening customer identity authentication is critical to improving security and avoiding fraud and should be baked into the customer journey both online and offline - whether it is shopping online or picking up takeout food from your favourite restaurant. Hardening customer identity authentication creates two interesting challenges - validating the identity of the customer beyond traditional static password based authentication to include a reliable time-based one-time password (TOTP) and continuing to provide a frictionless experience without compromising security. 
 ## How can Okta address this?
@@ -39,10 +22,7 @@ Both the flows are exposed as API endpoints that can be invoked via command line
 
 1. In the Workflows Console, click **New Flow**. Optionally, if you have a folder where you want to store this Flow, open it and click **+New** **Flow**
 
-
 1. Name your Flow as **Issue an Email Factor Challenge**
-
-`          `**![](Aspose.Words.c588d44c-28bc-48fd-8ba9-f4940bb0b3fe.001.png)**
 
 1. Click **Add Event**
 
@@ -54,7 +34,7 @@ Both the flows are exposed as API endpoints that can be invoked via command line
 1. If a query parameter **email** is provided then the flow will continue else, send a meaningful error message.  To accomplish this, select **Branching -> Continue If.** 
 
 
-1. ` `Drag and drop the **email** field in the API Endpoint card to the **value a** field
+1. Drag and drop the **email** field in the API Endpoint card to the **value a** field
 1. Set **comparison** to **not equal**
 
 
@@ -76,7 +56,7 @@ Both the flows are exposed as API endpoints that can be invoked via command line
 1. If a customer was found with the email provided then the flow will continue else, send a meaningful error message.  To accomplish this, select **Function -> Branching -> Continue If.** 
 
 
-1. ` `Drag and drop the **ID** field in the Find Users card to the **value a** field
+1. Drag and drop the **ID** field in the Find Users card to the **value a** field
 1. Set **comparison** to **not equal**
 
 1. Enter **error: invalid email** in the **message** field 
@@ -93,17 +73,17 @@ Both the flows are exposed as API endpoints that can be invoked via command line
 1. Drag and drop the **output** field in the **Text Concatenate** card to the **Relative URL** field
 1. Enter **"content-type": "application/json","Accept": "application/json"** inside {} in **Headers** field
 1. To parse the API response for the email factor **id** click **Function->List->Find**
-1. Drag and drop the **Body** from **Okta Custom API Action card** to **list** field**.** Set **operator** to **equal to.** Enter in the **path** textbox **factorType** and in the **comparison** textbox **email.** Enter key name as  **id** to extract the id of the email factor**
+1. Drag and drop the **Body** from **Okta Custom API Action card** to **list** field. Set **operator** to **equal to.** Enter in the **path** textbox **factorType** and in the **comparison** textbox **email.** Enter key name as  **id** to extract the id of the email factor
 
 1. Construct endpoint to issue email factor challenge by selecting **Function -> Text -> Concatenate**
-1. Enter **/api/v1/users/** in text 1. Drag and drop **ID** field in the **Find Users** card to **text 2**.** Click inside the grey box to enter **/factors/**.** Click inside the grey box and provide a unique name **id.** Drag and drop **id** from Okta Custom API Card to **id** field. Click inside the grey box and enter a unique name **verify** and then** enter  **/verify
-   ![](Aspose.Words.c588d44c-28bc-48fd-8ba9-f4940bb0b3fe.002.png)**
+1. Enter **/api/v1/users/** in text 1. Drag and drop **ID** field in the **Find Users** card to **text 2**. Click inside the grey box to enter **/factors/**. Click inside the grey box and provide a unique name **id.** Drag and drop **id** from Okta Custom API Card to **id** field. Click inside the grey box and enter a unique name `verify` and then enter `/verify`
+
 
 1. Issue email factor challenge by clicking **App Action** -> **Okta** -> **Custom API Action.** Set **Request Type** to **POST** and **Save.**
 
 
 1. Uncheck **Request Query** and Save
-   ![](Aspose.Words.c588d44c-28bc-48fd-8ba9-f4940bb0b3fe.003.png)
+
 1. Drag and drop the **output** field in the **Text Concatenate** card to the **Relative URL** field
 1. Enter **"content-type": "application/json","Accept": "application/json"** inside {} in **Headers** field
 1. To return back the status of the API call select **Function -> Flow Control -> Return Raw**
@@ -117,18 +97,14 @@ Both the flows are exposed as API endpoints that can be invoked via command line
 1. Click on the **Gears** icon next to your flow
 1. Click **API Access**
 
-1. ` `**API Endpoint Settings** for the flow is displayed. Select **Expose as Public Service**. Copy the **Invoke URL
+1. **API Endpoint Settings** for the flow is displayed. Select **Expose as Public Service**. Copy the value from **Invoke URL**
 
-   ![](Aspose.Words.c588d44c-28bc-48fd-8ba9-f4940bb0b3fe.004.png)**
 #### Flow 2: Verify an Email Factor Challenge
 
 1. In the Workflows Console, click **New Flow**. Optionally, if you have a folder where you want to store this Flow, open it and click **+New** **Flow**
 
 
 1. Name your Flow as **Verify an Email Factor Challenge**
-**
-
-
 
 1. Click **Add Event**
 
@@ -137,14 +113,14 @@ Both the flows are exposed as API endpoints that can be invoked via command line
 1. To build the payload object from the **opt** provided click **Function -> Object -> Construct** and create an object with key **passCode** . Drag and drop **otp** from On Demand API
 1. Complete steps 12 - 30 from **Flow 1: Issue an Email Factor Challenge**
 
-1. ` `Uncheck **Request Query** , check **Request** **Body** and **Save**
+1. Uncheck **Request Query** , check **Request** **Body** and **Save**
 
 
 
 
 1. Drag and drop the **output** field in the **Text Concatenate** card to the **Relative URL** field
 1. Enter **"content-type": "application/json","Accept": "application/json"** inside {} in **Headers** field
-1. Drag and drop the **output** field in the **Object Construct** card (step 6)** to the **Body** field
+1. Drag and drop the **output** field in the **Object Construct** card (step 6) to the **Body** field
 
 
 
@@ -162,24 +138,24 @@ Both the flows are exposed as API endpoints that can be invoked via command line
 1. Click on the **Gears** icon next to your flow
 1. Click **API Access**
 
-1. ` `**API Endpoint Settings** for the flow is displayed. Select **Expose as Public Service**. Copy the **Invoke URL
-   ![](Aspose.Words.c588d44c-28bc-48fd-8ba9-f4940bb0b3fe.005.png)**
+1. **API Endpoint Settings** for the flow is displayed. Select **Expose as Public Service**. Copy the Invoke URL
+   ![](Aspose.Words.c588d44c-28bc-48fd-8ba9-f4940bb0b3fe.005.png)
 
 ### Testing this Flow
 Both the flows are exposed as API end-points that can be invoked via command line, browser or included inside an application. Below are steps for testing using a web browser
 
 - Open a web browser
-- Enter the API endpoint URL from **Flow 1: Issue an Email Factor Challenge** along with the customer email address using the parameter **email**.** 
-  Example:** https://xyz.oktapreview.com/api/flo/12345/invoke?email=test@test.com
+- Enter the API endpoint URL from **Flow 1: Issue an Email Factor Challenge** along with the customer email address using the parameter **email**. 
+  Example: https://xyz.oktapreview.com/api/flo/12345/invoke?email=test@test.com
 - 200 (API Success Code) is displayed when the flow is completed successfully.
 - Customer receives an email with code for verification.
 
-![](Aspose.Words.c588d44c-28bc-48fd-8ba9-f4940bb0b3fe.006.png)**
+![](Aspose.Words.c588d44c-28bc-48fd-8ba9-f4940bb0b3fe.006.png)
 
 
-- Enter the API endpoint URL from **Flow 2: Verify an Email Factor Challenge** along with the customer email address using the parameter **email** and verification code using the **otp** parameter. Example -**
+- Enter the API endpoint URL from **Flow 2: Verify an Email Factor Challenge** along with the customer email address using the parameter **email** and verification code using the **otp** parameter. Example:
   https://xyz.oktapreview.com/api/flo/12345/invoke?email=test@test.com&otp=916106
 - 200 (API Success Code) is displayed when the flow is completed successfully which also implies that the verification code was correct.
 ### Limitations & Known Issues
-1. API & input error handling are not handled in this documentation
+API & input error handling are not handled in this documentation
 
