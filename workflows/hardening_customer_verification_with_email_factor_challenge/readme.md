@@ -1,7 +1,7 @@
 # Hardening customer verification with email factor challenge 
 
 ## Objective
-Hardening customer identity authentication is critical to improving security and avoiding fraud and should be baked into the customer journey both online and offline - whether it is shopping online or picking up takeout food from your favourite restaurant. Hardening customer identity authentication creates two interesting challenges - validating the identity of the customer beyond traditional static password based authentication to include a reliable time-based one-time password (TOTP) and continuing to provide a frictionless experience without compromising security. 
+Hardening customer identity authentication is critical to improving security and avoiding fraud and should be baked into the customer journey both online and offline - whether it is shopping online or picking up takeout food from your favorite restaurant. Hardening customer identity authentication creates two interesting challenges - validating the identity of the customer beyond traditional static password based authentication to include a reliable time-based one-time password (TOTP) and continuing to provide a frictionless experience without compromising security. 
 ## How can Okta address this?
 [Okta Workflows](https://www.okta.com/platform/workflows/) makes it easy to automate identity processes at scale – without writing code.
 
