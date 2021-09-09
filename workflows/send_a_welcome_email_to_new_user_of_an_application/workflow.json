@@ -1,1 +1,19 @@
-{"name":"send_a_welcome_email_to_new_user_of_an_application","detail":{"stashCount":0,"flowCount":1},"connectors":["okta","gmail"],"title":"Send a welcome email to new user of an application","links":[{"destination":"https://github.com/okta/workflows-templates/blob/master/workflows/send_a_welcome_email_to_new_user_of_an_application/readme.md","title":"Setup Documentation"}],"description":"A welcome email is the first impression an organization makes with a new customer or employee. Welcome emails can deliver special a promotion code, provide information to enhance the user experience or just a friendly hello\\! This template demonstrates how a welcome email can be sent to a new user automatically."}
+{
+    "name": "send_a_welcome_email_to_new_user_of_an_application",
+    "detail": {
+        "stashCount": 0,
+        "flowCount": 1
+    },
+    "connectors": [
+        "okta",
+        "gmail"
+    ],
+    "title": "Send a Welcome Email to New User of an Application",
+    "links": [
+        {
+            "destination": "https://github.com/okta/workflows-templates/blob/master/workflows/send_a_welcome_email_to_new_user_of_an_application/readme.md",
+            "title": "Setup Documentation"
+        }
+    ],
+    "description": "A welcome email is the first impression an organization makes with a new customer or employee. Welcome emails can deliver special a promotion code, provide information to enhance the user experience or just a friendly hello! This template demonstrates how a welcome email can be sent to a new user automatically."
+}
