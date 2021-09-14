@@ -1,5 +1,5 @@
 
-# Modernize your access request management with Okta and Slack
+# Modernize your Access Request Management with Okta and Slack
 
 ## Overview
 Deliver a modern access request experience using the Okta Platform, with a no-code approach and no customizations to the Okta product:
