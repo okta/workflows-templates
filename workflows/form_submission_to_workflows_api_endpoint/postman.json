@@ -1,0 +1,94 @@
+{
+	"info": {
+		"_postman_id": "cf010702-9751-4c81-867a-da6059ee38e7",
+		"name": "Workflows Form Submission",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Submit Form Data",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "firstName",
+							"value": "mick",
+							"type": "text"
+						},
+						{
+							"key": "lastName",
+							"value": "johnson",
+							"type": "text"
+						},
+						{
+							"key": "email",
+							"value": "mick.jae.johnson@gmail.com",
+							"type": "text"
+						},
+						{
+							"key": "title",
+							"value": "SE",
+							"type": "text"
+						},
+						{
+							"key": "organization",
+							"value": "Okta",
+							"type": "text"
+						},
+						{
+							"key": "mobilePhone",
+							"value": "+14151234567",
+							"type": "text"
+						},
+						{
+							"key": "city",
+							"value": "San Francisco",
+							"type": "text"
+						},
+						{
+							"key": "state",
+							"value": "CA",
+							"type": "text"
+						},
+						{
+							"key": "zipCode",
+							"value": "94109",
+							"type": "text"
+						},
+						{
+							"key": "countryCode",
+							"value": "US",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "https://ooo.workflows.oktapreview.com/api/flo/5239aaa49b7cbcaf56742a84ee3a5562/invoke?clientToken=f33664049805cbfac7b1963f5221b987a14f582dd15ce2b9359c9d7b7206df34",
+					"protocol": "https",
+					"host": [
+						"ooo",
+						"workflows",
+						"oktapreview",
+						"com"
+					],
+					"path": [
+						"api",
+						"flo",
+						"5239aaa49b7cbcaf56742a84ee3a5562",
+						"invoke"
+					],
+					"query": [
+						{
+							"key": "clientToken",
+							"value": "f33664049805cbfac7b1963f5221b987a14f582dd15ce2b9359c9d7b7206df34"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
