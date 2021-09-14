@@ -1,0 +1,22 @@
+{
+   "name": "access_request_with_slack",
+   "title": "Modernize your Access Request Management with Okta and Slack",
+   "description": "Deliver a modern access request experience using the Okta Platform, with a no-code approach and no customizations to the Okta product.",
+   "connectors": [
+      "okta"
+   ],
+   "details": {
+    "flowCount": 14,
+    "stashCount": 2
+  },
+   "links": [
+      {
+         "title": "Video Walk-through",
+         "destination": "https://www.youtube.com/watch?v=_v7KqOl0DrM"
+      },
+      {
+         "title": "Setup Documentation",
+         "destination": "https://github.com/okta/workflows-templates/blob/master/workflows/access_request_with_slack/readme.md"
+      }
+   ]
+}
