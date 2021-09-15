@@ -15,61 +15,61 @@
 					"urlencoded": [
 						{
 							"key": "firstName",
-							"value": "mick",
+							"value": "",
 							"type": "text"
 						},
 						{
 							"key": "lastName",
-							"value": "johnson",
+							"value": "",
 							"type": "text"
 						},
 						{
 							"key": "email",
-							"value": "mick.jae.johnson@gmail.com",
+							"value": "",
 							"type": "text"
 						},
 						{
 							"key": "title",
-							"value": "SE",
+							"value": "",
 							"type": "text"
 						},
 						{
 							"key": "organization",
-							"value": "Okta",
+							"value": "",
 							"type": "text"
 						},
 						{
 							"key": "mobilePhone",
-							"value": "+14151234567",
+							"value": "",
 							"type": "text"
 						},
 						{
 							"key": "city",
-							"value": "San Francisco",
+							"value": "",
 							"type": "text"
 						},
 						{
 							"key": "state",
-							"value": "CA",
+							"value": "",
 							"type": "text"
 						},
 						{
 							"key": "zipCode",
-							"value": "94109",
+							"value": "",
 							"type": "text"
 						},
 						{
-							"key": "countryCode",
+							"key": "country",
 							"value": "US",
 							"type": "text"
 						}
 					]
 				},
 				"url": {
-					"raw": "https://ooo.workflows.oktapreview.com/api/flo/5239aaa49b7cbcaf56742a84ee3a5562/invoke?clientToken=f33664049805cbfac7b1963f5221b987a14f582dd15ce2b9359c9d7b7206df34",
+					"raw": "https://acme.workflows.oktapreview.com/api/flo/123",
 					"protocol": "https",
 					"host": [
-						"ooo",
+						"acme",
 						"workflows",
 						"oktapreview",
 						"com"
@@ -77,15 +77,9 @@
 					"path": [
 						"api",
 						"flo",
-						"5239aaa49b7cbcaf56742a84ee3a5562",
-						"invoke"
-					],
-					"query": [
-						{
-							"key": "clientToken",
-							"value": "f33664049805cbfac7b1963f5221b987a14f582dd15ce2b9359c9d7b7206df34"
-						}
+						"123"
 					]
+					
 				}
 			},
 			"response": []
