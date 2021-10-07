@@ -1,0 +1,88 @@
+{
+	"info": {
+		"_postman_id": "cf010702-9751-4c81-867a-da6059ee38e7",
+		"name": "Workflows Form Submission",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Submit Form Data",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "firstName",
+							"value": "",
+							"type": "text"
+						},
+						{
+							"key": "lastName",
+							"value": "",
+							"type": "text"
+						},
+						{
+							"key": "email",
+							"value": "",
+							"type": "text"
+						},
+						{
+							"key": "title",
+							"value": "",
+							"type": "text"
+						},
+						{
+							"key": "organization",
+							"value": "",
+							"type": "text"
+						},
+						{
+							"key": "mobilePhone",
+							"value": "",
+							"type": "text"
+						},
+						{
+							"key": "city",
+							"value": "",
+							"type": "text"
+						},
+						{
+							"key": "state",
+							"value": "",
+							"type": "text"
+						},
+						{
+							"key": "zipCode",
+							"value": "",
+							"type": "text"
+						},
+						{
+							"key": "country",
+							"value": "US",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "https://acme.workflows.oktapreview.com/api/flo/123",
+					"protocol": "https",
+					"host": [
+						"acme",
+						"workflows",
+						"oktapreview",
+						"com"
+					],
+					"path": [
+						"api",
+						"flo",
+						"123"
+					]
+					
+				}
+			},
+			"response": []
+		}
+	]
+}
