@@ -1,7 +1,7 @@
 {
     "name": "send_a_welcome_email_to_new_user_of_an_application",
-    "title": "Send a Welcome Email to New User of an Application",
-    "description": "A welcome email is the first impression an organization makes with a new customer or employee. Welcome emails can deliver special a promotion code, provide information to enhance the user experience or just a friendly hello! This template demonstrates how a welcome email can be sent to a new user automatically.",
+    "title": "Send a welcome email to new user of an application",
+    "description": "A welcome email is the first impression that an organization makes on a new customer or employee. Welcome emails can deliver a special promotion code, provide information to enhance the user experience, or just send a friendly hello. This template demonstrates how a welcome email can be sent automatically to a new user.",
     "connectors": [
        "gmail", 
        "okta"
