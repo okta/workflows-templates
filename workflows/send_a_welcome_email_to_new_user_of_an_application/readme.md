@@ -4,7 +4,7 @@
 
 </div>
 
-# <span class="c13">Send a Welcome Email to New User of an Application</span>
+# <span class="c13">Send a welcome email to a new user of an application</span>
 
 ## <span class="c10">Overview</span>
 
