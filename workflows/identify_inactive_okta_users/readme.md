@@ -7,7 +7,7 @@ You can determine whether your Okta tenant has stale accounts that were otherwis
 ## <span class="c14">Prerequisites</span>
 
 1.  <span class="c0">Access to an Okta tenant with Okta Workflows
-    enabled</span>
+    enabled</span>.
 2.  A configured Okta Connection. To configure a connection, see [Authentication](https://help.okta.com/wf/en-us/Content/Topics/Workflows/connector-reference/okta/overviews/authorization.htm).
 
 ## <span class="c3">Setup</span>
