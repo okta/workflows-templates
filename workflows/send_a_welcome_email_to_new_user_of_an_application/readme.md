@@ -28,8 +28,8 @@ meet your business needs.</span>
 1.  <span class="c7">Send a welcome email to Okta Workflow users: Set
     **Options** on the User Assigned to Application card to Okta Workflows
     by selecting the following:  
-    ** *Application: `okta\_flow\_sso`  
-    ** * Application Instance: `Okta Workflows`.
+    - Application: `okta\_flow\_sso`  
+    - Application Instance: `Okta Workflows`
 
 2. Click **Save**.</span>
 
