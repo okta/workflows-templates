@@ -1,4 +1,4 @@
-# <span class="c23">Submit form data to the Okta Workflows API Endpoint</span>
+# <span class="c23">Submit form data to the Okta Workflows API endpoint</span>
 
 <span class="c0"></span>
 
