@@ -3,15 +3,15 @@
 
 ## Overview
 
-Much of the data we are working with is presented as a list. Think of a list of user objects, list of applications objects, etc. Workflows allows you to process lists in a comprehensive manner leveraging helper flows to operate on each member of the list.  There are a number of ways to process a list. Performing a discrete action on each item without returning anything to the Parent Flow is very common, as well as, keeping a cumulative output of each item iteration that can be returned to the Parent Flow. There are many other List operations. Check our in app documentation for details.
+Much of the data we are working with is presented as a list. Think of a list of user objects, list of applications objects, etc. Workflows allows you to process lists in a comprehensive manner leveraging helper flows to operate on each member of the list.  There are a number of ways to process a list. Performing a discrete action on each item without returning anything to the parent flow is very common, as well as, keeping a cumulative output of each item iteration that can be returned to the parent flow. There are many other List operations. Check our in app documentation for details.
 
-Child Flows are simply subroutines that exist as a separate flow but can only be called from a main or parent flow. Helper flows are very useful not only for the above mentioned List processing, but for code reusability, team contributions  and code cleanup.  
+Helper flows are simply subroutines that exist as a separate flow but can only be called from a main or parent flow. Helper flows are very useful not only for the above mentioned List processing, but for code reusability, team contributions  and code cleanup.  
 
-Envision that you have multiple use cases implemented in Workflows. Several of these flows require email communication to managers and other stakeholders. You could use an O365 Email Card in each flow with the necessary body formatting, recipient lists,etc. Or you can create a Send Email Child Flow that you call from the Parent. Any changes are made once in the helper flow and are instantly available to all Parent Flows.
+Envision that you have multiple use cases implemented in Workflows. Several of these flows require email communication to managers and other stakeholders. You could use an O365 Email Card in each flow with the necessary body formatting, recipient lists,etc. Or you can create a Send Email helper flow that you call from the parent. Any changes are made once in the helper flow and are instantly available to all parent flows.
 
 Similarly, imagine that you have a large team of contributors for your Workflow implementations. Some of the business logic may be maintained by Business Units and used by an Automations group. You could incorporate the logic directly into your flow, but you could be caught in a cycle of distracting changes and revisions. With a helper flow, one team can maintain the logic and another can call into it.
 
-Lastly, we all think our flows are easy to understand but a long complex flow can be difficult to visualize and fully comprehend. In this case, helper flows can be used to break out ‘chunks of related processing’ making the resultant Parent Flows easier to understand and maintain.
+Lastly, we all think our flows are easy to understand but a long complex flow can be difficult to visualize and fully comprehend. In this case, helper flows can be used to break out ‘chunks of related processing’ making the resultant parent flows easier to understand and maintain.
 
 
 ## Prerequisites
