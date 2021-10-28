@@ -3,7 +3,7 @@
 
 ## Overview
 
-There may be times where you want to utilize multiple events for a singular purpose. Instead of creating copies of each flow that then need to be maintained separately, child flows and tables can be leveraged to limit the repetition in your flows.  
+There may be times where you want to utilize multiple events for a singular purpose. Instead of creating copies of each flow that then need to be maintained separately, helper flows and tables can be leveraged to limit the repetition in your flows.  
 
 This template demonstrates a simple pattern for creating a daily report of user attributes from three Okta events: User Created, User Okta Profile Updated, and User Deactivated. It then uploads a report daily to Google Drive using a scheduled flow that runs at midnight every night.  
 
@@ -23,7 +23,7 @@ Before you get started, you will need:
     1. Okta User Profile Updated
     2. Okta User Deactivated
     3. Okta User Created
-    4. [Child] Write User Attributes to Table
+    4. [Helper] Write User Attributes to Table
 2. Connect the Google Drive Upload File card in the “Upload daily report” flow.
 3. Make sure all flows are turned on.  
 
