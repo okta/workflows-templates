@@ -1,7 +1,7 @@
 {
    "name": "access_request_with_slack",
    "title": "Modernize your Access Request Management with Okta and Slack",
-   "description": "Deliver a modern access request experience using the Okta Platform, with a no-code approach and no customizations to the Okta product.",
+   "description": "This template leverages Slack as the collaboration tool and interface to deliver a modern end-user experience during the request lifecycle. It includes a custom Slack application that allows your Slack workspace to interact with your Okta Identity Cloud tenant. To properly run and track requests, the solution uses helper flows, internal tables, the Okta connector, and the Slack connector.",
    "connectors": [
       "okta"
    ],
