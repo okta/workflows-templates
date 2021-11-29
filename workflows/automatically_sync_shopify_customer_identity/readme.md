@@ -1,4 +1,4 @@
-Automatically Segment Shopify Customers By Spending
+# Automatically Segment Shopify Customers By Spending
 
 ## Overview
 
