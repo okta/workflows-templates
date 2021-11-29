@@ -1,6 +1,6 @@
 Automatically Segment Shopify Customers By Spending
 
-**Overview**
+## Overview
 
 Automatically segmenting customers based on their spending is critical
 for marketing campaigns. This implementation automatically segments
@@ -8,7 +8,7 @@ customers based on spending by adding them to different groups. Group
 membership can trigger downstream or custom applications to drive email
 campaigns, discounts, promotions etc.
 
-**Prerequisites**
+## Prerequisites
 
 1.  Access to an Okta tenant with Okta Workflows enabled.
 2.  Configured Okta Connection. Steps to configure are posted at <a href="https://www.google.com/url?q=https://help.okta.com/en/prod/Content/Topics/Workflows/workflow-connect-your-applications.htm%23Authenti&amp;sa=D&amp;source=editors&amp;ust=1638227432716000&amp;usg=AOvVaw0qgKFgiLruGrlSb94ZkX_O" class="c20">https://help.okta.com/en/prod/Content/Topics/Workflows/workflow-connect-your-applications.htm#Authenti</a>
@@ -17,7 +17,7 @@ campaigns, discounts, promotions etc.
 5.  Access to create Okta groups
 6.  Shopify customers have an Okta account with custom attributes (item#4)
 
-**Setup Steps**
+## Setup Steps
  
 1.  Add custom attributes listed below to Okta User Profile. These custom attribute are used to store Shopify customer properties.
 
@@ -50,13 +50,13 @@ campaigns, discounts, promotions etc.
 
     <img src="images/image1.png" style="width: 588.00px; height: 89.00px; margin-left: 0.00px; margin-top: 0.00px; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px);" />
 
-**Testing**
+## Testing
 
 1. Scenario 1: Create a new Order in Shopify. In this example, the customer created their first order with a total spend of $45.50. Customer was moved to Okta Group **Shopify New Customer** and customer profile updated with total spend and orders.  
 
 2. Scenario 2: Update an existing order in Shopify. In this example, the customer's first order got updated with a total spend of $25.50. Customer should remain in the Okta Group **Shopify New Customer**, however the customer's profile updated with total spend and orders.
 
-**Limitations & Known Issues**
+## Limitations & Known Issues
 
 1.  Note that the screenshots in the document may change over time since
     the time of the recording. If they do, recognize that there may be
