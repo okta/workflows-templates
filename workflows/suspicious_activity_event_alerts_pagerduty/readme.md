@@ -10,7 +10,7 @@ preventing and deterring fraud. How can the reported suspicious activity automat
 
 ## Prerequisites
 
-1. Access to an Okta tenant with Okta Workflows enabled
+1. Access to an Okta tenant with Okta Workflows enabled.
 
 2. Configured Okta Connection. Steps to configure are posted at <a  href="https://www.google.com/url?q=https://help.okta.com/en/prod/Content/Topics/Workflows/workflow-connect-your-applications.htm%23Authenti&amp;sa=D&amp;source=editors&amp;ust=1638150140707000&amp;usg=AOvVaw39eOaxdDdIdFOjp5SxD95V"  class="c10">https://help.okta.com/en/prod/Content/Topics/Workflows/workflow-connect-your-applications.htm#Authenti</a>
 
