@@ -245,8 +245,7 @@ that have signed a contract:
 
 ## Limitations and Known Issues
 
-* This workflow does not support
-    <a href="https://www.google.com/url?q=https://developers.docusign.com/platform/webhooks/connect/architecture/&amp;sa=D&amp;source=editors&amp;ust=1635799419725000&amp;usg=AOvVaw1oe7My9m5DsMmoM6FZOERA" class="c7">aggregated messages</a>
+* This workflow does not support <a href="https://www.google.com/url?q=https://developers.docusign.com/platform/webhooks/connect/architecture/&amp;sa=D&amp;source=editors&amp;ust=1635799419725000&amp;usg=AOvVaw1oe7My9m5DsMmoM6FZOERA" class="c7">aggregated messages</a>
      from DocuSign (when DocuSign sends a single webhook call for
     multiple signature events).
 * DocuSign may not send the webhook event immediately after a document
