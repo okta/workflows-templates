@@ -1,7 +1,7 @@
 {
    "name": "verify_customer",
    "title": "Hardening Customer Verification with Email Factor Challenge",
-   "description": "This template allows users to implement an email factor challenge unsing Okta Workflows",
+   "description": "This template allows users to implement an email factor challenge using Okta Workflows",
    "connectors": [
       "okta"
    ],
