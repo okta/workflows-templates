@@ -245,16 +245,16 @@ that have signed a contract:
 
 ## Limitations and Known Issues
 
-1.  This workflow does not support
+*  This workflow does not support
     <a href="https://www.google.com/url?q=https://developers.docusign.com/platform/webhooks/connect/architecture/&amp;sa=D&amp;source=editors&amp;ust=1635799419725000&amp;usg=AOvVaw1oe7My9m5DsMmoM6FZOERA" class="c7">aggregated messages</a>
      from DocuSign (when DocuSign sends a single webhook call for
     multiple signature events).
-2.  DocuSign may not send the webhook event immediately after a document
+*  DocuSign may not send the webhook event immediately after a document
     is signed (DocuSign works on a queued architecture). This might
     incur delays from a document signature to an event sent to Okta.
-3.  This workflow will always capture the main signer in a document (the
+*  This workflow will always capture the main signer in a document (the
     main signer). You can support documents with multiple signers by
     modifying the Get Signer card in the DocuSign.ContractSignedWebhook
     flow.
-4.  Any SuperAdmin with access to Workflows can access the Docusign HMAC
+*  Any SuperAdmin with access to Workflows can access the Docusign HMAC
     private key in the Workflow config table.
