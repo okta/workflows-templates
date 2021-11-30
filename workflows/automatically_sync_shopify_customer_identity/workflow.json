@@ -12,10 +12,6 @@
     },
     "links": [
         {
-            "title": "Video Walk-through",
-            "destination": "https://www.youtube.com/watch?v=huNrhJWEqUA"
-          },
-        {
             "destination": "https://github.com/okta/workflows-templates/blob/master/workflows/automatically_sync_shopify_customer_identity/readme.md",
             "title": "Setup Documentation"
         }
