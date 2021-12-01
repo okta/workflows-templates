@@ -27,17 +27,17 @@ that have signed a contract:
 1.  Access the Okta admin dashboard
     (https://&lt;tenant&gt;-admin.okta.com/admin/dashboard)
 2.  Create custom attribute:
-    *  Go to
+    1.  Go to
         Directories
          &gt;
         Profile Editor
-    *  On the row
+    2.  On the row
         User (default)
         , click
         Profile
-    *  Click
+    3.  Click
         Add Attribute
-    *  Create an attribute to store the document signature date. For
+    4.  Create an attribute to store the document signature date. For
         example:
         *  Type
             : String
@@ -50,21 +50,21 @@ that have signed a contract:
         *  User Permission
             : Read Only
 3.  Create group:
-    *  Click
+    1.  Click
         Directories
          &gt;
         Groups
-    *  Click
+    2.  Click
         Add Group
          and then follow the instructions to create a group for users who
         signed a contract. (i.e.,
         Under NDA
         )
 4.  Create a group rule:
-    *  On the Groups page, click the
+    1.  On the Groups page, click the
         Rules
          tab
-    *  Create a rule to add users to the
+    2.  Create a rule to add users to the
         Under NDA
          group when the NDA signed date field is filled:
         *  Name: Under NDA
@@ -73,7 +73,7 @@ that have signed a contract:
             `String.len(user.ndaDate) > 0`
         *  THEN:
              Assign to Under NDA
-    *  Save
+    3.  Save
          and then
         Activate
          the Rule.
@@ -159,22 +159,22 @@ that have signed a contract:
     , click
     Connect
 4.  Create an encryption key (for authenticating the Webhook message):
-    *  Click
+    1.  Click
         Connect Keys.
-    *  Click
+    2.  Click
         Add Secret Key.
-    *  Record the key generated
+    3.  Record the key generated
          (you will need that to configure your workflow).
 5.  Return to the Connect home page.
 6.  Create a connect webhook:
-    *  Click
+    1.  Click
         Add
          
         Configuration
          &gt;
         Custom.
         
-    *  Enter the following data to configure your webhook to Okta
+    2.  Enter the following data to configure your webhook to Okta
         workflows:
         *  Name
             : Okta Workflows
@@ -192,15 +192,15 @@ that have signed a contract:
             : Select only Envelope Signed/Completed
         *  Integration and Security Settings
             : Select Include HMAC Signature and Enable Mutual TLS.
-    *  Save
+    3.  Save
          and
         enable
          the connection
 7.  Get a file name for the main document to sign:
-    *  If you already use DocuSign templates, click
+    1.  If you already use DocuSign templates, click
         Template
          and select your template.
-    *  On the right-hand side, record the name of the document you use to
+    2.  On the right-hand side, record the name of the document you use to
         collect the signature (i.e.,
         NDA\_sample.pdf
         ). You will need that to configure your workflow.
