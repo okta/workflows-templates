@@ -108,7 +108,7 @@ Before you get started, here are the things you’ll need:
 1.  In Workflows Console Connections, create a Sendgrid connector using
     the APIkey created above.
 2.  Select flow titled “\[Sendgrid\] Password Change Notification”
-    *  Selector Connector for "Sendgrid
+    1.  Selector Connector for "Sendgrid
         Send Email
         " card
 3.  Ensure that flow is turned on.
