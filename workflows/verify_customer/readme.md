@@ -23,6 +23,7 @@ Both the flows are exposed as API endpoints that can be invoked via command line
 1. In the Workflows Console, click **New Flow**. Optionally, if you have a folder where you want to store this Flow, open it and click **+New** **Flow**
 
 1. Name your Flow as **Issue an Email Factor Challenge**
+   ![](/images/Aspose.Words.c588d44c-28bc-48fd-8ba9-f4940bb0b3fe.001.png)
 
 1. Click **Add Event**
 
@@ -77,12 +78,14 @@ Both the flows are exposed as API endpoints that can be invoked via command line
 
 1. Construct endpoint to issue email factor challenge by selecting **Function -> Text -> Concatenate**
 1. Enter **/api/v1/users/** in text 1. Drag and drop **ID** field in the **Find Users** card to **text 2**. Click inside the grey box to enter **/factors/**. Click inside the grey box and provide a unique name **id.** Drag and drop **id** from Okta Custom API Card to **id** field. Click inside the grey box and enter a unique name `verify` and then enter `/verify`
+   ![](/images/Aspose.Words.c588d44c-28bc-48fd-8ba9-f4940bb0b3fe.002.png)
 
 
 1. Issue email factor challenge by clicking **App Action** -> **Okta** -> **Custom API Action.** Set **Request Type** to **POST** and **Save.**
 
 
 1. Uncheck **Request Query** and Save
+   ![](/images/Aspose.Words.c588d44c-28bc-48fd-8ba9-f4940bb0b3fe.003.png)
 
 1. Drag and drop the **output** field in the **Text Concatenate** card to the **Relative URL** field
 1. Enter **"content-type": "application/json","Accept": "application/json"** inside {} in **Headers** field
@@ -98,6 +101,7 @@ Both the flows are exposed as API endpoints that can be invoked via command line
 1. Click **API Access**
 
 1. **API Endpoint Settings** for the flow is displayed. Select **Expose as Public Service**. Copy the value from **Invoke URL**
+   ![](/images/Aspose.Words.c588d44c-28bc-48fd-8ba9-f4940bb0b3fe.004.png)
 
 #### Flow 2: Verify an Email Factor Challenge
 
@@ -139,7 +143,7 @@ Both the flows are exposed as API endpoints that can be invoked via command line
 1. Click **API Access**
 
 1. **API Endpoint Settings** for the flow is displayed. Select **Expose as Public Service**. Copy the Invoke URL
-   ![](Aspose.Words.c588d44c-28bc-48fd-8ba9-f4940bb0b3fe.005.png)
+   ![](/images/Aspose.Words.c588d44c-28bc-48fd-8ba9-f4940bb0b3fe.005.png)
 
 ### Testing this Flow
 Both the flows are exposed as API end-points that can be invoked via command line, browser or included inside an application. Below are steps for testing using a web browser
@@ -150,7 +154,7 @@ Both the flows are exposed as API end-points that can be invoked via command lin
 - 200 (API Success Code) is displayed when the flow is completed successfully.
 - Customer receives an email with code for verification.
 
-![](Aspose.Words.c588d44c-28bc-48fd-8ba9-f4940bb0b3fe.006.png)
+![](/images/Aspose.Words.c588d44c-28bc-48fd-8ba9-f4940bb0b3fe.006.png)
 
 
 - Enter the API endpoint URL from **Flow 2: Verify an Email Factor Challenge** along with the customer email address using the parameter **email** and verification code using the **otp** parameter. Example:
