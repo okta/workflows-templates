@@ -1,10 +1,8 @@
-# Suspicious Activity Event Alerts PagerDuty
+# Suspicious Activity Event Alerts Using PagerDuty
 
 ## Overview
 
-Okta enables users to report an activity that they don’t recognize as
-suspicious activity to their organization administrators. Investigating
-the suspicious activity reported in a timely manner is critical for preventing and deterring fraud. This template provides an example for automatically creating an incident in PagerDuty when suspicious activity is reported.
+Okta enables users to report an activity that they don’t recognize as suspicious activity to their organization administrators. Investigating the suspicious activity reported in a timely manner is critical for preventing and deterring fraud. This template provides an example for automatically creating an incident in PagerDuty when suspicious activity is reported.
 
 ## Prerequisites
 
