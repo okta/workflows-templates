@@ -41,28 +41,28 @@ Consistently maintaining user identity across downstream applications is critica
 
 Scenario 1: Create a new Okta user and add membership to the Okta group **Shopify** or add an existing user to group Shopify.  
 
-* In the API Payload to create a new Okta user in a specific group, add additional Shopify attributes, shopify_accepts_marketing, shopify_tax_exempt and shopify_tags.
-* The phone number (primaryPhone) must be in E.164 Format (i.e+18002190964).
-* Inside Okta, visit the user’s profile. User profile attributes updated with Shopify attributes, Shopify customer id and Shopify address ID.  
-* Inside Shopify, the new customer is created.
+1. In the API Payload to create a new Okta user in a specific group, add additional Shopify attributes, shopify_accepts_marketing, shopify_tax_exempt and shopify_tags.
+2. The phone number (primaryPhone) must be in E.164 Format (i.e+18002190964).
+3. Inside Okta, visit the user’s profile. User profile attributes updated with Shopify attributes, Shopify customer id and Shopify address ID.  
+4. Inside Shopify, the new customer is created.
 
  <img src="images/image2.png" style="width: 624.00px; height: 512.00px; margin-left: 0.00px; margin-top: 0.00px; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px);" />
 
 Scenario 2:  Update the Okta user attribute shopify_accepts_marketing to false.
-* Inside Okta, visit the user's profile. The Okta user’s profile attribute should now be updated.  
-* Inside Shopify, Email Marketing status updated.
+1. Inside Okta, visit the user's profile. The Okta user’s profile attribute should now be updated.  
+2. Inside Shopify, Email Marketing status updated.
 
  <img src="images/image3.png" style="width: 335.00px; height: 155.00px; margin-left: 0.00px; margin-top: 0.00px; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px);" />
 
 Scenario 3: Modify the user address  
-* Inside Okta, navigate to the Okta user’s profile. The Okta user’s profile attribute should now be updated.  
-* Inside Shopify, the default address should be updated.  
+1. Inside Okta, navigate to the Okta user’s profile. The Okta user’s profile attribute should now be updated.  
+2. Inside Shopify, the default address should be updated.  
       
  <img src="images/image1.png" style="width: 320.00px; height: 570.00px; margin-left: 0.00px; margin-top: 0.00px; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px);" />
 
 Scenario 4: Remove the Okta user from the Okta group Shopify  
-* Inside Okta, user removed from group Shopify.
-* Inside Shopify, the user should be deleted.
+1. Inside Okta, user removed from group Shopify.
+2. Inside Shopify, the user should be deleted.
 
 ## Limitations & Known Issues
 * Note that the screenshots in the document may change over time since the time of the recording. If they do, recognize that there may be changes, but focus on the key terms and proceed as best you can.
