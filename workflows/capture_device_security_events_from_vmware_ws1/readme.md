@@ -1,15 +1,15 @@
-# Capture Device Security Events from VMware WorkspaceOne
+# Capture Device Security Events from VMware Workspace ONE
 
 ## Overview
 
-This template listens to VMware Workspace One security events to capture when a device is compromised or out of compliance. This information can be used by Okta to determine which systems a user can access and their security level.
+This template listens to VMware Workspace ONE security events to capture when a device is compromised or out of compliance. This information can be used by Okta to determine which systems a user can access and their security level.
 
 ## Prerequisites
 
 Before you get started, you will need:
 
 - Access to an Okta tenant with Okta Workflows enabled for your org.
-- Access to VMware WorkspaceOne UEM as administrator.
+- Access to VMware Workspace ONE UEM as administrator.
 - An active user and managed device for test.
 
 ## Setup Steps
@@ -18,31 +18,31 @@ Create an attribute, a group membership rule, and a group to track users with de
 
 1. Access the Okta admin dashboard (https://\<tenant>-admin.okta.com/admin/dashboard).
 2. Create custom attribute:
-    * Go to **Directories \> Profile Editor**.
-    * On the row User (default), click **Profile**.
-    * Click **Add Attribute**.
-    * Create an attribute to store the document signature date. For example:
+    1. Go to **Directories \> Profile Editor**.
+    2. On the row User (default), click **Profile**.
+    3. Click **Add Attribute**.
+    4. Create an attribute to store the document signature date. For example:
         * Type: String
         * Display Name: Device Status
         * Variable Name: deviceStatus
         * Description: User Device Status
         * User Permission: Read Only
 3. Create group:
-    * Click **Directories \> Groups**.
-    * Click **Add Group** and then follow the instructions to create a group for users who signed a contract (i.e., Device Compromised).
+    1. Click **Directories \> Groups**.
+    2. Click **Add Group** and then follow the instructions to create a group for users who signed a contract (i.e., Device Compromised).
 4. Create a group rule:
-    * On the Groups page, click the **Rules tab**
-    * Create a rule to add users to the Under NDA group when the NDA signed date field is filled:
+    1. On the Groups page, click the **Rules tab**
+    2. Create a rule to add users to the Under NDA group when the NDA signed date field is filled:
         * Name: Device Compromised.
         * IF: user.deviceStatus contains "Compromised".
         * THEN: Assign to Device Compromised.
-    * Save and then Activate the Rule.
+    3. Save and then Activate the Rule.
 
-### Add the VMware WorkspaceOne template
+### Add the VMware Workspace ONE template
 
 1. Click **Workflow** > **Workflows Console**.
 2. Click **Templates**.
-3. Open the **Capture Security Events from VMware WorkspaceOne** template.
+3. Open the **Capture Security Events from VMware Workspace ONE** template.
 4. Click **Add template**.
 5. A workflow folder named WebhookWorkspaceOne is imported.
 
@@ -58,16 +58,16 @@ Create an attribute, a group membership rule, and a group to track users with de
 8. Click **Home > WebhookWorkspaceOne**.
 9. **Enable** both the **WorkspaceOne.SecurityEvent** and the **Util.AuthenticateWebhook** flows.
 10. On the **WorkspaceOne.SecurityEvent**, click the **gear icon**, then click **API Access**.
-11. Select **Expose as Webhook** and record the invoke URL *(You will need that to configure WorkspaceOne)*.
+11. Select **Expose as Webhook** and record the invoke URL *(You will need that to configure Workspace ONE)*.
 12. Close the API endpoint settings pop-up, then click **Tables**.
 13. Open the **WorspaceOne Webhook Config** table.
 14. Update and record the username and password fields, then click **Save**.
 
-    _**Note**: These credentials will be used by WorkspaceOne to authenticate the webhook notification in Okta._
+    _**Note**: These credentials will be used by Workspace ONE to authenticate the webhook notification in Okta._
 
-### Configure WorkspaceOne UEM
+### Configure Workspace ONE UEM
 
-1. Access WorkspaceOne UEM as Administrator.
+1. Access Workspace ONE UEM as Administrator.
 2. Click **Groups and Settings**.
 3. Click **All Settings**.
 4. On the left menu, navigate to **System > Advanced > API > Event Notifications**.
@@ -86,6 +86,6 @@ Create an attribute, a group membership rule, and a group to track users with de
 
 ## Testing this Flow
 
-* In WorkspaceOne UEM, mark a test device as out of compliance.
+* In Workspace ONE UEM, mark a test device as out of compliance.
 * Back in Okta, go to the **WorkspaceOne.SecurityEvent** flow and select Flow History. You should see an execution for the user.
 * Open the user profile in Okta. Confirm that the device status attribute is filled and that the user is a member of the **Device Compromised** group.
