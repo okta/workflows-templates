@@ -1,1 +1,20 @@
-{"name":"send_email_with_attachment","title":"Send Email with Attachment","description":"This template demonstrates sending an email using Gmail with an attachment from Google Drive. ","connectors":["gmail","okta","googledrive"],"details":{"stashCount":0,"flowCount":2},"links":[{"destination":"https://github.com/okta/workflows-templates/blob/master/workflows/send_email_with_attachment/readme.md","title":"Setup Documentation"}]}
+{
+    "name": "send_email_with_attachment",
+    "title": "Send Email with Attachment",
+    "description": "This template demonstrates sending an email using Gmail with an attachment from Google Drive.",
+    "connectors": [
+        "gmail",
+        "okta",
+        "googledrive"
+    ],
+    "details": {
+        "stashCount": 0,
+        "flowCount": 2
+    },
+    "links": [
+        {
+            "destination": "https://github.com/okta/workflows-templates/blob/master/workflows/send_email_with_attachment/readme.md",
+            "title": "Setup Documentation"
+        }
+    ]
+}

@@ -2,8 +2,7 @@
 
 ## Overview
 
-This template demonstrates sending an email using Gmail with attachment
-from Google Drive.
+This template demonstrates sending an email using Gmail with an attachment from Google Drive.
 
 ## Prerequisites
 
