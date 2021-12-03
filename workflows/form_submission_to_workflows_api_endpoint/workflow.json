@@ -1,7 +1,7 @@
 {
     "name": "form_submission_to_workflows_api_endpoint",
     "title": "Form Submission to Workflows API Endpoint",
-    "description": "A number of cloud platform services allow IT Administrators and Developers to configure forms that can POST data to a URL endpoint. The data sent to the Okta Workflows API endpoint can be used to onboard or offboard employees, add or remove users from Okta groups or take action using one of your configured Okta Workflow Connectors. This template will demonstrate how this can be done using Postman, Google Forms and Microsoft Forms.",
+    "description": "A number of cloud platform services allow IT administrators and developers to configure forms that can perform a POST operation to a URL endpoint. The data that is sent by the operation to the Okta Workflows API endpoint can be used to onboard or offboard employees, add or remove users from Okta groups, or take action using any configured Workflows connector. This template demonstrates how these tasks can be completed using Postman, Google Forms, and Microsoft Forms.",
     "connectors": [
         "okta"
     ],
