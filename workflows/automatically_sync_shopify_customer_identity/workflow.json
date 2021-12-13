@@ -1,0 +1,19 @@
+{
+    "name": "automatically_sync_shopify_customer_identity",
+    "title": "Automatically Sync Shopify Customer Identity",
+    "description": "Consistently maintaining user identity across downstream applications is critical for excellent user experience, compliance and governance. Automatically provisioning downstream applications based on group membership provides a simple and effective solution. This template provides a blueprint to create, update and delete Shopify customers based on group membership in Okta.",
+    "connectors": [
+        "okta",
+        "shopify"
+    ],
+    "details": {
+        "stashCount": 2,
+        "flowCount": 5
+    },
+    "links": [
+        {
+            "destination": "https://github.com/okta/workflows-templates/blob/master/workflows/automatically_sync_shopify_customer_identity/readme.md",
+            "title": "Setup Documentation"
+        }
+    ]
+}
