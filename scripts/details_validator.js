@@ -5,7 +5,7 @@ const workflows = fs.readdirSync(workflowsDir);
 
 workflows.forEach((workflowName) => {
   fs.readFile(`${workflowsDir}/${workflowName}/workflow.flopack`, (_, data) => {
-    const flowPackContent = JSON.parse(data.toString());
+    const flowpackContent = JSON.parse(data.toString());
     const jsonContent = JSON.parse(
       fs.readFileSync(`${workflowsDir}/${workflowName}/workflow.json`).toString()
     );
@@ -18,32 +18,13 @@ workflows.forEach((workflowName) => {
       !jsonContent.details.hasOwnProperty("stashCount")
     ) {
       throw new Error(
-        `The "details" field on ${workflowName}/workflow.json is missing essential keys.`
+        `The "details" field on ${workflowName}/workflow.json is missing essential keys. Go to <link_here> for documentation.`
       );
     }
 
-    // VALIDATE THE TABLES COUNT
-    if (Object.keys(flowPackContent.data.tables).length !== jsonContent.details.stashCount) {
-      throw new Error(`Number of tables (stashes) is not correct at ${workflowName}/workflow.json`);
-    }
-
-    // VALIDATE THE "details" OBJECT
+    // VALIDATE THE "details" OBJECT having correct counts
     const countsInJSON = jsonContent.details;
-    const countsInFlopack = {
-      flowCount: Object.keys(flowPackContent.data.flos).length,
-      mainFlowsCount: 0,
-      helperFlowsCount: 0,
-      stashCount: Object.keys(flowPackContent.data.tables).length
-    };
-
-    Object.values(flowPackContent.data.flos).forEach((flo) => {
-      if (flo.data.display.isCallable && !flo.data.scheduled) {
-        countsInFlopack.helperFlowsCount++;
-      } else {
-        countsInFlopack.mainFlowsCount++;
-      }
-    });
-
+    const countsInFlopack = getCountsFromFlowpack(flowpackContent);
     Object.keys(countsInFlopack).forEach((key) => {
       if (countsInFlopack[key] !== countsInJSON[key]) {
         throw new Error(
@@ -53,3 +34,27 @@ workflows.forEach((workflowName) => {
     });
   });
 });
+
+/**
+ * Get the 4 counts we need from the .flopack file
+ * @param {object} flowpackContent: the content of the .flopack file
+ * @returns {flowCount: number, mainFlowsCount: number, helperFlowsCount: number, stashCount: number}
+ */
+function getCountsFromFlowpack(flowpackContent) {
+  const countsInFlopack = {
+    flowCount: Object.keys(flowpackContent.data.flos).length,
+    mainFlowsCount: 0,
+    helperFlowsCount: 0,
+    stashCount: Object.keys(flowpackContent.data.tables).length
+  };
+
+  Object.values(flowpackContent.data.flos).forEach((flo) => {
+    if (flo.data.display.isCallable && !flo.data.scheduled) {
+      countsInFlopack.helperFlowsCount++;
+    } else {
+      countsInFlopack.mainFlowsCount++;
+    }
+  });
+
+  return countsInFlopack;
+}
