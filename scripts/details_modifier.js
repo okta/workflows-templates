@@ -41,9 +41,8 @@ function getCounts(FLOs) {
   let mainFlowsCount = 0;
   let helperFlowsCount = 0;
 
-  Object.keys(FLOs).forEach((FLOKey) => {
-    const FLOData = FLOs[FLOKey].data;
-    if (FLOData.display.isCallable && !FLOData.scheduled) {
+  Object.values(FLOs).forEach((flo) => {
+    if (flo.data.display.isCallable && !flo.data.scheduled) {
       helperFlowsCount++;
     } else {
       mainFlowsCount++;
