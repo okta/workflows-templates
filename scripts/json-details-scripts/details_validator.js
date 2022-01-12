@@ -1,12 +1,12 @@
 const fs = require("fs");
-const { getCountsFromFlowpack } = require("./shared");
+const { getCountsFromFlopack } = require("./shared");
 
 const workflowsDir = `${process.cwd()}/workflows`;
 const workflows = fs.readdirSync(workflowsDir);
 
 workflows.forEach((workflowName) => {
   fs.readFile(`${workflowsDir}/${workflowName}/workflow.flopack`, (_, data) => {
-    const flowpackContent = JSON.parse(data.toString());
+    const flopackContent = JSON.parse(data.toString());
     const jsonContent = JSON.parse(
       fs.readFileSync(`${workflowsDir}/${workflowName}/workflow.json`).toString()
     );
@@ -19,13 +19,13 @@ workflows.forEach((workflowName) => {
       !jsonContent.details.hasOwnProperty("stashCount")
     ) {
       throw new Error(
-        `The "details" field on ${workflowName}/workflow.json is missing essential keys. Go to <link_here> for documentation.`
+        `The "details" field on ${workflowName}/workflow.json is missing essential keys.`
       );
     }
 
     // VALIDATE THE "details" OBJECT having correct counts
     const countsInJSON = jsonContent.details;
-    const countsInFlopack = getCountsFromFlowpack(flowpackContent);
+    const countsInFlopack = getCountsFromFlopack(flopackContent);
     Object.keys(countsInFlopack).forEach((key) => {
       if (countsInFlopack[key] !== countsInJSON[key]) {
         throw new Error(

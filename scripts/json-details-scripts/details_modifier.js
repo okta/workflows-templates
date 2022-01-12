@@ -1,5 +1,5 @@
 const fs = require("fs");
-const { getCountsFromFlowpack } = require("./shared");
+const { getCountsFromFlopack } = require("./shared");
 
 const workflowsDir = `${process.cwd()}/workflows`;
 const workflows = fs.readdirSync(workflowsDir);
@@ -7,7 +7,7 @@ const workflows = fs.readdirSync(workflowsDir);
 workflows.forEach((workflowName) => {
   fs.readFile(`${workflowsDir}/${workflowName}/workflow.flopack`, (_, data) => {
     const flopackContent = JSON.parse(data.toString());
-    const counts = getCountsFromFlowpack(flopackContent);
+    const counts = getCountsFromFlopack(flopackContent);
     writeToJSONFile(workflowName, counts);
   });
 });
