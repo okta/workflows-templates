@@ -108,7 +108,7 @@ To use a private channel, an Slack Workspace administrator must invite the app t
 
 1. Click **New Connection**.
 
-1. Select HTTP from the list.
+1. Select API Connector from the list.
 
 
 1. For the new connection use “**Slack - Okta Requests**” as the connection nickname and for the auth type select “**Custom**”. Here we will use the bot user OAuth token that we copied on [Create the custom Slack application](#_nwjp2phhm6gv) step 26.
