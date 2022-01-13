@@ -15,11 +15,10 @@ workflows.forEach((workflowName) => {
     if (
       !jsonContent.details.hasOwnProperty("flowCount") ||
       !jsonContent.details.hasOwnProperty("mainFlowsCount") ||
-      !jsonContent.details.hasOwnProperty("helperFlowsCount") ||
-      !jsonContent.details.hasOwnProperty("stashCount")
+      !jsonContent.details.hasOwnProperty("helperFlowsCount")
     ) {
       throw new Error(
-        `The "details" field on ${workflowName}/workflow.json is missing essential keys.`
+        `The "details" field on "${workflowName}/workflow.json" is missing mandatory fields.`
       );
     }
 
@@ -27,6 +26,12 @@ workflows.forEach((workflowName) => {
     const countsInJSON = jsonContent.details;
     const countsInFlopack = getCountsFromFlopack(flopackContent);
     Object.keys(countsInFlopack).forEach((key) => {
+      if (countsInFlopack[key] > 0 && !countsInJSON[key]) {
+        throw new Error(
+          `The "details" field on "${workflowName}/workflow.json" is missing the "${key}" field.`
+        );
+      }
+
       if (countsInFlopack[key] !== countsInJSON[key]) {
         throw new Error(
           `The "details" object at ${workflowName}/workflow.json contains incorrect numbers`
