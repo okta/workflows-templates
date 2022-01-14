@@ -1,1 +1,20 @@
-{"name":"temporarily_exempt_users_from_mfa","title":"Temporarily exempt users from MFA","description":"Employees often lose and replace their mobile phones. In order to provide temporary access to reset a secondary authenticator, users can be scoped to a less strict authentication policy until they have a device that allows them to comply with high assurance sign-on policies. This template will exempt an Okta user from MFA policies for a predefined period of time.","connectors":["okta"],"details":{"stashCount":1,"flowCount":3},"links":[{"destination":"https://github.com/okta/workflows-templates/blob/master/workflows/temporarily_exempt_users_from_mfa/readme.md","title":"Setup Documentation"}]}
+{
+  "name": "temporarily_exempt_users_from_mfa",
+  "title": "Temporarily exempt users from MFA",
+  "description": "Employees often lose and replace their mobile phones. In order to provide temporary access to reset a secondary authenticator, users can be scoped to a less strict authentication policy until they have a device that allows them to comply with high assurance sign-on policies. This template will exempt an Okta user from MFA policies for a predefined period of time.",
+  "connectors": [
+    "okta"
+  ],
+  "details": {
+    "flowCount": 3,
+    "mainFlowsCount": 2,
+    "helperFlowsCount": 1,
+    "stashCount": 1
+  },
+  "links": [
+    {
+      "destination": "https://github.com/okta/workflows-templates/blob/master/workflows/temporarily_exempt_users_from_mfa/readme.md",
+      "title": "Setup Documentation"
+    }
+  ]
+}

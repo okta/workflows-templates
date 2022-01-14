@@ -1,23 +1,24 @@
 {
-    "name": "special_character_validation_and_substitution",
-    "title": "Special Character Validation and Substitution",
-    "description": "When using a user’s name to generate technical fields such as samAccountName and email addresses, often the data will contain characters that are invalid in the specified data field (for example, a space in an email address). This workflow identifies some of the most common special characters and provides substitutions. The validated or repaired name is then placed in a user profile attribute in Okta to allow for preservation of the original name for display purposes, and utilization of the updated name for technical purposes.",
-    "connectors": [
-       "okta"
-    ],
-    "details": {
-     "flowCount": 2,
-     "stashCount": 0
-   },
-    "links": [
-       {
-          "title": "Video Walk-through",
-          "destination": "https://www.youtube.com/watch?v=nkK9S0WWXGM"
-       },
-       {
-          "title": "Setup Documentation",
-          "destination": "https://github.com/okta/workflows-templates/blob/master/workflows/special_character_validation_and_substitution/readme.md"
-       }
-    ]
- }
- 
+  "name": "special_character_validation_and_substitution",
+  "title": "Special Character Validation and Substitution",
+  "description": "When using a user’s name to generate technical fields such as samAccountName and email addresses, often the data will contain characters that are invalid in the specified data field (for example, a space in an email address). This workflow identifies some of the most common special characters and provides substitutions. The validated or repaired name is then placed in a user profile attribute in Okta to allow for preservation of the original name for display purposes, and utilization of the updated name for technical purposes.",
+  "connectors": [
+    "okta"
+  ],
+  "details": {
+    "flowCount": 2,
+    "mainFlowsCount": 1,
+    "helperFlowsCount": 1,
+    "stashCount": 0
+  },
+  "links": [
+    {
+      "title": "Video Walk-through",
+      "destination": "https://www.youtube.com/watch?v=nkK9S0WWXGM"
+    },
+    {
+      "title": "Setup Documentation",
+      "destination": "https://github.com/okta/workflows-templates/blob/master/workflows/special_character_validation_and_substitution/readme.md"
+    }
+  ]
+}

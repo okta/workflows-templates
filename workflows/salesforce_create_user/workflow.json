@@ -1,23 +1,25 @@
 {
-   "name": "salesforce_create_user",
-   "title": "Create Users in Salesforce",
-   "description": "User Provisioning, or creating users in a 3rd party system, is one of the most foundational use cases for Okta’s Lifecycle Management product. In order to provide access to a system, for example providing access to Salesforce, a newly created user needs to have an account in that system with the correct profile attributes and entitlements. This template walks you through how to create a user in Salesforce and assign them a Profile based on their department.",
-   "connectors": [
-      "salesforce", 
-      "okta"
-   ],
-   "details": {
+  "name": "salesforce_create_user",
+  "title": "Create Users in Salesforce",
+  "description": "User Provisioning, or creating users in a 3rd party system, is one of the most foundational use cases for Okta’s Lifecycle Management product. In order to provide access to a system, for example providing access to Salesforce, a newly created user needs to have an account in that system with the correct profile attributes and entitlements. This template walks you through how to create a user in Salesforce and assign them a Profile based on their department.",
+  "connectors": [
+    "salesforce",
+    "okta"
+  ],
+  "details": {
     "flowCount": 1,
+    "mainFlowsCount": 1,
+    "helperFlowsCount": 0,
     "stashCount": 0
   },
-   "links": [
-      {
-         "title": "Video Walk-through",
-         "destination": "https://www.loom.com/share/c1cbb2ef46d2416aaec605fb533fb61b"
-      },
-      {
-         "title": "Setup Documentation",
-         "destination": "https://github.com/okta/workflows-templates/blob/master/workflows/salesforce_create_user/readme.md"
-      }
-   ]
+  "links": [
+    {
+      "title": "Video Walk-through",
+      "destination": "https://www.loom.com/share/c1cbb2ef46d2416aaec605fb533fb61b"
+    },
+    {
+      "title": "Setup Documentation",
+      "destination": "https://github.com/okta/workflows-templates/blob/master/workflows/salesforce_create_user/readme.md"
+    }
+  ]
 }

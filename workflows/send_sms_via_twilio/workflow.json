@@ -1,21 +1,22 @@
 {
-   "name": "send_sms_via_twilio",
-   "title": "Send SMS via Twilio",
-   "description": "Use Okta Workflows to send SMS messages via Twilio",
-   "connectors": [
-   ],
-   "details": {
+  "name": "send_sms_via_twilio",
+  "title": "Send SMS via Twilio",
+  "description": "Use Okta Workflows to send SMS messages via Twilio",
+  "connectors": [],
+  "details": {
     "flowCount": 1,
+    "mainFlowsCount": 0,
+    "helperFlowsCount": 1,
     "stashCount": 0
   },
-   "links": [
-      {
-         "title": "Video Walk-through",
-         "destination": "https://www.youtube.com/watch?v=sCyY5MMhqc8"
-      },
-      {
-         "title": "Setup Documentation",
-         "destination": "https://github.com/okta/workflows-templates/blob/master/workflows/send_sms_via_twilio/readme.md"
-      }
-   ]
+  "links": [
+    {
+      "title": "Video Walk-through",
+      "destination": "https://www.youtube.com/watch?v=sCyY5MMhqc8"
+    },
+    {
+      "title": "Setup Documentation",
+      "destination": "https://github.com/okta/workflows-templates/blob/master/workflows/send_sms_via_twilio/readme.md"
+    }
+  ]
 }
