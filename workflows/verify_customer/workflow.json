@@ -1,22 +1,22 @@
 {
-   "name": "verify_customer",
-   "title": "Hardening Customer Verification with Email Factor Challenge",
-   "description": "This template allows users to implement an email factor challenge using Okta Workflows",
-   "connectors": [
-      "okta"
-   ],
-   "details": {
+  "name": "verify_customer",
+  "title": "Hardening Customer Verification with Email Factor Challenge",
+  "description": "This template allows users to implement an email factor challenge using Okta Workflows",
+  "connectors": [
+    "okta"
+  ],
+  "details": {
     "flowCount": 2,
-    "stashCount": 0
+    "mainFlowsCount": 2
   },
-   "links": [
-      {
-         "title": "Video Walk-through",
-         "destination": "https://www.youtube.com/watch?v=y5pVbrkRTAI"
-      },
-      {
-         "title": "Setup Documentation",
-         "destination": "https://github.com/okta/workflows-templates/blob/master/workflows/verify_customer/readme.md"
-      }
-   ]
+  "links": [
+    {
+      "title": "Video Walk-through",
+      "destination": "https://www.youtube.com/watch?v=y5pVbrkRTAI"
+    },
+    {
+      "title": "Setup Documentation",
+      "destination": "https://github.com/okta/workflows-templates/blob/master/workflows/verify_customer/readme.md"
+    }
+  ]
 }

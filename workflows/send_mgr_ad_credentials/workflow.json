@@ -1,22 +1,23 @@
 {
-   "name": "send_mgr_ad_credentials",
-   "title": "Send Active Directory Credentials to Manager",
-   "description": "Many organizations use Microsoft Active Directory to manage user credentials, also known as AD DelAuth. While Okta’s Active Directory integration allows for user provisioning, organizations need a solution to communicate the account credentials to the user. When onboarding new hires, companies may need to set up these accounts ahead of time. However, the user may not have system or email access until the day of joining. In these scenarios, companies can email the account credentials to the user’s manager with a one-time password. This template helps demonstrate how to identify users being added to Active Directory using Okta’s “User Assigned to Application” event, fetch their manager’s email address and send an email notification.",
-   "connectors": [
-      "okta", "office365mail" 
-   ],
-   "details": {
+  "name": "send_mgr_ad_credentials",
+  "title": "Send Active Directory Credentials to Manager",
+  "description": "Many organizations use Microsoft Active Directory to manage user credentials, also known as AD DelAuth. While Okta’s Active Directory integration allows for user provisioning, organizations need a solution to communicate the account credentials to the user. When onboarding new hires, companies may need to set up these accounts ahead of time. However, the user may not have system or email access until the day of joining. In these scenarios, companies can email the account credentials to the user’s manager with a one-time password. This template helps demonstrate how to identify users being added to Active Directory using Okta’s “User Assigned to Application” event, fetch their manager’s email address and send an email notification.",
+  "connectors": [
+    "okta",
+    "office365mail"
+  ],
+  "details": {
     "flowCount": 1,
-    "stashCount": 0
+    "mainFlowsCount": 1
   },
-   "links": [
-      {
-         "title": "Video Walk-through",
-         "destination": "https://www.youtube.com/watch?v=U4FXtDP2uGk"
-      },
-      {
-         "title": "Setup Documentation",
-         "destination": "https://github.com/okta/workflows-templates/blob/master/workflows/send_mgr_ad_credentials/readme.md"
-      }
-   ]
+  "links": [
+    {
+      "title": "Video Walk-through",
+      "destination": "https://www.youtube.com/watch?v=U4FXtDP2uGk"
+    },
+    {
+      "title": "Setup Documentation",
+      "destination": "https://github.com/okta/workflows-templates/blob/master/workflows/send_mgr_ad_credentials/readme.md"
+    }
+  ]
 }
