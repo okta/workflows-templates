@@ -1,22 +1,22 @@
 {
-   "name": "intro_custom_api_actions",
-   "title": "Intro to Custom API Actions",
-   "description": "Sometimes a connector doesn’t meet your needs because of a missing action. With the Custom API Action method, you can get around this limitation by making a generic HTTP request to any of the connectors that Workflows has available. This sample flow uses a custom 'Role' attribute as part of Okta user profile. If the user is created with a 'Support' role attribute, the user is added to the HELP_DESK_ADMIN role in Okta.",
-   "connectors": [
-      "okta"
-   ],
-   "details": {
+  "name": "intro_custom_api_actions",
+  "title": "Intro to Custom API Actions",
+  "description": "Sometimes a connector doesn’t meet your needs because of a missing action. With the Custom API Action method, you can get around this limitation by making a generic HTTP request to any of the connectors that Workflows has available. This sample flow uses a custom 'Role' attribute as part of Okta user profile. If the user is created with a 'Support' role attribute, the user is added to the HELP_DESK_ADMIN role in Okta.",
+  "connectors": [
+    "okta"
+  ],
+  "details": {
     "flowCount": 2,
-    "stashCount": 0
+    "mainFlowsCount": 2
   },
-   "links": [
-      {
-         "title": "Video Walk-through",
-         "destination": "https://www.loom.com/share/f4311177204d4affa06b26885ecc46fb"
-      },
-      {
-         "title": "Setup Documentation",
-         "destination": "https://github.com/okta/workflows-templates/blob/master/workflows/intro_custom_api_actions/readme.md"
-      }
-   ]
+  "links": [
+    {
+      "title": "Video Walk-through",
+      "destination": "https://www.loom.com/share/f4311177204d4affa06b26885ecc46fb"
+    },
+    {
+      "title": "Setup Documentation",
+      "destination": "https://github.com/okta/workflows-templates/blob/master/workflows/intro_custom_api_actions/readme.md"
+    }
+  ]
 }

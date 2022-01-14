@@ -2,10 +2,11 @@
   "name": "execute_onpremise_powershell_with_okta_workflows",
   "title": "Execute On-Premise PowerShell with Okta Workflows",
   "description": "Microsoft PowerShell is used for many different use cases, from system management, networking, Windows, and identity. With regards to Identity Management, PowerShell is commonly used as part of the joiner, mover, and leaver processes to manage Microsoft Technologies, and for a small subset of use cases, it performs on-premises operations such as creating an Exchange mailbox.",
-  "connectors": [
-  ],
+  "connectors": [],
   "details": {
     "flowCount": 5,
+    "helperFlowsCount": 3,
+    "mainFlowsCount": 2,
     "stashCount": 1
   },
   "links": [
@@ -16,7 +17,6 @@
     {
       "title": "Setup Documentation",
       "destination": "https://github.com/okta/workflows-templates/blob/master/workflows/execute_onpremise_powershell_with_okta_workflows/readme.md"
-
     }
   ]
 }

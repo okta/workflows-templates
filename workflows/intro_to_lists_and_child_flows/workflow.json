@@ -3,11 +3,13 @@
   "title": "Intro to Lists and Child Flows",
   "description": "Much of the data we are working with is presented as a list. Think of a list of user objects, list of applications objects, etc. Workflows allows you to process lists in a comprehensive manner leveraging Child Flows to operate on each member of the list.  There are a number of ways to process a list. Performing a discrete action on each item without returning anything to the Parent Flow is very common, as well as, keeping a cumulative output of each item iteration that can be returned to the Parent Flow. There are many other List operations. Check our in app documentation for details. Child Flows are simply subroutines that exist as a separate flow but can only be called from a main or Parent Flow. Child Flows are very useful not only for the above mentioned List processing, but for code reusability, team contributions and code cleanup.",
   "connectors": [
-    "okta" , "slack"
+    "okta",
+    "slack"
   ],
   "details": {
     "flowCount": 4,
-    "stashCount": 0
+    "helperFlowsCount": 3,
+    "mainFlowsCount": 1
   },
   "links": [
     {

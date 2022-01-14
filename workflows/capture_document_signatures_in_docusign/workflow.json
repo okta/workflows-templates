@@ -1,18 +1,20 @@
 {
-    "name": "capture_document_signatures_in_docusign",
-    "title": "Capture Document Signatures in DocuSign",
-    "description": "Many organizations use DocuSign to control agreements – such as Non-Disclosure Agreements (NDAs), Lease Contracts, and Terms of Service (TOS) – that dictate which resources users can access. This template leverages DocuSign webhooks to capture when a user signs a document. This information can be used by Okta to populate an attribute which can in turn be used to manage group and application access.",
-    "connectors": [
-        "okta"
-    ],
-    "details": {
-        "stashCount": 1,
-        "flowCount": 2
-    },
-    "links": [
-        {
-            "destination": "https://github.com/okta/workflows-templates/blob/master/workflows/capture_document_signatures_in_docusign/readme.md",
-            "title": "Setup Documentation"
-        }
-    ]
+  "name": "capture_document_signatures_in_docusign",
+  "title": "Capture Document Signatures in DocuSign",
+  "description": "Many organizations use DocuSign to control agreements – such as Non-Disclosure Agreements (NDAs), Lease Contracts, and Terms of Service (TOS) – that dictate which resources users can access. This template leverages DocuSign webhooks to capture when a user signs a document. This information can be used by Okta to populate an attribute which can in turn be used to manage group and application access.",
+  "connectors": [
+    "okta"
+  ],
+  "details": {
+    "flowCount": 2,
+    "helperFlowsCount": 1,
+    "mainFlowsCount": 1,
+    "stashCount": 1
+  },
+  "links": [
+    {
+      "destination": "https://github.com/okta/workflows-templates/blob/master/workflows/capture_document_signatures_in_docusign/readme.md",
+      "title": "Setup Documentation"
+    }
+  ]
 }
