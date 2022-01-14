@@ -7,6 +7,7 @@
   ],
   "details": {
     "flowCount": 4,
+    "helperFlowsCount": 4,
     "stashCount": 1
   },
   "links": [
@@ -17,11 +18,10 @@
     {
       "title": "Sample Data",
       "destination": "https://github.com/okta/workflows-templates/blob/master/workflows/manage_group_members_using_profile_attributes/groupRules.csv"
-    }, 
+    },
     {
       "title": "Setup Documentation",
       "destination": "https://github.com/okta/workflows-templates/blob/master/workflows/manage_group_members_using_profile_attributes/readme.md"
-
     }
   ]
 }

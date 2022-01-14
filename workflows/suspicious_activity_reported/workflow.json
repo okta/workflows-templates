@@ -1,22 +1,24 @@
 {
-   "name": "suspicious_activity_reported",
-   "title": "Suspicious Activity Reported",
-   "description": "Suspicious Activity Reporting provides an end user with the option to report unrecognized activity from an account activity email notification. When end users receive a security email notification, they can send a report by clicking Report Suspicious Activity. Once they review the activity, they can confirm and complete the report.",
-   "connectors": [
-      "okta", "slack"
-   ],
-   "details": {
+  "name": "suspicious_activity_reported",
+  "title": "Suspicious Activity Reported",
+  "description": "Suspicious Activity Reporting provides an end user with the option to report unrecognized activity from an account activity email notification. When end users receive a security email notification, they can send a report by clicking Report Suspicious Activity. Once they review the activity, they can confirm and complete the report.",
+  "connectors": [
+    "okta",
+    "slack"
+  ],
+  "details": {
     "flowCount": 1,
+    "mainFlowsCount": 1,
     "stashCount": 1
   },
-   "links": [
-      {
-         "title": "Video Walk-through",
-         "destination": "https://www.youtube.com/watch?v=D_Py6iztREg"
-      },
-      {
-         "title": "Setup Documentation",
-         "destination": "https://github.com/okta/workflows-templates/blob/master/workflows/suspicious_activity_reported/readme.md"
-      }
-   ]
+  "links": [
+    {
+      "title": "Video Walk-through",
+      "destination": "https://www.youtube.com/watch?v=D_Py6iztREg"
+    },
+    {
+      "title": "Setup Documentation",
+      "destination": "https://github.com/okta/workflows-templates/blob/master/workflows/suspicious_activity_reported/readme.md"
+    }
+  ]
 }
