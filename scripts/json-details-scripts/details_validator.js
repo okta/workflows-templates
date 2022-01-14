@@ -42,13 +42,13 @@ function validateUseCases(floUseCases, workflowName) {
 
   if (!Array.isArray(floUseCases)) {
     throw new Error(
-      `The useCases field in "${workflowName}/workflow.json" has the wrong type. It should be an array of valid use cases strings.`
+      `The useCases field in "${workflowName}/workflow.json" has the wrong type. It should be an array of strings.`
     );
   }
 
   if (!floUseCases.every((s) => useCases.includes(s))) {
     throw new Error(
-      `The use cases assigned to "${workflowName}/workflow.json" are not valid. Make sure the use cases you used are mentioned in the "useCases.json" file.`
+      `The use cases assigned to "${workflowName}/workflow.json" are not valid. Make sure the use cases are mentioned in the "useCases.json" file.`
     );
   }
 }
