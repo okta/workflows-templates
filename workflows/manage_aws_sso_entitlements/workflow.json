@@ -8,6 +8,8 @@
   ],
   "details": {
     "flowCount": 6,
+    "mainFlowsCount": 4,
+    "helperFlowsCount": 2,
     "stashCount": 1
   },
   "links": [
@@ -18,7 +20,7 @@
     {
       "title": "Sample Data",
       "destination": "https://github.com/okta/workflows-templates/blob/master/workflows/manage_aws_sso_entitlements/awsEntitlements.csv"
-    }, 
+    },
     {
       "title": "Setup Documentation",
       "destination": "https://github.com/okta/workflows-templates/blob/master/workflows/manage_aws_sso_entitlements/readme.md"
