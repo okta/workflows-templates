@@ -26,7 +26,29 @@ workflows.forEach((workflowName) => {
             `The "details.${key}" field at ${workflowName}/workflow.json is incorrect.`
           );
         }
+
+        if (jsonContent.details.useCases) {
+          validateUseCases(jsonContent.details.useCases, workflowName);
+        }
       });
     }
   });
 });
+
+function validateUseCases(floUseCases, workflowName) {
+  const useCases = JSON.parse(
+    fs.readFileSync(`${process.cwd()}/useCases.json`).toString()
+  ).useCases.map((s) => s.name);
+
+  if (!Array.isArray(floUseCases)) {
+    throw new Error(
+      `The useCases field in "${workflowName}/workflow.json" has the wrong type. It should be an array of strings.`
+    );
+  }
+
+  if (!floUseCases.every((s) => useCases.includes(s))) {
+    throw new Error(
+      `The use cases assigned to "${workflowName}/workflow.json" are not valid. Make sure the use cases are mentioned in the "useCases.json" file.`
+    );
+  }
+}
