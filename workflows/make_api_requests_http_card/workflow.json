@@ -5,8 +5,8 @@
   "connectors": [],
   "details": {
     "flowCount": 2,
-    "stashCount": 1,
-    "helperFlowsCount": 2
+    "helperFlowsCount": 2,
+    "stashCount": 1
   },
   "links": [
     {
