@@ -11,32 +11,22 @@ workflows.forEach((workflowName) => {
       fs.readFileSync(`${workflowsDir}/${workflowName}/workflow.json`).toString()
     );
 
-    // CHECK IF THE 4 "details" FIELDS EXIST
-    if (
-      !jsonContent.details.hasOwnProperty("flowCount") ||
-      !jsonContent.details.hasOwnProperty("mainFlowsCount") ||
-      !jsonContent.details.hasOwnProperty("helperFlowsCount")
-    ) {
-      throw new Error(
-        `The "details" field on "${workflowName}/workflow.json" is missing mandatory fields.`
-      );
+    if (Object.keys(jsonContent.details).length > 0) {
+      const countsInJSON = jsonContent.details;
+      const countsInFlopack = getCountsFromFlopack(flopackContent);
+      Object.keys(countsInFlopack).forEach((key) => {
+        if (countsInFlopack[key] > 0 && !countsInJSON[key]) {
+          throw new Error(
+            `The "details" field on "${workflowName}/workflow.json" is missing the "${key}" field.`
+          );
+        }
+
+        if (countsInFlopack[key] !== countsInJSON[key]) {
+          throw new Error(
+            `The "details.${key}" field at ${workflowName}/workflow.json is incorrect.`
+          );
+        }
+      });
     }
-
-    // VALIDATE THE "details" OBJECT having correct counts
-    const countsInJSON = jsonContent.details;
-    const countsInFlopack = getCountsFromFlopack(flopackContent);
-    Object.keys(countsInFlopack).forEach((key) => {
-      if (countsInFlopack[key] > 0 && !countsInJSON[key]) {
-        throw new Error(
-          `The "details" field on "${workflowName}/workflow.json" is missing the "${key}" field.`
-        );
-      }
-
-      if (countsInFlopack[key] !== countsInJSON[key]) {
-        throw new Error(
-          `The "details" object at ${workflowName}/workflow.json contains incorrect numbers`
-        );
-      }
-    });
   });
 });
