@@ -1,1 +1,21 @@
-{"name":"password_change_notification_using_sendgrid","title":"Password Change Notification Using SendGrid","description":"End user security is a major concern for all CIAM customers. Account takeover can be mitigated by notifying an end user when their password has changed,thereby alerting them in the event that it was performed without their knowledge. Branding this notification across multiple application brands is important. Workflows can act on a password change event and send a customized notice to the end user. The trigger event which initiates the workflows is a User Password Changed event on the Okta Identity Platform. This occurs whether the user initiates a self service password change or a password is set by administrative action. A customized HTML email template is built which shall substitute user and event context dynamically.","connectors":["sendgrid","okta"],"details":{"stashCount":0,"flowCount":1},"links":[{"destination":"https://github.com/okta/workflows-templates/blob/master/workflows/password_change_notification_using_sendgrid/readme.md","title":"Setup Documentation"}]}
+{
+  "name": "password_change_notification_using_sendgrid",
+  "title": "Password Change Notification Using SendGrid",
+  "description": "End user security is a major concern for all CIAM customers. Account takeover can be mitigated by notifying an end user when their password has changed,thereby alerting them in the event that it was performed without their knowledge. Branding this notification across multiple application brands is important. Workflows can act on a password change event and send a customized notice to the end user. The trigger event which initiates the workflows is a User Password Changed event on the Okta Identity Platform. This occurs whether the user initiates a self service password change or a password is set by administrative action. A customized HTML email template is built which shall substitute user and event context dynamically.",
+  "connectors": [
+    "sendgrid",
+    "okta"
+  ],
+  "details": {
+    "flowCount": 1,
+    "mainFlowsCount": 1,
+    "helperFlowsCount": 0,
+    "stashCount": 0
+  },
+  "links": [
+    {
+      "destination": "https://github.com/okta/workflows-templates/blob/master/workflows/password_change_notification_using_sendgrid/readme.md",
+      "title": "Setup Documentation"
+    }
+  ]
+}
