@@ -5,11 +5,12 @@
  */
 module.exports = {
   getCountsFromFlopack: function (flopackContent) {
+    const { flos, tables } = flopackContent.data;
     const counts = {};
 
-    if (flopackContent.data.flos && Object.keys(flopackContent.data.flos).length) {
-      counts.flowCount = Object.keys(flopackContent.data.flos).length;
-      Object.values(flopackContent.data.flos).forEach((flo) => {
+    if (flos && Object.keys(flos).length) {
+      counts.flowCount = Object.keys(flos).length;
+      Object.values(flos).forEach((flo) => {
         if (flo.data.display.isCallable && !flo.data.scheduled) {
           counts.helperFlowsCount ? counts.helperFlowsCount++ : (counts.helperFlowsCount = 1);
         } else {
@@ -18,8 +19,8 @@ module.exports = {
       });
     }
 
-    if (flopackContent.data.tables && Object.keys(flopackContent.data.tables).length) {
-      counts.stashCount = Object.keys(flopackContent.data.tables).length;
+    if (tables && Object.keys(tables).length) {
+      counts.stashCount = Object.keys(tables).length;
     }
 
     return counts;
