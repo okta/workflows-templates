@@ -1,22 +1,26 @@
 {
-   "name": "generate_unique_emails",
-   "title": "Generate Unique Emails",
-   "description": "To onboard users in an organization, IT needs to generate unique email addresses for their end users in downstream applications like Office365 and G Suite. This flow generates the unique email address for all the users onboarded into Okta.",
-   "connectors": [
-      "okta", "office365admin", "googledirectory"
-   ],
-   "details": {
+  "name": "generate_unique_emails",
+  "title": "Generate Unique Emails",
+  "description": "To onboard users in an organization, IT needs to generate unique email addresses for their end users in downstream applications like Office365 and G Suite. This flow generates the unique email address for all the users onboarded into Okta.",
+  "connectors": [
+    "okta",
+    "office365admin",
+    "googledirectory"
+  ],
+  "details": {
     "flowCount": 9,
+    "mainFlowsCount": 4,
+    "helperFlowsCount": 5,
     "stashCount": 1
   },
-   "links": [
-      {
-         "title": "Video Walk-through",
-         "destination": "https://www.youtube.com/watch?v=3PfGBrtF5uw"
-      },
-      {
-         "title": "Setup Documentation",
-         "destination": "https://github.com/okta/workflows-templates/blob/master/workflows/generate_unique_emails/readme.md"
-      }
-   ]
+  "links": [
+    {
+      "title": "Video Walk-through",
+      "destination": "https://www.youtube.com/watch?v=3PfGBrtF5uw"
+    },
+    {
+      "title": "Setup Documentation",
+      "destination": "https://github.com/okta/workflows-templates/blob/master/workflows/generate_unique_emails/readme.md"
+    }
+  ]
 }

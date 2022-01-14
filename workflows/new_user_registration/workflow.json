@@ -3,10 +3,13 @@
   "title": "New User Registration",
   "description": "In Customer Identity and Access Management use cases, many business units, locales, and brands may require distinct user management operations. This template demonstrates how to implement custom processing of the registration context.",
   "connectors": [
-    "okta","office365mail"
+    "okta",
+    "office365mail"
   ],
   "details": {
     "flowCount": 5,
+    "mainFlowsCount": 1,
+    "helperFlowsCount": 4,
     "stashCount": 0
   },
   "links": [
