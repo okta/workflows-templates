@@ -15,12 +15,7 @@ workflows.forEach((workflowName) => {
 /**
  * Writes the calculated counts to the JSON file representing the flopack
  * @param workflowName(string): the workflow folder name
- * @param newCountsVal(object): {
- *   flowCount: number,
- *   mainFlowsCount: number,
- *   helperFlowsCount: number,
- *   stashCount: number
- * }
+ * @param newCountsVal(object): an object containing counts for each field
  * @returns null
  */
 function writeToJSONFile(workflowName, newCountsVal) {

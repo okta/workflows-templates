@@ -1,7 +1,7 @@
 /**
  * Get the 4 counts we need from the .flopack file
  * @param {object} flopackContent: the content of the .flopack file
- * @returns {flowCount: number, mainFlowsCount: number, helperFlowsCount: number, stashCount: number}
+ * @returns {flowCount?: number, mainFlowsCount?: number, helperFlowsCount?: number, stashCount?: number}
  */
 module.exports = {
   getCountsFromFlopack: function (flopackContent) {
