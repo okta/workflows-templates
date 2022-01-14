@@ -8,9 +8,8 @@
   ],
   "details": {
     "flowCount": 1,
-    "mainFlowsCount": 1,
-    "helperFlowsCount": 0,
-    "stashCount": 1
+    "stashCount": 1,
+    "mainFlowsCount": 1
   },
   "links": [
     {
