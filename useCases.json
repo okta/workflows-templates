@@ -1,0 +1,101 @@
+{
+  "_comment": "This JSON contains all the possible use cases that can be assigned to a workflow.",
+
+  "useCases": [
+    {
+      "name": "provisioning",
+      "title": "Provisioning",
+      "description": ""
+    },
+    {
+      "name": "deprovisioning",
+      "title": "Deprovisioning",
+      "description": ""
+    },
+    {
+      "name": "group-management",
+      "title": "Group management",
+      "description": ""
+    },
+    {
+      "name": "user-management",
+      "title": "User management",
+      "description": ""
+    },
+    {
+      "name": "advanced-onboarding-offboarding",
+      "title": "Advanced Onboarding/Offboarding",
+      "description": ""
+    },
+    {
+      "name": "issue-management",
+      "title": "Issue management",
+      "description": ""
+    },
+    {
+      "name": "access-management",
+      "title": "Access management",
+      "description": ""
+    },
+    {
+      "name": "infrastructure-management",
+      "title": "Infrastructure management",
+      "description": ""
+    },
+    {
+      "name": "devops",
+      "title": "DevOps",
+      "description": ""
+    },
+    {
+      "name": "incident-management",
+      "title": "Incident management",
+      "description": ""
+    },
+    {
+      "name": "device-management",
+      "title": "Device management",
+      "description": ""
+    },
+    {
+      "name": "factor-management",
+      "title": "Factor management",
+      "description": ""
+    },
+    {
+      "name": "policy-management",
+      "title": "Policy management",
+      "description": ""
+    },
+    {
+      "name": "id-proofing",
+      "title": "ID Proofing",
+      "description": ""
+    },
+    {
+      "name": "notification",
+      "title": "Notification",
+      "description": ""
+    },
+    {
+      "name": "reporting",
+      "title": "Reporting",
+      "description": ""
+    },
+    {
+      "name": "custom-integration",
+      "title": "Custom Integration",
+      "description": ""
+    },
+    {
+      "name": "time-based",
+      "title": "Time Based",
+      "description": ""
+    },
+    {
+      "name": "utility",
+      "title": "Utility",
+      "description": ""
+    }
+  ]
+}
