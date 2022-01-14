@@ -1,5 +1,5 @@
 language: node_js
-node_js: 
+node_js:
   - "stable"
 jobs:
   include:
@@ -7,8 +7,11 @@ jobs:
       before_script:
         - npm install shelljs
         - npm install ajv@7.0.3
-      script: 
+      script:
         - node $TRAVIS_BUILD_DIR/scripts/schema_validate.js
     - stage: "File validation rules"
       script:
         - $TRAVIS_BUILD_DIR/scripts/travis_release.sh
+    - stage: "Validate the data inside the details object in each workflow.json file"
+      script:
+        - node $TRAVIS_BUILD_DIR/scripts/json-details-scripts/details_validator.js
