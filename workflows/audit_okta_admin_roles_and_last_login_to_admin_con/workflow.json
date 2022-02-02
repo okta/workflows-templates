@@ -1,0 +1,13 @@
+{
+  "name": "audit_okta_admin_roles_and_last_login_to_admin_con",
+  "title": "Audit Okta Admin Roles and Last Login to Admin Console",
+  "description": "Periodically auditing admin access to your Okta org can help to ensure that users are assigned to the correct admin roles and to identify users who may no longer need admin access based on inactivity. This template identifies all admin users (users who are assigned to the Okta Admin Console application) and writes their information--including admin role assigned and last login to the Okta Admin Console--to a table. ",
+  "connectors": ["okta"],
+  "details": { "stashCount": 1, "flowCount": 2 },
+  "links": [
+    {
+      "destination": "https://github.com/okta/workflows-templates/blob/master/workflows/audit_okta_admin_roles_and_last_login_to_admin_con/readme.md",
+      "title": "Setup Documentation"
+    }
+  ]
+}
