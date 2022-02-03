@@ -3,7 +3,7 @@
     "title":"Capture Document Signatures in Adobe Sign",
     "description":"Many organizations use Adobe Sign to control agreements – such as Non-Disclosure Agreements (NDAs), Lease Contracts, and Terms of Service (TOS) – that dictate which resources users can access. This template leverages Adobe Sign webhooks to capture when a user signed a document. This information can be used by Okta to determine which systems a user can access and their security level.",
     "connectors":["okta"],
-    "details":{"stashCount":2,"flowCount":2, "mainFlowsCount":1, "helperFlowsCount":1},
+    "details":{"stashCount":2,"flowCount":2},
     "links":[
             {
                 "destination":"https://github.com/okta/workflows-templates/blob/master/workflows/capture_document_signatures_in_adobe_sign/readme.md",
