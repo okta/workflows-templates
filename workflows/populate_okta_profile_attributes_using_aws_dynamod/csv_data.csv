@@ -1,0 +1,101 @@
+rowId,system.updated,_id,latitude,longitude,city,state,state-name,population,county,timezone
+d44a7740-5ae6-11eb-8bb1-a65b385e4755,1611123301559,917,18.4214,-66.05005,San Juan,PR,Puerto Rico,18212,San Juan,America/Puerto_Rico
+d448f0a0-5ae6-11eb-bb48-34b610c4339f,1611123301548,1107,42.12129,-72.6055,Springfield,MA,Massachusetts,11582,Hampden,America/New_York
+d4487b70-5ae6-11eb-b5c4-be88a95ef05f,1611123301545,2632,41.66055,-70.34749,Centerville,MA,Massachusetts,10043,Barnstable,America/New_York
+d4467fa0-5ae6-11eb-9f6c-666025d9f918,1611123301533,2852,41.58765,-71.46084,North Kingstown,RI,Rhode Island,22031,Washington,America/New_York
+d4459540-5ae6-11eb-88bb-e1826c2953ae,1611123301526,3229,43.19781,-71.69685,Contoocook,NH,New Hampshire,5670,Merrimack,America/New_York
+d444aae0-5ae6-11eb-bcdf-74fb5ab16e84,1611123301520,3607,43.19552,-72.26883,South Acworth,NH,New Hampshire,440,Sullivan,America/New_York
+d4440ea0-5ae6-11eb-a753-5802e8776b72,1611123301515,3906,43.346,-70.77759,North Berwick,ME,Maine,4712,York,America/New_York
+d442d620-5ae6-11eb-a631-9ac95de6bc73,1611123301507,4958,44.90752,-69.93067,North Anson,ME,Maine,1826,Somerset,America/New_York
+d44260f0-5ae6-11eb-a693-1639206ecfdc,1611123301505,5340,43.16232,-72.93418,Bondville,VT,Vermont,602,Bennington,America/New_York
+d440da50-5ae6-11eb-895a-6b71fafbeabe,1611123301496,5732,43.68531,-73.18255,Bomoseen,VT,Vermont,792,Rutland,America/New_York
+d4406520-5ae6-11eb-bb13-741903a5f636,1611123301492,6035,41.96059,-72.80094,Granby,CT,Connecticut,7525,Hartford,America/New_York
+d43e9060-5ae6-11eb-a0f8-5970c9f07712,1611123301483,6354,41.70272,-71.85619,Moosup,CT,Connecticut,6326,Windham,America/New_York
+d43d7ef0-5ae6-11eb-b14d-1ed4a084fffd,1611123301474,8316,39.27321,-74.96124,Dorchester,NJ,New Jersey,384,Cumberland,America/New_York
+d43c9490-5ae6-11eb-b683-6113e6bbf059,1611123301468,8758,39.78928,-74.23008,Waretown,NJ,New Jersey,7674,Ocean,America/New_York
+d43baa30-5ae6-11eb-ba34-550d831ad0cd,1611123301462,10069,40.77606,-73.99025,New York,NY,New York,5085,New York,America/New_York
+d43a71b0-5ae6-11eb-b5a7-300fca5ed391,1611123301453,12028,42.93994,-73.44319,Buskirk,NY,New York,929,Rensselaer,America/New_York
+d439fc80-5ae6-11eb-8612-4c3270c88fea,1611123301451,12175,42.55148,-74.55279,Summit,NY,New York,570,Schoharie,America/New_York
+d438eb10-5ae6-11eb-94c4-3b2122e86ba2,1611123301443,19123,39.96421,-75.14587,Philadelphia,PA,Pennsylvania,15681,Philadelphia,America/New_York
+d43875e0-5ae6-11eb-a0ce-2642e72d8906,1611123301440,19506,40.45959,-76.12575,Bernville,PA,Pennsylvania,7162,Berks,America/New_York
+d4376470-5ae6-11eb-84ce-1095b894e807,1611123301433,19956,38.54787,-75.54078,Laurel,DE,Delaware,14777,Sussex,America/New_York
+d436ef40-5ae6-11eb-9eb6-de7ddedb14a7,1611123301430,20405,38.89638,-77.04259,Washington,DC,District of Columbia,0,District of Columbia,America/New_York
+d435ddd0-5ae6-11eb-a844-24bc8212d1bb,1611123301423,20747,38.85441,-76.88383,District Heights,MD,Maryland,39946,Prince George's,America/New_York
+d4358fb0-5ae6-11eb-a01e-24e9a3dd147d,1611123301421,21054,39.02176,-76.67327,Gambrills,MD,Maryland,11009,Anne Arundel,America/New_York
+d4343020-5ae6-11eb-80bd-09d06268e281,1611123301412,23888,36.9569,-76.98245,Wakefield,VA,Virginia,2120,Sussex,America/New_York
+d433baf0-5ae6-11eb-bfa6-4620e11fc1cb,1611123301409,24134,37.24522,-80.77994,Pearisburg,VA,Virginia,4993,Giles,America/New_York
+d432a980-5ae6-11eb-a273-49679dd7127e,1611123301402,24370,36.91372,-81.69236,Saltville,VA,Virginia,6634,Smyth,America/New_York
+d4325b60-5ae6-11eb-804a-f636b2e58ec8,1611123301399,25126,38.20218,-81.37206,London,WV,West Virginia,25,Kanawha,America/New_York
+d43122e0-5ae6-11eb-9551-a175592c3121,1611123301392,25431,39.48344,-78.56789,Levels,WV,West Virginia,319,Hampshire,America/New_York
+d43086a0-5ae6-11eb-87fe-f334b6876616,1611123301389,27252,35.56418,-79.34949,Goldston,NC,North Carolina,2509,Chatham,America/New_York
+d42f7530-5ae6-11eb-be5e-4f81b2132da8,1611123301381,28301,35.07431,-78.88358,Fayetteville,NC,North Carolina,17600,Cumberland,America/New_York
+d42f0000-5ae6-11eb-ba01-8b65e1675543,1611123301378,29743,35.02554,-81.39883,Smyrna,SC,South Carolina,861,York,America/New_York
+d42dc780-5ae6-11eb-b8b9-7e031ff4a044,1611123301370,30052,33.81581,-83.8947,Loganville,GA,Georgia,65959,Walton,America/New_York
+d42d7960-5ae6-11eb-af06-06a93b90948b,1611123301368,30230,33.16419,-84.92217,Hogansville,GA,Georgia,9470,Troup,America/New_York
+d42c67f0-5ae6-11eb-8d2a-7e0d6e13de86,1611123301360,34215,27.4717,-82.68504,Cortez,FL,Florida,560,Manatee,America/New_York
+d42bf2c0-5ae6-11eb-aa74-b52d24d2095c,1611123301357,34695,28.00826,-82.69629,Safety Harbor,FL,Florida,18096,Pinellas,America/New_York
+d42ae150-5ae6-11eb-9a27-c5cc8d327840,1611123301351,35079,33.94055,-86.75551,Hayden,AL,Alabama,9267,Blount,America/Chicago
+d42a6c20-5ae6-11eb-ad75-305c5e30e1c3,1611123301348,35749,34.82432,-86.75333,Harvest,AL,Alabama,22295,Madison,America/Chicago
+d42933a0-5ae6-11eb-bfcc-7c788c2ed5a5,1611123301340,37774,35.73039,-84.35409,Loudon,TN,Tennessee,17811,Loudon,America/New_York
+d428e580-5ae6-11eb-babe-9b766e730d4f,1611123301337,38560,36.23317,-85.87015,Elmwood,TN,Tennessee,1180,Smith,America/Chicago
+d427ad00-5ae6-11eb-b105-24d1f5a07ae4,1611123301329,38749,33.44734,-90.75238,Indianola,MS,Mississippi,29,Sunflower,America/Chicago
+d42737d0-5ae6-11eb-a55f-488cf1a78355,1611123301327,39039,32.81969,-90.22507,Benton,MS,Mississippi,1823,Yazoo,America/Chicago
+d425b130-5ae6-11eb-9cc8-1c1871a41bba,1611123301316,41097,38.61986,-84.58145,Williamstown,KY,Kentucky,7194,Grant,America/New_York
+d4253c00-5ae6-11eb-83ef-09ef2fd49803,1611123301314,41547,37.53609,-82.09064,Majestic,KY,Kentucky,449,Pike,America/New_York
+d4242a90-5ae6-11eb-92a3-48e93c4097b3,1611123301306,44303,41.10467,-81.53686,Akron,OH,Ohio,7766,Summit,America/New_York
+d423b560-5ae6-11eb-bca1-2513a840e1bf,1611123301304,44634,40.83417,-81.04793,Homeworth,OH,Ohio,2246,Columbiana,America/New_York
+d42255d0-5ae6-11eb-b937-7bb4f08d5bd0,1611123301295,46725,41.14912,-85.47485,Columbia City,IN,Indiana,23361,Whitley,America/Indiana/Indianapolis
+d421e0a0-5ae6-11eb-b118-d08d7cc62bca,1611123301292,46962,40.9867,-85.76876,North Manchester,IN,Indiana,9152,Wabash,America/Indiana/Indianapolis
+d420a820-5ae6-11eb-9588-18ab8dc75446,1611123301284,48748,44.30406,-83.66737,National City,MI,Michigan,1838,Iosco,America/Detroit
+d42032f0-5ae6-11eb-9662-45adaa79e235,1611123301281,49001,42.26474,-85.56246,Kalamazoo,MI,Michigan,21070,Kalamazoo,America/Detroit
+d41ed360-5ae6-11eb-869d-34bb9f267569,1611123301273,51244,43.24479,-95.93544,Matlock,IA,Iowa,78,Sioux,America/Chicago
+d41e5e30-5ae6-11eb-adfb-60e5bd84ab2e,1611123301269,51564,41.81606,-95.91198,Pisgah,IA,Iowa,433,Harrison,America/Chicago
+d41d25b0-5ae6-11eb-b2c9-82ffe8be26b2,1611123301262,54447,45.08446,-90.73992,Lublin,WI,Wisconsin,436,Taylor,America/Chicago
+d41cd790-5ae6-11eb-8604-2a4ca7d4058c,1611123301258,54623,43.73042,-91.01906,Coon Valley,WI,Wisconsin,2160,Vernon,America/Chicago
+d41adbc0-5ae6-11eb-95d4-bfd68c989663,1611123301247,55981,44.35555,-92.06702,Wabasha,MN,Minnesota,4042,Wabasha,America/Chicago
+d41a6690-5ae6-11eb-a41b-29279d300062,1611123301247,56136,44.50246,-96.3969,Hendricks,MN,Minnesota,1064,Lincoln,America/Chicago
+d4195520-5ae6-11eb-9140-93e7bbebc51c,1611123301235,57251,45.27889,-96.93516,Marvin,SD,South Dakota,173,Grant,America/Chicago
+d418dff0-5ae6-11eb-8259-8fa73ab345e3,1611123301233,57652,45.2026,-100.60486,Ridgeview,SD,South Dakota,423,Dewey,America/Denver
+d417ce80-5ae6-11eb-9c2f-165d60333a57,1611123301226,58056,47.2319,-97.93134,Luverne,ND,North Dakota,168,Griggs,America/Chicago
+d4175950-5ae6-11eb-bd3f-9df2b24668ca,1611123301223,58344,48.02427,-98.34368,Lakota,ND,North Dakota,924,Nelson,America/Chicago
+d41647e0-5ae6-11eb-af0d-c6996b6fef6b,1611123301216,59422,47.81702,-112.47354,Choteau,MT,Montana,2623,Teton,America/Denver
+d415d2b0-5ae6-11eb-919b-af8e4fc736ed,1611123301213,59932,48.04658,-114.25409,Somers,MT,Montana,1240,Flathead,America/Denver
+d4149a30-5ae6-11eb-ad58-44bdd15e7bec,1611123301205,62671,40.17291,-89.55846,New Holland,IL,Illinois,487,Logan,America/Chicago
+d4142500-5ae6-11eb-9a1f-3734962340a0,1611123301202,62889,38.45812,-88.82922,Texico,IL,Illinois,938,Jefferson,America/Chicago
+d412c570-5ae6-11eb-a00d-57fa6419c860,1611123301193,65646,37.33677,-93.70201,Everton,MO,Missouri,1704,Dade,America/Chicago
+d4127750-5ae6-11eb-822f-099542c8c223,1611123301191,65789,36.86371,-91.88104,Pomona,MO,Missouri,1666,Howell,America/Chicago
+d4113ed0-5ae6-11eb-845d-9207634ff273,1611123301183,66212,38.95637,-94.68147,Overland Park,KS,Kansas,32518,Johnson,America/Chicago
+d410c9a0-5ae6-11eb-b3a0-2df197e76dc4,1611123301180,66611,39.01544,-95.69613,Topeka,KS,Kansas,10076,Shawnee,America/Chicago
+d40f9120-5ae6-11eb-814f-b472bb06d619,1611123301172,68856,41.49587,-99.82745,Merna,NE,Nebraska,685,Custer,America/Chicago
+d40f4300-5ae6-11eb-b0b0-2d1237ed9e84,1611123301169,69042,40.4767,-100.40524,Stockville,NE,Nebraska,12,Frontier,America/Chicago
+d40e0a80-5ae6-11eb-9837-6c22639dfe4b,1611123301162,70039,29.88144,-90.38906,Boutte,LA,Louisiana,2691,St. Charles,America/Chicago
+d40dbc60-5ae6-11eb-aea3-a5985fb95852,1611123301159,70438,30.84676,-90.10813,Franklinton,LA,Louisiana,19009,Washington,America/Chicago
+d40c83e0-5ae6-11eb-b0be-dd662d58902c,1611123301151,72530,35.61819,-91.95341,Drasco,AR,Arkansas,1282,Cleburne,America/Chicago
+d40c35c0-5ae6-11eb-809b-9959ed7d2bbc,1611123301149,72729,35.78229,-94.46383,Evansville,AR,Arkansas,165,Washington,America/Chicago
+d40afd40-5ae6-11eb-b88d-ca5c8bbc781c,1611123301142,73007,35.68863,-97.31855,Arcadia,OK,Oklahoma,2349,Oklahoma,America/Chicago
+d40a39f0-5ae6-11eb-8067-039da14d5116,1611123301138,74136,36.06139,-95.94234,Tulsa,OK,Oklahoma,31835,Tulsa,America/Chicago
+d4094f90-5ae6-11eb-a84a-ce367bb93f6a,1611123301131,75862,30.95984,-95.32384,Trinity,TX,Texas,10044,Trinity,America/Chicago
+d4083e20-5ae6-11eb-bc83-e1500d6832ce,1611123301124,76087,32.67075,-97.78314,Weatherford,TX,Texas,27089,Parker,America/Chicago
+d40753c0-5ae6-11eb-ba87-3e6cd49dc272,1611123301118,77971,28.83223,-96.52193,Lolita,TX,Texas,1013,Jackson,America/Chicago
+d4066960-5ae6-11eb-971a-d5bf7eb51473,1611123301112,80428,40.86099,-106.96085,Clark,CO,Colorado,824,Routt,America/Denver
+d4057f00-5ae6-11eb-94ea-94ef53824f45,1611123301106,81655,39.75115,-106.53377,Wolcott,CO,Colorado,105,Eagle,America/Denver
+d40494a0-5ae6-11eb-a942-c57a9ec4239e,1611123301100,82640,43.56598,-106.1957,Linch,WY,Wyoming,46,Johnson,America/Denver
+d403aa40-5ae6-11eb-ae34-4eabf49d3cb3,1611123301094,83455,43.61481,-111.17998,Victor,ID,Idaho,5210,Teton,America/Boise
+d402e6f0-5ae6-11eb-801b-deae85a842f0,1611123301089,83803,48.03638,-116.44403,Bayview,ID,Idaho,1114,Kootenai,America/Los_Angeles
+d401d580-5ae6-11eb-a244-c7a66ddaf99d,1611123301082,84340,41.37974,-112.04637,Willard,UT,Utah,3755,Box Elder,America/Denver
+d400eb20-5ae6-11eb-8156-77f7b0e1fb5a,1611123301076,84735,37.64061,-112.43069,Hatch,UT,Utah,237,Garfield,America/Denver
+d40000c0-5ae6-11eb-a435-9bee0aa58f11,1611123301070,85718,32.33333,-110.91661,Tucson,AZ,Arizona,26398,Pima,America/Phoenix
+d3ff3d70-5ae6-11eb-abdd-e58085f487ce,1611123301065,86334,34.95114,-112.54528,Paulden,AZ,Arizona,4351,Yavapai,America/Phoenix
+d3fe04f0-5ae6-11eb-8332-490e32ccc28f,1611123301058,88032,32.39614,-106.81614,Dona Ana,NM,New Mexico,252,Doña Ana,America/Denver
+d3fd41a0-5ae6-11eb-a524-456272f75a83,1611123301052,88410,35.87395,-103.29185,Amistad,NM,New Mexico,105,Union,America/Denver
+d3fc3030-5ae6-11eb-81af-60b30fa55ca9,1611123301045,89161,36.00035,-115.36387,Las Vegas,NV,Nevada,209,Clark,America/Los_Angeles
+d3fb1ec0-5ae6-11eb-b614-fe44322ff4f6,1611123301039,90008,34.00956,-118.34706,Los Angeles,CA,California,31739,Los Angeles,America/Los_Angeles
+d3fa3460-5ae6-11eb-a800-3070a2f2d8fb,1611123301032,90305,33.95959,-118.33015,Inglewood,CA,California,15397,Los Angeles,America/Los_Angeles
+d3f97110-5ae6-11eb-a920-2358bf2c8fbd,1611123301026,92691,33.61064,-117.66626,Mission Viejo,CA,California,50782,Orange,America/Los_Angeles
+d3f7ea70-5ae6-11eb-90b6-ce8c38239d59,1611123301017,96761,20.90573,-156.6165,Lahaina,HI,Hawaii,23223,Maui,Pacific/Honolulu
+d3f68ae0-5ae6-11eb-ae6e-f66e9c149741,1611123301008,97471,43.22015,-123.47587,Roseburg,OR,Oregon,30350,Douglas,America/Los_Angeles
+d3f615b0-5ae6-11eb-b7ec-de0b3a765b72,1611123301006,97812,45.55943,-120.21621,Arlington,OR,Oregon,860,Gilliam,America/Los_Angeles
+d3f419e0-5ae6-11eb-ba83-4a0728fc9484,1611123300993,98266,48.95329,-122.12835,Maple Falls,WA,Washington,3993,Whatcom,America/Los_Angeles
+d3f35690-5ae6-11eb-878f-5f72ef12f97c,1611123300989,99170,47.24762,-117.40218,Rosalia,WA,Washington,995,Whitman,America/Los_Angeles
+d3ef10d1-5ae6-11eb-b277-f327d1fec8bb,1611123300967,99572,60.50805,-149.93757,Cooper Landing,AK,Alaska,580,Kenai Peninsula,America/Anchorage
+d3ef10d0-5ae6-11eb-9008-37093a88a342,1611123300962,99702,64.64824,-147.04901,Eielson Afb,AK,Alaska,3006,Fairbanks North Star,America/Anchorage
