@@ -59,6 +59,8 @@ workflow.json
 }
 ```
 
+**You don't have to fill in these counts manually, there is another script at `./scripts/json-details-scripts/details_modifier.js` that you can run. It will go over ALL the `workflow.json` files and modify the `details` object to contain valid data.**
+
 #### How to SKIP CI process
 
 *   Add [skip ci] or [ci skip] in commit message in case blocked by CI. Although, this is not recommended but if build is queued for longer time or need to merge template due to urgent fixes, it is probably OK to do so.
