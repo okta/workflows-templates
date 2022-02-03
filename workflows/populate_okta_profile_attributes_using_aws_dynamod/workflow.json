@@ -10,7 +10,7 @@
             "title":"Setup Documentation"
         },
         {
-            "destination":"https://github.com/okta/workflows-templates/blob/master/workflows/populate_okta_profile_attributes_using_aws_dynamod/csv data.csv",
+            "destination":"https://github.com/okta/workflows-templates/blob/master/workflows/populate_okta_profile_attributes_using_aws_dynamod/csv_data.csv",
             "title":"Sample Data"
         },
         {
