@@ -1,0 +1,20 @@
+{
+    "name": "restart_specific_apple_mobile_devices_on_a_weekly_",
+    "title": "Restart specific Apple mobile devices on a weekly basis",
+    "description": "Apple Mobile Devices such as iPads can be used as shared devices in several occasions such as meeting room control panels, customer facing demo screens, cash machines, etc. Those iPads need to restart from time to time to install pending updates and Jamf Pro doesn't offer a native way to schedule such actions over time. ",
+    "connectors": [
+        "jamfproclassicapi_3d816a0a0b7a410fa88c3de81a4aeccb"
+    ],
+    "details": {
+        "stashCount": 0,
+        "flowCount": 2,
+        "mainFlowsCount": 1,
+        "helperFlowsCount": 1
+    },
+    "links": [
+        {
+            "destination": "https://github.com/okta/workflows-templates/blob/master/workflows/restart_specific_apple_mobile_devices_on_a_weekly_/readme.md",
+            "title": "Setup Documentation"
+        }
+    ]
+}
