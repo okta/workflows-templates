@@ -1,0 +1,25 @@
+{
+    "name": "automate_account_creation_from_jira",
+    "title": "Automate Account Creation from JIRA",
+    "description": " Onboarding new employees is a complex process that requires inputs from several internal teams and integration across different tools for approval and account creation. In addition, certain businesses may require new employees to complete an orientation or pass a certification before activating a user account.  This complexity adds overhead for IT Admins - keeping track of approvals and then activating each user account on a specific date. How can this process get automated, reduce human error and enhance security posture? This template provides an example for automating account creation and activation in Okta triggered by approved service requests in JIRA.",
+    "connectors": [
+        "okta",
+        "jira2"
+    ],
+    "details": {
+        "stashCount": 1,
+        "flowCount": 3,
+        "mainFlowsCount": 2,
+        "helperFlowsCount": 1
+    },
+    "links": [
+        {
+            "destination": "https://github.com/okta/workflows-templates/blob/master/workflows/automate_account_creation_from_jira/readme.md",
+            "title": "Setup Documentation"
+        },
+        {
+            "title": "Video Walk-through",
+            "destination": "https://www.youtube.com/watch?v=yqBiQkS5Nk8"
+        }
+    ]
+}
