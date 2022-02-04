@@ -1,0 +1,13 @@
+{
+  "name": "quarantine_an_okta_user_by_sending_a_webhook_to_wo",
+  "title": "Quarantine an Okta User By Sending a Webhook to Workflows",
+  "description": "Taking action on compromised accounts helps increase the security posture of any organization. External systems like Splunk constantly analyze data, searching for specific patterns that could indicate a compromised account. If an account is identified, organizations could quarantine the account and prevent further access to critical applications.  When exposed as a webhook, this flow can be invoked by external systems and help with incident response efforts by quickly adding the user to a quarantine group associated with individual Application Sign-on policies to deny access to the application. At the end of the flow, Okta will clear the user session, forcing the user to re-authenticate. The user is now be limited to access only the applications that are not associated with the quarantined event.  This Worfklow could be extended to notify the end-user, managers, or administrators through emails or messages to collaboration tools, such as Slack or Microsoft Teams.",
+  "connectors": ["okta"],
+  "details": { "stashCount": 0, "flowCount": 1, "mainFlowsCount":1, "helperFlowsCount":0  },
+  "links": [
+    {
+      "destination": "https://github.com/okta/workflows-templates/blob/master/workflows/quarantine_an_okta_user_by_sending_a_webhook_to_wo/readme.md",
+      "title": "Setup Documentation"
+    }
+  ]
+}
