@@ -52,7 +52,8 @@
     ],
     "flowCount": 7,
     "helperFlowsCount": 5,
-    "mainFlowsCount": 2
+    "mainFlowsCount": 2,
+    "tags": ["most-popular"]
   },
   "links": [
     {

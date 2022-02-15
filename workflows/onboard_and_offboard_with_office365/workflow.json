@@ -54,7 +54,8 @@
     "flowCount": 7,
     "helperFlowsCount": 5,
     "mainFlowsCount": 2,
-    "stashCount": 1
+    "stashCount": 1,
+    "tags": ["most-popular"]
   },
   "links": [
     {
