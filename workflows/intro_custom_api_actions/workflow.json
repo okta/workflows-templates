@@ -7,7 +7,8 @@
   ],
   "details": {
     "flowCount": 2,
-    "mainFlowsCount": 2
+    "mainFlowsCount": 2,
+    "tags": ["introductory"]
   },
   "links": [
     {
