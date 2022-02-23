@@ -35,6 +35,32 @@ Templates are pre-built automated business processes that can be imported in Okt
 *   Workflow should have valid connector names which are referenced in connectors.json file
 *   Verify if video and documentation links in workflow.flopack file refers to same folder structure
 
+#### `workflow.json` validation rules
+The `workflow.json` file contains metadata about the Workflow Template. This file contains a `details` object, and there are some validation rules that run on CI to make sure that the counts inside this `details` object corropond with what's inside the `workflow.flopack` file.
+
+* if the flopack has flows -> `details.flowCount` field should exist
+* if the flopack has main flows -> `details.mainFlowsCount` should exist
+* if the flopack has helper flows -> `details.helperFlowsCount` should exist
+* if the flopack has tables -> `details.stashCount` should exist
+* `flowCount == mainFlowsCount + helperFlowsCount`
+
+Example:
+```
+workflow.json
+{
+  ...,
+  "details": {
+    "flowCount": 14,
+    "helperFlowsCount": 13,
+    "mainFlowsCount": 1,
+    "stashCount": 2
+  },
+  ...
+}
+```
+
+**You don't have to fill in these counts manually, there is another script at `./scripts/json-details-scripts/details_modifier.js` that you can run. It will go over ALL the `workflow.json` files and modify the `details` object to contain valid data.**
+
 #### How to SKIP CI process
 
 *   Add [skip ci] or [ci skip] in commit message in case blocked by CI. Although, this is not recommended but if build is queued for longer time or need to merge template due to urgent fixes, it is probably OK to do so.
