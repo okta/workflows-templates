@@ -1,17 +1,18 @@
 const fs = require("fs");
 
 module.exports.modifierScriptMsg = `You can run the "details_modifier" script to fill in valid data for ALL the workflow json files in the repo.`;
+module.exports.validFloField = ["id", "name", "type", "screenshotURL"];
 
 module.exports.getDetailsFromFlopack = function (flopackContent) {
   const { flos, tables } = flopackContent.data;
   const details = {};
 
   if (flos && Object.keys(flos).length) {
-    details.flows = [];
+    details.flos = [];
     details.flowCount = Object.keys(flos).length;
     Object.values(flos).forEach((flo) => {
       const isHelperFlow = flo.data.display.isCallable && !flo.data.scheduled;
-      details.flows.push({
+      details.flos.push({
         id: flo.id,
         name: flo.name,
         type: isHelperFlow ? "HELPER" : "MAIN",
@@ -61,27 +62,39 @@ module.exports.validateCounts = function (workflowName, detailsFromFlopack, deta
   });
 };
 
-module.exports.validateFlows = function (workflowName, detailsFromFlopack, detailsInJSON) {
-  if (!detailsFromFlopack.flows && !detailsInJSON.flows) return;
+module.exports.validateFlos = function (workflowName, detailsFromFlopack, detailsInJSON) {
+  if ((!detailsFromFlopack.flos || detailsFromFlopack.flos.length === 0) && !detailsInJSON.flos) {
+    return;
+  }
 
-  if (detailsFromFlopack.flows) {
-    if (!Array.isArray(detailsInJSON.flows)) {
+  if (detailsFromFlopack.flos) {
+    if (!Array.isArray(detailsInJSON.flos)) {
       throw new Error(
-        `A "details.flows" field (of type array) should exist at "${workflowName}/workflow.json". ${module.exports.modifierScriptMsg}`
+        `A "details.flos" field (of type array) should exist at "${workflowName}/workflow.json". ${module.exports.modifierScriptMsg}`
       );
     }
 
-    if (detailsInJSON.flows.length === 0) {
+    if (detailsInJSON.flos.length === 0) {
       throw new Error(
-        `The "details.flows" field at ${workflowName}/workflow.json can't be an empty array. ${module.exports.modifierScriptMsg}`
+        `The "details.flos" field at ${workflowName}/workflow.json can't be an empty array. ${module.exports.modifierScriptMsg}`
       );
     }
 
-    if (JSON.stringify(detailsFromFlopack.flows) !== JSON.stringify(detailsInJSON.flows)) {
+    if (JSON.stringify(detailsFromFlopack.flos) !== JSON.stringify(detailsInJSON.flos)) {
       throw new Error(
-        `The flows defined at the "${workflowName}/workflow.json -> details.flows" field don't match what's inside the ".flopack" file of that template. ${module.exports.modifierScriptMsg}`
+        `The flos defined at the "${workflowName}/workflow.json -> details.flos" field don't match what's inside the ".flopack" file of that template. ${module.exports.modifierScriptMsg}`
       );
     }
+
+    detailsInJSON.flos.forEach((flo) => {
+      if (!module.exports.validFloField.every((field) => field in flo)) {
+        throw new Error(
+          `The flos defined at the "${workflowName}/workflow.json -> details.flos" field contains invalid properties. Allowed fields are: "${module.exports.validFloField.join(
+            ", "
+          )}". ${module.exports.modifierScriptMsg}`
+        );
+      }
+    });
   }
 };
 

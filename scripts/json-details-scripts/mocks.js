@@ -194,5 +194,28 @@ module.exports = {
       mainFlowsCount: 1,
       helperFlowsCount: 1
     }
+  },
+
+  matchingFlosData: {
+    detailsFromFlopack: {
+      flos: [
+        {
+          id: "edcc5dad-eef8-4651-b1db-1a6a85cf161e",
+          name: "flo name 1",
+          type: "MAIN",
+          screenshotURL: "screenshot-url"
+        }
+      ]
+    },
+    detailsInJSON: {
+      flos: [
+        {
+          id: "edcc5dad-eef8-4651-b1db-1a6a85cf161e",
+          name: "flo name 1",
+          type: "MAIN",
+          screenshotURL: "screenshot-url"
+        }
+      ]
+    }
   }
 };

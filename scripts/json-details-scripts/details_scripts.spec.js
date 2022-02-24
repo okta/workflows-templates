@@ -9,9 +9,17 @@ const {
   jsonWithZeroValueCount,
   missingFieldInJSON,
   extraFieldsInJSON,
-  misMatchingCounts
+  misMatchingCounts,
+  matchingFlosData
 } = require("./mocks.js");
-const { getDetailsFromFlopack, validateCounts, modifierScriptMsg } = require("./utils.js");
+const {
+  getDetailsFromFlopack,
+  validateCounts,
+  modifierScriptMsg,
+  validateFlos,
+  validFloField
+} = require("./utils.js");
+const workflowName = "workflow_template_name";
 
 describe("getCountsFromFlopack", () => {
   test("no flos nor tables", () => {
@@ -27,7 +35,7 @@ describe("getCountsFromFlopack", () => {
   test("1 main flo", () => {
     const result = getDetailsFromFlopack(flopackWithMainFlosOnly);
     expect(result).toEqual({
-      flows: [
+      flos: [
         {
           id: "0787a0a1-f2a0-4939-99ba-a07e2273be47",
           name: "flo 1",
@@ -43,7 +51,7 @@ describe("getCountsFromFlopack", () => {
   test("only helper flows", () => {
     const result = getDetailsFromFlopack(flopackWithHelperFlosOnly);
     expect(result).toEqual({
-      flows: [
+      flos: [
         {
           id: "825ca604-c2ac-4e44-a5b7-34f4fd161668",
           name: "flo 1",
@@ -65,7 +73,7 @@ describe("getCountsFromFlopack", () => {
   test("main and helper flos", () => {
     const result = getDetailsFromFlopack(flopackWithMainAndHelperFlos);
     expect(result).toEqual({
-      flows: [
+      flos: [
         {
           id: "0787a0a1-f2a0-4939-99ba-a07e2273be47",
           name: "flo 1",
@@ -94,7 +102,7 @@ describe("getCountsFromFlopack", () => {
   test("flos and tables", () => {
     const result = getDetailsFromFlopack(flopackWithFlosAndTables);
     expect(result).toEqual({
-      flows: [
+      flos: [
         {
           id: "0787a0a1-f2a0-4939-99ba-a07e2273be47",
           name: "flo 1",
@@ -123,8 +131,7 @@ describe("getCountsFromFlopack", () => {
 });
 
 describe("validateCounts", () => {
-  const workflowName = "workflow_template_name";
-  it("passes when counts are matching between flopack and json", () => {
+  it("passes if counts are matching between flopack and json", () => {
     matchingFlopackAndJSON.forEach((i) => {
       expect(() =>
         validateCounts(workflowName, i.detailsFromFlopack, i.detailsInJSON)
@@ -132,13 +139,13 @@ describe("validateCounts", () => {
     });
   });
 
-  it("throws an error when there is a zero-value for any of the counts fields", () => {
+  it("throws an error if there is a zero-value for any of the counts fields", () => {
     expect(() => validateCounts(workflowName, {}, jsonWithZeroValueCount)).toThrowError(
       `The "flowCount" field at "${workflowName}/workflow.json" can't be a zero. Zero-value fields should be deleted. ${modifierScriptMsg}`
     );
   });
 
-  it("throws an error when there is a missing field in json but present in flopack", () => {
+  it("throws an error if there is a missing field in json but present in flopack", () => {
     expect(() =>
       validateCounts(
         workflowName,
@@ -150,7 +157,7 @@ describe("validateCounts", () => {
     );
   });
 
-  it("throws an error when there is an extra field in the json file that should not be there", () => {
+  it("throws an error if there is an extra field in the json file that should not be there", () => {
     expect(() =>
       validateCounts(
         workflowName,
@@ -162,7 +169,7 @@ describe("validateCounts", () => {
     );
   });
 
-  it("throws an error when the counts are not matching between the flopack and json files", () => {
+  it("throws an error if the counts are not matching between the flopack and json files", () => {
     expect(() =>
       validateCounts(
         workflowName,
@@ -172,5 +179,58 @@ describe("validateCounts", () => {
     ).toThrowError(
       `The "details.flowCount" field at ${workflowName}/workflow.json is incorrect. ${modifierScriptMsg}`
     );
+  });
+});
+
+describe("validateFlos", () => {
+  it("passes if there are no flows in the flopack file", () => {
+    expect(() => validateFlos(workflowName, {}, {})).not.toThrowError();
+    expect(() => validateFlos(workflowName, { flos: [] }, {})).not.toThrowError();
+  });
+
+  it("throws an error if the details.flos field doesn't exist or of wrong type", () => {
+    expect(() => validateFlos(workflowName, { flos: [{ id: "a-1" }] }, {})).toThrowError(
+      `A "details.flos" field (of type array) should exist at "${workflowName}/workflow.json". ${modifierScriptMsg}`
+    );
+
+    expect(() =>
+      validateFlos(workflowName, { flos: [{ id: "a-1" }] }, { flos: "wrong-type" })
+    ).toThrowError(
+      `A "details.flos" field (of type array) should exist at "${workflowName}/workflow.json". ${modifierScriptMsg}`
+    );
+  });
+
+  it("throws an error if the flos field is an empty array", () => {
+    expect(() => validateFlos(workflowName, { flos: [{ id: "a-1" }] }, { flos: [] })).toThrowError(
+      `The "details.flos" field at ${workflowName}/workflow.json can't be an empty array. ${modifierScriptMsg}`
+    );
+  });
+
+  it("throws an error if the flos are not matching between the flopack and json files", () => {
+    expect(() =>
+      validateFlos(workflowName, { flos: [{ id: "a-1" }] }, { flos: [{ id: "b-2" }] })
+    ).toThrowError(
+      `The flos defined at the "${workflowName}/workflow.json -> details.flos" field don't match what's inside the ".flopack" file of that template. ${modifierScriptMsg}`
+    );
+  });
+
+  it("throws an error if the details.flos array is not of the correct structure", () => {
+    expect(() =>
+      validateFlos(workflowName, { flos: [{ id: "a-1" }] }, { flos: [{ id: "a-1" }] })
+    ).toThrowError(
+      `The flos defined at the "${workflowName}/workflow.json -> details.flos" field contains invalid properties. Allowed fields are: "${validFloField.join(
+        ", "
+      )}". ${modifierScriptMsg}`
+    );
+  });
+
+  it("passes when the flos data match between the flo and json file", () => {
+    expect(() =>
+      validateFlos(
+        workflowName,
+        matchingFlosData.detailsFromFlopack,
+        matchingFlosData.detailsInJSON
+      )
+    ).not.toThrowError();
   });
 });
