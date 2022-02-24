@@ -1,5 +1,5 @@
 const fs = require("fs");
-const { getDetailsFromFlopack } = require("./shared");
+const { getDetailsFromFlopack } = require("./utils");
 
 const workflowsDir = `${process.cwd()}/workflows`;
 const workflows = fs.readdirSync(workflowsDir);
