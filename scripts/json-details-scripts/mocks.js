@@ -126,5 +126,73 @@ module.exports = {
       ],
       tables: ["whatever", "structure-doesn't-matter-here"]
     }
+  },
+
+  matchingFlopackAndJSON: [
+    {
+      detailsFromFlopack: {
+        flowCount: 10,
+        mainFlowsCount: 2,
+        helperFlowsCount: 8,
+        stashCount: 1
+      },
+      detailsInJSON: {
+        flowCount: 10,
+        mainFlowsCount: 2,
+        helperFlowsCount: 8,
+        stashCount: 1
+      }
+    },
+    {
+      detailsFromFlopack: {
+        flowCount: 1,
+        mainFlowsCount: 1
+      },
+      detailsInJSON: {
+        flowCount: 1,
+        mainFlowsCount: 1
+      }
+    }
+  ],
+
+  jsonWithZeroValueCount: { flowCount: 0 },
+
+  missingFieldInJSON: {
+    detailsFromFlopack: {
+      flowCount: 10,
+      mainFlowsCount: 2,
+      helperFlowsCount: 8,
+      stashCount: 1
+    },
+    detailsInJSON: {
+      flowCount: 10,
+      mainFlowsCount: 2,
+      helperFlowsCount: 8
+    }
+  },
+
+  extraFieldsInJSON: {
+    detailsFromFlopack: {
+      flowCount: 1,
+      mainFlowsCount: 1
+    },
+    detailsInJSON: {
+      flowCount: 1,
+      mainFlowsCount: 1,
+      helperFlowsCount: 1
+    }
+  },
+
+  misMatchingCounts: {
+    detailsFromFlopack: {
+      flowCount: 2,
+      mainFlowsCount: 1,
+      helperFlowsCount: 1
+    },
+    detailsInJSON: {
+      flowCount: 3,
+      mainFlowsCount: 1,
+      helperFlowsCount: 1
+    }
   }
 };

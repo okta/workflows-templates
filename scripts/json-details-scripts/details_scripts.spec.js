@@ -4,9 +4,14 @@ const {
   flopackWithMainAndHelperFlos,
   flopackWithTablesOnly,
   flopackWithHelperFlosOnly,
-  flopackWithFlosAndTables
+  flopackWithFlosAndTables,
+  matchingFlopackAndJSON,
+  jsonWithZeroValueCount,
+  missingFieldInJSON,
+  extraFieldsInJSON,
+  misMatchingCounts
 } = require("./mocks.js");
-const { getDetailsFromFlopack } = require("./shared.js");
+const { getDetailsFromFlopack, validateCounts, modifierScriptMsg } = require("./utils.js");
 
 describe("getCountsFromFlopack", () => {
   test("no flos nor tables", () => {
@@ -114,5 +119,58 @@ describe("getCountsFromFlopack", () => {
       helperFlowsCount: 2,
       stashCount: 2
     });
+  });
+});
+
+describe("validateCounts", () => {
+  const workflowName = "workflow_template_name";
+  it("passes when counts are matching between flopack and json", () => {
+    matchingFlopackAndJSON.forEach((i) => {
+      expect(() =>
+        validateCounts(workflowName, i.detailsFromFlopack, i.detailsInJSON)
+      ).not.toThrowError();
+    });
+  });
+
+  it("throws an error when there is a zero-value for any of the counts fields", () => {
+    expect(() => validateCounts(workflowName, {}, jsonWithZeroValueCount)).toThrowError(
+      `The "flowCount" field at "${workflowName}/workflow.json" can't be a zero. Zero-value fields should be deleted. ${modifierScriptMsg}`
+    );
+  });
+
+  it("throws an error when there is a missing field in json but present in flopack", () => {
+    expect(() =>
+      validateCounts(
+        workflowName,
+        missingFieldInJSON.detailsFromFlopack,
+        missingFieldInJSON.detailsInJSON
+      )
+    ).toThrowError(
+      `The "details" field at "${workflowName}/workflow.json" is missing the "stashCount" field. ${modifierScriptMsg}`
+    );
+  });
+
+  it("throws an error when there is an extra field in the json file that should not be there", () => {
+    expect(() =>
+      validateCounts(
+        workflowName,
+        extraFieldsInJSON.detailsFromFlopack,
+        extraFieldsInJSON.detailsInJSON
+      )
+    ).toThrowError(
+      `The "helperFlowsCount" at "${workflowName}/workflow.json}" should not exist, it's not matching what's in the ".flopack" file. ${modifierScriptMsg}`
+    );
+  });
+
+  it("throws an error when the counts are not matching between the flopack and json files", () => {
+    expect(() =>
+      validateCounts(
+        workflowName,
+        misMatchingCounts.detailsFromFlopack,
+        misMatchingCounts.detailsInJSON
+      )
+    ).toThrowError(
+      `The "details.flowCount" field at ${workflowName}/workflow.json is incorrect. ${modifierScriptMsg}`
+    );
   });
 });
