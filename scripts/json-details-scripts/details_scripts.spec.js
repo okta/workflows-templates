@@ -17,8 +17,10 @@ const {
   validateCounts,
   modifierScriptMsg,
   validateFlos,
-  validFloField
+  validFloField,
+  validateUseCases
 } = require("./utils.js");
+
 const workflowName = "workflow_template_name";
 
 describe("getCountsFromFlopack", () => {
@@ -224,7 +226,7 @@ describe("validateFlos", () => {
     );
   });
 
-  it("passes when the flos data match between the flo and json file", () => {
+  it("passes if the flos data match between the flo and json file", () => {
     expect(() =>
       validateFlos(
         workflowName,
@@ -232,5 +234,45 @@ describe("validateFlos", () => {
         matchingFlosData.detailsInJSON
       )
     ).not.toThrowError();
+  });
+});
+
+describe("validateUseCases", () => {
+  it("passes if no useCases exist in the json file", () => {
+    expect(() => validateUseCases(workflowName, null)).not.toThrowError();
+  });
+
+  it("throws an error if the useCases in json is not of type array", () => {
+    expect(() => validateUseCases(workflowName, "invalid-type")).toThrowError(
+      `The useCases field in "${workflowName}/workflow.json" has the wrong type. It should be an array of strings.`
+    );
+  });
+
+  it("throws an error if the useCases array is empty", () => {
+    expect(() => validateUseCases(workflowName, [])).toThrowError(
+      `The useCases field in "${workflowName}/workflow.json" can't be an empty array. It should be an array of strings. If not needed, you can delete it`
+    );
+  });
+
+  it("throws an error if the values inside the useCases array are not valid", () => {
+    // valid use cases === use cases defined in the useCases.json root file
+    expect(() => validateUseCases(workflowName, ["wrong-value"])).toThrowError(
+      `The use cases assigned to "${workflowName}/workflow.json" are not valid. Make sure the use cases are mentioned in the "useCases.json" file.`
+    );
+  });
+
+  it("throws an error if the useCases field contains elements not of type string", () => {
+    expect(() =>
+      validateUseCases(workflowName, [
+        { title: "use case title", description: "use case description" }
+      ])
+    ).toThrowError(
+      `The useCases field in "${workflowName}/workflow.json" contains wrong value for its elements. "useCases" should be an array of strings. Valid use cases exist in the "useCases.json" root file.`
+    );
+  });
+
+  it("passes if valid use cases are provided", () => {
+    const validUseCase = require("../../useCases.json").useCases[0].name;
+    expect(() => validateUseCases(workflowName, [validUseCase])).not.toThrowError();
   });
 });

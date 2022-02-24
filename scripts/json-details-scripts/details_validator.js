@@ -2,7 +2,7 @@ const fs = require("fs");
 const {
   getDetailsFromFlopack,
   validateCounts,
-  validateFlows,
+  validateFlos,
   validateUseCases
 } = require("./utils.js");
 
@@ -21,7 +21,7 @@ workflows.forEach((workflowName) => {
     const detailsFromFlopack = getDetailsFromFlopack(flopackContent);
 
     validateCounts(workflowName, detailsFromFlopack, detailsInJSON);
-    validateFlows(workflowName, detailsFromFlopack, detailsInJSON);
-    validateUseCases(jsonContent.details.useCases, workflowName);
+    validateFlos(workflowName, detailsFromFlopack, detailsInJSON);
+    validateUseCases(workflowName, jsonContent.details.useCases);
   });
 });

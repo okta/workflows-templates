@@ -98,18 +98,30 @@ module.exports.validateFlos = function (workflowName, detailsFromFlopack, detail
   }
 };
 
-module.exports.validateUseCases = function (floUseCases, workflowName) {
+module.exports.validateUseCases = function (workflowName, floUseCases) {
   if (!floUseCases) return;
-
-  const useCases = JSON.parse(
-    fs.readFileSync(`${process.cwd()}/useCases.json`).toString()
-  ).useCases.map((s) => s.name);
 
   if (!Array.isArray(floUseCases)) {
     throw new Error(
       `The useCases field in "${workflowName}/workflow.json" has the wrong type. It should be an array of strings.`
     );
   }
+
+  if (floUseCases.length === 0) {
+    throw new Error(
+      `The useCases field in "${workflowName}/workflow.json" can't be an empty array. It should be an array of strings. If not needed, you can delete it`
+    );
+  }
+
+  if (!floUseCases.every((s) => typeof s === "string")) {
+    throw new Error(
+      `The useCases field in "${workflowName}/workflow.json" contains wrong value for its elements. "useCases" should be an array of strings. Valid use cases exist in the "useCases.json" root file.`
+    );
+  }
+
+  const useCases = JSON.parse(
+    fs.readFileSync(`${process.cwd()}/useCases.json`).toString()
+  ).useCases.map((s) => s.name);
 
   if (!floUseCases.every((s) => useCases.includes(s))) {
     throw new Error(
