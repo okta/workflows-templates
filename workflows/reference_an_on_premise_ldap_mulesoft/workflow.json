@@ -4,6 +4,14 @@
   "description": "This template is an example of referring to an LDAP repository to perform a generic search within Okta Workflows. It can be modified and applied to any sort of repository such as a SQL database. This example leverages the Mulesoft Anypoint platform to host the API endpoint consumed by Okta Workflows.",
   "connectors": [],
   "details": {
+    "flows": [
+      {
+        "id": "d4dbd9e2-a9b4-4618-b909-11f983f74519",
+        "name": "Search LDAP",
+        "type": "HELPER",
+        "screenshotURL": ""
+      }
+    ],
     "flowCount": 1,
     "helperFlowsCount": 1
   },

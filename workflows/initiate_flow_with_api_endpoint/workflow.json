@@ -6,9 +6,16 @@
     "okta"
   ],
   "details": {
+    "flows": [
+      {
+        "id": "73c2c73c-a1d2-4f0c-9092-ef1d64a3718f",
+        "name": "[Parent] Create Bookmark App  ",
+        "type": "MAIN",
+        "screenshotURL": ""
+      }
+    ],
     "flowCount": 1,
-    "mainFlowsCount": 1,
-    "tags": ["introductory"]
+    "mainFlowsCount": 1
   },
   "links": [
     {

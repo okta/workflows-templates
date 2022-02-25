@@ -7,11 +7,54 @@
     "office365admin"
   ],
   "details": {
+    "flows": [
+      {
+        "id": "2bd9551a-ef1a-46d5-ac3d-8f2ed0e93aa5",
+        "name": "[UTIL] Send Manager Email Message",
+        "type": "HELPER",
+        "screenshotURL": ""
+      },
+      {
+        "id": "4e9cc665-0994-4ec4-976a-fa3e955f607e",
+        "name": "[Child] Clear Microsoft License Table",
+        "type": "HELPER",
+        "screenshotURL": ""
+      },
+      {
+        "id": "5b8d6669-4719-4c7f-ae2b-54fee21910ea",
+        "name": "[Child] Store all Microsoft License",
+        "type": "HELPER",
+        "screenshotURL": ""
+      },
+      {
+        "id": "3567489c-9a77-4e0c-b180-ceb11a92583f",
+        "name": "Clear Microsoft License Table",
+        "type": "HELPER",
+        "screenshotURL": ""
+      },
+      {
+        "id": "876eee96-c081-4db4-99c5-36ed24ee8895",
+        "name": "O365 Activation",
+        "type": "MAIN",
+        "screenshotURL": ""
+      },
+      {
+        "id": "713d8505-0fc9-43de-a4c6-c3216c241175",
+        "name": "Store all Microsoft License",
+        "type": "HELPER",
+        "screenshotURL": ""
+      },
+      {
+        "id": "f711126c-b369-47a3-92d8-ddaa55f13fff",
+        "name": "O365 Staged Deactivation ",
+        "type": "MAIN",
+        "screenshotURL": ""
+      }
+    ],
     "flowCount": 7,
     "helperFlowsCount": 5,
     "mainFlowsCount": 2,
-    "stashCount": 1,
-    "tags": ["most-popular"]
+    "stashCount": 1
   },
   "links": [
     {

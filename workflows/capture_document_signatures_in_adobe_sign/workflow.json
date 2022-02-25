@@ -1,13 +1,34 @@
 {
-    "name":"capture_document_signatures_in_adobe_sign",
-    "title":"Capture Document Signatures in Adobe Sign",
-    "description":"Many organizations use Adobe Sign to control agreements – such as Non-Disclosure Agreements (NDAs), Lease Contracts, and Terms of Service (TOS) – that dictate which resources users can access. This template leverages Adobe Sign webhooks to capture when a user signed a document. This information can be used by Okta to determine which systems a user can access and their security level.",
-    "connectors":["okta"],
-    "details":{"stashCount":2,"flowCount":2, "mainFlowsCount":1, "helperFlowsCount":1},
-    "links":[
-            {
-                "destination":"https://github.com/okta/workflows-templates/blob/master/workflows/capture_document_signatures_in_adobe_sign/readme.md",
-                "title":"Setup Documentation"
-            }
-        ]
+  "name": "capture_document_signatures_in_adobe_sign",
+  "title": "Capture Document Signatures in Adobe Sign",
+  "description": "Many organizations use Adobe Sign to control agreements – such as Non-Disclosure Agreements (NDAs), Lease Contracts, and Terms of Service (TOS) – that dictate which resources users can access. This template leverages Adobe Sign webhooks to capture when a user signed a document. This information can be used by Okta to determine which systems a user can access and their security level.",
+  "connectors": [
+    "okta"
+  ],
+  "details": {
+    "flows": [
+      {
+        "id": "b92b94d3-6584-495c-9011-6c7584df2675",
+        "name": "01. Get.Agreement.Information",
+        "type": "MAIN",
+        "screenshotURL": ""
+      },
+      {
+        "id": "b568af05-ab6e-42a4-bce2-46a0b75563e9",
+        "name": "Setup.Create.AdobeSign.Webhook",
+        "type": "HELPER",
+        "screenshotURL": ""
+      }
+    ],
+    "flowCount": 2,
+    "mainFlowsCount": 1,
+    "helperFlowsCount": 1,
+    "stashCount": 2
+  },
+  "links": [
+    {
+      "destination": "https://github.com/okta/workflows-templates/blob/master/workflows/capture_document_signatures_in_adobe_sign/readme.md",
+      "title": "Setup Documentation"
     }
+  ]
+}

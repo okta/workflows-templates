@@ -10,7 +10,7 @@ const workflowsDir = `${process.cwd()}/workflows`;
 const workflows = fs.readdirSync(workflowsDir);
 
 workflows.forEach((workflowName) => {
-  if (workflowName === ".DS_Store") return;
+  if (!fs.lstatSync(`${workflowsDir}/${workflowName}`).isDirectory()) return;
 
   fs.readFile(`${workflowsDir}/${workflowName}/workflow.flopack`, (_, data) => {
     const flopackContent = JSON.parse(data.toString());

@@ -203,7 +203,7 @@ module.exports = {
           id: "edcc5dad-eef8-4651-b1db-1a6a85cf161e",
           name: "flo name 1",
           type: "MAIN",
-          screenshotURL: "screenshot-url"
+          screenshotURL: ""
         }
       ]
     },
@@ -213,7 +213,7 @@ module.exports = {
           id: "edcc5dad-eef8-4651-b1db-1a6a85cf161e",
           name: "flo name 1",
           type: "MAIN",
-          screenshotURL: "screenshot-url"
+          screenshotURL: ""
         }
       ]
     }
