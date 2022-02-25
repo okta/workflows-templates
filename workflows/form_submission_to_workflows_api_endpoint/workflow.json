@@ -6,9 +6,28 @@
     "okta"
   ],
   "details": {
+    "flows": [
+      {
+        "id": "4b4ee39d-b9b6-4c3d-add2-9d5aa1e07567",
+        "name": "Postman API Endpoint",
+        "type": "MAIN",
+        "screenshotURL": ""
+      },
+      {
+        "id": "7dd14592-7966-449b-a65e-1d912d9f0b3b",
+        "name": "Google Form API Endpoint",
+        "type": "MAIN",
+        "screenshotURL": ""
+      },
+      {
+        "id": "f50e27bc-401e-4ca9-8448-b84e2fef072a",
+        "name": "Microsoft Form API Endpoint",
+        "type": "MAIN",
+        "screenshotURL": ""
+      }
+    ],
     "flowCount": 3,
-    "mainFlowsCount": 3,
-    "tags": ["introductory"]
+    "mainFlowsCount": 3
   },
   "links": [
     {

@@ -7,6 +7,44 @@
     "awssso"
   ],
   "details": {
+    "flows": [
+      {
+        "id": "e87f6430-992f-4404-ba1e-b951ab2f32de",
+        "name": "AWS Add Entitlements Child Flow",
+        "type": "HELPER",
+        "screenshotURL": ""
+      },
+      {
+        "id": "7c824994-98ac-4d1c-901f-3d196c4d7669",
+        "name": "AWS Remove Entitlements Child Flow",
+        "type": "HELPER",
+        "screenshotURL": ""
+      },
+      {
+        "id": "5d9c17fa-368e-443d-b3b8-2d3e3623cced",
+        "name": "AWS Add Entitlement",
+        "type": "MAIN",
+        "screenshotURL": ""
+      },
+      {
+        "id": "e5bbfb58-7360-43c1-a523-c5348de46f3f",
+        "name": "AWS Add Entitlements Table",
+        "type": "MAIN",
+        "screenshotURL": ""
+      },
+      {
+        "id": "2f49d290-535a-4e3d-a4f1-426ce0441a51",
+        "name": "AWS Remove Entitlements Table",
+        "type": "MAIN",
+        "screenshotURL": ""
+      },
+      {
+        "id": "6cd367f9-adcf-4426-8c7f-1dac5c02763c",
+        "name": "AWS Remove User Entitlements",
+        "type": "MAIN",
+        "screenshotURL": ""
+      }
+    ],
     "flowCount": 6,
     "helperFlowsCount": 2,
     "mainFlowsCount": 4,

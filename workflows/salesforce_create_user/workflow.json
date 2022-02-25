@@ -7,6 +7,14 @@
     "okta"
   ],
   "details": {
+    "flows": [
+      {
+        "id": "a57e9a5a-bd4f-49ba-a35d-2ea787b404b0",
+        "name": "Create Users in Salesforce",
+        "type": "MAIN",
+        "screenshotURL": ""
+      }
+    ],
     "flowCount": 1,
     "mainFlowsCount": 1
   },

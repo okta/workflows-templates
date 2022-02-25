@@ -6,6 +6,14 @@
     "googledirectory"
   ],
   "details": {
+    "flows": [
+      {
+        "id": "d04b2da5-85da-4205-9d06-e627d291c0d2",
+        "name": "Gsuite test",
+        "type": "MAIN",
+        "screenshotURL": ""
+      }
+    ],
     "flowCount": 1,
     "mainFlowsCount": 1
   },

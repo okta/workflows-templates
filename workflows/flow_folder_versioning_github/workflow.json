@@ -8,6 +8,26 @@
     "gmail"
   ],
   "details": {
+    "flows": [
+      {
+        "id": "9723230b-7efe-40e2-ba74-fc9c62488a7a",
+        "name": "Exported Notification Flow",
+        "type": "MAIN",
+        "screenshotURL": ""
+      },
+      {
+        "id": "5927607d-3025-44d5-b946-948420399aef",
+        "name": "Export Flow and Open PR in Github",
+        "type": "HELPER",
+        "screenshotURL": ""
+      },
+      {
+        "id": "2a3eb9bd-0721-4c7a-9102-1dbe783ff1e3",
+        "name": "Export Flow and Make Commit in Github",
+        "type": "HELPER",
+        "screenshotURL": ""
+      }
+    ],
     "flowCount": 3,
     "mainFlowsCount": 1,
     "helperFlowsCount": 2
