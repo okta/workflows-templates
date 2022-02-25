@@ -5,7 +5,8 @@ const workflowsDir = `${process.cwd()}/workflows`;
 const workflows = fs.readdirSync(workflowsDir);
 
 workflows.forEach((workflowName) => {
-  if (workflowName === ".DS_Store") return;
+  if (!fs.lstatSync(`${workflowsDir}/${workflowName}`).isDirectory()) return;
+
   fs.readFile(`${workflowsDir}/${workflowName}/workflow.flopack`, (_, data) => {
     const flopackContent = JSON.parse(data.toString());
     const details = getDetailsFromFlopack(flopackContent);
@@ -18,6 +19,6 @@ function writeToJSONFile(workflowName, details) {
   fs.readFile(jsonFilePath, (_, data) => {
     const content = JSON.parse(data.toString());
     content.details = details;
-    fs.writeFileSync(jsonFilePath, JSON.stringify(content, null, 2) + '\n');
+    fs.writeFileSync(jsonFilePath, JSON.stringify(content, null, 2) + "\n");
   });
 }
