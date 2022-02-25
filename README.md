@@ -43,7 +43,7 @@ Templates are pre-built automated business processes that can be imported in Okt
 Each workflow template has a `workflow.json` file that contains metadata about the template. This `workflow.json` file contains a `details` object that should contain specific pre-defined elements with correct type for each element. There are validation rules that run on CI to make sure that what is inside this `details` object correspond with what's inside the `workflow.flopack` file. Your PR CI checks will fail if the validation rules are not met.
 
 `workflow.json`'s details data structure:
-```js
+```json
 {
   ...,
   "details": {
@@ -70,7 +70,7 @@ Each workflow template has a `workflow.json` file that contains metadata about t
 
 3. These `details` fields in question are all optional. For example; if a flo doesn't have any tables, the `stashCount` should be completely removed, rather than be there with a zero value. Here is the shape of the details object then:
 
-```js
+```json
 {
   ...,
   "details": {
