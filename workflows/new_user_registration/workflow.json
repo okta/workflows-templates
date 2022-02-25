@@ -7,7 +7,7 @@
     "office365mail"
   ],
   "details": {
-    "flows": [
+    "flos": [
       {
         "id": "a9a0cf19-d173-46ba-97d7-314ff9e5f50f",
         "name": "[O365] Send Email HTML",

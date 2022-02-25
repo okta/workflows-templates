@@ -7,7 +7,7 @@
     "okta"
   ],
   "details": {
-    "flows": [
+    "flos": [
       {
         "id": "2133f03d-4a01-4cf7-a709-170be4f7044e",
         "name": "Send Lock Command To Mobile Device",

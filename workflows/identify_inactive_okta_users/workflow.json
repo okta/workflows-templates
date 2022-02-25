@@ -6,7 +6,7 @@
     "okta"
   ],
   "details": {
-    "flows": [
+    "flos": [
       {
         "id": "cfa530e8-e79a-408f-a811-66512fc3a09b",
         "name": "Check Last Login date and add to table",

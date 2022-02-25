@@ -6,7 +6,7 @@
     "okta"
   ],
   "details": {
-    "flows": [
+    "flos": [
       {
         "id": "6ea5ac1a-6111-47da-a02e-e96df87ef6f6",
         "name": "3.0 Remove Users from MFA Exempt Group",

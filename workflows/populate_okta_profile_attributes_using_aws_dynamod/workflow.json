@@ -7,7 +7,7 @@
     "okta"
   ],
   "details": {
-    "flows": [
+    "flos": [
       {
         "id": "e65b1713-821b-4a98-963c-f63330246b9e",
         "name": "1.1 - Create Zip Table Record",
