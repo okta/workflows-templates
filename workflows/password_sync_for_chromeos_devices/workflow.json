@@ -6,7 +6,7 @@
     "okta"
   ],
   "details": {
-    "flows": [
+    "flos": [
       {
         "id": "13d62c4c-6de5-46f3-86f6-24a08ba3e1a7",
         "name": "ChromeOS - Password changed API",

@@ -6,7 +6,7 @@
     "okta"
   ],
   "details": {
-    "flows": [
+    "flos": [
       {
         "id": "c92ce00a-c29e-4a6f-a789-97c87c816203",
         "name": "003-CSUB-DeDuplication-V1",

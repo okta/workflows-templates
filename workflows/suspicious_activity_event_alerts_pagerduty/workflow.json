@@ -7,7 +7,7 @@
     "pagerduty"
   ],
   "details": {
-    "flows": [
+    "flos": [
       {
         "id": "6049d6c5-cb1c-43c2-aa4d-d1c965721470",
         "name": "Create Suspicious Activity Incident in PagerDuty",

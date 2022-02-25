@@ -7,7 +7,7 @@
     "okta"
   ],
   "details": {
-    "flows": [
+    "flos": [
       {
         "id": "80080293-4acf-43e2-ae1b-719387d17382",
         "name": "Trigger ServiceNow Approval",

@@ -7,7 +7,7 @@
     "googlesheets"
   ],
   "details": {
-    "flows": [
+    "flos": [
       {
         "id": "c245f9f0-be37-4f98-b0fd-3f229390f63e",
         "name": "Import Users - Child Flow",

@@ -6,7 +6,7 @@
     "okta"
   ],
   "details": {
-    "flows": [
+    "flos": [
       {
         "id": "a3fb6314-bbfa-47ca-965d-f79d79ab33b4",
         "name": "01. Add.User.To.Quarantine.Group",
