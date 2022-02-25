@@ -6,7 +6,7 @@
     "jamfproclassicapi_3d816a0a0b7a410fa88c3de81a4aeccb"
   ],
   "details": {
-    "flows": [
+    "flos": [
       {
         "id": "8cb81cfa-70c4-4e99-a8a7-d37965527245",
         "name": "Restart Mobile Device",

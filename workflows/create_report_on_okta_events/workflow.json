@@ -7,7 +7,7 @@
     "googledrive"
   ],
   "details": {
-    "flows": [
+    "flos": [
       {
         "id": "9d915df2-9c1a-4d34-afd2-f0c7a501a6af",
         "name": "[Child] Clear User Attribute table",

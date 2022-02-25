@@ -6,7 +6,7 @@
     "okta"
   ],
   "details": {
-    "flows": [
+    "flos": [
       {
         "id": "96679abd-caf0-4629-8135-516e9bb1706a",
         "name": "[s1.1.1] CreateListGroupsBasedOnUserAttribute",

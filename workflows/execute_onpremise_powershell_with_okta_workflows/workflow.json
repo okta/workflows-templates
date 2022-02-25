@@ -4,7 +4,7 @@
   "description": "Microsoft PowerShell is used for many different use cases, from system management, networking, Windows, and identity. With regards to Identity Management, PowerShell is commonly used as part of the joiner, mover, and leaver processes to manage Microsoft Technologies, and for a small subset of use cases, it performs on-premises operations such as creating an Exchange mailbox.",
   "connectors": [],
   "details": {
-    "flows": [
+    "flos": [
       {
         "id": "0e88f804-8a20-43fe-99f3-df0b821b5288",
         "name": "CleanUp.02.Delete.Row",

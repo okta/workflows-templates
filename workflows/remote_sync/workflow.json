@@ -6,7 +6,7 @@
     "okta"
   ],
   "details": {
-    "flows": [
+    "flos": [
       {
         "id": "ac4155fd-99da-4022-a8f6-714001fc7f76",
         "name": "[child]Update User Via API",

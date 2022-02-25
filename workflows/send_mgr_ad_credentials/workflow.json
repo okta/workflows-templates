@@ -7,7 +7,7 @@
     "office365mail"
   ],
   "details": {
-    "flows": [
+    "flos": [
       {
         "id": "b7bfc281-aabe-4fa6-8540-2859d7e0c755",
         "name": "AD-Credential-Delivery",

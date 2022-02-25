@@ -8,7 +8,7 @@
     "office365mail"
   ],
   "details": {
-    "flows": [
+    "flos": [
       {
         "id": "240c0ce6-6119-42c4-b29a-80aa95b389e0",
         "name": "[UTIL] Send Manager Email Message",

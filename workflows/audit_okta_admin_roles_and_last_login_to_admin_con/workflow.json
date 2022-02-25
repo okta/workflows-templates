@@ -6,7 +6,7 @@
     "okta"
   ],
   "details": {
-    "flows": [
+    "flos": [
       {
         "id": "78ffa8b8-ec73-43f3-8b22-85a28992a8b1",
         "name": "2 - write Administrator role and last login to audit table",
