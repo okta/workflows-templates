@@ -22,6 +22,8 @@ Templates are pre-built automated business processes that can be imported in Okt
 *   Create a new folder under the following directory. Place the three files (readme, workflow.json, and workflow.flopack) into this new folder. 
     *   [https://github.com/okta/workflows-templates/workflows](https://github.com/okta/workflows-templates/tree/master/workflows)/[your new folder] 
 
+---
+
 #### Guideline on file/folder structure before submitting Workflow Template
 
 *   Folder name needs to be lower case and separated with underscore (regex: ^[a-z0-9_]{2,50}$ e.g create_report_google_sheets).
@@ -35,31 +37,80 @@ Templates are pre-built automated business processes that can be imported in Okt
 *   Workflow should have valid connector names which are referenced in connectors.json file
 *   Verify if video and documentation links in workflow.flopack file refers to same folder structure
 
-#### `workflow.json` validation rules
-The `workflow.json` file contains metadata about the Workflow Template. This file contains a `details` object, and there are some validation rules that run on CI to make sure that the counts inside this `details` object corropond with what's inside the `workflow.flopack` file.
+---
 
-* if the flopack has flows -> `details.flowCount` field should exist
-* if the flopack has main flows -> `details.mainFlowsCount` should exist
-* if the flopack has helper flows -> `details.helperFlowsCount` should exist
-* if the flopack has tables -> `details.stashCount` should exist
-* `flowCount == mainFlowsCount + helperFlowsCount`
+#### "workflow.json" data structure & validation rules
+Each workflow template has a `workflow.json` file that contains metadata about the template. This `workflow.json` file contains a `details` object that should contain specific pre-defined elements with correct type for each element. There are validation rules that run on CI to make sure that what is inside this `details` object correspond with what's inside the `workflow.flopack` file. Your PR CI checks will fail if the validation rules are not met.
 
-Example:
-```
-workflow.json
+`workflow.json`'s details data structure:
+```js
 {
   ...,
   "details": {
-    "flowCount": 14,
-    "helperFlowsCount": 13,
-    "mainFlowsCount": 1,
-    "stashCount": 2
+    "flowCount": number > 0,
+    "helperFlowsCount": number > 0,
+    "mainFlowsCount": number > 0,
+    "stashCount": number > 0,
+    "flows": [
+      {
+        id: string;
+        name: string;
+        type: "MAIN" | "HELPER",
+        screenshotURL: string
+      }
+    ]
   },
   ...
 }
 ```
 
-**You don't have to fill in these counts manually, there is another script at `./scripts/json-details-scripts/details_modifier.js` that you can run. It will go over ALL the `workflow.json` files and modify the `details` object to contain valid data.**
+1. Certain fields in the `details` object **should not** be filled in manually. These fields are: `flowCount, helperFlowsCount, mainFlowsCount, stashCount, flows`.
+
+2. There is a script at `./scripts/json-details-scripts/details_modifier.js` that you should run to do so. It will go over **ALL** templates in the repo and modify the `details` object in each `workflow.json` file to contain valid data coming from each `workflow.flopack` file.
+
+3. These `details` fields in question are all optional. For example; if a flo doesn't have any tables, the `stashCount` should be completely removed, rather than be there with a zero value. Here is the shape of the details object then:
+
+```js
+{
+  ...,
+  "details": {
+    "flowCount": 2,
+    "helperFlowsCount": 1,
+    "mainFlowsCount": 1,
+    "flows": [
+      {
+        id: "id-1";
+        name: "flo-1";
+        type: "MAIN",
+        screenshotURL: "https://flo-1-screenshot-url.png"
+      },
+      {
+        id: "id-2";
+        name: "flo-2";
+        type: "HELPER",
+        screenshotURL: "https://flo-2-screenshot-url.png"
+      }
+    ]
+  },
+  ...
+}
+```
+
+Another example: if a flo doesn't have any flos, but only tables. Here is the shape of the details object then:
+
+```js
+{
+  ...,
+  "details": {
+    "stashCount": number > 0
+  },
+  ...
+}
+```
+
+**Reminder**: You don't have to calculate these fields or do any manual work. Just run the `details_modifier.js` script.
+
+---
 
 #### How to SKIP CI process
 
