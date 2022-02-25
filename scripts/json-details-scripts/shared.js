@@ -12,7 +12,7 @@ module.exports = {
           id: flo.id,
           name: flo.name,
           type: isHelperFlow ? "HELPER" : "MAIN",
-          screenshotURL: "https://via.placeholder.com/1000x500" // TODO: replace with the actual S3 URL
+          screenshotURL: "" // TODO: replace with the actual S3 URL
         });
         if (isHelperFlow) {
           details.helperFlowsCount ? details.helperFlowsCount++ : (details.helperFlowsCount = 1);
