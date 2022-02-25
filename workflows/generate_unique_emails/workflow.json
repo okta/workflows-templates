@@ -8,7 +8,7 @@
     "googledirectory"
   ],
   "details": {
-    "flows": [
+    "flos": [
       {
         "id": "e7e5a964-e7c4-4f9f-81b4-d5fdf618579c",
         "name": "Generate-ProxyAddress",

@@ -6,7 +6,7 @@
     "okta"
   ],
   "details": {
-    "flows": [
+    "flos": [
       {
         "id": "76097207-4944-47a6-9129-8e06e1b03a01",
         "name": "SUB - Remove User from Group",

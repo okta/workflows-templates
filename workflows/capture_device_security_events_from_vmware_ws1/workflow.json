@@ -6,7 +6,7 @@
     "okta"
   ],
   "details": {
-    "flows": [
+    "flos": [
       {
         "id": "e687bb19-dac8-47e7-a68f-8741446ad37c",
         "name": "Util.AuthenticateWebhook",

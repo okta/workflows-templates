@@ -8,7 +8,7 @@
     "gmail"
   ],
   "details": {
-    "flows": [
+    "flos": [
       {
         "id": "9723230b-7efe-40e2-ba74-fc9c62488a7a",
         "name": "Exported Notification Flow",

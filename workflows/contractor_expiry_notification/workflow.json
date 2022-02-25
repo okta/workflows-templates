@@ -7,7 +7,7 @@
     "office365mail"
   ],
   "details": {
-    "flows": [
+    "flos": [
       {
         "id": "7cbe87a9-b9cf-4867-87bb-99aefcfbfb75",
         "name": "1.2 - Process Contractor",
