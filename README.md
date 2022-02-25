@@ -51,7 +51,7 @@ Each workflow template has a `workflow.json` file that contains metadata about t
     "helperFlowsCount": number > 0,
     "mainFlowsCount": number > 0,
     "stashCount": number > 0,
-    "flows": [
+    "flos": [
       {
         id: string;
         name: string;
@@ -77,7 +77,7 @@ Each workflow template has a `workflow.json` file that contains metadata about t
     "flowCount": 2,
     "helperFlowsCount": 1,
     "mainFlowsCount": 1,
-    "flows": [
+    "flos": [
       {
         id: "id-1";
         name: "flo-1";
