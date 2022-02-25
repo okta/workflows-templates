@@ -1,25 +1,45 @@
 {
-    "name": "automate_account_creation_from_jira",
-    "title": "Automate Account Creation from JIRA",
-    "description": " Onboarding new employees is a complex process that requires inputs from several internal teams and integration across different tools for approval and account creation. In addition, certain businesses may require new employees to complete an orientation or pass a certification before activating a user account.  This complexity adds overhead for IT Admins - keeping track of approvals and then activating each user account on a specific date. How can this process get automated, reduce human error and enhance security posture? This template provides an example for automating account creation and activation in Okta triggered by approved service requests in JIRA.",
-    "connectors": [
-        "okta",
-        "jira2"
+  "name": "automate_account_creation_from_jira",
+  "title": "Automate Account Creation from JIRA",
+  "description": " Onboarding new employees is a complex process that requires inputs from several internal teams and integration across different tools for approval and account creation. In addition, certain businesses may require new employees to complete an orientation or pass a certification before activating a user account.  This complexity adds overhead for IT Admins - keeping track of approvals and then activating each user account on a specific date. How can this process get automated, reduce human error and enhance security posture? This template provides an example for automating account creation and activation in Okta triggered by approved service requests in JIRA.",
+  "connectors": [
+    "okta",
+    "jira2"
+  ],
+  "details": {
+    "flows": [
+      {
+        "id": "32857370-d609-404f-bfce-49ec98b67dc1",
+        "name": "Create and activate new employee accounts",
+        "type": "HELPER",
+        "screenshotURL": ""
+      },
+      {
+        "id": "b9c26b78-5a4d-4faf-926c-dae48586e8b8",
+        "name": "Find employees starting now",
+        "type": "MAIN",
+        "screenshotURL": ""
+      },
+      {
+        "id": "0e7b0b96-c404-4aee-8eaa-33fcab0d9812",
+        "name": "Store new employees from Jira",
+        "type": "MAIN",
+        "screenshotURL": ""
+      }
     ],
-    "details": {
-        "stashCount": 1,
-        "flowCount": 3,
-        "mainFlowsCount": 2,
-        "helperFlowsCount": 1
+    "flowCount": 3,
+    "helperFlowsCount": 1,
+    "mainFlowsCount": 2,
+    "stashCount": 1
+  },
+  "links": [
+    {
+      "destination": "https://github.com/okta/workflows-templates/blob/master/workflows/automate_account_creation_from_jira/readme.md",
+      "title": "Setup Documentation"
     },
-    "links": [
-        {
-            "destination": "https://github.com/okta/workflows-templates/blob/master/workflows/automate_account_creation_from_jira/readme.md",
-            "title": "Setup Documentation"
-        },
-        {
-            "title": "Video Walk-through",
-            "destination": "https://www.youtube.com/watch?v=yqBiQkS5Nk8"
-        }
-    ]
+    {
+      "title": "Video Walk-through",
+      "destination": "https://www.youtube.com/watch?v=yqBiQkS5Nk8"
+    }
+  ]
 }

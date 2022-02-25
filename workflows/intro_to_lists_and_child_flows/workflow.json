@@ -7,10 +7,35 @@
     "slack"
   ],
   "details": {
+    "flows": [
+      {
+        "id": "e64e15b8-23d8-4826-bd7b-4d3ae3cb3d1c",
+        "name": "[Child -1] IterateList",
+        "type": "HELPER",
+        "screenshotURL": ""
+      },
+      {
+        "id": "5e56e56e-9544-46cb-a03f-b953777673b7",
+        "name": "[Child -2] ReduceList",
+        "type": "HELPER",
+        "screenshotURL": ""
+      },
+      {
+        "id": "4bf1c9fd-e2fd-439a-adb7-cb339730b9e6",
+        "name": "[Slack] Send Slack Message",
+        "type": "HELPER",
+        "screenshotURL": ""
+      },
+      {
+        "id": "b448e789-445d-4ace-8854-300bcc7f3b13",
+        "name": "[Parent] List example ",
+        "type": "MAIN",
+        "screenshotURL": ""
+      }
+    ],
     "flowCount": 4,
     "helperFlowsCount": 3,
-    "mainFlowsCount": 1,
-    "tags": ["introductory"]
+    "mainFlowsCount": 1
   },
   "links": [
     {

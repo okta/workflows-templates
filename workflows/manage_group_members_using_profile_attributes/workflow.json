@@ -6,10 +6,35 @@
     "okta"
   ],
   "details": {
+    "flows": [
+      {
+        "id": "96679abd-caf0-4629-8135-516e9bb1706a",
+        "name": "[s1.1.1] CreateListGroupsBasedOnUserAttribute",
+        "type": "HELPER",
+        "screenshotURL": ""
+      },
+      {
+        "id": "39c5a02a-994f-4c3e-970e-edbd3092a566",
+        "name": "[1.1] CreateGroupList",
+        "type": "HELPER",
+        "screenshotURL": ""
+      },
+      {
+        "id": "e69f3560-8086-4228-b7e2-dbfacec54273",
+        "name": "[1.2] Group Addition or Removal",
+        "type": "HELPER",
+        "screenshotURL": ""
+      },
+      {
+        "id": "5b97b8f4-c548-4646-8fd2-713578ab36e3",
+        "name": "[1.0] Fix Groups",
+        "type": "HELPER",
+        "screenshotURL": ""
+      }
+    ],
     "flowCount": 4,
     "helperFlowsCount": 4,
-    "stashCount": 1,
-    "tags": ["most-popular"]
+    "stashCount": 1
   },
   "links": [
     {

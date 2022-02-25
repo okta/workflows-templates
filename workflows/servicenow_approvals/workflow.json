@@ -7,6 +7,20 @@
     "okta"
   ],
   "details": {
+    "flows": [
+      {
+        "id": "80080293-4acf-43e2-ae1b-719387d17382",
+        "name": "Trigger ServiceNow Approval",
+        "type": "MAIN",
+        "screenshotURL": ""
+      },
+      {
+        "id": "ba13b082-94bb-41ee-8a60-9c99c171ab75",
+        "name": "Process Resolution",
+        "type": "MAIN",
+        "screenshotURL": ""
+      }
+    ],
     "flowCount": 2,
     "mainFlowsCount": 2,
     "stashCount": 1

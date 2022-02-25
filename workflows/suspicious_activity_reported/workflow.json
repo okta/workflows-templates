@@ -7,6 +7,14 @@
     "slack"
   ],
   "details": {
+    "flows": [
+      {
+        "id": "ffb3d1a8-801a-40eb-a086-51b263e401b1",
+        "name": "Suspicious Activity Reported",
+        "type": "MAIN",
+        "screenshotURL": ""
+      }
+    ],
     "flowCount": 1,
     "mainFlowsCount": 1,
     "stashCount": 1
