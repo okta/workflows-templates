@@ -7,11 +7,48 @@
     "googledrive"
   ],
   "details": {
+    "flows": [
+      {
+        "id": "9d915df2-9c1a-4d34-afd2-f0c7a501a6af",
+        "name": "[Child] Clear User Attribute table",
+        "type": "HELPER",
+        "screenshotURL": ""
+      },
+      {
+        "id": "fd430663-95b1-4a17-8f24-36a54eb18ea6",
+        "name": "[Child] Write User Attributes to Table",
+        "type": "HELPER",
+        "screenshotURL": ""
+      },
+      {
+        "id": "1268d332-2e5f-4809-8670-b073c939bce9",
+        "name": "Upload daily report",
+        "type": "MAIN",
+        "screenshotURL": ""
+      },
+      {
+        "id": "630014e8-c434-46c9-97b2-b44634c69bc4",
+        "name": "Okta User Created",
+        "type": "MAIN",
+        "screenshotURL": ""
+      },
+      {
+        "id": "7ac53a5a-8347-4f7d-8cff-43c17c7dded2",
+        "name": "Okta User Deactivated",
+        "type": "MAIN",
+        "screenshotURL": ""
+      },
+      {
+        "id": "5af1ba96-5524-4ce1-b964-340e0f0c5bf6",
+        "name": "Okta User Profile Updated",
+        "type": "MAIN",
+        "screenshotURL": ""
+      }
+    ],
     "flowCount": 6,
     "helperFlowsCount": 2,
     "mainFlowsCount": 4,
-    "stashCount": 1,
-    "tags": ["most-popular"]
+    "stashCount": 1
   },
   "links": [
     {

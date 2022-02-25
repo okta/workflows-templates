@@ -6,6 +6,20 @@
     "okta"
   ],
   "details": {
+    "flows": [
+      {
+        "id": "e687bb19-dac8-47e7-a68f-8741446ad37c",
+        "name": "Util.AuthenticateWebhook",
+        "type": "HELPER",
+        "screenshotURL": ""
+      },
+      {
+        "id": "c4d800a7-30fc-4132-bb35-463cf0d4fb98",
+        "name": "WorkspaceOne.SecurityEvent",
+        "type": "MAIN",
+        "screenshotURL": ""
+      }
+    ],
     "flowCount": 2,
     "helperFlowsCount": 1,
     "mainFlowsCount": 1,

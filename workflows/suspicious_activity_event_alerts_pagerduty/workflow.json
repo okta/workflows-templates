@@ -7,6 +7,14 @@
     "pagerduty"
   ],
   "details": {
+    "flows": [
+      {
+        "id": "6049d6c5-cb1c-43c2-aa4d-d1c965721470",
+        "name": "Create Suspicious Activity Incident in PagerDuty",
+        "type": "MAIN",
+        "screenshotURL": ""
+      }
+    ],
     "flowCount": 1,
     "mainFlowsCount": 1,
     "stashCount": 1
