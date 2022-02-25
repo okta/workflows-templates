@@ -7,7 +7,7 @@
     "slack"
   ],
   "details": {
-    "flows": [
+    "flos": [
       {
         "id": "e64e15b8-23d8-4826-bd7b-4d3ae3cb3d1c",
         "name": "[Child -1] IterateList",

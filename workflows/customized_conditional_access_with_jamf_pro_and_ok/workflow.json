@@ -7,7 +7,7 @@
     "okta"
   ],
   "details": {
-    "flows": [
+    "flos": [
       {
         "id": "e6ac5417-3301-4373-9a13-db9d5c2fb2a4",
         "name": "Update Okta User Compliancy",

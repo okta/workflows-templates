@@ -7,7 +7,7 @@
     "jira2"
   ],
   "details": {
-    "flows": [
+    "flos": [
       {
         "id": "32857370-d609-404f-bfce-49ec98b67dc1",
         "name": "Create and activate new employee accounts",

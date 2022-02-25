@@ -7,7 +7,7 @@
     "slack"
   ],
   "details": {
-    "flows": [
+    "flos": [
       {
         "id": "ffb3d1a8-801a-40eb-a086-51b263e401b1",
         "name": "Suspicious Activity Reported",

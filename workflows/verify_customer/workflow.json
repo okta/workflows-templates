@@ -6,7 +6,7 @@
     "okta"
   ],
   "details": {
-    "flows": [
+    "flos": [
       {
         "id": "20999fa6-2307-46d8-b564-a8dd9af12d7e",
         "name": "Issue an Email Factor Challenge",

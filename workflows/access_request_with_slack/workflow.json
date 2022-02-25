@@ -6,7 +6,7 @@
     "okta"
   ],
   "details": {
-    "flows": [
+    "flos": [
       {
         "id": "f249f284-cf79-4ab7-bc4d-54251166c8b2",
         "name": "Request.Apps.02.03. SlackBot.Approved.Beneficiary.Message",

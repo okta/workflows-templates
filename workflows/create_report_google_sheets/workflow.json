@@ -8,7 +8,7 @@
     "gmail"
   ],
   "details": {
-    "flows": [
+    "flos": [
       {
         "id": "ff931207-5bcb-4993-87a9-0458b02700ee",
         "name": "Suspended Users Google Sheets Report",

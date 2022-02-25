@@ -1,0 +1,15 @@
+{
+  "name": "workflows-templates",
+  "version": "1.0.0",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/okta/workflows-templates.git"
+  },
+  "devDependencies": {
+    "@types/jest": "^27.4.1",
+    "jest": "^27.5.1"
+  }
+}
