@@ -7,7 +7,7 @@
     "gmail"
   ],
   "details": {
-    "flows": [
+    "flos": [
       {
         "id": "eb15fbe3-6124-4c2e-8667-d7eae921b4c8",
         "name": "Pre-enroll MFA",

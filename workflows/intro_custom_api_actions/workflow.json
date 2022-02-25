@@ -6,7 +6,7 @@
     "okta"
   ],
   "details": {
-    "flows": [
+    "flos": [
       {
         "id": "ae316cfb-2b17-471e-aabb-c50c56931888",
         "name": "Add user to admin role",

@@ -6,7 +6,7 @@
     "okta"
   ],
   "details": {
-    "flows": [
+    "flos": [
       {
         "id": "73c2c73c-a1d2-4f0c-9092-ef1d64a3718f",
         "name": "[Parent] Create Bookmark App  ",

@@ -6,7 +6,7 @@
     "okta"
   ],
   "details": {
-    "flows": [
+    "flos": [
       {
         "id": "b92b94d3-6584-495c-9011-6c7584df2675",
         "name": "01. Get.Agreement.Information",

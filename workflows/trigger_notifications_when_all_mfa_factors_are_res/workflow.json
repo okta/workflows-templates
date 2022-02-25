@@ -7,7 +7,7 @@
     "slack"
   ],
   "details": {
-    "flows": [
+    "flos": [
       {
         "id": "d1d27864-8548-4027-af89-e4d2f8141824",
         "name": "All MFA Factors reset",

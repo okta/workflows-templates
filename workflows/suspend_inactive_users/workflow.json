@@ -6,7 +6,7 @@
     "okta"
   ],
   "details": {
-    "flows": [
+    "flos": [
       {
         "id": "f2869678-d1cd-4d93-a2a6-351873e7acff",
         "name": "Inactivity-based Suspension - Child Flow ",

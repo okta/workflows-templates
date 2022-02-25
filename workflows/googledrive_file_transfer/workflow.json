@@ -6,7 +6,7 @@
     "googledrive"
   ],
   "details": {
-    "flows": [
+    "flos": [
       {
         "id": "68bff1b7-2265-47ca-9367-feb51f47cfdf",
         "name": "[1.1] Read Specific Transfer Status",

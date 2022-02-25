@@ -7,7 +7,7 @@
     "awssso"
   ],
   "details": {
-    "flows": [
+    "flos": [
       {
         "id": "e87f6430-992f-4404-ba1e-b951ab2f32de",
         "name": "AWS Add Entitlements Child Flow",

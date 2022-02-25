@@ -8,7 +8,7 @@
     "gmail"
   ],
   "details": {
-    "flows": [
+    "flos": [
       {
         "id": "21b48986-280b-409a-b57b-185caaa822a3",
         "name": "[Child] Add License Row to Table",

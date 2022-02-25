@@ -7,7 +7,7 @@
     "shopify"
   ],
   "details": {
-    "flows": [
+    "flos": [
       {
         "id": "2566da78-3a1c-4604-ad7e-27ee786677c6",
         "name": "2.2 Update customer address in Shopify",
