@@ -8,6 +8,26 @@
     "office365mail"
   ],
   "details": {
+    "flows": [
+      {
+        "id": "240c0ce6-6119-42c4-b29a-80aa95b389e0",
+        "name": "[UTIL] Send Manager Email Message",
+        "type": "HELPER",
+        "screenshotURL": ""
+      },
+      {
+        "id": "ab7e6076-ea6c-4a1e-8928-97dfdde0a40c",
+        "name": "Okta Box User - Provision Flow",
+        "type": "MAIN",
+        "screenshotURL": ""
+      },
+      {
+        "id": "87d6b6f0-8f95-490f-b4e7-42915243062d",
+        "name": "Okta Box User - Deprovision Flow",
+        "type": "MAIN",
+        "screenshotURL": ""
+      }
+    ],
     "flowCount": 3,
     "helperFlowsCount": 1,
     "mainFlowsCount": 2

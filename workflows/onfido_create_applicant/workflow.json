@@ -6,6 +6,14 @@
     "okta"
   ],
   "details": {
+    "flows": [
+      {
+        "id": "a0b59714-e3e5-46e6-bd62-d7ce3c178163",
+        "name": "[Onfido] UserEvent_Create Applicant",
+        "type": "MAIN",
+        "screenshotURL": ""
+      }
+    ],
     "flowCount": 1,
     "mainFlowsCount": 1
   },

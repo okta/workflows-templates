@@ -6,6 +6,44 @@
     "okta"
   ],
   "details": {
+    "flows": [
+      {
+        "id": "ac4155fd-99da-4022-a8f6-714001fc7f76",
+        "name": "[child]Update User Via API",
+        "type": "HELPER",
+        "screenshotURL": ""
+      },
+      {
+        "id": "08531126-2a8c-427e-bcfc-87b7e5677e24",
+        "name": "[child]Create User Via API",
+        "type": "HELPER",
+        "screenshotURL": ""
+      },
+      {
+        "id": "b9429dae-aca6-4682-86fd-d8a5ea020c0f",
+        "name": "[child]Delete User Via API",
+        "type": "HELPER",
+        "screenshotURL": ""
+      },
+      {
+        "id": "1280ba39-a03d-49e5-b340-a6c87782c91a",
+        "name": "Event Update User of Group",
+        "type": "MAIN",
+        "screenshotURL": ""
+      },
+      {
+        "id": "2e37046f-42c2-46fc-a053-db48a39b9f73",
+        "name": "Event Add user to Group",
+        "type": "MAIN",
+        "screenshotURL": ""
+      },
+      {
+        "id": "1bb69bca-74c3-4190-ad95-e870cd2a1022",
+        "name": "Event Remove user From Group",
+        "type": "MAIN",
+        "screenshotURL": ""
+      }
+    ],
     "flowCount": 6,
     "helperFlowsCount": 3,
     "mainFlowsCount": 3

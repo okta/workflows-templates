@@ -7,6 +7,38 @@
     "shopify"
   ],
   "details": {
+    "flows": [
+      {
+        "id": "2566da78-3a1c-4604-ad7e-27ee786677c6",
+        "name": "2.2 Update customer address in Shopify",
+        "type": "HELPER",
+        "screenshotURL": ""
+      },
+      {
+        "id": "aa6c955e-2410-4684-ada8-50f428d907f8",
+        "name": "2.1 Update customer profile in Shopify",
+        "type": "HELPER",
+        "screenshotURL": ""
+      },
+      {
+        "id": "0597ae3e-fb40-4172-9791-b3636ed942c8",
+        "name": "2. Update customer in Shopify",
+        "type": "MAIN",
+        "screenshotURL": ""
+      },
+      {
+        "id": "606d7dd0-55c5-457d-b452-6e8eb359fb6c",
+        "name": "3. Delete customer in Shopify",
+        "type": "MAIN",
+        "screenshotURL": ""
+      },
+      {
+        "id": "8ab8c344-82b4-4bc8-8b47-0946575e06ed",
+        "name": "1. Create customer in Shopify",
+        "type": "MAIN",
+        "screenshotURL": ""
+      }
+    ],
     "flowCount": 5,
     "helperFlowsCount": 2,
     "mainFlowsCount": 3,

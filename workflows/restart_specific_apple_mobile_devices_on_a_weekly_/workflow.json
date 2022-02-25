@@ -1,20 +1,33 @@
 {
-    "name": "restart_specific_apple_mobile_devices_on_a_weekly_",
-    "title": "Restart specific Apple mobile devices on a weekly basis",
-    "description": "Apple Mobile Devices such as iPads can be used as shared devices in several occasions such as meeting room control panels, customer facing demo screens, cash machines, etc. Those iPads need to restart from time to time to install pending updates and Jamf Pro doesn't offer a native way to schedule such actions over time. ",
-    "connectors": [
-        "jamfproclassicapi_3d816a0a0b7a410fa88c3de81a4aeccb"
+  "name": "restart_specific_apple_mobile_devices_on_a_weekly_",
+  "title": "Restart specific Apple mobile devices on a weekly basis",
+  "description": "Apple Mobile Devices such as iPads can be used as shared devices in several occasions such as meeting room control panels, customer facing demo screens, cash machines, etc. Those iPads need to restart from time to time to install pending updates and Jamf Pro doesn't offer a native way to schedule such actions over time. ",
+  "connectors": [
+    "jamfproclassicapi_3d816a0a0b7a410fa88c3de81a4aeccb"
+  ],
+  "details": {
+    "flows": [
+      {
+        "id": "8cb81cfa-70c4-4e99-a8a7-d37965527245",
+        "name": "Restart Mobile Device",
+        "type": "HELPER",
+        "screenshotURL": ""
+      },
+      {
+        "id": "9c8a1a02-931e-43cf-90bb-63ea24e2a021",
+        "name": "Restart Mobile Devices Weekly",
+        "type": "MAIN",
+        "screenshotURL": ""
+      }
     ],
-    "details": {
-        "stashCount": 0,
-        "flowCount": 2,
-        "mainFlowsCount": 1,
-        "helperFlowsCount": 1
-    },
-    "links": [
-        {
-            "destination": "https://github.com/okta/workflows-templates/blob/master/workflows/restart_specific_apple_mobile_devices_on_a_weekly_/readme.md",
-            "title": "Setup Documentation"
-        }
-    ]
+    "flowCount": 2,
+    "helperFlowsCount": 1,
+    "mainFlowsCount": 1
+  },
+  "links": [
+    {
+      "destination": "https://github.com/okta/workflows-templates/blob/master/workflows/restart_specific_apple_mobile_devices_on_a_weekly_/readme.md",
+      "title": "Setup Documentation"
+    }
+  ]
 }

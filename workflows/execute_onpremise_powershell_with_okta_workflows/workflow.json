@@ -4,6 +4,38 @@
   "description": "Microsoft PowerShell is used for many different use cases, from system management, networking, Windows, and identity. With regards to Identity Management, PowerShell is commonly used as part of the joiner, mover, and leaver processes to manage Microsoft Technologies, and for a small subset of use cases, it performs on-premises operations such as creating an Exchange mailbox.",
   "connectors": [],
   "details": {
+    "flows": [
+      {
+        "id": "0e88f804-8a20-43fe-99f3-df0b821b5288",
+        "name": "CleanUp.02.Delete.Row",
+        "type": "HELPER",
+        "screenshotURL": ""
+      },
+      {
+        "id": "2ad525d3-b7a5-4d57-8432-0638867493f0",
+        "name": "[1.1] Get Azure Automation Job Status",
+        "type": "HELPER",
+        "screenshotURL": ""
+      },
+      {
+        "id": "6c0a871f-fc5e-4cd9-adc5-402385029f6c",
+        "name": "SetLogonHours",
+        "type": "HELPER",
+        "screenshotURL": ""
+      },
+      {
+        "id": "29243188-2464-4708-a8db-9f3626283657",
+        "name": "CleanUp.01.Search.Table.Entries",
+        "type": "MAIN",
+        "screenshotURL": ""
+      },
+      {
+        "id": "5dd9ce72-b5c1-460b-ab68-29b6efb42a06",
+        "name": "[1.0] Review Azure Automation Jobs",
+        "type": "MAIN",
+        "screenshotURL": ""
+      }
+    ],
     "flowCount": 5,
     "helperFlowsCount": 3,
     "mainFlowsCount": 2,

@@ -7,10 +7,23 @@
     "googlesheets"
   ],
   "details": {
+    "flows": [
+      {
+        "id": "c245f9f0-be37-4f98-b0fd-3f229390f63e",
+        "name": "Import Users - Child Flow",
+        "type": "HELPER",
+        "screenshotURL": ""
+      },
+      {
+        "id": "78aff6f5-9991-4728-b189-e6883ffab2ef",
+        "name": "Import Users - Parent Flow",
+        "type": "MAIN",
+        "screenshotURL": ""
+      }
+    ],
     "flowCount": 2,
     "helperFlowsCount": 1,
-    "mainFlowsCount": 1,
-    "tags": ["most-popular"]
+    "mainFlowsCount": 1
   },
   "links": [
     {
