@@ -8,6 +8,14 @@
     "gmail"
   ],
   "details": {
+    "flows": [
+      {
+        "id": "ff931207-5bcb-4993-87a9-0458b02700ee",
+        "name": "Suspended Users Google Sheets Report",
+        "type": "MAIN",
+        "screenshotURL": ""
+      }
+    ],
     "flowCount": 1,
     "mainFlowsCount": 1,
     "stashCount": 1

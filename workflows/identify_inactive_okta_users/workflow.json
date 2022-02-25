@@ -6,11 +6,24 @@
     "okta"
   ],
   "details": {
+    "flows": [
+      {
+        "id": "cfa530e8-e79a-408f-a811-66512fc3a09b",
+        "name": "Check Last Login date and add to table",
+        "type": "HELPER",
+        "screenshotURL": ""
+      },
+      {
+        "id": "4485ed57-87a6-4f79-8f26-74e7a577de94",
+        "name": "[scheduled] identify inactive Okta users",
+        "type": "MAIN",
+        "screenshotURL": ""
+      }
+    ],
     "flowCount": 2,
     "helperFlowsCount": 1,
     "mainFlowsCount": 1,
-    "stashCount": 1,
-    "tags": ["introductory", "most-popular"]
+    "stashCount": 1
   },
   "links": [
     {
