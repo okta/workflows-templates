@@ -1,10 +1,10 @@
-## Overview
+# Overview
 
 Welcome to Templates for Workflows!
 
 Templates are pre-built collections of automated business processes that can be imported in Okta Workflows. New workflow templates submitted to this repo can be published to the Okta Workflows console.
 
-## Getting Started
+# Getting Started
 
 Designing a template is a straightfoward process that begins in the Okta Workflows console, where you design the intended business process. This can be distributed across one or more workflows and tables but *all* related workflows and tables should be kept in the same folder.
 
@@ -12,7 +12,7 @@ Once the collections of workflows and/or tables are complete, you can export the
 
 This will download a _flopack_ file to your local filesystem and it is this file that serves as the basis for the Workflows template.
 
-## Submitting a Workflows Template
+# Submitting a Workflows Template
 
 Each template submission will have three files:
 * the template (`.flopack` file) itself
@@ -27,13 +27,25 @@ workflows-templates/workflows/
     workflow.flopack
     readme.md
 ```
-You can find an example of the structure [here](https://github.com/okta/workflows-templates/tree/master/workflows/suspend_inactive_users). 
+You can find an example of the structure [here](https://github.com/okta/workflows-templates/tree/master/workflows/suspend_inactive_users).
 
-### Step 1: Rename the flopack
+The following guidelines must be followed when creating the template files and enclosing folder:
+
+* Folder name needs to be lower case and separated with underscore (regex: `^[a-z0-9_]{2,50}$` e.g `create_report_google_sheets`).
+* Each published file (mentioned below) in the folder also needs to be in lower case.
+  * `readme.md`
+  * `workflow.flopack`
+  * `workflow.json`
+* Files such as `workflow.flopack` and `workflow.json` need to have valid JSON structure.
+* The `name` value in the `workflow.json` file has a limit of 50 characters and **must** exactly match the name of the enclosing folder.
+* The connector names in the `workflow.json` file must only contain valid connector names referenced in the `connectors.json` file.
+* Verify if video and documentation links in `workflow.json` file refers to same folder structure
+
+## Step 1: Rename the flopack file
 
 Locate the file that was created from the aforementioned Export process and rename it to `workflow.flopack`
 
-### Step 2: Create the metadata
+## Step 2: Create the metadata
 
 Create a new file named `workflow.json`. This file must contain the following fields:
 
@@ -43,26 +55,9 @@ Create a new file named `workflow.json`. This file must contain the following fi
 * `connectors [string[]]` - A comprehensive ist of all connectors used by this template. Connector names are the third-party applications that power the Workflows product. Connector names should be in all lower case. You can find a list of valid connector names [here](https://github.com/okta/workflows-templates/blob/master/connectors.json).  
 * `links [object[]]` - Links to documentation or videos for this template 
 
-### Step 3: Additional documentation
+### Metadata structure and validation rules
 
-Finally, create a `readme.md` file that has the setup documentation for your template. It should be written in markdown and follow the structure outlined [here](https://docs.google.com/document/d/1a1jQ9o2am9pBfx0LsexiQ0HW8qyOU7WFAEg1Eevjinc/edit).
-
-## Guidelines on file/folder structure
-
-* Folder name needs to be lower case and separated with underscore (regex: `^[a-z0-9_]{2,50}$` e.g `create_report_google_sheets`).
-* Each published file (mentioned below) in the folder also needs to be in lower case.
-  * `readme.md`
-  * `workflow.flopack`
-  * `workflow.json`
-* Files such as `workflow.flopack` and `workflow.json` need to have valid JSON structure.
-* Workflow name needs to have matching folder name.
-* Workflow name has a limit of 50 characters.
-* Workflow should have valid connector names which are referenced in `connectors.json` file
-* Verify if video and documentation links in `workflow.flopack` file refers to same folder structure
-
-## Metadata structure and validation rules
-
-Each Workflows template folder has a `workflow.json` file that contains metadata about the template. In addition to the fields detailed above, the file should also contain a `details` object that contains specific pre-defined elements with correct type for each element. There are validation rules that run on CI to make sure that the data in the `details` object correspond with what's inside the `workflow.flopack` file. Your pull request CI checks will fail if the validation rules are not met.
+In addition to the fields detailed above, the file should also contain a `details` object that contains specific pre-defined elements with correct type for each element. There are validation rules that run on CI to make sure that the data in the `details` object correspond with what's inside the `workflow.flopack` file. Your pull request CI checks will fail if the validation rules are not met.
 
 `workflow.json`'s `details` data structure:
 ```js
@@ -87,7 +82,7 @@ Each Workflows template folder has a `workflow.json` file that contains metadata
 }
 ```
 
-### Notes
+### Managing metadata fields
 
 Most fields in the `details` object **should not** be filled in manually as they must match exactly what is in the `workflow.flopack` file. 
 
@@ -146,13 +141,17 @@ Example: The shape a `details` object for a template with no flos and no tags
 
 **Reminder**: You don't have to calculate these fields or do any manual work. Just run the `details_modifier.js` script.
 
-## How to SKIP CI process
+## Step 3: Additional documentation
+
+Finally, create a `readme.md` file that has the setup documentation for your template. It should be written in markdown and follow the structure outlined [here](https://docs.google.com/document/d/1a1jQ9o2am9pBfx0LsexiQ0HW8qyOU7WFAEg1Eevjinc/edit).
+
+# How to SKIP CI process
 
 * Add [skip ci] or [ci skip] in commit message in case blocked by CI. Although, this is not recommended but if build is queued for longer time or need to merge template due to urgent fixes, it is probably OK to do so.
 * Change the last commit message with command `git commit --amend`. Add [skip ci] or [ci skip] to commit message
 * Push the remote branch with force `-f` option e.g `git push -f origin <branch-name>`
 
-## Test CI script on local setup
+# Test CI script on local setup
 
 Install dependencies (first time only)
 
