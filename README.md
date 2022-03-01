@@ -1,81 +1,169 @@
+# Overview
 
 Welcome to Templates for Workflows!
 
-Templates are pre-built automated business processes that can be imported in Okta Workflows. New workflow templates submitted to this repo can be published to the Okta Workflows console.
+Templates are pre-built collections of automated business processes that can be imported in Okta Workflows. New workflow templates submitted to this repo can be published to the Okta Workflows console.
 
-## Getting Started
+# Getting Started
 
-#### How to submit Workflows Template
+Designing a template is a straightfoward process that begins in the Okta Workflows console, where you design the intended business process. This can be distributed across one or more workflows and tables but *all* related workflows and tables should be kept in the same folder.
 
-*   Open Okta Workflows and design the intended business process. This can be distributed across one or more workflows and tables. Keep all related workflows and tables in the same folder. 
-*   Export the folder containing the business process by clicking the gear icon on the folder and selecting Export. 
-    *   Rename this file to workflow.flopack
-*   Next, we’re going to create the files necessary for submitting your template to this repository. Each template will have three files: the template, a readme, and a workflow.json file that stores some metadata. You can find an example of the structure [here](https://github.com/arvilnagpal-okta/suspend-inactive-users). 
-*   Create a workflow.json file with the following information. 
-    *   _name_ - The name of your template. Treat this as a unique identifier (eg suspend_inactive_users)
-    *   _title_ - The title of workflows template that will appear in the product. 
-    *   _description_ - template description
-    *   _connectors_ - list of connectors used by this template. Connector names are app names seen in workflows designer. Connector names should be in lower case. You can find a list of the connector names here. [insert link to readme doc]  
-    *   _links_ - Links to documentation or videos for this template 
-*   Finally, create a readme.md file that has the setup documentation for your template. It should be written in markdown and follow the structure outlined [here](https://docs.google.com/document/d/1a1jQ9o2am9pBfx0LsexiQ0HW8qyOU7WFAEg1Eevjinc/edit).    
-*   Use following directory structure to organize workflow.flopack, workflow.json and connector.json workflows/ &lt;my_shared_workflow>/ workflow.json workflow.flopack readme.md
-*   Create a new folder under the following directory. Place the three files (readme, workflow.json, and workflow.flopack) into this new folder. 
-    *   [https://github.com/okta/workflows-templates/workflows](https://github.com/okta/workflows-templates/tree/master/workflows)/[your new folder] 
+Once the collections of workflows and/or tables are complete, you can export the enclosing folder containing the business process by clicking the gear icon on the folder and selecting "Export".
 
-#### Guideline on file/folder structure before submitting Workflow Template
+This will download a _flopack_ file to your local filesystem and it is this file that serves as the basis for the Workflows template.
 
-*   Folder name needs to be lower case and separated with underscore (regex: ^[a-z0-9_]{2,50}$ e.g create_report_google_sheets).
-*   Each published file (mentioned below) in workflow folder needs to be in lower case.
-    *   readme.md
-    *   workflow.flopack
-    *   workflow.json
-*   Files such as workflow.flopack and workflow.json needs to have valid JSON structure.
-*   Workflow name needs to have matching folder name.
-*   Workflow name has a limit of 50 characters.
-*   Workflow should have valid connector names which are referenced in connectors.json file
-*   Verify if video and documentation links in workflow.flopack file refers to same folder structure
+# Submitting a Workflows Template
 
-#### `workflow.json` validation rules
-The `workflow.json` file contains metadata about the Workflow Template. This file contains a `details` object, and there are some validation rules that run on CI to make sure that the counts inside this `details` object corropond with what's inside the `workflow.flopack` file.
+Each template submission will have three files:
+* the template (`.flopack` file) itself
+* `readme.md` - contains usage instructions and details about the flows contained in the template
+* `workflow.json` - contains metadata about the template
 
-* if the flopack has flows -> `details.flowCount` field should exist
-* if the flopack has main flows -> `details.mainFlowsCount` should exist
-* if the flopack has helper flows -> `details.helperFlowsCount` should exist
-* if the flopack has tables -> `details.stashCount` should exist
-* `flowCount == mainFlowsCount + helperFlowsCount`
-
-Example:
+arranged in a directory structure shown below:
 ```
-workflow.json
+workflows-templates/workflows/
+  my_shared_workflow/
+    workflow.json
+    workflow.flopack
+    readme.md
+```
+You can find an example of the structure [here](https://github.com/okta/workflows-templates/tree/master/workflows/suspend_inactive_users).
+
+The following guidelines must be followed when creating the template files and enclosing folder:
+
+* Folder name needs to be lower case and separated with underscore (regex: `^[a-z0-9_]{2,50}$` e.g `create_report_google_sheets`).
+* Each published file (mentioned below) in the folder also needs to be in lower case.
+  * `readme.md`
+  * `workflow.flopack`
+  * `workflow.json`
+* Files such as `workflow.flopack` and `workflow.json` need to have valid JSON structure.
+* The `name` value in the `workflow.json` file has a limit of 50 characters and **must** exactly match the name of the enclosing folder.
+* The connector names in the `workflow.json` file must only contain valid connector names referenced in the `connectors.json` file.
+* Verify if video and documentation links in `workflow.json` file refers to same folder structure
+
+## Step 1: Rename the flopack file
+
+Locate the file that was created from the aforementioned Export process and rename it to `workflow.flopack`
+
+## Step 2: Create the metadata
+
+Create a new file named `workflow.json`. This file must contain the following fields:
+
+* `name [string]` - The name of your template. This should be a string that contains only lowercase letters and underscores (e.g.: `suspend_inactive_users`) and it *must be unique among the folders in this repository*
+* `title [string]` - The descriptive, human-friendly title of the template that will appear in the product
+* `description [string]` - More information describing what the template does and its potential uses
+* `connectors [string[]]` - A comprehensive ist of all connectors used by this template. Connector names are the third-party applications that power the Workflows product. Connector names should be in all lower case. You can find a list of valid connector names [here](https://github.com/okta/workflows-templates/blob/master/connectors.json).  
+* `links [object[]]` - Links to documentation or videos for this template 
+
+### Metadata structure and validation rules
+
+In addition to the fields detailed above, the file should also contain a `details` object that contains specific pre-defined elements with correct type for each element. There are validation rules that run on CI to make sure that the data in the `details` object correspond with what's inside the `workflow.flopack` file. Your pull request CI checks will fail if the validation rules are not met.
+
+`workflow.json`'s `details` data structure:
+```js
 {
   ...,
   "details": {
-    "flowCount": 14,
-    "helperFlowsCount": 13,
-    "mainFlowsCount": 1,
-    "stashCount": 2
+    "flowCount": number > 0,
+    "helperFlowsCount": number > 0,
+    "mainFlowsCount": number > 0,
+    "stashCount": number > 0,
+    "flos": [
+      {
+        id: string;
+        name: string;
+        type: "MAIN" | "HELPER",
+        screenshotURL: string
+      }
+    ]
+    "tags": string[],
   },
   ...
 }
 ```
 
-**You don't have to fill in these counts manually, there is another script at `./scripts/json-details-scripts/details_modifier.js` that you can run. It will go over ALL the `workflow.json` files and modify the `details` object to contain valid data.**
+### Managing metadata fields
 
-#### How to SKIP CI process
+Most fields in the `details` object **should not** be filled in manually as they must match exactly what is in the `workflow.flopack` file. 
 
-*   Add [skip ci] or [ci skip] in commit message in case blocked by CI. Although, this is not recommended but if build is queued for longer time or need to merge template due to urgent fixes, it is probably OK to do so.
+These fields include:
+  * `flowCount`
+  * `helperFlowsCount`
+  * `mainFlowsCount`
+  * `stashCount`
+  * `flos`
 
-*   Change the last commit message with command `git commit --amend`. Add [skip ci] or [ci skip] to commit message
+To generate this data, run the script at `./scripts/json-details-scripts/details_modifier.js`. It will iterate over **ALL** templates in the repository and modify the `details` object in each `workflow.json` file to match what is specified in the respecitve `workflow.flopack` file.
 
-*   Push the remote branch with force `-f` option e.g `git push -f origin <branch-name>`
+Each field in the `details` object is optional. If the template flopack doesn't contain flows or tables or isn't tagged, the corresponding field should be completely removed, rather be specified with a value of `0`.
 
-*   Test CI script on local setup
-    ### Install dependencies (one time only)
-    *   npm install ajv@7.0.3
-    *   npm install shelljs
+Example: The shape a `details` object for a template with no tables
+```js
+{
+  ...,
+  "details": {
+    "flowCount": 2,
+    "helperFlowsCount": 1,
+    "mainFlowsCount": 1,
+    "flos": [
+      {
+        id: "id-1";
+        name: "flo-1";
+        type: "MAIN",
+        screenshotURL: "https://flo-1-screenshot-url.png"
+      },
+      {
+        id: "id-2";
+        name: "flo-2";
+        type: "HELPER",
+        screenshotURL: "https://flo-2-screenshot-url.png"
+      }
+    ],
+    "tags": [
+      "introductory",
+      "popular"
+    ]
+  },
+  ...
+}
+```
 
-    ### Run below script from root of git repo to test remote branch. All files should have commit to diff with master
+Example: The shape a `details` object for a template with no flos and no tags
+```js
+{
+  ...,
+  "details": {
+    "stashCount": number > 0
+  },
+  ...
+}
+```
 
-    *   git checkout `remotebranch`
-    *   node scripts/schema_validate.js `remotebranch`
-    *   sh scripts/travis_release.sh `remotebranch`
+**Reminder**: You don't have to calculate these fields or do any manual work. Just run the `details_modifier.js` script.
+
+## Step 3: Additional documentation
+
+Finally, create a `readme.md` file that has the setup documentation for your template. It should be written in markdown and follow the structure outlined [here](https://docs.google.com/document/d/1a1jQ9o2am9pBfx0LsexiQ0HW8qyOU7WFAEg1Eevjinc/edit).
+
+# How to SKIP CI process
+
+* Add [skip ci] or [ci skip] in commit message in case blocked by CI. Although, this is not recommended but if build is queued for longer time or need to merge template due to urgent fixes, it is probably OK to do so.
+* Change the last commit message with command `git commit --amend`. Add [skip ci] or [ci skip] to commit message
+* Push the remote branch with force `-f` option e.g `git push -f origin <branch-name>`
+
+# Test CI script on local setup
+
+Install dependencies (first time only)
+
+```js
+npm install ajv@7.0.3
+npm install shelljs
+```
+
+and then run the following commands from root of git repo to test remote branch. All files should have commit to diff with master
+
+```
+git checkout <remote-branch-name>
+node scripts/schema_validate.js <remote-branch-name>
+sh scripts/travis_release.sh <remote-branch-name>
+```
