@@ -7,6 +7,32 @@
     "office365mail"
   ],
   "details": {
+    "flos": [
+      {
+        "id": "7cbe87a9-b9cf-4867-87bb-99aefcfbfb75",
+        "name": "1.2 - Process Contractor",
+        "type": "HELPER",
+        "screenshotURL": ""
+      },
+      {
+        "id": "00ebeccd-4412-4744-a8b7-b94ad272608e",
+        "name": "1.1 - Initialize",
+        "type": "HELPER",
+        "screenshotURL": ""
+      },
+      {
+        "id": "59626142-efc4-4156-a974-36d639771ce7",
+        "name": "1.3 - Send Notification Emails",
+        "type": "HELPER",
+        "screenshotURL": ""
+      },
+      {
+        "id": "a38b1617-f695-4cf6-b0bc-a0caadacc627",
+        "name": "1.0 - Contractor Expiry Notification",
+        "type": "MAIN",
+        "screenshotURL": ""
+      }
+    ],
     "flowCount": 4,
     "helperFlowsCount": 3,
     "mainFlowsCount": 1,

@@ -1,0 +1,40 @@
+{
+  "name": "lock_apple_devices_upon_user_offboarding_with_okta",
+  "title": "Lock Apple Devices upon user offboarding with Okta and Jamf Pro",
+  "description": "IT Administrators managing a remote workforce can face a real challenge when a user is offboarded while working from home and IT wants to make sure that all company related devices can no longer be accessed. This workflow offers an automated way to remotely lock all Apple Devices assigned to a given user in Jamf Pro when this user is deactivated in Okta. [^lockDevicesWhenUserIsDeactivated.folder] ",
+  "connectors": [
+    "jamfproclassicapi_3d816a0a0b7a410fa88c3de81a4aeccb",
+    "okta"
+  ],
+  "details": {
+    "flos": [
+      {
+        "id": "2133f03d-4a01-4cf7-a709-170be4f7044e",
+        "name": "Send Lock Command To Mobile Device",
+        "type": "HELPER",
+        "screenshotURL": ""
+      },
+      {
+        "id": "dd76d492-bd50-471f-ad50-5a7bf55cd4c7",
+        "name": "Send Lock Command To Computer",
+        "type": "HELPER",
+        "screenshotURL": ""
+      },
+      {
+        "id": "ffb6e260-7bd9-4c2d-ad83-b9d1454dca07",
+        "name": "Lock Devices When User Is Deactivated",
+        "type": "MAIN",
+        "screenshotURL": ""
+      }
+    ],
+    "flowCount": 3,
+    "helperFlowsCount": 2,
+    "mainFlowsCount": 1
+  },
+  "links": [
+    {
+      "destination": "https://github.com/okta/workflows-templates/blob/master/workflows/lock_apple_devices_upon_user_offboarding_with_okta/readme.md",
+      "title": "Setup Documentation"
+    }
+  ]
+}

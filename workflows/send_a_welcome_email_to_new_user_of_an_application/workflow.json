@@ -7,6 +7,14 @@
     "okta"
   ],
   "details": {
+    "flos": [
+      {
+        "id": "34ba610c-f66f-468d-867d-8391ccd389ff",
+        "name": "Send welcome email to Okta Workflow users",
+        "type": "MAIN",
+        "screenshotURL": ""
+      }
+    ],
     "flowCount": 1,
     "mainFlowsCount": 1
   },

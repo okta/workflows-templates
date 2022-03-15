@@ -1,0 +1,27 @@
+{
+  "name": "trigger_notifications_when_all_mfa_factors_are_res",
+  "title": "Trigger notifications when all MFA factors are reset",
+  "description": "Resetting all MFA factors could be triggered by a bad actor, human error or an IT administrator helping a customer. Timely notifications to enable internal teams to identify next steps is critical for improving security and reducing risk. This template demonstrates how internal teams can get automatically notified when all MFA factors for a user are reset.   ",
+  "connectors": [
+    "okta",
+    "slack"
+  ],
+  "details": {
+    "flos": [
+      {
+        "id": "d1d27864-8548-4027-af89-e4d2f8141824",
+        "name": "All MFA Factors reset",
+        "type": "MAIN",
+        "screenshotURL": ""
+      }
+    ],
+    "flowCount": 1,
+    "mainFlowsCount": 1
+  },
+  "links": [
+    {
+      "destination": "https://github.com/okta/workflows-templates/blob/master/workflows/trigger_notifications_when_all_mfa_factors_are_res/readme.md",
+      "title": "Setup Documentation"
+    }
+  ]
+}

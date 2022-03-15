@@ -7,6 +7,14 @@
     "office365mail"
   ],
   "details": {
+    "flos": [
+      {
+        "id": "ea86fa36-f764-4d25-9423-549bae004279",
+        "name": "Send Email Notifications with Office 365",
+        "type": "MAIN",
+        "screenshotURL": ""
+      }
+    ],
     "flowCount": 1,
     "mainFlowsCount": 1
   },

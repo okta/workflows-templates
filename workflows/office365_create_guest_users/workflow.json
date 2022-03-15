@@ -7,6 +7,14 @@
     "okta"
   ],
   "details": {
+    "flos": [
+      {
+        "id": "1c762583-7b12-4498-b55f-2ce31a944b63",
+        "name": "Create O365 Guest User",
+        "type": "MAIN",
+        "screenshotURL": ""
+      }
+    ],
     "flowCount": 1,
     "mainFlowsCount": 1
   },

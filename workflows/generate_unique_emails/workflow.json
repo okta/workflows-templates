@@ -8,6 +8,62 @@
     "googledirectory"
   ],
   "details": {
+    "flos": [
+      {
+        "id": "e7e5a964-e7c4-4f9f-81b4-d5fdf618579c",
+        "name": "Generate-ProxyAddress",
+        "type": "HELPER",
+        "screenshotURL": ""
+      },
+      {
+        "id": "55429600-4807-4286-9b4a-8ca72f551b15",
+        "name": "EmailDomainmatch",
+        "type": "HELPER",
+        "screenshotURL": ""
+      },
+      {
+        "id": "6755c858-cac9-4df4-b177-f8ddf55dc611",
+        "name": "003-CSUB-emailDeDuplication-V2",
+        "type": "HELPER",
+        "screenshotURL": ""
+      },
+      {
+        "id": "c09215b0-3aaa-48f9-bad0-e1f8dac9c310",
+        "name": "004-CSUB-filterCompareLength-V2",
+        "type": "HELPER",
+        "screenshotURL": ""
+      },
+      {
+        "id": "f2c34fd5-3b5a-46f2-b288-b2ab9b4a1a74",
+        "name": "022-SUB-getEmailPrefix-V1 ",
+        "type": "HELPER",
+        "screenshotURL": ""
+      },
+      {
+        "id": "e3bd1c90-267d-4f19-bbd5-18a0bc667c48",
+        "name": "Okta-New-Email-Generation",
+        "type": "MAIN",
+        "screenshotURL": ""
+      },
+      {
+        "id": "f86976db-68d1-4622-a2aa-7da51a689724",
+        "name": "O365-Email-Generation",
+        "type": "MAIN",
+        "screenshotURL": ""
+      },
+      {
+        "id": "c900ce0a-ff08-4fbc-9c6f-c40918f7c4a6",
+        "name": "Google-Email-Generation",
+        "type": "MAIN",
+        "screenshotURL": ""
+      },
+      {
+        "id": "f94b1e29-5bd7-4b51-8804-0ed3348b525b",
+        "name": "MultiDomain-Email-Generation",
+        "type": "MAIN",
+        "screenshotURL": ""
+      }
+    ],
     "flowCount": 9,
     "helperFlowsCount": 5,
     "mainFlowsCount": 4,

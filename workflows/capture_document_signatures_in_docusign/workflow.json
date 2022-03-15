@@ -6,6 +6,20 @@
     "okta"
   ],
   "details": {
+    "flos": [
+      {
+        "id": "0d39bee9-d475-4034-ab04-95d1efa0332f",
+        "name": "Util.AuthenticateWebhook",
+        "type": "HELPER",
+        "screenshotURL": ""
+      },
+      {
+        "id": "0d9904bc-cb7e-47f2-a889-3e70a5cb5f08",
+        "name": "Docusign.ContractSignedWebhook",
+        "type": "MAIN",
+        "screenshotURL": ""
+      }
+    ],
     "flowCount": 2,
     "helperFlowsCount": 1,
     "mainFlowsCount": 1,

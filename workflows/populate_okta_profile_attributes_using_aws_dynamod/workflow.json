@@ -1,0 +1,49 @@
+{
+  "name": "populate_okta_profile_attributes_using_aws_dynamod",
+  "title": "Populate Okta profile attributes using AWS DynamoDB and Lambda",
+  "description": "This workflow demonstrates how a user's profile can be enriched with associated values that have been retrieved from an external table. In this instance, we will be using a simple Amazon Web Service (AWS) DynamoDB table and the retrieval of data will be facilitated by an AWS Lambda function. This workflow utilizes the AWS Lambda Connector to call the respective Lambda function. This use case is based on a user entered Zip Code which will be used to retrieve associated values like City, State and TimeZone",
+  "connectors": [
+    "awslambda",
+    "okta"
+  ],
+  "details": {
+    "flos": [
+      {
+        "id": "e65b1713-821b-4a98-963c-f63330246b9e",
+        "name": "1.1 - Create Zip Table Record",
+        "type": "HELPER",
+        "screenshotURL": ""
+      },
+      {
+        "id": "9909e85e-8aea-4112-87df-b561950b0fc2",
+        "name": "2.0 - Update User Profile",
+        "type": "MAIN",
+        "screenshotURL": ""
+      },
+      {
+        "id": "6f1a9020-d2b7-45ff-bd70-dcaa3a404ff9",
+        "name": "1.0 - Load Zip Table",
+        "type": "HELPER",
+        "screenshotURL": ""
+      }
+    ],
+    "flowCount": 3,
+    "helperFlowsCount": 2,
+    "mainFlowsCount": 1,
+    "stashCount": 1
+  },
+  "links": [
+    {
+      "destination": "https://github.com/okta/workflows-templates/blob/master/workflows/populate_okta_profile_attributes_using_aws_dynamod/readme.md",
+      "title": "Setup Documentation"
+    },
+    {
+      "destination": "https://github.com/okta/workflows-templates/blob/master/workflows/populate_okta_profile_attributes_using_aws_dynamod/csv_data.csv",
+      "title": "Sample Data"
+    },
+    {
+      "destination": "https://youtu.be/1ASCUIy-BIY",
+      "title": "Video Walkthrough"
+    }
+  ]
+}

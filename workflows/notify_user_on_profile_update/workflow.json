@@ -7,6 +7,14 @@
     "slack"
   ],
   "details": {
+    "flos": [
+      {
+        "id": "6d50058d-2213-49c6-b2c8-394b7870eebe",
+        "name": "Send notification to user when profile is updated",
+        "type": "MAIN",
+        "screenshotURL": ""
+      }
+    ],
     "flowCount": 1,
     "mainFlowsCount": 1
   },

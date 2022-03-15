@@ -6,6 +6,92 @@
     "okta"
   ],
   "details": {
+    "flos": [
+      {
+        "id": "f249f284-cf79-4ab7-bc4d-54251166c8b2",
+        "name": "Request.Apps.02.03. SlackBot.Approved.Beneficiary.Message",
+        "type": "HELPER",
+        "screenshotURL": ""
+      },
+      {
+        "id": "df3d26b7-4eb0-4c7a-93d6-a7e1f9172ac6",
+        "name": "Util.99.01. SlackBot.GetApprovalJWT",
+        "type": "HELPER",
+        "screenshotURL": ""
+      },
+      {
+        "id": "d4d0bc49-f8ef-4dfe-8d7d-e693278c2ef4",
+        "name": "Request.Apps.02.01. SlackBot.SubmitRequestToManager",
+        "type": "HELPER",
+        "screenshotURL": ""
+      },
+      {
+        "id": "86bf074d-3889-4215-bdc1-08d5d676ac04",
+        "name": "Util.99.03. SlackBot.Request.FormatBodyForVerification",
+        "type": "HELPER",
+        "screenshotURL": ""
+      },
+      {
+        "id": "7300b2f7-3760-4115-965b-eb9a4fec6efa",
+        "name": "Request.Apps.01.01 SlackBot.ListApplications",
+        "type": "HELPER",
+        "screenshotURL": ""
+      },
+      {
+        "id": "32b32396-1fbf-4fbd-ac4d-d976382e2193",
+        "name": "Util.99.04. SlackBot.PostChatMessage",
+        "type": "HELPER",
+        "screenshotURL": ""
+      },
+      {
+        "id": "6c6ea597-cffb-4f57-a9f4-75a8597b4d5c",
+        "name": "Request.Apps.02.02. SlackBot.Approved",
+        "type": "HELPER",
+        "screenshotURL": ""
+      },
+      {
+        "id": "26f7b1f9-e761-4e34-a765-c776d1881b27",
+        "name": "Request.Apps.01. SlackBot.Form",
+        "type": "HELPER",
+        "screenshotURL": ""
+      },
+      {
+        "id": "d6d32384-7fda-4845-ab08-12f329217723",
+        "name": "Request.Apps.02. SlackBot.Submit",
+        "type": "HELPER",
+        "screenshotURL": ""
+      },
+      {
+        "id": "d8fdc240-3e5d-4349-997f-75badbeda897",
+        "name": "Request.Approval.02. SlackBot.RejectedTrigger",
+        "type": "HELPER",
+        "screenshotURL": ""
+      },
+      {
+        "id": "d1c458f2-110f-4cc9-87ee-981f92fe0031",
+        "name": "Request.Approval.01. SlackBot.ApprovedTrigger",
+        "type": "HELPER",
+        "screenshotURL": ""
+      },
+      {
+        "id": "afc1175a-fa23-4038-bc50-f7db9dad1c9a",
+        "name": "Util.99.02. SlackBot.Verity.Request.Signature",
+        "type": "HELPER",
+        "screenshotURL": ""
+      },
+      {
+        "id": "c686b9c0-2947-437a-b480-82797c53d062",
+        "name": "Request.01. SlackBot.Router",
+        "type": "HELPER",
+        "screenshotURL": ""
+      },
+      {
+        "id": "173fb193-e3e1-46b7-844d-230dd5aab2bf",
+        "name": "Request.00.SlackBot.Acknowledgement",
+        "type": "MAIN",
+        "screenshotURL": ""
+      }
+    ],
     "flowCount": 14,
     "helperFlowsCount": 13,
     "mainFlowsCount": 1,

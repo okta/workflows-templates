@@ -1,0 +1,26 @@
+{
+  "name": "password_sync_for_chromeos_devices",
+  "title": "Password sync for ChromeOS devices",
+  "description": "Google ChromeOS is a rapidly growing platform that has many advantages over legacy operating systems. With ChromeOS and Okta you can authenticate to your device using your Okta credentials and keep those credentials in sync with Okta Workflows.",
+  "connectors": [
+    "okta"
+  ],
+  "details": {
+    "flos": [
+      {
+        "id": "13d62c4c-6de5-46f3-86f6-24a08ba3e1a7",
+        "name": "ChromeOS - Password changed API",
+        "type": "MAIN",
+        "screenshotURL": ""
+      }
+    ],
+    "flowCount": 1,
+    "mainFlowsCount": 1
+  },
+  "links": [
+    {
+      "destination": "https://github.com/okta/workflows-templates/blob/master/workflows/password_sync_for_chromeos_devices/readme.md",
+      "title": "Setup Documentation"
+    }
+  ]
+}

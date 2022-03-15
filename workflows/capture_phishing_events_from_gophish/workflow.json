@@ -6,6 +6,20 @@
     "okta"
   ],
   "details": {
+    "flos": [
+      {
+        "id": "26562f50-5d69-46f0-918d-9c707e95c92c",
+        "name": "Util.AuthenticateWebhook",
+        "type": "HELPER",
+        "screenshotURL": ""
+      },
+      {
+        "id": "f1740750-5468-4456-b99b-6ff51b0c370d",
+        "name": "GoPhish.SecurityEvent",
+        "type": "MAIN",
+        "screenshotURL": ""
+      }
+    ],
     "flowCount": 2,
     "helperFlowsCount": 1,
     "mainFlowsCount": 1,

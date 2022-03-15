@@ -7,6 +7,20 @@
     "gmail"
   ],
   "details": {
+    "flos": [
+      {
+        "id": "eb15fbe3-6124-4c2e-8667-d7eae921b4c8",
+        "name": "Pre-enroll MFA",
+        "type": "MAIN",
+        "screenshotURL": ""
+      },
+      {
+        "id": "8e32301d-2786-48f5-8516-b912849a72bd",
+        "name": "Add Other factors",
+        "type": "MAIN",
+        "screenshotURL": ""
+      }
+    ],
     "flowCount": 2,
     "mainFlowsCount": 2
   },

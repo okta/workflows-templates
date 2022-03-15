@@ -7,6 +7,14 @@
     "office365mail"
   ],
   "details": {
+    "flos": [
+      {
+        "id": "b7bfc281-aabe-4fa6-8540-2859d7e0c755",
+        "name": "AD-Credential-Delivery",
+        "type": "MAIN",
+        "screenshotURL": ""
+      }
+    ],
     "flowCount": 1,
     "mainFlowsCount": 1
   },

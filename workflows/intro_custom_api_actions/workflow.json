@@ -6,6 +6,20 @@
     "okta"
   ],
   "details": {
+    "flos": [
+      {
+        "id": "ae316cfb-2b17-471e-aabb-c50c56931888",
+        "name": "Add user to admin role",
+        "type": "MAIN",
+        "screenshotURL": ""
+      },
+      {
+        "id": "61a6c27c-5c30-46be-a48b-f24cc517a898",
+        "name": "Test Flow: Create Okta User",
+        "type": "MAIN",
+        "screenshotURL": ""
+      }
+    ],
     "flowCount": 2,
     "mainFlowsCount": 2
   },

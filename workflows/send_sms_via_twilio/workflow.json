@@ -4,6 +4,14 @@
   "description": "Use Okta Workflows to send SMS messages via Twilio",
   "connectors": [],
   "details": {
+    "flos": [
+      {
+        "id": "83360537-15a8-430e-b9c1-860e3bba5f1c",
+        "name": "SUB - Send SMS via Twilio",
+        "type": "HELPER",
+        "screenshotURL": ""
+      }
+    ],
     "flowCount": 1,
     "helperFlowsCount": 1
   },

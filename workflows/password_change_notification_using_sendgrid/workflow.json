@@ -7,6 +7,14 @@
     "okta"
   ],
   "details": {
+    "flos": [
+      {
+        "id": "076cf095-aae5-4f65-ab74-505c904d9b87",
+        "name": "[Sendgrid] PasswordChangeNotification",
+        "type": "MAIN",
+        "screenshotURL": ""
+      }
+    ],
     "flowCount": 1,
     "mainFlowsCount": 1
   },
