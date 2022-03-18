@@ -21,6 +21,7 @@ jobs:
     script:
     - node $TRAVIS_BUILD_DIR/scripts/json-details-scripts/details_validator.js
 
+before_deploy: node ./scripts/fetch_all_flos_screenshots.js
 deploy:
   on:
     all_branches: true
@@ -31,4 +32,4 @@ deploy:
     secure: t8ge9rATbE+Yv0/e0I/fsOHP4LGSjqrLzSA6ryBcvn8beLAh2S10NSAcy0vwVoaPoXPsMF8irtQ9KEersleb9f99tndqALDISqhY18HL4FoFHvOxZF6qqkU5b8gaKnEO8PU76d6HXOkECbdHhEHxSGyrCwSD4cIMs8ENkU6Zx6HR1Er84itFv+IsX1HQJBA8zR8J/AeGoqfVT4wvkuPDEhUVPaRC96hoKC6J9IFwnG4kvpUVDqy8yrlCSSWgzX4W5FrkfBgTRo15vZUEchXFeTFyz4D5kH1b5qZBmzzAW8KvSziHp7HhP02cyNjftJqDsX/H9t3zbqcOzE+51D8sXF3Jnv1P2RMzc1GRTXTL1Z2ZVHc4bZtp5LHDa85g4DMgCqINkLOyW/refxxTM1D0qs5CRoGPCpkYBIUnW9PuX3DZlW44mPVxBwt3ORt3TnmX/910Sb+JGl5Q4w4wYijdZB+5dfZXDRcEKo3ikRo5qaw0oSgjhLnyxxysaixTnRN4TFegQQdRmS4HssAAWEqIhdXraohUHYgnwq4thv+EP2LFFOk39D8i6FT3ybK3pPuiV8TprxBzur8xTKcz7GBfOQ1avRlkYkFMKE5tKk8T4Uv4/m8qX1Axm/IzhNdt3ojiigNS2KghTopEyLy5DfO9m1ZiC1ukYnszK9iPQnkQOUo=
   bucket: azuqua_static
   upload_dir: static/catalog
-  glob: screenshot-*.png
+  local_dir: all-flos-screenshots
