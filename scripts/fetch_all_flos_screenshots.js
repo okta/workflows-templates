@@ -9,13 +9,7 @@ const path = require("path");
 
 (function () {
   const destination = path.resolve("./all-flos-screenshots");
-
-  // @ts-ignore
   const files = glob.readdirSync('./workflows/**/flo-screenshot-*.png');
-
-  console.log("-----------------------------");
-  console.log({ destination, files });
-  console.log("-----------------------------");
 
   if (!files || files.length === 0) {
     console.log(`${path.basename(__filename)}: No FLO screenshots were found`);
@@ -26,12 +20,6 @@ const path = require("path");
     fs.rmSync(destination, { force: true, recursive: true });
   }
   fs.mkdirSync(destination);
-
-  console.log("--------------repo files---------------");
-  fs.readdirSync(path.resolve("./")).forEach(file => {
-    console.log(file);
-  });
-  console.log("-----------------------------");
 
   files.forEach(file => {
     const fileName = file.split("/").slice(-1)[0];
