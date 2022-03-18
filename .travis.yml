@@ -33,3 +33,4 @@ deploy:
   bucket: azuqua_static
   upload_dir: static/catalog
   local_dir: all-flos-screenshots
+  cleanup: false
