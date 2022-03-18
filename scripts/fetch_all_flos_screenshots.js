@@ -9,7 +9,7 @@ const path = require("path");
 
 (function () {
   const destination = path.resolve("./all-flos-screenshots");
-  const files = glob.readdirSync('./workflows/**/flo-screenshot-*.png');
+  const files = glob.readdirSync('./workflows/**/flo-screenshot-*.*');
 
   if (!files || files.length === 0) {
     console.log(`${path.basename(__filename)}: No FLO screenshots were found`);
