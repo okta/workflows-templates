@@ -14,6 +14,12 @@ const path = require("path");
   const files = glob.readdirSync('./workflows/**/flo-screenshot-*.png');
   console.log(files);
 
+  console.log("-----------------------------");
+  fs.readdirSync(path.resolve("./")).forEach(file => {
+    console.log(file);
+  });
+  console.log("-----------------------------");
+
   if (!files || files.length === 0) {
     console.log(`${path.basename(__filename)}: No FLO screenshots were found`);
     return;
