@@ -141,6 +141,28 @@ Example: The shape a `details` object for a template with no flos and no tags
 
 **Reminder**: You don't have to calculate these fields or do any manual work. Just run the `details_modifier.js` script.
 
+### Flows screenshots
+For each workflow that contains flows, a screenshot of each flow should be added to the `${WORKFLOW_FOLDER}/resources` directory (create the `resources` directory if it doesn't exist). The purpose of this screenshot is to showcase your flow to users. The screenshot should cover the full flow, not only parts of it. The screenshot can have any name but it should use the `.png` extension. You can explore the screenshots for the current workflows in this repo for reference.
+
+### Deploying flows screenshots & screenshot URL
+Flows screenshots are automatically deployed to the cloud when a new branch is pushed to this repo. A background job runs on new branches and uploads the content of the `resources` folders to Amazon's S3.
+
+The screenshot URL follows the pattern: `https://d78vv2h34ll3s.cloudfront.net/static/catalog/workflows/${WORKFLOW_NAME}/resources/${SCREENSHOT_HASH}.png`
+
+Example: let's assume we have a workflow called "email_new_slack_user" that contain 3 flows, the screenshots folder structure for that workflow should look like:
+
+```
+workflows
+  email_new_slack_user
+    ...
+    resources
+      flow_1_screenshot.png
+      flow_2_screenshot.png
+      flow_3_screenshot.png
+```
+
+When the resources directory of this workflow is pushed to a branch in this repo, these 3 flow screenshots will be automatically deployed. Don't worry about the URL for each screenshot. [As mentioned earlier](https://github.com/okta/workflows-templates#managing-metadata-fields), You can run the `details_modifier.js` script to automatically populate the `screenshotURL` field for each flow in the `workflow.json` file.
+
 ## Step 3: Additional documentation
 
 Finally, create a `readme.md` file that has the setup documentation for your template. It should be written in markdown and follow the structure outlined [here](https://docs.google.com/document/d/1a1jQ9o2am9pBfx0LsexiQ0HW8qyOU7WFAEg1Eevjinc/edit).
