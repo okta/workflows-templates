@@ -3,7 +3,8 @@ const {
   getDetailsFromFlopack,
   validateCounts,
   validateFlos,
-  validateUseCases
+  validateUseCases,
+  validateScreenshots
 } = require("./utils.js");
 
 const workflowsDir = `${process.cwd()}/workflows`;
@@ -22,6 +23,7 @@ workflows.forEach((workflowName) => {
 
     validateCounts(workflowName, detailsFromFlopack, detailsInJSON);
     validateFlos(workflowName, detailsFromFlopack, detailsInJSON);
+    validateScreenshots(workflowName, detailsFromFlopack.flos, detailsInJSON.flos);
     validateUseCases(workflowName, jsonContent.details.useCases);
   });
 });

@@ -98,6 +98,30 @@ module.exports.validateFlos = function (workflowName, detailsFromFlopack, detail
   }
 };
 
+module.exports.validateScreenshots = function (workflowName, flosFromFlopack, flosInJSON) {
+  if (flosFromFlopack.length === 0) return;
+
+  try {
+    const screenshots = fs.readdirSync(`${process.cwd()}/workflows/${workflowName
+      }/resources`);
+    if (screenshots.length !== flosFromFlopack.length) {
+      throw new Error(`The "${workflowName}/resources" directory should contain a screenshot for every flow in this template. Currently it has ${screenshots.length} screenshots, but there should be ${flosFromFlopack.length} screenshots.`);
+    }
+    if (screenshots.length !== flosInJSON.length) {
+      throw new Error(`${screenshots.length} screenshots exists for the "${workflowName}" workflow, but only ${flosInJSON.length} are documented in the "${workflowName}/workflow.json" file. They should match.`);
+    }
+  } catch (error) {
+    if (error.code === "ENOENT") {
+      // resources directory not found
+      throw new Error(
+        `The "${workflowName}" workflow directory should have a "resources" directory that contains screenshots for every flow in the template. Check the README of the repo for more info.`
+      );
+    } else {
+      console.error(error);
+    }
+  }
+};
+
 module.exports.validateUseCases = function (workflowName, floUseCases) {
   if (!floUseCases) return;
 
