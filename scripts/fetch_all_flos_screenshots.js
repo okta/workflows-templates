@@ -8,19 +8,19 @@ const fs = require("fs");
 const path = require("path");
 
 (function () {
-  const files = glob.readdirSync('./workflows/**/flo-screenshot-*.*');
-
-  if (!files || files.length === 0) {
-    console.log(`${path.basename(__filename)}: No FLO screenshots were found`);
-    return;
-  };
-
   const destination = path.resolve("./all-flos-screenshots");
 
   if (fs.existsSync(destination)) {
     fs.rmSync(destination, { force: true, recursive: true });
   }
   fs.mkdirSync(destination);
+
+  const files = glob.readdirSync('./workflows/**/flo-screenshot-*.*');
+
+  if (!files || files.length === 0) {
+    console.log(`${path.basename(__filename)}: No FLO screenshots were found`);
+    return;
+  };
 
   files.forEach(file => {
     const fileName = file.split("/").slice(-1)[0];
