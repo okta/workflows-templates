@@ -15,18 +15,18 @@ const path = require("path");
     return;
   };
 
-  const destination = "./all-flos-screenshots";
+  const destination = path.resolve("./all-flos-screenshots");
 
-  if (fs.existsSync(path.resolve(destination))) {
+  if (fs.existsSync(destination)) {
     fs.rmSync(destination, { force: true, recursive: true });
   }
-  fs.mkdirSync(path.resolve(destination));
+  fs.mkdirSync(destination);
 
   files.forEach(file => {
     const fileName = file.split("/").slice(-1)[0];
     fs.copyFileSync(
       path.resolve(file),
-      path.resolve(`${path.resolve(destination)}/${fileName}`),
+      path.resolve(`${destination}/${fileName}`),
       fs.constants.COPYFILE_FICLONE
     );
   });
