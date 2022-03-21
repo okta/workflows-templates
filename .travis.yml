@@ -1,20 +1,35 @@
 language: node_js
+
 node_js:
-  - "stable"
+- stable
+
 jobs:
   include:
-    - stage: "JSON schema validation on workflow.json"
-      before_script:
-        - npm install shelljs
-        - npm install ajv@7.0.3
-      script:
-        - node $TRAVIS_BUILD_DIR/scripts/schema_validate.js
-    - stage: "File validation rules"
-      script:
-        - $TRAVIS_BUILD_DIR/scripts/travis_release.sh
-    - stage: run unit tests
-      script:
-        - npm test
-    - stage: "Validate the data inside the details object in each workflow.json file"
-      script:
-        - node $TRAVIS_BUILD_DIR/scripts/json-details-scripts/details_validator.js
+  - stage: JSON schema validation on workflow.json
+    before_script:
+    - npm install shelljs
+    - npm install ajv@7.0.3
+    script:
+    - node $TRAVIS_BUILD_DIR/scripts/schema_validate.js
+  - stage: File validation rules
+    script:
+    - "$TRAVIS_BUILD_DIR/scripts/travis_release.sh"
+  - stage: run unit tests
+    script:
+    - npm test
+  - stage: Validate the data inside the details object in each workflow.json file
+    script:
+    - node $TRAVIS_BUILD_DIR/scripts/json-details-scripts/details_validator.js
+
+deploy:
+  edge: true
+  on:
+    all_branches: true
+  provider: s3
+  access_key_id:
+    secure: pj8N5Se223n7/HcV80hPv8645TjUI0CGbq+pBd3afvwpUrvp3/dGbjQA+AtMfbgikOsaUj8nlACr2PmuIYUB1OFy4SuaHUaP/GqIZMuW8maZwPBktEX+TJW0gJ4aiCkJVba7l/lUqASa+ORljIGa286NIubewvyTgPtnDfIxWsCqjAQouTz2GxgGN+IitB69bRng0XG3scmHK5o5K/+TdBjZzrFJE8lr8OnY8SsOhpJIpDjzlmkdZtyoHndg2kqo2QyrYfMqFE/O6DnWt4G46+iGMNvBWiCZG1aeRzJRdXcRxmoW2Xdp9xQctdAJPjH6gsqpVijjKaWRgqCkpecRCAuh+7e8e4c3F2cqy/9bYBkue5nmQtUkrBlqSygGlyXYPCLMGR3V4qOakyDEXV4jJFZWP/g53JLmvv3bOIZ43YJ6rCOAt0xFFybNmFj//6Chg91rC8jqhJBWswWdMis+u5PB8HIzz1zoiTQuVNcIRFpxBBjN/HvYCyNhKDACYue43kkyMfGJ7115I6CigycUkXeMk2oWid8V/84Kgzi3PbzQcOqZiaHjmXFleP+sVww0swKVJ2yXb5seUZIoevQNRecnx+tY5T3BY6BJ1MUCnP6rhZWymxAYBgBTNyYlZZ9JPSWHpHGrcuWY8QzUxgPXoK0LfsaiifC7ehvPENKSy48=
+  secret_access_key:
+    secure: t8ge9rATbE+Yv0/e0I/fsOHP4LGSjqrLzSA6ryBcvn8beLAh2S10NSAcy0vwVoaPoXPsMF8irtQ9KEersleb9f99tndqALDISqhY18HL4FoFHvOxZF6qqkU5b8gaKnEO8PU76d6HXOkECbdHhEHxSGyrCwSD4cIMs8ENkU6Zx6HR1Er84itFv+IsX1HQJBA8zR8J/AeGoqfVT4wvkuPDEhUVPaRC96hoKC6J9IFwnG4kvpUVDqy8yrlCSSWgzX4W5FrkfBgTRo15vZUEchXFeTFyz4D5kH1b5qZBmzzAW8KvSziHp7HhP02cyNjftJqDsX/H9t3zbqcOzE+51D8sXF3Jnv1P2RMzc1GRTXTL1Z2ZVHc4bZtp5LHDa85g4DMgCqINkLOyW/refxxTM1D0qs5CRoGPCpkYBIUnW9PuX3DZlW44mPVxBwt3ORt3TnmX/910Sb+JGl5Q4w4wYijdZB+5dfZXDRcEKo3ikRo5qaw0oSgjhLnyxxysaixTnRN4TFegQQdRmS4HssAAWEqIhdXraohUHYgnwq4thv+EP2LFFOk39D8i6FT3ybK3pPuiV8TprxBzur8xTKcz7GBfOQ1avRlkYkFMKE5tKk8T4Uv4/m8qX1Axm/IzhNdt3ojiigNS2KghTopEyLy5DfO9m1ZiC1ukYnszK9iPQnkQOUo=
+  bucket: azuqua_static
+  upload_dir: static/catalog
+  glob: "**/resources/*.png"
