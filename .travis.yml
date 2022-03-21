@@ -22,7 +22,6 @@ jobs:
     - node $TRAVIS_BUILD_DIR/scripts/json-details-scripts/details_validator.js
 
 deploy:
-  edge: true
   on:
     all_branches: true
   provider: s3
