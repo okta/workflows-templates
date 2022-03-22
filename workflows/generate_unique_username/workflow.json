@@ -11,43 +11,43 @@
         "id": "c92ce00a-c29e-4a6f-a789-97c87c816203",
         "name": "003-CSUB-DeDuplication-V1",
         "type": "HELPER",
-        "screenshotURL": ""
+        "screenshotURL": "https://d78vv2h34ll3s.cloudfront.net/static/catalog/workflows/generate_unique_username/resources/sowltABGHMPfdMOmat5guQZ07fooyZkvTEA0_DkWJ5M.png"
       },
       {
         "id": "8a0df9a1-8443-4dd3-b170-38e1aff3c224",
         "name": "002-uniqueUsername",
         "type": "HELPER",
-        "screenshotURL": ""
+        "screenshotURL": "https://d78vv2h34ll3s.cloudfront.net/static/catalog/workflows/generate_unique_username/resources/rtv0nL4DCK9VwX11klEUq4zk0aEJG14bXzCbl2RhPlY.png"
       },
       {
         "id": "6d037779-048c-496c-a421-d2b2c5b0937c",
         "name": "005-SUB-trimNameFields-V1",
         "type": "HELPER",
-        "screenshotURL": ""
+        "screenshotURL": "https://d78vv2h34ll3s.cloudfront.net/static/catalog/workflows/generate_unique_username/resources/58EiT8UGzVAg_GoIGfavaZ0k6K1MMvFzlHixviFcR5Q.png"
       },
       {
         "id": "c05c8cea-a439-4a29-87f5-340d1be59a50",
         "name": "SUB-error-V1",
         "type": "HELPER",
-        "screenshotURL": ""
+        "screenshotURL": "https://d78vv2h34ll3s.cloudfront.net/static/catalog/workflows/generate_unique_username/resources/FCSV0qxae1_hEPulTAsJuPr3oY5yWevhPSWhvZ5j0tA.png"
       },
       {
         "id": "4ccfd26e-db8f-4455-ad6d-8f502c696206",
         "name": "004-CSUB-filterCompareLength-V2",
         "type": "HELPER",
-        "screenshotURL": ""
+        "screenshotURL": "https://d78vv2h34ll3s.cloudfront.net/static/catalog/workflows/generate_unique_username/resources/gP6KkVbiGu2a-iIou82xOhbYAzYSgY5peylbAD9BVVg.png"
       },
       {
         "id": "bf614fa9-2fa1-4273-a8a2-54eb82d523f8",
         "name": "001-UserCreate Event",
         "type": "MAIN",
-        "screenshotURL": ""
+        "screenshotURL": "https://d78vv2h34ll3s.cloudfront.net/static/catalog/workflows/generate_unique_username/resources/bIKlvuAddB75CJh2a6vWLpd20YSEPkqrdYJlja_TcGw.png"
       },
       {
         "id": "565b5111-f825-44d2-9423-dd69ab73c69d",
         "name": "001-PRD-inlineHookHandler-V1 ",
         "type": "MAIN",
-        "screenshotURL": ""
+        "screenshotURL": "https://d78vv2h34ll3s.cloudfront.net/static/catalog/workflows/generate_unique_username/resources/_5rpyTnjsprdQSckRmPRK2lmepIc7Ilo6uhvh0WvXzY.png"
       }
     ],
     "flowCount": 7,

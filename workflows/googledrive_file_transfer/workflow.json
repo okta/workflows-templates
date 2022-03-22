@@ -11,19 +11,19 @@
         "id": "68bff1b7-2265-47ca-9367-feb51f47cfdf",
         "name": "[1.1] Read Specific Transfer Status",
         "type": "HELPER",
-        "screenshotURL": ""
+        "screenshotURL": "https://d78vv2h34ll3s.cloudfront.net/static/catalog/workflows/googledrive_file_transfer/resources/9NXFk_DqQ3KfCgTHZBohacGqx_SRMB22lVvOoG4Z0KA.png"
       },
       {
         "id": "5a88cdf7-1b1b-4c40-bfb5-3ff0b8f6ca0b",
         "name": "[1.0] Read Transfer Status as Scheduled Process",
         "type": "MAIN",
-        "screenshotURL": ""
+        "screenshotURL": "https://d78vv2h34ll3s.cloudfront.net/static/catalog/workflows/googledrive_file_transfer/resources/XgYOiokIM3XGqF4w4ESf-EAPnhAgDBi9BGyGIjza8MA.png"
       },
       {
         "id": "c9b75067-3dfb-449e-b628-83b9d4afea45",
         "name": "[1.0] Start Transfer",
         "type": "HELPER",
-        "screenshotURL": ""
+        "screenshotURL": "https://d78vv2h34ll3s.cloudfront.net/static/catalog/workflows/googledrive_file_transfer/resources/uezjVI9OXD66wtNh-tsguYCfsLtb2hiEJ78cBlvwMjg.png"
       }
     ],
     "flowCount": 3,

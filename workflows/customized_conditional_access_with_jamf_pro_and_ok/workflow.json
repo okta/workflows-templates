@@ -12,13 +12,13 @@
         "id": "e6ac5417-3301-4373-9a13-db9d5c2fb2a4",
         "name": "Update Okta User Compliancy",
         "type": "HELPER",
-        "screenshotURL": ""
+        "screenshotURL": "https://d78vv2h34ll3s.cloudfront.net/static/catalog/workflows/customized_conditional_access_with_jamf_pro_and_ok/resources/pDfGMH8cFwOTSXoaRfBEIk86YC03a5lYvIVudNQCsvU.png"
       },
       {
         "id": "88ad62a8-318d-4aa5-b0f7-1f2954918063",
         "name": "Check Jamf Computer Compliancy Group",
         "type": "MAIN",
-        "screenshotURL": ""
+        "screenshotURL": "https://d78vv2h34ll3s.cloudfront.net/static/catalog/workflows/customized_conditional_access_with_jamf_pro_and_ok/resources/iVLRaix5n7C-_6n5knOlrgGCtLOul942Qrum_HKLE9c.png"
       }
     ],
     "flowCount": 2,

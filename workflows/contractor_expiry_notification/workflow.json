@@ -12,25 +12,25 @@
         "id": "7cbe87a9-b9cf-4867-87bb-99aefcfbfb75",
         "name": "1.2 - Process Contractor",
         "type": "HELPER",
-        "screenshotURL": ""
+        "screenshotURL": "https://d78vv2h34ll3s.cloudfront.net/static/catalog/workflows/contractor_expiry_notification/resources/TGVJZLamHC0HWBOD5hBUeNKZx9TyHHViXF4m0TGcieI.png"
       },
       {
         "id": "00ebeccd-4412-4744-a8b7-b94ad272608e",
         "name": "1.1 - Initialize",
         "type": "HELPER",
-        "screenshotURL": ""
+        "screenshotURL": "https://d78vv2h34ll3s.cloudfront.net/static/catalog/workflows/contractor_expiry_notification/resources/jj1sJPQJT4l1iJF2vRCmYe9PFyN1i8i2h8zB9jhmyWI.png"
       },
       {
         "id": "59626142-efc4-4156-a974-36d639771ce7",
         "name": "1.3 - Send Notification Emails",
         "type": "HELPER",
-        "screenshotURL": ""
+        "screenshotURL": "https://d78vv2h34ll3s.cloudfront.net/static/catalog/workflows/contractor_expiry_notification/resources/n1QRZamCuBc9IrGXG4jmJyqFlmoM9Z5j5ZxoC3BRHMQ.png"
       },
       {
         "id": "a38b1617-f695-4cf6-b0bc-a0caadacc627",
         "name": "1.0 - Contractor Expiry Notification",
         "type": "MAIN",
-        "screenshotURL": ""
+        "screenshotURL": "https://d78vv2h34ll3s.cloudfront.net/static/catalog/workflows/contractor_expiry_notification/resources/1iGgd3h9dNRyypQukkx9-78uAigiNLG95P6oOEPz3VQ.png"
       }
     ],
     "flowCount": 4,

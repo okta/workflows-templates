@@ -12,43 +12,43 @@
         "id": "2bd9551a-ef1a-46d5-ac3d-8f2ed0e93aa5",
         "name": "[UTIL] Send Manager Email Message",
         "type": "HELPER",
-        "screenshotURL": ""
+        "screenshotURL": "https://d78vv2h34ll3s.cloudfront.net/static/catalog/workflows/onboard_and_offboard_with_office365/resources/3-nTnsH-yNcZ_LEkdpyjqOctBvH_4NsjvK14ozlwF8g.png"
       },
       {
         "id": "4e9cc665-0994-4ec4-976a-fa3e955f607e",
         "name": "[Child] Clear Microsoft License Table",
         "type": "HELPER",
-        "screenshotURL": ""
+        "screenshotURL": "https://d78vv2h34ll3s.cloudfront.net/static/catalog/workflows/onboard_and_offboard_with_office365/resources/o_oJ524bQ0donuPjJYyXzJRN2WQAL6nbIcakWiv8zx4.png"
       },
       {
         "id": "5b8d6669-4719-4c7f-ae2b-54fee21910ea",
         "name": "[Child] Store all Microsoft License",
         "type": "HELPER",
-        "screenshotURL": ""
+        "screenshotURL": "https://d78vv2h34ll3s.cloudfront.net/static/catalog/workflows/onboard_and_offboard_with_office365/resources/AfppKgyMdkL1Gb3IFmzRCQE3wjzb8hap--Ad6kU0Ufk.png"
       },
       {
         "id": "3567489c-9a77-4e0c-b180-ceb11a92583f",
         "name": "Clear Microsoft License Table",
         "type": "HELPER",
-        "screenshotURL": ""
+        "screenshotURL": "https://d78vv2h34ll3s.cloudfront.net/static/catalog/workflows/onboard_and_offboard_with_office365/resources/4ck5msG-uKaSiT5GvQyBlto5ANvR9EK9x8E5VeiKvjg.png"
       },
       {
         "id": "876eee96-c081-4db4-99c5-36ed24ee8895",
         "name": "O365 Activation",
         "type": "MAIN",
-        "screenshotURL": ""
+        "screenshotURL": "https://d78vv2h34ll3s.cloudfront.net/static/catalog/workflows/onboard_and_offboard_with_office365/resources/cJlLf2O6n3gYKB2xVC8WIFtIr3ws1pii-EVNFv2ZsOs.png"
       },
       {
         "id": "713d8505-0fc9-43de-a4c6-c3216c241175",
         "name": "Store all Microsoft License",
         "type": "HELPER",
-        "screenshotURL": ""
+        "screenshotURL": "https://d78vv2h34ll3s.cloudfront.net/static/catalog/workflows/onboard_and_offboard_with_office365/resources/Uqguj-VzdqWpeG0DO1Jr2v_1r2xgxnKIzjhNtT25w_w.png"
       },
       {
         "id": "f711126c-b369-47a3-92d8-ddaa55f13fff",
         "name": "O365 Staged Deactivation ",
         "type": "MAIN",
-        "screenshotURL": ""
+        "screenshotURL": "https://d78vv2h34ll3s.cloudfront.net/static/catalog/workflows/onboard_and_offboard_with_office365/resources/f1_ga_GLOBNPovFjqbzYuXE7qhyi4VY_84ZMoXFocBU.png"
       }
     ],
     "flowCount": 7,

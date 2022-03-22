@@ -12,25 +12,25 @@
         "id": "e64e15b8-23d8-4826-bd7b-4d3ae3cb3d1c",
         "name": "[Child -1] IterateList",
         "type": "HELPER",
-        "screenshotURL": ""
+        "screenshotURL": "https://d78vv2h34ll3s.cloudfront.net/static/catalog/workflows/intro_to_lists_and_child_flows/resources/Sh8mdDE9eqfxgWGJtuwDqyoRdYguHhcbfSsdnrXuWRE.png"
       },
       {
         "id": "5e56e56e-9544-46cb-a03f-b953777673b7",
         "name": "[Child -2] ReduceList",
         "type": "HELPER",
-        "screenshotURL": ""
+        "screenshotURL": "https://d78vv2h34ll3s.cloudfront.net/static/catalog/workflows/intro_to_lists_and_child_flows/resources/sGv-dk7Ce41NJKIdH5LXUJFF52d4Tgk_VD45FOAitBI.png"
       },
       {
         "id": "4bf1c9fd-e2fd-439a-adb7-cb339730b9e6",
         "name": "[Slack] Send Slack Message",
         "type": "HELPER",
-        "screenshotURL": ""
+        "screenshotURL": "https://d78vv2h34ll3s.cloudfront.net/static/catalog/workflows/intro_to_lists_and_child_flows/resources/c7zUf54eFvZT6Kz8F3Tpk11ZyDEaegI64x1uPf5NYVo.png"
       },
       {
         "id": "b448e789-445d-4ace-8854-300bcc7f3b13",
         "name": "[Parent] List example ",
         "type": "MAIN",
-        "screenshotURL": ""
+        "screenshotURL": "https://d78vv2h34ll3s.cloudfront.net/static/catalog/workflows/intro_to_lists_and_child_flows/resources/OfnYXoHni2Ya2ihx_Gx1KsM7JqBhejmJwSr2VzgiwJo.png"
       }
     ],
     "flowCount": 4,

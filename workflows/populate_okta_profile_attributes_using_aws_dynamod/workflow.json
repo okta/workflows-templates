@@ -12,19 +12,19 @@
         "id": "e65b1713-821b-4a98-963c-f63330246b9e",
         "name": "1.1 - Create Zip Table Record",
         "type": "HELPER",
-        "screenshotURL": ""
+        "screenshotURL": "https://d78vv2h34ll3s.cloudfront.net/static/catalog/workflows/populate_okta_profile_attributes_using_aws_dynamod/resources/VdquuIGn4lp35rwDaShAf3z7gFck1jqCFs8IWVwQz-o.png"
       },
       {
         "id": "9909e85e-8aea-4112-87df-b561950b0fc2",
         "name": "2.0 - Update User Profile",
         "type": "MAIN",
-        "screenshotURL": ""
+        "screenshotURL": "https://d78vv2h34ll3s.cloudfront.net/static/catalog/workflows/populate_okta_profile_attributes_using_aws_dynamod/resources/XrYK_u8ziC0J6eXFrv3zDhEgRwMXSOeM45s0RyVL9sM.png"
       },
       {
         "id": "6f1a9020-d2b7-45ff-bd70-dcaa3a404ff9",
         "name": "1.0 - Load Zip Table",
         "type": "HELPER",
-        "screenshotURL": ""
+        "screenshotURL": "https://d78vv2h34ll3s.cloudfront.net/static/catalog/workflows/populate_okta_profile_attributes_using_aws_dynamod/resources/dvkEFF2W6KfNyUZDy8I8JrTtAxgT6mCTCm9N8DxdcPw.png"
       }
     ],
     "flowCount": 3,

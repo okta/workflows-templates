@@ -12,37 +12,37 @@
         "id": "9d915df2-9c1a-4d34-afd2-f0c7a501a6af",
         "name": "[Child] Clear User Attribute table",
         "type": "HELPER",
-        "screenshotURL": ""
+        "screenshotURL": "https://d78vv2h34ll3s.cloudfront.net/static/catalog/workflows/create_report_on_okta_events/resources/5afgIhQcQB73RCvqksBmf5ck3xi7POcKcd4gKH08wM4.png"
       },
       {
         "id": "fd430663-95b1-4a17-8f24-36a54eb18ea6",
         "name": "[Child] Write User Attributes to Table",
         "type": "HELPER",
-        "screenshotURL": ""
+        "screenshotURL": "https://d78vv2h34ll3s.cloudfront.net/static/catalog/workflows/create_report_on_okta_events/resources/4Ex74TPSRPRF6MQIEhzk4GMhe0fOHsaBfhDD_jPLEbo.png"
       },
       {
         "id": "1268d332-2e5f-4809-8670-b073c939bce9",
         "name": "Upload daily report",
         "type": "MAIN",
-        "screenshotURL": ""
+        "screenshotURL": "https://d78vv2h34ll3s.cloudfront.net/static/catalog/workflows/create_report_on_okta_events/resources/HqKxymadZwk9z3o3QuICZ5IsgJzSsjDOwuCWTg5kR54.png"
       },
       {
         "id": "630014e8-c434-46c9-97b2-b44634c69bc4",
         "name": "Okta User Created",
         "type": "MAIN",
-        "screenshotURL": ""
+        "screenshotURL": "https://d78vv2h34ll3s.cloudfront.net/static/catalog/workflows/create_report_on_okta_events/resources/uAp9gYtCAhH6jHegCNhpknpKXhQGfRhGwCDV8xHKyRw.png"
       },
       {
         "id": "7ac53a5a-8347-4f7d-8cff-43c17c7dded2",
         "name": "Okta User Deactivated",
         "type": "MAIN",
-        "screenshotURL": ""
+        "screenshotURL": "https://d78vv2h34ll3s.cloudfront.net/static/catalog/workflows/create_report_on_okta_events/resources/OWQZg-Ob8IIgKBF3tXFIOCYixcVcyupSzCCU0f8oP2U.png"
       },
       {
         "id": "5af1ba96-5524-4ce1-b964-340e0f0c5bf6",
         "name": "Okta User Profile Updated",
         "type": "MAIN",
-        "screenshotURL": ""
+        "screenshotURL": "https://d78vv2h34ll3s.cloudfront.net/static/catalog/workflows/create_report_on_okta_events/resources/BrHULbO1iwEGLYeOBL9yW3FuS-KP54aPpy90l5k4Q6k.png"
       }
     ],
     "flowCount": 6,

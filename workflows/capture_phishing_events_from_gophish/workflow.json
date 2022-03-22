@@ -11,13 +11,13 @@
         "id": "26562f50-5d69-46f0-918d-9c707e95c92c",
         "name": "Util.AuthenticateWebhook",
         "type": "HELPER",
-        "screenshotURL": ""
+        "screenshotURL": "https://d78vv2h34ll3s.cloudfront.net/static/catalog/workflows/capture_phishing_events_from_gophish/resources/BQS3jzeLO2q2iwWYD4WNKnnSji2gHxlTEbnGrT5EbGY.png"
       },
       {
         "id": "f1740750-5468-4456-b99b-6ff51b0c370d",
         "name": "GoPhish.SecurityEvent",
         "type": "MAIN",
-        "screenshotURL": ""
+        "screenshotURL": "https://d78vv2h34ll3s.cloudfront.net/static/catalog/workflows/capture_phishing_events_from_gophish/resources/Bdju4ksmYEyuqn2Wv3CwgM0G0oCemS3Al2VguEiAWPI.png"
       }
     ],
     "flowCount": 2,

@@ -13,37 +13,37 @@
         "id": "21b48986-280b-409a-b57b-185caaa822a3",
         "name": "[Child] Add License Row to Table",
         "type": "HELPER",
-        "screenshotURL": ""
+        "screenshotURL": "https://d78vv2h34ll3s.cloudfront.net/static/catalog/workflows/manage_gsuite_user_licenses/resources/suVexYe-mqcF--bCHd6QE7H0PS6YoUC9UzakooF5FeA.png"
       },
       {
         "id": "59676232-8a98-4063-b62a-6e57e4cc9111",
         "name": "[Child] Delete Row from Table",
         "type": "HELPER",
-        "screenshotURL": ""
+        "screenshotURL": "https://d78vv2h34ll3s.cloudfront.net/static/catalog/workflows/manage_gsuite_user_licenses/resources/UplcMHKBJpozL7KZctjbHchz2O51y6IkYTazHAx_nx8.png"
       },
       {
         "id": "65784428-e0f0-4de6-9f4b-3851783e42b8",
         "name": "G Suite Activation",
         "type": "MAIN",
-        "screenshotURL": ""
+        "screenshotURL": "https://d78vv2h34ll3s.cloudfront.net/static/catalog/workflows/manage_gsuite_user_licenses/resources/8HXs_TwUJlLDJGaxej60A5aK70zI5OZ7nBY2XCvCCeg.png"
       },
       {
         "id": "87fc333a-e05b-40b8-9808-ee5f456325e4",
         "name": "GSuite Store License",
         "type": "HELPER",
-        "screenshotURL": ""
+        "screenshotURL": "https://d78vv2h34ll3s.cloudfront.net/static/catalog/workflows/manage_gsuite_user_licenses/resources/bRul1UKdHHnnVM575UfWnLOQDDmJTf30hiBrnFrqjIQ.png"
       },
       {
         "id": "64203825-838b-488d-acc0-21e86c499e09",
         "name": "G Suite Initialization Flow",
         "type": "HELPER",
-        "screenshotURL": ""
+        "screenshotURL": "https://d78vv2h34ll3s.cloudfront.net/static/catalog/workflows/manage_gsuite_user_licenses/resources/R_v-UzLLeC0YzkGrkMV8LRwPRbp__KyFrA_YCkGjkdo.png"
       },
       {
         "id": "1ddba34b-738a-4282-83b4-57bb2901fe7c",
         "name": "G Suite Staged Deactivation",
         "type": "MAIN",
-        "screenshotURL": ""
+        "screenshotURL": "https://d78vv2h34ll3s.cloudfront.net/static/catalog/workflows/manage_gsuite_user_licenses/resources/O1LIdTSErhGBWsNOv93XKSeEj2w8PHhL8SyO54xUzF4.png"
       }
     ],
     "flowCount": 6,

@@ -12,13 +12,13 @@
         "id": "c245f9f0-be37-4f98-b0fd-3f229390f63e",
         "name": "Import Users - Child Flow",
         "type": "HELPER",
-        "screenshotURL": ""
+        "screenshotURL": "https://d78vv2h34ll3s.cloudfront.net/static/catalog/workflows/import_users_google_sheets/resources/0jEQ6juUqJIEe9mNO7JIGwtUyokGRxm1H0vCE469GvY.png"
       },
       {
         "id": "78aff6f5-9991-4728-b189-e6883ffab2ef",
         "name": "Import Users - Parent Flow",
         "type": "MAIN",
-        "screenshotURL": ""
+        "screenshotURL": "https://d78vv2h34ll3s.cloudfront.net/static/catalog/workflows/import_users_google_sheets/resources/1e5brZX2F_BT-Ck84QHQn_drlZf_EAArkeMpOtycRAc.png"
       }
     ],
     "flowCount": 2,
