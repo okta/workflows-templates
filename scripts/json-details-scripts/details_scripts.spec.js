@@ -41,8 +41,7 @@ describe("getCountsFromFlopack", () => {
         {
           id: "0787a0a1-f2a0-4939-99ba-a07e2273be47",
           name: "flo 1",
-          type: "MAIN",
-          screenshotURL: ""
+          type: "MAIN"
         }
       ],
       flowCount: 1,
@@ -57,14 +56,12 @@ describe("getCountsFromFlopack", () => {
         {
           id: "825ca604-c2ac-4e44-a5b7-34f4fd161668",
           name: "flo 1",
-          type: "HELPER",
-          screenshotURL: ""
+          type: "HELPER"
         },
         {
           id: "295257de-b4ca-485e-8f12-f93531697664",
           name: "flo 2",
-          type: "HELPER",
-          screenshotURL: ""
+          type: "HELPER"
         }
       ],
       flowCount: 2,
@@ -79,20 +76,17 @@ describe("getCountsFromFlopack", () => {
         {
           id: "0787a0a1-f2a0-4939-99ba-a07e2273be47",
           name: "flo 1",
-          type: "MAIN",
-          screenshotURL: ""
+          type: "MAIN"
         },
         {
           id: "09536e48-f66b-49dd-989c-36c371c9b1ff",
           name: "flo 2",
-          type: "HELPER",
-          screenshotURL: ""
+          type: "HELPER"
         },
         {
           id: "ef777a85-4aef-4c98-8ccd-edabbfdd9960",
           name: "flo 3",
-          type: "HELPER",
-          screenshotURL: ""
+          type: "HELPER"
         }
       ],
       flowCount: 3,
@@ -108,20 +102,17 @@ describe("getCountsFromFlopack", () => {
         {
           id: "0787a0a1-f2a0-4939-99ba-a07e2273be47",
           name: "flo 1",
-          type: "MAIN",
-          screenshotURL: ""
+          type: "MAIN"
         },
         {
           id: "09536e48-f66b-49dd-989c-36c371c9b1ff",
           name: "flo 2",
-          type: "HELPER",
-          screenshotURL: ""
+          type: "HELPER"
         },
         {
           id: "ef777a85-4aef-4c98-8ccd-edabbfdd9960",
           name: "flo 3",
-          type: "HELPER",
-          screenshotURL: ""
+          type: "HELPER"
         }
       ],
       flowCount: 3,
