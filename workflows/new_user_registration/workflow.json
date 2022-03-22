@@ -12,31 +12,31 @@
         "id": "a9a0cf19-d173-46ba-97d7-314ff9e5f50f",
         "name": "[O365] Send Email HTML",
         "type": "HELPER",
-        "screenshotURL": "https://d78vv2h34ll3s.cloudfront.net/static/catalog/workflows/new_user_registration/resources/luPkaOsJjd0pd9sNTcQvGt7u_SN5emYddlA8cYSExqk.png"
+        "screenshotURL": "https://d78vv2h34ll3s.cloudfront.net/static/catalog/workflows/new_user_registration/resources/p7YCzbxHRQUcv4C46sW6Cuu1T4avC38EH2ZmhRGHZyc.png"
       },
       {
         "id": "0542a43a-109b-4433-9568-c45ea6f4733c",
         "name": "[child] process CANADA customer",
         "type": "HELPER",
-        "screenshotURL": "https://d78vv2h34ll3s.cloudfront.net/static/catalog/workflows/new_user_registration/resources/2E_dvn4XdMQPIOxed9_HMC6JAZyhxOj0bA7R4Sk_7ZQ.png"
+        "screenshotURL": "https://d78vv2h34ll3s.cloudfront.net/static/catalog/workflows/new_user_registration/resources/nhJWiV3SebtBAxiM-A2-ouRTlBD_klooEFELQHDriz4.png"
       },
       {
         "id": "a2a416b6-bc72-45a5-a022-5d29a7324ee4",
         "name": "[child] Add User to Okta GroupName",
         "type": "HELPER",
-        "screenshotURL": "https://d78vv2h34ll3s.cloudfront.net/static/catalog/workflows/new_user_registration/resources/Kr-63RygPPFpyDTH35Lqqs95fqURZ8pSw_cxcez_Hb4.png"
+        "screenshotURL": "https://d78vv2h34ll3s.cloudfront.net/static/catalog/workflows/new_user_registration/resources/1YMpgGchxLztLexvWcHRuGSWplw7WGoy5JPWY1RHrwQ.png"
       },
       {
         "id": "66ff05d6-28b6-4a83-9ed3-97e87158949a",
         "name": "[child] process USA customer",
         "type": "HELPER",
-        "screenshotURL": "https://d78vv2h34ll3s.cloudfront.net/static/catalog/workflows/new_user_registration/resources/2E_dvn4XdMQPIOxed9_HMC6JAZyhxOj0bA7R4Sk_7ZQ.png"
+        "screenshotURL": "https://d78vv2h34ll3s.cloudfront.net/static/catalog/workflows/new_user_registration/resources/6BaropvmhfhofXYfsbxMO7tZ1f50594qTLzCYz8nRlE.png"
       },
       {
         "id": "17f57807-dbf9-453b-a1f5-e9349c51a291",
         "name": "Create_User_wExtCheck",
         "type": "MAIN",
-        "screenshotURL": "https://d78vv2h34ll3s.cloudfront.net/static/catalog/workflows/new_user_registration/resources/rCuq5wEqhtSJWlQsBE-nkHqcyhzY6Unnkwevw6XXu8I.png"
+        "screenshotURL": "https://d78vv2h34ll3s.cloudfront.net/static/catalog/workflows/new_user_registration/resources/pk8C4My7859DX7tBxfryLVGwz_fDjTO2hEpbJ9UPdoM.png"
       }
     ],
     "flowCount": 5,
