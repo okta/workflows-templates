@@ -142,26 +142,44 @@ Example: The shape a `details` object for a template with no flos and no tags
 **Reminder**: You don't have to calculate these fields or do any manual work. Just run the `details_modifier.js` script.
 
 ### Flows screenshots
-For each workflow that contains flows, a screenshot of each flow should be added to the `${WORKFLOW_FOLDER}/resources` directory (create the `resources` directory if it doesn't exist). The purpose of this screenshot is to showcase your flow to users. The screenshot should cover the full flow, not only parts of it. The screenshot can have any name but it should use the `.png` extension. You can explore the screenshots for the current workflows in this repo for reference.
+For each workflow that contains flows, a screenshot of each flow should be added to the `${WORKFLOW_FOLDER}/resources` directory (create the `resources` directory if it doesn't exist). The purpose of this screenshot is to showcase your flow to users in Okta's catalog platform.
+
+The screenshot should cover the full flow, not only parts of it, also it should be in high resolution.
+
+The screenshot name should change whenever the screenshot content is different. This is not an issue for the screenshot is newly added. But whenever the screenshot changes, its name should change. We recommend using a hash for the screenshot name that depends on its content. You can use any online service to get that hash. We recommend using SHA256 base64 hash. Plenty of online tools exist for that purpose ([example](https://hash.online-convert.com/sha256-generator)).
+
+The reason behind using a file name that depends on the screenshot content is to have a new URL for the screenshot whenever the file content changes. It is mechanism to cache-bust older versions of the screenshot and make sure that users always see the latest version of the screenshot.
+
+**Hint:** You can explore the screenshots for the current workflows in this repo for reference.
 
 ### Deploying flows screenshots & screenshot URL
-Flows screenshots are automatically deployed to the cloud when a new branch is pushed to this repo. A background job runs on new branches and uploads the content of the `resources` folders to Amazon's S3.
+Flows screenshots are automatically deployed to the cloud when a new branch is pushed to this repo. A CI/CD job runs on new branches and uploads the content of the `resources` folders to Amazon's S3.
 
 The screenshot URL follows the pattern: `https://d78vv2h34ll3s.cloudfront.net/static/catalog/workflows/${WORKFLOW_NAME}/resources/${SCREENSHOT_HASH}.png`
 
-Example: let's assume we have a workflow called "email_new_slack_user" that contain 3 flows, the screenshots folder structure for that workflow should look like:
+**Example:** let's assume we have a workflow called "email_new_slack_users" that contain 3 flows, the folder structure of screenshots should look like:
 
 ```
 workflows
-  email_new_slack_user
+  email_new_slack_users
     ...
     resources
-      flow_1_screenshot.png
-      flow_2_screenshot.png
-      flow_3_screenshot.png
+      WXjssHdK61RCIQKWPUPvNyu9u7V7j8G4fyQLG9xD-E.png
+      06vs4F4lTvB_ZtLnAmX2l7aqmP977Fa-mASSNRl7mjM.png
+      5Q-UGCLVcMZIg1Wm5hXj3h1JJCWjxbs0fFzIyplN4_Q.png
 ```
 
-When the resources directory of this workflow is pushed to a branch in this repo, these 3 flow screenshots will be automatically deployed. Don't worry about the URL for each screenshot. [As mentioned earlier](https://github.com/okta/workflows-templates#managing-metadata-fields), You can run the `details_modifier.js` script to automatically populate the `screenshotURL` field for each flow in the `workflow.json` file.
+When it is pushed to a branch in this repo, the screenshots will be automatically deployed. The URL for each screenshot will be the following:
+
+```
+https://d78vv2h34ll3s.cloudfront.net/static/catalog/workflows/email_new_slack_users/resources/WXjssHdK61RCIQKWPUPvNyu9u7V7j8G4fyQLG9xD-E.png
+https://d78vv2h34ll3s.cloudfront.net/static/catalog/workflows/email_new_slack_users/resources/06vs4F4lTvB_ZtLnAmX2l7aqmP977Fa-mASSNRl7mjM.png
+https://d78vv2h34ll3s.cloudfront.net/static/catalog/workflows/email_new_slack_users/resources/5Q-UGCLVcMZIg1Wm5hXj3h1JJCWjxbs0fFzIyplN4_Q.png
+```
+
+You can then use these links to populate the metadata of the FLOs inside the `workflow.json` file of the `email_new_slack_users` workflow.
+
+**Note:** because the screenshots will be uploaded during the lifecycle of the CI/CD jobs of the repo, it may take a few minutes for the screenshots to be publicly reachable at their links.
 
 ## Step 3: Additional documentation
 
