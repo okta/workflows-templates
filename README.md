@@ -146,7 +146,7 @@ For each workflow that contains flows, a screenshot of each flow should be added
 
 The screenshot should cover the full flow, not only parts of it, also it should be in high resolution.
 
-The screenshot name should change whenever the screenshot content is different. This is not an issue for the screenshot is newly added. But whenever the screenshot changes, its name should change. We recommend using a hash for the screenshot name that depends on its content. You can use any online service to get that hash. We recommend using SHA256 base64 hash. Plenty of online tools exist for that purpose ([example](https://hash.online-convert.com/sha256-generator)).
+The screenshot name should change whenever the screenshot content is different. This is not an issue for a newly added screenshot. But whenever the screenshot changes, its name should change. We recommend using a hash for the screenshot name that depends on its content. You can use any online service to get that hash. We recommend using SHA256 base64. Plenty of online tools exist for that purpose ([example](https://hash.online-convert.com/sha256-generator)).
 
 The reason behind using a file name that depends on the screenshot content is to have a new URL for the screenshot whenever the file content changes. It is mechanism to cache-bust older versions of the screenshot and make sure that users always see the latest version of the screenshot.
 
