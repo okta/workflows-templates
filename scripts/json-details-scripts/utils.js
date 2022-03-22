@@ -1,9 +1,9 @@
 const fs = require("fs");
 
-module.exports.modifierScriptMsg = `You can run the "details_modifier" script to fill in valid data for ALL the workflow json files in the repo.`;
-module.exports.validFloField = ["id", "name", "type", "screenshotURL"];
+const modifierScriptMsg = `You can run the "details_modifier" script to fill in valid data for ALL the workflow json files in the repo.`;
+const validFloField = ["id", "name", "type", "screenshotURL"];
 
-module.exports.getDetailsFromFlopack = function (flopackContent) {
+function getDetailsFromFlopack(flopackContent) {
   const { flos, tables } = flopackContent.data;
   const details = {};
 
@@ -33,36 +33,36 @@ module.exports.getDetailsFromFlopack = function (flopackContent) {
   return details;
 };
 
-module.exports.validateCounts = function (workflowName, detailsFromFlopack, detailsInJSON) {
+function validateCounts(workflowName, detailsFromFlopack, detailsInJSON) {
   const countFields = ["flowCount", "mainFlowsCount", "helperFlowsCount", "stashCount"];
   countFields.forEach((field) => {
     if (detailsInJSON[field] === 0) {
       throw new Error(
-        `The "${field}" field at "${workflowName}/workflow.json" can't be a zero. Zero-value fields should be deleted. ${module.exports.modifierScriptMsg}`
+        `The "${field}" field at "${workflowName}/workflow.json" can't be a zero. Zero-value fields should be deleted. ${modifierScriptMsg}`
       );
     }
 
     if (detailsFromFlopack[field] > 0 && !detailsInJSON[field]) {
       throw new Error(
-        `The "details" field at "${workflowName}/workflow.json" is missing the "${field}" field. ${module.exports.modifierScriptMsg}`
+        `The "details" field at "${workflowName}/workflow.json" is missing the "${field}" field. ${modifierScriptMsg}`
       );
     }
 
     if (field in detailsInJSON && !(field in detailsFromFlopack)) {
       throw new Error(
-        `The "${field}" at "${workflowName}/workflow.json}" should not exist, it's not matching what's in the ".flopack" file. ${module.exports.modifierScriptMsg}`
+        `The "${field}" at "${workflowName}/workflow.json}" should not exist, it's not matching what's in the ".flopack" file. ${modifierScriptMsg}`
       );
     }
 
     if (detailsFromFlopack[field] !== detailsInJSON[field]) {
       throw new Error(
-        `The "details.${field}" field at ${workflowName}/workflow.json is incorrect. ${module.exports.modifierScriptMsg}`
+        `The "details.${field}" field at ${workflowName}/workflow.json is incorrect. ${modifierScriptMsg}`
       );
     }
   });
 };
 
-module.exports.validateFlos = function (workflowName, detailsFromFlopack, detailsInJSON) {
+function validateFlos(workflowName, detailsFromFlopack, detailsInJSON) {
   if ((!detailsFromFlopack.flos || detailsFromFlopack.flos.length === 0) && !detailsInJSON.flos) {
     return;
   }
@@ -70,36 +70,40 @@ module.exports.validateFlos = function (workflowName, detailsFromFlopack, detail
   if (detailsFromFlopack.flos) {
     if (!Array.isArray(detailsInJSON.flos)) {
       throw new Error(
-        `A "details.flos" field (of type array) should exist at "${workflowName}/workflow.json". ${module.exports.modifierScriptMsg}`
+        `A "details.flos" field (of type array) should exist at "${workflowName}/workflow.json". ${modifierScriptMsg}`
       );
     }
 
     if (detailsInJSON.flos.length === 0) {
       throw new Error(
-        `The "details.flos" field at ${workflowName}/workflow.json can't be an empty array. ${module.exports.modifierScriptMsg}`
+        `The "details.flos" field at ${workflowName}/workflow.json can't be an empty array. ${modifierScriptMsg}`
       );
     }
 
     if (JSON.stringify(detailsFromFlopack.flos) !== JSON.stringify(detailsInJSON.flos)) {
       throw new Error(
-        `The flos defined at the "${workflowName}/workflow.json -> details.flos" field don't match what's inside the ".flopack" file of that template. ${module.exports.modifierScriptMsg}`
+        `The flos defined at the "${workflowName}/workflow.json -> details.flos" field don't match what's inside the ".flopack" file of that template. ${modifierScriptMsg}`
       );
     }
 
     detailsInJSON.flos.forEach((flo) => {
-      if (!module.exports.validFloField.every((field) => field in flo)) {
+      if (!validFloField.every((field) => field in flo)) {
         throw new Error(
-          `The flos defined at the "${workflowName}/workflow.json -> details.flos" field contains invalid properties. Allowed fields are: "${module.exports.validFloField.join(
+          `The flos defined at the "${workflowName}/workflow.json -> details.flos" field contains invalid properties. Allowed fields are: "${validFloField.join(
             ", "
-          )}". ${module.exports.modifierScriptMsg}`
+          )}". ${modifierScriptMsg}`
         );
       }
     });
   }
 };
 
-module.exports.validateScreenshots = function (workflowName, flosFromFlopack, flosInJSON) {
-  if (flosFromFlopack.length === 0) return;
+function validateScreenshots(detailsFromFlopack, jsonContent) {
+  const flosFromFlopack = detailsFromFlopack.flos;
+  const flosInJSON = jsonContent.details.flos;
+  const workflowName = jsonContent.name;
+
+  if (detailsFromFlopack.flos.length === 0) return;
 
   try {
     const screenshots = fs.readdirSync(`${process.cwd()}/workflows/${workflowName
@@ -108,7 +112,7 @@ module.exports.validateScreenshots = function (workflowName, flosFromFlopack, fl
       throw new Error(`The "${workflowName}/resources" directory should contain a screenshot for every flow in this template. Currently it has ${screenshots.length} screenshots, but there should be ${flosFromFlopack.length} screenshots.`);
     }
     if (screenshots.length !== flosInJSON.length) {
-      throw new Error(`${screenshots.length} screenshots exists for the "${workflowName}" workflow, but only ${flosInJSON.length} are documented in the "${workflowName}/workflow.json" file. They should match.`);
+      throw new Error(`${screenshots.length} screenshots exists for the "${workflowName}" workflow, but ${flosInJSON.length} are documented in the "${workflowName}/workflow.json" file. These should match.`);
     }
   } catch (error) {
     if (error.code === "ENOENT") {
@@ -122,7 +126,7 @@ module.exports.validateScreenshots = function (workflowName, flosFromFlopack, fl
   }
 };
 
-module.exports.validateUseCases = function (workflowName, floUseCases) {
+function validateUseCases(workflowName, floUseCases) {
   if (!floUseCases) return;
 
   if (!Array.isArray(floUseCases)) {
@@ -152,4 +156,14 @@ module.exports.validateUseCases = function (workflowName, floUseCases) {
       `The use cases assigned to "${workflowName}/workflow.json" are not valid. Make sure the use cases are mentioned in the "useCases.json" file.`
     );
   }
+};
+
+module.exports = {
+  modifierScriptMsg,
+  validFloField,
+  getDetailsFromFlopack,
+  validateCounts,
+  validateFlos,
+  validateScreenshots,
+  validateUseCases
 };

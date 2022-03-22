@@ -23,7 +23,7 @@ workflows.forEach((workflowName) => {
 
     validateCounts(workflowName, detailsFromFlopack, detailsInJSON);
     validateFlos(workflowName, detailsFromFlopack, detailsInJSON);
-    validateScreenshots(workflowName, detailsFromFlopack.flos, detailsInJSON.flos);
+    validateScreenshots(detailsFromFlopack, jsonContent);
     validateUseCases(workflowName, jsonContent.details.useCases);
   });
 });
