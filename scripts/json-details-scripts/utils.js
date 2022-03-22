@@ -108,12 +108,20 @@ function validateScreenshots(detailsFromFlopack, jsonContent) {
   try {
     const screenshots = fs.readdirSync(`${process.cwd()}/workflows/${workflowName
       }/resources`);
+
     if (screenshots.length !== flosFromFlopack.length) {
       throw new Error(`The "${workflowName}/resources" directory should contain a screenshot for every flow in this template. Currently it has ${screenshots.length} screenshots, but there should be ${flosFromFlopack.length} screenshots.`);
     }
+
     if (screenshots.length !== flosInJSON.length) {
       throw new Error(`${screenshots.length} screenshots exists for the "${workflowName}" workflow, but ${flosInJSON.length} are documented in the "${workflowName}/workflow.json" file. These should match.`);
     }
+
+    flosInJSON.forEach(flo => {
+      if (!flo.screenshotURL.includes(`https://d78vv2h34ll3s.cloudfront.net/static/catalog/workflows/${workflowName}/resources/`)) {
+        throw new Error(`Error in "${workflowName}/workflow.json": The screenshotURL for the "${flo.name}" flow is not valid. It should follow the pattern "https://d78vv2h34ll3s.cloudfront.net/static/catalog/workflows/${workflowName}/resources/{IMAGE_NAME}.png"`);
+      }
+    });
   } catch (error) {
     if (error.code === "ENOENT") {
       // resources directory not found
