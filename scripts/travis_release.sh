@@ -43,6 +43,8 @@ array_contains () {
 extract_workflow_dirs_from_pr () {
     local regex='(.*)/(.*)/(.*)'
     IFS=' ' read -r -a array <<< $pr_files
+    echo "PR FILES"
+    echo $pr_files
     for element in $pr_files
     do
         [[ "$element" =~ $regex ]]
