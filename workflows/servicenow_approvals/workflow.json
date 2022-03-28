@@ -11,12 +11,14 @@
       {
         "id": "80080293-4acf-43e2-ae1b-719387d17382",
         "name": "Trigger ServiceNow Approval",
-        "type": "MAIN"
+        "type": "MAIN",
+        "screenshotURL": "https://d78vv2h34ll3s.cloudfront.net/static/catalog/workflows/servicenow_approvals/resources/Vyyuy_RTdRpYevvR5fRBLO0RpjKwEY3K7OW2W0DKbDg.png"
       },
       {
         "id": "ba13b082-94bb-41ee-8a60-9c99c171ab75",
         "name": "Process Resolution",
-        "type": "MAIN"
+        "type": "MAIN",
+        "screenshotURL": "https://d78vv2h34ll3s.cloudfront.net/static/catalog/workflows/servicenow_approvals/resources/BpWqAPwIFfaftALY_lP5vvOrE0ElTRrPVCfrhXbUcCA.png"
       }
     ],
     "flowCount": 2,

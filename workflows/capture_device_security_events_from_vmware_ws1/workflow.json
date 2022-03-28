@@ -10,12 +10,14 @@
       {
         "id": "e687bb19-dac8-47e7-a68f-8741446ad37c",
         "name": "Util.AuthenticateWebhook",
-        "type": "HELPER"
+        "type": "HELPER",
+        "screenshotURL": "https://d78vv2h34ll3s.cloudfront.net/static/catalog/workflows/capture_device_security_events_from_vmware_ws1/resources/3yw4Ow8JDwCuoTFU2OWX13zM2lvxQZb-YMYOyTd5iak.png"
       },
       {
         "id": "c4d800a7-30fc-4132-bb35-463cf0d4fb98",
         "name": "WorkspaceOne.SecurityEvent",
-        "type": "MAIN"
+        "type": "MAIN",
+        "screenshotURL": "https://d78vv2h34ll3s.cloudfront.net/static/catalog/workflows/capture_device_security_events_from_vmware_ws1/resources/XkrKC-8N-XgkaSmuBy7qPYnGk7UOIwgO0f8YTAvUNgQ.png"
       }
     ],
     "flowCount": 2,

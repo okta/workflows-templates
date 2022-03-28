@@ -10,12 +10,14 @@
       {
         "id": "20999fa6-2307-46d8-b564-a8dd9af12d7e",
         "name": "Issue an Email Factor Challenge",
-        "type": "MAIN"
+        "type": "MAIN",
+        "screenshotURL": "https://d78vv2h34ll3s.cloudfront.net/static/catalog/workflows/verify_customer/resources/yJ6vbTtiECoGeK-VjJ9eRb97anvYlvkcZl7O-hUUgMw.png"
       },
       {
         "id": "37cbf824-434e-4c1f-96da-39333bf6e2ca",
         "name": "Verify an Email Factor Challenge",
-        "type": "MAIN"
+        "type": "MAIN",
+        "screenshotURL": "https://d78vv2h34ll3s.cloudfront.net/static/catalog/workflows/verify_customer/resources/JHTuSuAznlAb-IPbqDaiOnJA0DIV5RDzz2Z4dhUd8bc.png"
       }
     ],
     "flowCount": 2,

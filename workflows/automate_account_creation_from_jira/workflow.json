@@ -11,17 +11,20 @@
       {
         "id": "32857370-d609-404f-bfce-49ec98b67dc1",
         "name": "Create and activate new employee accounts",
-        "type": "HELPER"
+        "type": "HELPER",
+        "screenshotURL": "https://d78vv2h34ll3s.cloudfront.net/static/catalog/workflows/automate_account_creation_from_jira/resources/AO3VbngY6YThTU3iLP_ZfB_cMQKzlSC8xMd3WQk1b5A.png"
       },
       {
         "id": "b9c26b78-5a4d-4faf-926c-dae48586e8b8",
         "name": "Find employees starting now",
-        "type": "MAIN"
+        "type": "MAIN",
+        "screenshotURL": "https://d78vv2h34ll3s.cloudfront.net/static/catalog/workflows/automate_account_creation_from_jira/resources/IEeVlwAKENjJJw5Mx8Sv8CnNuhrzIfI6ie69fMfNP5g.png"
       },
       {
         "id": "0e7b0b96-c404-4aee-8eaa-33fcab0d9812",
         "name": "Store new employees from Jira",
-        "type": "MAIN"
+        "type": "MAIN",
+        "screenshotURL": "https://d78vv2h34ll3s.cloudfront.net/static/catalog/workflows/automate_account_creation_from_jira/resources/WrjrAoaBpzUhBynz2iQSj5fE1YXY3dpWmA-mhjzTdCU.png"
       }
     ],
     "flowCount": 3,

@@ -10,7 +10,8 @@
       {
         "id": "73c2c73c-a1d2-4f0c-9092-ef1d64a3718f",
         "name": "[Parent] Create Bookmark App  ",
-        "type": "MAIN"
+        "type": "MAIN",
+        "screenshotURL": "https://d78vv2h34ll3s.cloudfront.net/static/catalog/workflows/initiate_flow_with_api_endpoint/resources/itF6dlvFsBhnCO2DBGa4ql1IWZ2-GxJ1E7WHiTYaa8g.png"
       }
     ],
     "flowCount": 1,

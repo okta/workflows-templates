@@ -10,12 +10,14 @@
       {
         "id": "b92b94d3-6584-495c-9011-6c7584df2675",
         "name": "01. Get.Agreement.Information",
-        "type": "MAIN"
+        "type": "MAIN",
+        "screenshotURL": "https://d78vv2h34ll3s.cloudfront.net/static/catalog/workflows/capture_document_signatures_in_adobe_sign/resources/8oqVGhKOvL3a3FKzpAO5sTIcj-Kq9mHrR35gsZnMso0.png"
       },
       {
         "id": "b568af05-ab6e-42a4-bce2-46a0b75563e9",
         "name": "Setup.Create.AdobeSign.Webhook",
-        "type": "HELPER"
+        "type": "HELPER",
+        "screenshotURL": "https://d78vv2h34ll3s.cloudfront.net/static/catalog/workflows/capture_document_signatures_in_adobe_sign/resources/XVhtJ9meHNO0tzSURMG0wy3sUUNuPha-ExVeiw4OTQU.png"
       }
     ],
     "flowCount": 2,

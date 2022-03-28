@@ -11,12 +11,14 @@
       {
         "id": "c245f9f0-be37-4f98-b0fd-3f229390f63e",
         "name": "Import Users - Helper Flow",
-        "type": "HELPER"
+        "type": "HELPER",
+        "screenshotURL": "https://d78vv2h34ll3s.cloudfront.net/static/catalog/workflows/import_users_google_sheets/resources/lTFYebQ_xR8EPHnwl9W0lNAafVCmWBTpi5U8nMyqa44.png"
       },
       {
         "id": "78aff6f5-9991-4728-b189-e6883ffab2ef",
         "name": "Import Users - Parent Flow",
-        "type": "MAIN"
+        "type": "MAIN",
+        "screenshotURL": "https://d78vv2h34ll3s.cloudfront.net/static/catalog/workflows/import_users_google_sheets/resources/nNwyKl_dnFPZAdvBsSMuLRZd1FZwdj4OL4p_ZIN6ulU.png"
       }
     ],
     "flowCount": 2,

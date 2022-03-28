@@ -11,7 +11,8 @@
       {
         "id": "34ba610c-f66f-468d-867d-8391ccd389ff",
         "name": "Send welcome email to Okta Workflow users",
-        "type": "MAIN"
+        "type": "MAIN",
+        "screenshotURL": "https://d78vv2h34ll3s.cloudfront.net/static/catalog/workflows/send_a_welcome_email_to_new_user_of_an_application/resources/0yolMGTg2WjN8FGXel-7clC8RhjQR4FNDFbo0yNA_LU.png"
       }
     ],
     "flowCount": 1,

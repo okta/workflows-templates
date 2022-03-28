@@ -11,7 +11,8 @@
       {
         "id": "1c762583-7b12-4498-b55f-2ce31a944b63",
         "name": "Create O365 Guest User",
-        "type": "MAIN"
+        "type": "MAIN",
+        "screenshotURL": "https://d78vv2h34ll3s.cloudfront.net/static/catalog/workflows/office365_create_guest_users/resources/juQnLbPsjfav9yHIiERusz6CE3nydegd2Z931pfEt2A.png"
       }
     ],
     "flowCount": 1,

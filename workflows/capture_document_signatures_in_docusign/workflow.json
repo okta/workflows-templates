@@ -10,12 +10,14 @@
       {
         "id": "0d39bee9-d475-4034-ab04-95d1efa0332f",
         "name": "Util.AuthenticateWebhook",
-        "type": "HELPER"
+        "type": "HELPER",
+        "screenshotURL": "https://d78vv2h34ll3s.cloudfront.net/static/catalog/workflows/capture_document_signatures_in_docusign/resources/NBQEve1fl2iDphdqxj_njYncfHOBQES9X_UMvm86Pjg.png"
       },
       {
         "id": "0d9904bc-cb7e-47f2-a889-3e70a5cb5f08",
         "name": "Docusign.ContractSignedWebhook",
-        "type": "MAIN"
+        "type": "MAIN",
+        "screenshotURL": "https://d78vv2h34ll3s.cloudfront.net/static/catalog/workflows/capture_document_signatures_in_docusign/resources/q2fVXRWUQ7eZVgYAkh-ZFGTlycOOB8VIdYWWjWXBAw0.png"
       }
     ],
     "flowCount": 2,

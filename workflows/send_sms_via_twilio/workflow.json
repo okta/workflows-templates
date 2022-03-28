@@ -8,7 +8,8 @@
       {
         "id": "83360537-15a8-430e-b9c1-860e3bba5f1c",
         "name": "SUB - Send SMS via Twilio",
-        "type": "HELPER"
+        "type": "HELPER",
+        "screenshotURL": "https://d78vv2h34ll3s.cloudfront.net/static/catalog/workflows/send_sms_via_twilio/resources/GIxVKxi1MdlIMSP6w2JKFZ64q16q4uzK218CTQR2PeA.png"
       }
     ],
     "flowCount": 1,

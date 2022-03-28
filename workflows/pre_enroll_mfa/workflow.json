@@ -11,12 +11,14 @@
       {
         "id": "eb15fbe3-6124-4c2e-8667-d7eae921b4c8",
         "name": "Pre-enroll MFA",
-        "type": "MAIN"
+        "type": "MAIN",
+        "screenshotURL": "https://d78vv2h34ll3s.cloudfront.net/static/catalog/workflows/pre_enroll_mfa/resources/KD6QW72BUM1WqMiXne1id93-ifxdw4_AuWmc_FuFUPU.png"
       },
       {
         "id": "8e32301d-2786-48f5-8516-b912849a72bd",
         "name": "Add Other factors",
-        "type": "MAIN"
+        "type": "MAIN",
+        "screenshotURL": "https://d78vv2h34ll3s.cloudfront.net/static/catalog/workflows/pre_enroll_mfa/resources/X7PaWXKffvbjFqmHwdxsWyaMihk4hbvpyt54wDzWE7E.png"
       }
     ],
     "flowCount": 2,

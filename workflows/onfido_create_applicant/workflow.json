@@ -10,7 +10,8 @@
       {
         "id": "a0b59714-e3e5-46e6-bd62-d7ce3c178163",
         "name": "[Onfido] UserEvent_Create Applicant",
-        "type": "MAIN"
+        "type": "MAIN",
+        "screenshotURL": "https://d78vv2h34ll3s.cloudfront.net/static/catalog/workflows/onfido_create_applicant/resources/W2VRZ4NW1bHi1WcXQ2zbiXC6OgaF4qUYArTHyJC-ioA.png"
       }
     ],
     "flowCount": 1,

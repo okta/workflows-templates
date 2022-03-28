@@ -10,12 +10,14 @@
       {
         "id": "78ffa8b8-ec73-43f3-8b22-85a28992a8b1",
         "name": "2 - write Administrator role and last login to audit table",
-        "type": "HELPER"
+        "type": "HELPER",
+        "screenshotURL": "https://d78vv2h34ll3s.cloudfront.net/static/catalog/workflows/audit_okta_admin_roles_and_last_login_to_admin_con/resources/ojHhjIVbtgRWsI8lSLqN9xkU0cFwW_tbtTXaf0awzzI.png"
       },
       {
         "id": "2c3dd5a6-3cee-4b26-992f-a0313b789638",
         "name": "1 - Identify all Okta Administrators",
-        "type": "MAIN"
+        "type": "MAIN",
+        "screenshotURL": "https://d78vv2h34ll3s.cloudfront.net/static/catalog/workflows/audit_okta_admin_roles_and_last_login_to_admin_con/resources/U5AK55CjsdKoJecSo46sjKQ5uDMFo9OJclk58hayJR8.png"
       }
     ],
     "flowCount": 2,

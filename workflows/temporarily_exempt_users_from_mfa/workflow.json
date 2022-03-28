@@ -10,17 +10,20 @@
       {
         "id": "6ea5ac1a-6111-47da-a02e-e96df87ef6f6",
         "name": "3.0 Remove Users from MFA Exempt Group",
-        "type": "HELPER"
+        "type": "HELPER",
+        "screenshotURL": "https://d78vv2h34ll3s.cloudfront.net/static/catalog/workflows/temporarily_exempt_users_from_mfa/resources/9l2xrgbuIz8IGo7t71SUAWMDuYrTCdBzUONyGqHFKrY.png"
       },
       {
         "id": "add186dd-2f1b-4400-9255-ed2ebde2cabe",
         "name": "2.0 Find Users to Remove from MFA Exempt Group",
-        "type": "MAIN"
+        "type": "MAIN",
+        "screenshotURL": "https://d78vv2h34ll3s.cloudfront.net/static/catalog/workflows/temporarily_exempt_users_from_mfa/resources/POcRZUhaM6v-RyPxd4Yue7ogNjTKbpfzbYnFJ65Xrtc.png"
       },
       {
         "id": "adace941-c2c2-4749-988b-75280b6beb18",
         "name": "1.0 User Added to MFA Exempt Group",
-        "type": "MAIN"
+        "type": "MAIN",
+        "screenshotURL": "https://d78vv2h34ll3s.cloudfront.net/static/catalog/workflows/temporarily_exempt_users_from_mfa/resources/nKB1GUP3QdmPBepBdt62ZLkVD8-KT8lyrO9gGYrmI_A.png"
       }
     ],
     "flowCount": 3,

@@ -10,12 +10,14 @@
       {
         "id": "8cb81cfa-70c4-4e99-a8a7-d37965527245",
         "name": "Restart Mobile Device",
-        "type": "HELPER"
+        "type": "HELPER",
+        "screenshotURL": "https://d78vv2h34ll3s.cloudfront.net/static/catalog/workflows/restart_specific_apple_mobile_devices_on_a_weekly_/resources/32nJu6MSf99v4r7qaSySJNi1YTqsDJ42Yidw1dYb8wY.png"
       },
       {
         "id": "9c8a1a02-931e-43cf-90bb-63ea24e2a021",
         "name": "Restart Mobile Devices Weekly",
-        "type": "MAIN"
+        "type": "MAIN",
+        "screenshotURL": "https://d78vv2h34ll3s.cloudfront.net/static/catalog/workflows/restart_specific_apple_mobile_devices_on_a_weekly_/resources/VBrE2l3zNZZa9n6MlqokOF2fz48ou4j7hM5PyLrroF8.png"
       }
     ],
     "flowCount": 2,

@@ -8,12 +8,14 @@
       {
         "id": "20117aa2-7df9-4bde-9629-ebce1e3b1a76",
         "name": "[Subflow 1.1] Create Row In Okta Tables",
-        "type": "HELPER"
+        "type": "HELPER",
+        "screenshotURL": "https://d78vv2h34ll3s.cloudfront.net/static/catalog/workflows/make_api_requests_http_card/resources/mMZyzuIPmfCfBBBJWw3oHWMS_DGB4pusvtd3vP35QUA.png"
       },
       {
         "id": "0ae95d84-e4b5-4121-97f4-585066009900",
         "name": "Pet Store API-start to test endpoint",
-        "type": "HELPER"
+        "type": "HELPER",
+        "screenshotURL": "https://d78vv2h34ll3s.cloudfront.net/static/catalog/workflows/make_api_requests_http_card/resources/Klz85-Svn3csef6caSB9eIgGaUahsZnABChGKoN0Cz0.png"
       }
     ],
     "flowCount": 2,
