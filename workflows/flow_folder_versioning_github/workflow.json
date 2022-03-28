@@ -12,20 +12,17 @@
       {
         "id": "9723230b-7efe-40e2-ba74-fc9c62488a7a",
         "name": "Exported Notification Flow",
-        "type": "MAIN",
-        "screenshotURL": "https://d78vv2h34ll3s.cloudfront.net/static/catalog/workflows/flow_folder_versioning_github/resources/NXZWvwdtPzf2PBWxCNgTkZBWIsELN6btYwaUWYs3dio.png"
+        "type": "MAIN"
       },
       {
         "id": "5927607d-3025-44d5-b946-948420399aef",
         "name": "Export Flow and Open PR in Github",
-        "type": "HELPER",
-        "screenshotURL": "https://d78vv2h34ll3s.cloudfront.net/static/catalog/workflows/flow_folder_versioning_github/resources/L9nQ0vJ9WfxqInxK_GAncLAmdDmwinCoi7sp9S5oySo.png"
+        "type": "HELPER"
       },
       {
         "id": "2a3eb9bd-0721-4c7a-9102-1dbe783ff1e3",
         "name": "Export Flow and Make Commit in Github",
-        "type": "HELPER",
-        "screenshotURL": "https://d78vv2h34ll3s.cloudfront.net/static/catalog/workflows/flow_folder_versioning_github/resources/Jl-KaUdAWbup-U6jUxRMyadzGcbZNrzrE8dMQjeTME0.png"
+        "type": "HELPER"
       }
     ],
     "flowCount": 3,

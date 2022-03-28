@@ -110,7 +110,7 @@ H. Search issues using JQL using [Jira Query Language (JQL)](https://www.google.
 
 -   **Store new employees from Jira**: This Flow is automatically triggered when an issue (that meets the JQL) is updated in Jira. This flow stores information about the new employee in the *New Employee* table.
 -   **Find employees starting now**: This Flow should be scheduled (example: every hour) This Flow retrieves rows from **New Employee** table based on new employee start day and time.
--   **Create and activate new employee accounts**: This child Flow creates and activated new users.
+-   **Create and activate new employee accounts**: This helper Flow creates and activated new users.
 2.  Configured Okta Connection. Steps to configure are posted at [https://help.okta.com/wf/en-us/Content/Topics/Workflows/workflow-connect-your-applications.htm#Authenti](https://help.okta.com/wf/en-us/Content/Topics/Workflows/workflow-connect-your-applications.htm#Authenti)
 3.  Configured Jira Connection. Steps to configure are posted at [https://help.okta.com/en/prod/Content/Topics/Workflows/connector-reference/jira/jira.htm](https://help.okta.com/en/prod/Content/Topics/Workflows/connector-reference/jira/jira.htm)
 4.  Open Flow **Store new employees from Jira**. Check the **Jira connection**, Project and JQL Query inside **Options**.

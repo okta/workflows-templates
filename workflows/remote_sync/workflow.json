@@ -9,39 +9,33 @@
     "flos": [
       {
         "id": "ac4155fd-99da-4022-a8f6-714001fc7f76",
-        "name": "[child]Update User Via API",
-        "type": "HELPER",
-        "screenshotURL": "https://d78vv2h34ll3s.cloudfront.net/static/catalog/workflows/remote_sync/resources/KfWNFbVMvAOPfxweGPtCNvGU_t5pHKMlCwVgUgxrjxc.png"
+        "name": "[helper]Update User Via API",
+        "type": "HELPER"
       },
       {
         "id": "08531126-2a8c-427e-bcfc-87b7e5677e24",
-        "name": "[child]Create User Via API",
-        "type": "HELPER",
-        "screenshotURL": "https://d78vv2h34ll3s.cloudfront.net/static/catalog/workflows/remote_sync/resources/cnQpIRFlxFU5eRQH3ZQ5id_MmdYTp7FyFWy4WisDOMI.png"
+        "name": "[helper]Create User Via API",
+        "type": "HELPER"
       },
       {
         "id": "b9429dae-aca6-4682-86fd-d8a5ea020c0f",
-        "name": "[child]Delete User Via API",
-        "type": "HELPER",
-        "screenshotURL": "https://d78vv2h34ll3s.cloudfront.net/static/catalog/workflows/remote_sync/resources/aZsOZB86-EU25vkwPwIZy9bqjhC7yNtBpomQpsST2Ok.png"
+        "name": "[helper]Delete User Via API",
+        "type": "HELPER"
       },
       {
         "id": "1280ba39-a03d-49e5-b340-a6c87782c91a",
         "name": "Event Update User of Group",
-        "type": "MAIN",
-        "screenshotURL": "https://d78vv2h34ll3s.cloudfront.net/static/catalog/workflows/remote_sync/resources/1mNrmpU00vCWkhZdNXzqBswHE6z88jm-_orUu_wIDpI.png"
+        "type": "MAIN"
       },
       {
         "id": "2e37046f-42c2-46fc-a053-db48a39b9f73",
         "name": "Event Add user to Group",
-        "type": "MAIN",
-        "screenshotURL": "https://d78vv2h34ll3s.cloudfront.net/static/catalog/workflows/remote_sync/resources/dX6_uJRVwuYvtdsttKoykxHaNV_N4nmPTncEyJIsbH4.png"
+        "type": "MAIN"
       },
       {
         "id": "1bb69bca-74c3-4190-ad95-e870cd2a1022",
         "name": "Event Remove user From Group",
-        "type": "MAIN",
-        "screenshotURL": "https://d78vv2h34ll3s.cloudfront.net/static/catalog/workflows/remote_sync/resources/JqeJlmc9TcyqKzapjDyRyiHSOYZmlx2vZgen2fX_NEM.png"
+        "type": "MAIN"
       }
     ],
     "flowCount": 6,

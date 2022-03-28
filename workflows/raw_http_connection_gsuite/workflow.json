@@ -10,8 +10,7 @@
       {
         "id": "d04b2da5-85da-4205-9d06-e627d291c0d2",
         "name": "Gsuite test",
-        "type": "MAIN",
-        "screenshotURL": "https://d78vv2h34ll3s.cloudfront.net/static/catalog/workflows/raw_http_connection_gsuite/resources/8BZVKYLvxkvnu1mwDVD0-hmwPvf5Av_HbaBZ0x-3g7c.png"
+        "type": "MAIN"
       }
     ],
     "flowCount": 1,

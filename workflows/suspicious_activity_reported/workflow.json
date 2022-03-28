@@ -11,8 +11,7 @@
       {
         "id": "ffb3d1a8-801a-40eb-a086-51b263e401b1",
         "name": "Suspicious Activity Reported",
-        "type": "MAIN",
-        "screenshotURL": "https://d78vv2h34ll3s.cloudfront.net/static/catalog/workflows/suspicious_activity_reported/resources/-mB1QY4vMihI7XE7JqSXGgp0BtZiq_dCFxlD8U1813E.png"
+        "type": "MAIN"
       }
     ],
     "flowCount": 1,

@@ -11,8 +11,7 @@
       {
         "id": "d1d27864-8548-4027-af89-e4d2f8141824",
         "name": "All MFA Factors reset",
-        "type": "MAIN",
-        "screenshotURL": "https://d78vv2h34ll3s.cloudfront.net/static/catalog/workflows/trigger_notifications_when_all_mfa_factors_are_res/resources/3VTYttC47vgIB6xpEdWzEPA3eaZs3chQTniwWJoXwi8.png"
+        "type": "MAIN"
       }
     ],
     "flowCount": 1,

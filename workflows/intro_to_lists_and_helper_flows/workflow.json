@@ -1,0 +1,46 @@
+{
+  "name": "intro_to_lists_and_helper_flows",
+  "title": "Intro to Lists and Helper Flows",
+  "description": "Much of the data we are working with is presented as a list. Think of a list of user objects, list of applications objects, etc. Workflows allows you to process lists in a comprehensive manner leveraging Helper Flows to operate on each member of the list.  There are a number of ways to process a list. Performing a discrete action on each item without returning anything to the Parent Flow is very common, as well as, keeping a cumulative output of each item iteration that can be returned to the Parent Flow. There are many other List operations. Check our in app documentation for details. Helper Flows are simply subroutines that exist as a separate flow but can only be called from a main or Parent Flow. Helper Flows are very useful not only for the above mentioned List processing, but for code reusability, team contributions and code cleanup.",
+  "connectors": [
+    "okta",
+    "slack"
+  ],
+  "details": {
+    "flos": [
+      {
+        "id": "e64e15b8-23d8-4826-bd7b-4d3ae3cb3d1c",
+        "name": "[Helper -1] IterateList",
+        "type": "HELPER"
+      },
+      {
+        "id": "5e56e56e-9544-46cb-a03f-b953777673b7",
+        "name": "[Helper -2] ReduceList",
+        "type": "HELPER"
+      },
+      {
+        "id": "4bf1c9fd-e2fd-439a-adb7-cb339730b9e6",
+        "name": "[Slack] Send Slack Message",
+        "type": "HELPER"
+      },
+      {
+        "id": "b448e789-445d-4ace-8854-300bcc7f3b13",
+        "name": "[Parent] List example ",
+        "type": "MAIN"
+      }
+    ],
+    "flowCount": 4,
+    "helperFlowsCount": 3,
+    "mainFlowsCount": 1
+  },
+  "links": [
+    {
+      "title": "Video Walk-through",
+      "destination": "https://www.youtube.com/watch?v=dOH8mjK8gYQ"
+    },
+    {
+      "title": "Setup Documentation",
+      "destination": "https://github.com/okta/workflows-templates/blob/master/workflows/intro_to_lists_and_helper_flows/readme.md"
+    }
+  ]
+}

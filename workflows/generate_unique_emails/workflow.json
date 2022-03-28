@@ -12,56 +12,47 @@
       {
         "id": "e7e5a964-e7c4-4f9f-81b4-d5fdf618579c",
         "name": "Generate-ProxyAddress",
-        "type": "HELPER",
-        "screenshotURL": "https://d78vv2h34ll3s.cloudfront.net/static/catalog/workflows/generate_unique_emails/resources/4LdJ1yXxz1Nceexqp0girHcgSRiYwtQtp1uBhAxfHus.png"
+        "type": "HELPER"
       },
       {
         "id": "55429600-4807-4286-9b4a-8ca72f551b15",
         "name": "EmailDomainmatch",
-        "type": "HELPER",
-        "screenshotURL": "https://d78vv2h34ll3s.cloudfront.net/static/catalog/workflows/generate_unique_emails/resources/P3oDrEB1lZGUQCeYOEDOaMAbIXa7DcCAmIwVSAbmdxM.png"
+        "type": "HELPER"
       },
       {
         "id": "6755c858-cac9-4df4-b177-f8ddf55dc611",
         "name": "003-CSUB-emailDeDuplication-V2",
-        "type": "HELPER",
-        "screenshotURL": "https://d78vv2h34ll3s.cloudfront.net/static/catalog/workflows/generate_unique_emails/resources/X99IcEa2Nt0-or3825aMG0IKQzJcf1bnmnDmxVRKjb8.png"
+        "type": "HELPER"
       },
       {
         "id": "c09215b0-3aaa-48f9-bad0-e1f8dac9c310",
         "name": "004-CSUB-filterCompareLength-V2",
-        "type": "HELPER",
-        "screenshotURL": "https://d78vv2h34ll3s.cloudfront.net/static/catalog/workflows/generate_unique_emails/resources/3OTeVLQLVGOjqjw-otEuKq60nBzwPP1_SL09_ZRAWf4.png"
+        "type": "HELPER"
       },
       {
         "id": "f2c34fd5-3b5a-46f2-b288-b2ab9b4a1a74",
         "name": "022-SUB-getEmailPrefix-V1 ",
-        "type": "HELPER",
-        "screenshotURL": "https://d78vv2h34ll3s.cloudfront.net/static/catalog/workflows/generate_unique_emails/resources/K5HOL5pAfAOClXYUxvfWmcf8AgIs8x7My-TgHBpJtbk.png"
+        "type": "HELPER"
       },
       {
         "id": "e3bd1c90-267d-4f19-bbd5-18a0bc667c48",
         "name": "Okta-New-Email-Generation",
-        "type": "MAIN",
-        "screenshotURL": "https://d78vv2h34ll3s.cloudfront.net/static/catalog/workflows/generate_unique_emails/resources/xIDBVeJ67CShDTVhWKqX-yUlGugYKtaPMmvP3AHNb8M.png"
+        "type": "MAIN"
       },
       {
         "id": "f86976db-68d1-4622-a2aa-7da51a689724",
         "name": "O365-Email-Generation",
-        "type": "MAIN",
-        "screenshotURL": "https://d78vv2h34ll3s.cloudfront.net/static/catalog/workflows/generate_unique_emails/resources/sZpSa1129yLNddtGRRsUUgGixcFbYtNSShCCmZfnh50.png"
+        "type": "MAIN"
       },
       {
         "id": "c900ce0a-ff08-4fbc-9c6f-c40918f7c4a6",
         "name": "Google-Email-Generation",
-        "type": "MAIN",
-        "screenshotURL": "https://d78vv2h34ll3s.cloudfront.net/static/catalog/workflows/generate_unique_emails/resources/Lqcb_z0VF9X3-LWqDVfW-iYGgIK7GluCLMGo-5TlSAM.png"
+        "type": "MAIN"
       },
       {
         "id": "f94b1e29-5bd7-4b51-8804-0ed3348b525b",
         "name": "MultiDomain-Email-Generation",
-        "type": "MAIN",
-        "screenshotURL": "https://d78vv2h34ll3s.cloudfront.net/static/catalog/workflows/generate_unique_emails/resources/yF6C0B8Vz1y4Qu4VFuI1M7m460fABBX1TVIo06iQVX8.png"
+        "type": "MAIN"
       }
     ],
     "flowCount": 9,

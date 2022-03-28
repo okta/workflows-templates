@@ -1331,7 +1331,7 @@ style="overflow: hidden; display: inline-block; margin: -0.00px 0.00px; border: 
 
 ## Testing this Flow
 
-1.  <span class="c8">The workflow is configured to execute as child
+1.  <span class="c8">The workflow is configured to execute as helper
     flow, which means that it needs to either be invoked by a parent
     flow or be manually executed. To do this, select the “</span> <span
     class="c5">SetLogonHours</span> <span class="c0">” flow.</span>

@@ -8,32 +8,27 @@
       {
         "id": "0e88f804-8a20-43fe-99f3-df0b821b5288",
         "name": "CleanUp.02.Delete.Row",
-        "type": "HELPER",
-        "screenshotURL": "https://d78vv2h34ll3s.cloudfront.net/static/catalog/workflows/execute_onpremise_powershell_with_okta_workflows/resources/ropznkZIUEiY1qBCCJJIFQtPcwNjaWK6QnBAHrIpNiM.png"
+        "type": "HELPER"
       },
       {
         "id": "2ad525d3-b7a5-4d57-8432-0638867493f0",
         "name": "[1.1] Get Azure Automation Job Status",
-        "type": "HELPER",
-        "screenshotURL": "https://d78vv2h34ll3s.cloudfront.net/static/catalog/workflows/execute_onpremise_powershell_with_okta_workflows/resources/mh5waVUQXso4NAe34ohjUA3w2jIb4q1lX67Ll7I-0n8.png"
+        "type": "HELPER"
       },
       {
         "id": "6c0a871f-fc5e-4cd9-adc5-402385029f6c",
         "name": "SetLogonHours",
-        "type": "HELPER",
-        "screenshotURL": "https://d78vv2h34ll3s.cloudfront.net/static/catalog/workflows/execute_onpremise_powershell_with_okta_workflows/resources/g6xcUB-65TDTZw5MAignfw6Pip99-sauS69bYtyULe4.png"
+        "type": "HELPER"
       },
       {
         "id": "29243188-2464-4708-a8db-9f3626283657",
         "name": "CleanUp.01.Search.Table.Entries",
-        "type": "MAIN",
-        "screenshotURL": "https://d78vv2h34ll3s.cloudfront.net/static/catalog/workflows/execute_onpremise_powershell_with_okta_workflows/resources/BEM7xT-n5RSb6WkaACrd4zHEOkjOzBTRUlLqD1qYCaw.png"
+        "type": "MAIN"
       },
       {
         "id": "5dd9ce72-b5c1-460b-ab68-29b6efb42a06",
         "name": "[1.0] Review Azure Automation Jobs",
-        "type": "MAIN",
-        "screenshotURL": "https://d78vv2h34ll3s.cloudfront.net/static/catalog/workflows/execute_onpremise_powershell_with_okta_workflows/resources/OMFLUSphmmbEIsWIXJ14iRMi7xYdBoJf1YbuQKRAAf8.png"
+        "type": "MAIN"
       }
     ],
     "flowCount": 5,

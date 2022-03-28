@@ -11,32 +11,27 @@
       {
         "id": "2566da78-3a1c-4604-ad7e-27ee786677c6",
         "name": "2.2 Update customer address in Shopify",
-        "type": "HELPER",
-        "screenshotURL": "https://d78vv2h34ll3s.cloudfront.net/static/catalog/workflows/automatically_sync_shopify_customer_identity/resources/Rr1k9qf2JTaFFM9g1mx7M4-3PICqfA0th0HNWGoscWE.png"
+        "type": "HELPER"
       },
       {
         "id": "aa6c955e-2410-4684-ada8-50f428d907f8",
         "name": "2.1 Update customer profile in Shopify",
-        "type": "HELPER",
-        "screenshotURL": "https://d78vv2h34ll3s.cloudfront.net/static/catalog/workflows/automatically_sync_shopify_customer_identity/resources/GuuNFWkFfJmdmgyP4IcxVKVur9CbgBbcu5yoLwpPlrE.png"
+        "type": "HELPER"
       },
       {
         "id": "0597ae3e-fb40-4172-9791-b3636ed942c8",
         "name": "2. Update customer in Shopify",
-        "type": "MAIN",
-        "screenshotURL": "https://d78vv2h34ll3s.cloudfront.net/static/catalog/workflows/automatically_sync_shopify_customer_identity/resources/FKVcZb_pn3bC-N9SAdKMEBMQF0jOsdOLf_imuPaI2RI.png"
+        "type": "MAIN"
       },
       {
         "id": "606d7dd0-55c5-457d-b452-6e8eb359fb6c",
         "name": "3. Delete customer in Shopify",
-        "type": "MAIN",
-        "screenshotURL": "https://d78vv2h34ll3s.cloudfront.net/static/catalog/workflows/automatically_sync_shopify_customer_identity/resources/qmGoizn-8_3LCpz_TRpPNqd7pk3kp16bA7P1J9KApDc.png"
+        "type": "MAIN"
       },
       {
         "id": "8ab8c344-82b4-4bc8-8b47-0946575e06ed",
         "name": "1. Create customer in Shopify",
-        "type": "MAIN",
-        "screenshotURL": "https://d78vv2h34ll3s.cloudfront.net/static/catalog/workflows/automatically_sync_shopify_customer_identity/resources/RvxhSfa2-epolwl6yBnvxU54CUxqtmvv4zh5tpr-siA.png"
+        "type": "MAIN"
       }
     ],
     "flowCount": 5,

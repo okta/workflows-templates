@@ -11,20 +11,17 @@
       {
         "id": "2133f03d-4a01-4cf7-a709-170be4f7044e",
         "name": "Send Lock Command To Mobile Device",
-        "type": "HELPER",
-        "screenshotURL": "https://d78vv2h34ll3s.cloudfront.net/static/catalog/workflows/lock_apple_devices_upon_user_offboarding_with_okta/resources/JvKZYNRnb54oKD338FRK3GfOgW_iFpyxBE5xiRoYqX8.png"
+        "type": "HELPER"
       },
       {
         "id": "dd76d492-bd50-471f-ad50-5a7bf55cd4c7",
         "name": "Send Lock Command To Computer",
-        "type": "HELPER",
-        "screenshotURL": "https://d78vv2h34ll3s.cloudfront.net/static/catalog/workflows/lock_apple_devices_upon_user_offboarding_with_okta/resources/glWlnyvpJlMS34AYS05RYNsreVgUdM5kIhsKaoYmuGo.png"
+        "type": "HELPER"
       },
       {
         "id": "ffb6e260-7bd9-4c2d-ad83-b9d1454dca07",
         "name": "Lock Devices When User Is Deactivated",
-        "type": "MAIN",
-        "screenshotURL": "https://d78vv2h34ll3s.cloudfront.net/static/catalog/workflows/lock_apple_devices_upon_user_offboarding_with_okta/resources/Rx3tjb7SRefu7tqWaFzOVshZ4yEUBbKLaMWEIWkjScQ.png"
+        "type": "MAIN"
       }
     ],
     "flowCount": 3,

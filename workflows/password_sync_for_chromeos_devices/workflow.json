@@ -10,8 +10,7 @@
       {
         "id": "13d62c4c-6de5-46f3-86f6-24a08ba3e1a7",
         "name": "ChromeOS - Password changed API",
-        "type": "MAIN",
-        "screenshotURL": "https://d78vv2h34ll3s.cloudfront.net/static/catalog/workflows/password_sync_for_chromeos_devices/resources/ZLtWqiBeLuq5Al7q8LwA200hthTB_vFJZ5udOPQPtl0.png"
+        "type": "MAIN"
       }
     ],
     "flowCount": 1,

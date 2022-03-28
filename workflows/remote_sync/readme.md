@@ -7,7 +7,7 @@ Many Customer Identify and Access Management customers have multiple user stores
 
 This integration uses Okta Group membership to identify the users to be synced. Adding a user to the group initiates the user creation in the remote system. Removing a user from the group deletes the user from the remote system.
 
-In this sample, the user's name, address, and email are synced to the remote system. The flows can be modified to change attribute sync requirements. The implementation uses a modular approach that splits the downstream CRUD operations into child flows to facilitate adaptation to complex environments.
+In this sample, the user's name, address, and email are synced to the remote system. The flows can be modified to change attribute sync requirements. The implementation uses a modular approach that splits the downstream CRUD operations into helper flows to facilitate adaptation to complex environments.
 
 ## Prerequisites
 
@@ -29,9 +29,9 @@ In this sample, the user's name, address, and email are synced to the remote sys
     * Event Add User to Group
     If the connection is not selected automatically, select the necessary connection manually.
 3. For the following flows, modify API URL and API Request JSON to match your remote system requirements:
-    * [child]Create User via API
-    * [child]Update User via API
-    * [child]Delete User via API
+    * [helper]Create User via API
+    * [helper]Update User via API
+    * [helper]Delete User via API
    Select an appropriate HTTP connection of "none" for the "HTTP Raw Request" card
 4. Create an Okta group named "API Provisioning Group"
 5. Add a custom attribute to the Okta user profile name = 'customId' type=string
@@ -40,9 +40,9 @@ In this sample, the user's name, address, and email are synced to the remote sys
     *   Event Update User of Group
     *   Event Remove user From Group
     *   Event Add user to Group
-    *   [child]Update User Via API
-    *   [child]Delete User Via API
-    *   [child]Create User Via API
+    *   [helper]Update User Via API
+    *   [helper]Delete User Via API
+    *   [helper]Create User Via API
 
 
 ## Testing these Flows

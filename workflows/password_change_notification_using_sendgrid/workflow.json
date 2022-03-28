@@ -11,8 +11,7 @@
       {
         "id": "076cf095-aae5-4f65-ab74-505c904d9b87",
         "name": "[Sendgrid] PasswordChangeNotification",
-        "type": "MAIN",
-        "screenshotURL": "https://d78vv2h34ll3s.cloudfront.net/static/catalog/workflows/password_change_notification_using_sendgrid/resources/JCKub2rrY37dsrNf1pAqBsbBYf6HlrZ8AKwIqAUeuwM.png"
+        "type": "MAIN"
       }
     ],
     "flowCount": 1,

@@ -9,15 +9,13 @@
     "flos": [
       {
         "id": "f2869678-d1cd-4d93-a2a6-351873e7acff",
-        "name": "Inactivity-based Suspension - Child Flow ",
-        "type": "HELPER",
-        "screenshotURL": "https://d78vv2h34ll3s.cloudfront.net/static/catalog/workflows/suspend_inactive_users/resources/txXHaut7LoXq0xbZjtNVNjBxmAPH0m3WZn2du1IRsUY.png"
+        "name": "Inactivity-based Suspension - Helper Flow ",
+        "type": "HELPER"
       },
       {
         "id": "f2dfb299-6056-4e03-b08c-3e550b3e6128",
         "name": "Inactivity-based Suspension - Parent Flow",
-        "type": "MAIN",
-        "screenshotURL": "https://d78vv2h34ll3s.cloudfront.net/static/catalog/workflows/suspend_inactive_users/resources/Sp1DddLxF5tp4pgROsIwutj6iueMmO1Nz996Q5LgiSc.png"
+        "type": "MAIN"
       }
     ],
     "flowCount": 2,

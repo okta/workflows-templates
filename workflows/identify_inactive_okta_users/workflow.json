@@ -10,14 +10,12 @@
       {
         "id": "cfa530e8-e79a-408f-a811-66512fc3a09b",
         "name": "Check Last Login date and add to table",
-        "type": "HELPER",
-        "screenshotURL": "https://d78vv2h34ll3s.cloudfront.net/static/catalog/workflows/identify_inactive_okta_users/resources/IQxRPD5EjsUzaloyWx41j-gBQ9MgKmafD9i1JUuTHTQ.png"
+        "type": "HELPER"
       },
       {
         "id": "4485ed57-87a6-4f79-8f26-74e7a577de94",
         "name": "[scheduled] identify inactive Okta users",
-        "type": "MAIN",
-        "screenshotURL": "https://d78vv2h34ll3s.cloudfront.net/static/catalog/workflows/identify_inactive_okta_users/resources/c5POfI416BDIF26qFGH1HWUNBIDBIZ5bVWMUZgw301Y.png"
+        "type": "MAIN"
       }
     ],
     "flowCount": 2,
