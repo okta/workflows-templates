@@ -19,13 +19,13 @@
         "id": "5927607d-3025-44d5-b946-948420399aef",
         "name": "Export Flow and Open PR in Github",
         "type": "HELPER",
-        "screenshotURL": "https://d78vv2h34ll3s.cloudfront.net/static/catalog/workflows/flow_folder_versioning_github/resources/rTfpD4Fqnd93PG8SZwieQdgZFxq64Om9ohetE3p1TMQ.png"
+        "screenshotURL": "https://d78vv2h34ll3s.cloudfront.net/static/catalog/workflows/flow_folder_versioning_github/resources/KL-gHCAMOvvTqvjGo0bLH9pvGTJzxotvZpdiv9s9564.png"
       },
       {
         "id": "2a3eb9bd-0721-4c7a-9102-1dbe783ff1e3",
         "name": "Export Flow and Make Commit in Github",
         "type": "HELPER",
-        "screenshotURL": "https://d78vv2h34ll3s.cloudfront.net/static/catalog/workflows/flow_folder_versioning_github/resources/rYK9WYrYza7MXV2NtUyEqsQTfyD0NOFRVV4FFT3b2E0.png"
+        "screenshotURL": "https://d78vv2h34ll3s.cloudfront.net/static/catalog/workflows/flow_folder_versioning_github/resources/-jJFO47afZr_ZQ7oS051TdfOy9TKWWxqzItSKeu5brc.png"
       }
     ],
     "flowCount": 3,

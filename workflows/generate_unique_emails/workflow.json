@@ -25,13 +25,13 @@
         "id": "6755c858-cac9-4df4-b177-f8ddf55dc611",
         "name": "003-CSUB-emailDeDuplication-V2",
         "type": "HELPER",
-        "screenshotURL": "https://d78vv2h34ll3s.cloudfront.net/static/catalog/workflows/generate_unique_emails/resources/N3iarIdIndxeETX18Lc_3WXjdOra0VZ7GfBDXtwbVkU.png"
+        "screenshotURL": "https://d78vv2h34ll3s.cloudfront.net/static/catalog/workflows/generate_unique_emails/resources/ApEBhXbK8_hYie0CI6WwkkS65vIpMYO28B7VEgsp78g.png"
       },
       {
         "id": "c09215b0-3aaa-48f9-bad0-e1f8dac9c310",
         "name": "004-CSUB-filterCompareLength-V2",
         "type": "HELPER",
-        "screenshotURL": "https://d78vv2h34ll3s.cloudfront.net/static/catalog/workflows/generate_unique_emails/resources/oBGoJUsvAxuL9oV_0H_sjKfQswuCxFd8PAUCpcCuWck.png"
+        "screenshotURL": "https://d78vv2h34ll3s.cloudfront.net/static/catalog/workflows/generate_unique_emails/resources/RAlDKDNWH0u6DODEnqiBBBFxlJfHINjOdJJ_aTZTANE.png"
       },
       {
         "id": "f2c34fd5-3b5a-46f2-b288-b2ab9b4a1a74",
@@ -43,7 +43,7 @@
         "id": "e3bd1c90-267d-4f19-bbd5-18a0bc667c48",
         "name": "Okta-New-Email-Generation",
         "type": "MAIN",
-        "screenshotURL": "https://d78vv2h34ll3s.cloudfront.net/static/catalog/workflows/generate_unique_emails/resources/ibU5oKmSXV5oOMg10ylMCzQtBVsjP7mJYTuJzNIf5Ss.png"
+        "screenshotURL": "https://d78vv2h34ll3s.cloudfront.net/static/catalog/workflows/generate_unique_emails/resources/IA593zGWNQVM28ZspWXJe4ggjJvxVU9cMYGMgCxoMrU.png"
       },
       {
         "id": "f86976db-68d1-4622-a2aa-7da51a689724",
