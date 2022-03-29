@@ -137,6 +137,7 @@ validate_connectors () {
 validate_workflow_files () {
     for dir in "${directories[@]}"
     do
+        # account for deleted/renamed directories
         if [ ! -d "${const_workflow}/${dir}" ]; then
             continue
         fi
