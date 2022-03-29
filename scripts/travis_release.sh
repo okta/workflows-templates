@@ -13,12 +13,12 @@ if [ -z "$1" ]
         # running travis-ci config
         branch_name=$TRAVIS_BRANCH
         base_dir=$TRAVIS_BUILD_DIR
-        pr_files="$(git diff --name-only --diff-filter=ACMR master...${branch_name} --)"
+        pr_files="$(git diff --name-only --diff-filter=ACMR ${branch_name}...HEAD --)"
     else
         # running local config
         branch_name=$1
         base_dir=$PWD
-        pr_files="$(git diff --name-only --diff-filter=ACMR master..${branch_name} --)"
+        pr_files="$(git diff --name-only --diff-filter=ACMR ${branch_name}..master --)"
 fi
 # get only pull request files from branch.
 echo "base dir is ${base_dir}"
