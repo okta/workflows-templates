@@ -13,7 +13,7 @@ if [ -z "$1" ]
         # running travis-ci config
         branch_name=$TRAVIS_BRANCH
         base_dir=$TRAVIS_BUILD_DIR
-        pr_files="$(git diff --name-only --diff-filter=ACMR HEAD...${branch_name} --)"
+        pr_files="$(git diff --name-only --diff-filter=ACMR master...${branch_name} --)"
     else
         # running local config
         branch_name=$1
