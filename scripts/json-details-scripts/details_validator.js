@@ -19,7 +19,7 @@ workflows.forEach((workflowName) => {
       fs.readFileSync(`${workflowsDir}/${workflowName}/workflow.json`).toString()
     );
     const detailsInJSON = jsonContent.details;
-    const jsonDetailsWithoutScreenshots = { ...detailsInJSON };
+    const jsonDetailsWithoutScreenshots = JSON.parse(JSON.stringify(detailsInJSON));
     jsonDetailsWithoutScreenshots.flos.forEach(flo => {
       delete flo.screenshotURL;
     });

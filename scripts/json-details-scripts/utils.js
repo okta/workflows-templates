@@ -113,12 +113,12 @@ function validateScreenshots(detailsFromFlopack, jsonContent) {
     }
 
     if (screenshots.length !== flosInJSON.length) {
-      throw new Error(`${screenshots.length} screenshots exists for the "${workflowName}" workflow, but ${flosInJSON.length} are documented in the "${workflowName}/workflow.json" file. These should match.`);
+      throw new Error(`${screenshots.length} screenshots exists for the "${workflowName}" workflow, but ${flosInJSON.length} are documented in the "${workflowName}/workflow.json" file. They should match.`);
     }
 
     flosInJSON.forEach(flo => {
       if (!flo.screenshotURL.includes(`https://d78vv2h34ll3s.cloudfront.net/static/catalog/workflows/${workflowName}/resources/`)) {
-        throw new Error(`Error in "${workflowName}/workflow.json": The screenshotURL for the "${flo.name}" flow is not valid. It should follow the pattern "https://d78vv2h34ll3s.cloudfront.net/static/catalog/workflows/${workflowName}/resources/{IMAGE_NAME}.png"`);
+        throw new Error(`Error in "${workflowName}/workflow.json": The screenshotURL for the "${flo.name}" flow is not valid. It should follow the pattern "https://d78vv2h34ll3s.cloudfront.net/static/catalog/workflows/${workflowName}/resources/{IMAGE_HASH}.png". Check the README of the repo for more info.`);
       }
     });
   } catch (error) {
