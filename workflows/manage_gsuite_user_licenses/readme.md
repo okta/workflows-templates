@@ -67,8 +67,8 @@ Along with the connectors specified above you will need:
 4. Turn on the following flows:
 
     *   G Suite Store License flow
-    *   [Child] Delete Row from Table
-    *   [Child] Add License Row to Table
+    *   [Helper] Delete Row from Table
+    *   [Helper] Add License Row to Table
 
 5. Open the G Suite Store License flow
 

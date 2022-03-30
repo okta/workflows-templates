@@ -19,11 +19,16 @@ workflows.forEach((workflowName) => {
       fs.readFileSync(`${workflowsDir}/${workflowName}/workflow.json`).toString()
     );
     const detailsInJSON = jsonContent.details;
+    const jsonDetailsWithoutScreenshots = { ...detailsInJSON };
+    jsonDetailsWithoutScreenshots.flos.forEach(flo => {
+      delete flo.screenshotURL;
+    });
+
     const detailsFromFlopack = getDetailsFromFlopack(flopackContent);
 
     validateCounts(workflowName, detailsFromFlopack, detailsInJSON);
-    validateFlos(workflowName, detailsFromFlopack, detailsInJSON);
     validateScreenshots(detailsFromFlopack, jsonContent);
+    validateFlos(workflowName, detailsFromFlopack, jsonDetailsWithoutScreenshots);
     validateUseCases(workflowName, jsonContent.details.useCases);
   });
 });

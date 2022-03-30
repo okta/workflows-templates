@@ -11,85 +11,85 @@
         "id": "f249f284-cf79-4ab7-bc4d-54251166c8b2",
         "name": "Request.Apps.02.03. SlackBot.Approved.Beneficiary.Message",
         "type": "HELPER",
-        "screenshotURL": ""
+        "screenshotURL": "https://d78vv2h34ll3s.cloudfront.net/static/catalog/workflows/access_request_with_slack/resources/3Bjg3MMU6mcJL8EB-PgHDqLQ3BjridgXTKhGSO3csfE.png"
       },
       {
         "id": "df3d26b7-4eb0-4c7a-93d6-a7e1f9172ac6",
         "name": "Util.99.01. SlackBot.GetApprovalJWT",
         "type": "HELPER",
-        "screenshotURL": ""
+        "screenshotURL": "https://d78vv2h34ll3s.cloudfront.net/static/catalog/workflows/access_request_with_slack/resources/D7-E0-tDgsacrb-DELBmtkyZHugw4UevAcd3h631DGQ.png"
       },
       {
         "id": "d4d0bc49-f8ef-4dfe-8d7d-e693278c2ef4",
         "name": "Request.Apps.02.01. SlackBot.SubmitRequestToManager",
         "type": "HELPER",
-        "screenshotURL": ""
+        "screenshotURL": "https://d78vv2h34ll3s.cloudfront.net/static/catalog/workflows/access_request_with_slack/resources/0KKs7cykTlMtaSP0abvEC-ojIJe8BfjdPLh0JtztjpY.png"
       },
       {
         "id": "86bf074d-3889-4215-bdc1-08d5d676ac04",
         "name": "Util.99.03. SlackBot.Request.FormatBodyForVerification",
         "type": "HELPER",
-        "screenshotURL": ""
+        "screenshotURL": "https://d78vv2h34ll3s.cloudfront.net/static/catalog/workflows/access_request_with_slack/resources/7-fBR2mJj93xKcY48XFZRN6mGUqQgtQdlUXvXSo4S6I.png"
       },
       {
         "id": "7300b2f7-3760-4115-965b-eb9a4fec6efa",
         "name": "Request.Apps.01.01 SlackBot.ListApplications",
         "type": "HELPER",
-        "screenshotURL": ""
+        "screenshotURL": "https://d78vv2h34ll3s.cloudfront.net/static/catalog/workflows/access_request_with_slack/resources/PlLWTpvWbaP96v54oUkKJE1bRH6JhV7jzBrutwiPr3I.png"
       },
       {
         "id": "32b32396-1fbf-4fbd-ac4d-d976382e2193",
         "name": "Util.99.04. SlackBot.PostChatMessage",
         "type": "HELPER",
-        "screenshotURL": ""
+        "screenshotURL": "https://d78vv2h34ll3s.cloudfront.net/static/catalog/workflows/access_request_with_slack/resources/XUFIABbeb0Vsjh_hXeYi0W5DxNtsjV7_rdhN1SZHH38.png"
       },
       {
         "id": "6c6ea597-cffb-4f57-a9f4-75a8597b4d5c",
         "name": "Request.Apps.02.02. SlackBot.Approved",
         "type": "HELPER",
-        "screenshotURL": ""
+        "screenshotURL": "https://d78vv2h34ll3s.cloudfront.net/static/catalog/workflows/access_request_with_slack/resources/CECgwALI9Kq7QkcpKGHRir7rFXBKxI4YZ5qXWZm_lkE.png"
       },
       {
         "id": "26f7b1f9-e761-4e34-a765-c776d1881b27",
         "name": "Request.Apps.01. SlackBot.Form",
         "type": "HELPER",
-        "screenshotURL": ""
+        "screenshotURL": "https://d78vv2h34ll3s.cloudfront.net/static/catalog/workflows/access_request_with_slack/resources/l8Zx7RFPhexjOe-KigYhJyH0eGdbNeJ7Tpg_wkro1X0.png"
       },
       {
         "id": "d6d32384-7fda-4845-ab08-12f329217723",
         "name": "Request.Apps.02. SlackBot.Submit",
         "type": "HELPER",
-        "screenshotURL": ""
+        "screenshotURL": "https://d78vv2h34ll3s.cloudfront.net/static/catalog/workflows/access_request_with_slack/resources/ERt5Xb9tmaTZfT0r7gXzO1mcdpIYJXuFMa6o-N7jrCc.png"
       },
       {
         "id": "d8fdc240-3e5d-4349-997f-75badbeda897",
         "name": "Request.Approval.02. SlackBot.RejectedTrigger",
         "type": "HELPER",
-        "screenshotURL": ""
+        "screenshotURL": "https://d78vv2h34ll3s.cloudfront.net/static/catalog/workflows/access_request_with_slack/resources/UyJNXwVYRZbqq5yrSgMeLL6t40wlQpNb3dAcFaGE-ug.png"
       },
       {
         "id": "d1c458f2-110f-4cc9-87ee-981f92fe0031",
         "name": "Request.Approval.01. SlackBot.ApprovedTrigger",
         "type": "HELPER",
-        "screenshotURL": ""
+        "screenshotURL": "https://d78vv2h34ll3s.cloudfront.net/static/catalog/workflows/access_request_with_slack/resources/Gx_oJ1QHuzxptulhw0OmAnbnpW9RkkZORf3hQl3DdK8.png"
       },
       {
         "id": "afc1175a-fa23-4038-bc50-f7db9dad1c9a",
         "name": "Util.99.02. SlackBot.Verity.Request.Signature",
         "type": "HELPER",
-        "screenshotURL": ""
+        "screenshotURL": "https://d78vv2h34ll3s.cloudfront.net/static/catalog/workflows/access_request_with_slack/resources/q6Gccge-Mrg0Sh53-5tFT43fsN4-17BE6QOrcThw35c.png"
       },
       {
         "id": "c686b9c0-2947-437a-b480-82797c53d062",
         "name": "Request.01. SlackBot.Router",
         "type": "HELPER",
-        "screenshotURL": ""
+        "screenshotURL": "https://d78vv2h34ll3s.cloudfront.net/static/catalog/workflows/access_request_with_slack/resources/nLPzdqlWaZcziUDeUYUUIsOWdZ12e8zUJEaQGP3LlhI.png"
       },
       {
         "id": "173fb193-e3e1-46b7-844d-230dd5aab2bf",
         "name": "Request.00.SlackBot.Acknowledgement",
         "type": "MAIN",
-        "screenshotURL": ""
+        "screenshotURL": "https://d78vv2h34ll3s.cloudfront.net/static/catalog/workflows/access_request_with_slack/resources/rmcvo6S-W2MYv1qiphj8YUvmJex-x0u4WAxC5QYhfwo.png"
       }
     ],
     "flowCount": 14,

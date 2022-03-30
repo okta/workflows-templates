@@ -1,7 +1,7 @@
 {
   "name": "manage_aws_sso_entitlements",
   "title": "Manage AWS SSO Entitlements",
-  "description": "The AWS SSO connector allows entitlements (accounts and permission sets) to be added and removed for Okta and AWS users and groups. The connector works in conjunction with the AWS SSO SCIM provisioning app that’s available in the OIN catalog. The flows in this template are triggered when an Okta user is added to or removed from an Okta group. The Okta group holds the entitlements, and the user is updated accordingly in AWS. There are two examples of how to add and remove entitlements using child flows and a table.",
+  "description": "The AWS SSO connector allows entitlements (accounts and permission sets) to be added and removed for Okta and AWS users and groups. The connector works in conjunction with the AWS SSO SCIM provisioning app that’s available in the OIN catalog. The flows in this template are triggered when an Okta user is added to or removed from an Okta group. The Okta group holds the entitlements, and the user is updated accordingly in AWS. There are two examples of how to add and remove entitlements using helper flows and a table.",
   "connectors": [
     "okta",
     "awssso"
@@ -10,39 +10,39 @@
     "flos": [
       {
         "id": "e87f6430-992f-4404-ba1e-b951ab2f32de",
-        "name": "AWS Add Entitlements Child Flow",
+        "name": "AWS Add Entitlements Helper Flow",
         "type": "HELPER",
-        "screenshotURL": ""
+        "screenshotURL": "https://d78vv2h34ll3s.cloudfront.net/static/catalog/workflows/manage_aws_sso_entitlements/resources/_ScVysB1jeK5Vg66WfpUzUFPZ0VHdxj4GAlWFdzxjz4.png"
       },
       {
         "id": "7c824994-98ac-4d1c-901f-3d196c4d7669",
-        "name": "AWS Remove Entitlements Child Flow",
+        "name": "AWS Remove Entitlements Helper Flow",
         "type": "HELPER",
-        "screenshotURL": ""
+        "screenshotURL": "https://d78vv2h34ll3s.cloudfront.net/static/catalog/workflows/manage_aws_sso_entitlements/resources/RCDga3EKBTpOdjYdvOJKfPCXEGJ2-ND9MKLdC-8b1WE.png"
       },
       {
         "id": "5d9c17fa-368e-443d-b3b8-2d3e3623cced",
         "name": "AWS Add Entitlement",
         "type": "MAIN",
-        "screenshotURL": ""
+        "screenshotURL": "https://d78vv2h34ll3s.cloudfront.net/static/catalog/workflows/manage_aws_sso_entitlements/resources/vLPlbl-k8WD1acS8rGRMhjeP8rx5UjNqya2DtcDmeAo.png"
       },
       {
         "id": "e5bbfb58-7360-43c1-a523-c5348de46f3f",
         "name": "AWS Add Entitlements Table",
         "type": "MAIN",
-        "screenshotURL": ""
+        "screenshotURL": "https://d78vv2h34ll3s.cloudfront.net/static/catalog/workflows/manage_aws_sso_entitlements/resources/bJPxymEQyEgcb5Tz2KvhXod0vjgKrJRVwg4fswLE2hA.png"
       },
       {
         "id": "2f49d290-535a-4e3d-a4f1-426ce0441a51",
         "name": "AWS Remove Entitlements Table",
         "type": "MAIN",
-        "screenshotURL": ""
+        "screenshotURL": "https://d78vv2h34ll3s.cloudfront.net/static/catalog/workflows/manage_aws_sso_entitlements/resources/88HjlrAFwDk5aYnAsy1b1rrbXvan0vPrhG3cEJIFE7E.png"
       },
       {
         "id": "6cd367f9-adcf-4426-8c7f-1dac5c02763c",
         "name": "AWS Remove User Entitlements",
         "type": "MAIN",
-        "screenshotURL": ""
+        "screenshotURL": "https://d78vv2h34ll3s.cloudfront.net/static/catalog/workflows/manage_aws_sso_entitlements/resources/oE3s6DigZlOnNzv-ikNJvIbd5J0Fqh0gfRCzowQpuSo.png"
       }
     ],
     "flowCount": 6,

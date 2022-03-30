@@ -1,7 +1,7 @@
 const fs = require("fs");
 
 const modifierScriptMsg = `You can run the "details_modifier" script to fill in valid data for ALL the workflow json files in the repo.`;
-const validFloField = ["id", "name", "type", "screenshotURL"];
+const validFloField = ["id", "name", "type"];
 
 function getDetailsFromFlopack(flopackContent) {
   const { flos, tables } = flopackContent.data;
@@ -15,8 +15,7 @@ function getDetailsFromFlopack(flopackContent) {
       details.flos.push({
         id: flo.id,
         name: flo.name,
-        type: isHelperFlow ? "HELPER" : "MAIN",
-        screenshotURL: "" // TODO: replace with the actual S3 URL
+        type: isHelperFlow ? "HELPER" : "MAIN"
       });
       if (isHelperFlow) {
         details.helperFlowsCount ? details.helperFlowsCount++ : (details.helperFlowsCount = 1);

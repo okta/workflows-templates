@@ -27,18 +27,18 @@ In this template, the context of new user registrations is processed by customiz
    3. Make sure a connection is selected for instance of the "Okta | Create User" card. If it was not selected automatically, select the necessary connection manually.
 2. Select flow: "[O365] Send Email HTML".
     1. Select Connection for "Office 365 Mail" card if it was not selected automatically.
-3. Select flow: “[child] process USA customer”
+3. Select flow: “[helper] process USA customer”
     1. Make sure a connection is selected for the instance of the “HTTP | Raw Request” card. This card is used to link to a mock external preference management system.
-4. Select flow: “[child] process CANADA customer”
+4. Select flow: “[helper] process CANADA customer”
     1. Make sure a connection is selected for the instance of the “HTTP | Raw Request” card. This card is used to link to a mock external preference management system.
-5. Select flow: "[child] Add User to Okta GroupName". 
+5. Select flow: "[helper] Add User to Okta GroupName". 
     1.  Make sure a connection is selected for the instances of the “Okta” cards.If it was not selected automatically, select the necessary connection manually.
 6. Ensure all these flows are turned on:
     * Create_User_wExtCheck
     * [O365] Send Email HTML
-    * [child] process USA customer
-    * [child] process CANADA customer
-    * [child] Add User to Okta GroupName
+    * [helper] process USA customer
+    * [helper] process CANADA customer
+    * [helper] Add User to Okta GroupName
 
 
 ## Testing these Flows
