@@ -1,4 +1,5 @@
 const fs = require("fs");
+const { cloneDeep } = require("lodash");
 const {
   getDetailsFromFlopack,
   validateCounts,
@@ -19,7 +20,7 @@ workflows.forEach((workflowName) => {
       fs.readFileSync(`${workflowsDir}/${workflowName}/workflow.json`).toString()
     );
     const detailsInJSON = jsonContent.details;
-    const jsonDetailsWithoutScreenshots = JSON.parse(JSON.stringify(detailsInJSON));
+    const jsonDetailsWithoutScreenshots = cloneDeep(detailsInJSON);
     jsonDetailsWithoutScreenshots.flos.forEach(flo => {
       delete flo.screenshotURL;
     });
