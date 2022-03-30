@@ -165,8 +165,6 @@ function validateUseCases(workflowName, floUseCases) {
 };
 
 module.exports = {
-  modifierScriptMsg,
-  validFloField,
   getDetailsFromFlopack,
   validateCounts,
   validateFlos,
