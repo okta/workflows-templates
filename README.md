@@ -14,6 +14,8 @@ This will download a _flopack_ file to your local filesystem and it is this file
 
 # Submitting a Workflows Template
 
+[Step by step tutorial of creating a new template](./tutorial/readme.md)
+
 Each template submission will have three files:
 * the template (`.flopack` file) itself
 * `readme.md` - contains usage instructions and details about the flows contained in the template
