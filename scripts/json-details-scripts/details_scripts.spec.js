@@ -1,3 +1,5 @@
+const fs = require("fs");
+
 const {
   flopackWithNoFlos,
   flopackWithMainFlosOnly,
@@ -18,7 +20,8 @@ const {
   modifierScriptMsg,
   validateFlos,
   validFloField,
-  validateUseCases
+  validateUseCases,
+  validateScreenshots
 } = require("./utils.js");
 
 const workflowName = "workflow_template_name";
@@ -265,5 +268,133 @@ describe("validateUseCases", () => {
   it("passes if valid use cases are provided", () => {
     const validUseCase = require("../../useCases.json").useCases[0].name;
     expect(() => validateUseCases(workflowName, [validUseCase])).not.toThrowError();
+  });
+});
+
+describe.only("validateScreenshots", () => {
+  it("passes if no flos exists", () => {
+    expect(() => validateScreenshots(
+      { ...matchingFlosData.detailsFromFlopack, flos: [] },
+      { name: workflowName, details: matchingFlosData.detailsInJSON }
+    )).not.toThrowError();
+  });
+
+  it("throws an error if there is no resources directory to house screenshots", () => {
+    function dirNotFoundError(message) {
+      this.message = message;
+      this.code = 'ENOENT';
+    }
+    jest.spyOn(fs, "readdirSync").mockImplementation(() => {
+      throw new dirNotFoundError("directory not found");
+    });
+    expect(() => validateScreenshots(
+      matchingFlosData.detailsFromFlopack,
+      { name: workflowName, details: matchingFlosData.detailsInJSON }
+    )).toThrowError();
+  });
+
+  it("throws an error when the screenshots and flos inside flopack don't match", () => {
+    const screenshots = ["screenshot-1.png", "screenshot-2.png"];
+    jest.spyOn(fs, "readdirSync").mockReturnValue(screenshots);
+    expect(() => validateScreenshots(
+      {
+        flos: [
+          {
+            id: "edcc5dad-eef8-4651-b1db-1a6a85cf161e",
+            name: "flo name 1",
+            type: "MAIN",
+          }
+        ]
+      },
+      {
+        name: workflowName,
+        details: {
+          flos: [
+            {
+              id: "edcc5dad-eef8-4651-b1db-1a6a85cf161e",
+              name: "flo name 1",
+              type: "MAIN",
+            }
+          ]
+        }
+      }
+    )).toThrowError();
+  });
+
+  it("throws an error when the screenshots and flos inside the json file don't match", () => {
+    const screenshots = ["screenshot-1.png", "screenshot-2.png"];
+    jest.spyOn(fs, "readdirSync").mockReturnValue(screenshots);
+    expect(() => validateScreenshots(
+      {
+        flos: [
+          {
+            id: "edcc5dad-eef8-4651-b1db-1a6a85cf161e",
+            name: "flo name 1",
+            type: "MAIN",
+          },
+          {
+            id: "883b80d8-a3ac-43cf-881b-e370efb55fc2",
+            name: "flo name 2",
+            type: "HELPER",
+          }
+        ]
+      },
+      {
+        name: workflowName,
+        details: {
+          flos: [
+            {
+              id: "edcc5dad-eef8-4651-b1db-1a6a85cf161e",
+              name: "flo name 1",
+              type: "MAIN",
+            }
+          ]
+        }
+      }
+    )).toThrowError();
+  });
+
+  it("throws an error if a screenshot doesn't follow the URL pattern", () => {
+    jest.spyOn(fs, "readdirSync").mockReturnValue([
+      "PgHDqLQ3BjridgXTKhGSO3csfE.png",
+      "PlLWTpvWbaP96v54oUkKJE1bRH6JhV7jzBrutwiPr3I.png"
+    ]);
+    expect(() =>
+      validateScreenshots(
+        {
+          flos: [
+            {
+              id: "edcc5dad-eef8-4651-b1db-1a6a85cf161e",
+              name: "flo name 1",
+              type: "MAIN",
+            },
+            {
+              id: "883b80d8-a3ac-43cf-881b-e370efb55fc2",
+              name: "flo name 2",
+              type: "HELPER",
+            }
+          ]
+        },
+        {
+          name: workflowName,
+          details: {
+            flos: [
+              {
+                id: "edcc5dad-eef8-4651-b1db-1a6a85cf161e",
+                name: "flo name 1",
+                type: "MAIN",
+                screenshotURL: "https://d78vv2h34ll3s.cloudfront.net/static/catalog/workflows/${workflowName}/resources/3Bjg3MMU6mcJL8EB-PgHDqLQ3BjridgXTKhGSO3csfE.png"
+              },
+              {
+                id: "883b80d8-a3ac-43cf-881b-e370efb55fc2",
+                name: "flo name 2",
+                type: "HELPER",
+                screenshotURL: "screenshot-2"
+              }
+            ]
+          }
+        }
+      )
+    ).toThrowError();
   });
 });
