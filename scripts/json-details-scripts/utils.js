@@ -32,7 +32,7 @@ function getDetailsFromFlopack(flopackContent) {
   return details;
 };
 
-function validateCounts(workflowName, detailsFromFlopack, detailsInJSON) {
+function validateCounts(workflowName, generatedDetails, detailsInJSON) {
   const countFields = ["flowCount", "mainFlowsCount", "helperFlowsCount", "stashCount"];
   countFields.forEach((field) => {
     if (detailsInJSON[field] === 0) {
@@ -41,19 +41,19 @@ function validateCounts(workflowName, detailsFromFlopack, detailsInJSON) {
       );
     }
 
-    if (detailsFromFlopack[field] > 0 && !detailsInJSON[field]) {
+    if (generatedDetails[field] > 0 && !detailsInJSON[field]) {
       throw new Error(
         `The "details" field at "${workflowName}/workflow.json" is missing the "${field}" field. ${modifierScriptMsg}`
       );
     }
 
-    if (field in detailsInJSON && !(field in detailsFromFlopack)) {
+    if (field in detailsInJSON && !(field in generatedDetails)) {
       throw new Error(
         `The "${field}" at "${workflowName}/workflow.json}" should not exist, it's not matching what's in the ".flopack" file. ${modifierScriptMsg}`
       );
     }
 
-    if (detailsFromFlopack[field] !== detailsInJSON[field]) {
+    if (generatedDetails[field] !== detailsInJSON[field]) {
       throw new Error(
         `The "details.${field}" field at ${workflowName}/workflow.json is incorrect. ${modifierScriptMsg}`
       );
@@ -61,12 +61,12 @@ function validateCounts(workflowName, detailsFromFlopack, detailsInJSON) {
   });
 };
 
-function validateFlos(workflowName, detailsFromFlopack, detailsInJSON) {
-  if ((!detailsFromFlopack.flos || detailsFromFlopack.flos.length === 0) && !detailsInJSON.flos) {
+function validateFlos(workflowName, generatedDetails, detailsInJSON) {
+  if ((!generatedDetails.flos || generatedDetails.flos.length === 0) && !detailsInJSON.flos) {
     return;
   }
 
-  if (detailsFromFlopack.flos) {
+  if (generatedDetails.flos) {
     if (!Array.isArray(detailsInJSON.flos)) {
       throw new Error(
         `A "details.flos" field (of type array) should exist at "${workflowName}/workflow.json". ${modifierScriptMsg}`
@@ -79,7 +79,7 @@ function validateFlos(workflowName, detailsFromFlopack, detailsInJSON) {
       );
     }
 
-    if (JSON.stringify(detailsFromFlopack.flos) !== JSON.stringify(detailsInJSON.flos)) {
+    if (JSON.stringify(generatedDetails.flos) !== JSON.stringify(detailsInJSON.flos)) {
       throw new Error(
         `The flos defined at the "${workflowName}/workflow.json -> details.flos" field don't match what's inside the ".flopack" file of that template. ${modifierScriptMsg}`
       );
@@ -97,12 +97,12 @@ function validateFlos(workflowName, detailsFromFlopack, detailsInJSON) {
   }
 };
 
-function validateScreenshots(detailsFromFlopack, jsonContent) {
-  const flosFromFlopack = detailsFromFlopack.flos;
+function validateScreenshots(generatedDetails, jsonContent) {
+  const flosFromFlopack = generatedDetails.flos;
   const flosInJSON = jsonContent.details.flos;
   const workflowName = jsonContent.name;
 
-  if (detailsFromFlopack.flos.length === 0) return;
+  if (generatedDetails.flos.length === 0) return;
 
   try {
     const screenshots = fs.readdirSync(`${process.cwd()}/workflows/${workflowName

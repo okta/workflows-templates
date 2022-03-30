@@ -24,11 +24,11 @@ workflows.forEach((workflowName) => {
       delete flo.screenshotURL;
     });
 
-    const detailsFromFlopack = getDetailsFromFlopack(flopackContent);
+    const generatedDetails = getDetailsFromFlopack(flopackContent);
 
-    validateCounts(workflowName, detailsFromFlopack, detailsInJSON);
-    validateScreenshots(detailsFromFlopack, jsonContent);
-    validateFlos(workflowName, detailsFromFlopack, jsonDetailsWithoutScreenshots);
+    validateCounts(workflowName, generatedDetails, detailsInJSON);
+    validateScreenshots(generatedDetails, jsonContent);
+    validateFlos(workflowName, generatedDetails, jsonDetailsWithoutScreenshots);
     validateUseCases(workflowName, jsonContent.details.useCases);
   });
 });
