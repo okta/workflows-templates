@@ -22,8 +22,8 @@ from Google Drive.
 
 This template sends all users in the Okta group `Contractors` an email with the latest copy of workplace health & safety guidelines (a PDF document). This template contains two flows:
 
-- "Find users and load file": This Flow finds and loads a file from Google Drive, then finds all users in the Okta group `Contractors` and calls the Child flow for each user.
-- "Send email with attachment": This is a Child Flow that sends a personalized email to each user
+- "Find users and load file": This Flow finds and loads a file from Google Drive, then finds all users in the Okta group `Contractors` and calls the Helper flow for each user.
+- "Send email with attachment": This is a Helper Flow that sends a personalized email to each user
     with the file retrieved in the parent flow.  
 
 ### Find users and load file:

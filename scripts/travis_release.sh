@@ -137,6 +137,10 @@ validate_connectors () {
 validate_workflow_files () {
     for dir in "${directories[@]}"
     do
+        # account for deleted/renamed directories
+        if [ ! -d "${const_workflow}/${dir}" ]; then
+            continue
+        fi
         local workflow_json_path="${const_workflow}/${dir}/${const_workflow_json}"
         local workflow_flopack_path="${const_workflow}/${dir}/${const_workflow_flopack}"
         local workflow_flopack_readme_path="${const_workflow}/${dir}/${const_read_me}"

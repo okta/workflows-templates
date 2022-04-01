@@ -11,13 +11,13 @@
         "id": "a55240c3-5065-49b6-88fd-1ebd6b667a2c",
         "name": "Special Character Removal",
         "type": "HELPER",
-        "screenshotURL": ""
+        "screenshotURL": "https://d78vv2h34ll3s.cloudfront.net/static/catalog/workflows/special_character_validation_and_substitution/resources/NRdXDFI6fXrnXlaTUnFZG52jEhZ_wTW52BADRj6uWD4.png"
       },
       {
         "id": "6845fcdd-44fe-4ae9-9f46-ef47510ca424",
         "name": "Special Character Validation",
         "type": "MAIN",
-        "screenshotURL": ""
+        "screenshotURL": "https://d78vv2h34ll3s.cloudfront.net/static/catalog/workflows/special_character_validation_and_substitution/resources/V9-9PuAjA7wd71woJIOOwCYVtTbC-4l0-vo0hHN_tbw.png"
       }
     ],
     "flowCount": 2,
