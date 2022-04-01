@@ -11,19 +11,19 @@
         "id": "76097207-4944-47a6-9129-8e06e1b03a01",
         "name": "SUB - Remove User from Group",
         "type": "HELPER",
-        "screenshotURL": ""
+        "screenshotURL": "https://d78vv2h34ll3s.cloudfront.net/static/catalog/workflows/assign_temporary_group_memberships/resources/fKZRc1NZ65szVlaUpVdk7rXvZBh7a2ouQEI67ry6sBo.png"
       },
       {
         "id": "710a2389-8921-4258-9c3a-9d53a8451bc4",
         "name": "Scan users for removal",
         "type": "MAIN",
-        "screenshotURL": ""
+        "screenshotURL": "https://d78vv2h34ll3s.cloudfront.net/static/catalog/workflows/assign_temporary_group_memberships/resources/PPLb8mgfa3Pn3zYTCDWmlGUmN8ym8lFhZTgSs5CvhYI.png"
       },
       {
         "id": "e7219225-c7b8-41c6-bea6-d873050d6b90",
         "name": "Determine if user added to temporary group",
         "type": "MAIN",
-        "screenshotURL": ""
+        "screenshotURL": "https://d78vv2h34ll3s.cloudfront.net/static/catalog/workflows/assign_temporary_group_memberships/resources/NI1mUlrsucqjUOgvtmEp96KBQY-iTfDPKxblDm-V6r0.png"
       }
     ],
     "flowCount": 3,

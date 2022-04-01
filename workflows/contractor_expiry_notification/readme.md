@@ -18,7 +18,7 @@ Below is a summary of the flows included in the template:
 
 This is the parent flow and it is initiated via a flow schedule. This flow will check to see if any users have a contract expiry date within a set number of days in the future. The exact number of days is set in the configuration table. For any users found, an email will be generated and sent to the configured recipients.
 
-This parent flow will call the following child flows:
+This parent flow will call the following helper flows:
 
    1. Initialize
    2. Process Contractor
@@ -26,15 +26,15 @@ This parent flow will call the following child flows:
 
 2 - Initialize
 
-This child flow reads configuration data from the configuration table and also initializes the contractor-list table prior to processing. The flow will return configuration values for the number of days, current time zone and email address list, to the parent flow.
+This helper flow reads configuration data from the configuration table and also initializes the contractor-list table prior to processing. The flow will return configuration values for the number of days, current time zone and email address list, to the parent flow.
 
 3 - Process Contractor
 
-This child flow is called within a loop, once for each user found. The flow formats the user’s first name, last name and email and appends it onto the contractor-list table.
+This helper flow is called within a loop, once for each user found. The flow formats the user’s first name, last name and email and appends it onto the contractor-list table.
 
 4 - Send Notification Emails
 
-This child flow will process any users that have been stored on the contractor-list table by the previous child flow. If at least one user exists on the contractor-list table, then a HTML formatted email will be sent to the email address list set in the configuration table.
+This helper flow will process any users that have been stored on the contractor-list table by the previous helper flow. If at least one user exists on the contractor-list table, then a HTML formatted email will be sent to the email address list set in the configuration table.
 
 
 ## Prerequisites

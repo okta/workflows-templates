@@ -28,7 +28,7 @@ Okta. This workflow will be used in conjunction with a second workflow that perf
 
 2.  Click **Add Event**:
 
-    1.  In the Okta Apps section, click **Child Flow**.
+    1.  In the Okta Apps section, click **Helper Flow**.
 
     2.  In the **Inputs to this Flow** field, type `input`. This is case sensitive.
 
@@ -38,7 +38,7 @@ Okta. This workflow will be used in conjunction with a second workflow that perf
 
     2.  Type `replace patterns` in the search field, then click the **Replace Patterns** option.
 
-    3.  Drag the input field from the Child Flow card to the **look in** field of the **Replace Patterns** function card.
+    3.  Drag the input field from the Helper Flow card to the **look in** field of the **Replace Patterns** function card.
 
     4.  Leave the **replace with** field empty.
 

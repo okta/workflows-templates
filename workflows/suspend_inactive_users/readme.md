@@ -21,16 +21,16 @@ Before you get started, you will need:
 1. Select the parent flow titled “Inactivity-based Suspension - Parent Flow” 
     1. Make sure a connection is selected for the “List Users with Filter” card. 
     2. The only input should be Status, with “Active” selected as the value. 
-2. Open the child flow, “Inactivity-based Suspension - Child Flow” in a new tab. 
+2. Open the helper flow, “Inactivity-based Suspension - Helper Flow” in a new tab. 
     3. Scroll to the right, and make sure a connection is selected for “Okta - Suspend User”. 
-3. Turn both the parent and child flow on. 
+3. Turn both the parent and helper flow on. 
 
 
 ## Testing these Flows
 
 1. Go to the parent flow, and click Test Flow in the toolbar. 
     1. Click Flow History and make sure everything succeeded. 
-2. Go to the child flow and select Flow History. You should see an execution for each user in your org. 
+2. Go to the helper flow and select Flow History. You should see an execution for each user in your org. 
 3. For those Okta users that you expected to be suspended (e.g. they hadn’t logged in for longer than 180 days), go to your Okta console and confirm that they are suspended. 
 
 
