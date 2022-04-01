@@ -1,9 +1,11 @@
 const fs = require("fs");
+const { cloneDeep } = require("lodash");
 const {
   getDetailsFromFlopack,
   validateCounts,
   validateFlos,
-  validateUseCases
+  validateUseCases,
+  validateScreenshots
 } = require("./utils.js");
 
 const workflowsDir = `${process.cwd()}/workflows`;
@@ -18,15 +20,16 @@ workflows.forEach((workflowName) => {
       fs.readFileSync(`${workflowsDir}/${workflowName}/workflow.json`).toString()
     );
     const detailsInJSON = jsonContent.details;
-    const jsonDetailsWithoutScreenshots = { ...detailsInJSON };
+    const jsonDetailsWithoutScreenshots = cloneDeep(detailsInJSON);
     jsonDetailsWithoutScreenshots.flos.forEach(flo => {
       delete flo.screenshotURL;
     });
 
-    const detailsFromFlopack = getDetailsFromFlopack(flopackContent);
+    const generatedDetails = getDetailsFromFlopack(flopackContent);
 
-    validateCounts(workflowName, detailsFromFlopack, detailsInJSON);
-    validateFlos(workflowName, detailsFromFlopack, jsonDetailsWithoutScreenshots);
+    validateCounts(workflowName, generatedDetails, detailsInJSON);
+    validateScreenshots(generatedDetails, jsonContent);
+    validateFlos(workflowName, generatedDetails, jsonDetailsWithoutScreenshots);
     validateUseCases(workflowName, jsonContent.details.useCases);
   });
 });
