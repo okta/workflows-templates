@@ -12,9 +12,9 @@ This page outlines a workflows template that contains six workflows.
 
 * This flow shows what is possible using a table. A table can be constructed to hold the ARN with their accounts and permission sets. It starts with an Okta user being added to an Okta group. The Okta group name matches the group ARN in AWS for ease of use. With a quick search through the table, all accounts and permission sets assigned to a group can be assigned to a user.
 
-**AWS Add Entitlements Child Flow**
+**AWS Add Entitlements Helper Flow**
 
-* This is the child flow associated with AWS Add Entitlements Table. It takes the passed in parameters of the user id, principal ARN, account, and permission set and assigns them to the user.
+* This is the helper flow associated with AWS Add Entitlements Table. It takes the passed in parameters of the user id, principal ARN, account, and permission set and assigns them to the user.
 
 **AWS Remove User Entitlements**
 
@@ -24,9 +24,9 @@ This page outlines a workflows template that contains six workflows.
 
 * This flow shows what is possible using a table. A table can be constructed to hold the ARN with their accounts and permission sets. It starts with an Okta user being removed from an Okta group. The Okta group name matches the group ARN in AWS for ease of use. With a quick search through the table, all accounts and permission sets assigned to a group can be unassigned from a user.
 
-**AWS Remove Entitlements Child Flow**
+**AWS Remove Entitlements Helper Flow**
 
-* This is the child flow associated with AWS Remove Entitlements Table. It takes the passed in parameters of the user id/principal ARN and account and removes them from the user.
+* This is the helper flow associated with AWS Remove Entitlements Table. It takes the passed in parameters of the user id/principal ARN and account and removes them from the user.
 
 ## Prerequisites
 
