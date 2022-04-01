@@ -11,39 +11,39 @@
     "flos": [
       {
         "id": "21b48986-280b-409a-b57b-185caaa822a3",
-        "name": "[Child] Add License Row to Table",
+        "name": "[Helper] Add License Row to Table",
         "type": "HELPER",
-        "screenshotURL": ""
+        "screenshotURL": "https://d78vv2h34ll3s.cloudfront.net/static/catalog/workflows/manage_gsuite_user_licenses/resources/8PdLvlRxKjUn1jWWhvotvsu-XiOXn0Bu5vMbj2XGP-0.png"
       },
       {
         "id": "59676232-8a98-4063-b62a-6e57e4cc9111",
-        "name": "[Child] Delete Row from Table",
+        "name": "[Helper] Delete Row from Table",
         "type": "HELPER",
-        "screenshotURL": ""
+        "screenshotURL": "https://d78vv2h34ll3s.cloudfront.net/static/catalog/workflows/manage_gsuite_user_licenses/resources/y615JnIg17p1iPyHcMj9HbMOcw5oN1K-9U_rn8WEaWk.png"
       },
       {
         "id": "65784428-e0f0-4de6-9f4b-3851783e42b8",
         "name": "G Suite Activation",
         "type": "MAIN",
-        "screenshotURL": ""
+        "screenshotURL": "https://d78vv2h34ll3s.cloudfront.net/static/catalog/workflows/manage_gsuite_user_licenses/resources/g3-TaZapWBNFfg26eJWgCrXE80nAObDS1QHXmy8Ivtc.png"
       },
       {
         "id": "87fc333a-e05b-40b8-9808-ee5f456325e4",
         "name": "GSuite Store License",
         "type": "HELPER",
-        "screenshotURL": ""
+        "screenshotURL": "https://d78vv2h34ll3s.cloudfront.net/static/catalog/workflows/manage_gsuite_user_licenses/resources/LxnbKoew9tI8hC5xBEoeDmGyBuDN2K4h1-CAGuEChM8.png"
       },
       {
         "id": "64203825-838b-488d-acc0-21e86c499e09",
         "name": "G Suite Initialization Flow",
         "type": "HELPER",
-        "screenshotURL": ""
+        "screenshotURL": "https://d78vv2h34ll3s.cloudfront.net/static/catalog/workflows/manage_gsuite_user_licenses/resources/g_n8_4zEDOf59m17ByL3wR4gB0C7_DPBqJ-1QNiFRjU.png"
       },
       {
         "id": "1ddba34b-738a-4282-83b4-57bb2901fe7c",
         "name": "G Suite Staged Deactivation",
         "type": "MAIN",
-        "screenshotURL": ""
+        "screenshotURL": "https://d78vv2h34ll3s.cloudfront.net/static/catalog/workflows/manage_gsuite_user_licenses/resources/-xMr5IYBZgJ9hefZZHcBKw6Pu0ZndhHdR0d7hMMKIxM.png"
       }
     ],
     "flowCount": 6,

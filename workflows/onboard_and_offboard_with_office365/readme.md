@@ -188,8 +188,8 @@ Modify and run the Store all Microsoft Licenses workflow
 11. Turn on the following workflows by clicking the On / Off button so that they are green
 
     * Clear Microsoft License Table
-    * [Child] Store all Microsoft License
-    * [Child] Clear Microsoft License Table
+    * [Helper] Store all Microsoft License
+    * [Helper] Clear Microsoft License Table
     * Store all Microsoft License
     * O365 Staged Deactivation
 

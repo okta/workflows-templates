@@ -13,8 +13,8 @@ This workflow offers an automated way to remotely lock all Apple Devices assigne
 1. Install the template into your Workflows environment
 2. Inside the folder you should see three flows, the main flow being "Lock Devices When User Is Deactivated"
 3. This main flow is triggered by an Okta Action "User Deactivated"
-4. In the "Send Lock Command To Computer" child flow, change the passcode that will be used for locking computers. It must be a 6 digits code and by default is set to 123456
-5. In the "Send Lock Command To Mobile Device" child flow, change the Lock Message to your need. The default one is "This device has been locked by your administrator."
+4. In the "Send Lock Command To Computer" helper flow, change the passcode that will be used for locking computers. It must be a 6 digits code and by default is set to 123456
+5. In the "Send Lock Command To Mobile Device" helper flow, change the Lock Message to your need. The default one is "This device has been locked by your administrator."
 4. Establish the connections to the target apps inside all the flows
 5. Enable all the flows
 
