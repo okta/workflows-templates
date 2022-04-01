@@ -11,13 +11,13 @@
         "id": "ae316cfb-2b17-471e-aabb-c50c56931888",
         "name": "Add user to admin role",
         "type": "MAIN",
-        "screenshotURL": ""
+        "screenshotURL": "https://d78vv2h34ll3s.cloudfront.net/static/catalog/workflows/intro_custom_api_actions/resources/wsTNNtNMGgTdc8f4qw0sTiQuD3LJm8XVGrAa0fZ6w3I.png"
       },
       {
         "id": "61a6c27c-5c30-46be-a48b-f24cc517a898",
         "name": "Test Flow: Create Okta User",
         "type": "MAIN",
-        "screenshotURL": ""
+        "screenshotURL": "https://d78vv2h34ll3s.cloudfront.net/static/catalog/workflows/intro_custom_api_actions/resources/ZMTetKkHFBIbmqtQLxd4fEe56kUT817B8Byp4GTNlBw.png"
       }
     ],
     "flowCount": 2,

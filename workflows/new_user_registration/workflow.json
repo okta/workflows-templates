@@ -12,31 +12,31 @@
         "id": "a9a0cf19-d173-46ba-97d7-314ff9e5f50f",
         "name": "[O365] Send Email HTML",
         "type": "HELPER",
-        "screenshotURL": ""
+        "screenshotURL": "https://d78vv2h34ll3s.cloudfront.net/static/catalog/workflows/new_user_registration/resources/kB5D_lD-lGkUosBglxPXMAHoWDVF9dmJmiTJYRWJ7Yw.png"
       },
       {
         "id": "0542a43a-109b-4433-9568-c45ea6f4733c",
-        "name": "[child] process CANADA customer",
+        "name": "[helper] process CANADA customer",
         "type": "HELPER",
-        "screenshotURL": ""
+        "screenshotURL": "https://d78vv2h34ll3s.cloudfront.net/static/catalog/workflows/new_user_registration/resources/OKkln9Wzg6rwUMgY2fre3I5x7nqeAqtPdUwLBPZ5xRs.png"
       },
       {
         "id": "a2a416b6-bc72-45a5-a022-5d29a7324ee4",
-        "name": "[child] Add User to Okta GroupName",
+        "name": "[helper] Add User to Okta GroupName",
         "type": "HELPER",
-        "screenshotURL": ""
+        "screenshotURL": "https://d78vv2h34ll3s.cloudfront.net/static/catalog/workflows/new_user_registration/resources/zlHxvNaA8jDlYF0LNZMf_ytOnU1soPuzyXS4z1Y193k.png"
       },
       {
         "id": "66ff05d6-28b6-4a83-9ed3-97e87158949a",
-        "name": "[child] process USA customer",
+        "name": "[helper] process USA customer",
         "type": "HELPER",
-        "screenshotURL": ""
+        "screenshotURL": "https://d78vv2h34ll3s.cloudfront.net/static/catalog/workflows/new_user_registration/resources/nic_NgiO711rGk_U7c2ItbCVGCTJL0x_KzhMv94m4LM.png"
       },
       {
         "id": "17f57807-dbf9-453b-a1f5-e9349c51a291",
         "name": "Create_User_wExtCheck",
         "type": "MAIN",
-        "screenshotURL": ""
+        "screenshotURL": "https://d78vv2h34ll3s.cloudfront.net/static/catalog/workflows/new_user_registration/resources/6w88KMNPQzu81iI6BC9rk_pS7fOZC7ldAYEQVlsHLVA.png"
       }
     ],
     "flowCount": 5,

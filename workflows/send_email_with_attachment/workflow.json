@@ -13,13 +13,13 @@
         "id": "0d9950f5-eca5-4b91-9de3-fc75d6e8fbdf",
         "name": "Send email with attachment",
         "type": "HELPER",
-        "screenshotURL": ""
+        "screenshotURL": "https://d78vv2h34ll3s.cloudfront.net/static/catalog/workflows/send_email_with_attachment/resources/toGmFXz48Vbk6gtHcKWFbHxvITUzi4yTT4S-Nbxe4Y4.png"
       },
       {
         "id": "2b949fe1-9738-4a2f-bf2e-68256a12a12a",
         "name": "Find users and load file",
         "type": "MAIN",
-        "screenshotURL": ""
+        "screenshotURL": "https://d78vv2h34ll3s.cloudfront.net/static/catalog/workflows/send_email_with_attachment/resources/A891i3GDoKHcbwfe6IkSmerDRjrcGWOE4ZRtT4Y52AQ.png"
       }
     ],
     "flowCount": 2,
