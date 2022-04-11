@@ -146,7 +146,7 @@ Example: The shape a `details` object for a template with no flos and no tags
 ### Flows screenshots
 For each workflow that contains flows, a screenshot of each flow should be added to the `${WORKFLOW_FOLDER}/resources` directory (create the `resources` directory if it doesn't exist). The purpose of this screenshot is to showcase your flow to users in Okta's catalog platform.
 
-The screenshot should cover the full flow plus the beginning and ending placeholder cards, not only parts of it, also it should be in high resolution. You can checkout the workflows screenshots in this repo for reference and try to generate screenshots as similar to them as possible.
+The screenshot should cover the full flow plus the beginning and ending placeholder cards, not only parts of it, also it should be in high resolution. You can checkout the workflows screenshots in this repo for reference and try to generate screenshots as similar to them as possible. You can check the [step-by-step tutorial](./tutorial/readme.md) for more guidance on how to generate screenshots.
 
 The screenshot name should change whenever the screenshot content is different. This is not an issue for a newly added screenshot. But whenever the screenshot changes, its name should change. We recommend using a hash for the screenshot name that depends on its content. You can use any online service to get that hash. We recommend using SHA256 base64. Plenty of online tools exist for that purpose ([example](https://hash.online-convert.com/sha256-generator)).
 
