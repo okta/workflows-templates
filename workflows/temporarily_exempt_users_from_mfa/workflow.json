@@ -29,7 +29,10 @@
     "flowCount": 3,
     "helperFlowsCount": 1,
     "mainFlowsCount": 2,
-    "stashCount": 1
+    "stashCount": 1,
+    "tags": [
+      "introductory"
+    ]
   },
   "links": [
     {
