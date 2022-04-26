@@ -28,7 +28,9 @@
     ],
     "flowCount": 3,
     "mainFlowsCount": 3,
-    "tags": ["introductory"]
+    "tags": [
+      "introductory"
+    ]
   },
   "links": [
     {
