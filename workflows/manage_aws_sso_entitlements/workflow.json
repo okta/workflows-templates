@@ -1,7 +1,7 @@
 {
   "name": "manage_aws_sso_entitlements",
-  "title": "Manage AWS SSO Entitlements",
-  "description": "The AWS SSO connector allows entitlements (accounts and permission sets) to be added and removed for Okta and AWS users and groups. The connector works in conjunction with the AWS SSO SCIM provisioning app that’s available in the OIN catalog. The flows in this template are triggered when an Okta user is added to or removed from an Okta group. The Okta group holds the entitlements, and the user is updated accordingly in AWS. There are two examples of how to add and remove entitlements using helper flows and a table.",
+  "title": "Manage AWS Multi-Account Access Entitlements",
+  "description": "The AWS Multi-Account Access connector allows entitlements (accounts and permission sets) to be added and removed for Okta and AWS users and groups. The connector works in conjunction with the AWS Identity Center SCIM provisioning app that’s available in the OIN catalog. The flows in this template are triggered when an Okta user is added to or removed from an Okta group. The Okta group holds the entitlements, and the user is updated accordingly in AWS. There are two examples of how to add and remove entitlements using helper flows and a table.",
   "connectors": [
     "okta",
     "awssso"
@@ -51,10 +51,6 @@
     "stashCount": 1
   },
   "links": [
-    {
-      "title": "Video Walk-through",
-      "destination": "https://www.youtube.com/watch?v=fJAQUMBFgRM"
-    },
     {
       "title": "Sample Data",
       "destination": "https://github.com/okta/workflows-templates/blob/master/workflows/manage_aws_sso_entitlements/awsEntitlements.csv"
