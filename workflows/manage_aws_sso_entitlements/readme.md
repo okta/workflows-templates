@@ -1,4 +1,4 @@
-# Manage AWS SSO Entitlements
+# Manage AWS Multi-Account Access Entitlements
 
 ## Overview
 
@@ -33,15 +33,15 @@ This page outlines a workflows template that contains six workflows.
 Before you get started, here are the things you’ll need:
 
 1. Access to an Okta tenant with Okta Workflows enabled for your org 
-2. Access to a tenant for AWS SSO
-3. A user/group with the configurations listed in the AWS SSO Connector doc
+2. Access to a tenant for AWS Multi-Account Access
+3. A user/group with the configurations listed in the AWS Multi-Account Access Connector doc
 
 
 ## Setup Steps
 
 Please follow the below step-by-step instructions to set up this workflow.
 
-1. Update the AWS SSO connector cards to use your AWS connection.
+1. Update the AWS Multi-Account Access connector cards to use your AWS connection.
     * Fill out the Options on each card with the correct:
         * AWS Region
         * AWS Instance ARN
@@ -61,4 +61,4 @@ Please follow the below step-by-step instructions to set up this workflow.
 
 ## Limitations & Known Issues
 
-The limitations for the AWS SSO connector can be found [here](https://help.okta.com/en/prod/Content/Topics/Workflows/connector-reference/awssso/awssso.htm "AWS SSO help documentation")
+The limitations for the AWS Multi-Account Access connector can be found [here](https://help.okta.com/en/prod/Content/Topics/Workflows/connector-reference/awssso/awssso.htm "AWS Multi-Account Access help documentation")
