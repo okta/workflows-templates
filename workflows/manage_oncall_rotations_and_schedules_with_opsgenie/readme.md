@@ -13,17 +13,15 @@ Before you get started you will need:
 
 * In the Profile settings, make sure your account has the Admin role.
 
-<!-- ![](images/image7.png) -->
+
 <img src="images/image7.png" width="500px">
 
 * Navigate to Settings, click the "API Key Management" at the bottom left corner, then click "Add new API key". 
 
-<!-- ![](images/image6.png) -->
-<img src="images/image6.png" width="900px">
+<img src="images/image6.png" width="960px">
 
 * Provide a Name to the API key, and check all the boxes to make sure the key has full access.
 
-<!-- ![](images/image11.png) -->
 <img src="images/image5.png" width="600px">
 
 * Set up a new OpsGenie connection using this API key, you can create this connection from either the Connections tab, or from any OpsGenie card.
