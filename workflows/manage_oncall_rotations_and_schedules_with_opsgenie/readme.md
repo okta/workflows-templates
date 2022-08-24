@@ -95,7 +95,7 @@ parent flow.
 New Team: Demo Team containing two team members\
 <img src="images/image12.png" width="900px">
 
-## <span style="color:#77b5fe">Flow Two: Create Schedule/Rotation</span>
+### <span style="color:#77b5fe">Flow Two: Create Schedule/Rotation</span>
 
 This flow creates a Schedule under a specific Team.
 
@@ -217,7 +217,7 @@ Team Member":
 Make sure all the three flows have been configured and saved properly,
 then click "Test" in the "Create Team/Add Team Member" flow.
 
-### **Flow Example Output:**
+#### **Flow Example Output:**
 
 _New Schedule: Demo Schedule_
 
@@ -227,11 +227,7 @@ _New Rotation: Demo Rotation_
 
 <img src="images/image2.png" width="800px">
 
-### 
-
-### 
-
-## <span style="color:#77b5fe">Flow Three: Modify Time Restrictions - Time Only</span>
+### <span style="color:#77b5fe">Flow Three: Modify Time Restrictions - Time Only</span>
 
 This flow updates the \"Time of day\" time restriction in a specific
 Rotation, and lets you verify the status after.
@@ -274,19 +270,19 @@ restrictions have been updated correctly.
 
 <img src="images/image3.png" width="800px">
   
-## <span style="color:#77b5fe">Flow Four: Modify Time Restrictions - Day and Time</span>
+### <span style="color:#77b5fe">Flow Four: Modify Time Restrictions - Day and Time</span>
 
 This flow updates the \"Weekday and time of day\" time restriction in a
 specific Rotation, and lets you verify the status after.
 
-_"Day and Time" == "Weekday and time of day" in UI)_
+_"Day and Time" == "Weekday and time of day" in UI_
 
 <img src="images/image13.png" width="680px">
 
 <span style="color:#cd5c5c">Note: A Schedule Rotation can have multiple time restrictions configured
 within a week if \"Day and Time\" restriction type is selected.</span>
 
-### **Required inputs:**
+#### **Required inputs:**
 
 1\. Schedule Name (You don't have to provide this if you use this flow
 as a child flow of "Create Schedule/Rotation" flow)
@@ -294,7 +290,7 @@ as a child flow of "Create Schedule/Rotation" flow)
 2\. Rotation ID (You don't have to provide this if you use this flow as
 a child flow of "Create Schedule/Rotation" flow)
 
-### **Setup and Run:**
+#### **Setup and Run:**
 
 1\. In flow Step 1, modify the "Build Time Restriction Object" cards to
 reflect the time restriction you want to update on the Rotation. You can
@@ -313,12 +309,12 @@ Save this flow and click "Test", manually type in the Schedule Name and Rotation
 the flow (or go to your OpsGenie dashboard) to verify if the time
 restrictions have been updated correctly.
 
-### **Flow Example Output:**
+#### **Flow Example Output:**
 
 <img src="images/image8.png" width="800px">
 
 
-# Limitations & Known Issues
+## Limitations & Known Issues
 
 No existing issues found for these flows
 
@@ -326,7 +322,7 @@ For all other operations this template doesn't support, please check the
 OpsGenie connector directly. We've provide plenty of cards to cover CRUD
 actions for User, Team, Schedule and Rotation for you.
 
-# Appendix
+## Appendix
 
 OpsGenie Official API documentation:\
 https://docs.opsgenie.com/docs/api-overview
