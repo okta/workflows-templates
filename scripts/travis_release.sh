@@ -6,7 +6,7 @@ const_workflow_flopack="workflow.flopack"
 const_read_me="readme.md"
 const_supported_connectors="connectors.json"
 
-# save workflow directories in glorbal variable
+# save workflow directories in global variable
 directories=()
 if [ -z "$1" ]
     then
@@ -45,6 +45,7 @@ extract_workflow_dirs_from_pr () {
     IFS=' ' read -r -a array <<< $pr_files
     for element in $pr_files
     do
+        echo $element
         [[ "$element" =~ $regex ]]
         if [[ ${BASH_REMATCH[1]} == "workflows" ]]; then
             dir_name=${BASH_REMATCH[2]}
@@ -150,10 +151,15 @@ validate_workflow_files () {
         validate_file_exists "${workflow_dir_path}" "${const_workflow_json}"
         validate_file_exists "${workflow_dir_path}" "${const_workflow_flopack}"
         validate_file_exists "${workflow_dir_path}" "${const_read_me}"
+        echo "banana"
         validate_json ${workflow_json_path}
+        echo "apple"
         validate_json ${workflow_flopack_path}
+        echo "orange"
         validate_http_links ${workflow_dir_path}
+        echo "lemon"
         validate_workflow_name ${workflow_json_path}
+        echo "lime"
         validate_connectors "${workflow_json_path}" "${workflow_flopack_path}"
     done
 }
