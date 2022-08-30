@@ -12,31 +12,31 @@
         "id": "1134289c-6a0c-4165-8067-34d215daea09",
         "name": "participantBuilder",
         "type": "HELPER",
-        "screenshotURL": "https://d78vv2h34ll3s.cloudfront.net/static/catalog/workflows/manage_oncall_rotation_and_schedules_with_opsgenie/resources/XGqqduaXkbjRKirYprMjpswXScG822zelbl:PL9coIE=.png"
+        "screenshotURL": "https://d78vv2h34ll3s.cloudfront.net/static/catalog/workflows/manage_oncall_rotation_and_schedules_with_opsgenie/resources/0c17e2be23c03e87e27807c2fc2fc3ff3ff3.png"
       },
       {
         "id": "0beecdce-a26e-4280-9e7a-f0b97833b9e8",
         "name": "Create Schedule/Rotation",
         "type": "HELPER",
-        "screenshotURL": "https://d78vv2h34ll3s.cloudfront.net/static/catalog/workflows/manage_oncall_rotation_and_schedules_with_opsgenie/resources/dqxANpAox3ZEzNHtYsvuQabvz:4y6x48v:31TlXeyv0=.png"
+        "screenshotURL": "https://d78vv2h34ll3s.cloudfront.net/static/catalog/workflows/manage_oncall_rotation_and_schedules_with_opsgenie/resources/002f20ffe9e89e89c890990bf39ff9ff9ff9.png"
       },
       {
         "id": "2bae1f11-2125-4cbd-b93d-7dea71d3dc45",
         "name": "Modify Time Restrictions - Day and Time",
         "type": "HELPER",
-        "screenshotURL": "https://d78vv2h34ll3s.cloudfront.net/static/catalog/workflows/manage_oncall_rotation_and_schedules_with_opsgenie/resources/BdwabWCnA2ci9+AfR4ABtoU:SJz6xN2Mi10mE7jrR+w=.png"
+        "screenshotURL": "https://d78vv2h34ll3s.cloudfront.net/static/catalog/workflows/manage_oncall_rotation_and_schedules_with_opsgenie/resources/001a30fffa54a74bc4a70871c3dc3cc3cffc.png"
       },
       {
         "id": "ea216b6c-6cef-442e-a00f-265bf7558c0b",
         "name": "Modify Time Restrictions - Time Only",
         "type": "HELPER",
-        "screenshotURL": "https://d78vv2h34ll3s.cloudfront.net/static/catalog/workflows/manage_oncall_rotation_and_schedules_with_opsgenie/resources/Ottmi:EeHvSLOWaFoeHvp:1IPv+VwzFHqVTMuBGl5yM=.png"
+        "screenshotURL": "https://d78vv2h34ll3s.cloudfront.net/static/catalog/workflows/manage_oncall_rotation_and_schedules_with_opsgenie/resources/200f2cf6e31e31c32e32cb0db0df04f0ff2f.png"
       },
       {
         "id": "bb1ce3c3-2822-484e-91ea-bf16ddb22d3a",
         "name": "Create Team/Add Team Member",
         "type": "MAIN",
-        "screenshotURL": "https://d78vv2h34ll3s.cloudfront.net/static/catalog/workflows/manage_oncall_rotation_and_schedules_with_opsgenie/resources/zDpRxO6fZFxcAHs0BV45UMNluYD:INQRQd6VXdT12Ng=.png"
+        "screenshotURL": "https://d78vv2h34ll3s.cloudfront.net/static/catalog/workflows/manage_oncall_rotation_and_schedules_with_opsgenie/resources/64c65ce1c7c86786e0640e10efde1fe1fe9f.png"
       }
     ],
     "flowCount": 5,
