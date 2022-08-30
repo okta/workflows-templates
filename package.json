@@ -13,6 +13,10 @@
     "jest": "^27.5.1"
   },
   "dependencies": {
-    "lodash": "^4.17.21"
+    "ajv": "^7.0.3",
+    "image-hash": "^5.3.1",
+    "lodash": "^4.17.21",
+    "shelljs": "^0.8.5",
+    "yargs": "^17.5.1"
   }
 }
