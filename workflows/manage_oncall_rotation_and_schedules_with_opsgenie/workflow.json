@@ -12,7 +12,7 @@
         "id": "1134289c-6a0c-4165-8067-34d215daea09",
         "name": "participantBuilder",
         "type": "HELPER",
-        "screenshotURL": "https://d78vv2h34ll3s.cloudfront.net/static/catalog/workflows/manage_oncall_rotation_and_schedules_with_opsgenie/resources/0c17e2be23c03e87e27807c2fc2fc3ff3ff3.png"
+        "screenshotURL": "https://d78vv2h34ll3s.cloudfront.net/static/catalog/workflows/manage_oncall_rotation_and_schedules_with_opsgenie/resources/64c65ce1c7c86786e0640e10efde1fe1fe9f.png"
       },
       {
         "id": "0beecdce-a26e-4280-9e7a-f0b97833b9e8",
@@ -36,7 +36,7 @@
         "id": "bb1ce3c3-2822-484e-91ea-bf16ddb22d3a",
         "name": "Create Team/Add Team Member",
         "type": "MAIN",
-        "screenshotURL": "https://d78vv2h34ll3s.cloudfront.net/static/catalog/workflows/manage_oncall_rotation_and_schedules_with_opsgenie/resources/64c65ce1c7c86786e0640e10efde1fe1fe9f.png"
+        "screenshotURL": "https://d78vv2h34ll3s.cloudfront.net/static/catalog/workflows/manage_oncall_rotation_and_schedules_with_opsgenie/0c17e2be23c03e87e27807c2fc2fc3ff3ff3.png"
       }
     ],
     "flowCount": 5,
