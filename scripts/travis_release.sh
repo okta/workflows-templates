@@ -151,15 +151,10 @@ validate_workflow_files () {
         validate_file_exists "${workflow_dir_path}" "${const_workflow_json}"
         validate_file_exists "${workflow_dir_path}" "${const_workflow_flopack}"
         validate_file_exists "${workflow_dir_path}" "${const_read_me}"
-        echo "banana"
         validate_json ${workflow_json_path}
-        echo "apple"
         validate_json ${workflow_flopack_path}
-        echo "orange"
         validate_http_links ${workflow_dir_path}
-        echo "lemon"
         validate_workflow_name ${workflow_json_path}
-        echo "lime"
         validate_connectors "${workflow_json_path}" "${workflow_flopack_path}"
     done
 }
