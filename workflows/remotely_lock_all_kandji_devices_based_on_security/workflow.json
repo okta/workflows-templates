@@ -1,0 +1,53 @@
+{
+  "name": "remotely_lock_all_kandji_devices_based_on_security",
+  "title": "Remotely Lock All Kandji Devices Based on Security Events",
+  "description": "IT Administrators want to make sure that all company-related devices can no longer be accessed when an employee is offboarded. This template offers an automated way to remotely lock all Kandji devices assigned to a given user in Kandji when this user is suspended, deactivated, or reports suspicious activity on their account.",
+  "connectors": [
+    "kandji_edae9b89cf1e4ca6a01a1ad6d985127b",
+    "okta"
+  ],
+  "details": {
+    "stashCount": 0,
+    "flowCount": 5,
+    "flos": [
+      {
+        "id": "ad7176ee-3567-4cf5-8569-b7e072fddaa6",
+        "name": "Lock Device",
+        "type": "HELPER",
+        "screenshotURL": "https://d78vv2h34ll3s.cloudfront.net/static/catalog/workflows/remotely_lock_all_kandji_devices_based_on_security/resources/64c6c4fc47c8f007d81c87c17c31c3fc3fc3.png"
+      },
+      {
+        "id": "30808cad-0fc0-415d-af33-c7d6549b9eb5",
+        "name": "User Deactivated",
+        "type": "MAIN",
+        "screenshotURL": "https://d78vv2h34ll3s.cloudfront.net/static/catalog/workflows/remotely_lock_all_kandji_devices_based_on_security/resources/338f80ef0eb0aa0ef02202ff0ff2ff2ff2ff.png"
+      },
+      {
+        "id": "1d019884-87d1-445e-9a1f-9194d467cd3d",
+        "name": "Manual Device Lock",
+        "type": "MAIN",
+        "screenshotURL": "https://d78vv2h34ll3s.cloudfront.net/static/catalog/workflows/remotely_lock_all_kandji_devices_based_on_security/resources/33b318f88f80bf03b07d03b0fa0010f70f2f.png"
+      },
+      {
+        "id": "95363f9c-4ec5-4f10-89dd-e64e1dc39af5",
+        "name": "User Suspended",
+        "type": "MAIN",
+        "screenshotURL": "https://d78vv2h34ll3s.cloudfront.net/static/catalog/workflows/remotely_lock_all_kandji_devices_based_on_security/resources/338f80ef0eb0aa0ef02212ff0ff2ff2ff2ff.png"
+      },
+      {
+        "id": "61d38a53-fe69-4da4-b71b-fcc8d0a1147e",
+        "name": "Suspicious Activity Reported",
+        "type": "MAIN",
+        "screenshotURL": "https://d78vv2h34ll3s.cloudfront.net/static/catalog/workflows/remotely_lock_all_kandji_devices_based_on_security/resources/338f80ef06b0ea0ef02200ff0ff0ff0ff2ff.png"
+      }
+    ],
+    "helperFlowsCount": 1,
+    "mainFlowsCount": 4
+  },
+  "links": [
+    {
+      "title": "Setup Documentation",
+      "destination": "https://github.com/okta/workflows-templates/blob/master/workflows/remotely_lock_all_kandji_devices_based_on_security/readme.md"
+    }
+  ]
+}
