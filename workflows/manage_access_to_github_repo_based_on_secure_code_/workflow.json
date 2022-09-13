@@ -1,0 +1,29 @@
+{
+  "name": "manage_access_to_github_repo_based_on_secure_code_",
+  "title": "Manage Access to Github Repo Based on Secure Code Warrior Assessment Status",
+  "description": "Adds access to a GitHub repo if the user has passed the required SCW assessment. Triggered when the user is assigned the GitHub application.",
+  "connectors": [
+    "securecodewarrior_a770f79565564ffa8e4d965487451425",
+    "okta",
+    "slack"
+  ],
+  "details": {
+    "flos": [
+      {
+        "id": "e70a9e47-c74c-4b09-91d5-3cf4781a7cf5",
+        "name": "Manage Access to Github Repo Based on Secure Code Warrior Assessment Status",
+        "type": "MAIN",
+        "screenshotURL": "https://d78vv2h34ll3s.cloudfront.net/static/catalog/workflows/manage_access_to_github_repo_based_on_secure_code_/resources/039b1c997e06b87b062256073af32f3833ff.png"
+      }
+    ],
+    "stashCount": 0,
+    "flowCount": 1,
+    "mainFlowsCount": 1
+  },
+  "links": [
+    {
+      "title": "Setup Documentation",
+      "destination": "https://github.com/okta/workflows-templates/blob/master/workflows/manage_access_to_github_repo_based_on_secure_code_/readme.md"
+    }
+  ]
+}
