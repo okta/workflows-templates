@@ -1,7 +1,7 @@
 {
   "name": "manage_access_to_github_repo_based_on_secure_code_",
   "title": "Manage Access to Github Repo Based on Secure Code Warrior Assessment Status",
-  "description": "Adds access to a GitHub repo if the user has passed the required SCW assessment. Triggered when the user is assigned the GitHub application.",
+  "description": "Organizations use Secure Code Warrior to empower developers to write more secure code through fun, competitive and engaging training. Secure Code Warrior and Okta Workflows can be used together to validate the security competency of developers before granting access to sensitive code repositories. This template is triggered when a user is assigned the GitHub application and grants access to a GitHub repo if a user has passed a required Secure Code Warrior assessment.",
   "connectors": [
     "securecodewarrior_a770f79565564ffa8e4d965487451425",
     "okta",
