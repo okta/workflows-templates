@@ -1,0 +1,99 @@
+{
+  "name": "tracking_and_alerting_for_possible_account_takeove",
+  "title": "Tracking and Alerting for Possible Account Takeover Attempts in Okta",
+  "description": "A main vector for fraud comes from Account Takeovers, achieved from resetting passwords or changing levels of access to privileged accounts. Dynamically monitoring and responding to these two vectors with automated flows greatly reduces the risk of these costly attacks.  This template illustrates how Okta Workflows can be used to automate responses to help combat ATOs and mitigate risk with self service and help desk-based account recovery. The template watches user password and MFA factor reset and activation events to determine if the user's account is under threat of an account takeover attempt (ATO).",
+  "connectors": [],
+  "details": {
+    "stashCount": 3,
+    "flowCount": 15,
+    "flos": [
+      {
+        "id": "dd320527-f1f1-4ca0-9122-aab07fb6d9b8",
+        "name": "[util] Check if user is a member of the monitoring group",
+        "type": "HELPER"
+      },
+      {
+        "id": "e3207fc2-41ba-46d4-a8da-dcdbfded1a85",
+        "name": "[util] Read configuration from Table",
+        "type": "HELPER"
+      },
+      {
+        "id": "2b2a1444-b6c3-4e9d-ae90-d2bb7d67b618",
+        "name": "[util] Parse factor type from outcome.reason",
+        "type": "HELPER"
+      },
+      {
+        "id": "56da478b-88d8-4da3-88dc-972f4d7abe7b",
+        "name": "[util] Compose Syslog search URL",
+        "type": "HELPER"
+      },
+      {
+        "id": "11a98508-279e-4eed-8493-c89e569f8362",
+        "name": "[util] Build alert message body",
+        "type": "HELPER"
+      },
+      {
+        "id": "6332892e-b9e6-44df-9cea-21a6cbb76443",
+        "name": "[util] Check for higher assurance factors in monitoring table",
+        "type": "HELPER"
+      },
+      {
+        "id": "62f1120e-9594-4b51-9981-085471856631",
+        "name": "[util] Remove user from monitoring group",
+        "type": "HELPER"
+      },
+      {
+        "id": "4a5cf018-bf76-4465-9fcb-0abb4b569734",
+        "name": "2.1 [assess activation risk]",
+        "type": "HELPER"
+      },
+      {
+        "id": "255de503-707c-4b05-8f6d-58e59245bc44",
+        "name": "1.1 Log MFA event for monitoring",
+        "type": "HELPER"
+      },
+      {
+        "id": "cc14f201-9faf-4769-bbf7-869e0f0550a0",
+        "name": "2.2 Compare assurance level of factor activated",
+        "type": "HELPER"
+      },
+      {
+        "id": "454abcd4-0f47-4892-b340-5ac13cd1824b",
+        "name": "[scheduled] Remove users from monitoring group",
+        "type": "MAIN"
+      },
+      {
+        "id": "f82e5cc0-29c9-42e9-9419-56a72dbd2534",
+        "name": "2 [factor activate event] User Okta Password Reset",
+        "type": "MAIN"
+      },
+      {
+        "id": "6e46f370-e728-4abc-ae58-a07a2c33aa78",
+        "name": "1 [factor reset event] User MFA Factor Deactivated",
+        "type": "MAIN"
+      },
+      {
+        "id": "74428845-510b-4ea6-ae49-f435f19fe034",
+        "name": "2 [factor activate event] User MFA Factor Activated",
+        "type": "MAIN"
+      },
+      {
+        "id": "e3e683dc-f646-478d-8418-5e423925518c",
+        "name": "1 [factor reset event] User MFA Factor Reset All",
+        "type": "MAIN"
+      }
+    ],
+    "helperFlowsCount": 10,
+    "mainFlowsCount": 5
+  },
+  "links": [
+    {
+      "destination": "https://github.com/okta/workflows-templates/blob/master/workflows/tracking_and_alerting_for_possible_account_takeove/readme.md",
+      "title": "Setup Documentation"
+    },
+    {
+      "destination": "https://github.com/okta/workflows-templates/blob/master/workflows/tracking_and_alerting_for_possible_account_takeove/factorAssuranceLevels.csv",
+      "title": "Sample Data"
+    }
+  ]
+}
