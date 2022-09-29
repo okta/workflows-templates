@@ -2,7 +2,11 @@
   "name": "workflows-templates",
   "version": "1.0.0",
   "scripts": {
-    "test": "jest"
+    "test": "jest",
+    "test:ci": "JEST_JUNIT_OUTPUT_NAME=jest-junit.xml jest --ci --reporters=default --reporters=jest-junit",
+    "validate:schema": "node scripts/schema_validate.js",
+    "validate:details": "node scripts/json-details-scripts/details_validator.js",
+    "validate:release": "scripts/validate_release.sh"
   },
   "repository": {
     "type": "git",
@@ -10,7 +14,8 @@
   },
   "devDependencies": {
     "@types/jest": "^27.4.1",
-    "jest": "^27.5.1"
+    "jest": "^27.5.1",
+    "jest-junit": "^14.0.1"
   },
   "dependencies": {
     "ajv": "^7.0.3",

@@ -187,25 +187,18 @@ You can then use these links to populate the metadata of the FLOs inside the `wo
 
 Finally, create a `readme.md` file that has the setup documentation for your template. It should be written in markdown and follow the structure outlined [here](https://docs.google.com/document/d/1a1jQ9o2am9pBfx0LsexiQ0HW8qyOU7WFAEg1Eevjinc/edit).
 
-# How to SKIP CI process
-
-* Add [skip ci] or [ci skip] in commit message in case blocked by CI. Although, this is not recommended but if build is queued for longer time or need to merge template due to urgent fixes, it is probably OK to do so.
-* Change the last commit message with command `git commit --amend`. Add [skip ci] or [ci skip] to commit message
-* Push the remote branch with force `-f` option e.g `git push -f origin <branch-name>`
-
 # Test CI script on local setup
 
 Install dependencies (first time only)
 
 ```js
-npm install ajv@7.0.3
-npm install shelljs
+npm install
 ```
 
 and then run the following commands from root of git repo to test remote branch. All files should have commit to diff with master
 
 ```
 git checkout <remote-branch-name>
-node scripts/schema_validate.js <remote-branch-name>
-sh scripts/travis_release.sh <remote-branch-name>
+npm run validate:schema <remote-branch-name>
+npm run validate:release <remote-branch-name>
 ```
