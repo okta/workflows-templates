@@ -1,4 +1,5 @@
 const Ajv = require('ajv').default;
+const addFormats = require('ajv-formats');
 const shell = require('shelljs')
 
 // Fetch the JSON content for schema
@@ -12,6 +13,7 @@ function processPRFiles() {
   console.log (`PR files to validate ${prWorkFlowJSONFiles} for basedir ${baseDir} on ref ${branchName}`);
   const fileArr = prWorkFlowJSONFiles.split(" ").filter(item => item);
   const ajv = new Ajv({allErrors: true, strict: false});
+  addFormats(ajv, ["uri"]);
   const validate = ajv.compile(workflowSchema);
   fileArr.forEach(file => {
     console.log (`processing file ${file}`);
