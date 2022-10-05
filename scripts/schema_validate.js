@@ -1,17 +1,19 @@
 const Ajv = require('ajv').default;
+const addFormats = require('ajv-formats');
 const shell = require('shelljs')
 
 // Fetch the JSON content for schema
-let baseDir;
+let baseDir = process.cwd();
 let branchName;
 let prWorkFlowJSONFiles;
 const workflowSchema = require('./workflow-schema.json');
 
 // Process PR files with only filter workflows/*/*.json
 function processPRFiles() {
-  console.log (`PR files to validate ${prWorkFlowJSONFiles} for basedir ${baseDir} on branch ${branchName}`);
+  console.log (`PR files to validate ${prWorkFlowJSONFiles} for basedir ${baseDir} on ref ${branchName}`);
   const fileArr = prWorkFlowJSONFiles.split(" ").filter(item => item);
   const ajv = new Ajv({allErrors: true, strict: false});
+  addFormats(ajv, ["uri"]);
   const validate = ajv.compile(workflowSchema);
   fileArr.forEach(file => {
     console.log (`processing file ${file}`);
@@ -29,17 +31,18 @@ function processPRFiles() {
 
 function processArgsAndInitializeVals() {
   if (process.argv.length > 2) {
-    console.log('Running locally');
+    console.log('Using ref from command line argument');
     branchName = process.argv.slice(2);
     console.log(`Testing for git branch  ${branchName}`);
-    baseDir = process.cwd();
-    prWorkFlowJSONFiles = shell.exec(`git diff --name-only ${branchName}..master -- \'workflows/*/*.json\'`).replace(/\n/g, ' ');
+  } else if (process.env.CIRCLECI) {
+    console.log('Running in CircleCI config');
+    branchName = process.env.CIRCLE_SHA1;
   } else {
-    console.log('Running in Travis-CI config');
-    baseDir = shell.exec('echo ${TRAVIS_BUILD_DIR}').replace(/\n/g, '');
-    branchName = shell.exec('echo ${TRAVIS_BRANCH}');
-    prWorkFlowJSONFiles = shell.exec('git diff --name-only ${TRAVIS_BRANCH}..HEAD -- \'workflows/*/*.json\'').replace(/\n/g, ' ');
+    console.log('Using HEAD as base');
+    branchName = "HEAD"
   }
+
+  prWorkFlowJSONFiles = shell.exec(`git diff --name-only ${branchName}..master -- \'workflows/*/*.json\'`).replace(/\n/g, ' ');
 }
 
 processArgsAndInitializeVals();

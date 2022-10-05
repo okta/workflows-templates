@@ -43,17 +43,19 @@
             "$id": "#/properties/details",
             "type": "object",
             "title": "The details schema",
-            "required": [
-                "flowCount",
-                "stashCount"
-            ],
             "properties": {
                 "flowCount": {
                     "type": "integer"
                 },
                 "stashCount": {
                     "type": "integer"
-                }
+                },
+                "mainFlowsCount": {
+                    "type": "integer"
+                },
+                "helperFlowsCount": {
+                    "type": "integer"
+                }   
             }
         },
         "links": {
