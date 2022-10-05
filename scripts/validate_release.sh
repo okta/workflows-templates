@@ -11,9 +11,9 @@ directories=()
 if [ -z "$1" ]
     then
         # running travis-ci config
-        branch_name=$TRAVIS_BRANCH
-        base_dir=$TRAVIS_BUILD_DIR
-        pr_files="$(git diff --name-only ${branch_name}...HEAD --)"
+        branch_name=$CIRCLE_SHA1
+        base_dir=$CIRCLE_WORKING_DIRECTORY
+        pr_files="$(git diff --name-only master --)"
     else
         # running local config
         branch_name=$1
@@ -22,7 +22,7 @@ if [ -z "$1" ]
 fi
 # get only pull request files from branch.
 echo "base dir is ${base_dir}"
-echo "PR files are ${pr_files} \n"
+echo "PR files are ${pr_files}"
 echo "branch name ${branch_name} and build is ${base_dir}"
 
 # utility to lookup if element exists in an array 
