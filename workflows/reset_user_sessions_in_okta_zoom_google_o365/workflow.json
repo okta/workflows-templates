@@ -4,7 +4,6 @@
   "description": "Revoking a user's IDP and application sessions in a timely manner is a crucial part of responding to security-related events. This template provides an example of how to revoke user sessions in Okta, Google Workspace, Zoom, and Office 365. The template uses a single flow that is triggered as a helper flow, which you can leverage with events such as an Okta user being suspended, an Okta user reporting suspicious activity, an Okta admin performing a password reset on a user, a Delegated flow triggered by an Okta admin, or other security remediation use cases.",
   "connectors": [
       "googledirectory",
-      "httpfunctions",
       "office365admin",
       "okta"    
   ],
