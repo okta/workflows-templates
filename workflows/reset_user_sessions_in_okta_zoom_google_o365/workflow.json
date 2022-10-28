@@ -1,0 +1,28 @@
+{
+  "name": "reset_user_sessions_in_okta_zoom_google_o365",
+  "title": "Reset User Sessions in Okta, Zoom, Google Workspace, and O365",
+  "description": "Revoking a user's IDP and application sessions in a timely manner is a crucial part of responding to security-related events. This template provides an example of how to revoke user sessions in Okta, Google Workspace, Zoom, and Office 365. The template uses a single flow that is triggered as a helper flow, which you can leverage with events such as an Okta user being suspended, an Okta user reporting suspicious activity, an Okta admin performing a password reset on a user, a Delegated flow triggered by an Okta admin, or other security remediation use cases.",
+  "connectors": [
+      "googledirectory",
+      "office365admin",
+      "okta"    
+  ],
+  "details": {
+    "flowCount": 1,
+    "flos": [
+      {
+        "id": "96abb651-d2cf-4487-80bd-c02410f92cc9",
+        "name": "Reset User Sessions",
+        "type": "HELPER",
+        "screenshotURL": "https://d78vv2h34ll3s.cloudfront.net/static/catalog/workflows/reset_user_sessions_in_okta_zoom_google_o365/resources/200d53fb5812b98eba0303b1fb7fa7fa7f87.png"
+      }
+    ],
+    "helperFlowsCount": 1
+  },
+  "links": [
+    {
+      "destination": "https://github.com/okta/workflows-templates/blob/master/workflows/reset_user_sessions_in_okta_zoom_google_o365/readme.md",
+      "title": "Setup Documentation"
+    }
+  ]
+}
