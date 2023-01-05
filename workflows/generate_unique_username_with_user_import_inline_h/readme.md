@@ -28,4 +28,4 @@ IT administrators need to have a unique username to add a new hire within an org
 -   Keep in mind the Okta [Workflows system limits](https://help.okta.com/okta_help.htm?type=wf&id=ext-workflows-system-limits).
 -   This template doesn't address error handling.
 -   If you don't have a directory integration configured, you can test this template by setting up a [CSV directory integration with Okta](https://help.okta.com/okta_help.htm?id=ext_csvintegration).
--   This template supports a maximum of nine prefix increments for cases where the username already exists. For example, `jessiedoe1@example.com` ... `jessiedoe9@example.com`
+-   This template supports a maximum of nine prefix increments for cases where the username already exists. For example, `jessiedoe1@example.com` ... `jessiedoe9@example.com`.
