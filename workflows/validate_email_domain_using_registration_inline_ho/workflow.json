@@ -1,0 +1,27 @@
+{
+  "name": "validate_email_domain_using_registration_inline_ho",
+  "title": "Validate Email Domain Using Registration Inline Hook",
+  "description": "Okta Inline Hooks allow you to trigger custom processes at specific points in Okta process flows.  This flow is called by an inline hook during the user self-registration process and leverages a Workflows table to enforce email domain validation. If the user’s email domain is not in the Workflows table allow-list, registration is denied with an informative error for the user.",
+  "connectors": [
+    "okta"
+  ],
+  "details": {
+    "stashCount": 1,
+    "flowCount": 1,
+    "flos": [
+      {
+        "id": "f14f88f3-91ec-4d6b-a027-6b254efb063f",
+        "name": "Validate Email Domains During Registration ",
+        "type": "MAIN",
+        "screenshotURL": "https://d78vv2h34ll3s.cloudfront.net/static/catalog/workflows/validate_email_domain_using_registration_inline_ho/resources/00e9a3ee33c13c1fc1fe1fe1fe1fe1fe1fe5.png"
+      }
+    ],
+    "mainFlowsCount": 1
+  },
+  "links": [
+    {
+      "destination": "https://github.com/okta/workflows-templates/blob/master/workflows/validate_email_domain_using_registration_inline_ho/readme.md",
+      "title": "Setup Documentation"
+    }
+  ]
+}
