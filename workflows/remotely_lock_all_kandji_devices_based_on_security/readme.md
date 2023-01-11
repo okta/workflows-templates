@@ -23,8 +23,8 @@ reports suspicious activity on their account.
 
 ## Testing
 
-1.  Testing the User Suspended or User Deactivated flows will require changing the Okta user lifecycle state to suspended or deactivated. Once this action has been performed, check the flow history for the corresponding flow to ensure the app event was triggered and that the impacted user’s device was found and locked with the Kadji connector action.
-2.  Testing the Report Suspicious Activity flow will require an admin or end-user to click on the link included in the Okta generated e-mail after an admin or end-user receives a security notification e-mail. Once the link is clicked, the admin can ensure the app event was triggered and that the impacted user’s device was found and locked with the Kadji connector action.
+1.  Testing the User Suspended or User Deactivated flows will require changing the Okta user lifecycle state to suspended or deactivated. Once this action has been performed, check the flow history for the corresponding flow to ensure the app event was triggered and that the impacted user’s device was found and locked with the Kandji connector action.
+2.  Testing the Report Suspicious Activity flow will require an admin or end-user to click on the link included in the Okta generated e-mail after an admin or end-user receives a security notification e-mail. Once the link is clicked, the admin can ensure the app event was triggered and that the impacted user’s device was found and locked with the Kandji connector action.
 3.  Testing the Manual Device Lock flow will require an Okta admin to navigate to the Delegated Flow menu in the Okta Admin console which is located in Workflows \> Delegated Flow. Find the corresponding delegated flow and click the Run button. Once clicked, the Okta admin will then enter the Kandji user’s e-mail address to execute the flow. Once the inputs have been entered, navigate to the Workflows console and check the flow history for the Manual Device Lock flow to ensure the user’s device was locked.
 
 ## Limitations & Known Issues
