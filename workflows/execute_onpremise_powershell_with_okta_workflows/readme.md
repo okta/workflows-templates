@@ -58,7 +58,7 @@ that requires the execution of a PowerShell on-premises.</span>
 1.  <span class="c0">The configuration and screenshots captured were
     taken from a Windows Server 2016 DataCenter on AWS configured as an
     AD Domain Controller, using Microsoft PowerShell
-    7.0.3-win-x64.msi.</span>
+    7.3.0-win-x64.msi.</span>
 
 <!-- -->
 
@@ -73,7 +73,7 @@ that requires the execution of a PowerShell on-premises.</span>
 
 ## <span class="c22 c16">Step-by-Step instructions</span>
 
-### <span class="c16 c23">Create a new Automation Accounts</span>
+### <span class="c16 c23">Create a new Automation Account</span>
 
 1.  <span class="c8">Log-in to </span> <span class="c18">
     <a href="https://www.google.com/url?q=https://portal.azure.com&amp;sa=D&amp;source=editors&amp;ust=1624896848561000&amp;usg=AOvVaw0EaArFLb30LNnf6fBJkrxP" class="c12">https://portal.azure.com</a>
@@ -178,7 +178,7 @@ style="overflow: hidden; display: inline-block; margin: -0.00px 0.00px; border: 
 
 <span class="c0"></span>
 
-3.  <span class="c8">S</span> <span class="c8">elect the resource group
+3.  <span class="c8"></span> <span class="c8">Select the resource group
     </span> <span
     class="c5">OktaPowershellLogAnalyticsResourceGroup</span> <span
     class="c8"> that we created at step 6 for </span> <span class="c18">
@@ -235,7 +235,7 @@ style="overflow: hidden; display: inline-block; margin: -0.00px 0.00px; border: 
 <img src="./images/image63.png" style="width: 480.00px; height: 206.03px; margin-left: 0.00px; margin-top: 0.00px; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px);" />
 </span>
 
-### Create a new “Application Insight s <span class="c23 c16">”</span>
+### Create a new “Application Insight<span class="c23 c16">”</span>
 
 <span class="c0">In order to use Azure Automation Runbooks on-premises,
 we will need to set up Application Insight. This is a service in Azure
@@ -255,7 +255,7 @@ style="overflow: hidden; display: inline-block; margin: 0.00px 0.00px; border: 1
 
 2.  <span class="c8">Click “</span> <span class="c5">+ New</span> <span
     class="c0">” to add a new application insight.</span>
-3.  <span class="c8">S</span> <span class="c8">elect the resource group
+3.  <span class="c8"></span> <span class="c8">Select the resource group
     </span> <span
     class="c5">OktaPowershellLogAnalyticsResourceGroup</span> <span
     class="c8"> that we created at step 6 for </span> <span class="c18">
@@ -271,7 +271,7 @@ style="overflow: hidden; display: inline-block; margin: 0.00px 0.00px; border: 1
 
 <span class="c0"></span>
 
-4.  <span class="c8">Name the log analytics workspace as “</span> <span
+4.  <span class="c8">Name the log analytics workspace“</span> <span
     class="c5">OktaPowershellApplicationInsights”</span> <span
     class="c8">.</span>
 
@@ -280,7 +280,7 @@ style="overflow: hidden; display: inline-block; margin: 0.00px 0.00px; border: 1
 <img src="./images/image15.png" style="width: 384.00px; height: 310.40px; margin-left: 0.00px; margin-top: 0.00px; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px);" />
 </span>
 
-5.  <span class="c8">S</span> <span class="c8">elect the log analytics
+5.  <span class="c8">Select the log analytics
     workspace group </span> <span
     class="c5">OktaPowershellLogAnalyticsWorkspaceName</span> <span
     class="c8"> that we created at </span> <span class="c18">
@@ -302,8 +302,8 @@ style="overflow: hidden; display: inline-block; margin: 0.00px 0.00px; border: 1
 <span class="c0"></span>
 
 7.  <span class="c8">Once the validation is finished, you should see a
-    confirmation and now you can click “</span> <span
-    class="c5">Create</span> <span class="c8">” to finish the creation
+    confirmation and now you can click</span> <span
+    class="c5">"Create</span> <span class="c8">” to finish the creation
     process.</span>
 
 <span class="c0"></span>
@@ -321,9 +321,6 @@ style="overflow: hidden; display: inline-block; margin: -0.00px 0.00px; border: 
 <span class="c8">Log-on to your Windows Server, and run the following
 commands in the Microsoft PowerShell 7 window.</span>
 
-1.  <span class="c0">At your Microsoft PowerShell 7 command prompt, type
-    the following commands.</span>
-
 <!-- -->
 
 1.  <span class="c8">“</span> <span class="c5">Install-Module AZ
@@ -340,9 +337,9 @@ style="overflow: hidden; display: inline-block; margin: -0.00px 0.00px; border: 
     class="c8">Complete the sign in operation at the browser
     window</span> <span class="c0">)</span>
 
-<!-- -->
 
-1.  <span class="c5 c10">Note:</span> <span class="c8 c10 c27"> You need
+
+    *  <span class="c5 c10">Note:</span> <span class="c8 c10 c27"> You need
     to use an account that has a Microsoft Azure subscription.</span>
 
 <span
@@ -362,11 +359,10 @@ style="overflow: hidden; display: inline-block; margin: -0.00px 0.00px; border: 
 
 <span class="c0"></span>
 
-2.  <span class="c0">Set the resource id into a variable</span>
+3.  <span class="c0">Set the resource id into a variable</span>
 
-<!-- -->
 
-1.  <span class="c5 c16 c32">$AAResourceID = (Get-AzResource
+    *  <span class="c5 c16 c32">$AAResourceID = (Get-AzResource
     -ResourceType "Microsoft.Automation/automationAccounts" -Name
     "OktaPowershellAutomationAccount").resourceid</span>
 
@@ -375,12 +371,12 @@ style="overflow: hidden; display: inline-block; margin: -0.00px 0.00px; border: 
 <img src="./images/image6.png" style="width: 432.00px; height: 238.54px; margin-left: 0.00px; margin-top: 0.00px; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px);" />
 </span>
 
-3.  <span class="c0">Set the workspace resource id into a
+4.  <span class="c0">Set the workspace resource id into a
     variable</span>
 
-<!-- -->
 
-1.  <span class="c5 c16 c32">$WSResourceID = (Get-AzResource
+
+    *  <span class="c5 c16 c32">$WSResourceID = (Get-AzResource
     -ResourceType "Microsoft.OperationalInsights/workspaces" -Name
     "OktaPowershellLogAnalyticsWorkspaceName").resourceid</span>
 
@@ -395,25 +391,24 @@ style="overflow: hidden; display: inline-block; margin: -0.00px 0.00px; border: 
 
 <span class="c5 c16 c25"></span>
 
-4.  <span class="c8">Link the account id and workspace id</span>
+5.  <span class="c8">Link the account id and workspace id</span>
 
-<!-- -->
+    *  <span class="c5 c16 c32">New-AzDiagnosticSetting -ResourceId $AAResourceID -WorkspaceId $WSResourceID -Name service</span>
 
-1.  <span class="c5 c16 c32">Set-AzDiagnosticSetting -ResourceId
-    $AAResourceID -WorkspaceId $WSResourceID -Enabled 1</span>
+6.  <span class="c8">Execute the following command:</span>
+
+    *  <span class="c5 c16 c32">Register-AzResourceProvider -ProviderNamespace "Microsoft.OperationsManagement"</span>
 
 <span
 style="overflow: hidden; display: inline-block; margin: 0.00px 0.00px; border: 1.33px solid #268bd2; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px); width: 384.00px; height: 435.51px;">
-<img src="./images/image36.png" style="width: 384.00px; height: 435.51px; margin-left: 0.00px; margin-top: 0.00px; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px);" />
+<img src="./images/image87.png" style="width: 384.00px; height: 435.51px; margin-left: 0.00px; margin-top: 0.00px; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px);" />
 </span>
 
 <span class="c0"></span>
 
-5.  <span class="c0">Execute the following command</span>
+7.  <span class="c0">Execute the following command:</span>
 
-<!-- -->
-
-1.  <span class="c5">Set-AzOperationalInsightsIntelligencePack
+    *  <span class="c5">Set-AzOperationalInsightsIntelligencePack
     -ResourceGroupName OktaPowershellLogAnalyticsResourceGroup
     -WorkspaceName OktaPowershellLogAnalyticsWorkspaceName
     -IntelligencePackName "AzureAutomation" -Enabled $true</span>
@@ -423,12 +418,12 @@ style="overflow: hidden; display: inline-block; margin: 0.00px 0.00px; border: 1
 <img src="./images/image19.png" style="width: 480.00px; height: 260.68px; margin-left: 0.00px; margin-top: 0.00px; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px);" />
 </span>
 
-6.  <span class="c0">Back in the Azure portal, we will download the
+8.  <span class="c0">Back in the Azure portal, we will download the
     agent from our workspace to the Windows Server. </span>
 
 <span class="c0"></span>
 
-7.  <span class="c8">Navigate to the “</span> <span class="c5">Log
+9.  <span class="c8">Navigate to the “</span> <span class="c5">Log
     Analytics Workspace”</span> <span class="c5">.</span>
 
 <span
@@ -438,7 +433,7 @@ style="overflow: hidden; display: inline-block; margin: 0.00px 0.00px; border: 1
 
 <span class="c0">.</span>
 
-8.  <span class="c8">Select the “</span> <span
+10.  <span class="c8">Select the “</span> <span
     class="c5">OktaPowershellLogAnalyticsWorkspaceName</span> <span
     class="c0">” from the list.</span>
 
@@ -449,7 +444,7 @@ style="overflow: hidden; display: inline-block; margin: -0.00px -0.00px; border:
 
 <span class="c0"></span>
 
-9.  <span class="c8">On the left-pane, search for “</span> <span
+11.  <span class="c8">On the left-pane, search for “</span> <span
     class="c5">Agent management</span> <span class="c0">”.</span>
 
 <span
@@ -459,7 +454,7 @@ style="overflow: hidden; display: inline-block; margin: -0.00px -0.00px; border:
 
 <span class="c0"></span>
 
-10. <span class="c0">Download the version that matches the Windows
+12. <span class="c0">Download the version that matches the Windows
     Server you are currently using. Select either the 64 bit or the 32
     bit version of the Agent. </span>
 
@@ -470,7 +465,7 @@ style="overflow: hidden; display: inline-block; margin: -0.00px 0.00px; border: 
 
 <span class="c0"></span>
 
-11. <span class="c8">Save the </span> <span class="c5">Workspace
+13. <span class="c8">Save the </span> <span class="c5">Workspace
     ID</span> <span class="c8"> and </span> <span class="c5">Primary
     key</span> <span class="c0">, we will use that information
     later.</span>
@@ -482,9 +477,9 @@ style="overflow: hidden; display: inline-block; margin: -0.00px 0.00px; border: 
 
 <span class="c0"></span>
 
-12. <span class="c0">Once the download is complete, execute the Agent
+14. <span class="c0">Once the download is complete, execute the Agent
     Setup (MMASetup-\*\*\*\*.exe), click “Next >”.</span>
-13. <span class="c8">Select “</span> <span class="c5">Select Connect the
+15. <span class="c8">Select “</span> <span class="c5">Select Connect the
     agent to Azure Log Analytics (OMS)</span> <span class="c0">”, click
     “Next >”</span>
 
@@ -495,7 +490,7 @@ style="overflow: hidden; display: inline-block; margin: 0.00px 0.00px; border: 0
 
 <span class="c0"></span>
 
-14. <span class="c8"> Use the </span> <span class="c5">Workspace
+16. <span class="c8"> Use the </span> <span class="c5">Workspace
     ID</span> <span class="c8"> and </span> <span class="c5">Primary
     </span> <span class="c5">Key</span> <span class="c8"> that</span>
     <span class="c0"> we copied on step 11, click “Next >”.</span>
@@ -507,14 +502,14 @@ style="overflow: hidden; display: inline-block; margin: 0.00px 0.00px; border: 0
 
 <span class="c0"></span>
 
-15. <span class="c8">Select the Microsoft Update option that best suits
+17. <span class="c8">Select the Microsoft Update option that best suits
     your organization and continue until the installation is
     complete.</span>
-16. <span class="c8">When the agent is installed, the “</span> <span
+18. <span class="c8">When the agent is installed, the “</span> <span
     class="c5">HybridRegistration.psd1</span> <span class="c8">”
     PowerShell module gets copied to the agent</span> <span
     class="c0"> installation folder.</span>
-17. <span class="c8">On a Windows PowerShell navigate to “C:\\Program
+19. <span class="c8">On a Windows PowerShell navigate to “C:\\Program
     Files\\Microsoft Monitoring Agent\\Agent\\AzureAutomation\\</span>
     <span class="c5">\<version></span> <span
     class="c0">\\HybridRegistration\\”, your version might be different
@@ -527,13 +522,11 @@ style="overflow: hidden; display: inline-block; margin: -0.00px -0.00px; border:
 
 <span class="c0"></span>
 
-18. <span class="c8">Then execute the following command on Windows
+20. <span class="c8">Then execute the following command on Windows
     Desktop PowerShell </span> <span class="c5">not</span> <span
     class="c0"> MicrosoftPowerShell 7:</span>
 
-<!-- -->
-
-1.  <span class="c0">Import-Module .\\HybridRegistration.psd1</span>
+    *  <span class="c0">Import-Module .\\HybridRegistration.psd1</span>
 
 <span
 style="overflow: hidden; display: inline-block; margin: 0.00px -0.00px; border: 1.33px solid #268bd2; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px); width: 624.00px; height: 110.67px;">
@@ -544,7 +537,7 @@ style="overflow: hidden; display: inline-block; margin: 0.00px -0.00px; border: 
 
 <span class="c8 c16 c13"></span>
 
-19. <span class="c0">Back at Microsoft Azure portal, search for
+21. <span class="c0">Back at Microsoft Azure portal, search for
     automation accounts.</span>
 
 <span
@@ -554,7 +547,7 @@ style="overflow: hidden; display: inline-block; margin: 0.00px 0.00px; border: 1
 
 <span class="c0"></span>
 
-20. <span class="c8">Select “</span> <span
+22. <span class="c8">Select “</span> <span
     class="c5">OktaPowershellAutomationAccount</span> <span
     class="c0">”.</span>
 
@@ -565,7 +558,7 @@ style="overflow: hidden; display: inline-block; margin: -0.00px -0.00px; border:
 
 <span class="c0"></span>
 
-21. <span class="c8">In the Search field, type </span> <span
+23. <span class="c8">In the Search field, type </span> <span
     class="c5">keys</span> <span class="c8"> and select “</span> <span
     class="c5">Keys</span> <span class="c0">” from the pane.</span>
 
@@ -576,19 +569,17 @@ style="overflow: hidden; display: inline-block; margin: -0.00px 0.00px; border: 
 
 <span class="c0"></span>
 
-22. <span class="c8">Take note of the </span> <span class="c5">primary
+24. <span class="c8">Take note of the </span> <span class="c5">primary
     access key</span> <span class="c8">, and </span> <span
     class="c5">URL</span> <span class="c0">, we will use this
     information to run a PowerShell command.</span>
-23. <span class="c8">Go back to your Windows Server machine, and open
+25. <span class="c8">Go back to your Windows Server machine, and open
     notepad. From the following command replace </span> <span
     class="c5">\<URL> </span> <span class="c8">and </span> <span
     class="c5">\<Primary_access_key></span> <span class="c0"> with the
     information we copied on step 22.</span>
 
-<!-- -->
-
-1.  <span class="c8 c13">Add-HybridRunbookWorker –GroupName
+    *  <span class="c8 c13">Add-HybridRunbookWorker –GroupName
     OktaPowershellLogAnalyticsResourceGroup -EndPoint "</span> <span
     class="c5 c13">\<URL></span> <span class="c8 c13">" -Token "</span>
     <span class="c5 c13">\<Primary_access_key></span> <span
@@ -596,7 +587,7 @@ style="overflow: hidden; display: inline-block; margin: -0.00px 0.00px; border: 
 
 <!-- -->
 
-24. <span class="c0">Now, on a Windows Desktop PowerShell</span>
+26. <span class="c0">Now, on a Windows Desktop PowerShell</span>
 
 <span
 style="overflow: hidden; display: inline-block; margin: -0.00px -0.00px; border: 1.33px solid #268bd2; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px); width: 528.00px; height: 176.98px;">
@@ -605,7 +596,7 @@ style="overflow: hidden; display: inline-block; margin: -0.00px -0.00px; border:
 
 <span class="c0"></span>
 
-25. <span class="c0">Execute the command you built on step 23.a.</span>
+27. <span class="c0">Execute the command you built on step 23.a.</span>
 
 <span
 style="overflow: hidden; display: inline-block; margin: -0.00px -0.00px; border: 1.33px solid #268bd2; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px); width: 528.00px; height: 148.62px;">
