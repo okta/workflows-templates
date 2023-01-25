@@ -391,9 +391,14 @@ style="overflow: hidden; display: inline-block; margin: -0.00px 0.00px; border: 
 
 <span class="c5 c16 c25"></span>
 
-5.  <span class="c8">Link the account id and workspace id</span>
+5.  <span class="c8">Link the account ID and workspace ID with the following command:</span>
 
     *  <span class="c5 c16 c32">New-AzDiagnosticSetting -ResourceId $AAResourceID -WorkspaceId $WSResourceID -Name service</span>
+
+<span
+style="overflow: hidden; display: inline-block; margin: 0.00px 0.00px; border: 1.33px solid #268bd2; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px); width: 384.00px; height: 435.51px;">
+<img src="./images/image88.jpg" style="width: 384.00px; height: 435.51px; margin-left: 0.00px; margin-top: 0.00px; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px);" />
+</span>
 
 6.  <span class="c8">Execute the following command:</span>
 
