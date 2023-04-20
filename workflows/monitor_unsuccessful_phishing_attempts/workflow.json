@@ -1,0 +1,26 @@
+{
+  "name": "monitor_unsuccessful_phishing_attempts",
+  "title": "Monitor unsuccessful phishing attempts",
+  "description": "This template uses an event hook to trigger the workflow when a phishing attempt is unsuccessful. The flow sends information about the IP address of the phishing site and the affected user to a Slack channel for further investigation.",
+  "connectors": [
+    "slack"
+  ],
+  "details": {
+    "flowCount": 1,
+    "flos": [
+      {
+        "id": "a5183feb-f8c6-4ed0-b921-3612c62582f8",
+        "name": "Phishing Attempt Failed",
+        "type": "MAIN",
+        "screenshotURL": "https://d78vv2h34ll3s.cloudfront.net/static/catalog/workflows/monitor_unsuccessful_phishing_attempts/resources/7ff00f00c9bec08c9c0883cfffffffffffff.png"
+      }
+    ],
+    "mainFlowsCount": 1
+  },
+  "links": [
+    {
+      "destination": "https://github.com/okta/workflows-templates/blob/master/workflows/monitor_unsuccessful_phishing_attempts/readme.md",
+      "title": "Setup Documentation"
+    }
+  ]
+}
