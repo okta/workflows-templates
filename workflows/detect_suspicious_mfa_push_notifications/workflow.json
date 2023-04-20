@@ -1,0 +1,26 @@
+{
+  "name": "detect_suspicious_mfa_push_notifications",
+  "title": "Detect suspicious MFA push notifications",
+  "description": "This template uses an event hook that triggers the workflow when Okta Verify sends a push notification. This flow checks the geolocation (city, state, and country) of both the sign-in request (source) and the successful Okta Verify push (destination). If the city is different, the flow continues to gather information for a security team investigation. You can easily modify this flow to notify other downstream applications based on business needs.",
+  "connectors": [
+    "okta"
+  ],
+  "details": {
+    "flowCount": 1,
+    "flos": [
+      {
+        "id": "de1b9044-140b-4cb4-87a1-0790c19a08f3",
+        "name": "Detect suspicious MFA push notifications",
+        "type": "MAIN",
+        "screenshotURL": "https://d78vv2h34ll3s.cloudfront.net/static/catalog/workflows/detect_suspicious_mfa_push_notifications/resources/fff221420c2415c3fa04874cf4ff4ffcffff.png"
+      }
+    ],
+    "mainFlowsCount": 1
+  },
+  "links": [
+    {
+      "destination": "https://github.com/okta/workflows-templates/blob/master/workflows/detect_suspicious_mfa_push_notifications/readme.md",
+      "title": "Setup Documentation"
+    }
+  ]
+}
