@@ -1,0 +1,65 @@
+{
+  "name": "sync_okta_group_membership_with_office_365_unified",
+  "title": "Sync Okta Group Membership with Office 365 Unified Groups",
+  "description": "Sync Okta group membership with  Office 365 Unified Groups using custom profile attributes and Okta Workflows.",
+  "connectors": [
+    "okta",
+    "office365admin"
+  ],
+  "details": {
+    "stashCount": 2,
+    "flowCount": 7,
+    "flos": [
+      {
+        "id": "629cfcf6-2974-4158-96fb-e2353c1cc35e",
+        "name": "[UTIL] Error Handling",
+        "type": "HELPER",
+        "screenshotURL": "https://d78vv2h34ll3s.cloudfront.net/static/catalog/workflows/sync_okta_group_membership_with_office_365_unified/resources/3ff107248670ed86c86c0647e47003e03fd7.png"
+      },
+      {
+        "id": "5295eb4e-1e95-48aa-97d5-d5161c9e6cdd",
+        "name": "[UTIL] Create Office 365 Group",
+        "type": "HELPER",
+        "screenshotURL": "https://d78vv2h34ll3s.cloudfront.net/static/catalog/workflows/sync_okta_group_membership_with_office_365_unified/resources/003e1bf4b00be1bf0b60361fe1fe1fe1ffff.png"
+      },
+      {
+        "id": "7f592b9a-6e27-47bc-8931-6dfdadfc4acf",
+        "name": "1.1 Add Okta User to Office 365 Group",
+        "type": "HELPER",
+        "screenshotURL": "https://d78vv2h34ll3s.cloudfront.net/static/catalog/workflows/sync_okta_group_membership_with_office_365_unified/resources/3ff187240648e786d8e087c07d91c07ff5ff.png"
+      },
+      {
+        "id": "3fe4fd5a-381b-496e-afaa-2da2d66051b3",
+        "name": "1.0 Okta Group Updated",
+        "type": "MAIN",
+        "screenshotURL": "https://d78vv2h34ll3s.cloudfront.net/static/catalog/workflows/sync_okta_group_membership_with_office_365_unified/resources/002e70bfe972b709702439731f11f11f93ff.png"
+      },
+      {
+        "id": "03e3fe36-25f7-4ffc-b266-234b4001ddf8",
+        "name": "3.0 User Removed from Okta Group",
+        "type": "MAIN",
+        "screenshotURL": "https://d78vv2h34ll3s.cloudfront.net/static/catalog/workflows/sync_okta_group_membership_with_office_365_unified/resources/4a46b4eac478de0ee040843f47f17f5ff5ff.png"
+      },
+      {
+        "id": "48eb9bd8-a81e-4ca1-8f5f-8e64983281f7",
+        "name": "2.0 User Added to Okta Group",
+        "type": "MAIN",
+        "screenshotURL": "https://d78vv2h34ll3s.cloudfront.net/static/catalog/workflows/sync_okta_group_membership_with_office_365_unified/resources/4a4ea4eac478de0ee040843f47f17f5ff5ff.png"
+      },
+      {
+        "id": "8ea2e7d0-b16e-40d4-b03a-9bbc50e46a4a",
+        "name": "4.0 Okta Group Deleted",
+        "type": "MAIN",
+        "screenshotURL": "https://d78vv2h34ll3s.cloudfront.net/static/catalog/workflows/sync_okta_group_membership_with_office_365_unified/resources/420dacfac4e442c6fc29c61f63f23f6bfbff.png"
+      }
+    ],
+    "helperFlowsCount": 3,
+    "mainFlowsCount": 4
+  },
+  "links": [
+    {
+      "destination": "https://github.com/okta/workflows-templates/blob/master/workflows/sync_okta_group_membership_with_office_365_unified/readme.md",
+      "title": "Setup Documentation"
+    }
+  ]
+}
