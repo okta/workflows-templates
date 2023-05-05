@@ -1,0 +1,32 @@
+{
+  "name": "invalidate_anomalous_slack_sessions",
+  "title": "Invalidate anomalous Slack sessions",
+  "description": "This workflow is designed for security operations teams to invalidate Slack sessions and notify admins when Slack detects anomalies associated with session hijacking.The workflow periodically checks the Slack Risk Audit API for anomalous events, then filters through the results for specific security interest events. The workflow invalidates any Slack sessions associated with an anomalous event. It is also configured to notify the organization's security operations team or Slack administrator of these events. They can investigate if the user was a victim of an account takeover.",
+  "connectors": [
+    "slack"
+  ],
+  "details": {
+    "stashCount": 0,
+    "flowCount": 2,
+    "flos": [
+      {
+        "id": "3784665f-8403-4176-946d-844579fc314c",
+        "name": "1.1 - Error Handling Helper Flow",
+        "type": "HELPER"
+      },
+      {
+        "id": "b8c54ece-e4c2-4ee8-9d5e-0f962107b7de",
+        "name": "1.0 Invalidate Anomalous Slack Sessions",
+        "type": "MAIN"
+      }
+    ],
+    "helperFlowsCount": 1,
+    "mainFlowsCount": 1
+  },
+  "links": [
+    {
+      "destination": "https://github.com/okta/workflows-templates/blob/master/workflows/invalidate_anomalous_slack_sessions/readme.md",
+      "title": "Setup Documentation"
+    }
+  ]
+}
