@@ -1,0 +1,65 @@
+{
+  "name": "using_okta_workflows_for_pendo_metadata_sync",
+  "title": "Use Okta Workflows for Pendo Metadata Sync",
+  "description": "This workflow pushes user profile data from Okta into Pendo Adopt. Pendo recommends this approach for Okta customers, as Okta Workflows can automatically update a user's data in Pendo when information changes in Okta. See [Using Okta Workflows for Metadata Sync](https://adoptsupport.pendo.io/hc/en-us/articles/8671988588955-Using-Okta-Workflows-for-Metadata-Sync)",
+  "connectors": [
+    "okta",
+    "pendometadataupdateconnector_6b53858a6e5e467783223497b88ce8bf"
+  ],
+  "details": {
+    "stashCount": 1,
+    "flowCount": 7,
+    "flos": [
+      {
+        "id": "8bfeda2c-d1e9-474c-870f-2d6cfc9321a7",
+        "name": "[HELPER 1] Get User Keys",
+        "type": "HELPER",
+        "screenshotURL": "https://d78vv2h34ll3s.cloudfront.net/static/catalog/workflows/using_okta_workflows_for_pendo_metadata_sync/resources/584d1cd3c51cc1cc1fc07c07c1f83f83f93f.png"
+      },
+      {
+        "id": "405a883f-358e-4fba-9981-9b1e3a6310e8",
+        "name": "[HELPER 2] Bulk Load Temp Table into Pendo",
+        "type": "HELPER",
+        "screenshotURL": "https://d78vv2h34ll3s.cloudfront.net/static/catalog/workflows/using_okta_workflows_for_pendo_metadata_sync/resources/012fd0fc6f42b82b4c841e69e69e41fc1ff7.png"
+      },
+      {
+        "id": "4f28851b-10b1-46df-a271-3c203e75d2e5",
+        "name": "[HELPER - STREAM] Add Okta User to Temp Table",
+        "type": "HELPER",
+        "screenshotURL": "https://d78vv2h34ll3s.cloudfront.net/static/catalog/workflows/using_okta_workflows_for_pendo_metadata_sync/resources/fff0032486c8e78f086c06987f81c05f81ff.png"
+      },
+      {
+        "id": "ca40a4db-0143-400d-a00f-66a131655609",
+        "name": "[HELPER 2.1] Read and Delete User From Temp Table",
+        "type": "HELPER",
+        "screenshotURL": "https://d78vv2h34ll3s.cloudfront.net/static/catalog/workflows/using_okta_workflows_for_pendo_metadata_sync/resources/4ad4a97a84b86b87985885785f85f85fffff.png"
+      },
+      {
+        "id": "7e548bb3-6b48-456f-9b8c-bd50847cfb41",
+        "name": "[POST] Event-Triggered Load - User Update",
+        "type": "MAIN",
+        "screenshotURL": "https://d78vv2h34ll3s.cloudfront.net/static/catalog/workflows/using_okta_workflows_for_pendo_metadata_sync/resources/082bd0bde882892ffc3f83f93f9bf93f9fff.png"
+      },
+      {
+        "id": "b35a6545-294a-46bf-aaba-e7e28e68bcb8",
+        "name": "[PRE] Kickoff Bulk Load - Read All Okta Users and Sync to Pendo",
+        "type": "HELPER",
+        "screenshotURL": "https://d78vv2h34ll3s.cloudfront.net/static/catalog/workflows/using_okta_workflows_for_pendo_metadata_sync/resources/001dee8ebc42ae89f4088f98f9cf9ef9ff9f.png"
+      },
+      {
+        "id": "bd343f9a-b3d5-4f0a-a747-e2cd1b20492a",
+        "name": "[POST] Event-Triggered Load - User Creation",
+        "type": "MAIN",
+        "screenshotURL": "https://d78vv2h34ll3s.cloudfront.net/static/catalog/workflows/using_okta_workflows_for_pendo_metadata_sync/resources/083bd0bd6880e12ffc0f83f93f93f9bf9fff.png"
+      }
+    ],
+    "helperFlowsCount": 5,
+    "mainFlowsCount": 2
+  },
+  "links": [
+    {
+      "destination": "https://github.com/okta/workflows-templates/blob/master/workflows/using_okta_workflows_for_pendo_metadata_sync/readme.md",
+      "title": "Setup Documentation"
+    }
+  ]
+}
