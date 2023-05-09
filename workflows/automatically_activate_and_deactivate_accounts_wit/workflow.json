@@ -1,0 +1,52 @@
+{
+  "name": "automatically_activate_and_deactivate_accounts_wit",
+  "title": "Automatically activate and deactivate accounts with notifications in Microsoft Teams",
+  "description": "This template demonstrates how Okta Workflows can automatically activate and deactivate an Okta user account based on a start or end date stored in the Okta user's profile. The template then sends out notifications using Microsoft Teams.",
+  "connectors": [
+    "okta",
+    "microsoftteams"
+  ],
+  "details": {
+    "flowCount": 5,
+    "flos": [
+      {
+        "id": "9fb103ab-aa75-457d-9d2b-ecb2279221b6",
+        "name": "3 Send message to a channel in Microsoft Teams",
+        "type": "HELPER",
+        "screenshotURL": "https://d78vv2h34ll3s.cloudfront.net/static/catalog/workflows/automatically_activate_and_deactivate_accounts_wit/resources/0015fe71e35e12ab98118118fbffbffbffff.png"
+      },
+      {
+        "id": "c1ee89e1-2215-4772-ace3-bd9555102e24",
+        "name": "2B Deactivate Account",
+        "type": "HELPER",
+        "screenshotURL": "https://d78vv2h34ll3s.cloudfront.net/static/catalog/workflows/automatically_activate_and_deactivate_accounts_wit/resources/032432ffa7704786b86286786f8bf83f9ff9.png"
+      },
+      {
+        "id": "2af246d4-127c-4f54-a0f3-3f9ceefe9734",
+        "name": "1B Activate Account",
+        "type": "HELPER",
+        "screenshotURL": "https://d78vv2h34ll3s.cloudfront.net/static/catalog/workflows/automatically_activate_and_deactivate_accounts_wit/resources/033032ffa7706786a86286587f8bf83f9ff9.png"
+      },
+      {
+        "id": "7ca77024-a0e4-44e3-ad15-88f0699efd0f",
+        "name": "2A Find users to deactivate",
+        "type": "MAIN",
+        "screenshotURL": "https://d78vv2h34ll3s.cloudfront.net/static/catalog/workflows/automatically_activate_and_deactivate_accounts_wit/resources/0027aef5a5a8da8da8da0ca8da9d01c07c3f.png"
+      },
+      {
+        "id": "8bc37173-3da8-4537-93be-2d4ad5d71440",
+        "name": "1A Find users to activate",
+        "type": "MAIN",
+        "screenshotURL": "https://d78vv2h34ll3s.cloudfront.net/static/catalog/workflows/automatically_activate_and_deactivate_accounts_wit/resources/0027eef525a8da8da8da0da8da1d01d07c1f.png"
+      }
+    ],
+    "helperFlowsCount": 3,
+    "mainFlowsCount": 2
+  },
+  "links": [
+    {
+      "destination": "https://github.com/okta/workflows-templates/blob/master/workflows/automatically_activate_and_deactivate_accounts_wit/readme.md",
+      "title": "Setup Documentation"
+    }
+  ]
+}
