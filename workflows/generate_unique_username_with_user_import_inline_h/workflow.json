@@ -1,7 +1,7 @@
 {
   "name": "generate_unique_username_with_user_import_inline_h",
   "title": "Generate unique username with user import inline hooks",
-  "description": "Okta Inline Hooks allow you to trigger custom processes at specific points in Okta process flows.  This flow is called by an inline hook during the user self-registration process and leverages a Workflows table to enforce email domain validation. If the user’s email domain is not in the Workflows table allow-list, registration is denied with an informative error for the user.",
+  "description": "IT administrators must have unique usernames to create a new hire in an Okta organization. This template uses inline hooks and Workflows to check to see if the imported user exists within the Okta Universal Directory. If the user exists, the template increments the username prefix by 1. For example, jessieedoe1@example.com.",
   "connectors": [
     "okta"
   ],
