@@ -1,7 +1,7 @@
 {
   "name": "using_okta_workflows_for_pendo_metadata_sync",
   "title": "Use Okta Workflows for Pendo Metadata Sync",
-  "description": "This workflow pushes user profile data from Okta into Pendo Adopt. Pendo recommends this approach for Okta customers, as Okta Workflows can automatically update a user's data in Pendo when information changes in Okta. See [Using Okta Workflows for Metadata Sync](https://adoptsupport.pendo.io/hc/en-us/articles/8671988588955-Using-Okta-Workflows-for-Metadata-Sync)",
+  "description": "This workflow pushes user profile data from Okta into Pendo Adopt. Pendo recommends this approach for Okta customers, as Okta Workflows can automatically update a user's data in Pendo when information changes in Okta.",
   "connectors": [
     "okta",
     "pendometadataupdateconnector_6b53858a6e5e467783223497b88ce8bf"
@@ -58,7 +58,7 @@
   },
   "links": [
     {
-      "destination": "https://github.com/okta/workflows-templates/blob/master/workflows/using_okta_workflows_for_pendo_metadata_sync/readme.md",
+      "destination": "https://adoptsupport.pendo.io/hc/en-us/articles/8671988588955-Using-Okta-Workflows-for-Metadata-Sync",
       "title": "Setup Documentation"
     }
   ]
