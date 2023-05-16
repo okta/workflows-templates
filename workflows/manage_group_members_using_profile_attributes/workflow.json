@@ -8,28 +8,28 @@
   "details": {
     "flos": [
       {
-        "id": "96679abd-caf0-4629-8135-516e9bb1706a",
-        "name": "[s1.1.1] CreateListGroupsBasedOnUserAttribute",
-        "type": "HELPER",
-        "screenshotURL": "https://d78vv2h34ll3s.cloudfront.net/static/catalog/workflows/manage_group_members_using_profile_attributes/resources/86mCWwwwQscxzXEf_D4hd15s5KIJkSBYcQwzH_y9HT8.png"
-      },
-      {
-        "id": "39c5a02a-994f-4c3e-970e-edbd3092a566",
-        "name": "[1.1] CreateGroupList",
-        "type": "HELPER",
-        "screenshotURL": "https://d78vv2h34ll3s.cloudfront.net/static/catalog/workflows/manage_group_members_using_profile_attributes/resources/XvlOi-33S_DTibDJLwSGN_l7fuWHWGyL8XM6N_oDBr8.png"
-      },
-      {
-        "id": "e69f3560-8086-4228-b7e2-dbfacec54273",
+        "id": "994e9c65-3b2b-44fe-8fc6-a98992df3119",
         "name": "[1.2] Group Addition or Removal",
         "type": "HELPER",
-        "screenshotURL": "https://d78vv2h34ll3s.cloudfront.net/static/catalog/workflows/manage_group_members_using_profile_attributes/resources/4CoRKkBqNp60ExMWHafnpEFjCz-7qTxosUCCrAtJiM8.png"
+        "screenshotURL": "https://d78vv2h34ll3s.cloudfront.net/static/catalog/workflows/manage_group_members_using_profile_attributes/resources/086ae0f7c930b30f71e71e71e71e71ff1ff5.png"
       },
       {
-        "id": "5b97b8f4-c548-4646-8fd2-713578ab36e3",
+        "id": "d586d5f2-3eb2-40ac-b27c-fbddf68a18b4",
+        "name": "[1.1] CreateGroupList",
+        "type": "HELPER",
+        "screenshotURL": "https://d78vv2h34ll3s.cloudfront.net/static/catalog/workflows/manage_group_members_using_profile_attributes/resources/37f187248658f5863865067863d01fe1fe1f.png"
+      },
+      {
+        "id": "6d92146f-3fb9-41f2-baa5-892b20ccf0ec",
+        "name": "[s1.1.1] CreateListGroupsBasedOnUserAttribute",
+        "type": "HELPER",
+        "screenshotURL": "https://d78vv2h34ll3s.cloudfront.net/static/catalog/workflows/manage_group_members_using_profile_attributes/resources/554754e5455c51c5cc54c57c07fc7fc7fc7f.png"
+      },
+      {
+        "id": "a3b8c65e-b1e6-46f9-8e49-bb53f21a9447",
         "name": "[1.0] Fix Groups",
         "type": "HELPER",
-        "screenshotURL": "https://d78vv2h34ll3s.cloudfront.net/static/catalog/workflows/manage_group_members_using_profile_attributes/resources/jWY06CochxYq2QCPO9KkG8qj9evBJvZGNHHtzJUr9rg.png"
+        "screenshotURL": "https://d78vv2h34ll3s.cloudfront.net/static/catalog/workflows/manage_group_members_using_profile_attributes/resources/001eeebe4164b14fb4831a31b1fb9fbfffff.png"
       }
     ],
     "flowCount": 4,
