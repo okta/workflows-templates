@@ -1,0 +1,33 @@
+{
+  "name": "subscribe_to_microsoft_alerts_and_notify_admins_of",
+  "title": "Subscribe to Microsoft alerts and notify admins of potential security issues",
+  "description": "You can use a Microsoft alert subscription to manage your security surface across API endpoints, email, collaboration spaces, cloud apps, and user identities.",
+  "connectors": [
+    "office365admin",
+    "office365mail"
+  ],
+  "details": {
+    "flowCount": 2,
+    "flos": [
+      {
+        "id": "bd99ef93-08ed-4d6b-89e8-8eec9207c785",
+        "name": "1.0 Create Microsoft Subscription",
+        "type": "MAIN",
+        "screenshotURL": "https://d78vv2h34ll3s.cloudfront.net/static/catalog/workflows/subscribe_to_microsoft_alerts_and_notify_admins_of/resources/017d60d7cf80f80ee8c40fc1fc1fc1fc1fc1.png"
+      },
+      {
+        "id": "f6c2d132-525c-4963-8d84-36f54948a3e3",
+        "name": "2.0 Subscription API Endpoint",
+        "type": "MAIN",
+        "screenshotURL": "https://d78vv2h34ll3s.cloudfront.net/static/catalog/workflows/subscribe_to_microsoft_alerts_and_notify_admins_of/resources/3fe801bc1b808a5f1dc17c07d0db01b11ffd.png"
+      }
+    ],
+    "mainFlowsCount": 2
+  },
+  "links": [
+    {
+      "destination": "https://github.com/okta/workflows-templates/blob/master/workflows/subscribe_to_microsoft_alerts_and_notify_admins_of/readme.md",
+      "title": "Setup Documentation"
+    }
+  ]
+}
