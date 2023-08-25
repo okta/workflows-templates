@@ -1,0 +1,77 @@
+{
+  "name": "implementing_xaas_with_personio",
+  "title": "Implementing XaaS with Personio",
+  "description": "Demonstrate how to implement XaaS using Okta Workflows with the Personio connector.",
+  "connectors": [
+    "okta",
+    "personio"
+  ],
+  "details": {
+    "stashCount": 1,
+    "flowCount": 9,
+    "flos": [
+      {
+        "id": "7d608b9d-701c-49c4-b05d-5c1479b53659",
+        "name": "XaaS Bulk Import Request Handler",
+        "type": "HELPER",
+        "screenshotURL": "https://d78vv2h34ll3s.cloudfront.net/static/catalog/workflows/implementing_xaas_with_personio/resources/006c70ffce98609ed1e41e41fc1ff1ff1ff1.png"
+      },
+      {
+        "id": "50069f34-28b8-48ae-91c0-384fc521f7e3",
+        "name": "Create Import Session",
+        "type": "HELPER",
+        "screenshotURL": "https://d78vv2h34ll3s.cloudfront.net/static/catalog/workflows/implementing_xaas_with_personio/resources/008be6be6c229d69e29c29c39c7fc7fdffe7.png"
+      },
+      {
+        "id": "264d8ab1-4a04-479f-9b5a-f28d2422f24f",
+        "name": "Add Personio Record to Temporary Table",
+        "type": "HELPER",
+        "screenshotURL": "https://d78vv2h34ll3s.cloudfront.net/static/catalog/workflows/implementing_xaas_with_personio/resources/454754c5d554f147547047047f33f33f3ff3.png"
+      },
+      {
+        "id": "54a0fdf0-3500-4686-a29e-38f945931383",
+        "name": "XaaS Import Session Handler",
+        "type": "HELPER",
+        "screenshotURL": "https://d78vv2h34ll3s.cloudfront.net/static/catalog/workflows/implementing_xaas_with_personio/resources/00187e9f7574134f547007cc7cc7f8ff9ff9.png"
+      },
+      {
+        "id": "098fcfaf-ec0f-4877-9f92-95c34b8bdf11",
+        "name": "Delete Import Session",
+        "type": "HELPER",
+        "screenshotURL": "https://d78vv2h34ll3s.cloudfront.net/static/catalog/workflows/implementing_xaas_with_personio/resources/1ff83f2003117913f1731731711300621ffb.png"
+      },
+      {
+        "id": "394b57f8-6753-43b7-b8c9-db137eae521b",
+        "name": "Personio Mapping",
+        "type": "HELPER",
+        "screenshotURL": "https://d78vv2h34ll3s.cloudfront.net/static/catalog/workflows/implementing_xaas_with_personio/resources/3ff04f048658ed86586d0610eddfc7fc7fd7.png"
+      },
+      {
+        "id": "bba47908-7a8c-4c35-a730-a0649574f638",
+        "name": "Orchestrate Import from Personio",
+        "type": "HELPER",
+        "screenshotURL": "https://d78vv2h34ll3s.cloudfront.net/static/catalog/workflows/implementing_xaas_with_personio/resources/000fcafcda64ac6ec404484defdefcffcffc.png"
+      },
+      {
+        "id": "94b755dd-252d-4c03-aaff-0461f369f740",
+        "name": "Import from Personio (Create & Update)",
+        "type": "MAIN",
+        "screenshotURL": "https://d78vv2h34ll3s.cloudfront.net/static/catalog/workflows/implementing_xaas_with_personio/resources/3ff07f000618e587e87c0fc8dc01c0fc0fd4.png"
+      },
+      {
+        "id": "ac801c09-9af6-43d6-8e27-b836906f44be",
+        "name": "Import from Personio (Deactivate & Delete)",
+        "type": "MAIN",
+        "screenshotURL": "https://d78vv2h34ll3s.cloudfront.net/static/catalog/workflows/implementing_xaas_with_personio/resources/3ff07f0006197487e8700fc8dd8fc0fc0fc1.png"
+      }
+    ],
+    "helperFlowsCount": 7,
+    "mainFlowsCount": 2
+  },
+  "links": [
+    {
+      "destination": "https://github.com/okta/workflows-templates/blob/master/workflows/implementing_xaas_with_personio/readme.md",
+      "title": "Setup Documentation"
+    }
+  ]
+}
