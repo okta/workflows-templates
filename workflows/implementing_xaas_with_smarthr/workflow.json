@@ -1,0 +1,77 @@
+{
+  "name": "implementing_xaas_with_smarthr",
+  "title": "Implementing XaaS with SmartHR",
+  "description": "Here’s a stab at the SmartHR version of the XaaS template.",
+  "connectors": [
+    "okta",
+    "smarthr"
+  ],
+  "details": {
+    "stashCount": 1,
+    "flowCount": 9,
+    "flos": [
+      {
+        "id": "c2f00f35-6c36-472a-b158-e5730ff6258c",
+        "name": "Create Import Session",
+        "type": "HELPER",
+        "screenshotURL": "https://d78vv2h34ll3s.cloudfront.net/static/catalog/workflows/implementing_xaas_with_smarthr/resources/008be6be6c32bc29e29c29c39c7fc7fc7fc7.png"
+      },
+      {
+        "id": "ab870322-df06-40e4-8376-f0a5d77a225f",
+        "name": "XaaS Bulk Import Request Handler",
+        "type": "HELPER",
+        "screenshotURL": "https://d78vv2h34ll3s.cloudfront.net/static/catalog/workflows/implementing_xaas_with_smarthr/resources/086e42efa611e51e71e71ff1ff1ff1ff1ff1.png"
+      },
+      {
+        "id": "541a688c-cf21-418b-8735-74f886086c0e",
+        "name": "Add SmartHR Record to Temporary Table",
+        "type": "HELPER",
+        "screenshotURL": "https://d78vv2h34ll3s.cloudfront.net/static/catalog/workflows/implementing_xaas_with_smarthr/resources/454754c5dd54f00f547007417f33e33e3ff3.png"
+      },
+      {
+        "id": "cc22af7d-8720-4746-95fa-6255ba19d994",
+        "name": "Delete Import Session",
+        "type": "HELPER",
+        "screenshotURL": "https://d78vv2h34ll3s.cloudfront.net/static/catalog/workflows/implementing_xaas_with_smarthr/resources/1ff83f2003117913f1731731711300621ffb.png"
+      },
+      {
+        "id": "7fc06c68-33ca-467d-be99-16623895b302",
+        "name": "XaaS Import Session Handler",
+        "type": "HELPER",
+        "screenshotURL": "https://d78vv2h34ll3s.cloudfront.net/static/catalog/workflows/implementing_xaas_with_smarthr/resources/00187e9f7574134f547007c87f87f8ff9ff9.png"
+      },
+      {
+        "id": "46c902a5-0781-42c7-96b6-a431f12fe3c0",
+        "name": "SmartHR Mapping",
+        "type": "HELPER",
+        "screenshotURL": "https://d78vv2h34ll3s.cloudfront.net/static/catalog/workflows/implementing_xaas_with_smarthr/resources/3ff06f008658ec86d8648618eddfd7fc7fd7.png"
+      },
+      {
+        "id": "7f26071f-96f8-4626-9bde-b4e6bc64ede7",
+        "name": "Orchestrate Import from SmartHR",
+        "type": "HELPER",
+        "screenshotURL": "https://d78vv2h34ll3s.cloudfront.net/static/catalog/workflows/implementing_xaas_with_smarthr/resources/000fcafcda4cac6ae404484defdefcffcffc.png"
+      },
+      {
+        "id": "a77d7f2c-3fc5-4c8f-bb49-372005069ca1",
+        "name": "Import from SmartHR (Deactivate & Delete)",
+        "type": "MAIN",
+        "screenshotURL": "https://d78vv2h34ll3s.cloudfront.net/static/catalog/workflows/implementing_xaas_with_smarthr/resources/3ff07f0006187487f8740fc0dd8fc0fc0fc1.png"
+      },
+      {
+        "id": "15a1029f-ca51-493e-ac38-63327dafebd5",
+        "name": "Import from SmartHR (Create & Update)",
+        "type": "MAIN",
+        "screenshotURL": "https://d78vv2h34ll3s.cloudfront.net/static/catalog/workflows/implementing_xaas_with_smarthr/resources/7f001f01f21f21fe1fe1ffffffffffffffff.png"
+      }
+    ],
+    "helperFlowsCount": 7,
+    "mainFlowsCount": 2
+  },
+  "links": [
+    {
+      "destination": "https://github.com/okta/workflows-templates/blob/master/workflows/implementing_xaas_with_smarthr/readme.md",
+      "title": "Setup Documentation"
+    }
+  ]
+}
