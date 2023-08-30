@@ -1,7 +1,7 @@
 {
   "name": "implementing_xaas_with_personio",
   "title": "Implementing XaaS with Personio",
-  "description": "Demonstrate how to implement XaaS using Okta Workflows with the Personio connector.",
+  "description": "This template demonstrates how to implement an Anything-as-a-Source (XaaS) model to import records from Personio. The workflow requests records from Personio, stores the resulting list of records in a temporary Workflows table, and then creates import sessions and processes the bulk import requests.",
   "connectors": [
     "okta",
     "personio"
