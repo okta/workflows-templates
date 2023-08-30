@@ -1,7 +1,7 @@
 {
   "name": "implementing_xaas_with_smarthr",
   "title": "Implementing XaaS with SmartHR",
-  "description": "Here’s a stab at the SmartHR version of the XaaS template.",
+  "description": "This template demonstrates how to implement an Anything-as-a-Source (XaaS) model to import records from SmartHR. The workflow requests records from SmartHR, stores the resulting list of records in a temporary Workflows table, and then creates import sessions and processes the bulk import requests.",
   "connectors": [
     "okta",
     "smarthr"
@@ -56,13 +56,13 @@
         "id": "a77d7f2c-3fc5-4c8f-bb49-372005069ca1",
         "name": "Import from SmartHR (Deactivate & Delete)",
         "type": "MAIN",
-        "screenshotURL": "https://d78vv2h34ll3s.cloudfront.net/static/catalog/workflows/implementing_xaas_with_smarthr/resources/3ff07f0006187487f8740fc0dd8fc0fc0fc1.png"
+        "screenshotURL": "https://d78vv2h34ll3s.cloudfront.net/static/catalog/workflows/implementing_xaas_with_smarthr/resources/7f001f01f21f21fe1fe1ffffffffffffffff.png"
       },
       {
         "id": "15a1029f-ca51-493e-ac38-63327dafebd5",
         "name": "Import from SmartHR (Create & Update)",
         "type": "MAIN",
-        "screenshotURL": "https://d78vv2h34ll3s.cloudfront.net/static/catalog/workflows/implementing_xaas_with_smarthr/resources/7f001f01f21f21fe1fe1ffffffffffffffff.png"
+        "screenshotURL": "https://d78vv2h34ll3s.cloudfront.net/static/catalog/workflows/implementing_xaas_with_smarthr/resources/3ff07f0006187487f8740fc0dd8fc0fc0fc1.png"
       }
     ],
     "helperFlowsCount": 7,
