@@ -2,7 +2,7 @@ version: 2.1
 
 orbs:
   node: circleci/node@5.0.3
-  general-platform-helpers: okta/general-platform-helpers@1.5
+  general-platform-helpers: okta/general-platform-helpers@1.8
 
 workflows:
   validation:
