@@ -48,17 +48,11 @@ that requires the execution of a PowerShell on-premises.</span>
 
 #### <span class="c31">Pre-requirements</span>
 
-1.  <span class="c8">Install Microsoft PowerShell 7 as described </span>
-    <span class="c18">
-    <a href="https://www.google.com/url?q=https://docs.microsoft.com/en-us/powershell/scripting/install/installing-powershell-core-on-windows?view%3Dpowershell-7&amp;sa=D&amp;source=editors&amp;ust=1624896848558000&amp;usg=AOvVaw3SF3rRRsYSqSRgEYFpplwk" class="c12">here</a>
-    </span> <span class="c0"> on a Windows server. </span>
-
 <!-- -->
 
 1.  <span class="c0">The configuration and screenshots captured were
     taken from a Windows Server 2016 DataCenter on AWS configured as an
-    AD Domain Controller, using Microsoft PowerShell
-    7.3.0-win-x64.msi.</span>
+    AD Domain Controller</span>
 
 <!-- -->
 
@@ -70,6 +64,7 @@ that requires the execution of a PowerShell on-premises.</span>
     the appropriate changes in all of the commands and references.
     Otherwise the solution will not be able to link back to the objects
     you are creating.</span>
+4. Make sure the server where the Azure Connected Machine agent is installed has outbound https 443 traffic access allowed and Local Administrator privileges for the account you are using. On that server, it is suggested to set as default Chrome or Edge browsers (IE with Enhanced Security option turned on is problematic as the script execution requires authentication with Azure). 
 
 ## <span class="c22 c16">Step-by-Step instructions</span>
 
@@ -92,7 +87,7 @@ style="overflow: hidden; display: inline-block; margin: 0.00px 0.00px; border: 1
 <span class="c8 c16 c21"></span>
 
 3.  <span class="c8 c21">Click on “</span> <span class="c5 c21">+
-    New</span> <span class="c8 c21">” to add a new automation
+    Create</span> <span class="c8 c21">” to add a new automation
     account.</span>
 
 <span class="c0"></span>
@@ -103,512 +98,110 @@ style="overflow: hidden; display: inline-block; margin: 0.00px 0.00px; border: 1
 
 <span
 style="overflow: hidden; display: inline-block; margin: 0.00px 0.00px; border: 1.33px solid #268bd2; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px); width: 336.00px; height: 341.60px;">
-<img src="./images/image48.png" style="width: 336.00px; height: 341.60px; margin-left: 0.00px; margin-top: 0.00px; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px);" />
+<img src="./images/aa001.png" style="width: 336.00px; height: 341.60px; margin-left: 0.00px; margin-top: 0.00px; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px);" />
 </span>
 
 <span class="c0"></span>
 
-5.  <span class="c8">Click “</span> <span class="c5">Create new</span>
-    <span class="c0">” below the Resource group drop down</span>
+5.  Click on “Create New” Resource Group and name the Resource Group “AAAutomationRG”
 
 <span
 style="overflow: hidden; display: inline-block; margin: -0.00px -0.00px; border: 1.33px solid #268bd2; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px); width: 240.00px; height: 150.00px;">
-<img src="./images/image65.png" style="width: 240.00px; height: 150.00px; margin-left: 0.00px; margin-top: 0.00px; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px);" />
+<img src="./images/aa002.png" style="width: 240.00px; height: 150.00px; margin-left: 0.00px; margin-top: 0.00px; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px);" />
 </span>
 
-6.  <span class="c8">Name the resource group </span> <span
-    class="c8"> “</span> <span
-    class="c5">OktaPowershellLogAnalyticsResourceGroup</span> <span
-    class="c0">” and click OK. </span>
+6.  And then click “OK” to create the resource group
 
-<span
-style="overflow: hidden; display: inline-block; margin: -0.00px -0.00px; border: 1.33px solid #268bd2; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px); width: 240.00px; height: 170.40px;">
-<img src="./images/image51.png" style="width: 240.00px; height: 170.40px; margin-left: 0.00px; margin-top: 0.00px; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px);" />
-</span>
-
-<span class="c0"></span>
-
-<span class="c0"></span>
-
-<span class="c0"></span>
-
-<span class="c0"></span>
-
-<span class="c0"></span>
-
-7.  <span class="c8">Confirm that “</span> <span class="c5">Create Azure
-    Run As account</span> <span class="c0">” is set to Yes.</span>
+7.  Click “Review+Create” to create Automation Account with the default values
 
 <span
 style="overflow: hidden; display: inline-block; margin: 0.00px -0.00px; border: 1.33px solid #268bd2; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px); width: 240.00px; height: 116.40px;">
-<img src="./images/image71.png" style="width: 240.00px; height: 116.40px; margin-left: 0.00px; margin-top: 0.00px; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px);" />
+<img src="./images/aa003.png" style="width: 240.00px; height: 116.40px; margin-left: 0.00px; margin-top: 0.00px; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px);" />
 </span>
 
-8.  <span class="c8">Click “</span> <span class="c5">Create</span> <span
-    class="c0">” to create your new automation account.</span>
-9.  <span class="c8">It may take a minute before your new automation
-    account is created, once you receive confirmation you will be able
-    to see it in the “</span> <span class="c5">Automation
-    Accounts</span> <span class="c0">” list.</span>
+8.  Click “Create” and then go to the automation account resource
 
 <span
-style="overflow: hidden; display: inline-block; margin: -0.00px -0.00px; border: 1.33px solid #268bd2; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px); width: 240.00px; height: 186.00px;">
-<img src="./images/image11.png" style="width: 240.00px; height: 186.00px; margin-left: 0.00px; margin-top: 0.00px; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px);" />
+style="overflow: hidden; display: inline-block; margin: 0.00px -0.00px; border: 1.33px solid #268bd2; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px); width: 240.00px; height: 116.40px;">
+<img src="./images/aa004.png" style="width: 240.00px; height: 116.40px; margin-left: 0.00px; margin-top: 0.00px; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px);" />
 </span>
 
-### <span class="c23 c16">Create a new Log Analytics Workspace</span>
+### <span class="c23 c16">Configure Hybrid Runbook Worker</span>
 
-<span class="c0">In order to use Azure Automation Runbooks on-premises,
-we will need to set up a Log Analytics Workspace. This is a service in
-Azure that provides monitoring and logging for the various Azure
-services. </span>
-
-<span class="c0"></span>
-
-1.  <span class="c0">In the Azure Portal search for Log Analytics
-    Workspaces.</span>
-
-<span
-style="overflow: hidden; display: inline-block; margin: -0.00px 0.00px; border: 1.33px solid #268bd2; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px); width: 480.00px; height: 133.66px;">
-<img src="./images/image86.png" style="width: 480.00px; height: 133.66px; margin-left: 0.00px; margin-top: 0.00px; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px);" />
-</span>
-
-2.  <span class="c8">Click “</span> <span class="c5">+ New</span> <span
-    class="c0">” to add a new log analytics workspace.</span>
-
-<span class="c0"></span>
-
-3.  <span class="c8"></span> <span class="c8">Select the resource group
-    </span> <span
-    class="c5">OktaPowershellLogAnalyticsResourceGroup</span> <span
-    class="c8"> that we created at step 6 for </span> <span class="c18">
-    <a href="#ExecuteOnPremisePowerShellwithOktaWorkflows.xhtml#h.5vfe02tkctah" class="c12">Create a new Automation Accounts</a>
-    </span>
-
-<span
-style="overflow: hidden; display: inline-block; margin: 0.00px 0.00px; border: 1.33px solid #268bd2; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px); width: 480.00px; height: 307.94px;">
-<img src="./images/image32.png" style="width: 480.00px; height: 307.94px; margin-left: 0.00px; margin-top: 0.00px; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px);" />
-</span>
-
-<span class="c0"></span>
-
-4.  <span class="c8">Name the log analytics workspace “</span> <span
-    class="c5">OktaPowershellLogAnalyticsWorkspaceName”</span> <span
-    class="c8">.</span>
-
-<span
-style="overflow: hidden; display: inline-block; margin: 0.00px 0.00px; border: 1.33px solid #268bd2; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px); width: 480.00px; height: 305.72px;">
-<img src="./images/image44.png" style="width: 480.00px; height: 305.72px; margin-left: 0.00px; margin-top: 0.00px; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px);" />
-</span>
-
-5.  <span class="c8">Click “</span> <span class="c5">Review +
-    Create</span> <span class="c0">”. This will not yet create the new
-    log analytics workspace, but will allow you to review the
-    configuration.</span>
-
-<span
-style="overflow: hidden; display: inline-block; margin: 0.00px 0.00px; border: 1.33px solid #268bd2; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px); width: 480.00px; height: 305.72px;">
-<img src="./images/image50.png" style="width: 480.00px; height: 305.72px; margin-left: 0.00px; margin-top: 0.00px; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px);" />
-</span>
-
-<span class="c5 c16 c32"></span>
-
-6.  <span class="c8">Once the validation is finished, you should see a
-    confirmation and now you can click “</span> <span
-    class="c5">Create</span> <span class="c0">” to finish the creation
-    process.</span>
-
-<span
-style="overflow: hidden; display: inline-block; margin: 0.00px 0.00px; border: 1.33px solid #268bd2; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px); width: 480.00px; height: 406.15px;">
-<img src="./images/image78.png" style="width: 480.00px; height: 406.15px; margin-left: 0.00px; margin-top: 0.00px; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px);" />
-</span>
-
-<span class="c0"></span>
-
-<span class="c0"></span>
-
-7.  <span class="c0">After you click create the deployment process will
-    start, once complete you should see similar information.</span>
-
-<span
-style="overflow: hidden; display: inline-block; margin: -0.00px 0.00px; border: 1.33px solid #268bd2; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px); width: 480.00px; height: 206.03px;">
-<img src="./images/image63.png" style="width: 480.00px; height: 206.03px; margin-left: 0.00px; margin-top: 0.00px; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px);" />
-</span>
-
-### Create a new “Application Insight<span class="c23 c16">”</span>
-
-<span class="c0">In order to use Azure Automation Runbooks on-premises,
-we will need to set up Application Insight. This is a service in Azure
-that collects, analyzes, and acts on telemetry data from your Azure and
-on-premises environments. </span>
-
-<span class="c0"></span>
-
-1.  <span class="c8">In the Azure Portal search for “</span> <span
-    class="c5">Application Insights</span> <span class="c8">”</span>
-    <span class="c0">.</span>
-
-<span
-style="overflow: hidden; display: inline-block; margin: 0.00px 0.00px; border: 1.33px solid #268bd2; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px); width: 384.00px; height: 111.36px;">
-<img src="./images/image40.png" style="width: 384.00px; height: 111.36px; margin-left: 0.00px; margin-top: 0.00px; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px);" />
-</span>
-
-2.  <span class="c8">Click “</span> <span class="c5">+ New</span> <span
-    class="c0">” to add a new application insight.</span>
-3.  <span class="c8"></span> <span class="c8">Select the resource group
-    </span> <span
-    class="c5">OktaPowershellLogAnalyticsResourceGroup</span> <span
-    class="c8"> that we created at step 6 for </span> <span class="c18">
-    <a href="#ExecuteOnPremisePowerShellwithOktaWorkflows.xhtml#h.5vfe02tkctah" class="c12">Create a new Automation Accounts</a>
-    </span>
-
-<span class="c0"></span>
-
-<span
-style="overflow: hidden; display: inline-block; margin: 0.00px 0.00px; border: 1.33px solid #268bd2; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px); width: 384.00px; height: 311.04px;">
-<img src="./images/image20.png" style="width: 384.00px; height: 311.04px; margin-left: 0.00px; margin-top: 0.00px; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px);" />
-</span>
-
-<span class="c0"></span>
-
-4.  <span class="c8">Name the log analytics workspace“</span> <span
-    class="c5">OktaPowershellApplicationInsights”</span> <span
-    class="c8">.</span>
-
-<span
-style="overflow: hidden; display: inline-block; margin: 0.00px 0.00px; border: 1.33px solid #268bd2; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px); width: 384.00px; height: 310.40px;">
-<img src="./images/image15.png" style="width: 384.00px; height: 310.40px; margin-left: 0.00px; margin-top: 0.00px; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px);" />
-</span>
-
-5.  <span class="c8">Select the log analytics
-    workspace group </span> <span
-    class="c5">OktaPowershellLogAnalyticsWorkspaceName</span> <span
-    class="c8"> that we created at </span> <span class="c18">
-    <a href="#ExecuteOnPremisePowerShellwithOktaWorkflows.xhtml#h.vwn26oxu2rcl" class="c12">Create a new Log Analytics Workspaces</a>
-    </span>
-
-<span
-style="overflow: hidden; display: inline-block; margin: 0.00px 0.00px; border: 1.33px solid #268bd2; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px); width: 384.00px; height: 301.06px;">
-<img src="./images/image66.png" style="width: 384.00px; height: 301.06px; margin-left: 0.00px; margin-top: 0.00px; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px);" />
-</span>
-
-<span class="c5 c16 c32"></span>
-
-6.  <span class="c8">Click “</span> <span class="c5">Review +
-    Create</span> <span class="c0">”. This will not yet create the new
-    log analytics workspace, but will allow you to review the
-    configuration.</span>
-
-<span class="c0"></span>
-
-7.  <span class="c8">Once the validation is finished, you should see a
-    confirmation and now you can click</span> <span
-    class="c5">"Create</span> <span class="c8">” to finish the creation
-    process.</span>
-
-<span class="c0"></span>
-
-8.  <span class="c0">After you click create the deployment process will
-    start, once complete you should see similar information.</span>
-
-<span
-style="overflow: hidden; display: inline-block; margin: -0.00px 0.00px; border: 1.33px solid #268bd2; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px); width: 480.00px; height: 203.08px;">
-<img src="./images/image3.png" style="width: 480.00px; height: 203.08px; margin-left: 0.00px; margin-top: 0.00px; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px);" />
-</span>
-
-### <span class="c23 c16">Configure the Windows Server machine</span>
-
-<span class="c8">Log-on to your Windows Server, and run the following
-commands in the Microsoft PowerShell 7 window.</span>
-
-<!-- -->
-
-1.  <span class="c8">“</span> <span class="c5">Install-Module AZ
-    -Force</span> <span class="c8">”</span> <span class="c0"> (depending
-    on the machine this may take a few minutes).</span>
-
-<span
-style="overflow: hidden; display: inline-block; margin: -0.00px 0.00px; border: 1.33px solid #268bd2; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px); width: 384.00px; height: 200.45px;">
-<img src="./images/image27.png" style="width: 384.00px; height: 200.45px; margin-left: 0.00px; margin-top: 0.00px; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px);" />
-</span>
-
-2.  <span class="c8">“</span> <span class="c5">Connect-AZAccount</span>
-    <span class="c8">”</span> <span class="c8"> (</span> <span
-    class="c8">Complete the sign in operation at the browser
-    window</span> <span class="c0">)</span>
-
-
-
-    *  <span class="c5 c10">Note:</span> <span class="c8 c10 c27"> You need
-    to use an account that has a Microsoft Azure subscription.</span>
-
-<span
-style="overflow: hidden; display: inline-block; margin: -0.00px 0.00px; border: 1.33px solid #268bd2; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px); width: 384.00px; height: 215.81px;">
-<img src="./images/image85.png" style="width: 384.00px; height: 215.81px; margin-left: 0.00px; margin-top: 0.00px; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px);" />
-</span>
-
-<span class="c0"></span>
-
-<span class="c0">Once authenticated you should see the following
-message.</span>
-
-<span
-style="overflow: hidden; display: inline-block; margin: -0.00px 0.00px; border: 1.33px solid #268bd2; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px); width: 432.00px; height: 181.25px;">
-<img src="./images/image76.png" style="width: 432.00px; height: 181.25px; margin-left: 0.00px; margin-top: 0.00px; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px);" />
-</span>
-
-<span class="c0"></span>
-
-3.  <span class="c0">Set the resource id into a variable</span>
-
-
-    *  <span class="c5 c16 c32">$AAResourceID = (Get-AzResource
-    -ResourceType "Microsoft.Automation/automationAccounts" -Name
-    "OktaPowershellAutomationAccount").resourceid</span>
-
-<span
-style="overflow: hidden; display: inline-block; margin: -0.00px 0.00px; border: 1.33px solid #268bd2; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px); width: 432.00px; height: 238.54px;">
-<img src="./images/image6.png" style="width: 432.00px; height: 238.54px; margin-left: 0.00px; margin-top: 0.00px; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px);" />
-</span>
-
-4.  <span class="c0">Set the workspace resource id into a
-    variable</span>
-
-
-
-    *  <span class="c5 c16 c32">$WSResourceID = (Get-AzResource
-    -ResourceType "Microsoft.OperationalInsights/workspaces" -Name
-    "OktaPowershellLogAnalyticsWorkspaceName").resourceid</span>
-
-<span
-style="overflow: hidden; display: inline-block; margin: -0.00px 0.00px; border: 1.33px solid #268bd2; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px); width: 432.00px; height: 238.54px;">
-<img src="./images/image9.png" style="width: 432.00px; height: 238.54px; margin-left: 0.00px; margin-top: 0.00px; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px);" />
-</span>
-
-<span class="c5 c16 c25"></span>
-
-<span class="c5 c16 c25"></span>
-
-<span class="c5 c16 c25"></span>
-
-5.  <span class="c8">Link the account ID and workspace ID with the following command:</span>
-
-    *  <span class="c5 c16 c32">New-AzDiagnosticSetting -ResourceId $AAResourceID -WorkspaceId $WSResourceID -Name service</span>
-
-<span
-style="overflow: hidden; display: inline-block; margin: 0.00px 0.00px; border: 1.33px solid #268bd2; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px); width: 384.00px; height: 435.51px;">
-<img src="./images/image88.jpg" style="width: 384.00px; height: 435.51px; margin-left: 0.00px; margin-top: 0.00px; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px);" />
-</span>
-
-6.  <span class="c8">Execute the following command:</span>
-
-    *  <span class="c5 c16 c32">Register-AzResourceProvider -ProviderNamespace "Microsoft.OperationsManagement"</span>
-
-<span
-style="overflow: hidden; display: inline-block; margin: 0.00px 0.00px; border: 1.33px solid #268bd2; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px); width: 384.00px; height: 435.51px;">
-<img src="./images/image87.png" style="width: 384.00px; height: 435.51px; margin-left: 0.00px; margin-top: 0.00px; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px);" />
-</span>
-
-<span class="c0"></span>
-
-7.  <span class="c0">Execute the following command:</span>
-
-    *  <span class="c5">Set-AzOperationalInsightsIntelligencePack
-    -ResourceGroupName OktaPowershellLogAnalyticsResourceGroup
-    -WorkspaceName OktaPowershellLogAnalyticsWorkspaceName
-    -IntelligencePackName "AzureAutomation" -Enabled $true</span>
-
-<span
-style="overflow: hidden; display: inline-block; margin: 0.00px 0.00px; border: 1.33px solid #268bd2; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px); width: 480.00px; height: 260.68px;">
-<img src="./images/image19.png" style="width: 480.00px; height: 260.68px; margin-left: 0.00px; margin-top: 0.00px; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px);" />
-</span>
-
-8.  <span class="c0">Back in the Azure portal, we will download the
-    agent from our workspace to the Windows Server. </span>
-
-<span class="c0"></span>
-
-9.  <span class="c8">Navigate to the “</span> <span class="c5">Log
-    Analytics Workspace”</span> <span class="c5">.</span>
-
-<span
-style="overflow: hidden; display: inline-block; margin: 0.00px 0.00px; border: 1.33px solid #268bd2; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px); width: 384.00px; height: 115.79px;">
-<img src="./images/image25.png" style="width: 384.00px; height: 115.79px; margin-left: 0.00px; margin-top: 0.00px; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px);" />
-</span>
-
-<span class="c0">.</span>
-
-10.  <span class="c8">Select the “</span> <span
-    class="c5">OktaPowershellLogAnalyticsWorkspaceName</span> <span
-    class="c0">” from the list.</span>
-
-<span
-style="overflow: hidden; display: inline-block; margin: -0.00px -0.00px; border: 1.33px solid #268bd2; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px); width: 192.00px; height: 181.37px;">
-<img src="./images/image69.png" style="width: 192.00px; height: 181.37px; margin-left: 0.00px; margin-top: 0.00px; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px);" />
-</span>
-
-<span class="c0"></span>
-
-11.  <span class="c8">On the left-pane, search for “</span> <span
-    class="c5">Agent management</span> <span class="c0">”.</span>
-
-<span
-style="overflow: hidden; display: inline-block; margin: -0.00px -0.00px; border: 1.33px solid #268bd2; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px); width: 192.00px; height: 189.64px;">
-<img src="./images/image59.png" style="width: 192.00px; height: 189.64px; margin-left: 0.00px; margin-top: 0.00px; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px);" />
-</span>
-
-<span class="c0"></span>
-
-12. <span class="c0">Download the version that matches the Windows
-    Server you are currently using. Select either the 64 bit or the 32
-    bit version of the Agent. </span>
-
-<span
-style="overflow: hidden; display: inline-block; margin: -0.00px 0.00px; border: 1.33px solid #268bd2; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px); width: 384.00px; height: 168.96px;">
-<img src="./images/image34.png" style="width: 384.00px; height: 168.96px; margin-left: 0.00px; margin-top: 0.00px; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px);" />
-</span>
-
-<span class="c0"></span>
-
-13. <span class="c8">Save the </span> <span class="c5">Workspace
-    ID</span> <span class="c8"> and </span> <span class="c5">Primary
-    key</span> <span class="c0">, we will use that information
-    later.</span>
-
-<span
-style="overflow: hidden; display: inline-block; margin: -0.00px 0.00px; border: 1.33px solid #268bd2; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px); width: 480.00px; height: 180.18px;">
-<img src="./images/image75.png" style="width: 480.00px; height: 180.18px; margin-left: 0.00px; margin-top: 0.00px; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px);" />
-</span>
-
-<span class="c0"></span>
-
-14. <span class="c0">Once the download is complete, execute the Agent
-    Setup (MMASetup-\*\*\*\*.exe), click “Next >”.</span>
-15. <span class="c8">Select “</span> <span class="c5">Select Connect the
-    agent to Azure Log Analytics (OMS)</span> <span class="c0">”, click
-    “Next >”</span>
-
-<span
-style="overflow: hidden; display: inline-block; margin: 0.00px 0.00px; border: 0.00px solid #000000; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px); width: 288.00px; height: 220.21px;">
-<img src="./images/image67.png" style="width: 288.00px; height: 220.21px; margin-left: 0.00px; margin-top: 0.00px; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px);" />
-</span>
-
-<span class="c0"></span>
-
-16. <span class="c8"> Use the </span> <span class="c5">Workspace
-    ID</span> <span class="c8"> and </span> <span class="c5">Primary
-    </span> <span class="c5">Key</span> <span class="c8"> that</span>
-    <span class="c0"> we copied on step 11, click “Next >”.</span>
-
-<span
-style="overflow: hidden; display: inline-block; margin: 0.00px 0.00px; border: 0.00px solid #000000; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px); width: 384.00px; height: 293.12px;">
-<img src="./images/image10.png" style="width: 384.00px; height: 293.12px; margin-left: 0.00px; margin-top: 0.00px; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px);" />
-</span>
-
-<span class="c0"></span>
-
-17. <span class="c8">Select the Microsoft Update option that best suits
-    your organization and continue until the installation is
-    complete.</span>
-18. <span class="c8">When the agent is installed, the “</span> <span
-    class="c5">HybridRegistration.psd1</span> <span class="c8">”
-    PowerShell module gets copied to the agent</span> <span
-    class="c0"> installation folder.</span>
-19. <span class="c8">On a Windows PowerShell navigate to “C:\\Program
-    Files\\Microsoft Monitoring Agent\\Agent\\AzureAutomation\\</span>
-    <span class="c5">\<version></span> <span
-    class="c0">\\HybridRegistration\\”, your version might be different
-    from the one used during the creation of this document.</span>
-
-<span
-style="overflow: hidden; display: inline-block; margin: -0.00px -0.00px; border: 1.33px solid #268bd2; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px); width: 624.00px; height: 186.67px;">
-<img src="./images/image81.png" style="width: 624.00px; height: 186.67px; margin-left: 0.00px; margin-top: 0.00px; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px);" />
-</span>
-
-<span class="c0"></span>
-
-20. <span class="c8">Then execute the following command on Windows
-    Desktop PowerShell </span> <span class="c5">not</span> <span
-    class="c0"> MicrosoftPowerShell 7:</span>
-
-    *  <span class="c0">Import-Module .\\HybridRegistration.psd1</span>
-
-<span
-style="overflow: hidden; display: inline-block; margin: 0.00px -0.00px; border: 1.33px solid #268bd2; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px); width: 624.00px; height: 110.67px;">
-<img src="./images/image55.png" style="width: 624.00px; height: 110.67px; margin-left: 0.00px; margin-top: 0.00px; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px);" />
-</span>
-
-<span class="c8 c13 c16"></span>
-
-<span class="c8 c16 c13"></span>
-
-21. <span class="c0">Back at Microsoft Azure portal, search for
-    automation accounts.</span>
+1. Under Automation Account - on the left navigation bar under “Process Automation” - select “Hybrid worker groups” and click “+ Create hybrid worker group” - name the group “AAHybridWorkerGroup”.
 
 <span
 style="overflow: hidden; display: inline-block; margin: 0.00px 0.00px; border: 1.33px solid #268bd2; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px); width: 384.00px; height: 103.68px;">
-<img src="./images/image2.png" style="width: 384.00px; height: 103.68px; margin-left: 0.00px; margin-top: 0.00px; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px);" />
-</span>
+<img src="./images/aa005.png" style="width: 384.00px; height: 103.68px; margin-left: 0.00px; margin-top: 0.00px; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px);" />
 
-<span class="c0"></span>
-
-22. <span class="c8">Select “</span> <span
-    class="c5">OktaPowershellAutomationAccount</span> <span
-    class="c0">”.</span>
+2. Create hybrid worker group with default settings 
 
 <span
-style="overflow: hidden; display: inline-block; margin: -0.00px -0.00px; border: 1.33px solid #268bd2; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px); width: 240.00px; height: 186.00px;">
-<img src="./images/image11.png" style="width: 240.00px; height: 186.00px; margin-left: 0.00px; margin-top: 0.00px; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px);" />
-</span>
+style="overflow: hidden; display: inline-block; margin: 0.00px 0.00px; border: 1.33px solid #268bd2; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px); width: 384.00px; height: 103.68px;">
+<img src="./images/aa006.png" style="width: 384.00px; height: 103.68px; margin-left: 0.00px; margin-top: 0.00px; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px);" />
 
-<span class="c0"></span>
+3. The result is as follows for the Automation Account you created: 
+<span
+style="overflow: hidden; display: inline-block; margin: 0.00px 0.00px; border: 1.33px solid #268bd2; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px); width: 384.00px; height: 103.68px;">
+<img src="./images/aa007.png" style="width: 384.00px; height: 103.68px; margin-left: 0.00px; margin-top: 0.00px; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px);" />
 
-23. <span class="c8">In the Search field, type </span> <span
-    class="c5">keys</span> <span class="c8"> and select “</span> <span
-    class="c5">Keys</span> <span class="c0">” from the pane.</span>
+### <span class="c23 c16">Add machine with Azure Arc</span>
+
+1. In the Azure portal search bar, type "Azure Arc" and select the service.
+2. In the left navigation bar - Select “Infrastructure” > “Machines” and Click on “+ Add/Create”.
+3. Click on “Add a Machine”
 
 <span
-style="overflow: hidden; display: inline-block; margin: -0.00px 0.00px; border: 1.33px solid #268bd2; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px); width: 336.00px; height: 220.27px;">
-<img src="./images/image70.png" style="width: 336.00px; height: 220.27px; margin-left: 0.00px; margin-top: 0.00px; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px);" />
-</span>
+style="overflow: hidden; display: inline-block; margin: 0.00px 0.00px; border: 1.33px solid #268bd2; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px); width: 384.00px; height: 103.68px;">
+<img src="./images/aa008.png" style="width: 384.00px; height: 103.68px; margin-left: 0.00px; margin-top: 0.00px; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px);" />
 
-<span class="c0"></span>
-
-24. <span class="c8">Take note of the </span> <span class="c5">primary
-    access key</span> <span class="c8">, and </span> <span
-    class="c5">URL</span> <span class="c0">, we will use this
-    information to run a PowerShell command.</span>
-25. <span class="c8">Go back to your Windows Server machine, and open
-    notepad. From the following command replace </span> <span
-    class="c5">\<URL> </span> <span class="c8">and </span> <span
-    class="c5">\<Primary_access_key></span> <span class="c0"> with the
-    information we copied on step 22.</span>
-
-    *  <span class="c8 c13">Add-HybridRunbookWorker –GroupName
-    OktaPowershellLogAnalyticsResourceGroup -EndPoint "</span> <span
-    class="c5 c13">\<URL></span> <span class="c8 c13">" -Token "</span>
-    <span class="c5 c13">\<Primary_access_key></span> <span
-    class="c8 c13">"</span>
-
-<!-- -->
-
-26. <span class="c0">Now, on a Windows Desktop PowerShell</span>
-
+4. Select “Add a single server” and “Generate Script”
 <span
-style="overflow: hidden; display: inline-block; margin: -0.00px -0.00px; border: 1.33px solid #268bd2; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px); width: 528.00px; height: 176.98px;">
-<img src="./images/image83.png" style="width: 528.00px; height: 176.98px; margin-left: 0.00px; margin-top: 0.00px; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px);" />
-</span>
+style="overflow: hidden; display: inline-block; margin: 0.00px 0.00px; border: 1.33px solid #268bd2; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px); width: 384.00px; height: 103.68px;">
+<img src="./images/aa009.png" style="width: 384.00px; height: 103.68px; margin-left: 0.00px; margin-top: 0.00px; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px);" />
 
-<span class="c0"></span>
-
-27. <span class="c0">Execute the command you built on step 23.a.</span>
-
+5. To Add a server with Azure Arc, select the resource group you created earlier and the default settings and click “Next”
 <span
-style="overflow: hidden; display: inline-block; margin: -0.00px -0.00px; border: 1.33px solid #268bd2; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px); width: 528.00px; height: 148.62px;">
-<img src="./images/image62.png" style="width: 528.00px; height: 148.62px; margin-left: 0.00px; margin-top: 0.00px; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px);" />
-</span>
+style="overflow: hidden; display: inline-block; margin: 0.00px 0.00px; border: 1.33px solid #268bd2; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px); width: 384.00px; height: 103.68px;">
+<img src="./images/aa010.png" style="width: 384.00px; height: 103.68px; margin-left: 0.00px; margin-top: 0.00px; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px);" />
 
-<span class="c0"></span>
+6. Set tag values as desired
+<span
+style="overflow: hidden; display: inline-block; margin: 0.00px 0.00px; border: 1.33px solid #268bd2; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px); width: 384.00px; height: 103.68px;">
+<img src="./images/aa011.png" style="width: 384.00px; height: 103.68px; margin-left: 0.00px; margin-top: 0.00px; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px);" />
+
+7. Copy the script and execute the script that Microsoft has generated on the Windows machine - recommend using the Windows Powershell ISE application as Administrator
+<span
+style="overflow: hidden; display: inline-block; margin: 0.00px 0.00px; border: 1.33px solid #268bd2; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px); width: 384.00px; height: 103.68px;">
+<img src="./images/aa012.png" style="width: 384.00px; height: 103.68px; margin-left: 0.00px; margin-top: 0.00px; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px);" />
+<span
+style="overflow: hidden; display: inline-block; margin: 0.00px 0.00px; border: 1.33px solid #268bd2; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px); width: 384.00px; height: 103.68px;">
+<img src="./images/aa013.png" style="width: 384.00px; height: 103.68px; margin-left: 0.00px; margin-top: 0.00px; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px);" />
+
+8. You will be asked to authenticate to Azure during the execution of the script 
+style="overflow: hidden; display: inline-block; margin: 0.00px 0.00px; border: 1.33px solid #268bd2; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px); width: 384.00px; height: 103.68px;">
+<img src="./images/aa014.png" style="width: 384.00px; height: 103.68px; margin-left: 0.00px; margin-top: 0.00px; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px);" />
+
+9. At the end of the script execution,  you will see an informational message that the  machine is connected to Azure
+style="overflow: hidden; display: inline-block; margin: 0.00px 0.00px; border: 1.33px solid #268bd2; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px); width: 384.00px; height: 103.68px;">
+<img src="./images/aa015.png" style="width: 384.00px; height: 103.68px; margin-left: 0.00px; margin-top: 0.00px; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px);" />
+
+10. In the Azure portal, navigate to Automation Account you created and then the Hybrid worker group. 
+style="overflow: hidden; display: inline-block; margin: 0.00px 0.00px; border: 1.33px solid #268bd2; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px); width: 384.00px; height: 103.68px;">
+<img src="./images/aa016.png" style="width: 384.00px; height: 103.68px; margin-left: 0.00px; margin-top: 0.00px; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px);" />
+
+11. Click on "Hybrid Workers" and click "+Add".
+style="overflow: hidden; display: inline-block; margin: 0.00px 0.00px; border: 1.33px solid #268bd2; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px); width: 384.00px; height: 103.68px;">
+<img src="./images/aa017.png" style="width: 384.00px; height: 103.68px; margin-left: 0.00px; margin-top: 0.00px; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px);" />
+
+12. Associate the machine you just configured with the hybrid worker group you created earlier.
+style="overflow: hidden; display: inline-block; margin: 0.00px 0.00px; border: 1.33px solid #268bd2; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px); width: 384.00px; height: 103.68px;">
+<img src="./images/aa018.png" style="width: 384.00px; height: 103.68px; margin-left: 0.00px; margin-top: 0.00px; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px);" />
+
+13. At this point if you navigate to your Hybrid Worker Group - your Hybrid Worker Group will show 1 Hybrid Worker associated under the “Details” section
+style="overflow: hidden; display: inline-block; margin: 0.00px 0.00px; border: 1.33px solid #268bd2; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px); width: 384.00px; height: 103.68px;">
+<img src="./images/aa019.png" style="width: 384.00px; height: 103.68px; margin-left: 0.00px; margin-top: 0.00px; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px);" />
+
 
 ### <span class="c23 c16">Configure Runbooks + Webhooks</span>
 
@@ -628,7 +221,7 @@ style="overflow: hidden; display: inline-block; margin: 0.00px 0.00px; border: 1
 
 <span
 style="overflow: hidden; display: inline-block; margin: -0.00px -0.00px; border: 1.33px solid #268bd2; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px); width: 240.00px; height: 186.00px;">
-<img src="./images/image11.png" style="width: 240.00px; height: 186.00px; margin-left: 0.00px; margin-top: 0.00px; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px);" />
+<img src="./images/aa020.png" style="width: 240.00px; height: 186.00px; margin-left: 0.00px; margin-top: 0.00px; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px);" />
 </span>
 
 <span class="c0"></span>
@@ -640,7 +233,7 @@ style="overflow: hidden; display: inline-block; margin: -0.00px -0.00px; border:
 
 <span
 style="overflow: hidden; display: inline-block; margin: 0.00px 0.00px; border: 1.33px solid #268bd2; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px); width: 384.00px; height: 253.44px;">
-<img src="./images/image23.png" style="width: 384.00px; height: 253.44px; margin-left: 0.00px; margin-top: 0.00px; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px);" />
+<img src="./images/aa021.png" style="width: 384.00px; height: 253.44px; margin-left: 0.00px; margin-top: 0.00px; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px);" />
 </span>
 
 <span class="c0"></span>
@@ -898,13 +491,11 @@ style="overflow: hidden; display: inline-block; margin: 0.00px -0.00px; border: 
 
 <span class="c0"></span>
 
-23. <span class="c8">Choose “</span> <span
-    class="c5">OktaPowershellLogAnalyticsResourceGroup</span> <span
-    class="c0">” as the Hybrid Worker group</span>
+23. Choose “AAAutomationRG” as the Hybrid Worker group.
 
 <span
 style="overflow: hidden; display: inline-block; margin: 0.00px -0.00px; border: 1.33px solid #268bd2; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px); width: 192.00px; height: 272.73px;">
-<img src="./images/image46.png" style="width: 192.00px; height: 272.73px; margin-left: 0.00px; margin-top: 0.00px; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px);" />
+<img src="./images/aa022.png" style="width: 192.00px; height: 272.73px; margin-left: 0.00px; margin-top: 0.00px; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px);" />
 </span>
 
 <span class="c0"></span>
@@ -1316,7 +907,9 @@ style="overflow: hidden; display: inline-block; margin: -0.00px -0.00px; border:
 
 <span class="c0"></span>
 
-15. <span class="c0">Turn on all three flows</span>
+15. Make sure the “Text Compose” card references the correct Automation Account name and Resource Group name that you used.
+
+16. <span class="c0">Turn on all three flows</span>
 
 <span
 style="overflow: hidden; display: inline-block; margin: -0.00px 0.00px; border: 1.33px solid #268bd2; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px); width: 384.00px; height: 130.02px;">
@@ -1431,33 +1024,7 @@ style="overflow: hidden; display: inline-block; margin: -0.00px 0.00px; border: 
     change over time since the time of the recording. If they do,
     recognize that there may be changes, but focus on the key terms and
     proceed as best you can. </span>
-2.  <span class="c3">If you are experiencing any issues during the
-    Microsoft PowerShell 7 configuration, you might need to restart the
-    host machine to proceed with the configuration.</span>
-3.  When configuring Microsoft PowerShell 7 make sure you have enabled
-    TLS 1.2, otherwise the connection with Microsoft Azure will fail.
 
-<!-- -->
-
-1.  The following command solved the TLS issue on Windows 2016
-    environments: <span
-    class="c9">\[Net.ServicePointManager\]::SecurityProtocol =
-    \[Net.SecurityProtocolType\]::Tls12</span>
-
-<!-- -->
-
-4.  <span class="c3">The key components for enabling Workflows to
-    execute on-prem Powershell are an:</span>
-
-<!-- -->
-
-1.  <span class="c3">Okta Workflows license</span>
-2.  <span class="c3">Azure Subscription</span>
-3.  <span class="c3">Azure Automations</span>
-
-<span class="c3"></span>
-
-<span class="c3"></span>
 
 <span class="c3">Different usage patterns will result in different
 costs, the discussion of which is beyond the scope of this document. Be
@@ -1476,8 +1043,11 @@ tenant which are your responsibility to track. </span>
     <a href="https://www.google.com/url?q=https://docs.microsoft.com/en-us/graph/use-the-api%23:~:text%3DMicrosoft%2520Graph%2520is%2520a%2520RESTful,to%2520Microsoft%2520Graph%2520is%2520changing&amp;sa=D&amp;source=editors&amp;ust=1624896848658000&amp;usg=AOvVaw1Ann9TIU7PoUdpDMx_0uMH" class="c12">https://docs.microsoft.com/en-us/graph/use-the-api#:~:text=Microsoft%20Graph%20is%20a%20RESTful,to%20Microsoft%20Graph%20is%20changing</a>
     </span> <span class="c0">. </span>
 -   <span class="c18">
-    <a href="https://www.google.com/url?q=https://docs.microsoft.com/en-us/powershell/scripting/install/installing-powershell-core-on-windows?view%3Dpowershell-7&amp;sa=D&amp;source=editors&amp;ust=1624896848659000&amp;usg=AOvVaw3oHSLYFkSofxx14yuxdZok" class="c12">https://docs.microsoft.com/en-us/PowerShell/scripting/install/installing-PowerShell-core-on-windows?view=PowerShell-7</a>
-    </span> <span class="c0"> </span>
--   <span class="c18">
     <a href="https://www.google.com/url?q=https://docs.microsoft.com/en-us/azure/automation/automation-webhooks&amp;sa=D&amp;source=editors&amp;ust=1624896848659000&amp;usg=AOvVaw1S0q2AU0gou2tVydOy0YTh" class="c12">https://docs.microsoft.com/en-us/azure/automation/automation-webhook</a>
     </span>
+-   https://learn.microsoft.com/en-us/azure/automation/migrate-existing-agent-based-hybrid-worker-to-extension-based-workers
+    </span>
+
+## <span class="c22 c16">Important Note</span>
+
+Azure Automation Agent-based User Hybrid Runbook Worker (Windows and Linux) will retire on 31 August 2024 and wouldn't be supported after that date. You must complete migrating existing Agent-based User Hybrid Runbook Workers to Extension-based Workers before 31 August 2024.  Please review Microsoft documentation above for details. The steps in this document cover how to set up a new Extension-based worker. 
