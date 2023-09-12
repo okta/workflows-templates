@@ -179,27 +179,27 @@ style="overflow: hidden; display: inline-block; margin: 0.00px 0.00px; border: 1
 <img src="./images/aa013.png" style="width: 384.00px; height: 103.68px; margin-left: 0.00px; margin-top: 0.00px; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px);" />
 
 8. You will be asked to authenticate to Azure during the execution of the script 
-style="overflow: hidden; display: inline-block; margin: 0.00px 0.00px; border: 1.33px solid #268bd2; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px); width: 384.00px; height: 103.68px;">
+
 <img src="./images/aa014.png" style="width: 384.00px; height: 103.68px; margin-left: 0.00px; margin-top: 0.00px; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px);" />
 
 9. At the end of the script execution,  you will see an informational message that the  machine is connected to Azure
-style="overflow: hidden; display: inline-block; margin: 0.00px 0.00px; border: 1.33px solid #268bd2; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px); width: 384.00px; height: 103.68px;">
+
 <img src="./images/aa015.png" style="width: 384.00px; height: 103.68px; margin-left: 0.00px; margin-top: 0.00px; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px);" />
 
 10. In the Azure portal, navigate to Automation Account you created and then the Hybrid worker group. 
-style="overflow: hidden; display: inline-block; margin: 0.00px 0.00px; border: 1.33px solid #268bd2; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px); width: 384.00px; height: 103.68px;">
+
 <img src="./images/aa016.png" style="width: 384.00px; height: 103.68px; margin-left: 0.00px; margin-top: 0.00px; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px);" />
 
 11. Click on "Hybrid Workers" and click "+Add".
-style="overflow: hidden; display: inline-block; margin: 0.00px 0.00px; border: 1.33px solid #268bd2; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px); width: 384.00px; height: 103.68px;">
+
 <img src="./images/aa017.png" style="width: 384.00px; height: 103.68px; margin-left: 0.00px; margin-top: 0.00px; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px);" />
 
 12. Associate the machine you just configured with the hybrid worker group you created earlier.
-style="overflow: hidden; display: inline-block; margin: 0.00px 0.00px; border: 1.33px solid #268bd2; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px); width: 384.00px; height: 103.68px;">
+
 <img src="./images/aa018.png" style="width: 384.00px; height: 103.68px; margin-left: 0.00px; margin-top: 0.00px; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px);" />
 
 13. At this point if you navigate to your Hybrid Worker Group - your Hybrid Worker Group will show 1 Hybrid Worker associated under the “Details” section
-style="overflow: hidden; display: inline-block; margin: 0.00px 0.00px; border: 1.33px solid #268bd2; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px); width: 384.00px; height: 103.68px;">
+
 <img src="./images/aa019.png" style="width: 384.00px; height: 103.68px; margin-left: 0.00px; margin-top: 0.00px; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px);" />
 
 
@@ -491,7 +491,7 @@ style="overflow: hidden; display: inline-block; margin: 0.00px -0.00px; border: 
 
 <span class="c0"></span>
 
-23. Choose “AAAutomationRG” as the Hybrid Worker group.
+23. Choose “AAHybridWorkerGroup” as the Hybrid Worker group.
 
 <span
 style="overflow: hidden; display: inline-block; margin: 0.00px -0.00px; border: 1.33px solid #268bd2; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px); width: 192.00px; height: 272.73px;">
