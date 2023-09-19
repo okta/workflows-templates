@@ -1,0 +1,26 @@
+{
+  "name": "create_lead_in_marketo_create_lead_in_marketo",
+  "title": "Create Leads in Marketo Create",
+  "description": "This template illustrates how B2C companies can use Okta Workflows to sync customers to Marketo. Using this template ensures that every new user that signs in to your website has a profile in Marketo. This enables you to avoid manual and error-prone imports and immediately engage with new users through marketing campaigns to increase engagement and retention.",
+  "connectors": [
+    "marketo2_29"
+  ],
+  "details": {
+    "flowCount": 1,
+    "flos": [
+      {
+        "id": "04e77170-a480-451e-b1c2-8d95a84d317d",
+        "name": "Create Lead in Marketo",
+        "type": "MAIN",
+        "screenshotURL": "https://d78vv2h34ll3s.cloudfront.net/static/catalog/workflows/create_lead_in_marketo/resources/480ddce9c4dc48c5dc1801dd5fcffcffcfff.png"
+      }
+    ],
+    "mainFlowsCount": 1
+  },
+  "links": [
+    {
+      "destination": "https://github.com/okta/workflows-templates/blob/master/workflows/create_lead_in_marketo_create_lead_in_marketo/readme.md",
+      "title": "Setup Documentation"
+    }
+  ]
+}
