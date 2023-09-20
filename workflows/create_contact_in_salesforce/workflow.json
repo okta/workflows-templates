@@ -1,0 +1,26 @@
+{
+  "name": "create_contact_in_salesforce",
+  "title": "Create Contact in Salesforce",
+  "description": "This template illustrates how B2C companies can use Okta Workflows to automatically sync customers to their CRM solution. When you use this template, every new user that signs in to your website becomes a contact inside your Salesforce account.",
+  "connectors": [
+    "salesforce2_29"
+  ],
+  "details": {
+    "flowCount": 1,
+    "flos": [
+      {
+        "id": "808c2114-84e1-44ba-839e-b01c3c1f0569",
+        "name": "Create Contact in Salesforce",
+        "type": "MAIN",
+        "screenshotURL": "https://d78vv2h34ll3s.cloudfront.net/static/catalog/workflows/create_contact_in_salesforce/resources/080ffed242bc4dc4cc59c1ec1e81a41bc1fc.png"
+      }
+    ],
+    "mainFlowsCount": 1
+  },
+  "links": [
+    {
+      "destination": "https://github.com/okta/workflows-templates/blob/master/workflows/create_contact_in_salesforce/readme.md",
+      "title": "Setup Documentation"
+    }
+  ]
+}
