@@ -1,0 +1,26 @@
+{
+  "name": "create_servicenow_ticket_for_high_risk_login",
+  "title": "Create ServiceNow Ticket for High Risk Login",
+  "description": "This template illustrates how Okta Workflows can be used to guard against high-risk customer logins. When a high-risk login occurs, the template automatically creates a ServiceNow incident with relevant information, enabling your security team to respond quickly and mitigate any risk to your site.",
+  "connectors": [
+    "servicenow"
+  ],
+  "details": {
+    "flowCount": 1,
+    "flos": [
+      {
+        "id": "a4303929-aac3-465e-bcbf-4abe1b0bf667",
+        "name": "Create ServiceNow Ticket for High Risk Login",
+        "type": "MAIN",
+        "screenshotURL": "https://d78vv2h34ll3s.cloudfront.net/static/catalog/workflows/create_servicenow_ticket_for_high_risk_login/resources/028e68d7ed0af2a722322327b27f2bf23fe3.png"
+      }
+    ],
+    "mainFlowsCount": 1
+  },
+  "links": [
+    {
+      "destination": "https://github.com/okta/workflows-templates/blob/master/workflows/create_servicenow_ticket_for_high_risk_login/readme.md",
+      "title": "Setup Documentation"
+    }
+  ]
+}
