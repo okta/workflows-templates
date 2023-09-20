@@ -1,0 +1,41 @@
+{
+  "name": "add_inactive_users_to_marketo_list_for_remarketing",
+  "title": "Add Inactive Users to Marketo List for Remarketing",
+  "description": "This template illustrates how Okta Workflows can be used with Marketo to re-engage your customers and drive more visits to your website. This template automatically maintains a list of customers who haven't signed in to Marketo recently. You can then use Marketo to set up a campaign to reengage these customers. This template runs each day at 9AM so your list of inactive Marketo customers is always up to date.",
+  "connectors": [
+    "marketo2_29",
+    "auth0_293ca73ef2a04fe48eaa3bb7876df2e6"
+  ],
+  "details": {
+    "stashCount": 1,
+    "flowCount": 3,
+    "flos": [
+      {
+        "id": "f3c88145-8a3e-4611-b866-84b640c2885a",
+        "name": "1.2 Remove Lead from Marketo List",
+        "type": "HELPER",
+        "screenshotURL": "https://d78vv2h34ll3s.cloudfront.net/static/catalog/workflows/add_inactive_users_to_marketo_list_for_remarketing/resources/0ff27f008f086387d82786783d86983f85ff.png"
+      },
+      {
+        "id": "9f36bfea-cd28-4a97-9a6a-4aaddf0ba981",
+        "name": "1.1 Add Lead to Marketo List",
+        "type": "HELPER",
+        "screenshotURL": "https://d78vv2h34ll3s.cloudfront.net/static/catalog/workflows/add_inactive_users_to_marketo_list_for_remarketing/resources/020f7ce2e2b6a0af6262a60a76b767feffe7.png"
+      },
+      {
+        "id": "d2ed6771-d78b-47b7-abcc-b92895f86e97",
+        "name": "1.0 Add Recently Inactive Users to Marketo List for Remarketing",
+        "type": "MAIN",
+        "screenshotURL": "https://d78vv2h34ll3s.cloudfront.net/static/catalog/workflows/add_inactive_users_to_marketo_list_for_remarketing/resources/001df27d65a69849dc8c0e70ef4e70ff3ff3.png"
+      }
+    ],
+    "helperFlowsCount": 2,
+    "mainFlowsCount": 1
+  },
+  "links": [
+    {
+      "destination": "https://github.com/okta/workflows-templates/blob/master/workflows/add_inactive_users_to_marketo_list_for_remarketing/readme.md",
+      "title": "Setup Documentation"
+    }
+  ]
+}
