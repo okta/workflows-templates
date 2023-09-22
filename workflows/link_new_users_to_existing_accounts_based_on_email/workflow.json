@@ -1,0 +1,26 @@
+{
+  "name": "link_new_users_to_existing_accounts_based_on_email",
+  "title": "Link New Users to Existing Accounts Based on Email",
+  "description": "This template illustrates how Okta Workflows can streamline customer identity management by automatically linking duplicate customer accounts in Auth0. This template checks the email address for every new user that signs in to your website against your existing user base. If a duplicate is found, the template automatically links the user's two Auth0 accounts.",
+  "connectors": [
+    "auth0_293ca73ef2a04fe48eaa3bb7876df2e6"
+  ],
+  "details": {
+    "flowCount": 1,
+    "flos": [
+      {
+        "id": "9cacce22-ac14-4391-9b3a-692637cdb9ab",
+        "name": "Link New Users to Existing Accounts Based on Email",
+        "type": "MAIN",
+        "screenshotURL": "https://d78vv2h34ll3s.cloudfront.net/static/catalog/workflows/link_new_users_to_existing_accounts_based_on_email/resources/818c38efab60b6899910973df3dffdffdffd.png"
+      }
+    ],
+    "mainFlowsCount": 1
+  },
+  "links": [
+    {
+      "destination": "https://github.com/okta/workflows-templates/blob/master/workflows/link_new_users_to_existing_accounts_based_on_email/readme.md",
+      "title": "Setup Documentation"
+    }
+  ]
+}
