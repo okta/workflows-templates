@@ -1,0 +1,41 @@
+{
+  "name": "close_abandoned_accounts",
+  "title": "Close Abandoned Accounts",
+  "description": "Abandoned accounts are less likely to have strong passwords and multifactor authentication. This template illustrates how Okta Workflows can be used to enhance your application's overall security by removing these abandoned accounts. Use this template to automatically alert inactive users about account expiration and then remove any users from Auth0 if the accounts remain inactive. This template runs daily at 9AM so you can keep on top of maintenance of abandoned accounts.",
+  "connectors": [
+    "auth0_293ca73ef2a04fe48eaa3bb7876df2e6",
+    "gmail"
+  ],
+  "details": {
+    "stashCount": 1,
+    "flowCount": 3,
+    "flos": [
+      {
+        "id": "d1e6a158-a8ae-4284-8412-4b41154fb7e3",
+        "name": "1.2 Delete Inactive Users",
+        "type": "HELPER",
+        "screenshotURL": "https://d78vv2h34ll3s.cloudfront.net/static/catalog/workflows/close_abandoned_accounts/resources/802e8ae3f0786386fc67c67c67820c3ff3ff.png"
+      },
+      {
+        "id": "5e675bb3-0d5b-4b08-a38c-69f3508b979e",
+        "name": "1.1 Notify Inactive Users of Account Expiration",
+        "type": "HELPER",
+        "screenshotURL": "https://d78vv2h34ll3s.cloudfront.net/static/catalog/workflows/close_abandoned_accounts/resources/808ad2fec91c19c3ec0724f1cf1cf1cf3cff.png"
+      },
+      {
+        "id": "105a4ba7-7c86-4ea6-8593-3604b73d1813",
+        "name": "1.0 Close Abandoned Accounts",
+        "type": "MAIN",
+        "screenshotURL": "https://d78vv2h34ll3s.cloudfront.net/static/catalog/workflows/close_abandoned_accounts/resources/012f26f65a3cda8d286287a87a93803e1fe1.png"
+      }
+    ],
+    "helperFlowsCount": 2,
+    "mainFlowsCount": 1
+  },
+  "links": [
+    {
+      "destination": "https://github.com/okta/workflows-templates/blob/master/workflows/close_abandoned_accounts/readme.md",
+      "title": "Setup Documentation"
+    }
+  ]
+}
