@@ -20,7 +20,7 @@ This template illustrates how Okta Workflows can be used to automate responses t
 
 ## Before you get Started / Prerequisites
 
-Before you get started, here are the things you’ll need:
+Before you get started, here are the things you'll need:
 
 -   Access to an Okta tenant with Okta Workflows enabled for your org.
 -   An Okta Group to temporarily contain users who are being monitored for suspecious MFA activity, e.g., "MFA Monitoring". 
