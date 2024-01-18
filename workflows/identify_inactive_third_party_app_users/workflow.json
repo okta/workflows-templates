@@ -12,31 +12,31 @@
         "id": "1f39655e-adfb-4e63-bcf4-fda6aa6d1afb",
         "name": "2.1.1 - Get Group Names",
         "type": "HELPER",
-        "screenshotURL": "https://d78vv2h34ll3s.cloudfront.net/static/catalog/workflows/identify_inactive_third_party_app_users/resources/c45c44fd44c457473c73c77073831c31cf1c.png"
+        "screenshotURL": "https://d78vv2h34ll3s.cloudfront.net/static/catalog/workflows/identify_inactive_third_party_app_users/resources/c47c44f1541453c77c73077073cb1c31cf1f.png"
       },
       {
         "id": "3db35c93-14e3-453a-9012-42b0f6d8f072",
         "name": "1.1.0 - Check Last Logged In",
         "type": "HELPER",
-        "screenshotURL": "https://d78vv2h34ll3s.cloudfront.net/static/catalog/workflows/identify_inactive_third_party_app_users/resources/a81a26eb5a00fe0fd860067f67f67f67fe7f.png"
+        "screenshotURL": "https://d78vv2h34ll3s.cloudfront.net/static/catalog/workflows/identify_inactive_third_party_app_users/resources/a81a26eb5e00fe0fc860067f67f67f67fe7f.png"
       },
       {
         "id": "cb54c9bf-c734-4d9e-824c-9b1e3a5e4999",
         "name": "2.1.0 - User Group Flow",
         "type": "HELPER",
-        "screenshotURL": "https://d78vv2h34ll3s.cloudfront.net/static/catalog/workflows/identify_inactive_third_party_app_users/resources/001b64fcf36aa5a24e2021ba9fb9ff9ff9ff.png"
+        "screenshotURL": "https://d78vv2h34ll3s.cloudfront.net/static/catalog/workflows/identify_inactive_third_party_app_users/resources/001924fffbcaa5a24a12212b9fb9ff9ff9ff.png"
       },
       {
         "id": "0ce39920-86e0-4ee2-b4a8-cbb0d62ead2c",
         "name": "1.0 - Discover and review inactive users.",
         "type": "MAIN",
-        "screenshotURL": "https://d78vv2h34ll3s.cloudfront.net/static/catalog/workflows/identify_inactive_third_party_app_users/resources/0018a4fff2c4b84bdc14097cf7cffcffcffc.png"
+        "screenshotURL": "https://d78vv2h34ll3s.cloudfront.net/static/catalog/workflows/identify_inactive_third_party_app_users/resources/001984fffaccb84bc414097cf7cffcffcffc.png"
       },
       {
         "id": "b31f32ad-e31d-483b-86a5-82d2e381226b",
         "name": "2.0 - Detect Group-Assigned Revocation",
         "type": "MAIN",
-        "screenshotURL": "https://d78vv2h34ll3s.cloudfront.net/static/catalog/workflows/identify_inactive_third_party_app_users/resources/0640fcc7d40ce64af60465f47e47c07c27ff.png"
+        "screenshotURL": "https://d78vv2h34ll3s.cloudfront.net/static/catalog/workflows/identify_inactive_third_party_app_users/resources/06406cdfd444674ef40445d47f67c27c27ff.png"
       }
     ],
     "flowCount": 5,
