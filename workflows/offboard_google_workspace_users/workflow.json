@@ -1,0 +1,22 @@
+{
+  "name": "",
+  "title": "Offboard Google Workspace user",
+  "description": "This template performs several tasks in Google Workspace when offboarding a target user.",
+  "connectors": [
+  ],
+  "details": {
+    "stashCount": 0,
+    "flowCount": 0,
+    "flos": [
+      
+    ],
+    "helperFlowsCount": 0,
+    "mainFlowsCount": 0
+  },
+  "links": [
+    {
+      "destination": "",
+      "title": ""
+    }
+  ]
+}
