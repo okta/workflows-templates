@@ -1,0 +1,150 @@
+{
+  "name": "workflows_tutorials",
+  "title": "Workflows tutorials",
+  "description": "The **Workflows Tutorials** template is a comprehensive guide designed to enhance your experience with Okta Workflows. This resource demonstrates the powerful automation capabilities of flows to both beginners and advanced users. Integrating this template into your Okta preview organization gives you access to sample users and a suite of flows showing the versatility and efficiency of Okta Workflows.",
+  "connectors": [],
+  "details": {
+    "stashCount": 3,
+    "flowCount": 26,
+    "flos": [
+      {
+        "id": "89cdad1a-e81f-4e10-a6b8-c21380e30bda",
+        "name": "Helper flow for Step 1",
+        "type": "HELPER"
+      },
+      {
+        "id": "ffc78d5e-033e-4980-a99e-3d339477749f",
+        "name": "How To: Return a value from a flow (HELPER)",
+        "type": "HELPER"
+      },
+      {
+        "id": "ece5dba9-84f7-4fc8-96d3-d1460bce1337",
+        "name": "Check Last Login date and add to table",
+        "type": "HELPER"
+      },
+      {
+        "id": "1d491d69-c222-45a2-bb2d-88f601b5f827",
+        "name": "Iterate over users and write to a table",
+        "type": "HELPER"
+      },
+      {
+        "id": "2e1047e8-46d0-4e42-aa50-003cf0c6155c",
+        "name": "Iterate over users and write to a table",
+        "type": "HELPER"
+      },
+      {
+        "id": "8674a815-366f-48be-83f2-0de98c912649",
+        "name": "[Step 1 ] Create Sample Users",
+        "type": "MAIN"
+      },
+      {
+        "id": "85825418-e613-4bfd-9d8f-8b5cb7ae2e16",
+        "name": "How to use Date & Time subtraction and convert into M/D/Y format",
+        "type": "MAIN"
+      },
+      {
+        "id": "638bcb19-2387-4e0c-94cc-4aad4acceb37",
+        "name": "How To: Catch an error within a Workflow",
+        "type": "HELPER"
+      },
+      {
+        "id": "4e1ad78a-37b6-47a3-952a-340700839ce7",
+        "name": "How To: Return a value from a flow",
+        "type": "HELPER"
+      },
+      {
+        "id": "bd432043-2475-4cfb-8fa2-536e34d9047d",
+        "name": "How to use an If/Else statement with Outputs",
+        "type": "MAIN"
+      },
+      {
+        "id": "5d25e838-1a83-400f-9776-86b844d387dd",
+        "name": "How To: Use Custom Search Criteria",
+        "type": "MAIN"
+      },
+      {
+        "id": "b1b1ade3-88f7-43ea-a322-1b60b257cb0d",
+        "name": "How to use Continue If card, using \"in\" as the comparison",
+        "type": "MAIN"
+      },
+      {
+        "id": "6441bb06-8fdd-4471-8543-7ba924768494",
+        "name": "How To: Perform different actions based on a logical comparison",
+        "type": "HELPER"
+      },
+      {
+        "id": "21319b1b-e85a-43d1-91c7-f286572635ab",
+        "name": "Hello Workflows 2 - Date & Time",
+        "type": "MAIN"
+      },
+      {
+        "id": "17402bf6-0fef-4cd0-b06d-1ccd3a66cdfe",
+        "name": "Hello Workflows 1 - Text",
+        "type": "MAIN"
+      },
+      {
+        "id": "c0c67252-a35a-4850-89ce-9aa1713e55a6",
+        "name": "Hello Workflows 3 - Helper Flow",
+        "type": "HELPER"
+      },
+      {
+        "id": "1f4582f8-d44b-4a52-a802-e75cab0ed7e5",
+        "name": "[scheduled] identify inactive Okta users",
+        "type": "MAIN"
+      },
+      {
+        "id": "1830bf0c-e0c4-4d83-87fe-e613fec5819f",
+        "name": "How To: pluck attribute values from a list (canned JSON)",
+        "type": "MAIN"
+      },
+      {
+        "id": "80b34f71-d29f-4073-a08b-d20fd5ef0bf4",
+        "name": "How To: read user attributes from a JSON object (canned JSON)",
+        "type": "MAIN"
+      },
+      {
+        "id": "306575d3-16e7-4b99-ba29-58d0520e665e",
+        "name": "How To: pluck attribute values from a list",
+        "type": "MAIN"
+      },
+      {
+        "id": "0549216a-74b2-4913-9179-17344eafc011",
+        "name": "How To: Obtain a domain name from an email address",
+        "type": "MAIN"
+      },
+      {
+        "id": "9de33729-5ae6-4b25-a84a-4950fecbbfc2",
+        "name": "How To: Combine a username with a domain to create an email address",
+        "type": "MAIN"
+      },
+      {
+        "id": "731ccc11-cdc4-40cb-86c9-4ddee7a96ecd",
+        "name": "List Users with Search",
+        "type": "MAIN"
+      },
+      {
+        "id": "cb5f404f-00f9-4f66-908f-82b4ac26290d",
+        "name": "Using the Okta connector with the Custom API Action card to get the current user",
+        "type": "HELPER"
+      },
+      {
+        "id": "be0e2f70-01fa-43ad-8339-b5f4f082e173",
+        "name": "List Users with Search",
+        "type": "MAIN"
+      },
+      {
+        "id": "58a7de03-8f12-4974-88cb-61c94f3e298b",
+        "name": "Using the Okta connector to create an Okta group",
+        "type": "HELPER"
+      }
+    ],
+    "helperFlowsCount": 11,
+    "mainFlowsCount": 15
+  },
+  "links": [
+    {
+      "destination": "",
+      "title": ""
+    }
+  ]
+}
