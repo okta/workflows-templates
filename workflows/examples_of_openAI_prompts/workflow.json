@@ -1,0 +1,22 @@
+{
+  "name": "",
+  "title": "Examples of OpenAI prompts",
+  "description": "Discover the potential of artificial intelligence with practical example prompts to help guide you through automating tasks, generating creative content, and more. This connector brings OpenAI's advanced capabilities directly into Okta Workflows to unlock new levels of efficiency and creativity in your business processes.",
+  "connectors": [
+  ],
+  "details": {
+    "stashCount": 0,
+    "flowCount": 0,
+    "flos": [
+      
+    ],
+    "helperFlowsCount": 0,
+    "mainFlowsCount": 0
+  },
+  "links": [
+    {
+      "destination": "",
+      "title": ""
+    }
+  ]
+}
