@@ -1,4 +1,4 @@
-# Get Atlassian ID
+# Get an Atlassian ID
 
 ## Overview
 
