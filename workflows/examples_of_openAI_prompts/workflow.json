@@ -1,22 +1,125 @@
 {
-  "name": "",
+  "name": "examples_of_openAI_prompts",
   "title": "Examples of OpenAI prompts",
   "description": "Discover the potential of artificial intelligence with practical example prompts to help guide you through automating tasks, generating creative content, and more. This connector brings OpenAI's advanced capabilities directly into Okta Workflows to unlock new levels of efficiency and creativity in your business processes.",
   "connectors": [
+    "openai",
+    "googledrive"
   ],
   "details": {
     "stashCount": 0,
-    "flowCount": 0,
+    "flowCount": 17,
     "flos": [
-      
+      {
+        "id": "16673359-ca17-4b9f-a643-44fe0c31253c",
+        "name": "Meeting notes summarizer",
+        "type": "MAIN",
+        "screenshotURL": "https://d78vv2h34ll3s.cloudfront.net/static/catalog/workflows/examples_of_openAI_prompts/resources/0027ce73e74270e43ec3ecffcffccfccffcf.png"
+      },
+      {
+        "id": "8d2b1dce-37c7-43b9-9fbb-cf161714d25e",
+        "name": "Tweet classifier",
+        "type": "MAIN",
+        "screenshotURL": "https://d78vv2h34ll3s.cloudfront.net/static/catalog/workflows/examples_of_openAI_prompts/resources/0027ce73e74270e43ec3ecffcffccfccffcf.png"
+      },
+      {
+        "id": "dd6994f6-e578-44bd-90c3-4ecc23946cc4",
+        "name": "Explain code",
+        "type": "MAIN",
+        "screenshotURL": "https://d78vv2h34ll3s.cloudfront.net/static/catalog/workflows/examples_of_openAI_prompts/resources/20279e63e6c260e63ee2ebefbef9cf9cffcf.png"
+      },
+      {
+        "id": "f022934e-0344-4340-8e7c-0e0dd7bb3c3e",
+        "name": "Grammar Correction",
+        "type": "MAIN",
+        "screenshotURL": "https://d78vv2h34ll3s.cloudfront.net/static/catalog/workflows/examples_of_openAI_prompts/resources/20279e63e2d260e63ee2efeffeffcffcffcf.png"
+      },
+      {
+        "id": "b775669d-37ce-4c74-8352-779c2d1d9eaf",
+        "name": "Lesson plan writer",
+        "type": "MAIN",
+        "screenshotURL": "https://d78vv2h34ll3s.cloudfront.net/static/catalog/workflows/examples_of_openAI_prompts/resources/20251e6fe31060e6fee7efffffffbff9ff9f.png"
+      },
+      {
+        "id": "9b519321-e122-4e49-b725-9f13177d3152",
+        "name": "Keywords",
+        "type": "MAIN",
+        "screenshotURL": "https://d78vv2h34ll3s.cloudfront.net/static/catalog/workflows/examples_of_openAI_prompts/resources/2127de03e0d270e63e82efeffeffcffcffcf.png"
+      },
+      {
+        "id": "88c02610-0e86-45b2-af58-dfe09eca6196",
+        "name": "Parse unstructured data",
+        "type": "MAIN",
+        "screenshotURL": "https://d78vv2h34ll3s.cloudfront.net/static/catalog/workflows/examples_of_openAI_prompts/resources/1623ce43e44258e73ee2efffffffcffcffcf.png"
+      },
+      {
+        "id": "7e0d291f-d65a-4cf2-a550-d95eaf4f0491",
+        "name": "Creates an image given a prompt",
+        "type": "MAIN",
+        "screenshotURL": "https://d78vv2h34ll3s.cloudfront.net/static/catalog/workflows/examples_of_openAI_prompts/resources/24a2787d62283ec7cc8c184bcf9e79e79e7f.png"
+      },
+      {
+        "id": "e999fa9d-8359-48c0-9f39-70d377b82abb",
+        "name": "Python bug fixer",
+        "type": "MAIN",
+        "screenshotURL": "https://d78vv2h34ll3s.cloudfront.net/static/catalog/workflows/examples_of_openAI_prompts/resources/0027ce73e74070e63ec2effffeffcffcffcf.png"
+      },
+      {
+        "id": "6f3cc6b0-393a-48cc-97e6-1e866e583837",
+        "name": "Generate Interview Questions",
+        "type": "MAIN",
+        "screenshotURL": "https://d78vv2h34ll3s.cloudfront.net/static/catalog/workflows/examples_of_openAI_prompts/resources/22622e1fe02623e1fe9befbff3ff3ff3ff3f.png"
+      },
+      {
+        "id": "59a56337-f3e2-48b2-a276-6f42c4fbcf27",
+        "name": "Summarize for a 2nd grader",
+        "type": "MAIN",
+        "screenshotURL": "https://d78vv2h34ll3s.cloudfront.net/static/catalog/workflows/examples_of_openAI_prompts/resources/20279e63e6d210e63e82e9effeffcffcffcf.png"
+      },
+      {
+        "id": "b3412a49-8e77-468d-ad61-97ad8c0af123",
+        "name": "Pro and con discusser",
+        "type": "MAIN",
+        "screenshotURL": "https://d78vv2h34ll3s.cloudfront.net/static/catalog/workflows/examples_of_openAI_prompts/resources/20270e6fe28260e6fee7effff9ff9ff9ff9f.png"
+      },
+      {
+        "id": "b8c5bb58-08a3-4079-947d-c51f8ef3e0ab",
+        "name": "Emoji chatbot",
+        "type": "MAIN",
+        "screenshotURL": "https://d78vv2h34ll3s.cloudfront.net/static/catalog/workflows/examples_of_openAI_prompts/resources/0023ce77e44270e73ee2effffeffcffcffcf.png"
+      },
+      {
+        "id": "955443b5-e514-413f-8cdf-f10e96fa5647",
+        "name": "Calculate time complexity",
+        "type": "MAIN",
+        "screenshotURL": "https://d78vv2h34ll3s.cloudfront.net/static/catalog/workflows/examples_of_openAI_prompts/resources/0027ce73e74240e73ee2efeffcffcffcffcf.png"
+      },
+      {
+        "id": "df5df4fe-d028-430d-bf65-4f85666ef00b",
+        "name": "Marv the sarcastic chat bot",
+        "type": "MAIN",
+        "screenshotURL": "https://d78vv2h34ll3s.cloudfront.net/static/catalog/workflows/examples_of_openAI_prompts/resources/0827e64af6e07e640e80efeffeffe7fe7fe7.png"
+      },
+      {
+        "id": "7799081f-b628-4b25-a7a7-1b02d6a9e19d",
+        "name": "Create a Python function from a specification",
+        "type": "MAIN",
+        "screenshotURL": "https://d78vv2h34ll3s.cloudfront.net/static/catalog/workflows/examples_of_openAI_prompts/resources/20279e63e6c230e63ee2efeffeffcffcffcf.png"
+      },
+      {
+        "id": "cf10b441-2b80-4a16-8b77-f79df40af94c",
+        "name": "Language Translation",
+        "type": "MAIN",
+        "screenshotURL": "https://d78vv2h34ll3s.cloudfront.net/static/catalog/workflows/examples_of_openAI_prompts/resources/2027966be65270e62ee2efeffcffcffcffcf.png"
+      }
     ],
     "helperFlowsCount": 0,
-    "mainFlowsCount": 0
+    "mainFlowsCount": 17
   },
   "links": [
     {
-      "destination": "",
-      "title": ""
+      "title": "Setup Documentation",
+      "destination": "https://github.com/okta/workflows-templates/blob/master/workflows/examples_of_openAI_prompts/readme.md"
     }
   ]
 }

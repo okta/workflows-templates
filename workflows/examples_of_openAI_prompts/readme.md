@@ -1,4 +1,4 @@
-# OpenAI Prompt Examples
+# Examples of OpenAI prompts
 
 ## Overview
 
