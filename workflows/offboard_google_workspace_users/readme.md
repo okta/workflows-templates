@@ -1,4 +1,4 @@
-# Offboard Google Workspace user
+# Offboard Google Workspace users
 
 ## Overview
 

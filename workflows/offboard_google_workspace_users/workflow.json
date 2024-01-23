@@ -1,22 +1,59 @@
 {
-  "name": "",
-  "title": "Offboard Google Workspace user",
+  "name": "offboard_google_workspace_users",
+  "title": "Offboard Google Workspace users",
   "description": "This template performs several tasks in Google Workspace when offboarding a target user.",
   "connectors": [
+    "okta",
+    "gmail",
+    "googlecalendar",
+    "googledirectory"
   ],
   "details": {
-    "stashCount": 0,
-    "flowCount": 0,
+    "flowCount": 6,
     "flos": [
-      
+      {
+        "id": "1734584a-eb67-476c-b04b-d38bac53f119",
+        "name": "[Helper] Google Workspace Offboarding Tasks",
+        "type": "HELPER",
+        "screenshotURL": "https://d78vv2h34ll3s.cloudfront.net/static/catalog/workflows/offboard_google_workspace_users/resources/17e303f03703703f83601ec1fd1f01f01fe1.png"
+      },
+      {
+        "id": "9cb4c6be-086d-4163-876a-72063b7f5ce9",
+        "name": "[For Each] Remove User Device",
+        "type": "HELPER",
+        "screenshotURL": "https://d78vv2h34ll3s.cloudfront.net/static/catalog/workflows/offboard_google_workspace_users/resources/e2de0cf40e00f3f60c63a7c0758200538ffd.png"
+      },
+      {
+        "id": "8a83b69e-8f0f-40fe-9a40-6fc8dfa3bbb2",
+        "name": "[For Each] Unassign License from User",
+        "type": "HELPER",
+        "screenshotURL": "https://d78vv2h34ll3s.cloudfront.net/static/catalog/workflows/offboard_google_workspace_users/resources/24cfe07c46587c87c86586807cf3c35c31c3.png"
+      },
+      {
+        "id": "6015c1e2-4a98-4434-900e-442aa10bda73",
+        "name": "[For Each] Delete Google ASPs",
+        "type": "HELPER",
+        "screenshotURL": "https://d78vv2h34ll3s.cloudfront.net/static/catalog/workflows/offboard_google_workspace_users/resources/01de2cf45760f58718f18fc8740600c15e7f.png"
+      },
+      {
+        "id": "4788553f-65eb-4066-9c59-682b12be7193",
+        "name": "[For Each] Revoke Access Token",
+        "type": "HELPER",
+        "screenshotURL": "https://d78vv2h34ll3s.cloudfront.net/static/catalog/workflows/offboard_google_workspace_users/resources/20df64f05f78658618e00605f3fe1fedfe5f.png"
+      },
+      {
+        "id": "63c129db-b9e6-4a40-8ec5-65a6acd545e8",
+        "name": "[MAIN FLOW] Google Workspace Offboarding ",
+        "type": "HELPER",
+        "screenshotURL": "https://d78vv2h34ll3s.cloudfront.net/static/catalog/workflows/offboard_google_workspace_users/resources/240fc8fd86686687e8c00e4fe0fe1fe1fe9f.png"
+      }
     ],
-    "helperFlowsCount": 0,
-    "mainFlowsCount": 0
+    "helperFlowsCount": 6
   },
   "links": [
     {
-      "destination": "",
-      "title": ""
+      "destination": "https://github.com/okta/workflows-templates/blob/master/workflows/offboard_google_workspace_users/readme.md",
+      "title": "Setup Documentation"
     }
   ]
 }
