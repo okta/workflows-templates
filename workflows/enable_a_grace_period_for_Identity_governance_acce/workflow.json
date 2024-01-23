@@ -1,0 +1,46 @@
+{
+  "name": "enable_a_grace_period_for_Identity_governance_acce",
+  "title": "Enable a grace period for Identity Governance Access Certification",
+  "description": "During an access certification, some organizations might allow for revoke decisions. Some campaigns implement a grace period where end users retain access to the resource for a period before their access is revoked. This template enables this configuration for a campaign, applying the revoke decision at a future date. The date is determined according to the number of days granted as a grace period.",
+  "connectors": [
+    "okta"
+  ],
+  "details": {
+    "stashCount": 2,
+    "flowCount": 4,
+    "flos": [
+      {
+        "id": "0be499cd-af15-4a85-b499-9cb58fa89962",
+        "name": "1.1 Revoke User from Resource",
+        "type": "HELPER",
+        "screenshotURL": "https://d78vv2h34ll3s.cloudfront.net/static/catalog/workflows/enable_a_grace_period_for_Identity_governance_acce/resources/e0077cf05740747f47e07e07e07e07e07e43.png"
+      },
+      {
+        "id": "b40c031e-8254-4511-8062-75fa34dedaef",
+        "name": "2.1 Event Process Decision",
+        "type": "HELPER",
+        "screenshotURL": "https://d78vv2h34ll3s.cloudfront.net/static/catalog/workflows/enable_a_grace_period_for_Identity_governance_acce/resources/c00ebcf8c72872b703703f03f03f0bf03f03.png"
+      },
+      {
+        "id": "69e6c277-18d7-46ee-978f-afd61586c73c",
+        "name": "1. Event Access Certification Decision",
+        "type": "MAIN",
+        "screenshotURL": "https://d78vv2h34ll3s.cloudfront.net/static/catalog/workflows/enable_a_grace_period_for_Identity_governance_acce/resources/45e070ef4640e517f17e07e0fe0fe0fe0fe0.png"
+      },
+      {
+        "id": "4ab836e0-fc76-433f-ab41-82fc3a974f03",
+        "name": "2.0 Event Expired List",
+        "type": "MAIN",
+        "screenshotURL": "https://d78vv2h34ll3s.cloudfront.net/static/catalog/workflows/enable_a_grace_period_for_Identity_governance_acce/resources/5507f4744dd0d14d1cd00d17d0fc07f47f1f.png"
+      }
+    ],
+    "helperFlowsCount": 2,
+    "mainFlowsCount": 2
+  },
+  "links": [
+    {
+      "title": "Setup Documentation",
+      "destination": "https://github.com/okta/workflows-templates/blob/master/workflows/enable_a_grace_period_for_Identity_governance_acce/readme.md"
+    }
+  ]
+}

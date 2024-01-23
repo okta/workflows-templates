@@ -1,4 +1,4 @@
-# Access Certification - Governance with a Grace Period
+# Enable a grace period for Identity Governance Access Certification
 
 ## Overview
 
