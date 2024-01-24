@@ -2,7 +2,7 @@
 
 ## Overview
 
-This template performs several tasks in Google Workspace when offboarding a target user. These flows execute when a user is added to a specified Okta group. 
+This template performs several tasks in Google Workspace when offboarding a target user.
 
 You can configure different actions for the Google Workspace user:
 
