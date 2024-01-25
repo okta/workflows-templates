@@ -1,0 +1,178 @@
+{
+  "name": "workflows_tutorials",
+  "title": "Workflows tutorials",
+  "description": "The Workflows tutorials template is a comprehensive guide designed to enhance your experience with Okta Workflows. This resource demonstrates the powerful automation capabilities of flows to both beginners and advanced users. Integrating this template into your Okta preview organization gives you access to sample users and a suite of flows showing the versatility and efficiency of Okta Workflows.",
+  "connectors": [
+    "okta"
+  ],
+  "details": {
+    "stashCount": 3,
+    "flowCount": 26,
+    "flos": [
+      {
+        "id": "33ba6924-8ec7-422c-b58c-f3e404e75440",
+        "name": "Helper flow for Step 1",
+        "type": "HELPER",
+        "screenshotURL": "https://d78vv2h34ll3s.cloudfront.net/static/catalog/workflows/workflows_tutorials/resources/80ad38c7ec38c38eb8a20e61e79e79e79ff9.png"
+      },
+      {
+        "id": "ef7b3537-4eac-4ab6-b45e-b19033ba8c3d",
+        "name": "How To: Return a value from a flow (HELPER)",
+        "type": "HELPER",
+        "screenshotURL": "https://d78vv2h34ll3s.cloudfront.net/static/catalog/workflows/workflows_tutorials/resources/800fee9e8fea602632670792792393f93f9f.png"
+      },
+      {
+        "id": "11ce3208-1fd0-4be5-9755-36ffac759943",
+        "name": "Iterate over users and write to a table using custom helper inputs",
+        "type": "HELPER",
+        "screenshotURL": "https://d78vv2h34ll3s.cloudfront.net/static/catalog/workflows/workflows_tutorials/resources/424f7cc2cc207b87b8790790f92f91ff1ff5.png"
+      },
+      {
+        "id": "560ccbf6-77e2-4bda-9a0d-6b353a84ca21",
+        "name": "Check Last Login date and add to table",
+        "type": "HELPER",
+        "screenshotURL": "https://d78vv2h34ll3s.cloudfront.net/static/catalog/workflows/workflows_tutorials/resources/800d5eb5eb44b2473c04c4ed6e566467f7ff.png"
+      },
+      {
+        "id": "8247810d-8082-467b-b733-f421fdfb9575",
+        "name": "Iterate over users and write to a table",
+        "type": "HELPER",
+        "screenshotURL": "https://d78vv2h34ll3s.cloudfront.net/static/catalog/workflows/workflows_tutorials/resources/424f7cc2cc207b87b8790790f92f91ff1ff5.png"
+      },
+      {
+        "id": "67a4c3fc-73c0-4e82-94f2-a8e19b058d70",
+        "name": "[Step 1 ] Create Sample Users",
+        "type": "MAIN",
+        "screenshotURL": "https://d78vv2h34ll3s.cloudfront.net/static/catalog/workflows/workflows_tutorials/resources/0c81fa5ea1c82c63fc264ee4e67fffe3fe3f.png"
+      },
+      {
+        "id": "90c35a49-de3d-459e-aecf-647751b0d01a",
+        "name": "Hello Workflows 2 - Date & Time",
+        "type": "MAIN",
+        "screenshotURL": "https://d78vv2h34ll3s.cloudfront.net/static/catalog/workflows/workflows_tutorials/resources/0107fe17613635a74a60a61ee7ee7fe7fe7f.png"
+      },
+      {
+        "id": "4b9f3846-18ff-4e70-b38e-8492ce6d1f61",
+        "name": "Hello Workflows 1 - Text",
+        "type": "MAIN",
+        "screenshotURL": "https://d78vv2h34ll3s.cloudfront.net/static/catalog/workflows/workflows_tutorials/resources/84946c6ee0c00fe3f61743503fc3fc3fcffe.png"
+      },
+      {
+        "id": "07397609-311c-468f-ac48-bc33a8622acb",
+        "name": "Hello Workflows 3 - Helper Flow",
+        "type": "HELPER",
+        "screenshotURL": "https://d78vv2h34ll3s.cloudfront.net/static/catalog/workflows/workflows_tutorials/resources/810f7e95231e31a27a02e03e8fe8ff8ffcff.png"
+      },
+      {
+        "id": "f2f748e4-1b01-46e7-97fa-1b89efcd2c16",
+        "name": "How To: Obtain a domain name from an email address",
+        "type": "MAIN",
+        "screenshotURL": "https://d78vv2h34ll3s.cloudfront.net/static/catalog/workflows/workflows_tutorials/resources/1d41d43dc3c03d03fc1d03c43fc3f03fcffc.png"
+      },
+      {
+        "id": "29cbc474-1a9a-4938-add9-7e251a85e591",
+        "name": "How To: Combine a username with a domain to create an email address",
+        "type": "MAIN",
+        "screenshotURL": "https://d78vv2h34ll3s.cloudfront.net/static/catalog/workflows/workflows_tutorials/resources/1b41b43f43f03fc1b41b03b03fc3f03f0ff4.png"
+      },
+      {
+        "id": "eba89eed-8a26-4e2f-aff3-5cb7e8d849fd",
+        "name": "How to use Date & Time subtraction and convert into M/D/Y format",
+        "type": "MAIN",
+        "screenshotURL": "https://d78vv2h34ll3s.cloudfront.net/static/catalog/workflows/workflows_tutorials/resources/12c3fc31c1fc1e416c02c1acdafd8fc8fc8f.png"
+      },
+      {
+        "id": "789a3b68-d5fa-457d-95fc-4e1a58c94df5",
+        "name": "How To: pluck attribute values from a list (canned JSON)",
+        "type": "MAIN",
+        "screenshotURL": "https://d78vv2h34ll3s.cloudfront.net/static/catalog/workflows/workflows_tutorials/resources/0ec3e83e82fc26827c068c6cc6fc6fc0fc0f.png"
+      },
+      {
+        "id": "21bd9f38-d9c6-4ee0-a518-86855f00722c",
+        "name": "How To: read user attributes from a JSON object (canned JSON)",
+        "type": "MAIN",
+        "screenshotURL": "https://d78vv2h34ll3s.cloudfront.net/static/catalog/workflows/workflows_tutorials/resources/0ec3ec26c2ec3ec2e01e8cecc2fc6fc0fc0f.png"
+      },
+      {
+        "id": "8f4d279d-2320-4456-8f45-250fcc503c6b",
+        "name": "How To: pluck attribute values from a list",
+        "type": "MAIN",
+        "screenshotURL": "https://d78vv2h34ll3s.cloudfront.net/static/catalog/workflows/workflows_tutorials/resources/2dc008bfd1781d83f8e18e1fe1fe1fe1fe1f.png"
+      },
+      {
+        "id": "1896a9d6-4d68-4145-a40f-de66c7df1421",
+        "name": "How to use an If/Else statement with Outputs",
+        "type": "MAIN",
+        "screenshotURL": "https://d78vv2h34ll3s.cloudfront.net/static/catalog/workflows/workflows_tutorials/resources/0f425c2de0d42dc6dce0ceeffefecfe0feef.png"
+      },
+      {
+        "id": "fd344558-18c5-45c1-9554-694b33023b7b",
+        "name": "How To: Use Custom Search Criteria",
+        "type": "MAIN",
+        "screenshotURL": "https://d78vv2h34ll3s.cloudfront.net/static/catalog/workflows/workflows_tutorials/resources/0247f07f46027327f2cf2df3cf3ff3ff3ff3.png"
+      },
+      {
+        "id": "3b25bfc4-6d63-4361-a0db-faf854bac0ed",
+        "name": "How To: Return a value from a flow",
+        "type": "HELPER",
+        "screenshotURL": "https://d78vv2h34ll3s.cloudfront.net/static/catalog/workflows/workflows_tutorials/resources/40cdec59c53c61c74c61c71c71c20ce0fe8f.png"
+      },
+      {
+        "id": "d90fd2b2-ca88-4fd7-950e-711e8f3abf4d",
+        "name": "How to use Continue If card, using \"in\" as the comparison",
+        "type": "MAIN",
+        "screenshotURL": "https://d78vv2h34ll3s.cloudfront.net/static/catalog/workflows/workflows_tutorials/resources/1ac1ac3ec3fc3bc18c1283bc3fc38cf8cf8f.png"
+      },
+      {
+        "id": "41f3b769-9c9b-4122-8e23-6b2170926f55",
+        "name": "How To: Catch an error within a Workflow",
+        "type": "HELPER",
+        "screenshotURL": "https://d78vv2h34ll3s.cloudfront.net/static/catalog/workflows/workflows_tutorials/resources/402f38d3e4bc43c43e037837837e37e37e07.png"
+      },
+      {
+        "id": "50727802-65be-4586-92c5-b3e88f23792c",
+        "name": "How To: Perform different actions based on a logical comparison",
+        "type": "HELPER",
+        "screenshotURL": "https://d78vv2h34ll3s.cloudfront.net/static/catalog/workflows/workflows_tutorials/resources/b3883cc6a8f88be8e080a88f8ef86b863c6b.png"
+      },
+      {
+        "id": "14a20449-6997-4f7a-96da-d7f27796db05",
+        "name": "List Users with Search using For Each",
+        "type": "MAIN",
+        "screenshotURL": "https://d78vv2h34ll3s.cloudfront.net/static/catalog/workflows/workflows_tutorials/resources/086586fb33e83c87c8fc8fc9fcffcffcffcf.png"
+      },
+      {
+        "id": "fcab5361-49c0-4ef6-8928-047d8b01dcb1",
+        "name": "[scheduled] identify inactive Okta users",
+        "type": "MAIN",
+        "screenshotURL": "https://d78vv2h34ll3s.cloudfront.net/static/catalog/workflows/workflows_tutorials/resources/812ed0f96f80b90fd0fc0fc1fc1fc1ffbff9.png"
+      },
+      {
+        "id": "f74ec689-6cf0-4af8-af0d-5580ac4e29ae",
+        "name": "List Users with Search using Streaming Actions",
+        "type": "MAIN",
+        "screenshotURL": "https://d78vv2h34ll3s.cloudfront.net/static/catalog/workflows/workflows_tutorials/resources/c473f0cc12cc3cc3cc300fc0fc7fc3ff3ff3.png"
+      },
+      {
+        "id": "061bf2e7-1137-42f3-99dd-faf5fa379a53",
+        "name": "Using the Okta connector to create an Okta group",
+        "type": "HELPER",
+        "screenshotURL": "https://d78vv2h34ll3s.cloudfront.net/static/catalog/workflows/workflows_tutorials/resources/06acf8c78ee4e786206603e03f9ff9ff9ff9.png"
+      },
+      {
+        "id": "39657af1-9598-4b0d-ae73-29bcdbef86a8",
+        "name": "Using the Okta connector with the Custom API Action card to get the current user",
+        "type": "HELPER",
+        "screenshotURL": "https://d78vv2h34ll3s.cloudfront.net/static/catalog/workflows/workflows_tutorials/resources/892d38e78c70e70678278e79e79e79e7fe7f.png"
+      }
+    ],
+    "helperFlowsCount": 11,
+    "mainFlowsCount": 15
+  },
+  "links": [
+    {
+      "destination": "https://github.com/okta/workflows-templates/blob/master/workflows/workflows_tutorials/readme.md",
+      "title": "Setup Documentation"
+    }
+  ]
+}
