@@ -1,0 +1,26 @@
+{
+  "name": "get_an_atlassian_id",
+  "title": "Get an Atlassian ID",
+  "description": "Many of the actions supported within the Jira connector, such as creating or assigning issues to users, require an Atlassian ID. You can use this helper flow to find a user's Atlassian ID when necessary.",
+  "connectors": [
+    "jira2"
+  ],
+  "details": {
+    "flowCount": 1,
+    "flos": [
+      {
+        "id": "6c9b76d3-7738-46a5-bc92-c605342c0c37",
+        "name": "Get Atlassian ID",
+        "type": "HELPER",
+        "screenshotURL": "https://d78vv2h34ll3s.cloudfront.net/static/catalog/workflows/get_an_atlassian_id/resources/a02c5ae5e4d20ee1ae10441fcbfcffcffcff.png"
+      }
+    ],
+    "helperFlowsCount": 1
+  },
+  "links": [
+    {
+      "title": "Setup Documentation",
+      "destination": "https://github.com/okta/workflows-templates/blob/master/workflows/get_an_atlassian_id/readme.md"
+    }
+  ]
+}
