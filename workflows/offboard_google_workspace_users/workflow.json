@@ -12,37 +12,37 @@
     "flowCount": 6,
     "flos": [
       {
-        "id": "1734584a-eb67-476c-b04b-d38bac53f119",
-        "name": "[Helper] Google Workspace Offboarding Tasks",
-        "type": "HELPER",
-        "screenshotURL": "https://d78vv2h34ll3s.cloudfront.net/static/catalog/workflows/offboard_google_workspace_users/resources/17e303f03703703f83601ec1fd1f01f01fe1.png"
-      },
-      {
-        "id": "9cb4c6be-086d-4163-876a-72063b7f5ce9",
-        "name": "[For Each] Remove User Device",
-        "type": "HELPER",
-        "screenshotURL": "https://d78vv2h34ll3s.cloudfront.net/static/catalog/workflows/offboard_google_workspace_users/resources/e2de0cf40e00f3f60c63a7c0758200538ffd.png"
-      },
-      {
-        "id": "8a83b69e-8f0f-40fe-9a40-6fc8dfa3bbb2",
-        "name": "[For Each] Unassign License from User",
-        "type": "HELPER",
-        "screenshotURL": "https://d78vv2h34ll3s.cloudfront.net/static/catalog/workflows/offboard_google_workspace_users/resources/24cfe07c46587c87c86586807cf3c35c31c3.png"
-      },
-      {
-        "id": "6015c1e2-4a98-4434-900e-442aa10bda73",
-        "name": "[For Each] Delete Google ASPs",
-        "type": "HELPER",
-        "screenshotURL": "https://d78vv2h34ll3s.cloudfront.net/static/catalog/workflows/offboard_google_workspace_users/resources/01de2cf45760f58718f18fc8740600c15e7f.png"
-      },
-      {
-        "id": "4788553f-65eb-4066-9c59-682b12be7193",
+        "id": "0f907a5b-7a0c-48bf-885a-cefcc2c5bb07",
         "name": "[For Each] Revoke Access Token",
         "type": "HELPER",
         "screenshotURL": "https://d78vv2h34ll3s.cloudfront.net/static/catalog/workflows/offboard_google_workspace_users/resources/20df64f05f78658618e00605f3fe1fedfe5f.png"
       },
       {
-        "id": "63c129db-b9e6-4a40-8ec5-65a6acd545e8",
+        "id": "a7159601-fa82-4b7a-bf4a-9d8f3839c3db",
+        "name": "[For Each] Unassign License from User",
+        "type": "HELPER",
+        "screenshotURL": "https://d78vv2h34ll3s.cloudfront.net/static/catalog/workflows/offboard_google_workspace_users/resources/24cfe07c46587c87c86586807cf3c35c31c3.png"
+      },
+      {
+        "id": "d0768727-54f9-4435-9808-ac07f1f9c5fe",
+        "name": "[For Each] Remove User Device",
+        "type": "HELPER",
+        "screenshotURL": "https://d78vv2h34ll3s.cloudfront.net/static/catalog/workflows/offboard_google_workspace_users/resources/e2de09f01e01e3f60963a7c0758600528ffd.png"
+      },
+      {
+        "id": "a7bd9216-b27d-4ad7-a7d6-71cb6ab37d4d",
+        "name": "[For Each] Delete Google ASPs",
+        "type": "HELPER",
+        "screenshotURL": "https://d78vv2h34ll3s.cloudfront.net/static/catalog/workflows/offboard_google_workspace_users/resources/e19e29741768e1871af187d8648400415fff.png"
+      },
+      {
+        "id": "e49bcceb-ef67-4725-8579-5c824541cfa4",
+        "name": "[Helper] Google Workspace Offboarding Tasks",
+        "type": "HELPER",
+        "screenshotURL": "https://d78vv2h34ll3s.cloudfront.net/static/catalog/workflows/offboard_google_workspace_users/resources/17e303f03703703f83601ec1fd1f01f01fe1.png"
+      },
+      {
+        "id": "6cb2af0d-07c9-44df-aa1a-7916c97c6864",
         "name": "[MAIN FLOW] Google Workspace Offboarding ",
         "type": "HELPER",
         "screenshotURL": "https://d78vv2h34ll3s.cloudfront.net/static/catalog/workflows/offboard_google_workspace_users/resources/240fc8fd86686687e8c00e4fe0fe1fe1fe9f.png"
