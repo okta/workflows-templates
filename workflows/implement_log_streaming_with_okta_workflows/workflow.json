@@ -1,0 +1,24 @@
+{
+  "name": "implement_log_streaming_with_okta_workflows",
+  "title": "Implement log streaming with Okta Workflows",
+  "description": "This template focuses on using log streaming with Okta Workflows to capture specific event types from Okta's System Log. Log streaming enables the export of Okta System Log events to platforms like Amazon EventBridge or Splunk Cloud in near real-time. This functionality can be used to monitor suspicious activity, automating responses to specific events or troubleshooting.",
+  "connectors": [],
+  "details": {
+    "flowCount": 1,
+    "flos": [
+      {
+        "id": "f4a83e91-5b8b-4a13-a6c9-ff5f78f9c36e",
+        "name": "AWS",
+        "type": "MAIN",
+        "screenshotURL": "https://d78vv2h34ll3s.cloudfront.net/static/catalog/workflows/implement_log_streaming_with_okta_workflows/resources/1e0fe07e07e07c07e07c00c06ff03f1bf73f.png"
+      }
+    ],
+    "mainFlowsCount": 1
+  },
+  "links": [
+    {
+      "destination": "https://github.com/okta/workflows-templates/blob/master/workflows/implement_log_streaming_with_okta_workflows/readme.md",
+      "title": "Setup Documentation"
+    }
+  ]
+}
