@@ -23,7 +23,7 @@ when an "Okta User MFA Factor Reset All" event is triggered. This template can b
 
 1.  Create a test user in Okta using the [Okta dashboard](https://www.google.com/url?q=https://help.okta.com/en/prod/Content/Topics/Security/mfa/mfa-reset-users.htm&amp;sa=D&amp;source=editors&amp;ust=1637191704457000&amp;usg=AOvVaw3KlJslpqFST8_5KQKi9wC9) or via the [Factors API](https://developer.okta.com/docs/reference/api/factors/).
 2.  Reset all factors using the Okta Admin Console.
-               
+
 ## Limitations & Known Issues
 
 -   Note that any screenshots in the document may change over time since the time of the recording.
