@@ -20,11 +20,10 @@ If you need to set up a Twilio account, see Setup Twilio Trial Account at the en
 
 ## Setup Steps
 
-1. This will require a HTTP Connection. 
-    1. From the workflow console, at the top navigation bar, select Settings.
-    2. Under Connections, click New Connection.
-    3. Select HTTP.
-    4. In the Connection Nickname field, enter `HTTP Twilio`.
+1. Create an API connector in the Okta Workflows console. 
+    1. On the Connections tab, click New Connection.
+    3. Select API Connector.
+    4. In the Description field, enter `HTTP Twilio`.
     5. Set Auth Type to Basic.
     6. For the user name, paste in your Twilio Account sid
     7. For the password, paste in your Twilio auth token
