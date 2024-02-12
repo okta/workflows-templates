@@ -17,12 +17,11 @@ Before you get started, you will need:
 
 ## Setup Steps
 
-1. In Okta Workflows, Create a Http Connection Setting. To set up a new configuration HTTP connection:
+1. In Okta Workflows, set up a new API connector:
   1. In the Admin Console, go to Workflow > Workflows console.
-  2. At the top navigation bar, select Settings.
-  3. Under Connections, click New Connection.
-  4. Select HTTP.
-    1. In the Connection Nickname field, enter `HTTP PetStore`.
+  3. On the Connections tab, click New Connection.
+  4. Select API Connector.
+    1. In the Description field, enter `HTTP PetStore`.
     2. Set Auth Type to Basic.
     3. For username, enter `admin` and for password, enter `secret`. Note: Because the actual API is not authenticated, the values don’t matter.
 2. Configure Okta Workflows flows to use the connection setting you just created and the `Pets` Okta Workflows table:
