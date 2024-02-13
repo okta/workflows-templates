@@ -20,20 +20,19 @@ If you need to set up a Twilio account, see Setup Twilio Trial Account at the en
 
 ## Setup Steps
 
-1. This will require a HTTP Connection. 
-    1. From the workflow console, at the top navigation bar, select Settings.
-    2. Under Connections, click New Connection.
-    3. Select HTTP.
-    4. In the Connection Nickname field, enter `HTTP Twilio`.
-    5. Set Auth Type to Basic.
-    6. For the user name, paste in your Twilio Account sid
-    7. For the password, paste in your Twilio auth token
-2. Navigate to the imported flow SUB - Send SMS via Twilio
-3. Scroll to the last card on the right HTTP Post
-4. Click Connections at the top of the card
-5. Select your new connection `HTTP Twilio`
-6. Save the flow enabling “Save all data that passes through this Flow?”
-7. Turn on Flow
+1. Create an API connector in the Okta Workflows console. 
+    1. On the Connections tab, click New Connection.
+    1. Select API Connector.
+    1. In the Description field, enter `HTTP Twilio`.
+    1. Set Auth Type to Basic.
+    1. For the user name, paste in your Twilio Account sid
+    1. For the password, paste in your Twilio auth token
+1. Navigate to the imported flow SUB - Send SMS via Twilio
+1. Scroll to the last card on the right HTTP Post
+1. Click Connections at the top of the card
+1. Select your new connection `HTTP Twilio`
+1. Save the flow enabling “Save all data that passes through this Flow?”
+1. Turn on Flow
 
 
 ## Parameters to pass into this subflow
