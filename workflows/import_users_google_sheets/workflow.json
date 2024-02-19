@@ -4,7 +4,7 @@
   "description": "Often, there are disconnected user populations like contractors, or certain offices that need to be imported into Okta. A CSV or Flat File is the easiest way to create those users in Okta. This flow walks you through how to bring in users from Google Sheets and how to use For Each loops. This flow reads all users in a specified Google sheet and, each week on Monday at 6 am, tries to create them in Okta.",
   "connectors": [
     "okta",
-    "googlesheets"
+    "googlesheets2_29"
   ],
   "details": {
     "flos": [
