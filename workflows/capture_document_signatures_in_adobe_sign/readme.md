@@ -50,9 +50,9 @@ Before you get started, you will need:
 ### Configure Adobe Sign
 
 1. Login into Adobe Sign.
-2. Follow these instructions to [Create an Application](https://opensource.adobe.com/dc-acrobat-sdk-docs/acrobatsignsdk/gstarted.html#createapp).
+2. Follow these instructions to [Create an Application](https://opensource.adobe.com/acrobat-sign/developer_guide/gstarted.html#create-an-application-quickstart).
 3. Select the newly created application and **View/Edit** and record the **Application ID** and **Client Secret**, we will use this later to setup the connection with Adobe Sign.
-4. Follow these instructions to [Configure OAuth for Application](https://opensource.adobe.com/dc-acrobat-sdk-docs/acrobatsignsdk/gstarted.html#oauth), with the following:
+4. Follow these instructions to [Configure OAuth for Application](https://opensource.adobe.com/acrobat-sign/developer_guide/gstarted.html#configure-oauth), with the following:
     - **Redirect URI**: Okta Workflows Preview and Prod respectively:
         - `https://oauth.workflows.oktapreview.com/oauth/httpfunctions/cb`
         - `https://oauth.workflows.okta.com/oauth/httpfunctions/cb`
