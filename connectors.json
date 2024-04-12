@@ -10,6 +10,7 @@
         "awslambda" ,
         "awssso",
         "box",
+        "darwinbox",
         "datagrail",
         "docusign2",
         "dropboxforbusiness",
