@@ -1,0 +1,137 @@
+{
+  "name": "automate_lifecycle_management_with_darwinbox",
+  "title": "Automate lifecycle management with DarwinBox",
+  "description": "These flows outline how Okta Workflows can be used to automate user creation, updates, and deactivation processes, including the automatic update of email IDs in Darwinbox.",
+  "connectors": [
+    "okta",
+    "darwinbox"
+  ],
+  "details": {
+    "stashCount": 3,
+    "flowCount": 19,
+    "flos": [
+      {
+        "id": "d032b2bc-8275-4957-8c7d-fa0378b28c19",
+        "name": "Generate Unique Username By Numeric Increment",
+        "type": "HELPER",
+        "screenshotURL": "https://d78vv2h34ll3s.cloudfront.net/static/catalog/workflows/automate_lifecycle_management_with_darwinbox/resources/514b4cf0e40a9eafa2f02f0bf0bf0ff4ff5f.png"
+      },
+      {
+        "id": "fb7a8c01-5f22-44ad-9e63-b725897a05bb",
+        "name": "Iteration For Deactivation",
+        "type": "HELPER",
+        "screenshotURL": "https://d78vv2h34ll3s.cloudfront.net/static/catalog/workflows/automate_lifecycle_management_with_darwinbox/resources/9fec0cc0a86ec0ec17c07c07d87f03c03d7b.png"
+      },
+      {
+        "id": "01d0e953-a556-48b7-9d8c-73430074b29f",
+        "name": "Transformation For Deactivation Schema",
+        "type": "HELPER",
+        "screenshotURL": "https://d78vv2h34ll3s.cloudfront.net/static/catalog/workflows/automate_lifecycle_management_with_darwinbox/resources/338bb07b03b0ff07107907a07f02f02f96ff.png"
+      },
+      {
+        "id": "eef42230-9e15-4433-a54a-3fae5fa48289",
+        "name": "Filter Matching Logins By Domain",
+        "type": "HELPER",
+        "screenshotURL": "https://d78vv2h34ll3s.cloudfront.net/static/catalog/workflows/automate_lifecycle_management_with_darwinbox/resources/554d54d545547dc41c41c70c7dcbc43c7fcf.png"
+      },
+      {
+        "id": "8e74ef7f-e4a2-48b4-b7b7-38354b9125b0",
+        "name": "Find Highest Login Increment",
+        "type": "HELPER",
+        "screenshotURL": "https://d78vv2h34ll3s.cloudfront.net/static/catalog/workflows/automate_lifecycle_management_with_darwinbox/resources/0feb10f82832f26f03f03f03f03f01f01fc5.png"
+      },
+      {
+        "id": "1bf634ea-0f79-4f6f-8856-45ac02cb85d6",
+        "name": "Delete Logs - User Deactivation",
+        "type": "HELPER",
+        "screenshotURL": "https://d78vv2h34ll3s.cloudfront.net/static/catalog/workflows/automate_lifecycle_management_with_darwinbox/resources/b30b307b17307307f03f07f03606006f0ff9.png"
+      },
+      {
+        "id": "d998b6a9-ed4d-4ee1-b509-08c98059c5d9",
+        "name": "Delete Target Import Session",
+        "type": "HELPER",
+        "screenshotURL": "https://d78vv2h34ll3s.cloudfront.net/static/catalog/workflows/automate_lifecycle_management_with_darwinbox/resources/e1ce08f457403d87d87d87c07c03c01c05ff.png"
+      },
+      {
+        "id": "16c18e0c-4329-4382-914d-e15b63ec9f87",
+        "name": "Email Duplicity Check",
+        "type": "HELPER",
+        "screenshotURL": "https://d78vv2h34ll3s.cloudfront.net/static/catalog/workflows/automate_lifecycle_management_with_darwinbox/resources/a4a2dae1a7d07e4644e847e4cc404024f3ff.png"
+      },
+      {
+        "id": "087ee337-b4c3-4ad4-8b44-4fc8cd18dc6c",
+        "name": "Delete Logs - User Creation",
+        "type": "HELPER",
+        "screenshotURL": "https://d78vv2h34ll3s.cloudfront.net/static/catalog/workflows/automate_lifecycle_management_with_darwinbox/resources/f30b307b07307307f03f07f03606f00f9ff9.png"
+      },
+      {
+        "id": "20fb1b83-aaaf-4506-a136-7093b935507c",
+        "name": "Transformation For Creation Schema",
+        "type": "HELPER",
+        "screenshotURL": "https://d78vv2h34ll3s.cloudfront.net/static/catalog/workflows/automate_lifecycle_management_with_darwinbox/resources/258ff86486e86f864824027f23f21f41f49f.png"
+      },
+      {
+        "id": "e85af9d4-6c26-47d5-918f-72f079daac32",
+        "name": "Transformation For Update Schema",
+        "type": "HELPER",
+        "screenshotURL": "https://d78vv2h34ll3s.cloudfront.net/static/catalog/workflows/automate_lifecycle_management_with_darwinbox/resources/4aceac5a47ac4ac7a000839f39f18f18f58f.png"
+      },
+      {
+        "id": "889e9973-d252-4d41-8f42-dea9f13bcf7c",
+        "name": "User Deactivation Repush (in case of import failures)",
+        "type": "MAIN",
+        "screenshotURL": "https://d78vv2h34ll3s.cloudfront.net/static/catalog/workflows/automate_lifecycle_management_with_darwinbox/resources/a1cc0cddac1ac469c78c38c39d39f3fc3fc3.png"
+      },
+      {
+        "id": "b08cdb10-c771-4baa-bcec-1e158547d5ba",
+        "name": "User Deactivation",
+        "type": "MAIN",
+        "screenshotURL": "https://d78vv2h34ll3s.cloudfront.net/static/catalog/workflows/automate_lifecycle_management_with_darwinbox/resources/bfcc04c8ab46c0ec47403c03dfff03c03dff.png"
+      },
+      {
+        "id": "f639a5ad-790b-4601-81c5-e4298e9e512b",
+        "name": "Update Email ID",
+        "type": "MAIN",
+        "screenshotURL": "https://d78vv2h34ll3s.cloudfront.net/static/catalog/workflows/automate_lifecycle_management_with_darwinbox/resources/4ac21c7bc6b449c69c40d40f78f18f5ff1ff.png"
+      },
+      {
+        "id": "c928568e-041e-46c0-8184-b27979410131",
+        "name": "Delete Import Session",
+        "type": "MAIN",
+        "screenshotURL": "https://d78vv2h34ll3s.cloudfront.net/static/catalog/workflows/automate_lifecycle_management_with_darwinbox/resources/259e19e19fc86c06d82787c83c51d75ff1ff.png"
+      },
+      {
+        "id": "70d9084b-61b8-4c1c-b5ac-cb818b0e051a",
+        "name": "User Creation",
+        "type": "MAIN",
+        "screenshotURL": "https://d78vv2h34ll3s.cloudfront.net/static/catalog/workflows/automate_lifecycle_management_with_darwinbox/resources/03eb84fc47c1b01fc1f81f81f81f81f81f80.png"
+      },
+      {
+        "id": "c0a82114-80c9-4030-bfea-32ea3a9ff93f",
+        "name": "User Creation Repush (in case of import failures)",
+        "type": "MAIN",
+        "screenshotURL": "https://d78vv2h34ll3s.cloudfront.net/static/catalog/workflows/automate_lifecycle_management_with_darwinbox/resources/b7c884b8ac0ef82b83903b83ba3f61f01f41.png"
+      },
+      {
+        "id": "5f561a0a-7ba4-426d-9b10-e4962d6ba3e4",
+        "name": "User Update",
+        "type": "MAIN",
+        "screenshotURL": "https://d78vv2h34ll3s.cloudfront.net/static/catalog/workflows/automate_lifecycle_management_with_darwinbox/resources/80cd0cfeae1ac4e88e902c8fcefce9fe1ffd.png"
+      },
+      {
+        "id": "3ce95086-26ee-4321-bd63-dcb74aecdcd9",
+        "name": "User Update Repush (in case of import failures)",
+        "type": "MAIN",
+        "screenshotURL": "https://d78vv2h34ll3s.cloudfront.net/static/catalog/workflows/automate_lifecycle_management_with_darwinbox/resources/80cd0cfeae1ac4e88e902c8fcefce9fe1fed.png"
+      }
+    ],
+    "helperFlowsCount": 11,
+    "mainFlowsCount": 8
+  },
+  "links": [
+    {
+      "destination": "https://marketplace.darwinbox.com/en-US/apps/435602/okta/resources",
+      "title": "Setup Documentation"
+    }
+  ]
+}
