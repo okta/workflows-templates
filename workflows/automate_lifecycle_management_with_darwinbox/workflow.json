@@ -1,6 +1,6 @@
 {
   "name": "automate_lifecycle_management_with_darwinbox",
-  "title": "Automate lifecycle management with DarwinBox",
+  "title": "Automate lifecycle management with Darwinbox",
   "description": "These flows outline how Okta Workflows can be used to automate user creation, updates, and deactivation processes, including the automatic update of email IDs in Darwinbox.",
   "connectors": [
     "okta",
