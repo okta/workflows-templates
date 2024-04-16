@@ -1,5 +1,5 @@
 {
-    "_comment" : "This JSON file lists the name of case-sensitive connector names when creating your workflow.json file. If you have multiple connectors in use, simply input them in below list",
+    "_comment" : "This JSON file lists the name of case-sensitive connector names (destionation key) when creating your workflow.json file. If you have multiple connectors in use, simply input them in below list",
     "names" : [
         "advancedserveraccess",
         "airtable",
@@ -10,6 +10,7 @@
         "awslambda" ,
         "awssso",
         "box",
+        "darwinbox",
         "datagrail",
         "docusign2",
         "dropboxforbusiness",
