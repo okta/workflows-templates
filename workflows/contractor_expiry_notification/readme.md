@@ -82,3 +82,17 @@ Please follow the below step-by-step instructions to set up this workflow.
 ## Limitations & Known Issues
 
 There are no limitations or known issues at this time.
+
+## Screenshots
+
+1.0 Contractor Expiry Notification
+![1.0](resources/Ij3CBqM__27wR14UhOkwgXCrTdwVEA3wtJE2A0grjhc.png)
+
+1.1 Initialize
+![1.1](resources/_pfUsL5ANn-oolLu1PQhIQxNjCsIbaqLFTADW6EnH6c.png)
+
+1.2 Process Contractor
+![1.2](resources/l7IjQ9gN9cw0W_Q815vnrYYDfEoHx1bGBPeIL-O6A7c.png)
+
+1.3 Send Notification Emails
+![1.3](resources/0d1xhU949raIJsjXUPsV09nbWR9j66BxEqe-HLdgNUE.png)
