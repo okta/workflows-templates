@@ -1,0 +1,118 @@
+{
+    "eventType": "com.okta.event_hook",
+    "eventTypeVersion": "1.0",
+    "cloudEventsVersion": "0.1",
+    "source": "https://vl2.okta1.com/api/v1/eventHooks/example",
+    "eventId": "example",
+    "data": {
+        "events": [
+            {
+                "uuid": "exampleID1234",
+                "published": "2024-06-17T22:00:56.423Z",
+                "eventType": "security.breached_credential.detected",
+                "version": "0",
+                "displayMessage": "test@example.com credential set matches known compromised credentials.",
+                "severity": "WARN",
+                "client": {
+                    "userAgent": {
+                        "rawUserAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.0.0 Safari/537.36",
+                        "os": "Mac OS X",
+                        "browser": "CHROME"
+                    },
+                    "zone": "null",
+                    "device": "Computer",
+                    "id": null,
+                    "ipAddress": "555.555.55.5",
+                    "geographicalContext": {
+                        "city": null,
+                        "state": null,
+                        "country": null,
+                        "postalCode": null,
+                        "geolocation": {
+                            "lat": 55.55,
+                            "lon": -111.55
+                        }
+                    },
+                    "ipChain": [
+                        {
+                            "ip": "555.555.55.5",
+                            "geographicalContext": {
+                                "city": null,
+                                "state": null,
+                                "country": null,
+                                "postalCode": null,
+                                "geolocation": {
+                                    "lat": 55.55,
+                                    "lon": -111.55
+                                }
+                            },
+                            "version": "V4",
+                            "source": null
+                        }
+                    ]
+                },
+                "device": null,
+                "actor": {
+                    "id": "exampleOktaID12345",
+                    "type": "User",
+                    "alternateId": "test@example.com",
+                    "displayName": "Test User",
+                    "detailEntry": null
+                },
+                "outcome": {
+                    "result": "SUCCESS",
+                    "reason": null
+                },
+                "target": [
+                    {
+                        "id": "exampleID1234",
+                        "type": "AuthenticatorEnrollment",
+                        "alternateId": "unknown",
+                        "displayName": "Password",
+                        "detailEntry": null
+                    }
+                ],
+                "transaction": {
+                    "type": "WEB",
+                    "id": "exampleID1234",
+                    "detail": {}
+                },
+                "debugContext": {
+                    "debugData": {
+                        "authnRequestId": "exampleID1234",
+                        "deviceFingerprint": "exampleFingerprint1234",
+                        "behaviors": "{New Geo-Location=UNKNOWN, New Device=UNKNOWN, New IP=UNKNOWN, New State=BAD_REQUEST, New Country=BAD_REQUEST, Velocity=UNKNOWN, New City=BAD_REQUEST}",
+                        "requestId": "exampleID1234",
+                        "dtHash": "exampleHash1234",
+                        "risk": "{reasons=Anomalous Location, Anomalous Device, level=HIGH}",
+                        "requestUri": "/idp/idx/challenge/answer",
+                        "targetEventHookIds": "exampleID1234",
+                        "url": "/idp/idx/challenge/answer?"
+                    }
+                },
+                "legacyEventType": null,
+                "authenticationContext": {
+                    "authenticationProvider": null,
+                    "credentialProvider": null,
+                    "credentialType": null,
+                    "issuer": null,
+                    "authenticationStep": 0,
+                    "rootSessionId": "exampleID1234",
+                    "externalSessionId": "exampleID1234",
+                    "authenticatorContext": null,
+                    "interface": null
+                },
+                "securityContext": {
+                    "asNumber": null,
+                    "asOrg": null,
+                    "isp": null,
+                    "domain": null,
+                    "isProxy": null
+                },
+                "insertionTimestamp": null
+            }
+        ]
+    },
+    "eventTime": "2024-06-17T22:01:21.809026Z",
+    "contentType": "application/json"
+}
