@@ -10,13 +10,13 @@
     "flowCount": 2,
     "flos": [
       {
-        "id": "75a83b39-128f-49a3-a8b3-42d8f7d576aa",
-        "name": "Process Event Object",
+        "id": "31129b88-ada1-4a35-baee-00eebd0dcfaf",
+        "name": "Process event object",
         "type": "HELPER",
         "screenshotURL": "https://d78vv2h34ll3s.cloudfront.net/static/catalog/workflows/send_notifications_for_a_breached_password_event/resources/880dbefc099cbc4e24f84f91e01e8bfcbfc3.png"
       },
       {
-        "id": "c403982f-ebb3-443e-9e58-049c2fcdbb8d",
+        "id": "7c09eedb-569a-4615-bbdc-c7f960e2ed32",
         "name": "Event Initiated Flow",
         "type": "MAIN",
         "screenshotURL": "https://d78vv2h34ll3s.cloudfront.net/static/catalog/workflows/send_notifications_for_a_breached_password_event/resources/602cbadb2e92e80f8a6246247e73073e73ff.png"
