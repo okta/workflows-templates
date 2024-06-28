@@ -10,16 +10,16 @@
     "flowCount": 2,
     "flos": [
       {
-        "id": "75a83b39-128f-49a3-a8b3-42d8f7d576aa",
+        "id": "9f28ba9f-427e-48aa-8c7a-d87c5acdffcc",
         "name": "Process Event Object",
         "type": "HELPER",
-        "screenshotURL": "https://d78vv2h34ll3s.cloudfront.net/static/catalog/workflows/send_notifications_for_a_breached_password_event/resources/602cbadb2e92e80f8a6246247e73073e73ff.png"
+        "screenshotURL": "https://d78vv2h34ll3s.cloudfront.net/static/catalog/workflows/send_notifications_for_a_breached_password_event/resources/880dbefc099cbc4e24f84f91e01e8bfcbfc3.png"
       },
       {
-        "id": "c403982f-ebb3-443e-9e58-049c2fcdbb8d",
+        "id": "2ad426ba-336c-4b76-a37b-3f9183e1796b",
         "name": "Event Initiated Flow",
         "type": "MAIN",
-        "screenshotURL": "https://d78vv2h34ll3s.cloudfront.net/static/catalog/workflows/send_notifications_for_a_breached_password_event/resources/880dbefc099cbc4e24f84f91e01e8bfcbfc3.png"
+        "screenshotURL": "https://d78vv2h34ll3s.cloudfront.net/static/catalog/workflows/send_notifications_for_a_breached_password_event/resources/602cbadb2e92e80f8a6246247e73073e73ff.png"
       }
     ],
     "helperFlowsCount": 1,
