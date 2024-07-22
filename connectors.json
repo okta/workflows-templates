@@ -36,6 +36,7 @@
         "office365calendar",
         "office365mail",
         "okta",
+        "oktadevices",
         "onedrive",
         "onetrust",
         "openai",
@@ -54,6 +55,7 @@
         "smarthr",
         "smartrecruiters",
         "smartsheet",
+        "yubico",
         "zendeskoauth2",
         "zoom"
     ]
