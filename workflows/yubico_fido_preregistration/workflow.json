@@ -1,0 +1,96 @@
+{
+  "name": "yubico_fido_preregistration",
+  "title": "Yubico FIDO Pre-registration",
+  "description": "The Yubico FIDO Pre-registration template enables IT administrators to use the YubiEnteprise API, the Okta WebAuthn API, and the Okta Workflows platform to procure FIDO2 YubiKeys for end users. The FIDO2 YubiKeys are pre-registered and shipped directly to designated recipients with a unique, randomly generated PIN that is provided separately.",
+  "connectors": [
+    "okta",
+    "oktadevices",
+    "yubico"
+  ],
+  "details": {
+    "stashCount": 1,
+    "flowCount": 12,
+    "flos": [
+      {
+        "id": "c543ce95-f975-44c3-b9c8-6a3042486abe",
+        "name": "Map credential response to enrollment ID",
+        "type": "HELPER",
+        "screenshotURL": "https://d78vv2h34ll3s.cloudfront.net/static/catalog/workflows/yubico_fido_preregistration/resources/6c8fc83c86c86686f80186387fd3ff1ff5ff.png"
+      },
+      {
+        "id": "e2daa21c-2c4d-4045-90a3-6d94b6f15e4d",
+        "name": "Call activate API",
+        "type": "HELPER",
+        "screenshotURL": "https://d78vv2h34ll3s.cloudfront.net/static/catalog/workflows/yubico_fido_preregistration/resources/8209bacfa6426de64a04327727703703793f.png"
+      },
+      {
+        "id": "7bd0415b-ca65-4781-8dc8-81a529209b0a",
+        "name": "Process product data",
+        "type": "HELPER",
+        "screenshotURL": "https://d78vv2h34ll3s.cloudfront.net/static/catalog/workflows/yubico_fido_preregistration/resources/24ae5865e0ce60c7dc2c66c70c70c70c78ff.png"
+      },
+      {
+        "id": "b2dde137-fa5f-47f2-905a-0d08e5486279",
+        "name": "Map Credential JWE",
+        "type": "HELPER",
+        "screenshotURL": "https://d78vv2h34ll3s.cloudfront.net/static/catalog/workflows/yubico_fido_preregistration/resources/738b307b03107f07f03f07603f04f04f0ff9.png"
+      },
+      {
+        "id": "c2962ecc-4ecd-4288-8b7f-0c6b14279670",
+        "name": "Call enrollment API",
+        "type": "HELPER",
+        "screenshotURL": "https://d78vv2h34ll3s.cloudfront.net/static/catalog/workflows/yubico_fido_preregistration/resources/800be4fba802f62f4ea03a19b1fb1fbdf000.png"
+      },
+      {
+        "id": "0ce08b9a-f08a-4f53-a03a-038c856dad93",
+        "name": "Map FactorID to Key ID",
+        "type": "HELPER",
+        "screenshotURL": "https://d78vv2h34ll3s.cloudfront.net/static/catalog/workflows/yubico_fido_preregistration/resources/738b387187307307f07f03603f02f06f80ff.png"
+      },
+      {
+        "id": "c98e6d2b-a072-4ddf-9038-496c7327e5af",
+        "name": "Iterate shipment item",
+        "type": "HELPER",
+        "screenshotURL": "https://d78vv2h34ll3s.cloudfront.net/static/catalog/workflows/yubico_fido_preregistration/resources/338fb03b0790fb07907b079071922722768f.png"
+      },
+      {
+        "id": "5d797920-b3fe-427c-bfed-c741423f4552",
+        "name": "Create shipment",
+        "type": "HELPER",
+        "screenshotURL": "https://d78vv2h34ll3s.cloudfront.net/static/catalog/workflows/yubico_fido_preregistration/resources/014815ffbbd8038be83e03813f93813e1ffd.png"
+      },
+      {
+        "id": "4a889478-d278-413b-9e52-33eb4b6c3bcf",
+        "name": "Process shipment",
+        "type": "HELPER",
+        "screenshotURL": "https://d78vv2h34ll3s.cloudfront.net/static/catalog/workflows/yubico_fido_preregistration/resources/9f0a0cf8a10491ebb782780f91f907f07f07.png"
+      },
+      {
+        "id": "a097cdd9-4e75-4aa9-b660-4a427ddcf969",
+        "name": "Create shipment trigger - Group add",
+        "type": "MAIN",
+        "screenshotURL": "https://d78vv2h34ll3s.cloudfront.net/static/catalog/workflows/yubico_fido_preregistration/resources/01296eb6e7624726d80003f93ff3ff3ff000.png"
+      },
+      {
+        "id": "094993ed-cac0-4487-8304-e01ef3f03834",
+        "name": "Create shipment trigger - MFA Initiated",
+        "type": "MAIN",
+        "screenshotURL": "https://d78vv2h34ll3s.cloudfront.net/static/catalog/workflows/yubico_fido_preregistration/resources/0a42bcef4ca4584ef44605eb1ff1ff5ff000.png"
+      },
+      {
+        "id": "679897ec-0118-4b43-bc41-4698f3f8a5d7",
+        "name": "Process shipments (cron job)",
+        "type": "MAIN",
+        "screenshotURL": "https://d78vv2h34ll3s.cloudfront.net/static/catalog/workflows/yubico_fido_preregistration/resources/248fe87c8f48e48e58e80ec1e17e1fe1fe1f.png"
+      }
+    ],
+    "helperFlowsCount": 9,
+    "mainFlowsCount": 3
+  },
+  "links": [
+    {
+      "destination": "https://console.yubico.com/help/prereg-shipments.html#installing-workflow-templates",
+      "title": "Setup Documentation"
+    }
+  ]
+}
