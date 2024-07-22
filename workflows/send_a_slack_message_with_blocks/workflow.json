@@ -1,0 +1,26 @@
+{
+  "name": "send_a_slack_message_with_blocks",
+  "title": "Send a Slack Message with Blocks",
+  "description": "This template uses Slack's Block UI framework to create structured and visually appealing messages. Its flexible design enables you to customize message content and formatting to meet your specific organizational needs.",
+  "connectors": [
+    "slack"
+  ],
+  "details": {
+    "flowCount": 1,
+    "flos": [
+      {
+        "id": "c28709b9-3348-457c-aaf0-43ef22367174",
+        "name": "Blocks Example",
+        "type": "MAIN",
+        "screenshotURL": "https://d78vv2h34ll3s.cloudfront.net/static/catalog/workflows/send_a_slack_message_with_blocks/resources/428378f6a26c0f83ec084c93cf78f18ff8ff.png"
+      }
+    ],
+    "mainFlowsCount": 1
+  },
+  "links": [
+    {
+      "destination": "https://github.com/okta/workflows-templates/blob/master/workflows/send_a_slack_message_with_blocks/readme.md",
+      "title": "Setup Documentation"
+    }
+  ]
+}
