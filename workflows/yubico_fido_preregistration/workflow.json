@@ -12,76 +12,76 @@
     "flowCount": 12,
     "flos": [
       {
-        "id": "c543ce95-f975-44c3-b9c8-6a3042486abe",
-        "name": "Map credential response to enrollment ID",
+        "id": "a7291e03-225b-4f9a-9a81-6b641a5d4436",
+        "name": "Create shipment",
         "type": "HELPER",
-        "screenshotURL": "https://d78vv2h34ll3s.cloudfront.net/static/catalog/workflows/yubico_fido_preregistration/resources/6c8fc83c86c86686f80186387fd3ff1ff5ff.png"
+        "screenshotURL": "https://d78vv2h34ll3s.cloudfront.net/static/catalog/workflows/yubico_fido_preregistration/resources/005115ffbbe8028be93c03c17f13c13d13fd.png"
       },
       {
-        "id": "e2daa21c-2c4d-4045-90a3-6d94b6f15e4d",
+        "id": "f8dd649b-9afe-4e11-8723-6ee1887918de",
         "name": "Call activate API",
         "type": "HELPER",
         "screenshotURL": "https://d78vv2h34ll3s.cloudfront.net/static/catalog/workflows/yubico_fido_preregistration/resources/8209bacfa6426de64a04327727703703793f.png"
       },
       {
-        "id": "7bd0415b-ca65-4781-8dc8-81a529209b0a",
+        "id": "291d3e7a-89b3-41ba-b5e9-5de05aab24c1",
+        "name": "Map credential response to enrollment ID",
+        "type": "HELPER",
+        "screenshotURL": "https://d78vv2h34ll3s.cloudfront.net/static/catalog/workflows/yubico_fido_preregistration/resources/6c8fc83c86c86686f80186387fd3ff1ff5ff.png"
+      },
+      {
+        "id": "ae31b1e6-33cc-4737-9c0a-91f5643ecf2b",
         "name": "Process product data",
         "type": "HELPER",
-        "screenshotURL": "https://d78vv2h34ll3s.cloudfront.net/static/catalog/workflows/yubico_fido_preregistration/resources/24ae5865e0ce60c7dc2c66c70c70c70c78ff.png"
+        "screenshotURL": "https://d78vv2h34ll3s.cloudfront.net/static/catalog/workflows/yubico_fido_preregistration/resources/24ae5865e70c5c47cc2c66c70c70c30c38ff.png"
       },
       {
-        "id": "b2dde137-fa5f-47f2-905a-0d08e5486279",
-        "name": "Map Credential JWE",
-        "type": "HELPER",
-        "screenshotURL": "https://d78vv2h34ll3s.cloudfront.net/static/catalog/workflows/yubico_fido_preregistration/resources/738b307b03107f07f03f07603f04f04f0ff9.png"
-      },
-      {
-        "id": "c2962ecc-4ecd-4288-8b7f-0c6b14279670",
-        "name": "Call enrollment API",
-        "type": "HELPER",
-        "screenshotURL": "https://d78vv2h34ll3s.cloudfront.net/static/catalog/workflows/yubico_fido_preregistration/resources/800be4fba802f62f4ea03a19b1fb1fbdf000.png"
-      },
-      {
-        "id": "0ce08b9a-f08a-4f53-a03a-038c856dad93",
-        "name": "Map FactorID to Key ID",
-        "type": "HELPER",
-        "screenshotURL": "https://d78vv2h34ll3s.cloudfront.net/static/catalog/workflows/yubico_fido_preregistration/resources/738b387187307307f07f03603f02f06f80ff.png"
-      },
-      {
-        "id": "c98e6d2b-a072-4ddf-9038-496c7327e5af",
+        "id": "59ada7cf-fb43-492b-8b18-fc1705e2954f",
         "name": "Iterate shipment item",
         "type": "HELPER",
         "screenshotURL": "https://d78vv2h34ll3s.cloudfront.net/static/catalog/workflows/yubico_fido_preregistration/resources/338fb03b0790fb07907b079071922722768f.png"
       },
       {
-        "id": "5d797920-b3fe-427c-bfed-c741423f4552",
-        "name": "Create shipment",
-        "type": "HELPER",
-        "screenshotURL": "https://d78vv2h34ll3s.cloudfront.net/static/catalog/workflows/yubico_fido_preregistration/resources/014815ffbbd8038be83e03813f93813e1ffd.png"
-      },
-      {
-        "id": "4a889478-d278-413b-9e52-33eb4b6c3bcf",
+        "id": "38f0c1b7-a11e-4180-9e3a-25a367fab5cf",
         "name": "Process shipment",
         "type": "HELPER",
         "screenshotURL": "https://d78vv2h34ll3s.cloudfront.net/static/catalog/workflows/yubico_fido_preregistration/resources/9f0a0cf8a10491ebb782780f91f907f07f07.png"
       },
       {
-        "id": "a097cdd9-4e75-4aa9-b660-4a427ddcf969",
+        "id": "27ea4fda-2cb5-48c5-83d3-69867a4e1f0a",
+        "name": "Map Credential JWE",
+        "type": "HELPER",
+        "screenshotURL": "https://d78vv2h34ll3s.cloudfront.net/static/catalog/workflows/yubico_fido_preregistration/resources/738b307b03107f07f03f07603f04f04f0ff9.png"
+      },
+      {
+        "id": "78cb54f6-7503-42b5-8002-7932fb5e7a50",
+        "name": "Call enrollment API",
+        "type": "HELPER",
+        "screenshotURL": "https://d78vv2h34ll3s.cloudfront.net/static/catalog/workflows/yubico_fido_preregistration/resources/800be4fba802f62f4ea03a19b1fb1fbdf000.png"
+      },
+      {
+        "id": "1cf5cde5-35c4-4729-91ec-cdb9de0871f7",
+        "name": "Map FactorID to Key ID",
+        "type": "HELPER",
+        "screenshotURL": "https://d78vv2h34ll3s.cloudfront.net/static/catalog/workflows/yubico_fido_preregistration/resources/738b387187307307f07f03603f02f06f80ff"
+      },
+      {
+        "id": "52be9246-0e69-4d57-ae2c-7736e87985dc",
         "name": "Create shipment trigger - Group add",
         "type": "MAIN",
         "screenshotURL": "https://d78vv2h34ll3s.cloudfront.net/static/catalog/workflows/yubico_fido_preregistration/resources/01296eb6e7624726d80003f93ff3ff3ff000.png"
       },
       {
-        "id": "094993ed-cac0-4487-8304-e01ef3f03834",
-        "name": "Create shipment trigger - MFA Initiated",
-        "type": "MAIN",
-        "screenshotURL": "https://d78vv2h34ll3s.cloudfront.net/static/catalog/workflows/yubico_fido_preregistration/resources/0a42bcef4ca4584ef44605eb1ff1ff5ff000.png"
-      },
-      {
-        "id": "679897ec-0118-4b43-bc41-4698f3f8a5d7",
+        "id": "57214a43-971a-43d8-83b3-8d0103a9d1f2",
         "name": "Process shipments (cron job)",
         "type": "MAIN",
         "screenshotURL": "https://d78vv2h34ll3s.cloudfront.net/static/catalog/workflows/yubico_fido_preregistration/resources/248fe87c8f48e48e58e80ec1e17e1fe1fe1f.png"
+      },
+      {
+        "id": "ef7755f0-ef0f-4204-92da-16f53abec35b",
+        "name": "Create shipment trigger - MFA Initiated",
+        "type": "MAIN",
+        "screenshotURL": "https://d78vv2h34ll3s.cloudfront.net/static/catalog/workflows/yubico_fido_preregistration/resources/0a42bcef4ca4584ef44605eb1ff1ff5ff000.png"
       }
     ],
     "helperFlowsCount": 9,
