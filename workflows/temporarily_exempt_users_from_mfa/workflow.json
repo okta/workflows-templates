@@ -8,22 +8,22 @@
   "details": {
     "flos": [
       {
-        "id": "6ea5ac1a-6111-47da-a02e-e96df87ef6f6",
+        "id": "d6d07377-7b62-4421-8ed3-fd7fcd923255",
         "name": "3.0 Remove Users from MFA Exempt Group",
         "type": "HELPER",
-        "screenshotURL": "https://d78vv2h34ll3s.cloudfront.net/static/catalog/workflows/temporarily_exempt_users_from_mfa/resources/9l2xrgbuIz8IGo7t71SUAWMDuYrTCdBzUONyGqHFKrY.png"
+        "screenshotURL": "https://d78vv2h34ll3s.cloudfront.net/static/catalog/workflows/temporarily_exempt_users_from_mfa/resources/242ed6e460387f07e81e43243b70070ff0ff.png"
       },
       {
-        "id": "add186dd-2f1b-4400-9255-ed2ebde2cabe",
+        "id": "d2d1233d-c0b9-4d47-9920-bb65a4c8b873",
         "name": "2.0 Find Users to Remove from MFA Exempt Group",
         "type": "MAIN",
-        "screenshotURL": "https://d78vv2h34ll3s.cloudfront.net/static/catalog/workflows/temporarily_exempt_users_from_mfa/resources/aOVHaNqLNxqDcKPj8WY8wYruGZhFFSYUIVWreCthiNM.png"
+        "screenshotURL": "https://d78vv2h34ll3s.cloudfront.net/static/catalog/workflows/temporarily_exempt_users_from_mfa/resources/4ac6ec6a4ea0fa0ea4ce1e03e23c03f83f83.png"
       },
       {
-        "id": "adace941-c2c2-4749-988b-75280b6beb18",
+        "id": "304f2851-19ee-4c56-90ce-065250f0be6f",
         "name": "1.0 User Added to MFA Exempt Group",
         "type": "MAIN",
-        "screenshotURL": "https://d78vv2h34ll3s.cloudfront.net/static/catalog/workflows/temporarily_exempt_users_from_mfa/resources/nKB1GUP3QdmPBepBdt62ZLkVD8-KT8lyrO9gGYrmI_A.png"
+        "screenshotURL": "https://d78vv2h34ll3s.cloudfront.net/static/catalog/workflows/temporarily_exempt_users_from_mfa/resources/45415c7f47147d47507007cf3cf3ff3ff000.png"
       }
     ],
     "flowCount": 3,
