@@ -1,0 +1,40 @@
+{
+  "name": "implement_backup_of_oig_application_entitlements_w",
+  "title": "Implement Backup of OIG Application Entitlements with Okta Workflows",
+  "description": "This template stores a copy of your entitlements to a Google Sheets document for backup purposes. You can run the flow on demand, or you can configure it to run periodically. You can monitor or troubleshoot changes to entitlements, or backup and automate responses to specific events.",
+  "connectors": [
+    "okta",
+    "googlesheets2_29"
+  ],
+  "details": {
+    "flowCount": 3,
+    "flos": [
+      {
+        "id": "f6a9b7e3-12cd-4548-ba18-bf8dd9182a94",
+        "name": "1.2 Get Individual Entitlement",
+        "type": "HELPER",
+        "screenshotURL": "https://d78vv2h34ll3s.cloudfront.net/static/catalog/workflows/implement_backup_of_oig_application_entitlements_w/resources/48de80f1d6e07607e8461c6bc63c63e63fe3.png"
+      },
+      {
+        "id": "27fe52d7-4861-420e-89f9-1ba81fdaa72f",
+        "name": "1.1 Get Entitlements of Application",
+        "type": "HELPER",
+        "screenshotURL": "https://d78vv2h34ll3s.cloudfront.net/static/catalog/workflows/implement_backup_of_oig_application_entitlements_w/resources/810b90dfe8807b6eb4e24f24fe7ffffff000.png"
+      },
+      {
+        "id": "41786119-d2c3-4320-a163-8f551bbb1c7c",
+        "name": "1.0 Pull Application List",
+        "type": "MAIN",
+        "screenshotURL": "https://d78vv2h34ll3s.cloudfront.net/static/catalog/workflows/implement_backup_of_oig_application_entitlements_w/resources/c4533ce153743f033433c330f70f13f1ff1f.png"
+      }
+    ],
+    "helperFlowsCount": 2,
+    "mainFlowsCount": 1
+  },
+  "links": [
+    {
+      "title": "Setup Documentation",
+      "destination": "https://github.com/okta/workflows-templates/blob/master/workflows/implement_backup_of_oig_application_entitlements_w/readme.md"
+    }
+  ]
+}
