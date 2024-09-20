@@ -1,0 +1,44 @@
+{
+  "name": "generate_reports_for_okta_realms",
+  "title": "Generate Reports for Okta Realms",
+  "description": "This template generates a comprehensive report of all Okta Realms created within an Okta organization. It includes detailed information on user assignments to each Realm, providing a clear overview of user distribution and Realm configurations.",
+  "connectors": ["oktarealms"],
+  "details": {
+    "stashCount": 2,
+    "flowCount": 4,
+    "flos": [
+      {
+        "id": "4097c2e3-6387-4983-8543-437e5fe5702b",
+        "name": "1.3 Log Realm User details to table",
+        "type": "HELPER",
+        "screenshotURL": "https://d78vv2h34ll3s.cloudfront.net/static/catalog/workflows/generate_reports_for_okta_realms/resources/4a95a95a95094e95e946906fc67c63c63fe3.png"
+      },
+      {
+        "id": "a29ac6e8-6333-4d49-919a-8a17dae60cb4",
+        "name": "1.1 Log Realm details to table",
+        "type": "HELPER",
+        "screenshotURL": "https://d78vv2h34ll3s.cloudfront.net/static/catalog/workflows/generate_reports_for_okta_realms/resources/2916d16f16d16d165165164169f007587f87.png"
+      },
+      {
+        "id": "82ee38cf-0543-4a2c-8e90-688cb84b0d32",
+        "name": "1.2 Get Realm Users",
+        "type": "HELPER",
+        "screenshotURL": "https://d78vv2h34ll3s.cloudfront.net/static/catalog/workflows/generate_reports_for_okta_realms/resources/363f03703343763703243407f1fe1fe1fe1f.png"
+      },
+      {
+        "id": "d13d0196-263d-4cd9-8bd9-5bd074a8f90b",
+        "name": "1.0 Get all Realms",
+        "type": "MAIN",
+        "screenshotURL": "https://d78vv2h34ll3s.cloudfront.net/static/catalog/workflows/generate_reports_for_okta_realms/resources/800e5cff4e80a86e9ee11fb1fb1ff1fff000.png"
+      }
+    ],
+    "helperFlowsCount": 3,
+    "mainFlowsCount": 1
+  },
+  "links": [
+    {
+      "title": "Setup Documentation",
+      "destination": "https://github.com/okta/workflows-templates/blob/master/workflows/generate_reports_for_okta_realms/readme.md"
+    }
+  ]
+}
