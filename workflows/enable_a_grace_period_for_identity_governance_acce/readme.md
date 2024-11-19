@@ -28,20 +28,21 @@ Before you get started, here are the things you need:
 ### Okta Identity Governance Setup
 
 1. Sign in to the Okta Admin Dashboard.
-2. Go to **Identity Governance > Access Certifications**.
-3. Click **Create campaign** to create an access certification campaign.
-4. Go through the **Create campaign** wizard. Use `Semi-Annual` as the **Resource campaign name**.
+1. Go to **Identity Governance > Access Certifications**.
+1. Click **Create campaign** to create an access certification campaign.
+1. Go through the **Create campaign** wizard. Use `Semi-Annual` as the **Resource campaign name**.
 
 ## Testing this Flow
 
-1. Go to **Identity Governance > Access Certifications**.1. Click the `Scheduled` tab, and click the `Semi-Annual` campaign.
+1. Go to **Identity Governance > Access Certifications**.
+1. Click the `Scheduled` tab, and click the `Semi-Annual` campaign.
 1. To launch the campaign click **Actions > Launch**.
-2. Revoke a resource:
+1. Revoke a resource:
     1. Go to the assigned reviewer's End-User Dashboard 
     1. Open the **Okta Access Certifications Reviews** application. 
     1. Go to **Pending Reviews** and choose the campaign. 
     1. Select a user and click **Revoke** to revoke a resource.
-3. Return to the Okta Workflows console. The event information should be stored in the **Grace Period Events** table.
+1. Return to the Okta Workflows console. The event information should be stored in the **Grace Period Events** table.
 
 ## Limitations & Known Issues
 
