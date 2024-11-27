@@ -1,0 +1,242 @@
+{
+  "name": "okta_identity_governance_access_certification_camp",
+  "title": "Okta Identity Governance - Access Certification Campaign Examples",
+  "description": "These example flows show you how to create Okta Identity Governance Access Certification campaigns. A campaign can target a particular resource, such as an app or group, or a particular set of users, with or without entitlements. The examples demonstrate how to use various reviewer types and Okta Expression Language (OEL) expressions.",
+  "connectors": ["okta"],
+  "details": {
+    "stashCount": 0,
+    "flowCount": 37,
+    "flos": [
+      {
+        "id": "6de364c3-bb60-455d-9c0a-598a8e22217a",
+        "name": "App Campaign | Group Reviewer | Entitlements",
+        "type": "HELPER",
+        "screenshotURL": "https://d78vv2h34ll3s.cloudfront.net/static/catalog/workflows/okta_identity_governance_access_certification_camp/resources/0a0fb0bf8a04e8cfe4a64a059edd80de0fe1.png"
+      },
+      {
+        "id": "c947ad84-ee91-419f-9153-8dcdda77a07c",
+        "name": "App Campaign | Multi Level Group & Manager Reviewers | Without Entitlements",
+        "type": "HELPER",
+        "screenshotURL": "https://d78vv2h34ll3s.cloudfront.net/static/catalog/workflows/okta_identity_governance_access_certification_camp/resources/248fe82f8b00e1ceecac0295bd59c0fc0fe1.png"
+      },
+      {
+        "id": "bad5362f-28a7-42c5-b125-b51bdad996b7",
+        "name": "App Campaign | Multi Level Group & Manager reviewers | User Expression | entitlements | Recurring 45 days",
+        "type": "HELPER",
+        "screenshotURL": "https://d78vv2h34ll3s.cloudfront.net/static/catalog/workflows/okta_identity_governance_access_certification_camp/resources/248ef82b9e50e1cea4ac0a15bd50c46c4ef5.png"
+      },
+      {
+        "id": "03122c4f-76cd-4c39-85b7-3cd790929894",
+        "name": "App Campaign | Multi Level Manager & User Reviewers | User Expression | Entitlements",
+        "type": "HELPER",
+        "screenshotURL": "https://d78vv2h34ll3s.cloudfront.net/static/catalog/workflows/okta_identity_governance_access_certification_camp/resources/248fd82b9e50e0cf8ca40a85fd51c07e0fe1.png"
+      },
+      {
+        "id": "3aba373a-b82f-4159-8256-43f9ae3d62ba",
+        "name": "App Campaign | Multi Level User Reviewers | Without Entitlements",
+        "type": "HELPER",
+        "screenshotURL": "https://d78vv2h34ll3s.cloudfront.net/static/catalog/workflows/okta_identity_governance_access_certification_camp/resources/200ffaae8a38e0cfc4ac0a94be59209e0ff1.png"
+      },
+      {
+        "id": "75fc09d7-cbc6-4ff0-a331-2f854aa1c5a0",
+        "name": "Group Campaign | Group reviewer | User Expression",
+        "type": "HELPER",
+        "screenshotURL": "https://d78vv2h34ll3s.cloudfront.net/static/catalog/workflows/okta_identity_governance_access_certification_camp/resources/1a8ff8298fa4e0cf0406486cdedde0fe0ff9.png"
+      },
+      {
+        "id": "6ed31d6a-2fe1-4665-b9cb-102c7088960e",
+        "name": "Group Campaign | Resource Owner | Users Assigned",
+        "type": "HELPER",
+        "screenshotURL": "https://d78vv2h34ll3s.cloudfront.net/static/catalog/workflows/okta_identity_governance_access_certification_camp/resources/0a0fe8be8a90e1cfa40848759fdde0de0fe1.png"
+      },
+      {
+        "id": "324e26ea-3c1f-4273-9670-136de689f731",
+        "name": "App Campaign | Multi Level Group Reviewers | Without Entitlements",
+        "type": "HELPER",
+        "screenshotURL": "https://d78vv2h34ll3s.cloudfront.net/static/catalog/workflows/okta_identity_governance_access_certification_camp/resources/240ff82f8b00e1cfe42c0a95bcd9c0fe0ff1.png"
+      },
+      {
+        "id": "761b126f-1680-4617-93e4-ab8e60442063",
+        "name": "App Campaign | Multi Level Group Reviewers | Entitlements",
+        "type": "HELPER",
+        "screenshotURL": "https://d78vv2h34ll3s.cloudfront.net/static/catalog/workflows/okta_identity_governance_access_certification_camp/resources/2487f82f8e00e1cfe4ac0a14bdd980de0fe1.png"
+      },
+      {
+        "id": "2c82492b-df17-4d5a-a34b-2b7027a88ab6",
+        "name": "App Campaign | Multi Level Manager & User Reviewers | Entitlements",
+        "type": "HELPER",
+        "screenshotURL": "https://d78vv2h34ll3s.cloudfront.net/static/catalog/workflows/okta_identity_governance_access_certification_camp/resources/248ad8af9e10e0cfccac0a84fd51c0fe0fe1.png"
+      },
+      {
+        "id": "38c6bfc1-a627-4aab-90fe-b348f8cda8c9",
+        "name": "User Campaign | Groups Only | User Reviews",
+        "type": "HELPER",
+        "screenshotURL": "https://d78vv2h34ll3s.cloudfront.net/static/catalog/workflows/okta_identity_governance_access_certification_camp/resources/248ef8a5aec2e38f40940961deddc0de0fe1.png"
+      },
+      {
+        "id": "e26de6a5-9948-4ca6-9257-12da2f30b456",
+        "name": "App Campaign | Multi Level Manager & User reviewers | Without Entitlements",
+        "type": "HELPER",
+        "screenshotURL": "https://d78vv2h34ll3s.cloudfront.net/static/catalog/workflows/okta_identity_governance_access_certification_camp/resources/248ed8ae9f18e0cfc0ac1a84fd49c0fe1fe7.png"
+      },
+      {
+        "id": "c31c2434-3b1a-4a15-8f45-0e761e7ff313",
+        "name": "App Campaign | Reviewer User Expression | Without Entitlements",
+        "type": "HELPER",
+        "screenshotURL": "https://d78vv2h34ll3s.cloudfront.net/static/catalog/workflows/okta_identity_governance_access_certification_camp/resources/0a0fa8bf8a84e8cf64264a85dcdd80de0fe1.png"
+      },
+      {
+        "id": "de802cdb-5c27-4c85-8bf4-c031a09c86fa",
+        "name": "App Campaign | Multi Level Group & Manager Reviewers | User Expression | Entitlements",
+        "type": "HELPER",
+        "screenshotURL": "https://d78vv2h34ll3s.cloudfront.net/static/catalog/workflows/okta_identity_governance_access_certification_camp/resources/248ff82b8a00e5cfe4a80a95bd5180dc0ff5.png"
+      },
+      {
+        "id": "ca9b8a5f-d185-4a82-824c-2934794eb505",
+        "name": "Group of Users Campaign | Apps and Groups | Excluded Resources | User Reviews",
+        "type": "HELPER",
+        "screenshotURL": "https://d78vv2h34ll3s.cloudfront.net/static/catalog/workflows/okta_identity_governance_access_certification_camp/resources/0a1fd8ae8ea0ebce04200ae5fe5984994f95.png"
+      },
+      {
+        "id": "66c83dbb-9eeb-4673-9e71-ba8244657213",
+        "name": "Group Campaign | User Reviewer",
+        "type": "HELPER",
+        "screenshotURL": "https://d78vv2h34ll3s.cloudfront.net/static/catalog/workflows/okta_identity_governance_access_certification_camp/resources/020fb8bf8e84e8cf2484086ddedde0fe0fe1.png"
+      },
+      {
+        "id": "218ae415-be31-4b12-9b05-c52dadc139dd",
+        "name": "App Campaign | Multi Level User and Group Reviewers | Entitlements",
+        "type": "HELPER",
+        "screenshotURL": "https://d78vv2h34ll3s.cloudfront.net/static/catalog/workflows/okta_identity_governance_access_certification_camp/resources/248ef82f8a10e3cfc4ad0a15bc5900de0ff1.png"
+      },
+      {
+        "id": "e3a014b5-da93-4183-bd24-524ffa1f05e1",
+        "name": "User Campaign | Apps and Groups | Excluded Resources | User Reviews",
+        "type": "HELPER",
+        "screenshotURL": "https://d78vv2h34ll3s.cloudfront.net/static/catalog/workflows/okta_identity_governance_access_certification_camp/resources/0a0ff8ae8aa8ebce04a00ae5be5984994f95.png"
+      },
+      {
+        "id": "5fd7a3c7-c16d-448b-ab08-086474dedd18",
+        "name": "App Campaign | User Reviewer | Entitlements",
+        "type": "HELPER",
+        "screenshotURL": "https://d78vv2h34ll3s.cloudfront.net/static/catalog/workflows/okta_identity_governance_access_certification_camp/resources/020fb8bf8a00e9cfe4a64a05dcdd80de0fe1.png"
+      },
+      {
+        "id": "2b04422c-4b8c-4583-bf6a-0ade8e319ddf",
+        "name": "Group Campaign | Group Reviewer | User Expression Based on RealmId",
+        "type": "HELPER",
+        "screenshotURL": "https://d78vv2h34ll3s.cloudfront.net/static/catalog/workflows/okta_identity_governance_access_certification_camp/resources/020ff8bd8aa4e9cf040448e5dedde0fe0fe1.png"
+      },
+      {
+        "id": "6f1042f0-2deb-463a-b639-3a16a5470ee7",
+        "name": "App Campaign | Group Reviewer | User Expression Entitlements",
+        "type": "HELPER",
+        "screenshotURL": "https://d78vv2h34ll3s.cloudfront.net/static/catalog/workflows/okta_identity_governance_access_certification_camp/resources/0a0fb8bd8a80e9cfc4244a25dedd80de0fe1.png"
+      },
+      {
+        "id": "cb0b4e02-b208-4f56-9045-cb841ba60c0e",
+        "name": "User Campaign | Apps | User Reviews",
+        "type": "HELPER",
+        "screenshotURL": "https://d78vv2h34ll3s.cloudfront.net/static/catalog/workflows/okta_identity_governance_access_certification_camp/resources/248b78b5af40e38fc0940961deddc0de0fe1.png"
+      },
+      {
+        "id": "4df88a13-a21d-4951-b8f6-f809ee5b9325",
+        "name": "App Campaign |  Manager Reviewer | User Expression | Entitlements",
+        "type": "HELPER",
+        "screenshotURL": "https://d78vv2h34ll3s.cloudfront.net/static/catalog/workflows/okta_identity_governance_access_certification_camp/resources/1a0fac3d8224e9cfc4a44225dedd80de0fe1.png"
+      },
+      {
+        "id": "fc869a92-56ef-43f0-9045-8681d5af41f6",
+        "name": "App Campaign | User Reviewer | Without Entitlements",
+        "type": "HELPER",
+        "screenshotURL": "https://d78vv2h34ll3s.cloudfront.net/static/catalog/workflows/okta_identity_governance_access_certification_camp/resources/020fb8bf8a84e8cf64864a85dcdde0fe0fe1.png"
+      },
+      {
+        "id": "1cf78eee-b235-4818-bb4d-0de976f6e708",
+        "name": "App Campaign | Multi Level User and Group Reviewers | Without Entitlements",
+        "type": "HELPER",
+        "screenshotURL": "https://d78vv2h34ll3s.cloudfront.net/static/catalog/workflows/okta_identity_governance_access_certification_camp/resources/200efaaf8b00e3cfc4ac0a95bc5900ff0ff1.png"
+      },
+      {
+        "id": "72761b24-f9bc-4da4-9dd1-8da2ec62f8a1",
+        "name": "App Campaign | Group Reviewer | Without Entitlements",
+        "type": "HELPER",
+        "screenshotURL": "https://d78vv2h34ll3s.cloudfront.net/static/catalog/workflows/okta_identity_governance_access_certification_camp/resources/0a0fb0bf8a80e9cf64a648859edd80de0fe1.png"
+      },
+      {
+        "id": "c978c713-4f8e-4811-acd9-eada4d6b0e69",
+        "name": "App Campaign | Multi Level Group Reviewers | User Expression | Entitlements",
+        "type": "HELPER",
+        "screenshotURL": "https://d78vv2h34ll3s.cloudfront.net/static/catalog/workflows/okta_identity_governance_access_certification_camp/resources/248ff82b8a00e5cfe4a80a15bdd900de0ff1.png"
+      },
+      {
+        "id": "188d3ded-2c7a-4696-8d18-c256f9e14ad5",
+        "name": "Group Campaign | User Reviewer Expression",
+        "type": "HELPER",
+        "screenshotURL": "https://d78vv2h34ll3s.cloudfront.net/static/catalog/workflows/okta_identity_governance_access_certification_camp/resources/0a0fa8bf8684e9cf242440e5dedde0de0fe1.png"
+      },
+      {
+        "id": "2f826ba0-6899-419b-859f-34d3f9357289",
+        "name": "Group Campaign | Group Reviewer | Users Assigned",
+        "type": "HELPER",
+        "screenshotURL": "https://d78vv2h34ll3s.cloudfront.net/static/catalog/workflows/okta_identity_governance_access_certification_camp/resources/0a0fb8af8e84e8cf2484086ddedde0fe0fe1.png"
+      },
+      {
+        "id": "70cfb3df-6068-4693-ad95-1b68bb07592a",
+        "name": "App Campaign | Manager Reviewer | Without Entitlements",
+        "type": "HELPER",
+        "screenshotURL": "https://d78vv2h34ll3s.cloudfront.net/static/catalog/workflows/okta_identity_governance_access_certification_camp/resources/0a0fac3f8a84e8cf6406488ddedde0fe0fe1.png"
+      },
+      {
+        "id": "4a059806-e9f7-4605-8888-f87e387b4d12",
+        "name": "Group Campaign | User Reviewer Expression | User Expression",
+        "type": "HELPER",
+        "screenshotURL": "https://d78vv2h34ll3s.cloudfront.net/static/catalog/workflows/okta_identity_governance_access_certification_camp/resources/1a8fa83d87a4e8cf040440edded5e0fe0fe1.png"
+      },
+      {
+        "id": "22bd55d7-a6b4-47bf-bb3b-31e2ab5da230",
+        "name": "App Campaign | Multi Level Group & Manager reviewers | User Expression | Entitlements | Recurring 3 Months",
+        "type": "HELPER",
+        "screenshotURL": "https://d78vv2h34ll3s.cloudfront.net/static/catalog/workflows/okta_identity_governance_access_certification_camp/resources/000ff8bbc320e9cee4a40a95bb50c0ec1ef9.png"
+      },
+      {
+        "id": "861357f9-60d8-464e-a470-a29643389c08",
+        "name": "App Campaign | Multi Level User Reviewers | Entitlements",
+        "type": "HELPER",
+        "screenshotURL": "https://d78vv2h34ll3s.cloudfront.net/static/catalog/workflows/okta_identity_governance_access_certification_camp/resources/248ef82f8a30e0cfe4ac0a14bf5920fe0ff1.png"
+      },
+      {
+        "id": "83283345-576a-4427-b6aa-79207ef2d93a",
+        "name": "App Campaign |  User Reviewer Expression | Entitlements",
+        "type": "HELPER",
+        "screenshotURL": "https://d78vv2h34ll3s.cloudfront.net/static/catalog/workflows/okta_identity_governance_access_certification_camp/resources/0a0fa8bf8280e9cfe4264a05dedd80de0fe1.png"
+      },
+      {
+        "id": "98d9d724-e969-48e8-8e19-ec40488e0a3f",
+        "name": "User Campaign | Apps and Groups | User Reviews",
+        "type": "HELPER",
+        "screenshotURL": "https://d78vv2h34ll3s.cloudfront.net/static/catalog/workflows/okta_identity_governance_access_certification_camp/resources/248f38b5af42e38f40940969d6dc00fe0fe1.png"
+      },
+      {
+        "id": "84db9efa-bc25-4159-a6d3-cca945b1c68e",
+        "name": "App Campaign | Multi Level Group & Manager Reviewers | Entitlements",
+        "type": "HELPER",
+        "screenshotURL": "https://d78vv2h34ll3s.cloudfront.net/static/catalog/workflows/okta_identity_governance_access_certification_camp/resources/248ef82f8a08e1cfe4ac0a15bd5900fc0ff1.png"
+      },
+      {
+        "id": "53a3ab75-1f3c-4e6f-81a0-3b856d410554",
+        "name": "App Campaign |  Manager Reviewer | User Expression for Realm | entitlements",
+        "type": "HELPER",
+        "screenshotURL": "https://d78vv2h34ll3s.cloudfront.net/static/catalog/workflows/okta_identity_governance_access_certification_camp/resources/150fc8f58510f0cfe4d40555d4dcc4ce4ff5.png"
+      }
+    ],
+    "helperFlowsCount": 37,
+    "mainFlowsCount": 0
+  },
+  "links": [
+    {
+      "title": "Setup Documentation",
+      "destination": "https://github.com/okta/workflows-templates/blob/master/workflows/okta_identity_governance_access_certification_camp/readme.md"
+    }
+  ]
+}
