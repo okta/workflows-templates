@@ -1,0 +1,68 @@
+{
+  "name": "implement_anything_as_a_source_with_workday_and_ok",
+  "title": "Implement Anything-as-a-Source with Workday and Okta Workflows",
+  "description": "This template demonstrates how to use an Anything-as-a-Source (XaaS) integration to import records from Workday.",
+  "connectors": ["workday","okta"],
+  "details": {
+    "stashCount": 1,
+    "flowCount": 8,
+    "flos": [
+      {
+        "id": "b5813de1-2726-45cc-a0e2-ba5184a3c85b",
+        "name": "XaaS Bulk Import Request Handler",
+        "type": "HELPER",
+        "screenshotURL": "https://d78vv2h34ll3s.cloudfront.net/static/catalog/workflows/implement_anything_as_a_source_with_workday_and_ok/resources/0a0fa8bf8a84e8cf64287a25dcdd80de0fe1.png"
+      },
+      {
+        "id": "fdb814c7-79a8-4a6d-914d-86f8bb8fea75",
+        "name": "Create Import Session",
+        "type": "HELPER",
+        "screenshotURL": "https://d78vv2h34ll3s.cloudfront.net/static/catalog/workflows/implement_anything_as_a_source_with_workday_and_ok/resources/9988e0be68f6012bf20e08e79e7fe3fe3fe3.png"
+      },
+      {
+        "id": "7cde58aa-f66a-4423-ac98-533e63b13b09",
+        "name": "Workday Mapping",
+        "type": "HELPER",
+        "screenshotURL": "https://d78vv2h34ll3s.cloudfront.net/static/catalog/workflows/implement_anything_as_a_source_with_workday_and_ok/resources/2487f8ec8ec86c86d8208419fdffc3fc3fd3.png"
+      },
+      {
+        "id": "4eecf8e9-ce86-4fac-9f78-ef342b07f41f",
+        "name": "XaaS Import Session Handler",
+        "type": "HELPER",
+        "screenshotURL": "https://d78vv2h34ll3s.cloudfront.net/static/catalog/workflows/implement_anything_as_a_source_with_workday_and_ok/resources/020f9h9g8a84e8cf64864a85deddc0fe0fe1.png"
+      },
+      {
+        "id": "efcc0b46-1927-455d-83c2-f4e1a9d49bcc",
+        "name": "Delete Import Session",
+        "type": "HELPER",
+        "screenshotURL": "https://d78vv2h34ll3s.cloudfront.net/static/catalog/workflows/implement_anything_as_a_source_with_workday_and_ok/resources/f38b187883887b0fb073a7f0700310360efd.png"
+      },
+      {
+        "id": "042b0270-e92a-4f73-b6a8-ecb034a931c5",
+        "name": "Add Workday Record to Temporary Table",
+        "type": "HELPER",
+        "screenshotURL": "https://d78vv2h34ll3s.cloudfront.net/static/catalog/workflows/implement_anything_as_a_source_with_workday_and_ok/resources/04ae7a716f20cc2e6a2681f81fa0f90f9ff9.png"
+      },
+      {
+        "id": "20cc8e11-bbda-4d5d-8cbb-f65e64dff134",
+        "name": "Orchestrate Import from Workday",
+        "type": "HELPER",
+        "screenshotURL": "https://d78vv2h34ll3s.cloudfront.net/static/catalog/workflows/implement_anything_as_a_source_with_workday_and_ok/resources/200ef88s8b00e3cfc4ac0a95bc5900ff0ff1.png"
+      },
+      {
+        "id": "f178c4e0-72be-419f-9601-a4b983225e99",
+        "name": "Import from Workday",
+        "type": "MAIN",
+        "screenshotURL": "https://d78vv2h34ll3s.cloudfront.net/static/catalog/workflows/implement_anything_as_a_source_with_workday_and_ok/resources/e1c218f786407f8fc0fc85c0dc8fc0fc0fd0.png"
+      }
+    ],
+    "helperFlowsCount": 7,
+    "mainFlowsCount": 1
+  },
+  "links": [
+    {
+      "destination": "https://github.com/okta/workflows-templates/blob/master/workflows/implement_anything_as_a_source_with_workday_and_ok/readme.md",
+      "title": "Setup Documentation"
+    }
+  ]
+}
