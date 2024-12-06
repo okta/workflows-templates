@@ -95,7 +95,7 @@
   },
   "links": [
     {
-      "destination": "https://console.yubico.com/help/prereg-shipments.html#installing-workflow-templates",
+      "destination": "https://console.yubico.com/help/prereg-shipments.html#adding-the-fido-pre-reg-workflow-template",
       "title": "Setup Documentation"
     }
   ]
