@@ -1,6 +1,6 @@
 {
   "name": "detect_and_respond_to_mfa_fatigue_attacks",
-  "title": "Detect and respond to MFA Fatigue attacks",
+  "title": "Detect and respond to MFA fatigue attacks",
   "description": "Multifactor authentication (MFA) fatigue is a technique used by attackers to flood a user's authentication app with push notifications. If they accept a push notification, the attacker gains entry to an account or device. These templates provide a means to detect and respond to active attacks against your Okta org.",
   "connectors": [
     "okta",

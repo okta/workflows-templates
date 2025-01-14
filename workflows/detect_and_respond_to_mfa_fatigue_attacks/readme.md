@@ -1,4 +1,4 @@
-# Detect and respond to MFA fatigue attacks
+# MFA Fatigue Detection
 
 This template contains two instruction sets, depending on which version of Okta you have.
 - [Okta Identity Engine](#okta-identity-engine)
