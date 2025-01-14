@@ -1,4 +1,4 @@
-# Trigger Automatic Notifications When All MFA Factors Are Reset
+# Trigger notifications when all MFA factors are reset
 
 ## Overview
 
