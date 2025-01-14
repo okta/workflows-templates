@@ -4,35 +4,36 @@
   "description": "This template encourages Okta end users to enroll a stronger factor with their account by monitoring the use of SMS as a factor and SMS factor enrollment. Google Drive folder with powerpoint and flowpack: https://drive.google.com/drive/u/3/folders/1t-mRmeDtZaLxGc3slN2yx1q8xp2wC1nW   [^flowpackathonSeptember2021.folder] ",
   "connectors": [
     "okta",
-    "office365mail"
+    "office365mail",
+    "oktadevices"
   ],
   "details": {
     "stashCount": 1,
     "flowCount": 4,
     "flos": [
       {
-        "id": "8f2133e8-7087-4bab-bbd7-52a1cb1f6ca5",
+        "id": "603e4242-c166-49b5-960e-45e250da8b26",
         "name": "3. Send e-mail to user",
         "type": "HELPER",
-        "screenshotURL": "https://d78vv2h34ll3s.cloudfront.net/static/catalog/workflows/encourage_stronger_mfa_adoption/resources/534d70d4c4c04fc7b4380ff1ff5ff1ff1ff1.png"
+        "screenshotURL": "https://d78vv2h34ll3s.cloudfront.net/static/catalog/workflows/encourage_stronger_mfa_adoption/resources/434c707dc1d40fc3b43803f13f53f13f13f1.png"
       },
       {
-        "id": "78dc6376-578f-4487-befb-524d29905e9c",
-        "name": "2. Monitor Usage of MFA factor",
-        "type": "MAIN",
-        "screenshotURL": "https://d78vv2h34ll3s.cloudfront.net/static/catalog/workflows/encourage_stronger_mfa_adoption/resources/000976ff64744946de60e78f78f7bf7bffff.png"
-      },
-      {
-        "id": "38f12b57-5050-43f0-b647-eaa39659407a",
+        "id": "5e4ee708-d760-4e56-9d40-cdbf77ecead8",
         "name": "4. Empty Messaged User Table",
         "type": "MAIN",
-        "screenshotURL": "https://d78vv2h34ll3s.cloudfront.net/static/catalog/workflows/encourage_stronger_mfa_adoption/resources/32f4ff080331731371330ef06f0060ff0ff1.png"
+        "screenshotURL": "https://d78vv2h34ll3s.cloudfront.net/static/catalog/workflows/encourage_stronger_mfa_adoption/resources/6313316f16702f06f16f16f00f00f00f90fb.png"
       },
       {
-        "id": "e4c7b8fe-b9d8-410e-9587-b7c643baf317",
+        "id": "a3ce02fd-711b-4904-8b2f-2a30eeb0cd34",
         "name": "1. Monitor Registration of MFA factor",
         "type": "MAIN",
-        "screenshotURL": "https://d78vv2h34ll3s.cloudfront.net/static/catalog/workflows/encourage_stronger_mfa_adoption/resources/00296cf7e0b8298fbc39c3ff3ff3ff3fffff.png"
+        "screenshotURL": "https://d78vv2h34ll3s.cloudfront.net/static/catalog/workflows/encourage_stronger_mfa_adoption/resources/00233ebfc39c3ff3ff3ff3ff3ff3ff3ff3ff.png"
+      },
+      {
+        "id": "f8cb1363-7ef6-43aa-99ab-15d7f414c5d8",
+        "name": "2. Monitor Usage of MFA factor",
+        "type": "MAIN",
+        "screenshotURL": "https://d78vv2h34ll3s.cloudfront.net/static/catalog/workflows/encourage_stronger_mfa_adoption/resources/0007767de00278f7bf7ff7ff7ff7ff7ff7ff.png"
       }
     ],
     "helperFlowsCount": 1,

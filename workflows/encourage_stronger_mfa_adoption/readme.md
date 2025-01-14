@@ -1,4 +1,4 @@
-# Encourage Stronger Factor Adoption
+# Encourage Stronger MFA Adoption
 
 This template encourages Okta end users to enroll a stronger factor with their account by monitoring the use of SMS as a factor and SMS factor enrollment.
 
