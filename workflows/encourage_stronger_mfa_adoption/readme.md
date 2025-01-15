@@ -6,6 +6,7 @@ This template encourages Okta end users to enroll a stronger factor with their a
 
 1. Access to an Okta tenant with Okta Workflows enabled.
 1. Configured Okta Connection. See the configuration steps for the [Okta connector](https://help.okta.com/okta_help.htm?type=wf&id=ext-okta)
+1. Configured Okta Devices Connection. See the configuration steps for the [Okta Devices connector](https://help.okta.com/wf/en-us/content/topics/workflows/connector-reference/oktadevices/oktadevices.htm)
 1. Configured Office 365 Mail connector. See the configuration steps for the [Office 365 Mail connector](https://help.okta.com/okta_help.htm?type=wf&id=ext-office365mail-misc-guidance). Other notification methods can be used with this template.
 
 ## Setup Steps

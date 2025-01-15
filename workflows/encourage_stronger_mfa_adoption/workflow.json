@@ -27,13 +27,13 @@
         "id": "a3ce02fd-711b-4904-8b2f-2a30eeb0cd34",
         "name": "1. Monitor Registration of MFA factor",
         "type": "MAIN",
-        "screenshotURL": "https://d78vv2h34ll3s.cloudfront.net/static/catalog/workflows/encourage_stronger_mfa_adoption/resources/00233ebfc39c3ff3ff3ff3ff3ff3ff3ff3ff.png"
+        "screenshotURL": "https://d78vv2h34ll3s.cloudfront.net/static/catalog/workflows/encourage_stronger_mfa_adoption/resources/10232ebfa09839c39f3ff3ff3ff3ff3ff3ff.png"
       },
       {
         "id": "f8cb1363-7ef6-43aa-99ab-15d7f414c5d8",
         "name": "2. Monitor Usage of MFA factor",
         "type": "MAIN",
-        "screenshotURL": "https://d78vv2h34ll3s.cloudfront.net/static/catalog/workflows/encourage_stronger_mfa_adoption/resources/0007767de00278f7bf7ff7ff7ff7ff7ff7ff.png"
+        "screenshotURL": "https://d78vv2h34ll3s.cloudfront.net/static/catalog/workflows/encourage_stronger_mfa_adoption/resources/0207767760106da7af78f78f7bf7ff7ff7ff.png"
       }
     ],
     "helperFlowsCount": 1,
