@@ -1,7 +1,7 @@
 {
   "name": "tracking_and_alerting_for_possible_account_takeove",
   "title": "Track and alert on possible account takeover attempts",
-  "description": "A main vector for fraud comes from Account Takeovers, achieved from resetting passwords or changing levels of access to privileged accounts. Dynamically monitoring and responding to these two vectors with automated flows greatly reduces the risk of these costly attacks.  This template illustrates how Okta Workflows can be used to automate responses to help combat ATOs and mitigate risk with self service and help desk-based account recovery. The template watches user password and MFA factor reset and activation events to determine if the user's account is under threat of an account takeover attempt (ATO).",
+  "description": "A main vector for fraud comes from Account Takeovers, achieved from resetting passwords or changing levels of access to privileged accounts. Dynamically monitoring and responding to these two vectors with automated flows greatly reduces the risk of these costly attacks. This template illustrates how Okta Workflows can be used to automate responses to help combat ATOs and mitigate risk with self service and help desk-based account recovery. The template watches user password and MFA factor reset and activation events to determine if the user's account is under threat of an account takeover attempt (ATO).",
   "connectors": [
     "okta",
     "slack",
