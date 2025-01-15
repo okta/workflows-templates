@@ -1,44 +1,45 @@
 {
   "name": "detect_and_respond_to_mfa_fatigue_attacks",
-  "title": "Detect and respond to MFA Fatigue attacks",
+  "title": "Detect and respond to MFA fatigue attacks",
   "description": "Multifactor authentication (MFA) fatigue is a technique used by attackers to flood a user's authentication app with push notifications. If they accept a push notification, the attacker gains entry to an account or device. These templates provide a means to detect and respond to active attacks against your Okta org.",
   "connectors": [
     "okta",
-    "slack"
+    "slack",
+    "oktadevices"
   ],
   "details": {
     "stashCount": 2,
     "flowCount": 5,
     "flos": [
       {
-        "id": "b987d4e2-cecc-448d-9959-657d34a5a328",
-        "name": "0.2 Remediate: Take Action on User",
-        "type": "HELPER",
-        "screenshotURL": "https://d78vv2h34ll3s.cloudfront.net/static/catalog/workflows/detect_and_respond_to_mfa_fatigue_attacks/resources/026b7cc1ef06e14e91209e19e7fe7fe7fe7f.png"
-      },
-      {
-        "id": "0d91e220-dd6a-4d18-a8af-4fc3d436410c",
+        "id": "55563211-f40e-453f-b099-f9221a31a921",
         "name": "1.2 Helper: Delete Log Rows",
         "type": "HELPER",
         "screenshotURL": "https://d78vv2h34ll3s.cloudfront.net/static/catalog/workflows/detect_and_respond_to_mfa_fatigue_attacks/resources/400d3cf7c3183783f83003ff3ff3ff3ff3ff.png"
       },
       {
-        "id": "63a770f3-a91e-42a0-9494-ac844aabc12f",
-        "name": "0.1 Event-based: OV MFA Rejection",
-        "type": "MAIN",
-        "screenshotURL": "https://d78vv2h34ll3s.cloudfront.net/static/catalog/workflows/detect_and_respond_to_mfa_fatigue_attacks/resources/004dd2dfa852872b731433531d77c1ff1ff5.png"
+        "id": "950e5603-de32-4277-a128-ab5c1f8c7778",
+        "name": "0.2 Remediate: Take Action on User",
+        "type": "HELPER",
+        "screenshotURL": "https://d78vv2h34ll3s.cloudfront.net/static/catalog/workflows/detect_and_respond_to_mfa_fatigue_attacks/resources/026b7cc1ef06e14e91209e19e7fe7fe7fe7f.png"
       },
       {
-        "id": "cbb959f6-85e6-485f-a223-ae9658e5c71d",
+        "id": "f5acd21a-bb00-4be2-8cd9-8916eb2fa8c1",
         "name": "1.1 Maintenance: Purge Log",
         "type": "MAIN",
         "screenshotURL": "https://d78vv2h34ll3s.cloudfront.net/static/catalog/workflows/detect_and_respond_to_mfa_fatigue_attacks/resources/002bdafaae80ca4fd8f00f01f33f33f33f33.png"
       },
       {
-        "id": "c858cb2f-2f3a-4988-ba7c-6335d32115ee",
+        "id": "749abb38-5e10-421e-bcaa-f4bac74c7713",
         "name": "0.1 Incoming Hook: OV MFA Rejection",
         "type": "MAIN",
         "screenshotURL": "https://d78vv2h34ll3s.cloudfront.net/static/catalog/workflows/detect_and_respond_to_mfa_fatigue_attacks/resources/004df0dfa830c72d735435435c7fc1ff1ff5.png"
+      },
+      {
+        "id": "d4e848fc-e0ba-44bb-bf29-5be7be36a4a4",
+        "name": "0.1 Event-based: OV MFA Rejection",
+        "type": "MAIN",
+        "screenshotURL": "https://d78vv2h34ll3s.cloudfront.net/static/catalog/workflows/detect_and_respond_to_mfa_fatigue_attacks/resources/0045d8ffa852872b731431437f7ff1ff1ff5.png"
       }
     ],
     "helperFlowsCount": 2,
