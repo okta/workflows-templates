@@ -8,13 +8,13 @@ when all MFA factors for a user are reset.
 ## Prerequisites
 
 1.  Access to an Okta tenant with Okta Workflows enabled
-2.  Configured Okta connection. Steps to configure are posted at [https://help.okta.com/wf/en-us/Content/Topics/Workflows/workflow-connect-your-applications.htm#Authenti](https://help.okta.com/wf/en-us/Content/Topics/Workflows/workflow-connect-your-applications.htm#Authenti)
+2.  Configured Okta Devices connection. Steps to configure are posted at [https://help.okta.com/wf/en-us/Content/Topics/Workflows/workflow-connect-your-applications.htm#Authenti](https://help.okta.com/wf/en-us/Content/Topics/Workflows/workflow-connect-your-applications.htm#Authenti)
 3.  Configured Slack Connection. Steps to configure are posted at [https://help.okta.com/en/prod/Content/Topics/Workflows/connector-reference/slack/slack.htm](https://help.okta.com/en/prod/Content/Topics/Workflows/connector-reference/slack/slack.htm).
    
 ## Setup Steps
 
 In this template a message is automatically sent out to a Slack channel
-when an "Okta User MFA Factor Reset All" event is triggered. This template can be modified to meet your business needs.
+when an "Okta Devices - User MFA Factor Reset All" event is triggered. This template can be modified to meet your business needs.
 
 1.  Check the Slack connection and change the Slack Channel.
 2.  Turn on the flow.
