@@ -1,7 +1,7 @@
 {
   "name": "encourage_stronger_mfa_adoption",
   "title": "Encourage stronger MFA adoption",
-  "description": "This template encourages Okta end users to enroll a stronger factor with their account by monitoring the use of SMS as a factor and SMS factor enrollment. Google Drive folder with powerpoint and flowpack: https://drive.google.com/drive/u/3/folders/1t-mRmeDtZaLxGc3slN2yx1q8xp2wC1nW   [^flowpackathonSeptember2021.folder] ",
+  "description": "This template encourages Okta end users to enroll a stronger factor with their account by monitoring the use of SMS as a factor and SMS factor enrollment.",
   "connectors": [
     "okta",
     "office365mail",
