@@ -1,104 +1,105 @@
 {
   "name": "tracking_and_alerting_for_possible_account_takeove",
-  "title": "Tracking and Alerting for Possible Account Takeover Attempts in Okta",
-  "description": "A main vector for fraud comes from Account Takeovers, achieved from resetting passwords or changing levels of access to privileged accounts. Dynamically monitoring and responding to these two vectors with automated flows greatly reduces the risk of these costly attacks.  This template illustrates how Okta Workflows can be used to automate responses to help combat ATOs and mitigate risk with self service and help desk-based account recovery. The template watches user password and MFA factor reset and activation events to determine if the user's account is under threat of an account takeover attempt (ATO).",
+  "title": "Track and alert on possible account takeover attempts",
+  "description": "A main vector for fraud comes from Account Takeovers, achieved from resetting passwords or changing levels of access to privileged accounts. Dynamically monitoring and responding to these two vectors with automated flows greatly reduces the risk of these costly attacks. This template illustrates how Okta Workflows can be used to automate responses to help combat ATOs and mitigate risk with self service and help desk-based account recovery. The template watches user password and MFA factor reset and activation events to determine if the user's account is under threat of an account takeover attempt (ATO).",
   "connectors": [
     "okta",
-    "slack"
+    "slack",
+    "oktadevices"
   ],
   "details": {
     "stashCount": 3,
     "flowCount": 15,
     "flos": [
       {
-        "id": "dd320527-f1f1-4ca0-9122-aab07fb6d9b8",
-        "name": "[util] Check if user is a member of the monitoring group",
-        "type": "HELPER",
-        "screenshotURL": "https://d78vv2h34ll3s.cloudfront.net/static/catalog/workflows/tracking_and_alerting_for_possible_account_takeove/resources/4a2c28fec60461cefc23fe3fe3fe3fe3fe3f.png"
-      },
-      {
-        "id": "e3207fc2-41ba-46d4-a8da-dcdbfded1a85",
-        "name": "[util] Read configuration from Table",
-        "type": "HELPER",
-        "screenshotURL": "https://d78vv2h34ll3s.cloudfront.net/static/catalog/workflows/tracking_and_alerting_for_possible_account_takeove/resources/6487c8fc8640ec8e8fe13e1fe1fe1fe1fe1f.png"
-      },
-      {
-        "id": "2b2a1444-b6c3-4e9d-ae90-d2bb7d67b618",
-        "name": "[util] Parse factor type from outcome.reason",
-        "type": "HELPER",
-        "screenshotURL": "https://d78vv2h34ll3s.cloudfront.net/static/catalog/workflows/tracking_and_alerting_for_possible_account_takeove/resources/281286fbeecc0cea862822e62fe03e03e83f.png"
-      },
-      {
-        "id": "56da478b-88d8-4da3-88dc-972f4d7abe7b",
-        "name": "[util] Compose Syslog search URL",
-        "type": "HELPER",
-        "screenshotURL": "https://d78vv2h34ll3s.cloudfront.net/static/catalog/workflows/tracking_and_alerting_for_possible_account_takeove/resources/001fa8ebe31a1063fe5fa8fb8fb8ff9ff9ff.png"
-      },
-      {
-        "id": "11a98508-279e-4eed-8493-c89e569f8362",
-        "name": "[util] Build alert message body",
-        "type": "HELPER",
-        "screenshotURL": "https://d78vv2h34ll3s.cloudfront.net/static/catalog/workflows/tracking_and_alerting_for_possible_account_takeove/resources/4625e4d6c56c5fc4444c44ec4fc8ff8ff8ff.png"
-      },
-      {
-        "id": "6332892e-b9e6-44df-9cea-21a6cbb76443",
+        "id": "7484e512-52ad-47c4-8258-0f3329b46cb2",
         "name": "[util] Check for higher assurance factors in monitoring table",
         "type": "HELPER",
         "screenshotURL": "https://d78vv2h34ll3s.cloudfront.net/static/catalog/workflows/tracking_and_alerting_for_possible_account_takeove/resources/4a44acebc7b463c41c40878c7fc5f85fc1ff.png"
       },
       {
-        "id": "62f1120e-9594-4b51-9981-085471856631",
-        "name": "[util] Remove user from monitoring group",
+        "id": "a3926d0f-4306-43a2-af81-d6786554dfba",
+        "name": "[util] Build alert message body",
         "type": "HELPER",
-        "screenshotURL": "https://d78vv2h34ll3s.cloudfront.net/static/catalog/workflows/tracking_and_alerting_for_possible_account_takeove/resources/002ab2ff63007c0f3ff3ff3ff3ff3ff3ff3f.png"
+        "screenshotURL": "https://d78vv2h34ll3s.cloudfront.net/static/catalog/workflows/tracking_and_alerting_for_possible_account_takeove/resources/4625e4d6c56c5fc4444c44ec4fc8ff8ff8ff.png"
       },
       {
-        "id": "4a5cf018-bf76-4465-9fcb-0abb4b569734",
-        "name": "2.1 [assess activation risk]",
+        "id": "4c3a9d4f-f753-4109-951f-fea554ecd895",
+        "name": "[util] Parse factor type from outcome.reason",
         "type": "HELPER",
-        "screenshotURL": "https://d78vv2h34ll3s.cloudfront.net/static/catalog/workflows/tracking_and_alerting_for_possible_account_takeove/resources/514d14fd45f44d44d44413f17f17f13f1ff1.png"
+        "screenshotURL": "https://d78vv2h34ll3s.cloudfront.net/static/catalog/workflows/tracking_and_alerting_for_possible_account_takeove/resources/281286fbeecc0cea862822e62fe03e03e83f.png"
       },
       {
-        "id": "255de503-707c-4b05-8f6d-58e59245bc44",
-        "name": "1.1 Log MFA event for monitoring",
+        "id": "447ba72c-cc5d-4162-aa95-49bbab9b8c77",
+        "name": "[util] Compose Syslog search URL",
         "type": "HELPER",
-        "screenshotURL": "https://d78vv2h34ll3s.cloudfront.net/static/catalog/workflows/tracking_and_alerting_for_possible_account_takeove/resources/218e0afae000fc3fcb7c1fc1fc1fc7fc7fdf.png"
+        "screenshotURL": "https://d78vv2h34ll3s.cloudfront.net/static/catalog/workflows/tracking_and_alerting_for_possible_account_takeove/resources/001fa8ebe31a1063fe5fa8fb8fb8ff9ff9ff.png"
       },
       {
-        "id": "cc14f201-9faf-4769-bbf7-869e0f0550a0",
+        "id": "ec893823-81ba-4e3e-836f-6f5278113adb",
+        "name": "[util] Read configuration from Table",
+        "type": "HELPER",
+        "screenshotURL": "https://d78vv2h34ll3s.cloudfront.net/static/catalog/workflows/tracking_and_alerting_for_possible_account_takeove/resources/6487c8fc8640ec8e8fe13e1fe1fe1fe1fe1f.png"
+      },
+      {
+        "id": "7bd8fa89-3405-457c-90c1-a9215031c290",
+        "name": "[util] Check if user is a member of the monitoring group",
+        "type": "HELPER",
+        "screenshotURL": "https://d78vv2h34ll3s.cloudfront.net/static/catalog/workflows/tracking_and_alerting_for_possible_account_takeove/resources/4a2c28fec60461cefc23fe3fe3fe3fe3fe3f.png"
+      },
+      {
+        "id": "cd5be591-0675-448c-93a0-652900cf2861",
         "name": "2.2 Compare assurance level of factor activated",
         "type": "HELPER",
         "screenshotURL": "https://d78vv2h34ll3s.cloudfront.net/static/catalog/workflows/tracking_and_alerting_for_possible_account_takeove/resources/1048b6ef548447dc3e01807f87fc7fc7ff7f.png"
       },
       {
-        "id": "454abcd4-0f47-4892-b340-5ac13cd1824b",
-        "name": "[scheduled] Remove users from monitoring group",
-        "type": "MAIN",
-        "screenshotURL": "https://d78vv2h34ll3s.cloudfront.net/static/catalog/workflows/tracking_and_alerting_for_possible_account_takeove/resources/4a2fa0de8c80f90cf38f58ff8ff8ff8ff8ff.png"
+        "id": "12d702a6-d4e9-4ae7-8c75-f901de6e2684",
+        "name": "2.1 [assess activation risk]",
+        "type": "HELPER",
+        "screenshotURL": "https://d78vv2h34ll3s.cloudfront.net/static/catalog/workflows/tracking_and_alerting_for_possible_account_takeove/resources/514d14fd45f44d44d44413f17f17f13f1ff1.png"
       },
       {
-        "id": "f82e5cc0-29c9-42e9-9419-56a72dbd2534",
+        "id": "758e5e5c-7fc2-4d26-929d-49434bfd2aaa",
+        "name": "[util] Remove user from monitoring group",
+        "type": "HELPER",
+        "screenshotURL": "https://d78vv2h34ll3s.cloudfront.net/static/catalog/workflows/tracking_and_alerting_for_possible_account_takeove/resources/002ab2ff63007c0f3ff3ff3ff3ff3ff3ff3f.png"
+      },
+      {
+        "id": "bf5723eb-5748-467e-ad1f-234fb1dcfd39",
+        "name": "1.1 Log MFA event for monitoring",
+        "type": "HELPER",
+        "screenshotURL": "https://d78vv2h34ll3s.cloudfront.net/static/catalog/workflows/tracking_and_alerting_for_possible_account_takeove/resources/218e0afae000fc3fcb7c1fc1fc1fc7fc7fdf.png"
+      },
+      {
+        "id": "4bbcb5a4-5a64-484a-b129-0c2189bf50b3",
         "name": "2 [factor activate event] User Okta Password Reset",
         "type": "MAIN",
         "screenshotURL": "https://d78vv2h34ll3s.cloudfront.net/static/catalog/workflows/tracking_and_alerting_for_possible_account_takeove/resources/24c36cf586c03c33c73c31c31ff1ff1ff5ff.png"
       },
       {
-        "id": "6e46f370-e728-4abc-ae58-a07a2c33aa78",
-        "name": "1 [factor reset event] User MFA Factor Deactivated",
+        "id": "a02305a5-0aa5-404c-a9ea-878a4f1ae467",
+        "name": "[scheduled] Remove users from monitoring group",
         "type": "MAIN",
-        "screenshotURL": "https://d78vv2h34ll3s.cloudfront.net/static/catalog/workflows/tracking_and_alerting_for_possible_account_takeove/resources/24c368fd87c03c33c33c31ff1ff1ff1ff5ff.png"
+        "screenshotURL": "https://d78vv2h34ll3s.cloudfront.net/static/catalog/workflows/tracking_and_alerting_for_possible_account_takeove/resources/4a2fa0de8c80f90cf38f58ff8ff8ff8ff8ff.png"
       },
       {
-        "id": "74428845-510b-4ea6-ae49-f435f19fe034",
-        "name": "2 [factor activate event] User MFA Factor Activated",
-        "type": "MAIN",
-        "screenshotURL": "https://d78vv2h34ll3s.cloudfront.net/static/catalog/workflows/tracking_and_alerting_for_possible_account_takeove/resources/0a43b4fac5a05e31e35e35e31ff1ff1ff5ff.png"
-      },
-      {
-        "id": "e3e683dc-f646-478d-8418-5e423925518c",
+        "id": "48bd960a-65b2-4696-8922-421117accccd",
         "name": "1 [factor reset event] User MFA Factor Reset All",
         "type": "MAIN",
-        "screenshotURL": "https://d78vv2h34ll3s.cloudfront.net/static/catalog/workflows/tracking_and_alerting_for_possible_account_takeove/resources/24c3e8fc87c03c33c33c31ff1ff1ff1ff5ff.png"
+        "screenshotURL": "https://d78vv2h34ll3s.cloudfront.net/static/catalog/workflows/tracking_and_alerting_for_possible_account_takeove/resources/14f14f10f40f40f70f70f73f73f73f33f000.png"
+      },
+      {
+        "id": "734acb7d-f0cb-4962-a27b-dd471cd582c2",
+        "name": "2 [factor activate event] User MFA Factor Activated",
+        "type": "MAIN",
+        "screenshotURL": "https://d78vv2h34ll3s.cloudfront.net/static/catalog/workflows/tracking_and_alerting_for_possible_account_takeove/resources/4af08f04f40fc0f60f60779f39f79f39f000.png"
+      },
+      {
+        "id": "17d51738-2e97-4e1d-ae73-18daa3ea599c",
+        "name": "1 [factor reset event] User MFA Factor Deactivated",
+        "type": "MAIN",
+        "screenshotURL": "https://d78vv2h34ll3s.cloudfront.net/static/catalog/workflows/tracking_and_alerting_for_possible_account_takeove/resources/14f14f10f40f40f70f30f73f73f73f33f000.png"
       }
     ],
     "helperFlowsCount": 10,
