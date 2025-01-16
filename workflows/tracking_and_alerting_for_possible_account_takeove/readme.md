@@ -1,4 +1,4 @@
-# Tracking and Alerting for Possible Account Takeover Attempts in Okta
+# Track and alert on possible account takeover attempts
 
 ## Overview
 
