@@ -23,7 +23,7 @@ workflows:
           npm-run: validate:details
   semgrep:
     jobs:
-        - platform-helpers/job-semgrep-scan:
+      - platform-helpers/job-semgrep-scan:
           name: "Scan with Semgrep"
           context:
             - static-analysis
