@@ -1,0 +1,46 @@
+{
+  "name": "get_started_with_okta_workflows",
+  "title": "Get started with Okta Workflows",
+  "description": "This template contains specially curated introductory flows to help new users get familiarized with building flows. Discover what you can do with Workflows: schedule tasks, connect different apps together, and automate identity processes.",
+  "connectors": ["okta","gmail"],
+  "details": {
+    "stashCount": 1,
+    "flowCount": 4,
+    "flos": [
+      {
+        "id": "a3aa2717-9df7-4eed-99cd-dd3362be22ae",
+        "name": "[Helper Flow for 3]: Check Last Login date and add to table",
+        "type": "HELPER",
+        "screenshotURL": "https://d78vv2h34ll3s.cloudfront.net/static/catalog/workflows/get_started_with_okta_workflows/resources/003b33b1f6437433d14936c36c36c37ff000.png"
+      },
+      {
+        "id": "9b13f798-6f40-42b9-b48f-db62933b338e",
+        "name": "3: Identify inactive Okta users",
+        "type": "MAIN",
+        "screenshotURL": "https://d78vv2h34ll3s.cloudfront.net/static/catalog/workflows/get_started_with_okta_workflows/resources/00b94bf4bf03f03e83f03f0ff07f07fcf000.png"
+      },
+      {
+        "id": "27712c88-be17-435d-879d-8f4268295fee",
+        "name": "2: Send welcome email to Okta Workflow users",
+        "type": "MAIN",
+        "screenshotURL": "https://d78vv2h34ll3s.cloudfront.net/static/catalog/workflows/get_started_with_okta_workflows/resources/00b0e36f72a36836e36a37e77bf79f79f000.png"
+      },
+      {
+        "id": "5f5357d5-6633-4a02-a6de-14f6ca8175e5",
+        "name": "1: Hello World",
+        "type": "MAIN",
+        "screenshotURL": "https://d78vv2h34ll3s.cloudfront.net/static/catalog/workflows/get_started_with_okta_workflows/resources/0871871f72832437f33f3ffffffffffff000.png"
+      }
+    ],
+    "helperFlowsCount": 1,
+    "mainFlowsCount": 3
+  },
+  "links": [
+    
+      {
+        "title": "Setup Documentation",
+        "destination": "https://github.com/okta/workflows-templates/blob/master/workflows/get_started_with_okta_workflows/readme.md"
+      }
+    
+  ]
+}
