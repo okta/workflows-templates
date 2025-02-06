@@ -2,7 +2,7 @@ version: 2.1
 
 orbs:
   node: circleci/node@5.0.3
-  general-platform-helpers: okta/general-platform-helpers@1.9
+  platform-helpers: okta/platform-helpers@1
 
 workflows:
   validation:
@@ -23,7 +23,7 @@ workflows:
           npm-run: validate:details
   semgrep:
     jobs:
-      - general-platform-helpers/job-semgrep-scan:
+      - platform-helpers/job-semgrep-scan:
           name: "Scan with Semgrep"
           context:
             - static-analysis
