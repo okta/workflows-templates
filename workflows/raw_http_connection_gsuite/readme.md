@@ -41,7 +41,7 @@ Before you get started you will need:
 
 9. Open the Workflows Console in Okta and click on Connections. Create a new HTTP connection with the following values:
     1. Choose OAuth as the authentication method.
-    2. Authorize path:[ https://accounts.google.com/o/oauth2/auth](https://accounts.google.com/o/oauth2auth)
+    2. Authorize path: [_https://accounts.google.com/o/oauth2/auth?approval_prompt=force&access_type=offline](https://accounts.google.com/o/oauth2/auth?approval_prompt=force&access_type=offline)
     3. Token Path:[ https://accounts.google.com/o/oauth2/token](https://accounts.google.com/o/oauth2/token)
     4. Scopes:[ https://www.googleapis.com/auth/apps.groups.settings](https://www.googleapis.com/auth/apps.groups.settings) (as an example - separate multiple scopes with a space)
     5. Client ID : copied from the previous step
@@ -59,6 +59,5 @@ Before you get started you will need:
 
 ## Limitations & Known Issues 
 
-*   The Raw HTTP Connector to GSuite workflow does not receive a refresh token and requires re-authentication every hour.
 *   Be aware of [Okta Workflows System Limits](https://help.okta.com/en/prod/Content/Topics/Workflows/workflows-system-limits.htm).
 *   When invoking HTTP endpoints, consider any applicable rate limits of the SaaS application (or HTTP endpoint) that you're invoking. You should almost always set up error handling on the card to retry periodically.
