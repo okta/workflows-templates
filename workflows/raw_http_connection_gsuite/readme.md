@@ -1,9 +1,8 @@
-
-# Custom HTTP connector for GSuite Admin in Workflows
+# Raw HTTP Connector to Google Workspace
 
 ## Overview
 
-Our current Workflows connector for G Suite Admin does not include all functions within Google Workspace APIs . The Custom API card is also restricted to the Directory and Licensing APIs. As our product team expands the scopes and permissions for different Workspace APIs, you can use this guide as a workaround to create your own custom HTTP connector to request for specific scopes from different Workspace APIs.
+Our current Workflows connector for Google Workspace Admin does not include all functions within Google Workspace APIs . The Custom API card is also restricted to the Directory and Licensing APIs. As our product team expands the scopes and permissions for different Workspace APIs, you can use this guide as a workaround to create your own custom HTTP connector to request for specific scopes from different Workspace APIs.
 
 
 ## Prerequisites
@@ -16,7 +15,7 @@ Before you get started you will need:
 
 ## Setup Steps
 
-1. Navigate to[ https://console.developers.google.com/](https://console.developers.google.com/) and login with the G Suite Admin login.
+1. Navigate to[ https://console.developers.google.com/](https://console.developers.google.com/) and login with the Google Workspace Admin login.
 2. If you do not already have a project, create a new project, leave the rest to defaults and click on Create:
 
 <img src="images/image1.png" width="600" height="450" class="center">
@@ -46,7 +45,7 @@ Before you get started you will need:
     4. Scopes:[ https://www.googleapis.com/auth/apps.groups.settings](https://www.googleapis.com/auth/apps.groups.settings) (as an example - separate multiple scopes with a space)
     5. Client ID : copied from the previous step
     6. Client Secret : copied from the previous step
-10. Click on Create, authorize the request with the admin G Suite credentials and you’re set to directly call Google Workspace’s APIs and perform actions based on the scopes requested.
+10. Click on Create, authorize the request with the admin Google Workspace credentials and you’re set to directly call Google Workspace’s APIs and perform actions based on the scopes requested.
 
 
 ## Testing this Flow
@@ -59,6 +58,6 @@ Before you get started you will need:
 
 ## Limitations & Known Issues 
 
-*   The Raw HTTP Connector to GSuite workflow does not receive a refresh token and requires re-authentication every hour.
+*   The Raw HTTP Connector to Google Workspace workflow does not receive a refresh token and requires re-authentication every hour.
 *   Be aware of [Okta Workflows System Limits](https://help.okta.com/en/prod/Content/Topics/Workflows/workflows-system-limits.htm).
 *   When invoking HTTP endpoints, consider any applicable rate limits of the SaaS application (or HTTP endpoint) that you're invoking. You should almost always set up error handling on the card to retry periodically.
