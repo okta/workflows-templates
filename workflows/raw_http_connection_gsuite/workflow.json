@@ -1,5 +1,5 @@
 {
-  "name": "raw_http_connection_google_workspace",
+  "name": "raw_http_connection_gsuite",
   "title": "Raw HTTP Connector to Google Workspace",
   "description": "Our current Google Workspace connector does not provide access to all endpoints within the Google Workspace API. The Custom API Action card is also restricted to the Directory and Licensing APIs. You can use this template to create a raw HTTP request to obtain the scopes you need.",
   "connectors": [
@@ -11,7 +11,7 @@
         "id": "d04b2da5-85da-4205-9d06-e627d291c0d2",
         "name": "Gsuite test",
         "type": "MAIN",
-        "screenshotURL": "https://d78vv2h34ll3s.cloudfront.net/static/catalog/workflows/raw_http_connection_google_workspace/resources/_eQC96XBvMK90_HBatP7OlHu6NsisvN6ZCgcfmOdQHg.png"
+        "screenshotURL": "https://d78vv2h34ll3s.cloudfront.net/static/catalog/workflows/raw_http_connection_gsuite/resources/_eQC96XBvMK90_HBatP7OlHu6NsisvN6ZCgcfmOdQHg.png"
       }
     ],
     "flowCount": 1,
@@ -24,7 +24,7 @@
     },
     {
       "title": "Setup Documentation",
-      "destination": "https://github.com/okta/workflows-templates/blob/master/workflows/raw_http_connection_google_workspace/readme.md"
+      "destination": "https://github.com/okta/workflows-templates/blob/master/workflows/raw_http_connection_gsuite/readme.md"
     }
   ]
 }
