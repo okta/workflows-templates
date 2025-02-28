@@ -61,6 +61,6 @@ Now you can directly call Google Workspace APIs and perform actions based on the
 
 ## Limitations & Known Issues 
 
-- The **Raw HTTP Connector to Google Workspace** workflow doesn't receive a refresh token, so it requires re-authentication every hour.
+- The **Create a custom API connector for Google Workspace** workflow doesn't receive a refresh token, so it requires re-authentication every hour.
 - Be aware of the [Okta Workflows System Limits](https://help.okta.com/en/prod/Content/Topics/Workflows/workflows-system-limits.htm). When you invoke HTTP endpoints, consider any applicable rate limits of the SaaS app (or HTTP endpoint).
 - Set up error handling on the card to retry periodically.
