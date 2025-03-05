@@ -1,6 +1,6 @@
 {
-  "name": "manage_gsuite_user_licenses",
-  "title": "Manage  Google Workspace Licenses",
+  "name": "manage gsuite user licenses",
+  "title": "Manage Google workspace Licenses",
   "description": "This template allows you to disable a user in Google workspace  and then after a specified delay removes their assigned  Google workspace licenses. Another part of the Flow will reactivate the user in  Google workspace and reassign the previously removed Google workspace licenses.",
   "connectors": [
     "okta",

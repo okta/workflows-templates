@@ -1,4 +1,4 @@
-# Manage Google Workspace User Licenses
+# Manage Google Workspace  User Licenses
 
 ## Overview
 
