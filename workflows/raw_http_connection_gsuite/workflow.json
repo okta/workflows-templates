@@ -1,17 +1,17 @@
 {
   "name": "raw_http_connection_gsuite",
   "title": "Create a custom API connector for Google Workspace",
-  "description": "Our current Google Workspace connector does not provide access to all endpoints within the Google Workspace API. The Custom API Action card is also restricted to the Directory and Licensing APIs. You can use this template to create a raw HTTP request to obtain the scopes you need.",
+  "description": "The current Workflows connector for Google Workspace Admin doesn't include all functions available within Google Workspace APIs. The Custom API action (CAPIA) card is also restricted to the Directory and Licensing APIs. While Workflows expands the scopes and permissions available for different Google Workspace APIs, use this guide to create your own custom HTTP connector to request specific scopes from different Google Workspace APIs.",
   "connectors": [
     "googledirectory"
   ],
   "details": {
     "flos": [
       {
-        "id": "d04b2da5-85da-4205-9d06-e627d291c0d2",
+        "id": "3d22c381-dc18-4d4e-b420-7b6cac3d9da3",
         "name": "Gsuite test",
         "type": "MAIN",
-        "screenshotURL": "https://d78vv2h34ll3s.cloudfront.net/static/catalog/workflows/raw_http_connection_gsuite/resources/_eQC96XBvMK90_HBatP7OlHu6NsisvN6ZCgcfmOdQHg.png"
+        "screenshotURL": "https://d78vv2h34ll3s.cloudfront.net/static/catalog/workflows/raw_http_connection_gsuite/resources/4744f05f4c74904f74c70c71d71c71d71c72.png"
       }
     ],
     "flowCount": 1,
