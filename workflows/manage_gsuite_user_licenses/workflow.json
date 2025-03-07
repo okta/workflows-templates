@@ -1,7 +1,7 @@
 {
   "name": "manage_gsuite_user_licenses",
-  "title": "Manage G Suite User Licenses",
-  "description": "This template allows you to disable a user in G Suite and then after a specified delay removes their assigned G Suite licenses. Another part of the Flow will reactivate the user in G Suite and reassign the previously removed G Suite licenses.",
+  "title": "Manage Google Workspace User Licenses",
+  "description": "This template allows you to disable a user in Google Workspace and then after a specified delay removes their assigned Google Workspace licenses. Another part of the Flow will reactivate the user in Google Workspace and reassign the previously removed Google Workspace licenses.",
   "connectors": [
     "okta",
     "googledirectory",
@@ -10,40 +10,40 @@
   "details": {
     "flos": [
       {
-        "id": "21b48986-280b-409a-b57b-185caaa822a3",
+        "id": "9cdf4931-5c80-4dfb-a3bd-68ca7df773d2",
         "name": "[Helper] Add License Row to Table",
         "type": "HELPER",
-        "screenshotURL": "https://d78vv2h34ll3s.cloudfront.net/static/catalog/workflows/manage_gsuite_user_licenses/resources/8PdLvlRxKjUn1jWWhvotvsu-XiOXn0Bu5vMbj2XGP-0.png"
+        "screenshotURL": "https://d78vv2h34ll3s.cloudfront.net/static/catalog/workflows/manage_gsuite_user_licenses/resources/248fd86787c87487c8fc86486c54831d35ff.png"
       },
       {
-        "id": "59676232-8a98-4063-b62a-6e57e4cc9111",
+        "id": "537ec459-1dd0-4e67-a640-6dd9df3bee02",
         "name": "[Helper] Delete Row from Table",
         "type": "HELPER",
-        "screenshotURL": "https://d78vv2h34ll3s.cloudfront.net/static/catalog/workflows/manage_gsuite_user_licenses/resources/y615JnIg17p1iPyHcMj9HbMOcw5oN1K-9U_rn8WEaWk.png"
+        "screenshotURL": "https://d78vv2h34ll3s.cloudfront.net/static/catalog/workflows/manage_gsuite_user_licenses/resources/f30b307b07b07307703f03f07602206f0ff9.png"
       },
       {
-        "id": "65784428-e0f0-4de6-9f4b-3851783e42b8",
-        "name": "G Suite Activation",
-        "type": "MAIN",
-        "screenshotURL": "https://d78vv2h34ll3s.cloudfront.net/static/catalog/workflows/manage_gsuite_user_licenses/resources/g3-TaZapWBNFfg26eJWgCrXE80nAObDS1QHXmy8Ivtc.png"
-      },
-      {
-        "id": "87fc333a-e05b-40b8-9808-ee5f456325e4",
-        "name": "GSuite Store License",
+        "id": "e4a1187c-8f90-4ee4-93e3-8e87909c12a9",
+        "name": "Google Workspace Initialization Flow",
         "type": "HELPER",
-        "screenshotURL": "https://d78vv2h34ll3s.cloudfront.net/static/catalog/workflows/manage_gsuite_user_licenses/resources/LxnbKoew9tI8hC5xBEoeDmGyBuDN2K4h1-CAGuEChM8.png"
+        "screenshotURL": "https://d78vv2h34ll3s.cloudfront.net/static/catalog/workflows/manage_gsuite_user_licenses/resources/368f08f0bf0870bf03f01f03f03f03f03f0f.png"
       },
       {
-        "id": "64203825-838b-488d-acc0-21e86c499e09",
-        "name": "G Suite Initialization Flow",
+        "id": "9a12b413-27e7-412d-a3b2-dbc8d81d676f",
+        "name": "Google Workspace Store License",
         "type": "HELPER",
-        "screenshotURL": "https://d78vv2h34ll3s.cloudfront.net/static/catalog/workflows/manage_gsuite_user_licenses/resources/g_n8_4zEDOf59m17ByL3wR4gB0C7_DPBqJ-1QNiFRjU.png"
+        "screenshotURL": "https://d78vv2h34ll3s.cloudfront.net/static/catalog/workflows/manage_gsuite_user_licenses/resources/252ed2f12718018ffcf40f40f19f19f19f19.png"
       },
       {
-        "id": "1ddba34b-738a-4282-83b4-57bb2901fe7c",
-        "name": "G Suite Staged Deactivation",
+        "id": "d172c801-0ae9-4b72-aba4-541f240b29eb",
+        "name": "Google Workspace Activation",
         "type": "MAIN",
-        "screenshotURL": "https://d78vv2h34ll3s.cloudfront.net/static/catalog/workflows/manage_gsuite_user_licenses/resources/-xMr5IYBZgJ9hefZZHcBKw6Pu0ZndhHdR0d7hMMKIxM.png"
+        "screenshotURL": "https://d78vv2h34ll3s.cloudfront.net/static/catalog/workflows/manage_gsuite_user_licenses/resources/07e42bce2c0ad89dc94584f8fc9ff8ff8ff8.png"
+      },
+      {
+        "id": "1af6d3a5-370d-418f-b414-47a9d6a19e95",
+        "name": "Google Workspace Staged Deactivation",
+        "type": "MAIN",
+        "screenshotURL": "https://d78vv2h34ll3s.cloudfront.net/static/catalog/workflows/manage_gsuite_user_licenses/resources/1cf462d32c76d30d30438c38f39f38f38518.png"
       }
     ],
     "flowCount": 6,
