@@ -1,0 +1,239 @@
+{
+  "name": "governance_for_okta_privileged_access_server_resou",
+  "title": "Governance for Okta Privileged Access Server Resources Examples",
+  "description": "The aim of this solution is to represent Okta Privileged Access (OPA) objects as entitlements in Okta Identity Governance (OIG) against a sample app to show the contents of an OPA policy as an Entitlement Bundle so it can be requested in OIG Access Requests, and to show the mapping of users to OPA policies as Entitlement Bundle Grants so that the access can be reviewed.",
+  "connectors": [
+    "okta","jira2","oktaprivilegedaccess","gmail"
+  ],
+  "details": {
+    "stashCount": 5,
+    "flowCount": 36,
+    "flos": [
+      {
+        "id": "cd1e2303-6747-48c6-9f43-2439079cccbf",
+        "name": "1.4.1 Update Infrastructure Access - Servers Entitlements",
+        "type": "HELPER",
+        "screenshotURL": "https://d78vv2h34ll3s.cloudfront.net/static/catalog/workflows/governance_for_okta_privileged_access_server_resou/resources/4a47fc6885e4e247a45a07a1d8bf83f8ff8f.png"
+      },
+      {
+        "id": "1198fe5e-9000-4596-88ef-c4b298334e30",
+        "name": "2.4 Create OIG Entitlements",
+        "type": "HELPER",
+        "screenshotURL": "https://d78vv2h34ll3s.cloudfront.net/static/catalog/workflows/governance_for_okta_privileged_access_server_resou/resources/23287267e33607c07e032733733b33f33f33.png"
+      },
+      {
+        "id": "1b5b045a-73c1-47b5-8cb1-69e402e09fa0",
+        "name": "2.1 Prepare OPA Principals",
+        "type": "HELPER",
+        "screenshotURL": "https://d78vv2h34ll3s.cloudfront.net/static/catalog/workflows/governance_for_okta_privileged_access_server_resou/resources/014cfe8baeb8964c70578811db9c39c39f3f.png"
+      },
+      {
+        "id": "8a4753f4-351c-46b9-98e9-a31ae8a8a156",
+        "name": "1.5.1 Update Shared Account Entitlements",
+        "type": "HELPER",
+        "screenshotURL": "https://d78vv2h34ll3s.cloudfront.net/static/catalog/workflows/governance_for_okta_privileged_access_server_resou/resources/4a47f44ac5e4d247a47a07a0d8bf83f8ff8f.png"
+      },
+      {
+        "id": "9724378e-1c17-4dfc-84fe-126b036b8c92",
+        "name": "1.8.1 Prepare Entitlement Bundle Assignment",
+        "type": "HELPER",
+        "screenshotURL": "https://d78vv2h34ll3s.cloudfront.net/static/catalog/workflows/governance_for_okta_privileged_access_server_resou/resources/4ac7e46a45a45247bc5a03a3f83f83f8bf8f.png"
+      },
+      {
+        "id": "e49e76cb-91b9-4c2c-a407-f80819350077",
+        "name": "1.9.1 Prepare List of Members",
+        "type": "HELPER",
+        "screenshotURL": "https://d78vv2h34ll3s.cloudfront.net/static/catalog/workflows/governance_for_okta_privileged_access_server_resou/resources/4ace30eb47ec4e4464400f83fe3fe3fe3fe3.png"
+      },
+      {
+        "id": "2027bb17-62fc-4013-967a-4bcd3dbdfad6",
+        "name": "1.10.1 Assign Entitlement Bundle",
+        "type": "HELPER",
+        "screenshotURL": "https://d78vv2h34ll3s.cloudfront.net/static/catalog/workflows/governance_for_okta_privileged_access_server_resou/resources/08a99cd5e84899ad9e4882c97f9ff9ff9ff9.png"
+      },
+      {
+        "id": "e5e535d1-5198-41e2-aa5f-59347b887066",
+        "name": "1.6.5 Prepare Entitlement bundle ID",
+        "type": "HELPER",
+        "screenshotURL": "https://d78vv2h34ll3s.cloudfront.net/static/catalog/workflows/governance_for_okta_privileged_access_server_resou/resources/4a0fb8da8ea84187ec7e03e0fe1fe1fe1fe7.png"
+      },
+      {
+        "id": "5f22c5b5-c89e-45c0-9ebe-930ac71b4fd7",
+        "name": "1.6.1 Prepare OPA Entitlement Bundles",
+        "type": "HELPER",
+        "screenshotURL": "https://d78vv2h34ll3s.cloudfront.net/static/catalog/workflows/governance_for_okta_privileged_access_server_resou/resources/002ff283f438a1cc7e03c1bc1bd02c53c73e.png"
+      },
+      {
+        "id": "9f81a46b-df9e-46de-94cb-708423f60816",
+        "name": "3.1 Prepare Policy Resource Data",
+        "type": "HELPER",
+        "screenshotURL": "https://d78vv2h34ll3s.cloudfront.net/static/catalog/workflows/governance_for_okta_privileged_access_server_resou/resources/902ffe908fa0938db08f0e3a9a80200b9ffd.png"
+      },
+      {
+        "id": "d7200136-2d5c-4f8a-a90f-c4280f33d5b3",
+        "name": "1.7.1 Prepare Resources for Entitlement Bundle",
+        "type": "HELPER",
+        "screenshotURL": "https://d78vv2h34ll3s.cloudfront.net/static/catalog/workflows/governance_for_okta_privileged_access_server_resou/resources/4ac7a4ea46a46ac69c008c7cc7fc7fc7fc7f.png"
+      },
+      {
+        "id": "f53da949-5820-4fc5-964b-c95b75aa93f7",
+        "name": "1.7.2 Prepare Vaulted Accounts for Entitlement Bundle",
+        "type": "HELPER",
+        "screenshotURL": "https://d78vv2h34ll3s.cloudfront.net/static/catalog/workflows/governance_for_okta_privileged_access_server_resou/resources/4ac7a4ea46246ac6bc078c7cc7fc7fc7fc7f.png"
+      },
+      {
+        "id": "cc72addb-3514-499e-be54-0e16e22bc5f0",
+        "name": "1.3.1 Update Principals Entitlements",
+        "type": "HELPER",
+        "screenshotURL": "https://d78vv2h34ll3s.cloudfront.net/static/catalog/workflows/governance_for_okta_privileged_access_server_resou/resources/4a47bc4ac5e4c647a45a05a1f8bf83f8ff8f.png"
+      },
+      {
+        "id": "346eb8eb-f6e1-4910-842c-a19b67619a8d",
+        "name": "4.4 Processing Vaulted Accounts",
+        "type": "HELPER",
+        "screenshotURL": "https://d78vv2h34ll3s.cloudfront.net/static/catalog/workflows/governance_for_okta_privileged_access_server_resou/resources/29ac9ae86db8cd86502f88b8e98a198ff8ff.png"
+      },
+      {
+        "id": "b00271de-fa83-40ae-aa02-4533bc1bade3",
+        "name": "4.2 Preparing Policy labels",
+        "type": "HELPER",
+        "screenshotURL": "https://d78vv2h34ll3s.cloudfront.net/static/catalog/workflows/governance_for_okta_privileged_access_server_resou/resources/2782787787f86f80700707f87f87f83ff5ff.png"
+      },
+      {
+        "id": "deb31d42-4b1c-422e-8816-702bdf4f4f91",
+        "name": "4.1 Process Individual Vault Acct List",
+        "type": "HELPER",
+        "screenshotURL": "https://d78vv2h34ll3s.cloudfront.net/static/catalog/workflows/governance_for_okta_privileged_access_server_resou/resources/730b387387b07907707207e07f02f02f86ff.png"
+      },
+      {
+        "id": "fc0c346d-5ee7-4fd3-87ed-8913120db2b5",
+        "name": "4.3 Processing labels",
+        "type": "HELPER",
+        "screenshotURL": "https://d78vv2h34ll3s.cloudfront.net/static/catalog/workflows/governance_for_okta_privileged_access_server_resou/resources/208f5cf9275ae28aa86e86587c82c927fe7f.png"
+      },
+      {
+        "id": "0362d482-fa5f-4f4e-b774-e0f55fb36bcb",
+        "name": "1.6.2 Prepare Principals for Entitlement Bundle",
+        "type": "HELPER",
+        "screenshotURL": "https://d78vv2h34ll3s.cloudfront.net/static/catalog/workflows/governance_for_okta_privileged_access_server_resou/resources/554754d544d444c5fc01cc1cc7fc7fc7fc7f.png"
+      },
+      {
+        "id": "38043a33-2bc0-4670-bcab-d2b9e6b115d4",
+        "name": "1.6.4 Read Vaulted Accounts for Entitlement Bundle",
+        "type": "HELPER",
+        "screenshotURL": "https://d78vv2h34ll3s.cloudfront.net/static/catalog/workflows/governance_for_okta_privileged_access_server_resou/resources/24a6bae92fb8628e0674490c93f81ff1ff1f.png"
+      },
+      {
+        "id": "bf67f575-e3f1-4118-9ca8-0f059e5f6b68",
+        "name": "1.6.6 Verify Okta Group",
+        "type": "HELPER",
+        "screenshotURL": "https://d78vv2h34ll3s.cloudfront.net/static/catalog/workflows/governance_for_okta_privileged_access_server_resou/resources/55cdc0f50dc07707d0f40f03f03f41f01fd9.png"
+      },
+      {
+        "id": "d576fd0d-b8d3-44ac-8213-3369f1efa5f7",
+        "name": "1.6.3 Read Infrastructure Access - Servers for Entitlement Bundle",
+        "type": "HELPER",
+        "screenshotURL": "https://d78vv2h34ll3s.cloudfront.net/static/catalog/workflows/governance_for_okta_privileged_access_server_resou/resources/4a0dfcd28f7847842c684e1c63ee3fe3fe3f.png"
+      },
+      {
+        "id": "cdfe4aa1-33a9-4390-a4fa-83567c798c6a",
+        "name": "2.3 Read Policy Groups",
+        "type": "HELPER",
+        "screenshotURL": "https://d78vv2h34ll3s.cloudfront.net/static/catalog/workflows/governance_for_okta_privileged_access_server_resou/resources/554f545545d45704f45c04c74f33f17f13f1.png"
+      },
+      {
+        "id": "98de94f8-1e80-44fa-ab13-be38e0a63622",
+        "name": "2.2 Read Resources",
+        "type": "HELPER",
+        "screenshotURL": "https://d78vv2h34ll3s.cloudfront.net/static/catalog/workflows/governance_for_okta_privileged_access_server_resou/resources/554f545545d4570cf05d04c64f34710717f1.png"
+      },
+      {
+        "id": "fc8bf2f1-0d19-4b9b-82dc-25dc7f5a259b",
+        "name": "3.2 Prepare Policy Group Data",
+        "type": "HELPER",
+        "screenshotURL": "https://d78vv2h34ll3s.cloudfront.net/static/catalog/workflows/governance_for_okta_privileged_access_server_resou/resources/4a46bc6ac6a07e46e44a05095ff47f07fc7f.png"
+      },
+      {
+        "id": "6963caa0-5a2e-433d-a98c-75b8444b172a",
+        "name": "1.7.3 Update Entitlement Bundle ID",
+        "type": "HELPER",
+        "screenshotURL": "https://d78vv2h34ll3s.cloudfront.net/static/catalog/workflows/governance_for_okta_privileged_access_server_resou/resources/730b387b07b07307707327307b03603686f9.png"
+      },
+      {
+        "id": "92699420-2e2a-4270-a45a-9cfddc3ada94",
+        "name": "1.9.2 Find Entitlement Name",
+        "type": "HELPER",
+        "screenshotURL": "https://d78vv2h34ll3s.cloudfront.net/static/catalog/workflows/governance_for_okta_privileged_access_server_resou/resources/5a4688fac5ac5247e4384f9ff9ff9ff9ff9f.png"
+      },
+      {
+        "id": "7aabadd4-26f3-424d-88c2-aaca1239061a",
+        "name": "1.9.3 Get Entitlement Details",
+        "type": "HELPER",
+        "screenshotURL": "https://d78vv2h34ll3s.cloudfront.net/static/catalog/workflows/governance_for_okta_privileged_access_server_resou/resources/4ac6a467c6ac6a86ac90cc0fc2fc7fc7fc7f.png"
+      },
+      {
+        "id": "5ab9dcdb-e6bc-48c2-aacf-0735cd9f3ae0",
+        "name": "1.4 Infrastructure Access - Servers Entitlement",
+        "type": "MAIN",
+        "screenshotURL": "https://d78vv2h34ll3s.cloudfront.net/static/catalog/workflows/governance_for_okta_privileged_access_server_resou/resources/02e3a85fa3a83a83bcf90c93c91c91c91c9f.png"
+      },
+      {
+        "id": "a2698d0f-98c1-46a6-a40d-79b6c1a30c46",
+        "name": "1.1 List of OPA Groups",
+        "type": "MAIN",
+        "screenshotURL": "https://d78vv2h34ll3s.cloudfront.net/static/catalog/workflows/governance_for_okta_privileged_access_server_resou/resources/0ca3ca1fa1c87e87e0f80f89f89f8ff8ff8f.png"
+      },
+      {
+        "id": "adf1e036-a802-406f-958b-415ce1490a19",
+        "name": "1.5 Shared Account Entitlements",
+        "type": "MAIN",
+        "screenshotURL": "https://d78vv2h34ll3s.cloudfront.net/static/catalog/workflows/governance_for_okta_privileged_access_server_resou/resources/0ae3a85f83b83a83b8f90c91d91c91c91c9b.png"
+      },
+      {
+        "id": "8c9023e1-8396-438d-bd9b-9023dc99b6c7",
+        "name": "1.7 Grant Entitlement Bundle",
+        "type": "MAIN",
+        "screenshotURL": "https://d78vv2h34ll3s.cloudfront.net/static/catalog/workflows/governance_for_okta_privileged_access_server_resou/resources/0ac2f43bc2b42e43f43883e4c67c63c63c6b.png"
+      },
+      {
+        "id": "b75a0300-a72d-456f-abd7-1d8e9b346957",
+        "name": "1.6 OPA Entitlement Bundles",
+        "type": "MAIN",
+        "screenshotURL": "https://d78vv2h34ll3s.cloudfront.net/static/catalog/workflows/governance_for_okta_privileged_access_server_resou/resources/1543fc3543541c43fc1c0fc3cc3c41c47c7f.png"
+      },
+      {
+        "id": "8484edf9-994d-48cb-b092-5f3b003509c2",
+        "name": "1.8 OPA Entitlement Request",
+        "type": "MAIN",
+        "screenshotURL": "https://d78vv2h34ll3s.cloudfront.net/static/catalog/workflows/governance_for_okta_privileged_access_server_resou/resources/894b36a7422c3a5ba5b9fbffbffbffbffbff.png"
+      },
+      {
+        "id": "9cc46c5c-fb89-432e-8e18-a3a49fa88754",
+        "name": "1.3 Principals Entitlement",
+        "type": "MAIN",
+        "screenshotURL": "https://d78vv2h34ll3s.cloudfront.net/static/catalog/workflows/governance_for_okta_privileged_access_server_resou/resources/02674c3fc6e44607f49249e59e19e19e19e1.png"
+      },
+      {
+        "id": "5cf69e66-34a6-4b5a-8a3d-ab7780aa1084",
+        "name": "1.2 List OPA Policies",
+        "type": "MAIN",
+        "screenshotURL": "https://d78vv2h34ll3s.cloudfront.net/static/catalog/workflows/governance_for_okta_privileged_access_server_resou/resources/09279e1f23a07a27f0f90f91f91f91f9ff9f.png"
+      },
+      {
+        "id": "abf3f875-55a6-4615-bd3d-0ad244165710",
+        "name": "1.9 Access Certification Remediation",
+        "type": "MAIN",
+        "screenshotURL": "https://d78vv2h34ll3s.cloudfront.net/static/catalog/workflows/governance_for_okta_privileged_access_server_resou/resources/0031fbe1ba6ea47a03e02e8be0b60b66b66b.png"
+      }
+    ],
+    "helperFlowsCount": 27,
+    "mainFlowsCount": 9
+  },
+  "links": [
+    {
+      "title": "Setup Documentation",
+      "destination": "https://github.com/okta/workflows-templates/blob/master/workflows/governance_for_okta_privileged_access_server_resou/readme.md"
+    }
+  
+  ]
+}
