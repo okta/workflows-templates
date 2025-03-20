@@ -1,0 +1,37 @@
+{
+  "name": "bulk_convert_users_to_lite_users",
+  "title": "Bulk convert users to lite-users",
+  "description": "This template contains flows designed to automate the classification and management of Okta users as lite users.",
+  "connectors": [
+    "okta"
+  ],
+  "details": {
+    "stashCount": 1,
+    "flowCount": 3,
+    "flos": [
+      {
+        "id": "8dbafa7e-c3eb-4ffe-a225-77222918b7d2",
+        "name": "Update User Classification",
+        "type": "HELPER"
+      },
+      {
+        "id": "ff95dd6e-286e-486c-af84-fd702c89806c",
+        "name": "Update Group Members to Lite Users",
+        "type": "MAIN"
+      },
+      {
+        "id": "73d18213-ff90-41c2-b500-5ee4f2c73bed",
+        "name": "Convert New Okta User to Lite User",
+        "type": "MAIN"
+      }
+    ],
+    "helperFlowsCount": 1,
+    "mainFlowsCount": 2
+  },
+  "links": [
+    {
+      "destination": "",
+      "title": ""
+    }
+  ]
+}
