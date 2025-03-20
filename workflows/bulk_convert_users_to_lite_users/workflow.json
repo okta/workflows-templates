@@ -12,17 +12,23 @@
       {
         "id": "8dbafa7e-c3eb-4ffe-a225-77222918b7d2",
         "name": "Update User Classification",
-        "type": "HELPER"
+        "type": "HELPER",
+        "screenshotURL": "/Users/ekta.singh/Desktop/workflows-templates/workflows/bulk_convert_users_to_lite_users/resources/0a15ec5ec5e542558d5e05e81f81f81f81f8.png"
+
       },
       {
         "id": "ff95dd6e-286e-486c-af84-fd702c89806c",
         "name": "Update Group Members to Lite Users",
-        "type": "MAIN"
+        "type": "MAIN",
+        "screenshotURL": "/Users/ekta.singh/Desktop/workflows-templates/workflows/bulk_convert_users_to_lite_users/resources/0ff05f0310f00ff0730e00f1ff2ff0ff0ff4.png"
+
       },
       {
         "id": "73d18213-ff90-41c2-b500-5ee4f2c73bed",
         "name": "Convert New Okta User to Lite User",
-        "type": "MAIN"
+        "type": "MAIN",
+        "screenshotURL": "/Users/ekta.singh/Desktop/workflows-templates/workflows/bulk_convert_users_to_lite_users/resources/7ff21033030033b37b31933f3ff3ff3ff3ff.png"
+
       }
     ],
     "helperFlowsCount": 1,
@@ -30,8 +36,9 @@
   },
   "links": [
     {
-      "destination": "",
-      "title": ""
+     "title": "Setup Documentation",
+    "destination": "https://github.com/okta/workflows-templates/blob/master/workflows/bulk_convert_users_to_lite_users/readme.md",
+
     }
   ]
 }
