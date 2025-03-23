@@ -78,7 +78,7 @@ async function main() {
     let generatedDetails;
     try {
       generatedDetails = getDetailsFromFlopack(flopackContent);
-    } catch (err) {
+     } catch (err) {
       console.warn(
         `Error in reading '${workflowName}', error extracting flopack details:`,
         err
@@ -95,6 +95,13 @@ async function main() {
         err
       );
     }
+    
+    try {
+
+    } catch(err) {
+
+    }
+
   }
 }
 
@@ -126,13 +133,25 @@ async function writeToJSONFile(workflowName, generatedDetails) {
   }
   jsonContent.details = merge(jsonContent.details, generatedDetails);
 
+   //remove stashcount if it's value is 0
+   if (jsonContent.details.hasOwnProperty("stashCount") && jsonContent.details.stashCount === 0) {
+    
+    console.log("Enter here for tables " + jsonContent.details.flowCount) ;
+   delete jsonContent.details.stashCount;
+} 
+
   try {
     const finalJson = JSON.stringify(jsonContent, null, 2) + "\n";
     await fs.writeFile(jsonFilePath, finalJson, "utf8");
   } catch (err) {
     throw new Error(`Failed writing "${jsonFilePath}": ${err.message}`);
   }
+
+ 
+
+  
 }
+
 
 /**
  This function for copying image hashed files to workflow.json
@@ -177,4 +196,5 @@ if (require.main === module) {
 
 module.exports = {
   writeToJSONFileWithImages,
+  writeToJSONFile
 };
