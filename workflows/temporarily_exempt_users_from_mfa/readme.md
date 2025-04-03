@@ -41,6 +41,8 @@ from the MFA Exempt group.</span>
 
 ### <span class="c3">Okta Admin Console configuration</span>
 
+### <span class="c1">Classic</span>
+
 1.  <span class="c0">Create an Okta Group called “MFA Exempt Users.”
     This Okta Group will be used in our Authentication Sign On policy.
     </span>
@@ -49,6 +51,18 @@ from the MFA Exempt group.</span>
 3.  <span class="c0">Name the policy and type in the “MFA Exempt Users”
     Okta group name in the **Assign to Groups** field. Click on **Update
     Policy** once completed.</span>
+4.  Create a new rule within your MFA Exempt policy, name the policy and
+    choose **Password** as your required authentication method.
+    
+### <span class="c1">Okta Identity Engine configuration</span>
+
+1.  <span class="c0">Create an Okta Group called “MFA Exempt Users.”
+    This Okta Group will be used in our Authentication Sign On policy.
+    </span>
+2.  Navigate from **Admin Console** : **Security** > **Global Session Policy**. Click **Add Policy**.
+3.  <span class="c0">Name the policy and type in the “MFA Exempt Users”
+    Okta group name in the **Assign to Groups** field. Click on **Create policy and add rule** 
+    once completed.</span>
 4.  Create a new rule within your MFA Exempt policy, name the policy and
     choose **Password** as your required authentication method.
 
