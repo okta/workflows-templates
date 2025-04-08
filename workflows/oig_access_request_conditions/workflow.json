@@ -123,6 +123,14 @@
     {
       "destination": "https://github.com/okta/workflows-templates/blob/master/workflows/oig_access_request_conditions/readme.md",
       "title": "Setup Documentation"
+    },
+    {
+      "title": "Add Workflow",      
+      "purpose": "WORKFLOW_CTA",
+      "redirectPath": "/app/templates/oig_access_request_conditions",       
+      "baseURL": "https://login.okta.com/?displaySections=create-account&redirectPath=/workflows",     
+      "destination": "https://login.okta.com/?displaySections=create-account&redirectPath=/workflows/app/templates/oig_access_request_conditions"    
     }
+
   ]
 }
