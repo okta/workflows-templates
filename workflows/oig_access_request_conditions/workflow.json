@@ -1,0 +1,128 @@
+{
+  "name": "oig_access_request_conditions",
+  "title": "OIG Access Request Conditions",
+  "description": "This template contains flows that programmatically create a type of Okta OIG V2 Access Request condition for default apps, groups, or entitlements based on access requests. ",
+  "connectors": [
+    "okta"
+  ],
+  "details": {
+    "flowCount": 18,
+    "flos": [
+      {
+        "id": "966c444a-c1fa-4475-9f54-bd94e641efa4",
+        "name": "Create Group Condition | Variable duration | Grp Audience",
+        "type": "HELPER",
+        "screenshotURL": "https://d78vv2h34ll3s.cloudfront.net/static/catalog/workflows/oig_access_request_conditions/resources/0585b87ba1b81b81bb11915f11f11f11f01f.png"
+      },
+      {
+        "id": "1541a4d2-28e1-4bc4-bb3a-bebd52f17b30",
+        "name": "Create Bundle Condition | Permanent Access | Grp Audience",
+        "type": "HELPER",
+        "screenshotURL": "https://d78vv2h34ll3s.cloudfront.net/static/catalog/workflows/oig_access_request_conditions/resources/0585b87ba1b85b813b11913d13f11f11f01f.png"
+      },
+      {
+        "id": "e094372f-dc36-4dfa-bfcb-23e272d383cb",
+        "name": "Create Bundle Condition | Permanent Access | Everyone",
+        "type": "HELPER",
+        "screenshotURL": "https://d78vv2h34ll3s.cloudfront.net/static/catalog/workflows/oig_access_request_conditions/resources/0585b87ba1985b853b1b919913d11f21f31f.png"
+      },
+      {
+        "id": "2f418961-dfb9-4c5e-a121-feafea3e96f3",
+        "name": "Condition | Default App | Fixed Duration | Group(s) Audience",
+        "type": "HELPER",
+        "screenshotURL": "https://d78vv2h34ll3s.cloudfront.net/static/catalog/workflows/oig_access_request_conditions/resources/0585b87ba1b81b81bb19919919f21f31f31f.png"
+      },
+      {
+        "id": "b66497f2-c51d-4801-b892-a97c04dd5175",
+        "name": "Condition | Default App | Variable Duration | Everyone Audience",
+        "type": "HELPER",
+        "screenshotURL": "https://d78vv2h34ll3s.cloudfront.net/static/catalog/workflows/oig_access_request_conditions/resources/0585b8fb81985b81bb11913933f31f31f31f.png"
+      },
+      {
+        "id": "a5c622ef-4668-4c7f-b2bc-e00a4b921380",
+        "name": "Condition | Default App | Fixed Duration | Everyone Audience",
+        "type": "HELPER",
+        "screenshotURL": "https://d78vv2h34ll3s.cloudfront.net/static/catalog/workflows/oig_access_request_conditions/resources/0585b8fb85985b813b11913933f31f31f31f.png"
+      },
+      {
+        "id": "9e941086-dd04-4f58-9f0f-2026eca6068f",
+        "name": "Condition | Default App | Variable Duration | Group(s) audience",
+        "type": "HELPER",
+        "screenshotURL": "https://d78vv2h34ll3s.cloudfront.net/static/catalog/workflows/oig_access_request_conditions/resources/0587b85ba5b05381bb13919913f21f31f31f.png"
+      },
+      {
+        "id": "86d5170e-2558-47b8-85ee-b98a2ab46f37",
+        "name": "Create Group Condition | Fixed Duration | Everyone",
+        "type": "HELPER",
+        "screenshotURL": "https://d78vv2h34ll3s.cloudfront.net/static/catalog/workflows/oig_access_request_conditions/resources/0585b87ba1b81b81bb11911f19f21f31f31f.png"
+      },
+      {
+        "id": "456f95f3-f18c-478e-9b4f-d24c3f7ae0ef",
+        "name": "Create Bundle Condition | Variable duration | Grp Audience",
+        "type": "HELPER",
+        "screenshotURL": "https://d78vv2h34ll3s.cloudfront.net/static/catalog/workflows/oig_access_request_conditions/resources/0585b87ba1b81b81bb11911f13f11f01f31f.png"
+      },
+      {
+        "id": "1b4279e8-6768-4327-bdab-4dc3b521a612",
+        "name": "Create Bundle Condition | Variable Duration | Everyone",
+        "type": "HELPER",
+        "screenshotURL": "https://d78vv2h34ll3s.cloudfront.net/static/catalog/workflows/oig_access_request_conditions/resources/0585b87ba1b81b81bb11913f11f31f31f31f.png"
+      },
+      {
+        "id": "4d409c7f-3d3c-4909-aaf3-e328d60d3ef6",
+        "name": "Create Bundle Condition | Fixed Duration | Everyone",
+        "type": "HELPER",
+        "screenshotURL": "https://d78vv2h34ll3s.cloudfront.net/static/catalog/workflows/oig_access_request_conditions/resources/0585b87ba1b81b81bb19911f11f31f31f31f.png"
+      },
+      {
+        "id": "97f4fc98-9ed0-4698-93b8-924a0f365096",
+        "name": "Create Bundle Condition | Fixed duration | Grp Audience",
+        "type": "HELPER",
+        "screenshotURL": "https://d78vv2h34ll3s.cloudfront.net/static/catalog/workflows/oig_access_request_conditions/resources/0585b87ba1b81b81bb19911f11f01f11f31f.png"
+      },
+      {
+        "id": "517b2c55-4353-4500-95b3-8d37aeed4743",
+        "name": "Create Group Condition | Permanent Access | Everyone",
+        "type": "HELPER",
+        "screenshotURL": "https://d78vv2h34ll3s.cloudfront.net/static/catalog/workflows/oig_access_request_conditions/resources/0585b87ba1985b81bb1191b913f11f01f31f.png"
+      },
+      {
+        "id": "b730edfd-eb1d-483b-b8cb-3ad639ef5543",
+        "name": "Create Group Condition | Permanent Access | Grp Audience",
+        "type": "HELPER",
+        "screenshotURL": "https://d78vv2h34ll3s.cloudfront.net/static/catalog/workflows/oig_access_request_conditions/resources/0585b87ba1b81b81bb11911f13f11f11f01f.png"
+      },
+      {
+        "id": "56748aa2-5b18-408b-99c5-60d5417039df",
+        "name": "Create Group Condition | Fixed duration | Grp Audience",
+        "type": "HELPER",
+        "screenshotURL": "https://d78vv2h34ll3s.cloudfront.net/static/catalog/workflows/oig_access_request_conditions/resources/0585b87ba1b81b81bb11913f11f11f01f11f.png"
+      },
+      {
+        "id": "eeb11ad4-6412-413a-95a5-fdfe6afb2475",
+        "name": "Create Group Condition | Variable Duration | Everyone",
+        "type": "HELPER",
+        "screenshotURL": "https://d78vv2h34ll3s.cloudfront.net/static/catalog/workflows/oig_access_request_conditions/resources/0585b87ba1b81b81bb11919f11f21f31f31f.png"
+      },
+      {
+        "id": "319e3721-d6f5-4ef0-a958-80d47e0df91f",
+        "name": "Condition | Default App | Permanent Access | Everyone",
+        "type": "HELPER",
+        "screenshotURL": "https://d78vv2h34ll3s.cloudfront.net/static/catalog/workflows/oig_access_request_conditions/resources/0586b8dbcd185b85b81391391f901931f31f.png"
+      },
+      {
+        "id": "6cf26dee-aebc-446a-b9a6-e40ab6cd4541",
+        "name": "Condition | Default App | Permanent Access | Group(s) Audience",
+        "type": "HELPER",
+        "screenshotURL": "https://d78vv2h34ll3s.cloudfront.net/static/catalog/workflows/oig_access_request_conditions/resources/0586b85be1985b87b813913b1b911f11f01f.png"
+      }
+    ],
+    "helperFlowsCount": 18
+  },
+  "links": [
+    {
+      "destination": "https://github.com/okta/workflows-templates/blob/master/workflows/oig_access_request_conditions/readme.md",
+      "title": "Setup Documentation"
+    }
+  ]
+}
