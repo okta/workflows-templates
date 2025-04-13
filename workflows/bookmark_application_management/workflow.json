@@ -1,8 +1,8 @@
 {
   "name": "bookmark_application_management",
   "title": "Bookmark Application Management",
-  "description": "This template contains flows for managing bookmark apps in Okta ",
-  "connectors": [],
+  "description":"This template contains flows for managing bookmark apps in Okta, including creating new apps, updating existing ones, and deactivating them when no longer needed.",
+  "connectors": ["okta"],
   "details": {
     "stashCount": 1,
     "flowCount": 2,
