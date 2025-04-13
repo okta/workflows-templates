@@ -1,8 +1,10 @@
 {
   "name": "bookmark_application_management",
   "title": "Bookmark Application Management",
-  "description":"This template contains flows for managing bookmark apps in Okta, including creating new apps, updating existing ones, and deactivating them when no longer needed.",
-  "connectors": ["okta"],
+  "description": "This template contains flows for managing bookmark apps in Okta, including creating new apps, updating existing ones, and deactivating them when no longer needed.",
+  "connectors": [
+    "okta"
+  ],
   "details": {
     "stashCount": 1,
     "flowCount": 2,
@@ -17,7 +19,7 @@
         "id": "fcb2ad6a-676c-4b02-bf2c-56a0be878c05",
         "name": "1.0 Bookmark Application Management - Parent Flow",
         "type": "MAIN",
-        "screenshotURL": "https://d78vv2h34ll3s.cloudfront.net/static/catalog/workflows/bookmark_application_management/resources/0e05e85fa2f82b83d8ec0ff1ff1ff1ff1ff1.png"
+        "screenshotURL": "https://d78vv2h34ll3s.cloudfront.net/static/catalog/workflows/bookmark_application_management/resources/0443dc5f633437037c350f51f11f11f11f11.png"
       }
     ],
     "helperFlowsCount": 1,
@@ -25,7 +27,7 @@
   },
   "links": [
     {
-      "destination":"https://github.com/okta/workflows-templates/blob/master/workflows/bookmark_application_management/readme.md",
+      "destination": "https://github.com/okta/workflows-templates/blob/master/workflows/bookmark_application_management/readme.md",
       "title": "Setup Documentation"
     }
   ]
