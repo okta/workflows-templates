@@ -1,0 +1,70 @@
+{
+  "name": "entra_id_configuration_export_and_migration_to_okt",
+  "title": "Entra ID Configuration Export & Migration to Okta",
+  "description": "This template contains flows for exporting app configurations and Conditional Access Policies from Entra ID, including data such as ACS/redirect URL, Entity ID, Group Assignments, policy state, conditions, and controls, and configuring apps in Okta based on the exported data, including creating apps (OIN, Custom SAML, Custom OIDC), creating Assignment Groups if needed, and assigning the group to the app.",
+  "connectors": [
+    "okta"
+  ],
+  "details": {
+    "stashCount": 2,
+    "flowCount": 8,
+    "flos": [
+      {
+        "id": "3e7b047d-9999-4782-beb2-5776f18e7c0e",
+        "name": "1.1 Get EntraID Application Information - Child Flow",
+        "type": "HELPER",
+        "screenshotURL": "https://d78vv2h34ll3s.cloudfront.net/static/catalog/workflows/entra_id_configuration_export_and_migration_to_okt/resources/010ef8ef4a90e94ef0ff0ff0ffcffcffcffc.png"
+      },
+      {
+        "id": "d2991855-3130-4bdf-bc8d-b97753772d3d",
+        "name": "1.2 Get EntraID Application Group Information - Child Flow",
+        "type": "HELPER",
+        "screenshotURL": "https://d78vv2h34ll3s.cloudfront.net/static/catalog/workflows/entra_id_configuration_export_and_migration_to_okt/resources/464de45785ec4ec44c4c44f44fc0ff7ff3ff.png"
+      },
+      {
+        "id": "268a89a3-76da-4dae-8dcc-f8306c04e8ad",
+        "name": "3.1 Configure Applications in Okta - Child Flow",
+        "type": "HELPER",
+        "screenshotURL": "https://d78vv2h34ll3s.cloudfront.net/static/catalog/workflows/entra_id_configuration_export_and_migration_to_okt/resources/813a12faef28328fa8ba85ee8888089f99f9.png"
+      },
+      {
+        "id": "dd950aec-615c-44aa-9c48-3faffde4542d",
+        "name": "2.1 Get EntraID Conditional Access Policies - Child Flow",
+        "type": "HELPER",
+        "screenshotURL": "https://d78vv2h34ll3s.cloudfront.net/static/catalog/workflows/entra_id_configuration_export_and_migration_to_okt/resources/444c54f7c730734734730734f30311f11ff1.png"
+      },
+      {
+        "id": "475d159d-17c0-46cc-afa4-8df52ab41403",
+        "name": "3.2 Configure Applications in Okta - Child Flow",
+        "type": "HELPER",
+        "screenshotURL": "https://d78vv2h34ll3s.cloudfront.net/static/catalog/workflows/entra_id_configuration_export_and_migration_to_okt/resources/20cfe0f2c920fe1fe1fe1fe1fe1fe1fe1fe1.png"
+      },
+      {
+        "id": "08ab97ca-40c4-4cd0-864d-c72c95528783",
+        "name": "1.0 Get EntraID Application Information - Parent Flow",
+        "type": "HELPER",
+        "screenshotURL": "https://d78vv2h34ll3s.cloudfront.net/static/catalog/workflows/entra_id_configuration_export_and_migration_to_okt/resources/1109f0fbaf106847f2730f30f30f33f33f33.png"
+      },
+      {
+        "id": "6f0b9c59-15df-478c-9e26-593bf0f75f6d",
+        "name": "3.0 Configure Applications in Okta - Parent Flow",
+        "type": "MAIN",
+        "screenshotURL": "https://d78vv2h34ll3s.cloudfront.net/static/catalog/workflows/entra_id_configuration_export_and_migration_to_okt/resources/02c3f43f43a03a0f8ff8ffaff8ff8ffaff8f.png"
+      },
+      {
+        "id": "ab7b4e44-8e64-40de-bf6f-f5d132dd24b1",
+        "name": "2.0 Get EntraID Conditional Access Policies - Parent Flow",
+        "type": "HELPER",
+        "screenshotURL": "https://d78vv2h34ll3s.cloudfront.net/static/catalog/workflows/entra_id_configuration_export_and_migration_to_okt/resources/1008fcfbc58878c7b87b87b8fb8fb9fb9ff9.png"
+      }
+    ],
+    "helperFlowsCount": 7,
+    "mainFlowsCount": 1
+  },
+  "links": [
+    {
+      "title": "Setup Documentation",
+      "destination": "https://github.com/okta/workflows-templates/blob/master/workflows/entra_id_configuration_export_and_migration_to_okt/readme.md"
+    }
+  ]
+}
