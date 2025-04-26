@@ -10,19 +10,19 @@
   "details": {
     "flos": [
       {
-        "id": "9723230b-7efe-40e2-ba74-fc9c62488a7a",
+        "id": "e309311c-8615-4adb-b12b-b8d2c159e6dd",
         "name": "Exported Notification Flow",
         "type": "MAIN",
         "screenshotURL": "https://d78vv2h34ll3s.cloudfront.net/static/catalog/workflows/flow_folder_versioning_github/resources/0cYyULRjB8Uui5lY9UFvnw38xKgOBZJ3ncNOjUSzyX4.png"
       },
       {
-        "id": "5927607d-3025-44d5-b946-948420399aef",
+        "id": "93403c4a-2ff9-4e1d-8cdb-0a04de4457d4",
         "name": "Export Flow and Open PR in Github",
         "type": "HELPER",
         "screenshotURL": "https://d78vv2h34ll3s.cloudfront.net/static/catalog/workflows/flow_folder_versioning_github/resources/KL-gHCAMOvvTqvjGo0bLH9pvGTJzxotvZpdiv9s9564.png"
       },
       {
-        "id": "2a3eb9bd-0721-4c7a-9102-1dbe783ff1e3",
+        "id": "8babc97e-949a-4aad-94ae-afdd23849f0b",
         "name": "Export Flow and Make Commit in Github",
         "type": "HELPER",
         "screenshotURL": "https://d78vv2h34ll3s.cloudfront.net/static/catalog/workflows/flow_folder_versioning_github/resources/-jJFO47afZr_ZQ7oS051TdfOy9TKWWxqzItSKeu5brc.png"
