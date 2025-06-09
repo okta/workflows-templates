@@ -74,7 +74,7 @@
   "links": [
     {
        "title": "Setup Documentation",
-    "destination": "https://github.com/okta/workflows-templates/blob/master/workflows/identity_security_posture_management/readme.md",
+    "destination": "https://github.com/okta/workflows-templates/blob/master/workflows/identity_security_posture_management/readme.md"
 
     }
   ]
