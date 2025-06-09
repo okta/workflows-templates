@@ -1,0 +1,81 @@
+{
+  "name": "identity_security_posture_management",
+  "title": "Identity Security Posture Management",
+  "description": "This flow acts as a **routing mechanism** for ISPM-detected issues. It receives a **webhook event** from ISPM, extracts key values from the incoming payload, and routes the event to the appropriate **remediation helper flow** based on customizable logic.It allows organizations to **automate security remediation** based on the type of issue and the product where it originated (e.g., Okta, Entra ID, Google Workspace, etc).",
+  "connectors": [
+    "office365admin",
+    "okta",
+    "googledirectory",
+    "salesforce2_29",
+    "gmail"
+  ],
+  "details": {
+    "stashCount": 6,
+    "flowCount": 9,
+    "flos": [
+      {
+        "id": "4ddd12d6-6363-4d10-a251-e008e2aad7fa",
+        "name": "2.2 Suspend Okta User",
+        "type": "HELPER",
+        "screenshotURL": "https://d78vv2h34ll3s.cloudfront.net/static/catalog/workflows/identity_security_posture_management/resources/c00e74ef46306907b778378378758f18fc0f.png"
+      },
+      {
+        "id": "021dc121-1be9-4216-a95a-2b058ce00ec5",
+        "name": "2.1 Disable Entra ID User",
+        "type": "HELPER",
+        "screenshotURL": "https://d78vv2h34ll3s.cloudfront.net/static/catalog/workflows/identity_security_posture_management/resources/c00e3cef46346307b378378378758f18fc0f.png"
+      },
+      {
+        "id": "ba528460-db6d-4f9a-9fea-9b10085e4acc",
+        "name": "2.3 Suspend Google Workspace User",
+        "type": "HELPER",
+        "screenshotURL": "https://d78vv2h34ll3s.cloudfront.net/static/catalog/workflows/identity_security_posture_management/resources/c00f1afb87187407d3743343743747347f07.png"
+      },
+      {
+        "id": "42926660-68cd-4e28-93ad-810f71f1dfa7",
+        "name": "4.1 Okta - Reset User Password Upon Next Login",
+        "type": "HELPER",
+        "screenshotURL": "https://d78vv2h34ll3s.cloudfront.net/static/catalog/workflows/identity_security_posture_management/resources/c00e74fb46106337b378378378358340f1ff.png"
+      },
+      {
+        "id": "ef810aef-9f18-411f-aac0-de1753898fb9",
+        "name": "3.1 Entra ID - Add user to a group (Enforce MFA / Enroll factors)",
+        "type": "HELPER",
+        "screenshotURL": "https://d78vv2h34ll3s.cloudfront.net/static/catalog/workflows/identity_security_posture_management/resources/c00f1af3a75871071b7033c37c3741341f47.png"
+      },
+      {
+        "id": "d5983489-f10f-4fc4-9c9a-6e7dfbb6a1b8",
+        "name": "3.2 Okta - Add user to a group (Enforce MFA / Enroll factors)",
+        "type": "HELPER",
+         "screenshotURL": "https://d78vv2h34ll3s.cloudfront.net/static/catalog/workflows/identity_security_posture_management/resources/400f38fda7007137d37437417437477073ff.png"
+      },
+      {
+        "id": "f1b4dbfd-3227-4c77-8538-9e7ee0e659b3",
+        "name": "2.4 Deactivate Salesforce User",
+        "type": "HELPER",
+        "screenshotURL": "https://d78vv2h34ll3s.cloudfront.net/static/catalog/workflows/identity_security_posture_management/resources/c00e3de746306307b778378378758f58f00f.png"
+      },
+      {
+        "id": "ccdf4c93-12ef-4f90-a5a3-b7e3586ffbb3",
+        "name": "4.3 Entra ID - Force Change Password Next Signin",
+        "type": "HELPER",
+        "screenshotURL": "https://d78vv2h34ll3s.cloudfront.net/static/catalog/workflows/identity_security_posture_management/resources/802d0efe664278bf037037017c73c3fc3803.png"
+      },
+      {
+        "id": "b75b0130-77b5-4180-a426-100534898723",
+        "name": "1.0 ISPM Event Routing Flow",
+        "type": "MAIN",
+        "screenshotURL": "https://d78vv2h34ll3s.cloudfront.net/static/catalog/workflows/identity_security_posture_management/resources/820f36da6c92c96497015c1fc1fc1ff9ff9f.png"
+      }
+    ],
+    "helperFlowsCount": 8,
+    "mainFlowsCount": 1
+  },
+  "links": [
+    {
+       "title": "Setup Documentation",
+    "destination": "https://github.com/okta/workflows-templates/blob/master/workflows/identity_security_posture_management/readme.md"
+
+    }
+  ]
+}
