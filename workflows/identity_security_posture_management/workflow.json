@@ -40,12 +40,14 @@
       {
         "id": "ef810aef-9f18-411f-aac0-de1753898fb9",
         "name": "3.1 Entra ID - Add user to a group (Enforce MFA / Enroll factors)",
-        "type": "HELPER"
+        "type": "HELPER",
+        "screenshotURL": "https://d78vv2h34ll3s.cloudfront.net/static/catalog/workflows/identity_security_posture_management/resources/c00f1af3a75871071b7033c37c3741341f47.png"
       },
       {
         "id": "d5983489-f10f-4fc4-9c9a-6e7dfbb6a1b8",
         "name": "3.2 Okta - Add user to a group (Enforce MFA / Enroll factors)",
-        "type": "HELPER"
+        "type": "HELPER",
+         "screenshotURL": "https://d78vv2h34ll3s.cloudfront.net/static/catalog/workflows/identity_security_posture_management/resources/400f38fda7007137d37437417437477073ff.png"
       },
       {
         "id": "f1b4dbfd-3227-4c77-8538-9e7ee0e659b3",
@@ -71,8 +73,9 @@
   },
   "links": [
     {
-      "destination": "",
-      "title": ""
+       "title": "Setup Documentation",
+    "destination": "https://github.com/okta/workflows-templates/blob/master/workflows/identity_security_posture_management/readme.md",
+
     }
   ]
 }
