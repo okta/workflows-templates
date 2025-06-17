@@ -229,7 +229,10 @@
         "screenshotURL": "https://d78vv2h34ll3s.cloudfront.net/static/catalog/workflows/okta_identity_governance_access_certification_camp/resources/150fc8f58510f0cfe4d40555d4dcc4ce4ff5.png"
       }
     ],
-    "helperFlowsCount": 37
+    "helperFlowsCount": 37,
+    "tags": [
+      "governance"
+    ]
   },
   "links": [
     {

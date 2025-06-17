@@ -22,7 +22,10 @@
       }
     ],
     "flowCount": 2,
-    "mainFlowsCount": 2
+    "mainFlowsCount": 2,
+    "tags": [
+      "security"
+    ]
   },
   "links": [
     {

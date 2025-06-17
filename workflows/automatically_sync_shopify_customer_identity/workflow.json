@@ -42,7 +42,10 @@
     "flowCount": 5,
     "helperFlowsCount": 2,
     "mainFlowsCount": 3,
-    "stashCount": 2
+    "stashCount": 2,
+    "tags": [
+      "customer-identity-cloud"
+    ]
   },
   "links": [
     {

@@ -13,7 +13,10 @@
         "screenshotURL": "https://d78vv2h34ll3s.cloudfront.net/static/catalog/workflows/implement_log_streaming_with_okta_workflows/resources/1e0fe07e07e07c07e07c00c06ff03f1bf73f.png"
       }
     ],
-    "mainFlowsCount": 1
+    "mainFlowsCount": 1,
+    "tags": [
+      "security"
+    ]
   },
   "links": [
     {

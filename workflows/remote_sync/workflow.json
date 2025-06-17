@@ -46,7 +46,10 @@
     ],
     "flowCount": 6,
     "helperFlowsCount": 3,
-    "mainFlowsCount": 3
+    "mainFlowsCount": 3,
+    "tags": [
+      "lifecycle-management"
+    ]
   },
   "links": [
     {

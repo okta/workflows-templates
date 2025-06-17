@@ -43,7 +43,10 @@
       }
     ],
     "helperFlowsCount": 2,
-    "mainFlowsCount": 3
+    "mainFlowsCount": 3,
+    "tags": [
+      "security"
+    ]
   },
   "links": [
     {

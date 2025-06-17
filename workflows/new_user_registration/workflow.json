@@ -41,7 +41,10 @@
     ],
     "flowCount": 5,
     "helperFlowsCount": 4,
-    "mainFlowsCount": 1
+    "mainFlowsCount": 1,
+    "tags": [
+      "customer-identity-cloud"
+    ]
   },
   "links": [
     {

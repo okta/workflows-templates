@@ -227,7 +227,10 @@
       }
     ],
     "helperFlowsCount": 27,
-    "mainFlowsCount": 9
+    "mainFlowsCount": 9,
+    "tags": [
+      "governance"
+    ]
   },
   "links": [
     {

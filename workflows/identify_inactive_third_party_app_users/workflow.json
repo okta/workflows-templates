@@ -42,7 +42,11 @@
     "flowCount": 5,
     "helperFlowsCount": 3,
     "mainFlowsCount": 2,
-    "stashCount": 1
+    "stashCount": 1,
+    "tags": [
+      "lifecycle-management",
+      "governance"
+    ]
   },
   "links": [
     {

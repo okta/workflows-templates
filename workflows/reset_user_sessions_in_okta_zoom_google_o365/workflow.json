@@ -17,7 +17,11 @@
         "screenshotURL": "https://d78vv2h34ll3s.cloudfront.net/static/catalog/workflows/reset_user_sessions_in_okta_zoom_google_o365/resources/200d53fb5812b98eba0303b1fb7fa7fa7f87.png"
       }
     ],
-    "helperFlowsCount": 1
+    "helperFlowsCount": 1,
+    "tags": [
+      "lifecycle-management",
+      "security"
+    ]
   },
   "links": [
     {

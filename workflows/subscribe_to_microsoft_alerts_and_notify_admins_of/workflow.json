@@ -22,7 +22,10 @@
         "screenshotURL": "https://d78vv2h34ll3s.cloudfront.net/static/catalog/workflows/subscribe_to_microsoft_alerts_and_notify_admins_of/resources/3fe801bc1b808a5f1dc17c07d0db01b11ffd.png"
       }
     ],
-    "mainFlowsCount": 2
+    "mainFlowsCount": 2,
+    "tags": [
+      "security"
+    ]
   },
   "links": [
     {

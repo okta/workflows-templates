@@ -20,7 +20,10 @@
     ],
     "flowCount": 2,
     "helperFlowsCount": 2,
-    "stashCount": 1
+    "stashCount": 1,
+    "tags": [
+      "lifecycle-management"
+    ]
   },
   "links": [
     {

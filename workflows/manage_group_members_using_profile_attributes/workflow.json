@@ -36,7 +36,10 @@
     "helperFlowsCount": 4,
     "stashCount": 1,
     "tags": [
-      "most-popular"
+      "most-popular",
+      "lifecycle-management",
+      "governance",
+      "security"
     ]
   },
   "links": [
