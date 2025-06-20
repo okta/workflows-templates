@@ -30,7 +30,10 @@
     ],
     "flowCount": 3,
     "mainFlowsCount": 1,
-    "helperFlowsCount": 2
+    "helperFlowsCount": 2,
+    "tags": [
+      "security"
+    ]
   },
   "links": [
     {

@@ -15,7 +15,10 @@
         "screenshotURL": "https://d78vv2h34ll3s.cloudfront.net/static/catalog/workflows/send_a_slack_message_with_blocks/resources/428378f6a26c0f83ec084c93cf78f18ff8ff.png"
       }
     ],
-    "mainFlowsCount": 1
+    "mainFlowsCount": 1,
+    "tags": [
+      "lifecycle-management"
+    ]
   },
   "links": [
     {

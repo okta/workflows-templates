@@ -16,7 +16,10 @@
       }
     ],
     "flowCount": 1,
-    "mainFlowsCount": 1
+    "mainFlowsCount": 1,
+    "tags": [
+      "lifecycle-management"
+    ]
   },
   "links": [
     {

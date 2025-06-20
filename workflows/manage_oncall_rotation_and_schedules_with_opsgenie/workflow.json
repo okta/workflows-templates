@@ -42,7 +42,10 @@
     "flowCount": 5,
     "helperFlowsCount": 4,
     "mainFlowsCount": 1,
-    "stashCount": 1
+    "stashCount": 1,
+    "tags": [
+      "governance"
+    ]
   },
   "links": [
     {

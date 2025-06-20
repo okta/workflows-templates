@@ -18,7 +18,10 @@
     ],
     "flowCount": 1,
     "mainFlowsCount": 1,
-    "stashCount": 1
+    "stashCount": 1,
+    "tags": [
+      "governance"
+    ]
   },
   "links": [
     {

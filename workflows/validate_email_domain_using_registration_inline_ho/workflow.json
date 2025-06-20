@@ -16,7 +16,10 @@
         "screenshotURL": "https://d78vv2h34ll3s.cloudfront.net/static/catalog/workflows/validate_email_domain_using_registration_inline_ho/resources/00e9a3ee33c13c1fc1fe1fe1fe1fe1fe1fe5.png"
       }
     ],
-    "mainFlowsCount": 1
+    "mainFlowsCount": 1,
+    "tags": [
+      "security"
+    ]
   },
   "links": [
     {

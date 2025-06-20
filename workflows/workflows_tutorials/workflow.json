@@ -167,7 +167,10 @@
       }
     ],
     "helperFlowsCount": 11,
-    "mainFlowsCount": 15
+    "mainFlowsCount": 15,
+    "tags": [
+      "lifecycle-management"
+    ]
   },
   "links": [
     {

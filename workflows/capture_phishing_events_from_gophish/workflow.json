@@ -23,7 +23,10 @@
     "flowCount": 2,
     "helperFlowsCount": 1,
     "mainFlowsCount": 1,
-    "stashCount": 1
+    "stashCount": 1,
+    "tags": [
+      "security"
+    ]
   },
   "links": [
     {

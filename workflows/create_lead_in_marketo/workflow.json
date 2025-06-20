@@ -15,7 +15,10 @@
         "screenshotURL": "https://d78vv2h34ll3s.cloudfront.net/static/catalog/workflows/create_lead_in_marketo/resources/480ddce9c4dc48c5dc1801dd5fcffcffcfff.png"
       }
     ],
-    "mainFlowsCount": 1
+    "mainFlowsCount": 1,
+    "tags": [
+      "customer-identity-cloud"
+    ]
   },
   "links": [
     {

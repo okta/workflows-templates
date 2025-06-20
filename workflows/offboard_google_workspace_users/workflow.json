@@ -48,7 +48,10 @@
         "screenshotURL": "https://d78vv2h34ll3s.cloudfront.net/static/catalog/workflows/offboard_google_workspace_users/resources/240fc8fd86686687e8c00e4fe0fe1fe1fe9f.png"
       }
     ],
-    "helperFlowsCount": 6
+    "helperFlowsCount": 6,
+    "tags": [
+      "lifecycle-management"
+    ]
   },
   "links": [
     {
