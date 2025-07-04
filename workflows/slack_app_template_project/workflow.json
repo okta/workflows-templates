@@ -1,0 +1,63 @@
+{
+  "name": "slack_app_template_project",
+  "title": "Slack App Template Project",
+  "description": "This Slack app template streamlines the creation of shortcut and slash commands by leveraging a custom Slack connector. It integrates with Slack's Open a View, Update a View, and Post a Message endpoints to provide rich interactive experiences.",
+  "connectors": [
+    "okta"
+  ],
+  "details": {
+    "flowCount": 7,
+    "flos": [
+      {
+        "id": "e921f08e-2ffa-48c6-8121-d9cec69d8c95",
+        "name": "Stage 5 - Action View Submission",
+        "type": "HELPER",
+        "screenshotURL": "https://d78vv2h34ll3s.cloudfront.net/static/catalog/workflows/slack_app_template_project/resources/920d64dea460ce3cb3cb3cffcbffbfffff8f.png"
+      },
+      {
+        "id": "e75c3b1c-947e-4c74-ae2e-25b01f3aa92f",
+        "name": "Stage 2 - Shortcut",
+        "type": "HELPER",
+        "screenshotURL": "https://d78vv2h34ll3s.cloudfront.net/static/catalog/workflows/slack_app_template_project/resources/222e2af6a01c63ce3ec7fc7fc7fc7fc7fc7f.png"
+      },
+      {
+        "id": "956d6d31-0d20-4bcf-b383-e32650e41250",
+        "name": "Stage 4 - Submission",
+        "type": "HELPER",
+        "screenshotURL": "https://d78vv2h34ll3s.cloudfront.net/static/catalog/workflows/slack_app_template_project/resources/818c3ae3e418c0fcafcebcfbcebfebfebfe3.png"
+      },
+      {
+        "id": "53bedaeb-4351-41b1-9629-5d0b6784de44",
+        "name": "Stage 3 - Block Actions",
+        "type": "HELPER",
+        "screenshotURL": "https://d78vv2h34ll3s.cloudfront.net/static/catalog/workflows/slack_app_template_project/resources/99eec09c21c0fc1fc1fc0fc0fc0fc0fc0fc0.png"
+      },
+      {
+        "id": "7641574e-187d-49da-96b2-f80155102445",
+        "name": "[Helper] OktaWho Processor",
+        "type": "HELPER",
+        "screenshotURL": "https://d78vv2h34ll3s.cloudfront.net/static/catalog/workflows/slack_app_template_project/resources/55d41dc0d50f50c55e003c1bf1ff1ff1ff1f.png"
+      },
+      {
+        "id": "cf9c077b-efc7-4fa6-992c-a99b47c63868",
+        "name": "Stage 1 - Starter",
+        "type": "MAIN",
+        "screenshotURL": "https://d78vv2h34ll3s.cloudfront.net/static/catalog/workflows/slack_app_template_project/resources/3fea10f02e10f50f91b00b019ff9019c19ff.png"
+      },
+      {
+        "id": "a0ff4c6f-e102-4f97-accb-645e676e82e4",
+        "name": "[SlashCommand] Okta Slack App - /oktawho",
+        "type": "MAIN",
+        "screenshotURL": "https://d78vv2h34ll3s.cloudfront.net/static/catalog/workflows/slack_app_template_project/resources/292f98f90b88bd69881883f83f93f93f9ff9.png"
+      }
+    ],
+    "helperFlowsCount": 5,
+    "mainFlowsCount": 2
+  },
+  "links": [
+    {
+      "title": "Setup Documentation",
+      "destination": "https://github.com/okta/workflows-templates/blob/master/workflows/slack_app_template_project/readme.md"
+    }
+  ]
+}
