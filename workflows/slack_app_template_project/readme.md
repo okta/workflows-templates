@@ -886,7 +886,7 @@ The following flows need edits to certain cards to finalize the process:
 </details>
 
 <details>
-<summary> Stage 3 - Block Actions </summary>
+<summary> Stage 5 - Active View Submission </summary>
 
 | Card| Change |
 | ---| --- |
