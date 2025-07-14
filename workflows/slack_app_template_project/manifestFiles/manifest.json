@@ -1,0 +1,51 @@
+{
+    "display_information": {
+        "name": "Okta Slack App"
+    },
+    "features": {
+        "bot_user": {
+            "display_name": "Okta Slack App",
+            "always_online": false
+        },
+        "shortcuts": [
+            {
+                "name": "Okta Lookup Slack App",
+                "type": "global",
+                "callback_id": "process_request",
+                "description": "Process a Request"
+            }
+        ],
+        "slash_commands": [
+            {
+                "command": "/oktalookup",
+                "url": "https://exmaple.com/slashcommandAPIURL",
+                "description": "Trigger an Okta user lookup",
+                "usage_hint": "user@domain.com",
+                "should_escape": false
+            }
+        ]
+    },
+    "oauth_config": {
+        "scopes": {
+            "bot": [
+                "commands",
+                "incoming-webhook",
+                "app_mentions:read",
+                "chat:write",
+                "im:history",
+                "reactions:read",
+                "users:read",
+                "users:read.email"
+            ]
+        }
+    },
+    "settings": {
+        "interactivity": {
+            "is_enabled": true,
+            "request_url": "https://example.com/interactivityAPIURL"
+        },
+        "org_deploy_enabled": false,
+        "socket_mode_enabled": false,
+        "token_rotation_enabled": false
+    }
+}
