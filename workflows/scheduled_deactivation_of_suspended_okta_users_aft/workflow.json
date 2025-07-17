@@ -1,0 +1,36 @@
+{
+  "name": "scheduled_deactivation_of_suspended_okta_users_aft",
+  "title": "Scheduled Deactivation of Suspended Okta Users (after X Days)",
+  "description": "This Okta Workflows solution automates the process of deactivating Okta users who have remained in a *SUSPENDED* status for a specified number of days. This helps enforce user lifecycle policies by ensuring that users suspended for an extended period are moved to a deactivated state.",
+  "connectors": [
+    "okta"
+  ],
+  "details": {
+    "tags": [
+      "introductory"
+    ],
+    "flowCount": 2,
+    "flos": [
+      {
+        "id": "a94d28cd-b3ee-4c32-beea-7200c27875b4",
+        "name": "Deactivate Suspended Users after x Days - Helper",
+        "type": "HELPER",
+        "screenshotURL": "https://d78vv2h34ll3s.cloudfront.net/static/catalog/workflows/scheduled_deactivation_of_suspended_okta_users_aft/resources/424ff4e607a07a87a87a078079d50f5ff1ff.png"
+      },
+      {
+        "id": "1bb734ba-9fb4-466a-824e-ae445bf3a2be",
+        "name": "Deactivate Suspended Users after x Days",
+        "type": "MAIN",
+        "screenshotURL": "https://d78vv2h34ll3s.cloudfront.net/static/catalog/workflows/scheduled_deactivation_of_suspended_okta_users_aft/resources/800ff4de4c82e8cfa8f00f38f3cf3cf7cffc.png"
+      }
+    ],
+    "helperFlowsCount": 1,
+    "mainFlowsCount": 1
+  },
+  "links": [
+    {
+      "title": "Setup Documentation",
+      "destination": "https://github.com/okta/workflows-templates/blob/master/workflows/scheduled_deactivation_of_suspended_okta_users_aft/readme.md"
+    }
+  ]
+}
