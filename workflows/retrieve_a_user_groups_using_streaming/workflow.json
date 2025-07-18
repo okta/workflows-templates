@@ -1,0 +1,36 @@
+{
+  "name": "retrieve_a_user_groups_using_streaming",
+  "title": "Retrieve a user's groups using streaming",
+  "description": "This flow helps retrieve all the groups a user is assigned to.",
+  "connectors": [
+    "okta"
+  ],
+  "details": {
+    "tags": [
+      "introductory"
+    ],
+    "flowCount": 2,
+    "flos": [
+      {
+        "id": "a77788bc-1fd7-4981-97e6-b74aced93984",
+        "name": "Get User Groups Streaming HELPER",
+        "type": "HELPER",
+        "screenshotURL": "https://d78vv2h34ll3s.cloudfront.net/static/catalog/workflows/retrieve_a_user_groups_using_streaming/resources/43867c63c67863867847807c47f43f43f1ff.png"
+      },
+      {
+        "id": "9483302a-294b-4b98-a3bf-e2344368070f",
+        "name": "Get User Groups Streaming PARENT",
+        "type": "MAIN",
+        "screenshotURL": "https://d78vv2h34ll3s.cloudfront.net/static/catalog/workflows/retrieve_a_user_groups_using_streaming/resources/02d3f0e332fc3a03e81e0fe8fe3fe3fe3fe3.png"
+      }
+    ],
+    "helperFlowsCount": 1,
+    "mainFlowsCount": 1
+  },
+  "links": [
+    {
+    "title": "Setup Documentation",
+    "destination": "https://github.com/okta/workflows-templates/blob/master/workflows/retrieve_a_user_groups_using_streaming/readme.md"
+    }
+  ]
+}
