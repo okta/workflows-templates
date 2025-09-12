@@ -1,7 +1,7 @@
 {
   "name": "onboard_and_offboard_with_office365",
-  "title": "Onboard and Offboard with Office 365 Admin",
-  "description": "This template allows you to disable a user in Office 365 Admin and then after a specified delay remove their assigned Office 365 licenses. Another part of the Flow will reactivate the user in Office 365 Admin and reassign the previously removed Office 365 Admin licenses.",
+  "title": "Onboard and Offboard with Microsoft 365 Admin",
+  "description": "This template allows you to disable a user in Microsoft 365 Admin and then after a specified delay remove their assigned Microsoft 365 licenses. Another part of the Flow will reactivate the user in Microsoft 365 Admin and reassign the previously removed Microsoft 365 Admin licenses.",
   "connectors": [
     "okta",
     "office365admin"
@@ -62,10 +62,6 @@
     ]
   },
   "links": [
-    {
-      "title": "Video Walk-through",
-      "destination": "https://www.youtube.com/watch?v=suBghMjJ43k"
-    },
     {
       "title": "Setup Documentation",
       "destination": "https://github.com/okta/workflows-templates/blob/master/workflows/onboard_and_offboard_with_office365/readme.md"
