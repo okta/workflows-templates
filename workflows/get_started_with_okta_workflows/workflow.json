@@ -1,35 +1,37 @@
 {
   "name": "get_started_with_okta_workflows",
   "title": "Get started with Okta Workflows",
-  "description": "This template contains specially curated introductory flows to help new users get familiarized with building flows. Discover what you can do with Workflows: schedule tasks, connect different apps together, and automate identity processes.",
-  "connectors": ["okta","gmail"],
+  "description": "This template contains specially curated introductory flows to help new users get familiarized with building flows. Discover what you can do with Workflows, such as schedule tasks, connect different apps together, and automate identity processes.",
+  "connectors": [
+    "okta"
+  ],
   "details": {
-    "stashCount": 1,
+    "stashCount": 2,
     "flowCount": 4,
     "flos": [
       {
-        "id": "a3aa2717-9df7-4eed-99cd-dd3362be22ae",
-        "name": "[Helper Flow for 3]: Check Last Login date and add to table",
+        "id": "442b8bd4-f066-4c7b-875a-ee34c7ee562e",
+        "name": "[Helper Flow for 3]. Check Last Login date and add to table",
         "type": "HELPER",
-        "screenshotURL": "https://d78vv2h34ll3s.cloudfront.net/static/catalog/workflows/get_started_with_okta_workflows/resources/003b33b1f6437433d14936c36c36c37ff000.png"
+        "screenshotURL": "https://d78vv2h34ll3s.cloudfront.net/static/catalog/workflows/get_started_with_okta_workflows/resources/800d7eb4e904fa47ac4e44e46e566467c7ff.png"
       },
       {
-        "id": "9b13f798-6f40-42b9-b48f-db62933b338e",
-        "name": "3: Identify inactive Okta users",
+        "id": "1fe1cf4a-8cf4-41fa-bdf9-ccd31cbe192a",
+        "name": "2. Get User Groups",
         "type": "MAIN",
-        "screenshotURL": "https://d78vv2h34ll3s.cloudfront.net/static/catalog/workflows/get_started_with_okta_workflows/resources/00b94bf4bf03f03e83f03f0ff07f07fcf000.png"
+        "screenshotURL": "https://d78vv2h34ll3s.cloudfront.net/static/catalog/workflows/get_started_with_okta_workflows/resources/0027fe29e2de55a55040073ef3ef3ff3ff3f.png"
       },
       {
-        "id": "27712c88-be17-435d-879d-8f4268295fee",
-        "name": "2: Send welcome email to Okta Workflow users",
+        "id": "e3c70c30-51a7-49d9-89e9-e0cdfd15f7da",
+        "name": "1. Hello World",
         "type": "MAIN",
-        "screenshotURL": "https://d78vv2h34ll3s.cloudfront.net/static/catalog/workflows/get_started_with_okta_workflows/resources/00b0e36f72a36836e36a37e77bf79f79f000.png"
+        "screenshotURL": "https://d78vv2h34ll3s.cloudfront.net/static/catalog/workflows/get_started_with_okta_workflows/resources/84146e6ee0e00fe3f41743503fc3fc3fcffe.png"
       },
       {
-        "id": "5f5357d5-6633-4a02-a6de-14f6ca8175e5",
-        "name": "1: Hello World",
+        "id": "88b54f19-6d1a-48d1-9b01-8f4d9f627d1c",
+        "name": "3. Identify inactive Okta users",
         "type": "MAIN",
-        "screenshotURL": "https://d78vv2h34ll3s.cloudfront.net/static/catalog/workflows/get_started_with_okta_workflows/resources/0871871f72832437f33f3ffffffffffff000.png"
+        "screenshotURL": "https://d78vv2h34ll3s.cloudfront.net/static/catalog/workflows/get_started_with_okta_workflows/resources/882ba2fb2682f82fc2e40fc2fc3fc1fc1ff3.png"
       }
     ],
     "helperFlowsCount": 1,
@@ -39,11 +41,9 @@
     ]
   },
   "links": [
-    
-      {
-        "title": "Setup Documentation",
-        "destination": "https://github.com/okta/workflows-templates/blob/master/workflows/get_started_with_okta_workflows/readme.md"
-      }
-    
+    {
+      "title": "Setup Documentation",
+      "destination": "https://github.com/okta/workflows-templates/blob/master/workflows/get_started_with_okta_workflows/readme.md"
+    }
   ]
 }
