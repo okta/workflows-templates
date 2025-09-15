@@ -1,0 +1,37 @@
+{
+  "name": "process_batched_okta_events_from_an_event_hook",
+  "title": "Process Batched Okta Events from an Event Hook",
+  "description": "This template provides a way for reliably processing events sent by an Okta event hook, especially when multiple events are batched into a single API call to your workflow endpoint. Okta event hooks can deliver a payload containing an array of individual event objects.",
+  "connectors": [
+    "okta"
+  ],
+  "details": {
+    "stashCount": 1,
+    "tags": [
+      "introductory"
+    ],
+    "flowCount": 2,
+    "flos": [
+      {
+        "id": "0a1052ff-2558-470a-b1df-4c5c7ae9687a",
+        "name": "Process Batched Events - Helper",
+        "type": "HELPER",
+        "screenshotURL": "https://d78vv2h34ll3s.cloudfront.net/static/catalog/workflows/process_batched_okta_events_from_an_event_hook/resources/450df44dc54c71c71c3047073cf3ff7ff3ff.png"
+      },
+      {
+        "id": "6502ff45-8512-4719-b917-50dade347ce4",
+        "name": "Process Batched Events",
+        "type": "MAIN",
+        "screenshotURL": "https://d78vv2h34ll3s.cloudfront.net/static/catalog/workflows/process_batched_okta_events_from_an_event_hook/resources/000bfeb2e8fc8ec8a41e81f85f87f97fd7fd.png"
+      }
+    ],
+    "helperFlowsCount": 1,
+    "mainFlowsCount": 1
+  },
+  "links": [
+    {
+      "title": "Setup Documentation",
+      "destination": "https://github.com/okta/workflows-templates/blob/master/workflows/process_batched_okta_events_from_an_event_hook/readme.md"
+    }
+  ]
+}
