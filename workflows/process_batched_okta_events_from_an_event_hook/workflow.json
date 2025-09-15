@@ -30,8 +30,8 @@
   },
   "links": [
     {
-    "title": "Setup Documentation",
-    "destination": "https://github.com/okta/workflows-templates/blob/master/workflows/process_batched_okta_events_from_an_event_hook/readme.md"
+      "title": "Setup Documentation",
+      "destination": "https://github.com/okta/workflows-templates/blob/master/workflows/process_batched_okta_events_from_an_event_hook/readme.md"
     }
   ]
 }
