@@ -1,0 +1,29 @@
+{
+  "name": "convert_application_assignment_scope_group_or_indi",
+  "title": "Convert Application Assignment Scope (GROUP or INDIVIDUAL)",
+  "description": "This template allows administrators to change an app assignment for a specific user to either GROUP or INDIVIDUAL (USER) scope. This is useful when you need to modify whether a user's access is derived from group memberships or assigned directly to them as an individual.",
+  "connectors": [
+    "okta"
+  ],
+  "details": {
+    "tags": [
+      "introductory"
+    ],
+    "flowCount": 1,
+    "flos": [
+      {
+        "id": "b8812bc9-0136-4351-abfd-e8f3b12f3387",
+        "name": "Convert APP Assignment",
+        "type": "MAIN",
+        "screenshotURL": "https://d78vv2h34ll3s.cloudfront.net/static/catalog/workflows/convert_application_assignment_scope_group_or_indi/resources/0807fe3965a46c87d84c04f8df8ff9ff9ff9.png"
+      }
+    ],
+    "mainFlowsCount": 1
+  },
+  "links": [
+    {
+      "title": "Setup Documentation",
+      "destination": "https://github.com/okta/workflows-templates/blob/master/workflows/convert_application_assignment_scope_group_or_indi/readme.md"
+    }
+  ]
+}
