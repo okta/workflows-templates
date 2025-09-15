@@ -1,0 +1,36 @@
+{
+  "name": "remove_user_from_all_non_built_in_okta_groups",
+  "title": "Remove User from All Non-Built-in Okta Groups",
+  "description": "This template automates the process of removing a specified user from all their Okta group memberships. It intelligently skipping built-in Okta groups (like `Everyone`) from which users typically can't be programmatically removed.",
+  "connectors": [
+    "okta"
+  ],
+  "details": {
+    "tags": [
+      "introductory"
+    ],
+    "flowCount": 2,
+    "flos": [
+      {
+        "id": "ed5f5085-032a-49f3-86f0-774184e96f14",
+        "name": "Remove User from all Groups - Helper",
+        "type": "HELPER",
+        "screenshotURL": "https://d78vv2h34ll3s.cloudfront.net/static/catalog/workflows/remove_user_from_all_non_built_in_okta_groups/resources/440dd4d7c4547547747107027f37813ff3ff.png"
+      },
+      {
+        "id": "9ce127a5-3ed3-4b02-b462-381a92174afc",
+        "name": "Remove User from all Groups",
+        "type": "MAIN",
+        "screenshotURL": "https://d78vv2h34ll3s.cloudfront.net/static/catalog/workflows/remove_user_from_all_non_built_in_okta_groups/resources/41417c6fc0f43d43f03f0ff0ff1ff1ff1ff1.png"
+      }
+    ],
+    "helperFlowsCount": 1,
+    "mainFlowsCount": 1
+  },
+  "links": [
+    {
+      "title": "Setup Documentation",
+      "destination": "https://github.com/okta/workflows-templates/blob/master/workflows/remove_user_from_all_non_built_in_okta_groups/readme.md"
+    }
+  ]
+}
