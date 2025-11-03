@@ -1,11 +1,17 @@
-# Slack App Template Project
+# Look up Okta users on Slack using shortcuts
 ## Overview
-Using Slack Apps with Okta Workflows processing allows an easy to prep no-code/low-code interface with nearly unlimited possibilities. Once the basic functionality is built, the opportunities for growth and further development are endless.
+This template is designed to enable you to look up users on Slack through shortcuts and slash commands. Specifically, it includes two commands defined in the manifest json file for querying user information from an Okta tenant: 
+- `/oktalookup`
+- Okta Lookup Slack App
+
+These functionalities are implemented using Slack API actions, such as `Open a View`, `Update a View`, and `Post a Message`. Because the Slack connector doesn't support these actions, you must create a custom Slack API connector to use them. 
 ## Setup Steps
 1. [Create a Slack app](#create-a-slack-app).
 2. [Create Slack app connector](#create-a-slack-app-connector)
-3. [Create flows for your Slack app connector](#build-slack-api-connectors-for-your-app).
-4. [Import the Okta Workflows project](#import-the-okta-workflows-project). 
+3. [Create flows for your Slack app connector](#create-flows-for-your-slack-connector).
+4. [Import the Okta Workflows project](#import-and-edit-the-okta-workflows-project). 
+5. [Test these flows](#testing-these-flows).
+6. [Supported Scopes](#supoorted-scopes).
 ## Create a Slack App
 Okta recommends downloading and editing the provided app manifest JSON file.
 1. Download the app manifest JSON file and changes names, descriptions, command triggers, and URLs. Save your changes.
@@ -886,7 +892,7 @@ The following flows need edits to certain cards to finalize the process:
 </details>
 
 <details>
-<summary> Stage 5 - Active View Submission </summary>
+<summary> Stage 3 - Block Actions </summary>
 
 | Card| Change |
 | ---| --- |
@@ -914,3 +920,17 @@ Once you've made the necessary edits, do the following:
     * Open the imported workflow.
     * Verify that all cards, connections, and settings are working.
     * Run a test to ensure the workflow functions as expected in the new workspace. 
+
+## Testing these flows
+- Test the slash command by typing `/oktalookup` follwed by the user's email in the text box  of a Slack channel. 
+- Test the Okta Lookup Slack App by opening it from Slack and selecting the **Lookup an Okta User** action and enter the email of the user whose details are to be retrieved. Note that the **Open a view**, **Update a view**, and **Post a message** cards are used for this fucntionality. 
+
+## Supoorted Scopes
+- `commands`
+- `incoming-webhook`
+- `app_mentions:read`
+- `chat:write`
+- `im:history`
+- `reactions:read`
+- `users:read`
+- `users:read.email`
