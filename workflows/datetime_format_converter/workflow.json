@@ -1,0 +1,33 @@
+{
+  "name": "datetime_format_converter",
+  "title": "DateTime Format Converter",
+  "description": "This template provides a reusable helper flow designed to convert a given DateTime object (typically provided as a string in a common parsable format, or as a numeric timestamp) into several standard DateTime formats",
+  "details": {
+    "tags": [
+      "introductory"
+    ],
+    "flowCount": 2,
+    "flos": [
+      {
+        "id": "5a679c16-a5a3-4bd0-a36c-c3eeee98451f",
+        "name": "dateTimeConverter [h]",
+        "type": "HELPER",
+        "screenshotURL": "https://d78vv2h34ll3s.cloudfront.net/static/catalog/workflows/datetime_format_converter/resources/1fec02fc0fb8c09c0b801c03dffc03c03dfd.png"
+      },
+      {
+        "id": "201090a7-eb8c-42de-ba89-904cf4bb84eb",
+        "name": "dateTimeConverter [p]",
+        "type": "MAIN",
+        "screenshotURL": "https://d78vv2h34ll3s.cloudfront.net/static/catalog/workflows/datetime_format_converter/resources/4540f46de0f40f43f4f40f41f41f01f01fc1.png"
+      }
+    ],
+    "helperFlowsCount": 1,
+    "mainFlowsCount": 1
+  },
+  "links": [
+    {
+    "title": "Setup Documentation",
+    "destination": "https://github.com/okta/workflows-templates/blob/master/workflows/datetime_format_converter/readme.md"
+    }
+  ]
+}
