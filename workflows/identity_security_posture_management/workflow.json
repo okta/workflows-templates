@@ -1,74 +1,67 @@
 {
   "name": "identity_security_posture_management",
   "title": "Identity Security Posture Management",
-  "description": "This flow acts as a **routing mechanism** for ISPM-detected issues. It receives a **webhook event** from ISPM, extracts key values from the incoming payload, and routes the event to the appropriate **remediation helper flow** based on customizable logic.It allows organizations to **automate security remediation** based on the type of issue and the product where it originated (e.g., Okta, Entra ID, Google Workspace, etc).",
+  "description": "This document outlines various automated workflows designed to respond to security issues detected by Okta Identity Security Posture Management (ISPM). These workflows leverage Okta Workflows to minimize security risks associated with privileged accounts, compromised credentials, and misconfigurations.",
   "connectors": [
     "office365admin",
     "okta",
     "googledirectory",
-    "salesforce2_29",
-    "gmail"
+    "salesforce2_29"
   ],
   "details": {
     "stashCount": 6,
-    "flowCount": 9,
+    "flowCount": 8,
     "flos": [
       {
-        "id": "274828eb-5524-4019-8b3f-7c6d7e99ab94",
-        "name": "3.1 Entra ID - Add user to a group (Enforce MFA / Enroll factors)",
-        "type": "HELPER",
-        "screenshotURL": "https://d78vv2h34ll3s.cloudfront.net/static/catalog/workflows/identity_security_posture_management/resources/c00e74ef46306907b778378378758f18fc0f.png"
-      },
-      {
-        "id": "a797bb6d-83fc-4f17-b1ed-def028520ea1",
-        "name": "3.2 Okta - Add user to a group (Enforce MFA / Enroll factors)",
-        "type": "HELPER",
-        "screenshotURL": "https://d78vv2h34ll3s.cloudfront.net/static/catalog/workflows/identity_security_posture_management/resources/c00e3cef46346307b378378378758f18fc0f.png"
-      },
-      {
-        "id": "bf0f3cc8-9105-4e18-bb29-38267790e36f",
-        "name": "2.1 Disable Entra ID User",
-        "type": "HELPER",
-        "screenshotURL": "https://d78vv2h34ll3s.cloudfront.net/static/catalog/workflows/identity_security_posture_management/resources/c00f1afb87187407d3743343743747347f07.png"
-      },
-      {
-        "id": "8ee638be-46fd-4be8-bc6f-ea0c0b6384f1",
-        "name": "2.2 Suspend Okta User",
-        "type": "HELPER",
-        "screenshotURL": "https://d78vv2h34ll3s.cloudfront.net/static/catalog/workflows/identity_security_posture_management/resources/c00e74fb46106337b378378378358340f1ff.png"
-      },
-      {
-        "id": "d7b8f2fe-e6b3-47e6-aae4-292b622e2570",
-        "name": "2.4 Deactivate Salesforce User",
-        "type": "HELPER",
-        "screenshotURL": "https://d78vv2h34ll3s.cloudfront.net/static/catalog/workflows/identity_security_posture_management/resources/c00f1af3a75871071b7033c37c3741341f47.png"
-      },
-      {
-        "id": "59f897d5-3014-4302-8f0b-716456c52f9b",
+        "id": "5f8c345a-667f-4d64-9f44-7b71d9d6148e",
         "name": "4.1 Okta - Reset User Password Upon Next Login",
         "type": "HELPER",
-        "screenshotURL": "https://d78vv2h34ll3s.cloudfront.net/static/catalog/workflows/identity_security_posture_management/resources/400f38fda7007137d37437417437477073ff.png"
+        "screenshotURL": "https://d78vv2h34ll3s.cloudfront.net/static/catalog/workflows/identity_security_posture_management/resources/c00eb4e756b06b463320379379358f18fdef.png"
       },
       {
-        "id": "01d4b1d7-1b93-4bd6-9745-23cab48e15fb",
+        "id": "7d5b43c7-bbaa-46b6-bf9c-3c55f98829d2",
+        "name": "3.2 Okta - Add user to a group (Enforce MFA / Enroll factors)",
+        "type": "HELPER",
+        "screenshotURL": "https://d78vv2h34ll3s.cloudfront.net/static/catalog/workflows/identity_security_posture_management/resources/c00f1af3a4187d871b3037437c3347347f77.png"
+      },
+      {
+        "id": "0419e21d-8d16-4446-9cb2-563eea0b070d",
         "name": "2.3 Suspend Google Workspace User",
         "type": "HELPER",
-        "screenshotURL": "https://d78vv2h34ll3s.cloudfront.net/static/catalog/workflows/identity_security_posture_management/resources/c00e3de746306307b778378378758f58f00f.png"
+        "screenshotURL": "https://d78vv2h34ll3s.cloudfront.net/static/catalog/workflows/identity_security_posture_management/resources/c00f58f3a7587107533037c3743347347f77.png"
       },
       {
-        "id": "d367f4a8-9b72-4b10-af53-a0019e390dfa",
-        "name": "4.3 Entra ID - Force Change Password Next Signin",
+        "id": "dc8dbee2-42d8-492e-96b7-1fbbdc91ff38",
+        "name": "2.1 Disable Entra ID User",
         "type": "HELPER",
-        "screenshotURL": "https://d78vv2h34ll3s.cloudfront.net/static/catalog/workflows/identity_security_posture_management/resources/802d0efe664278bf037037017c73c3fc3803.png"
+        "screenshotURL": "https://d78vv2h34ll3s.cloudfront.net/static/catalog/workflows/identity_security_posture_management/resources/c00eb4e756b06346b371338378358fd8fdef.png"
       },
       {
-        "id": "400989b5-cea9-4c86-b15d-8e7e530fe753",
+        "id": "60c7f911-3c44-4f17-bb3c-b8a1c9d2c373",
+        "name": "3.1 Entra ID - Add user to a group (Enforce MFA / Enroll factors)",
+        "type": "HELPER",
+        "screenshotURL": "https://d78vv2h34ll3s.cloudfront.net/static/catalog/workflows/identity_security_posture_management/resources/c00f1af3a45879871b3037437c3347347f77.png"
+      },
+      {
+        "id": "246d4997-9309-4f58-8988-3624df44e954",
+        "name": "2.2 Suspend Okta User",
+        "type": "HELPER",
+        "screenshotURL": "https://d78vv2h34ll3s.cloudfront.net/static/catalog/workflows/identity_security_posture_management/resources/c00eb4e756b06346b378338378318fd8fdef.png"
+      },
+      {
+        "id": "702a24eb-a8d1-4fcf-baa6-d68dacf87185",
+        "name": "2.4 Deactivate Salesforce User",
+        "type": "HELPER",
+        "screenshotURL": "https://d78vv2h34ll3s.cloudfront.net/static/catalog/workflows/identity_security_posture_management/resources/c00eb4e756b06b079338378378358f18fdef.png"
+      },
+      {
+        "id": "b598bde7-97fd-4a8c-9e3c-93662a5a1e2a",
         "name": "1.0 ISPM Event Routing Flow",
         "type": "MAIN",
-        "screenshotURL": "https://d78vv2h34ll3s.cloudfront.net/static/catalog/workflows/identity_security_posture_management/resources/800bd2fda708709f0ff0ff0ffcffcffcffce.png"
+        "screenshotURL": "https://d78vv2h34ll3s.cloudfront.net/static/catalog/workflows/identity_security_posture_management/resources/820d36db6c92c9349781fc1fc1ff9ff9ff9f.png"
       }
     ],
-    "helperFlowsCount": 8,
+    "helperFlowsCount": 7,
     "mainFlowsCount": 1
   },
   "links": [
