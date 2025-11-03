@@ -4,7 +4,7 @@ This template is designed to enable you to look up users on Slack through shortc
 - `/oktalookup`
 - Okta Lookup Slack App
 
-These functionalities are implemented using Slack API actions, such as `Open a View`, `Update a View`, and `Post a Message`. Because the Slack connector doesn't support these actions, you must create a custom Slack API connector to use them. 
+These functionalities are implemented using Slack API actions, such as `Open a View`, `Update a View`, and `Post a Message`. Because the current Slack connector doesn't support these actions, you must create a custom Slack API connector to use them. 
 ## Setup Steps
 1. [Create a Slack app](#create-a-slack-app).
 2. [Create Slack app connector](#create-a-slack-app-connector)
@@ -54,7 +54,7 @@ Create connectors for your Slack app in Connector Builder. See [Create a connect
 8. Click **Create**.
 9. Add flows to your connector. See [Create flows for your Slack connector](#create-flows-for-your-slack-connector).
 10. Click the **Deployment** tab. 
-2. Click **Create test version** and then click **Deploy**.
+11. Click **Create test version** and then click **Deploy**.
 
 ### Create connection
 1. Click the **Connections** tab from the Workflows console. 
@@ -173,7 +173,7 @@ Build an **httpHelper** flow with the following cards:
 | **method** | - | Drag the **relative_method** variable from the **On Demand Helper Flow** card. |
 | **headers** | object | Drag the **merged_header** output from the **Object - Merge** card. |
 | **query** | object | Drag the **query** variable from the **On Demand Helper Flow** card. |
-| **body** | object | Drag the **body** variable from the **On Demand Helper Flow** card. |
+| **body** | text | Drag the **body** variable from the **On Demand Helper Flow** card. |
 
 #### Outputs
 Don't change the default output. 
@@ -258,7 +258,7 @@ Build an **_authping** flow with the following cards:
 | **method** | - | `POST` |
 | **headers** | object | Drag the **Headers** output variable from the **Object - Construct** card. |
 | **query** | object | Leave as the default. |
-| **body** | object | Leave empty. |
+| **body** | text | Leave empty. |
 
 #### Outputs
 Don't change the default output. 
@@ -270,7 +270,7 @@ Don't change the default output.
 | ---| --- | --- |
 | **status_code** | number | Drag the **statusCode** output from the **HTTP Raw Request** card. |
 | **message** | text | Drag the **body** output from the **HTTP Raw Request** card, and the **message** of the if error. |
-| **respponseBody** | text | Drag the **body** output from the **HTTP Raw Request** card. |
+| **responseBody** | text | Drag the **body** output from the **HTTP Raw Request** card. |
 </details>
 
 <details>
@@ -341,6 +341,7 @@ Create a **Static Input Group** named **Inputs** with the following settings:
 | ---| --- |
 | **View** | text |
 | **trigger_id** | text |
+    
 
 See [https://api.slack.com/methods/views.open](https://api.slack.com/methods/views.open).
 </details>
@@ -417,7 +418,7 @@ See [https://api.slack.com/methods/views.open](https://api.slack.com/methods/vie
 | **method** | - | `POST`  |
 | **headers** | object | Drag the **Headers** output variable from the applicable **Object - Construct** card.   |
 | **query** | object | Drag the **Request Body** output variable from the applicable **Object - Construct** card.   |
-| **body** | object | Drag the **Request Body** output variable from the applicable **Object - Construct** card.   |
+| **body** | text | Drag the **Request Body** output variable from the applicable **Object - Construct** card.   |
 
 #### Outputs
 Don't change the default output. 
@@ -499,7 +500,7 @@ See [https://api.slack.com/methods/views.update](https://api.slack.com/methods/v
 | Field | Type | Input |
 | ---| --- | --- |
 | **Authorization** | text | Drag the **Bearer Token** from the previous card. |
-| **Content-Type** | value | `application:json` |
+| **Content-Type** | text | `application/json` |
 
 #### Outputs
 | Field | Type |
@@ -517,6 +518,7 @@ See [https://api.slack.com/methods/views.update](https://api.slack.com/methods/v
 | **method** | - | `POST`  |
 | **headers** | object | Drag the **Headers** output variable from the **Object - Construct** card.   |
 | **query** | object | Drag the **Request Object** variable from the inputs of the **On Demand - Connector Action** card.   |
+| **body** | text | Drag the **Request Object** variable from the inputs of the **On Demand - Connector Action** card.   |
 
 #### Outputs
 Don't change the default output. 
@@ -634,7 +636,7 @@ The **If/Else** function contains nested **If/Else** functions.
 | ---| --- | --- |
 | **channel** | text | Drag the **Channel ID** variable from the **On Demand - Connector Action card**. |
 | **text** | text | Drag the **Text** variable from the **On Demand - Connector Action card**. |
-| **text** | text | Drag the **User ID** variable from the **On Demand - Connector Action card**. |
+| **user** | text | Drag the **User ID** variable from the **On Demand - Connector Action card**. |
 
 #### Outputs
 | Field | Type |
@@ -661,7 +663,7 @@ Create a child **If/Else** function card with the following settings:
 #### Inputs
 | Field | Type | Input |
 | ---| --- | --- |
-| **Object** | text | Drag the **Body** variable from the previous **Object - Construct** card output. |
+| **Object** | object | Drag the **Body** variable from the previous **Object - Construct** card output. |
 | **path** | text | Input the text "blocks". |
 | **value** | text | Drag the **Blocks** variable from the **On Demand - Connector Action** card. |
 
@@ -681,7 +683,7 @@ Create a child **If/Else** function card with the following settings:
 #### Inputs
 | Field | Type | Input |
 | ---| --- | --- |
-| **Object** | text | Drag the **Body** variable from the previous **Object - Construct** card output. |
+| **Object** | object | Drag the **Body** variable from the previous **Object - Construct** card output. |
 | **path** | text | Input the text "text". |
 | **value** | text | Drag the **Text** variable from the **On Demand - Connector Action** card. |
 
@@ -738,7 +740,7 @@ Create a child **If/Else** function card with the following settings:
 #### Inputs
 | Field | Type | Input |
 | ---| --- | --- |
-| **Object** | text | Drag the **Body** variable from the previous **Object - Construct** card output. |
+| **Object** | object | Drag the **Body** variable from the previous **Object - Construct** card output. |
 | **path** | text | Input the text "blocks". |
 | **value** | text | Drag the **Blocks** variable from the **On Demand - Connector Action** card. |
 
@@ -758,7 +760,7 @@ Create a child **If/Else** function card with the following settings:
 #### Inputs
 | Field | Type | Input |
 | ---| --- | --- |
-| **Object** | text | Drag the **Body** variable from the previous **Object - Construct** card output. |
+| **Object** | object | Drag the **Body** variable from the previous **Object - Construct** card output. |
 | **path** | text | Input the text "text". |
 | **value** | text | Drag the **Text** variable from the **On Demand - Connector Action** card. |
 
@@ -813,7 +815,7 @@ Create a child **If/Else** function card with the following settings:
 | **method** | - | `POST`  |
 | **headers** | object | Drag the **Headers** output variable from the **Object - Construct** card.   |
 | **query** | object | Leave blank. |
-| **body** | object | Drag the **Body** output variable from the output of the parent **If/Else** function card. |
+| **body** | text | Drag the **Body** output variable from the output of the parent **If/Else** function card. |
 
 
 #### Outputs
@@ -829,7 +831,12 @@ Don't change the default output.
 | **Response Body**| text | Drag the **body** output from the **HTTP - Raw Request** card. |
 </details>
 </br>
-Save and enable the flow. Set it to save data. 
+Save and enable the flow. Set it to save data. </br>
+
+
+Click the  **Deployment**  tab. 
+Click **Create test version** and then click  **Deploy** . This will deploy with the completed Slack API connector whose cards will incorporated for the template.
+
 
 See [Build a custom API action card](https://help.okta.com/wf/en-us/content/topics/workflows/connector-builder/capia-capia-card.htm).
 
@@ -848,8 +855,8 @@ The following flows need edits to certain cards to finalize the process:
 
 | Card| Change |
 | ---| --- |
-| **API Connector Close** | Set to call the [Slack API connector](#create-api-connector). |
-| **API Connector Post** | Set to call the [Slack API connector](#create-api-connector). |
+| **API Connector Close** | Set to call the [API connector](#create-api-connector). |
+| **API Connector Post** | Set to call the [API connector](#create-api-connector). |
 
 </details>
 
@@ -868,7 +875,7 @@ The following flows need edits to certain cards to finalize the process:
 
 | Card| Change |
 | ---| --- |
-| **API Connector Close** | Set to call the [Slack API connector](#create-api-connector). |
+| **API Connector Close** | Set to call the [API connector](#create-api-connector). |
 
 </details>
 
@@ -877,8 +884,8 @@ The following flows need edits to certain cards to finalize the process:
 
 | Card| Change |
 | ---| --- |
-| **API Connector Close** | Set to call the [Slack API connector](#create-api-connector). |
-| **REPLACE CARD** | Follow the instructions listed on the card. |
+| **API Connector Close** | Set to call the [API connector](#create-api-connector). |
+| **REPLACE CARD** | Follow the instructions listed on the card. Set to call the Slack API connector |
 
 </details>
 
@@ -887,16 +894,16 @@ The following flows need edits to certain cards to finalize the process:
 
 | Card| Change |
 | ---| --- |
-| **REPLACE CARD** (inside **If** card) | Follow the instructions listed on the card. |
+| **REPLACE CARD** (inside **If** card) | Follow the instructions listed on the card. Set to call the Slack API connector |
 
 </details>
 
 <details>
-<summary> Stage 3 - Block Actions </summary>
+<summary> Stage 5 - Active View Submission </summary>
 
 | Card| Change |
 | ---| --- |
-| **REPLACE CARD** | Follow the instructions listed on the card. |
+| **REPLACE CARD** | Follow the instructions listed on the card. Set to call the Slack API connector |
 
 </details>
 
@@ -922,10 +929,10 @@ Once you've made the necessary edits, do the following:
     * Run a test to ensure the workflow functions as expected in the new workspace. 
 
 ## Testing these flows
-- Test the slash command by typing `/oktalookup` follwed by the user's email in the text box  of a Slack channel. 
-- Test the Okta Lookup Slack App by opening it from Slack and selecting the **Lookup an Okta User** action and enter the email of the user whose details are to be retrieved. Note that the **Open a view**, **Update a view**, and **Post a message** cards are used for this fucntionality. 
+- Test the slash command by typing `/oktalookup` followed by the user's email in the text box  of a Slack channel. 
+- Test the Okta Lookup Slack App by opening it from Slack and selecting the **Lookup an Okta User** action. Note that the **Open a view**, **Update a view**, and **Post a message** cards are used for this functionality. 
 
-## Supoorted Scopes
+## Supported Scopes
 - `commands`
 - `incoming-webhook`
 - `app_mentions:read`
