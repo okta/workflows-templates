@@ -19,25 +19,25 @@
         "id": "8322ca88-92b3-4f80-adee-cccd66d18f44",
         "name": "Suspicious Activity Reported",
         "type": "MAIN",
-        "screenshotURL": "https://d78vv2h34ll3s.cloudfront.net/static/catalog/workflows/remotely_lock_all_kandji_devices_based_on_security/resources/338f80ef0eb0aa0ef02202ff0ff2ff2ff2ff.png"
+        "screenshotURL": "https://d78vv2h34ll3s.cloudfront.net/static/catalog/workflows/remotely_lock_all_kandji_devices_based_on_security/resources/338f80ef06b0ea0ef02200ff0ff0ff0ff2ff.png"
       },
       {
         "id": "2c054778-e990-4c71-a58e-c456eb106cce",
         "name": "User Suspended",
         "type": "MAIN",
-        "screenshotURL": "https://d78vv2h34ll3s.cloudfront.net/static/catalog/workflows/remotely_lock_all_kandji_devices_based_on_security/resources/33b318f88f80bf03b07d03b0fa0010f70f2f.png"
+        "screenshotURL": "https://d78vv2h34ll3s.cloudfront.net/static/catalog/workflows/remotely_lock_all_kandji_devices_based_on_security/resources/338f80ef0eb0aa0ef02212ff0ff2ff2ff2ff.png"
       },
       {
         "id": "5db50b58-fb2d-4bf7-830a-d889d3b9ad8a",
         "name": "User Deactivated",
         "type": "MAIN",
-        "screenshotURL": "https://d78vv2h34ll3s.cloudfront.net/static/catalog/workflows/remotely_lock_all_kandji_devices_based_on_security/resources/338f80ef0eb0aa0ef02212ff0ff2ff2ff2ff.png"
+        "screenshotURL": "https://d78vv2h34ll3s.cloudfront.net/static/catalog/workflows/remotely_lock_all_kandji_devices_based_on_security/resources/338f80ef0eb0aa0ef02202ff0ff2ff2ff2ff.png"
       },
       {
         "id": "0f9783e8-0f83-42b0-970b-dafc2d0a09a1",
         "name": "Manual Device Lock",
         "type": "MAIN",
-        "screenshotURL": "https://d78vv2h34ll3s.cloudfront.net/static/catalog/workflows/remotely_lock_all_kandji_devices_based_on_security/resources/338f80ef06b0ea0ef02200ff0ff0ff0ff2ff.png"
+        "screenshotURL": "https://d78vv2h34ll3s.cloudfront.net/static/catalog/workflows/remotely_lock_all_kandji_devices_based_on_security/resources/33b318f88f80bf03b07d03b0fa0010f70f2f.png"
       }
     ],
     "helperFlowsCount": 1,
