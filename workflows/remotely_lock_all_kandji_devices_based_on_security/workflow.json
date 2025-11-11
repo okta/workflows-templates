@@ -10,32 +10,32 @@
     "flowCount": 5,
     "flos": [
       {
-        "id": "ad7176ee-3567-4cf5-8569-b7e072fddaa6",
+        "id": "cb41cd23-2a12-4349-bd25-29ef6aec9996",
         "name": "Lock Device",
         "type": "HELPER",
         "screenshotURL": "https://d78vv2h34ll3s.cloudfront.net/static/catalog/workflows/remotely_lock_all_kandji_devices_based_on_security/resources/64c6c4fc47c8f007d81c87c17c31c3fc3fc3.png"
       },
       {
-        "id": "30808cad-0fc0-415d-af33-c7d6549b9eb5",
-        "name": "User Deactivated",
+        "id": "8322ca88-92b3-4f80-adee-cccd66d18f44",
+        "name": "Suspicious Activity Reported",
         "type": "MAIN",
         "screenshotURL": "https://d78vv2h34ll3s.cloudfront.net/static/catalog/workflows/remotely_lock_all_kandji_devices_based_on_security/resources/338f80ef0eb0aa0ef02202ff0ff2ff2ff2ff.png"
       },
       {
-        "id": "1d019884-87d1-445e-9a1f-9194d467cd3d",
-        "name": "Manual Device Lock",
+        "id": "2c054778-e990-4c71-a58e-c456eb106cce",
+        "name": "User Suspended",
         "type": "MAIN",
         "screenshotURL": "https://d78vv2h34ll3s.cloudfront.net/static/catalog/workflows/remotely_lock_all_kandji_devices_based_on_security/resources/33b318f88f80bf03b07d03b0fa0010f70f2f.png"
       },
       {
-        "id": "95363f9c-4ec5-4f10-89dd-e64e1dc39af5",
-        "name": "User Suspended",
+        "id": "5db50b58-fb2d-4bf7-830a-d889d3b9ad8a",
+        "name": "User Deactivated",
         "type": "MAIN",
         "screenshotURL": "https://d78vv2h34ll3s.cloudfront.net/static/catalog/workflows/remotely_lock_all_kandji_devices_based_on_security/resources/338f80ef0eb0aa0ef02212ff0ff2ff2ff2ff.png"
       },
       {
-        "id": "61d38a53-fe69-4da4-b71b-fcc8d0a1147e",
-        "name": "Suspicious Activity Reported",
+        "id": "0f9783e8-0f83-42b0-970b-dafc2d0a09a1",
+        "name": "Manual Device Lock",
         "type": "MAIN",
         "screenshotURL": "https://d78vv2h34ll3s.cloudfront.net/static/catalog/workflows/remotely_lock_all_kandji_devices_based_on_security/resources/338f80ef06b0ea0ef02200ff0ff0ff0ff2ff.png"
       }
