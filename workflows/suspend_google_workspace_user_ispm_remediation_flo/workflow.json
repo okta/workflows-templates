@@ -1,0 +1,27 @@
+{
+  "name": "suspend_google_workspace_user_ispm_remediation_flo",
+  "title": "Suspend Google Workspace User — ISPM Remediation Flow",
+  "description": "This template outlines a workflow designed to respond to security issues detected by Okta Identity Security Posture Management (ISPM) by suspending a Google Workspace user. This workflow leverage Okta delegated Workflows to minimize security risks associated with privileged accounts.",
+  "connectors": [
+    "googledirectory"
+  ],
+  "details": {
+    "stashCount": 2,
+    "flowCount": 1,
+    "flos": [
+      {
+        "id": "dcfda163-b65a-4e4d-ab34-1f20b1ea3926",
+        "name": "2.3 Suspend Google Workspace User",
+        "type": "MAIN",
+        "screenshotURL": "https://d78vv2h34ll3s.cloudfront.net/static/catalog/workflows/suspend_google_workspace_user_ispm_remediation_flo/resources/c00f5cf3875870874b3413c37c3347347f77.png"
+      }
+    ],
+    "mainFlowsCount": 1
+  },
+  "links": [
+    {
+    "title": "Setup Documentation",
+    "destination": "https://github.com/okta/workflows-templates/blob/master/workflows/suspend_google_workspace_user_ispm_remediation_flo/readme.md"
+    }
+  ]
+}
