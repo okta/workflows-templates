@@ -1,0 +1,27 @@
+{
+  "name": "okta_reset_user_password_upon_next_login_ispm_reme",
+  "title": "Okta - Reset User Password Upon Next Login — ISPM Remediation Flow",
+  "description": "This template outlines a workflow designed to respond to security issues detected by Okta Identity Security Posture Management (ISPM) by reseting user password upon next login (Okta). This workflow leverage Okta delegated Workflows to minimize security risks associated with privileged accounts, compromised credentials, and misconfigurations.",
+  "connectors": [
+    "okta"
+  ],
+  "details": {
+    "stashCount": 2,
+    "flowCount": 1,
+    "flos": [
+      {
+        "id": "fda47bac-3d68-40e9-a321-0495eea5ab34",
+        "name": "4.1 Okta - Reset User Password Upon Next Login",
+        "type": "MAIN",
+        "screenshotURL": "https://d78vv2h34ll3s.cloudfront.net/static/catalog/workflows/okta_reset_user_password_upon_next_login_ispm_reme/resources/c00eb4e757b06b061760338779318f18fdef.png"
+      }
+    ],
+    "mainFlowsCount": 1
+  },
+  "links": [
+    {
+      "title": "Setup Documentation",
+      "destination": "https://github.com/okta/workflows-templates/blob/master/workflows/okta_reset_user_password_upon_next_login_ispm_reme/readme.md"
+    }
+  ]
+}
