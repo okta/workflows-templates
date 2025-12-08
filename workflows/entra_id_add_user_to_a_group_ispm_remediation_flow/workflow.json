@@ -1,0 +1,27 @@
+{
+  "name": "entra_id_add_user_to_a_group_ispm_remediation_flow",
+  "title": "Entra ID - Add User to a Group — ISPM Remediation Flow",
+  "description": "This template outlines a workflow designed to respond to security issues detected by Okta Identity Security Posture Management (ISPM) by adding user to a group (Entra ID). This workflow leverage Okta delegated Workflows to minimize security risks associated with privileged accounts, compromised credentials, and misconfigurations.",
+  "connectors": [
+    "office365admin"
+  ],
+  "details": {
+    "stashCount": 2,
+    "flowCount": 1,
+    "flos": [
+      {
+        "id": "37d03844-59ca-40cf-8a8c-862e8addaaca",
+        "name": "3.1 Entra ID - Add user to a group (Enforce MFA / Enroll factors)",
+        "type": "MAIN",
+        "screenshotURL": "https://d78vv2h34ll3s.cloudfront.net/static/catalog/workflows/entra_id_add_user_to_a_group_ispm_remediation_flow/resources/c00ddcf384587d870b3037437c3347347f77.png"
+      }
+    ],
+    "mainFlowsCount": 1
+  },
+  "links": [
+    {
+    "title": "Setup Documentation",
+    "destination": "https://github.com/okta/workflows-templates/blob/master/workflows/entra_id_add_user_to_a_group_ispm_remediation_flow/readme.md"
+    }
+  ]
+}
