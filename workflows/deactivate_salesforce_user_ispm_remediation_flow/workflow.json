@@ -1,0 +1,27 @@
+{
+  "name": "deactivate_salesforce_user_ispm_remediation_flow",
+  "title": "Deactivate Salesforce User — ISPM Remediation Flow",
+  "description": "This template outlines a workflow designed to respond to security issues detected by Okta Identity Security Posture Management (ISPM) by deactivating salesforce user.",
+  "connectors": [
+    "salesforce2_29"
+  ],
+  "details": {
+    "stashCount": 2,
+    "flowCount": 1,
+    "flos": [
+      {
+        "id": "ebb068e5-f953-47e0-af01-5dbb0f68f321",
+        "name": "2.4 Deactivate Salesforce User",
+        "type": "MAIN",
+        "screenshotURL": "https://d78vv2h34ll3s.cloudfront.net/static/catalog/workflows/deactivate_salesforce_user_ispm_remediation_flow/resources/c80daae9a6a86836e3663661663221227fb7.png"
+      }
+    ],
+    "mainFlowsCount": 1
+  },
+  "links": [
+    {
+    "title": "Setup Documentation",
+    "destination": "https://github.com/okta/workflows-templates/blob/master/workflows/deactivate_salesforce_user_ispm_remediation_flow/readme.md"
+    }
+  ]
+}
