@@ -1,0 +1,27 @@
+{
+  "name": "okta_add_user_to_a_group_ispm_remediation_flow",
+  "title": "Okta - Add User to a Group — ISPM Remediation Flow",
+  "description": "This template outlines a workflow designed to respond to security issues detected by Okta Identity Security Posture Management (ISPM) by adding user to a group (Okta). This workflow leverage Okta delegated Workflows to minimize security risks associated with privileged accounts, compromised credentials, and misconfigurations.",
+  "connectors": [
+    "okta"
+  ],
+  "details": {
+    "stashCount": 2,
+    "flowCount": 1,
+    "flos": [
+      {
+        "id": "86bca772-9a66-499a-a8f6-f2630cea7577",
+        "name": "3.2 Okta - Add user to a group (Enforce MFA / Enroll factors)",
+        "type": "MAIN",
+        "screenshotURL": "https://d78vv2h34ll3s.cloudfront.net/static/catalog/workflows/okta_add_user_to_a_group_ispm_remediation_flow/resources/c00d58ff845875874b7033437c3347347f77.png"
+      }
+    ],
+    "mainFlowsCount": 1
+  },
+  "links": [
+    {
+    "title": "Setup Documentation",
+    "destination": "https://github.com/okta/workflows-templates/blob/master/workflows/okta_add_user_to_a_group_ispm_remediation_flow/readme.md"
+    }
+  ]
+}
