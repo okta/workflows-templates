@@ -1,0 +1,27 @@
+{
+  "name": "suspend_okta_account_ispm_remediation_flow",
+  "title": "Suspend Okta Account — ISPM Remediation Flow",
+  "description": "This template outlines a workflow designed to respond to security issues detected by Okta Identity Security Posture Management (ISPM) by suspending an Okta account. This workflow leverage Okta delegated Workflows to minimize security risks associated with privileged accounts.",
+  "connectors": [
+    "okta"
+  ],
+  "details": {
+    "stashCount": 2,
+    "flowCount": 1,
+    "flos": [
+      {
+        "id": "83fb498c-1540-4954-9994-51bd8c3602d6",
+        "name": "2.2 Suspend Okta User",
+        "type": "MAIN",
+        "screenshotURL": "https://d78vv2h34ll3s.cloudfront.net/static/catalog/workflows/suspend_okta_account_ispm_remediation_flow/resources/400eb4ff16b06346b338338379318fd8fdef.png"
+      }
+    ],
+    "mainFlowsCount": 1
+  },
+  "links": [
+    {
+    "title": "Setup Documentation",
+    "destination": "https://github.com/okta/workflows-templates/blob/master/workflows/suspend_okta_account_ispm_remediation_flow/readme.md"
+    }
+  ]
+}
