@@ -1,0 +1,27 @@
+{
+  "name": "disable_entra_id_account_ispm_remediation_flow",
+  "title": "Disable Entra ID Account — ISPM Remediation Flow",
+  "description": "This document outlines a workflow designed to respond to security issues detected by Okta Identity Security Posture Management (ISPM) by disabling an Entra ID account. This workflow leverage Okta delegated Workflows to minimize security risks associated with privileged accounts.",
+  "connectors": [
+    "office365admin"
+  ],
+  "details": {
+    "stashCount": 2,
+    "flowCount": 1,
+    "flos": [
+      {
+        "id": "e5fc6f19-34b5-4083-b5bd-c7b7b9bc0990",
+        "name": "2.1 Disable Entra ID User",
+        "type": "MAIN",
+        "screenshotURL": "https://d78vv2h34ll3s.cloudfront.net/static/catalog/workflows/disable_entra_id_account_ispm_remediation_flow/resources/c80dcaf98e286836e96e1661663221227fb7.png"
+      }
+    ],
+    "mainFlowsCount": 1
+  },
+  "links": [
+    {
+    "title": "Setup Documentation",
+    "destination": "https://github.com/okta/workflows-templates/blob/master/workflows/disable_entra_id_account_ispm_remediation_flow/readme.md"
+    }
+  ]
+}
