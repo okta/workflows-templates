@@ -1,0 +1,73 @@
+{
+  "name": "identity_security_posture_management_delegated_flo",
+  "title": "Identity Security Posture Management - Delegated Flow",
+  "description": "This template outlines various workflows designed to respond to security issues detected by Okta Identity Security Posture Management (ISPM).These workflows leverage Okta delegated Workflows to minimize security risks associated with privileged accounts, compromised credentials, and misconfigurations.",
+  "connectors": [
+    "office365admin",
+    "okta",
+    "googledirectory",
+    "salesforce2_29"
+  ],
+  "details": {
+    "stashCount": 6,
+    "flowCount": 8,
+    "flos": [
+      {
+        "id": "029aca2d-b0bf-4e5c-b340-3be775dcb6af",
+        "name": "3.1 Entra ID - Add user to a group (Enforce MFA / Enroll factors)",
+        "type": "HELPER",
+        "screenshotURL": "https://d78vv2h34ll3s.cloudfront.net/static/catalog/workflows/identity_security_posture_management_delegated_flo/resources/c00ddcf384587d870b3037437c3347347f77.png"
+      },
+      {
+        "id": "76248a1a-b9ea-43ac-8306-963966126e54",
+        "name": "4.1 Okta - Reset User Password Upon Next Login",
+        "type": "HELPER",
+        "screenshotURL": "https://d78vv2h34ll3s.cloudfront.net/static/catalog/workflows/identity_security_posture_management_delegated_flo/resources/c00eb4e757b06b061760338779318f18fdef.png"
+      },
+      {
+        "id": "957b90d6-c531-4d3c-81bf-fb483610ab0b",
+        "name": "2.1 Disable Entra ID User",
+        "type": "HELPER",
+        "screenshotURL": "https://d78vv2h34ll3s.cloudfront.net/static/catalog/workflows/identity_security_posture_management_delegated_flo/resources/c00eb4e756b06b06b360378379318fd8fdef.png"
+      },
+      {
+        "id": "1fd23cfa-9d82-43df-9775-da72d1a0b4e1",
+        "name": "2.2 Suspend Okta User",
+        "type": "HELPER",
+        "screenshotURL": "https://d78vv2h34ll3s.cloudfront.net/static/catalog/workflows/identity_security_posture_management_delegated_flo/resources/400eb4ff16b06346b338338379318fd8fdef.png"
+      },
+      {
+        "id": "8d4816f8-ce2f-40c1-b4aa-1a5fda93250f",
+        "name": "3.2 Okta - Add user to a group (Enforce MFA / Enroll factors)",
+        "type": "HELPER",
+        "screenshotURL": "https://d78vv2h34ll3s.cloudfront.net/static/catalog/workflows/identity_security_posture_management_delegated_flo/resources/c00d58ff845875874b7033437c3347347f77.png"
+      },
+      {
+        "id": "a2f08080-b964-40fe-b771-d4f4a1dc6cef",
+        "name": "2.4 Deactivate Salesforce User",
+        "type": "HELPER",
+        "screenshotURL": "https://d78vv2h34ll3s.cloudfront.net/static/catalog/workflows/identity_security_posture_management_delegated_flo/resources/c00fb4e717b06b461360378379318fd8fdef.png"
+      },
+      {
+        "id": "1ac88d67-7766-49bf-b37a-d3c203c3c022",
+        "name": "2.3 Suspend Google Workspace User",
+        "type": "HELPER",
+        "screenshotURL": "https://d78vv2h34ll3s.cloudfront.net/static/catalog/workflows/identity_security_posture_management_delegated_flo/resources/c00f5cf3875870874b3413c37c3347347f77.png"
+      },
+      {
+        "id": "419f5836-9de6-404d-bb74-6cba7ea8f163",
+        "name": "1.0 ISPM Event Routing Flow - Delegated Flows",
+        "type": "MAIN",
+        "screenshotURL": "https://d78vv2h34ll3s.cloudfront.net/static/catalog/workflows/identity_security_posture_management_delegated_flo/resources/480fac5ae6a466c66622463f26d23d23f23f.png"
+      }
+    ],
+    "helperFlowsCount": 7,
+    "mainFlowsCount": 1
+  },
+  "links": [
+    {
+    "title": "Setup Documentation",
+    "destination": "https://github.com/okta/workflows-templates/blob/master/workflows/identity_security_posture_management_delegated_flo/readme.md"
+    }
+  ]
+}
