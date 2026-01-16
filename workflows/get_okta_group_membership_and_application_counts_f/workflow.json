@@ -1,0 +1,30 @@
+{
+  "name": "get_okta_group_membership_and_application_counts_f",
+  "title": "Get Okta Group Membership and Application Counts for a Single Group",
+  "description": "This template retrieves detailed statistics for a specific Okta group, including counts of its user members, group members (nested groups), and assigned apps.",
+  "connectors": [
+    "okta"
+  ],
+  "details": {
+    "tags": [
+      "introductory"
+    ],
+    "flowCount": 1,
+    "flos": [
+      {
+        "id": "56c58c4d-0b1c-4364-90d7-077c83e6b9b2",
+        "name": "Get Group Counts",
+        "type": "MAIN",
+        "screenshotURL": "https://d78vv2h34ll3s.cloudfront.net/static/catalog/workflows/get_okta_group_membership_and_application_counts_f/resources/8c96dcac17e65444ccc44e45fc5fc4fdcfdc.png"
+      }
+    ],
+    "helperFlowsCount": 0,
+    "mainFlowsCount": 1
+  },
+  "links": [
+    {
+    "title": "Setup Documentation",
+    "destination": "https://github.com/okta/workflows-templates/blob/master/workflows/get_okta_group_membership_and_application_counts_f/readme.md"
+    }
+  ]
+}
