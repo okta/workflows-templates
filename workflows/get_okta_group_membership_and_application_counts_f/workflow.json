@@ -1,6 +1,6 @@
 {
   "name": "get_okta_group_membership_and_application_counts_f",
-  "title": "Get Okta Group Membership and Application Counts for a Single Group",
+  "title": "Get Membership and Application Counts for an Okta Group",
   "description": "This template retrieves detailed statistics for a specific Okta group, including counts of its user members, group members (nested groups), and assigned apps.",
   "connectors": [
     "okta"
