@@ -1,4 +1,4 @@
-# check_ip_addresses_against_a_cidr_range
+# Check IP Addresses Against a CIDR Range
 
 ## Overview
 

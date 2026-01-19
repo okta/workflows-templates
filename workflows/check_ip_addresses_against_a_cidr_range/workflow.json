@@ -1,6 +1,6 @@
 {
   "name": "check_ip_addresses_against_a_cidr_range",
-  "title": "check_ip_addresses_against_a_cidr_range",
+  "title": "Check IP Addresses Against a CIDR Range",
   "description": "This template determines if any IP addresses from a provided list fall within a given IP range.",
   "details": {
     "tags": [
