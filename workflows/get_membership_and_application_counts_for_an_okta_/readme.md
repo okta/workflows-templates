@@ -1,4 +1,4 @@
-# Get Membership and Application Counts for an Okta Group"
+# Get Membership and Application Counts for an Okta Group
 
 ## Overview
 
