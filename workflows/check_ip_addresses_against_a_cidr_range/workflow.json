@@ -1,0 +1,39 @@
+{
+  "name": "check_ip_addresses_against_a_cidr_range",
+  "title": "Check IP Addresses Against a CIDR Range",
+  "description": "This template determines if any IP addresses from a provided list fall within a given IP range.",
+  "details": {
+    "tags": [
+      "introductory"
+    ],
+    "flowCount": 3,
+    "flos": [
+      {
+        "id": "f33d43e8-9de9-45b4-a5af-a47290b0dac6",
+        "name": "MATH",
+        "type": "HELPER",
+        "screenshotURL": "https://d78vv2h34ll3s.cloudfront.net/static/catalog/workflows/check_ip_addresses_against_a_cidr_range/resources/8148347fe80023cffe80e8f6e0e0003fe3ff.png"
+      },
+      {
+        "id": "638e46d3-2775-498f-ac40-531c9e3ff736",
+        "name": "IP Address Range Check - Helper",
+        "type": "HELPER",
+        "screenshotURL": "https://d78vv2h34ll3s.cloudfront.net/static/catalog/workflows/check_ip_addresses_against_a_cidr_range/resources/a4aede4427d86d2c06c3c640c3f01f41fbff.png"
+      },
+      {
+        "id": "52ca7cec-33bf-4256-bd67-3c787f541e84",
+        "name": "IP Address Range Check - Parent",
+        "type": "MAIN",
+        "screenshotURL": "https://d78vv2h34ll3s.cloudfront.net/static/catalog/workflows/check_ip_addresses_against_a_cidr_range/resources/1027fe2c602e62e4ee8e2863c6bfcffcffcf.png"
+      }
+    ],
+    "helperFlowsCount": 2,
+    "mainFlowsCount": 1
+  },
+  "links": [
+    {
+      "title": "Setup Documentation",
+      "destination": "https://github.com/okta/workflows-templates/blob/master/workflows/check_ip_addresses_against_a_cidr_range/readme.md"
+    }
+  ]
+}
