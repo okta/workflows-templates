@@ -1,0 +1,27 @@
+{
+  "name": "export_user_created_columns_in_table_to_csv_file",
+  "title": "Export user created columns in table to CSV file",
+  "description": "This flow provides a simple way to export all user-created columns in an Okta Workflows table into a CSV file.",
+  "details": {
+    "stashCount": 1,
+    "tags": [
+      "introductory"
+    ],
+    "flowCount": 1,
+    "flos": [
+      {
+        "id": "5182a9c2-fb2e-4821-b5a9-ddcad8aa2d8c",
+        "name": "Export to CSV - User Created Columns Only",
+        "type": "MAIN",
+        "screenshotURL": "https://d78vv2h34ll3s.cloudfront.net/static/catalog/workflows/export_user_created_columns_in_table_to_csv_file/resources/4541fc4dc1f43d03f0f14ff5ff5ff1ff1ff1.png"
+      }
+    ],
+    "mainFlowsCount": 1
+  },
+  "links": [
+    {
+    "title": "Setup Documentation",
+    "destination": "https://github.com/okta/workflows-templates/blob/master/workflows/export_user_created_columns_in_table_to_csv_file/readme.md"
+    }
+  ]
+}
