@@ -1,0 +1,36 @@
+{
+  "name": "scheduled_deletion_of_deactivated_okta_users_after",
+  "title": "Scheduled Deletion of Deactivated Okta Users (after X Days)",
+  "description": "This template automates the identification and deletion of Okta users who have been in a deprovisioned status for a specified number of days (30 days by default).",
+  "connectors": [
+    "okta"
+  ],
+  "details": {
+    "tags": [
+      "introductory"
+    ],
+    "flowCount": 2,
+    "flos": [
+      {
+        "id": "e5111874-f04e-4809-904c-7a897fc78bfa",
+        "name": "Delete Deactivated Users after x Days - Helper",
+        "type": "HELPER",
+        "screenshotURL": "https://d78vv2h34ll3s.cloudfront.net/static/catalog/workflows/scheduled_deletion_of_deactivated_okta_users_after/resources/42cff46606a87a87a87a07a17835831ff5ff.png"
+      },
+      {
+        "id": "1efde6ef-d6aa-497c-94fa-5fbaee2ff8bb",
+        "name": "Delete Deactivated Users after x Days",
+        "type": "MAIN",
+        "screenshotURL": "https://d78vv2h34ll3s.cloudfront.net/static/catalog/workflows/scheduled_deletion_of_deactivated_okta_users_after/resources/800ff4de4c88e0cfacf00f78f7cf7cf7cffc.png"
+      }
+    ],
+    "helperFlowsCount": 1,
+    "mainFlowsCount": 1
+  },
+  "links": [
+    {
+    "title": "Setup Documentation",
+    "destination": "https://github.com/okta/workflows-templates/blob/master/workflows/scheduled_deletion_of_deactivated_okta_users_after/readme.md"
+    }
+  ]
+}
