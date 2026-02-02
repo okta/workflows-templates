@@ -1,0 +1,50 @@
+{
+  "name": "fastpass_enrollment_reminder_automation",
+  "title": "FastPass Enrollment Reminder Automation",
+  "description": "This template evaluates users’ enrollment status across multiple factors including **TOTP**, **Push**, **SMS**, **Okta TOTP**, and specifically **Okta FastPass**. It automatically notifies unenrolled users via Slack (pre-built), or can be configured for email or Microsoft Teams. The workflow features a simulation mode out-of-the-box.",
+  "connectors": [
+    "okta",
+    "slack"
+  ],
+  "details": {
+    "stashCount": 4,
+    "tags": [
+      "introductory"
+    ],
+    "flowCount": 4,
+    "flos": [
+      {
+        "id": "61fbe847-a0df-42bb-b61f-81e5cb767fd3",
+        "name": "1.1 List Factors Helper",
+        "type": "HELPER",
+        "screenshotURL": "https://d78vv2h34ll3s.cloudfront.net/static/catalog/workflows/fastpass_enrollment_reminder_automation/resources/000efff12850f62f13d4299ad32802b22bfe.png"
+      },
+      {
+        "id": "7252c668-3461-40ed-8db4-1da6b82fe9de",
+        "name": "2.1 Notification Sender Helper",
+        "type": "HELPER",
+        "screenshotURL": "https://d78vv2h34ll3s.cloudfront.net/static/catalog/workflows/fastpass_enrollment_reminder_automation/resources/980fc2fc2186383bc7f03f03fcbfcffcffcf.png"
+      },
+      {
+        "id": "d78dd0a5-a801-4b66-af27-aa489722ee83",
+        "name": "1.0 FastPass Adoption",
+        "type": "MAIN",
+        "screenshotURL": "https://d78vv2h34ll3s.cloudfront.net/static/catalog/workflows/fastpass_enrollment_reminder_automation/resources/c22de8d68564d64d64c78c69c61961863c67.png"
+      },
+      {
+        "id": "db1cc226-98a5-47db-a97e-a921ee8a6b28",
+        "name": "2.0 Campaign",
+        "type": "MAIN",
+        "screenshotURL": "https://d78vv2h34ll3s.cloudfront.net/static/catalog/workflows/fastpass_enrollment_reminder_automation/resources/28ca18ff8b01f85a95a85ab58b18a18bf8bf.png"
+      }
+    ],
+    "helperFlowsCount": 2,
+    "mainFlowsCount": 2
+  },
+  "links": [
+    {
+    "title": "Setup Documentation",
+    "destination": "https://github.com/okta/workflows-templates/blob/master/workflows/fastpass_enrollment_reminder_automation/readme.md"
+    }
+  ]
+}
