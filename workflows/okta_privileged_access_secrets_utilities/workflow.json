@@ -1,0 +1,266 @@
+{
+  "name": "okta_privileged_access_secrets_utilities",
+  "title": "Okta Privileged Access - Secrets Utilities",
+  "description": "This set of Workflows templates provide four utilities for use with secrets in Okta Privileged Access (OPA):\n1. Tree-view report \n    - Generate and email a report that shows the tree view of the folders/secrets with attached policies.\n2. User access report\n    - Generate a report of all access that a specific user has for folders/secrets.\n3. Secret search\n    - Search through all secrets to find a specific one.\n4. Resource access report\n    - Show all users, groups, and permissions assigned to a folder/secret.",
+  "connectors": [
+    "gmail",
+    "oktaprivilegedaccess"
+  ],
+  "details": {
+    "stashCount": 7,
+    "tags": [
+      "introductory"
+    ],
+    "flowCount": 40,
+    "flos": [
+      {
+        "id": "c2afd669-77b2-4b4b-8fd0-d00dd36842cf",
+        "name": "REPT31 - Filter by Name",
+        "type": "HELPER",
+        "screenshotURL": "https://d78vv2h34ll3s.cloudfront.net/static/catalog/workflows/okta_privileged_access_secrets_utilities/resources/c54cd475445451c77c70c7107dc7c73c73c7.png"
+      },
+      {
+        "id": "2b75cffb-a255-4648-ab07-df446a48c0ae",
+        "name": "UTIL30 - Extract Conditions",
+        "type": "HELPER",
+        "screenshotURL": "https://d78vv2h34ll3s.cloudfront.net/static/catalog/workflows/okta_privileged_access_secrets_utilities/resources/ca0cac5f84085f8fb868c6047fc7fe3ffbff.png"
+      },
+      {
+        "id": "8cfb2d65-28d6-4280-964e-7219a9bd590a",
+        "name": "UTIL20 - Extract Privileges",
+        "type": "HELPER",
+        "screenshotURL": "https://d78vv2h34ll3s.cloudfront.net/static/catalog/workflows/okta_privileged_access_secrets_utilities/resources/24ca08ffc66000e3ff0078079ff9ff9ff9ff.png"
+      },
+      {
+        "id": "c355a7e5-71fe-45e7-b0e7-05fa39397335",
+        "name": "UTIL40 - Consolidate Policy and Rule Name",
+        "type": "HELPER",
+        "screenshotURL": "https://d78vv2h34ll3s.cloudfront.net/static/catalog/workflows/okta_privileged_access_secrets_utilities/resources/c744746b44f01fc70c72c7607987fc7ff3ff.png"
+      },
+      {
+        "id": "8086fa79-954b-4309-92c4-33f67dee63a5",
+        "name": "UTIL10 - Extract Resource Selector",
+        "type": "HELPER",
+        "screenshotURL": "https://d78vv2h34ll3s.cloudfront.net/static/catalog/workflows/okta_privileged_access_secrets_utilities/resources/972052f5af02e0ae0f009b0ff0ff0ff0ff6f.png"
+      },
+      {
+        "id": "03394996-9d0a-45d0-a47f-b21d745882d2",
+        "name": "LOAD31 - Is Secret Policy",
+        "type": "HELPER",
+        "screenshotURL": "https://d78vv2h34ll3s.cloudfront.net/static/catalog/workflows/okta_privileged_access_secrets_utilities/resources/84adda6c810a97e4ce40c62c76f703b03f23.png"
+      },
+      {
+        "id": "88b09980-4e7a-4951-b3b7-80674b98034e",
+        "name": "LOAD32 - Process a single Policy",
+        "type": "HELPER",
+        "screenshotURL": "https://d78vv2h34ll3s.cloudfront.net/static/catalog/workflows/okta_privileged_access_secrets_utilities/resources/932922dba6186a86bb899c99c99c19c79ff9.png"
+      },
+      {
+        "id": "5572f576-7b5b-4759-b2dc-2230245819ab",
+        "name": "LOAD34 - Save Policy to Group Relationship",
+        "type": "HELPER",
+        "screenshotURL": "https://d78vv2h34ll3s.cloudfront.net/static/catalog/workflows/okta_privileged_access_secrets_utilities/resources/618f487786187c8fc87c07c83c51c33d35c3.png"
+      },
+      {
+        "id": "f5987d64-21c1-423a-b5cc-851eab1fd6bd",
+        "name": "LOAD33 - Process a single Rule",
+        "type": "HELPER",
+        "screenshotURL": "https://d78vv2h34ll3s.cloudfront.net/static/catalog/workflows/okta_privileged_access_secrets_utilities/resources/84a69e4da49a4036fb2797f93f97f93f93f9.png"
+      },
+      {
+        "id": "491f9f32-0074-42b0-8d14-ed21671f97bc",
+        "name": "REPT23 - Get Resources for Rule",
+        "type": "HELPER",
+        "screenshotURL": "https://d78vv2h34ll3s.cloudfront.net/static/catalog/workflows/okta_privileged_access_secrets_utilities/resources/c8c5c866e6606e07e3621e63e61e21e31e3f.png"
+      },
+      {
+        "id": "2bbb829b-711c-4ad4-a2ed-389e7240a74f",
+        "name": "LOAD62 - Save User and Group",
+        "type": "HELPER",
+        "screenshotURL": "https://d78vv2h34ll3s.cloudfront.net/static/catalog/workflows/okta_privileged_access_secrets_utilities/resources/618f487787c83c87c83c87c03c73c33c35d3.png"
+      },
+      {
+        "id": "99e2b93f-4b0a-4bc9-8d48-3fe141a6be7c",
+        "name": "LOAD61 - Get Group details",
+        "type": "HELPER",
+        "screenshotURL": "https://d78vv2h34ll3s.cloudfront.net/static/catalog/workflows/okta_privileged_access_secrets_utilities/resources/9923b0bb24107b0ff1f11f11f11f13f13ff3.png"
+      },
+      {
+        "id": "868a6705-b5c8-4a99-82ab-b66bd7402b39",
+        "name": "REPT24 - Filter Policies for Rule",
+        "type": "HELPER",
+        "screenshotURL": "https://d78vv2h34ll3s.cloudfront.net/static/catalog/workflows/okta_privileged_access_secrets_utilities/resources/ca4dfc4286a07ac63c60478c7a7787b87387.png"
+      },
+      {
+        "id": "9bac96fe-c47d-4fe4-946f-c5fc1b903b80",
+        "name": "REPT25 - Write User Access Row",
+        "type": "HELPER",
+        "screenshotURL": "https://d78vv2h34ll3s.cloudfront.net/static/catalog/workflows/okta_privileged_access_secrets_utilities/resources/42c6bc78c7a47a47841807e35e35e35e31e3.png"
+      },
+      {
+        "id": "3e59fb28-8f1d-4917-81b7-6116dc92bc24",
+        "name": "REPT22 - Find Rules for GroupPolicy",
+        "type": "HELPER",
+        "screenshotURL": "https://d78vv2h34ll3s.cloudfront.net/static/catalog/workflows/okta_privileged_access_secrets_utilities/resources/c2c6e47a45a05a3f83fa3f83f8ff8ff8ff8f.png"
+      },
+      {
+        "id": "902044d3-a2fd-432d-a153-c131bf96778a",
+        "name": "UTIL80 - Decompress permission list",
+        "type": "HELPER",
+        "screenshotURL": "https://d78vv2h34ll3s.cloudfront.net/static/catalog/workflows/okta_privileged_access_secrets_utilities/resources/4a077c5aae3c47c42c604a3e23fe3fe3fe3f.png"
+      },
+      {
+        "id": "cca1a9a1-b3b8-4844-bddb-61b0389659fa",
+        "name": "UTIL81 - Expand permission",
+        "type": "HELPER",
+        "screenshotURL": "https://d78vv2h34ll3s.cloudfront.net/static/catalog/workflows/okta_privileged_access_secrets_utilities/resources/4e86e86e46b86b86a84a84bc07fc6fc0fc0f.png"
+      },
+      {
+        "id": "6ce86c68-122f-43c9-a504-e2710cccebf4",
+        "name": "LOAD12 - Work through Unprocessed Folders",
+        "type": "HELPER",
+        "screenshotURL": "https://d78vv2h34ll3s.cloudfront.net/static/catalog/workflows/okta_privileged_access_secrets_utilities/resources/922126f76010d93cfbc7fc7fc7fc7fc7fc7f.png"
+      },
+      {
+        "id": "fcc7a3dc-bf3e-4d02-bf7f-dd2f2163d264",
+        "name": "LOAD11 - Get and save Top-level Folder",
+        "type": "HELPER",
+        "screenshotURL": "https://d78vv2h34ll3s.cloudfront.net/static/catalog/workflows/okta_privileged_access_secrets_utilities/resources/42463cfacfa4784784580f83f83fe3fe3fe3.png"
+      },
+      {
+        "id": "c053213c-65d0-4693-97c9-f109936fca68",
+        "name": "LOAD13 - Get Subfolders for a Single Folder",
+        "type": "HELPER",
+        "screenshotURL": "https://d78vv2h34ll3s.cloudfront.net/static/catalog/workflows/okta_privileged_access_secrets_utilities/resources/88088affe60a7aa7837817b97bf7bf7bffbf.png"
+      },
+      {
+        "id": "f9e7fd1f-400b-4fb1-a505-0a53a88b42c1",
+        "name": "LOAD14 - Write Subfolder",
+        "type": "HELPER",
+        "screenshotURL": "https://d78vv2h34ll3s.cloudfront.net/static/catalog/workflows/okta_privileged_access_secrets_utilities/resources/02a4bceec6ec62c664664267267fe7fe7fe7.png"
+      },
+      {
+        "id": "8358af3a-a209-4717-8e3a-661e3f6d2e68",
+        "name": "LOAD41 - Save Folder or Secret to Attach Table",
+        "type": "HELPER",
+        "screenshotURL": "https://d78vv2h34ll3s.cloudfront.net/static/catalog/workflows/okta_privileged_access_secrets_utilities/resources/8fa982f82703d83d83d87c83c83c03f03f13.png"
+      },
+      {
+        "id": "030b6ddb-d8b2-45ed-88c4-9e1ef5ce7b33",
+        "name": "UTIL70 - Get Parent Resource Type",
+        "type": "HELPER",
+        "screenshotURL": "https://d78vv2h34ll3s.cloudfront.net/static/catalog/workflows/okta_privileged_access_secrets_utilities/resources/178150fd6e03e07e07e07e07e07e07e07e0b.png"
+      },
+      {
+        "id": "8b6cad52-1bd5-421f-8ed5-040657685c24",
+        "name": "LOAD21 - Get Secrets for a Single Folder",
+        "type": "HELPER",
+        "screenshotURL": "https://d78vv2h34ll3s.cloudfront.net/static/catalog/workflows/okta_privileged_access_secrets_utilities/resources/950b02bfa40a74a7cb64b67b67b67b67be7b.png"
+      },
+      {
+        "id": "03325014-b58b-4c44-beb5-3dfe9c37fdcf",
+        "name": "LOAD22 - Save Secret",
+        "type": "HELPER",
+        "screenshotURL": "https://d78vv2h34ll3s.cloudfront.net/static/catalog/workflows/okta_privileged_access_secrets_utilities/resources/43445c7f86106307f77f13f17f13f1ff1ff1.png"
+      },
+      {
+        "id": "99597efa-31c2-4267-910d-bdb63638a692",
+        "name": "REPT41 - Details for Policy on Resource",
+        "type": "HELPER",
+        "screenshotURL": "https://d78vv2h34ll3s.cloudfront.net/static/catalog/workflows/okta_privileged_access_secrets_utilities/resources/806964fd6146b3793193f9ff9ff9ff9ff9ff.png"
+      },
+      {
+        "id": "1b53b9a2-6f44-43ba-94b8-28da7543d5c5",
+        "name": "REPT42 - Get Users for Group",
+        "type": "HELPER",
+        "screenshotURL": "https://d78vv2h34ll3s.cloudfront.net/static/catalog/workflows/okta_privileged_access_secrets_utilities/resources/80a198efe0800e6dffcffcffcffcffcffcff.png"
+      },
+      {
+        "id": "8b42152e-aad2-4210-9e79-3c0313f0fd6a",
+        "name": "UTIL60 - Indenting Text",
+        "type": "HELPER",
+        "screenshotURL": "https://d78vv2h34ll3s.cloudfront.net/static/catalog/workflows/okta_privileged_access_secrets_utilities/resources/404d74f7461c774718344327f07f47f47f67.png"
+      },
+      {
+        "id": "18052eda-a2d5-40aa-923c-799399a17343",
+        "name": "UTIL50 - How Many Levels",
+        "type": "HELPER",
+        "screenshotURL": "https://d78vv2h34ll3s.cloudfront.net/static/catalog/workflows/okta_privileged_access_secrets_utilities/resources/c544545fc4047707fc70c70c7b47003fc3ff.png"
+      },
+      {
+        "id": "d8e6471d-7cbb-4cd1-a648-7c59dcc3f3f4",
+        "name": "REPT11 - Process a Single Row",
+        "type": "HELPER",
+        "screenshotURL": "https://d78vv2h34ll3s.cloudfront.net/static/catalog/workflows/okta_privileged_access_secrets_utilities/resources/80cabcbaa02a03ed6f4637eb7e37fbfe3feb.png"
+      },
+      {
+        "id": "499e2fdc-cf2e-4315-b20c-45410d26ab32",
+        "name": "REPT21 - Find Policies for Group",
+        "type": "HELPER",
+        "screenshotURL": "https://d78vv2h34ll3s.cloudfront.net/static/catalog/workflows/okta_privileged_access_secrets_utilities/resources/42c6f469c7e07807a55a37835831a3f8ff8f.png"
+      },
+      {
+        "id": "a8111157-0f45-429a-b76d-4234fa308ff1",
+        "name": "REPT30d - Find a Secret",
+        "type": "MAIN",
+        "screenshotURL": "https://d78vv2h34ll3s.cloudfront.net/static/catalog/workflows/okta_privileged_access_secrets_utilities/resources/17c074e726b0ac1ac7cc5c4dcc1cc1cdbcff.png"
+      },
+      {
+        "id": "5abefa7e-cd2f-4650-b911-947397755567",
+        "name": "LOAD30 - Get all Secret Policies",
+        "type": "MAIN",
+        "screenshotURL": "https://d78vv2h34ll3s.cloudfront.net/static/catalog/workflows/okta_privileged_access_secrets_utilities/resources/22622e7bc41c698f8de0ce1fe1fe7fe7fe7f.png"
+      },
+      {
+        "id": "0c002210-f86b-44ba-aa96-c82af15b4ddf",
+        "name": "LOAD60 - Get all Policy Principals",
+        "type": "MAIN",
+        "screenshotURL": "https://d78vv2h34ll3s.cloudfront.net/static/catalog/workflows/okta_privileged_access_secrets_utilities/resources/0c23fe11e23878c6f2cf0e79e79e7fe7fe7f.png"
+      },
+      {
+        "id": "9cf99fd1-c9a2-452a-a62f-09d77bc4b095",
+        "name": "LOAD10 - Get all Secret Folders",
+        "type": "MAIN",
+        "screenshotURL": "https://d78vv2h34ll3s.cloudfront.net/static/catalog/workflows/okta_privileged_access_secrets_utilities/resources/0426ce7ec704446fc7fc7fcffcffcffcffcf.png"
+      },
+      {
+        "id": "7c21a1ee-a54e-42ee-b355-3c313a759f62",
+        "name": "LOAD40 - Build Policy to Folder Mapping",
+        "type": "MAIN",
+        "screenshotURL": "https://d78vv2h34ll3s.cloudfront.net/static/catalog/workflows/okta_privileged_access_secrets_utilities/resources/1f872612e124f93f03f03f07f07f07f07fc7.png"
+      },
+      {
+        "id": "83368d49-466c-44ed-9f24-8b9be6745f00",
+        "name": "LOAD20 - Get all Secrets",
+        "type": "MAIN",
+        "screenshotURL": "https://d78vv2h34ll3s.cloudfront.net/static/catalog/workflows/okta_privileged_access_secrets_utilities/resources/08e7a27e2220fe0fe1fe7fe7fe7fe7fe7fe7.png"
+      },
+      {
+        "id": "58a431de-ca68-4b41-a617-1531b0bd4b70",
+        "name": "REPT40d - Access to a Resource",
+        "type": "MAIN",
+        "screenshotURL": "https://d78vv2h34ll3s.cloudfront.net/static/catalog/workflows/okta_privileged_access_secrets_utilities/resources/15e30cc9e0044f8ebfc1cc9cc9ccfccffcff.png"
+      },
+      {
+        "id": "6670f4ce-9538-420a-ab36-bab59c63ebc8",
+        "name": "REPT10d - Folder Hierarchy with Policy Rules",
+        "type": "MAIN",
+        "screenshotURL": "https://d78vv2h34ll3s.cloudfront.net/static/catalog/workflows/okta_privileged_access_secrets_utilities/resources/90eb0c8be08043cfbfc99c99c99cf9cf9cf9.png"
+      },
+      {
+        "id": "91f86c8f-3367-4649-b55c-42366bc9bad6",
+        "name": "REPT20d - Access for a User",
+        "type": "MAIN",
+        "screenshotURL": "https://d78vv2h34ll3s.cloudfront.net/static/catalog/workflows/okta_privileged_access_secrets_utilities/resources/00a86cefe6006dce6de4cecceccecceccffc.png"
+      }
+    ],
+    "helperFlowsCount": 31,
+    "mainFlowsCount": 9
+  },
+  "links": [
+    {
+      "title": "Setup Documentation",
+      "destination": "https://github.com/okta/workflows-templates/blob/master/workflows/okta_privileged_access_secrets_utilities/readme.md"
+    }
+  ]
+}
