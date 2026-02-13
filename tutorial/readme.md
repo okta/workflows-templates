@@ -150,7 +150,7 @@ const page = await browser.newPage();
 await page.goto(${FLO_PREVIEW_PAGE_URL});
 await page.waitForNavigation();
 
-// adjust the DOM a bit to hide tooltips, modals, and toasts
+// adjust the DOM a bit to hide tooltips, modals, and toasts.
 await page.waitForSelector("#stage");
 const cardContent = await page.$(".card__content");
 await cardContent.evaluate((el) => (el.style.maxHeight = "fit-content"));
