@@ -2,7 +2,9 @@
   "name": "generate_reports_for_okta_realms",
   "title": "Generate Reports for Okta Realms",
   "description": "This template generates a comprehensive report of all Okta Realms created within an Okta organization. It includes detailed information on user assignments to each Realm, providing a clear overview of user distribution and Realm configurations.",
-  "connectors": ["oktarealms"],
+  "connectors": [
+    "oktarealms"
+  ],
   "details": {
     "stashCount": 2,
     "flowCount": 4,

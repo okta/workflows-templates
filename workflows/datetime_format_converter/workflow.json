@@ -26,8 +26,8 @@
   },
   "links": [
     {
-    "title": "Setup Documentation",
-    "destination": "https://github.com/okta/workflows-templates/blob/master/workflows/datetime_format_converter/readme.md"
+      "title": "Setup Documentation",
+      "destination": "https://github.com/okta/workflows-templates/blob/master/workflows/datetime_format_converter/readme.md"
     }
   ]
 }

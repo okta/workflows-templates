@@ -22,8 +22,8 @@
   },
   "links": [
     {
-    "title": "Setup Documentation",
-    "destination": "https://github.com/okta/workflows-templates/blob/master/workflows/get_membership_and_application_counts_for_an_okta_/readme.md"
+      "title": "Setup Documentation",
+      "destination": "https://github.com/okta/workflows-templates/blob/master/workflows/get_membership_and_application_counts_for_an_okta_/readme.md"
     }
   ]
 }
