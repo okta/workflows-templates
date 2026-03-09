@@ -9,46 +9,46 @@
   "details": {
     "flos": [
       {
-        "id": "e87f6430-992f-4404-ba1e-b951ab2f32de",
-        "name": "AWS Add Entitlements Helper Flow",
-        "type": "HELPER",
-        "screenshotURL": "https://d78vv2h34ll3s.cloudfront.net/static/catalog/workflows/manage_aws_sso_entitlements/resources/_ScVysB1jeK5Vg66WfpUzUFPZ0VHdxj4GAlWFdzxjz4.png"
-      },
-      {
-        "id": "7c824994-98ac-4d1c-901f-3d196c4d7669",
+        "id": "ed4e8761-8519-4e5e-bcf5-e5febd5efa37",
         "name": "AWS Remove Entitlements Helper Flow",
         "type": "HELPER",
-        "screenshotURL": "https://d78vv2h34ll3s.cloudfront.net/static/catalog/workflows/manage_aws_sso_entitlements/resources/RCDga3EKBTpOdjYdvOJKfPCXEGJ2-ND9MKLdC-8b1WE.png"
+        "screenshotURL": "https://d78vv2h34ll3s.cloudfront.net/static/catalog/workflows/manage_aws_sso_entitlements/resources/62cf6c7046087f87c83c03c17cb7c3fc3fdb.png"
       },
       {
-        "id": "5d9c17fa-368e-443d-b3b8-2d3e3623cced",
+        "id": "80736f59-ff9f-4afa-8156-4dab655b42be",
+        "name": "AWS Add Entitlements Helper Flow",
+        "type": "HELPER",
+        "screenshotURL": "https://d78vv2h34ll3s.cloudfront.net/static/catalog/workflows/manage_aws_sso_entitlements/resources/62df647043d87c87c03c07c33c37c3fc3fc3.png"
+      },
+      {
+        "id": "29d49d11-6d40-4279-b545-34ac7e36f351",
         "name": "AWS Add Entitlement",
         "type": "MAIN",
-        "screenshotURL": "https://d78vv2h34ll3s.cloudfront.net/static/catalog/workflows/manage_aws_sso_entitlements/resources/vLPlbl-k8WD1acS8rGRMhjeP8rx5UjNqya2DtcDmeAo.png"
+        "screenshotURL": "https://d78vv2h34ll3s.cloudfront.net/static/catalog/workflows/manage_aws_sso_entitlements/resources/038838bfe02c43d73d3793ff3ff3ff3ff3ff.png"
       },
       {
-        "id": "e5bbfb58-7360-43c1-a523-c5348de46f3f",
-        "name": "AWS Add Entitlements Table",
-        "type": "MAIN",
-        "screenshotURL": "https://d78vv2h34ll3s.cloudfront.net/static/catalog/workflows/manage_aws_sso_entitlements/resources/bJPxymEQyEgcb5Tz2KvhXod0vjgKrJRVwg4fswLE2hA.png"
-      },
-      {
-        "id": "2f49d290-535a-4e3d-a4f1-426ce0441a51",
+        "id": "582b633d-5ef4-4850-b262-89422bbadeec",
         "name": "AWS Remove Entitlements Table",
         "type": "MAIN",
-        "screenshotURL": "https://d78vv2h34ll3s.cloudfront.net/static/catalog/workflows/manage_aws_sso_entitlements/resources/88HjlrAFwDk5aYnAsy1b1rrbXvan0vPrhG3cEJIFE7E.png"
+        "screenshotURL": "https://d78vv2h34ll3s.cloudfront.net/static/catalog/workflows/manage_aws_sso_entitlements/resources/078838efc61c61d70d30f30f30f34f3ff3ff.png"
       },
       {
-        "id": "6cd367f9-adcf-4426-8c7f-1dac5c02763c",
+        "id": "4808080c-f4f6-44e4-8a54-af8f76d2c58e",
         "name": "AWS Remove User Entitlements",
         "type": "MAIN",
-        "screenshotURL": "https://d78vv2h34ll3s.cloudfront.net/static/catalog/workflows/manage_aws_sso_entitlements/resources/oE3s6DigZlOnNzv-ikNJvIbd5J0Fqh0gfRCzowQpuSo.png"
+        "screenshotURL": "https://d78vv2h34ll3s.cloudfront.net/static/catalog/workflows/manage_aws_sso_entitlements/resources/2206bc7ad5a31ff1ff5ff1ff1ff5ff1ff5ff.png"
+      },
+      {
+        "id": "a006dfd1-b826-4ebc-a072-8557b641e4a0",
+        "name": "AWS Add Entitlements Table",
+        "type": "MAIN",
+        "screenshotURL": "https://d78vv2h34ll3s.cloudfront.net/static/catalog/workflows/manage_aws_sso_entitlements/resources/25a8b0fe460461d75d70c70f70f70f7ff7ff.png"
       }
     ],
     "flowCount": 6,
     "helperFlowsCount": 2,
     "mainFlowsCount": 4,
-    "stashCount": 1,
+    "stashCount": 2,
     "tags": [
       "privileged-access",
       "governance"
