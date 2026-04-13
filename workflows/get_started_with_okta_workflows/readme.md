@@ -2,7 +2,7 @@
 
 ## Overview
 
-This template contains specially curated introductory flows to help new users get familiarized with building flows. Discover what you can do with Workflows, such as schedule tasks, connect different apps together, and automate identity processes.
+Kickstart your automation journey with these three beginner-friendly sample flows designed to showcase the core power of Okta Workflows without altering your live data. You’ll explore everything from basic execution and scheduled identity security to advanced data orchestration, providing a risk-free environment to master how information moves through your system. It’s the ultimate introduction to turning complex administrative tasks into simple, automated realities.
 
 ## Prerequisites
 
