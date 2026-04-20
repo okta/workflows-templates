@@ -20,8 +20,8 @@
   },
   "links": [
     {
-    "title": "Setup Documentation",
-    "destination": "https://github.com/okta/workflows-templates/blob/master/workflows/suspend_okta_account_ispm_remediation_flow/readme.md"
+      "title": "Setup Documentation",
+      "destination": "https://github.com/okta/workflows-templates/blob/master/workflows/suspend_okta_account_ispm_remediation_flow/readme.md"
     }
   ]
 }
