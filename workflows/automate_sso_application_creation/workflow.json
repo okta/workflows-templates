@@ -1,0 +1,72 @@
+{
+  "name": "automate_sso_application_creation",
+  "title": "Automate SSO Application Creation",
+  "description": "This integration streamlines the process of creating applications in Okta by using ServiceNow (SNOW) as the front-end for approvals and Okta Workflows for backend automation.",
+  "connectors": [
+    "okta",
+    "servicenow",
+    "gmail"
+  ],
+  "details": {
+    "stashCount": 1,
+    "flowCount": 8,
+    "flos": [
+      {
+        "id": "e3040715-a903-45a1-a58f-d7d261159a35",
+        "name": "3. Group Assignment Flow",
+        "type": "HELPER",
+        "screenshotURL": "https://d78vv2h34ll3s.cloudfront.net/static/catalog/workflows/automate_sso_application_creation/resources/61f4390f86a50497ad1a81f91e90e00e8ffe.png"
+      },
+      {
+        "id": "4ecc2be3-85a1-48cc-85a0-9c2ca6f07727",
+        "name": "5. Comms",
+        "type": "HELPER",
+        "screenshotURL": "https://d78vv2h34ll3s.cloudfront.net/static/catalog/workflows/automate_sso_application_creation/resources/3e633803e0fa2383e932877873873c7fc7fc.png"
+      },
+      {
+        "id": "523ca9bd-9174-4d37-bbe1-7617cc690aaa",
+        "name": "2a1. Attribute Processing",
+        "type": "HELPER",
+        "screenshotURL": "https://d78vv2h34ll3s.cloudfront.net/static/catalog/workflows/automate_sso_application_creation/resources/0327fe0729768361360401fe9f31f39f39f3.png"
+      },
+      {
+        "id": "a19318fc-3d72-463a-b4bd-d235d1566bce",
+        "name": "4. Policy Assignment Flow",
+        "type": "HELPER",
+        "screenshotURL": "https://d78vv2h34ll3s.cloudfront.net/static/catalog/workflows/automate_sso_application_creation/resources/aeeae8b006587807f17817817a9e80e8eeff.png"
+      },
+      {
+        "id": "a0c9bf24-ec8f-496f-8bf6-93ecea82ba38",
+        "name": "2b. OIDC Create App",
+        "type": "HELPER",
+        "screenshotURL": "https://d78vv2h34ll3s.cloudfront.net/static/catalog/workflows/automate_sso_application_creation/resources/7760829e6d421c2fc61c64c70e71c67c6ff6.png"
+      },
+      {
+        "id": "bdb9dc07-b40d-489e-968b-3f9a33a774c5",
+        "name": "2a. SAML Create App",
+        "type": "HELPER",
+        "screenshotURL": "https://d78vv2h34ll3s.cloudfront.net/static/catalog/workflows/automate_sso_application_creation/resources/3af2136d029269269fb90790f9178078b78f.png"
+      },
+      {
+        "id": "11c8e86b-3ca4-4cbf-9ce9-309ef314e137",
+        "name": "Create Group",
+        "type": "MAIN",
+        "screenshotURL": "https://d78vv2h34ll3s.cloudfront.net/static/catalog/workflows/automate_sso_application_creation/resources/2fc06c46d815f05f07e03e23e13e1fe9fe1f.png"
+      },
+      {
+        "id": "7b1df088-f9fd-496e-a373-0393d5ff3654",
+        "name": "1. SSO App Create",
+        "type": "MAIN",
+        "screenshotURL": "https://d78vv2h34ll3s.cloudfront.net/static/catalog/workflows/automate_sso_application_creation/resources/45ccdc4ccc5cc4cc5c41b41f41f71f71f31f.png"
+      }
+    ],
+    "helperFlowsCount": 6,
+    "mainFlowsCount": 2
+  },
+  "links": [
+    {
+    "title": "Setup Documentation",
+    "destination": "https://github.com/okta/workflows-templates/blob/master/workflows/automate_sso_application_creation/readme.md"
+    }
+  ]
+}
