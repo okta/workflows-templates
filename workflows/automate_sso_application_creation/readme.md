@@ -82,12 +82,21 @@ Before you get started, here are the things you need:
     - **6.2. Group Assignment Flow**
         1. **Group Assignment Flow**
             - **Text Compose:** Add *Application Access Request ID*.
-        2. **How to find the Approval Sequence ID:**
-            - **Navigate:** Go to `Identity Governance` > `Access Requests`.
-            - **Tab:** Select the `Sequences` (or Request Types) tab.
-            - **Click:** Enter the specific sequence built for these application access requests.
-            - **Identify:** Check the browser URL address bar; the ID is the string following `/sequences/` or `/types/`.
-            - **Example:** If the URL ends in `/sequences/aqw98765xyz`, the ID is `aqw98765xyz`.
+        2. **How to find the Approval Sequence ID for an Access Request Condition:**
+            1. **Via the UI:**
+            - **Navigate:** Go to an existing application that has an active Access Request Condition
+            - **Tab:** Select the `Access Requests` tab.
+            - **Click:** Hit the three dots for the one of the active Conditions and select `Edit`.
+            - **Navigate:** Scroll down to `Approval Sequence`.
+            - **Click:** Select `Change Sequence`.
+            - **Navigate:** Find your approval sequence from the list, hover over it, and click the three   dots that appear
+            - **Click:** Select Edit from the dropdown. You will be redirected to edit the sequence.
+            - **Click:** The redirection will result in a URL that ends in `/sequences/aqw98765xyz`, the Sequence ID is `aqw98765xyz`. 
+
+            2. **Via the API:**     
+            - Find resourceId for an existing resource that uses the approval sequence (e.g. appId, CollectionId, etc)
+            - Make a GET request to `/governance/api/v2/resources/{resourceId}/request-sequences`
+            - Find the name of the approval sequence in the returned array and pull the id for the entry
 7. Turn on all of the Okta Workflows.
 
 **Setup Steps in ServiceNow**
