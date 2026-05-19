@@ -92,7 +92,6 @@ Before you get started, here are the things you need:
             - **Navigate:** Find your approval sequence from the list, hover over it, and click the three   dots that appear
             - **Click:** Select Edit from the dropdown. You will be redirected to edit the sequence.
             - **Click:** The redirection will result in a URL that ends in `/sequences/aqw98765xyz`, the Sequence ID is `aqw98765xyz`. 
-
             2. **Via the API:**     
             - Find resourceId for an existing resource that uses the approval sequence (e.g. appId, CollectionId, etc)
             - Make a GET request to `/governance/api/v2/resources/{resourceId}/request-sequences`
