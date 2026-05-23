@@ -20,8 +20,8 @@
   },
   "links": [
     {
-    "title": "Setup Documentation",
-    "destination": "https://github.com/okta/workflows-templates/blob/master/workflows/suspend_google_workspace_user_ispm_remediation_flo/readme.md"
+      "title": "Setup Documentation",
+      "destination": "https://github.com/okta/workflows-templates/blob/master/workflows/suspend_google_workspace_user_ispm_remediation_flo/readme.md"
     }
   ]
 }

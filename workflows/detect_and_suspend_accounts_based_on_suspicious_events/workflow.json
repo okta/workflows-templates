@@ -1,0 +1,27 @@
+{
+  "name": "detect_and_suspend_accounts_based_on_suspicious_events",
+  "title": "Detect and Suspend Accounts Based on Suspicious Events",
+  "description": "Automatically detects and suspends potentially compromised accounts by monitoring for three suspicious events within a one-hour window: MFA factor updates, password resets, and logins from new IP addresses.",
+  "connectors": [
+    "okta"
+  ],
+  "details": {
+    "flos": [
+      {
+        "id": "bd06af26-798a-4241-a4ca-9f8d5974f673",
+        "name": "Main",
+        "type": "MAIN",
+	"screenshotURL": "https://d78vv2h34ll3s.cloudfront.net/static/catalog/workflows/detect_and_suspend_accounts_based_on_suspicious_events/resources/sxX8V7NxLRS1mciVPHp6kTxTHDBS8axVkGMfPIoapAM=.png"
+      }
+    ],
+    "flowCount": 1,
+    "mainFlowsCount": 1,
+    "stashCount": 1
+  },
+  "links": [
+    {
+      "title": "Setup Documentation",
+      "destination": "https://github.com/okta/workflows-templates/blob/master/workflows/detect_and_suspend_accounts_based_on_suspicious_events/readme.md"
+    }
+  ]
+}

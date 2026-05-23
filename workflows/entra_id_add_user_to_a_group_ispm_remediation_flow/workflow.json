@@ -20,8 +20,8 @@
   },
   "links": [
     {
-    "title": "Setup Documentation",
-    "destination": "https://github.com/okta/workflows-templates/blob/master/workflows/entra_id_add_user_to_a_group_ispm_remediation_flow/readme.md"
+      "title": "Setup Documentation",
+      "destination": "https://github.com/okta/workflows-templates/blob/master/workflows/entra_id_add_user_to_a_group_ispm_remediation_flow/readme.md"
     }
   ]
 }

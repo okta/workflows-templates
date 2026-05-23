@@ -29,8 +29,8 @@
   },
   "links": [
     {
-    "title": "Setup Documentation",
-    "destination": "https://github.com/okta/workflows-templates/blob/master/workflows/retrieve_a_user_groups_using_streaming/readme.md"
+      "title": "Setup Documentation",
+      "destination": "https://github.com/okta/workflows-templates/blob/master/workflows/retrieve_a_user_groups_using_streaming/readme.md"
     }
   ]
 }
