@@ -1,54 +1,52 @@
-# Automated Unblocking of Bounced Okta Emails (via System Log Monitoring)
+# Remove Bounced Emails with Custom API Action
 
 ## Overview
 
-This template automates the process of identifying and unblocking Okta user email addresses that have been added to Okta's internal bounce list. The main scheduled flow proactively searches Okta System Logs for events indicating email delivery failures. For each user identified through these logs, a helper flow is invoked to programmatically remove their email address from the bounce list using the Okta API. 
-
-This automation helps ensure that users can receive important Okta communications by promptly addressing email bounces. 
-
-See [How to unblock an email address from the Okta email address bounce list via API](https://support.okta.com/help/s/article/How-to-unblock-an-email-address-from-the-Okta-email-address-bounce-list-via-API?).
-
+When Okta can't deliver an email to a user — due to an invalid address or a receiving server rejection — that address is added to Okta's internal bounce list. Once on this list, the user doesn't receive any further Okta emails, including password resets, MFA enrollment prompts, and admin notifications, until the address is manually removed. This template provides an on-demand flow to remove one or more email addresses from Okta's bounce list using the Remove Bounced Emails API (bulkRemoveEmailAddressBounces) called via **Okta - Custom API Action** card in Okta Workflows.
 
 ## Prerequisites
 
-1. Access to an Okta tenant with Okta Workflows enabled for your org. 
-
+1. Access to an Okta tenant with Okta Workflows enabled.
+2. An Okta connection in Workflows with the okta.orgs.manage scope granted under Authorization settings.
 
 ## Setup Steps
 
-1. Install the template into your Workflows environment. 
-2. Set the run schedule.
-    - Open the **Remove emails from bouncing** main flow and select the **Scheduled Flow trigger** card (the first card). Configure your desired `Interval`, `Start Time`, and other scheduling parameters. 
+After installing this template, follow these steps:
 
-3. In the **Flow Control - Assign** card, replace the default value with your organization's URL in the **orgBaseUrl** field.
+1. Grant the required scope: The **Custom API Action** card requires the `okta.orgs.manage` scope to call the Remove Bounced Emails API.
+    - In the Okta Workflows console, go to **Connections** and open your Okta connection. 
+    - Click the **Authorization** tab. 
+    - Go to the the custom scopes section and add `okta.orgs.manage`. 
+    - Click Save.
+    - See [Okta Workflows Authorization Help](https://help.okta.com/wf/en-us/content/topics/workflows/connector-reference/okta/overviews/authorization.htm) for detailed guidance. 
+    - Ensure the Custom API Action card is using this Okta connection.
 
-4. Set an Okta Connection for the **System Log Search** card.
+2. Add email addresses.
+-  Open the flow and locate the **List - Construct** card at the start of the flow. 
+- Enter each email address you want to remove from the bounce list as a separate list item.
+- Note: For larger lists, you can replace the **List - Construct** card with a card that reads from a hosted or manually imported CSV file, Google Sheets, or an AWS S3 bucket.
 
-5. Activate both flows. 
-
+3. Activate the flow.
 
 ## Testing this Flow
+1. Identify a test user whose email address is on the Okta bounce list. You can verify this by attempting to send them an Okta-generated email and checking for delivery failures, or by querying the bounce list via the API.
 
-Testing this flow requires actual email bounce events to be present in your Okta System Logs. 
+2. Add the test email address to the **List - Construct** card.
 
-1. Ideally, use a test user whose email address has genuinely hard-bounced recently and is recorded in the System Logs.
-    - **Note**: Intentionally causing an email to bounce for testing is risky and might affect email reputation if not done carefully with test accounts. 
+3. Run the flow manually and open Execution History in the Workflows console.
 
-2. Check System Logs manually.
-    - In your Okta Admin Console, go to **Reports** > **System Log**. 
-    - Search for email bounce events to confirm events exist for your test users within the time window. You can filter using queries such as `eventType eq "system.email.bounce.blocked_email"`.
+4. Confirm the **Custom API Action** card returns a `204 - No Content` status, which indicates the address was successfully removed.
 
-3. Configure the **Remove emails from bouncing** main flow to run more frequently (such as every 5 or 10 minutes). Also, ensure that its System Log query window is configured to include the time of your test bounce events. 
+5. To verify end-to-end, trigger an Okta-generated email to the address.
+ - Navigate to the user in **Admin Console** > **Directory** > **People**.
+ -  Select the user, and use **Send Email**.
+ - If the underlying deliverability issue is resolved, the email should now be delivered.
 
-4. Execute the **Remove emails from bouncing** main flow and monitor the execution history. Verify it found the relevant System Log events and extracted the correct user IDs.
-5. Check the helper flow execution history for invocations corresponding to your test user IDs.
+6. Remove the test email address from the **List - Construct** card once testing is complete.
 
-6. Verify unblocking.
-    -  After a successful unblock (204 status), attempt to trigger an Okta-generated email to the user's address. If the underlying email deliverability issue is resolved, the email is delivered. 
-
-7. Once testing is complete, reset the main flow's schedule to its intended production frequency. 
 
 ## Limitations & Known Issues
-- Keep in mind the [Okta Workflows System Limits](https://help.okta.com/wf/en-us/content/topics/workflows/workflows-system-limits.htm).
-- Error handling isn't addressed in this template.
-- There can be a slight delay (from seconds to minutes) for events to appear in Okta System Logs. Configure your flow's search window accordingly. 
+
+- Manual input required: This template doesn't automatically detect bounced addresses. Email addresses must be known and entered manually (or sourced from an external list).
+- Keep in mind the Okta Workflows System Limits.
+- Error handling is not addressed in this template.

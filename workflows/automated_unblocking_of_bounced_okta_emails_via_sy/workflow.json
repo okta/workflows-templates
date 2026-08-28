@@ -1,7 +1,7 @@
 {
   "name": "automated_unblocking_of_bounced_okta_emails_via_sy",
-  "title": "Automated Unblocking of Bounced Okta Emails (via System Log Monitoring)",
-  "description": "This template automates the process of identifying and unblocking Okta user email addresses that have been added to Okta's internal bounce list.",
+  "title": "Remove Bounced Emails with Custom API Action",
+  "description": "This template provides an on-demand flow to remove one or more email addresses from Okta's bounce list using the Remove Bounced Emails API (bulkRemoveEmailAddressBounces) called via **Okta - Custom API Action** card in Okta Workflows.",
   "connectors": [
     "okta"
   ],
@@ -9,28 +9,21 @@
     "tags": [
       "introductory"
     ],
-    "flowCount": 2,
+    "flowCount": 1,
     "flos": [
       {
-        "id": "b10fce77-7735-4684-ac2b-46c08b0ec271",
-        "name": "Child Flow \"Remove emails from boucing\"",
-        "type": "HELPER",
-        "screenshotURL": "https://d78vv2h34ll3s.cloudfront.net/static/catalog/workflows/automated_unblocking_of_bounced_okta_emails_via_sy/resources/1a0ba07f61fa0127f23f03f93f93f9ff9ff9.png"
-      },
-      {
-        "id": "68531060-310d-44b0-8bcf-d5b9d9a6744e",
-        "name": "Main flow \"Remove emails from boucing\"",
+        "id": "b12d44f9-73e6-4df0-b1f8-78be389014fa",
+        "name": "Remove Bounced Emails",
         "type": "MAIN",
-        "screenshotURL": "https://d78vv2h34ll3s.cloudfront.net/static/catalog/workflows/automated_unblocking_of_bounced_okta_emails_via_sy/resources/4a0c38dfcc30e18ff0ff0ff1ff1ff1ff1ff1.png"
+        "screenshotURL": "https://d78vv2h34ll3s.cloudfront.net/static/catalog/workflows/automated_unblocking_of_bounced_okta_emails_via_sy/resources/c563d06d233c3503f4010d73cf3c71c71ff1.png"
       }
     ],
-    "helperFlowsCount": 1,
     "mainFlowsCount": 1
   },
   "links": [
     {
-    "title": "Setup Documentation",
-    "destination": "https://github.com/okta/workflows-templates/blob/master/workflows/automated_unblocking_of_bounced_okta_emails_via_sy/readme.md"
+      "title": "Setup Documentation",
+      "destination": "https://github.com/okta/workflows-templates/blob/master/workflows/automated_unblocking_of_bounced_okta_emails_via_sy/readme.md"
     }
   ]
 }
