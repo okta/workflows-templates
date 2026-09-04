@@ -139,3 +139,7 @@ Navigate to the `sys_properties` table and update the following records with you
 ## Limitations & Known Issues
 
 - Okta Integration Network (OIN) Applications - these are still created via the Okta Admin Console GUI.
+
+## License Agreement
+
+The license information for the assets associated with this flopack is in the [LICENSE](https://github.com/okta/workflows-templates/blob/master/workflows/automate_sso_application_creation/LICENSE.md) file.
