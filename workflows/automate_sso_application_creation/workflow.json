@@ -65,6 +65,14 @@
   },
   "links": [
     {
+      "title": "License Agreement",
+      "destination": "https://github.com/okta/workflows-templates/blob/master/workflows/automate_sso_application_creation/LICENSE.md"
+    },
+    {
+      "title": "Update Set XML",
+      "destination": "https://github.com/okta/workflows-templates/blob/master/workflows/automate_sso_application_creation/sys_remote_update_set_92409b01c3180310bd6ab3edd40131dc.xml"
+    },
+    {
       "title": "Setup Documentation",
       "destination": "https://github.com/okta/workflows-templates/blob/master/workflows/automate_sso_application_creation/readme.md"
     }
