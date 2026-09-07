@@ -1,0 +1,70 @@
+{
+  "name": "govern_disconnected_applications_with_oig_certific",
+  "title": "Govern Disconnected Applications with OIG Certifications: IDA UAR Upload Process",
+  "description": "The UAR (User Access Review) Upload Process is an automation utility that streamlines access certifications. It lets admins provide a Google Sheet URL containing disconnected or raw app access dumps, and automatically constructs governed app data inside Okta.",
+  "connectors": [
+    "okta",
+    "slack",
+    "googlesheets2_29"
+  ],
+  "details": {
+    "stashCount": 1,
+    "flowCount": 7,
+    "flos": [
+      {
+        "id": "946e0f56-1018-4cd5-ba53-299f9605907b",
+        "name": "[1.1.1] Opt in Application",
+        "type": "HELPER",
+        "screenshotURL": "https://d78vv2h34ll3s.cloudfront.net/static/catalog/workflows/govern_disconnected_applications_with_oig_certific/resources/292f387387bea10670270a79279e79ef9ffb.png"
+      },
+      {
+        "id": "86aa45de-4ebf-4598-a7f7-b34c169b2a73",
+        "name": "Workflow Error Handler",
+        "type": "HELPER",
+        "screenshotURL": "https://d78vv2h34ll3s.cloudfront.net/static/catalog/workflows/govern_disconnected_applications_with_oig_certific/resources/fa01e0fe07e07e03e05e07e07e01807807ff.png"
+      },
+      {
+        "id": "a6565171-6121-4136-ac71-60a342099022",
+        "name": "[1.2] Create Entitlements and Entitlement Values",
+        "type": "HELPER",
+        "screenshotURL": "https://d78vv2h34ll3s.cloudfront.net/static/catalog/workflows/govern_disconnected_applications_with_oig_certific/resources/3fc3ec202202f82f6b6416137d370170177f.png"
+      },
+      {
+        "id": "2657bd74-2e96-4d00-8462-584faf452c00",
+        "name": "[1.1] IDA UAR Upload - Create Application",
+        "type": "HELPER",
+        "screenshotURL": "https://d78vv2h34ll3s.cloudfront.net/static/catalog/workflows/govern_disconnected_applications_with_oig_certific/resources/2ba37a7806402e67ce7827837833873bfb83.png"
+      },
+      {
+        "id": "65ff830e-6e11-41b8-be50-c38d4697814e",
+        "name": "[1.0] Format Rows",
+        "type": "HELPER",
+        "screenshotURL": "https://d78vv2h34ll3s.cloudfront.net/static/catalog/workflows/govern_disconnected_applications_with_oig_certific/resources/882ff6984ff0080ff03e0be1ff1ff3ff3ff3.png"
+      },
+      {
+        "id": "3e504d53-caa3-48e3-9ba8-8156b919436d",
+        "name": "[1.3] Create Entitlement and Assign To Users",
+        "type": "HELPER",
+        "screenshotURL": "https://d78vv2h34ll3s.cloudfront.net/static/catalog/workflows/govern_disconnected_applications_with_oig_certific/resources/7ca40ec27406626fe67e7fe7fe7fe7fe7fff.png"
+      },
+      {
+        "id": "da8eb558-f7a7-4b52-aeab-a3ed995b40d1",
+        "name": "[Main] IDA UAR Upload Process",
+        "type": "MAIN",
+        "screenshotURL": "https://d78vv2h34ll3s.cloudfront.net/static/catalog/workflows/govern_disconnected_applications_with_oig_certific/resources/991300fdb3c2f10f52f10f10f13f1bf3bfbb.png"
+      }
+    ],
+    "helperFlowsCount": 6,
+    "mainFlowsCount": 1
+  },
+  "links": [
+    {
+      "title": "License Agreement",
+      "destination": "https://github.com/okta/workflows-templates/blob/master/workflows/automate_sso_application_creation/LICENSE.md"
+    },
+    {
+      "title": "Setup Documentation",
+      "destination": "https://github.com/okta/workflows-templates/blob/master/workflows/automate_sso_application_creation/readme.md"
+    }
+  ]
+}
