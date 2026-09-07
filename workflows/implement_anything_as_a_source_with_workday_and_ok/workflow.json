@@ -2,7 +2,10 @@
   "name": "implement_anything_as_a_source_with_workday_and_ok",
   "title": "Implement Anything-as-a-Source with Workday and Okta Workflows",
   "description": "This template demonstrates how to use an Anything-as-a-Source (XaaS) integration to import records from Workday.",
-  "connectors": ["workday","okta"],
+  "connectors": [
+    "workday",
+    "okta"
+  ],
   "details": {
     "stashCount": 1,
     "flowCount": 8,

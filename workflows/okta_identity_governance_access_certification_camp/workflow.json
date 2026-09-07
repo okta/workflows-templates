@@ -2,7 +2,9 @@
   "name": "okta_identity_governance_access_certification_camp",
   "title": "Okta Identity Governance - Access Certification Campaign Examples",
   "description": "These example flows show you how to create Okta Identity Governance Access Certification campaigns. A campaign can target a particular resource, such as an app or group, or a particular set of users, with or without entitlements. The examples demonstrate how to use various reviewer types and Okta Expression Language (OEL) expressions.",
-  "connectors": ["okta"],
+  "connectors": [
+    "okta"
+  ],
   "details": {
     "flowCount": 37,
     "flos": [

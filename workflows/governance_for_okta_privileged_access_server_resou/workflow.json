@@ -3,7 +3,10 @@
   "title": "Governance for Okta Privileged Access Server Resources Examples",
   "description": "The aim of this solution is to represent Okta Privileged Access (OPA) objects as entitlements in Okta Identity Governance (OIG) against a sample app to show the contents of an OPA policy as an Entitlement Bundle so it can be requested in OIG Access Requests, and to show the mapping of users to OPA policies as Entitlement Bundle Grants so that the access can be reviewed.",
   "connectors": [
-    "okta","jira2","oktaprivilegedaccess","gmail"
+    "okta",
+    "jira2",
+    "oktaprivilegedaccess",
+    "gmail"
   ],
   "details": {
     "stashCount": 5,
@@ -237,6 +240,5 @@
       "title": "Setup Documentation",
       "destination": "https://github.com/okta/workflows-templates/blob/master/workflows/governance_for_okta_privileged_access_server_resou/readme.md"
     }
-  
   ]
 }
