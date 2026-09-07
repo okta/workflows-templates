@@ -1,0 +1,58 @@
+{
+  "name": "okta_privileged_access_resource_creation_automatio",
+  "title": "Okta Privileged Access - Resource Creation Automation",
+  "description": "This Okta Workflow creates the resources in Okta and Okta Privileged Access for managing [Universal Directory Service Accounts](https://help.okta.com/oie/en-us/content/topics/privileged-access/pam-okta-accounts.htm) with [Okta Privileged Access](https://www.okta.com/products/privileged-access/).",
+  "connectors": [
+    "okta",
+    "oktaprivilegedaccess",
+    "googlesheets2_29"
+  ],
+  "details": {
+    "stashCount": 3,
+    "flowCount": 5,
+    "flos": [
+      {
+        "id": "873606ff-5bef-465e-b17b-a1dfebe03c21",
+        "name": "1a. GetGroupIDs",
+        "type": "HELPER",
+        "screenshotURL": "https://d78vv2h34ll3s.cloudfront.net/static/catalog/workflows/okta_privileged_access_resource_creation_automatio/resources/93a302fa6406726f27303f83f83f83f83fb3.png"
+      },
+      {
+        "id": "c5081a5d-68a0-4468-8b07-28b849cff595",
+        "name": "2. CreateOPAResources",
+        "type": "HELPER",
+        "screenshotURL": "https://d78vv2h34ll3s.cloudfront.net/static/catalog/workflows/okta_privileged_access_resource_creation_automatio/resources/a818186ff410e1be9d6906987bc3b07b07b0.png"
+      },
+      {
+        "id": "141bff10-4af7-4806-abfb-1e9b9f5d5277",
+        "name": "1. CreateOktaResources",
+        "type": "MAIN",
+        "screenshotURL": "https://d78vv2h34ll3s.cloudfront.net/static/catalog/workflows/okta_privileged_access_resource_creation_automatio/resources/00136f7e918ca2afca14874b74b1417617e9.png"
+      },
+      {
+        "id": "f6962841-0a78-4987-9ecf-cf3692cc27f1",
+        "name": "92. DeleteOPAResources",
+        "type": "MAIN",
+        "screenshotURL": "https://d78vv2h34ll3s.cloudfront.net/static/catalog/workflows/okta_privileged_access_resource_creation_automatio/resources/cae52e3067067ea40e4be52e50c006c0eebf.png"
+      },
+      {
+        "id": "98d2102e-eb2a-4059-ac5c-f940a5a3a7e0",
+        "name": "91. DeleteOktaResources",
+        "type": "MAIN",
+        "screenshotURL": "https://d78vv2h34ll3s.cloudfront.net/static/catalog/workflows/okta_privileged_access_resource_creation_automatio/resources/a4a6867961fe31628680ab0fb0f80f85f8ff.png"
+      }
+    ],
+    "helperFlowsCount": 2,
+    "mainFlowsCount": 3
+  },
+  "links": [
+    {
+      "title": "License Agreement",
+      "destination": "https://github.com/okta/workflows-templates/blob/master/workflows/okta_privileged_access_resource_creation_automatio/LICENSE.md"
+    },
+    {
+      "title": "Setup Documentation",
+      "destination": "https://github.com/okta/workflows-templates/blob/master/workflows/okta_privileged_access_resource_creation_automatio/readme.md"
+    }
+  ]
+}
