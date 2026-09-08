@@ -115,4 +115,4 @@ The flow includes defensive error recovery procedures:
 
 ## License Agreement
 
-The license information for the assets associated with this flopack is in the [LICENSE](https://github.com/okta/workflows-templates/blob/master/workflows/automate_sso_application_creation/LICENSE.md) file.
+The license information for the assets associated with this flopack is in the [LICENSE](https://github.com/okta/workflows-templates/blob/master/workflows/govern_disconnected_applications_with_oig_certific/LICENSE.md) file.
