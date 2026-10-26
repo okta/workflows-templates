@@ -1,0 +1,33 @@
+{
+  "name": "check_user_group_membership_with_pagination",
+  "title": "Check User Group Membership with Pagination",
+  "description": "Check whether an Okta user belongs to a group by following all pages of Okta API results, or retrieve the user's complete group-membership list.",
+  "connectors": [
+    "okta"
+  ],
+  "details": {
+    "tags": [
+      "identity-management"
+    ],
+    "flos": [
+      {
+        "id": "9aa86a85-7520-4ee2-a6c2-a0474a23aaf5",
+        "name": "1.2 Get Paginated List",
+        "type": "HELPER"
+      },
+      {
+        "id": "f4efe871-d052-4b8b-875a-96802ce60b5b",
+        "name": "1.1 Search With Pagination",
+        "type": "HELPER"
+      }
+    ],
+    "flowCount": 2,
+    "helperFlowsCount": 2
+  },
+  "links": [
+    {
+      "title": "Setup Documentation",
+      "destination": "https://github.com/okta/workflows-templates/blob/master/workflows/check_user_group_membership_with_pagination/readme.md"
+    }
+  ]
+}
