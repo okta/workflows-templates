@@ -10,6 +10,9 @@
   "details": {
     "stashCount": 1,
     "flowCount": 8,
+    "tags": [
+      "Okta on Okta"
+    ],
     "flos": [
       {
         "id": "e3040715-a903-45a1-a58f-d7d261159a35",
@@ -69,8 +72,8 @@
       "destination": "https://github.com/okta/workflows-templates/blob/master/workflows/automate_sso_application_creation/LICENSE.md"
     },
     {
-      "title": "Update Set XML",
-      "destination": "https://github.com/okta/workflows-templates/blob/master/workflows/automate_sso_application_creation/sys_remote_update_set_92409b01c3180310bd6ab3edd40131dc.xml"
+      "title": "Okta-on-Okta Workflows ServiceNow Templates",
+      "destination": "https://github.com/okta/iam-okta-on-okta-workflows-servicenow-templates"
     },
     {
       "title": "Setup Documentation",
