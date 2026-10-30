@@ -16,7 +16,7 @@ Before you get started, here are the things you need:
 
 ## Okta-on-Okta Workflows ServiceNow Templates
 
-Refer `https://github.com/okta/iam-okta-on-okta-workflows-servicenow-templates` for more details on Okta-on-Okta workflows serviceNow templates.
+Refer [Okta-on-Okta Workflows ServiceNow Templates](https://github.com/okta/iam-okta-on-okta-workflows-servicenow-templates) for more details.
 
 ## Setup Steps
 
