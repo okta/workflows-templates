@@ -10,6 +10,9 @@
   "details": {
     "stashCount": 1,
     "flowCount": 7,
+    "tags": [
+      "Okta on Okta"
+    ],
     "flos": [
       {
         "id": "946e0f56-1018-4cd5-ba53-299f9605907b",
