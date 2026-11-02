@@ -18,7 +18,7 @@ const fs = require("fs");
 const path = require("path");
 const { imageHash } = require("image-hash");
 const { exit } = require("process");
-const yargs = require("yargs/yargs");
+const yargs = require("yargs");
 const { hideBin } = require("yargs/helpers");
 
 // Importing functions for screenshot updating

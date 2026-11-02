@@ -10,7 +10,7 @@
 
 const fs = require("fs");
 const path = require("path");
-const yargs = require("yargs/yargs");
+const yargs = require("yargs");
 const { hideBin } = require("yargs/helpers");
 const argv = yargs(hideBin(process.argv)).argv;
 
