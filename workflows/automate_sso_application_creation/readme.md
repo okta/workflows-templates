@@ -14,6 +14,10 @@ Before you get started, here are the things you need:
 - An Application Access Request ID. See [Get started with Access Requests](https://help.okta.com/oie/en-us/content/topics/identity-governance/access-requests/ar-get-started.htm).
 - The Integration Hub plugin in ServiceNow.
 
+## Okta-on-Okta Workflows ServiceNow Templates
+
+Refer [Okta-on-Okta Workflows ServiceNow Templates](https://github.com/okta/iam-okta-on-okta-workflows-servicenow-templates) for more details.
+
 ## Setup Steps
 
 **Setup Steps in Okta Workflows**
@@ -103,7 +107,7 @@ Before you get started, here are the things you need:
 # Okta Workflows & ServiceNow Integration Guide
 
 ## Phase 1: Import and Deployment
-- **Download Source:** Download the `sys_remote_update_set_[sys_id].xml` file from the template Automate SSO Application Creation (**Add template**) page --> Resources section: **Update Set XML** link.
+- **Download Source:** Download the `sys_remote_update_set_[sys_id].xml` file from the [**ServiceNow Application**](https://github.com/okta/iam-okta-on-okta-workflows-servicenow-templates/tree/main/ServiceNow%20Application) folder .
 - **Import to ServiceNow:** Navigate to **Retrieved Update Sets** and import the XML file.
 - **Preview & Address Errors:** Run a preview on the update set. You will encounter ** errors **; review and **Accept all** of them to proceed with the commit.
 - **Set Application Scope:** Ensure your system's application scope is set to `Okta Workflows`.
