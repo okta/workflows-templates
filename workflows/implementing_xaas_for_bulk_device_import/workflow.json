@@ -1,0 +1,80 @@
+{
+  "name": "implementing_xaas_for_bulk_device_import",
+  "title": "Implementing XaaS for Bulk Device Import",
+  "description": "This template demonstrates how to use Anything-as-a-Source (XaaS) to import device records into Okta from a CSV file.",
+  "connectors": [
+    "okta",
+    "googledrive"
+  ],
+  "details": {
+    "stashCount": 1,
+    "tags": [
+      "lifecycle-management"
+    ],
+    "flowCount": 9,
+    "flos": [
+      {
+        "id": "560f75ca-36f3-4a6c-bc80-c34a772e4dab",
+        "name": "Delete Import Session",
+        "type": "HELPER",
+        "screenshotURL": "https://d78vv2h34ll3s.cloudfront.net/static/catalog/workflows/implementing_xaas_for_bulk_device_import/resources/f39b18388388fb07b073037071d30770703f.png"
+      },
+      {
+        "id": "239455b1-0eb8-4da5-ab3f-6724781bccec",
+        "name": "XaaS Import Session Handler",
+        "type": "HELPER",
+        "screenshotURL": "https://d78vv2h34ll3s.cloudfront.net/static/catalog/workflows/implementing_xaas_for_bulk_device_import/resources/001dfcd5c5741b4b543047c47dcffcffdffd.png"
+      },
+      {
+        "id": "6063906c-68fb-4a5a-9a53-d59bfc8807ea",
+        "name": "Devices Mapping for Delete",
+        "type": "HELPER",
+        "screenshotURL": "https://d78vv2h34ll3s.cloudfront.net/static/catalog/workflows/implementing_xaas_for_bulk_device_import/resources/6dc6586c82c83f86786182d87f81f95ff7ff.png"
+      },
+      {
+        "id": "7c4702af-a0e7-414c-9dca-663912304bb5",
+        "name": "Devices Mapping for Create",
+        "type": "HELPER",
+        "screenshotURL": "https://d78vv2h34ll3s.cloudfront.net/static/catalog/workflows/implementing_xaas_for_bulk_device_import/resources/d56554d505545d4d4c41c4fc5cc444fc73d7.png"
+      },
+      {
+        "id": "a862fa27-98be-40ec-bfc6-c4d1b7b47c00",
+        "name": "XaaS Bulk Import Request Handler",
+        "type": "HELPER",
+        "screenshotURL": "https://d78vv2h34ll3s.cloudfront.net/static/catalog/workflows/implementing_xaas_for_bulk_device_import/resources/8ae780fc2781f81f81fa1fe1fe1fe1fe1c00.png"
+      },
+      {
+        "id": "2e07c962-e9cc-4a7d-bce1-e605ba9fc375",
+        "name": "Create Import Session",
+        "type": "HELPER",
+        "screenshotURL": "https://d78vv2h34ll3s.cloudfront.net/static/catalog/workflows/implementing_xaas_for_bulk_device_import/resources/9f88e0bc20361d29f30e38e38e3ce3fe3ffb.png"
+      },
+      {
+        "id": "c792d67b-dcdb-44fd-ab85-d94de291b6b3",
+        "name": "Orchestrate Import from csv File",
+        "type": "HELPER",
+        "screenshotURL": "https://d78vv2h34ll3s.cloudfront.net/static/catalog/workflows/implementing_xaas_for_bulk_device_import/resources/015ec4b571e0e66ce444cc6ce6ce64e64fe5.png"
+      },
+      {
+        "id": "9953c7f6-1d48-48c2-ba8f-eecbc388cd70",
+        "name": "Import from csv (Delete)",
+        "type": "MAIN",
+        "screenshotURL": "https://d78vv2h34ll3s.cloudfront.net/static/catalog/workflows/implementing_xaas_for_bulk_device_import/resources/e1c618f586403f8fc85d87c07c8fc0fc0fdb.png"
+      },
+      {
+        "id": "00b73630-1298-4052-93fa-f6ba84d29ba9",
+        "name": "Import from csv (Create)",
+        "type": "MAIN",
+        "screenshotURL": "https://d78vv2h34ll3s.cloudfront.net/static/catalog/workflows/implementing_xaas_for_bulk_device_import/resources/e1c618f583c03f8fc05d87c07c8fc0fc0fdb.png"
+      }
+    ],
+    "helperFlowsCount": 7,
+    "mainFlowsCount": 2
+  },
+  "links": [
+    {
+      "title": "Setup Documentation",
+      "destination": "https://github.com/okta/workflows-templates/blob/master/workflows/implementing_xaas_for_bulk_device_import/readme.md"
+    }
+  ]
+}
